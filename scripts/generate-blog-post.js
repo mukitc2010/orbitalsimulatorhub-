@@ -8,8 +8,8 @@
  * a template that you can fill in and add to blogPosts.ts
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const CATEGORIES = {
   1: { id: 'nasa-news', label: 'NASA News', emoji: '🚀' },
