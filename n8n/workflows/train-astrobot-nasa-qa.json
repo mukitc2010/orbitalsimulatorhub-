@@ -1,0 +1,111 @@
+{
+  "name": "Train AstroBot with NASA Q&A from AI Platforms",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 1
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger (Daily)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Collect NASA Q&A from various AI platforms\n// This simulates collecting from ChatGPT, Claude, Perplexity, NASA.gov, etc.\n\nconst sources = [\n  {\n    name: \"NASA.gov\",\n    url: \"https://www.nasa.gov/\",\n    questions: [\n      \"What does NASA do?\",\n      \"How do astronauts live in space?\",\n      \"What is the International Space Station?\",\n      \"How do satellites stay in orbit?\",\n      \"What is the James Webb Space Telescope?\"\n    ]\n  },\n  {\n    name: \"ChatGPT\",\n    url: \"https://chat.openai.com/\",\n    questions: [\n      \"How does NASA plan satellite orbits?\",\n      \"What is orbital mechanics?\",\n      \"How do rockets work?\",\n      \"What is escape velocity?\"\n    ]\n  },\n  {\n    name: \"Claude\",\n    url: \"https://claude.ai/\",\n    questions: [\n      \"What is the James Webb Space Telescope?\",\n      \"How do Mars rovers work?\",\n      \"What are Lagrange points?\"\n    ]\n  },\n  {\n    name: \"Perplexity AI\",\n    url: \"https://www.perplexity.ai/\",\n    questions: [\n      \"How do Mars rovers navigate?\",\n      \"What is the difference between LEO and GEO?\",\n      \"How does gravity work in space?\"\n    ]\n  }\n];\n\n// Select random source and question\nconst source = sources[Math.floor(Math.random() * sources.length)];\nconst question = source.questions[Math.floor(Math.random() * source.questions.length)];\n\nreturn {\n  json: {\n    source: source.name,\n    sourceUrl: source.url,\n    question: question,\n    timestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "select-source",
+      "name": "Select Q&A Source",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "resource": "text",
+        "operation": "completion",
+        "model": "gpt-4",
+        "options": {
+          "temperature": "0.7",
+          "maxTokens": "500"
+        },
+        "prompt": "=Answer this NASA-related question accurately and clearly:\n\nQuestion: {{$json.question}}\n\nProvide:\n1. A clear, educational answer (2-3 sentences)\n2. Key NASA facts and details\n3. Reference to NASA.gov or relevant NASA pages\n\nFormat as JSON:\n{\n  \"answer\": \"...\",\n  \"keywords\": [\"keyword1\", \"keyword2\", ...],\n  \"references\": [\n    {\"title\": \"...\", \"url\": \"https://www.nasa.gov/...\", \"source\": \"NASA.gov\"}\n  ]\n}"
+      },
+      "id": "generate-answer",
+      "name": "Generate Answer with AI",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1.3,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse AI response and format for AstroBot\nconst aiResponse = $input.item.json.choices[0].message.content;\nlet parsed;\n\ntry {\n  // Try to parse JSON\n  parsed = JSON.parse(aiResponse);\n} catch (e) {\n  // If not JSON, create structure manually\n  parsed = {\n    answer: aiResponse,\n    keywords: $('Select Q&A Source').item.json.question.toLowerCase().split(/\\s+/).filter(w => w.length > 3),\n    references: [\n      {\n        title: \"NASA.gov\",\n        url: \"https://www.nasa.gov/\",\n        source: \"NASA.gov\"\n      },\n      {\n        title: $('Select Q&A Source').item.json.source + \" Conversation\",\n        url: $('Select Q&A Source').item.json.sourceUrl,\n        source: $('Select Q&A Source').item.json.source\n      }\n    ]\n  };\n}\n\n// Ensure keywords array\nif (!parsed.keywords || !Array.isArray(parsed.keywords)) {\n  const questionWords = $('Select Q&A Source').item.json.question.toLowerCase().split(/\\s+/);\n  parsed.keywords = questionWords.filter(w => w.length > 3);\n}\n\n// Ensure references array\nif (!parsed.references || !Array.isArray(parsed.references)) {\n  parsed.references = [\n    {\n      title: \"NASA.gov\",\n      url: \"https://www.nasa.gov/\",\n      source: \"NASA.gov\"\n    },\n    {\n      title: $('Select Q&A Source').item.json.source + \" Conversation\",\n      url: $('Select Q&A Source').item.json.sourceUrl,\n      source: $('Select Q&A Source').item.json.source\n    }\n  ];\n}\n\n// Add question as keyword\nparsed.keywords.push($('Select Q&A Source').item.json.question.toLowerCase());\n\nreturn {\n  json: {\n    keywords: parsed.keywords,\n    answer: parsed.answer,\n    references: parsed.references,\n    category: \"nasa\"\n  }\n};"
+      },
+      "id": "format-knowledge",
+      "name": "Format Knowledge Entry",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/astrobot/knowledge",
+        "method": "POST",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "post-knowledge",
+      "name": "Add to AstroBot Knowledge",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "command": "cd \"c:\\Users\\mukit\\OneDrive\\Desktop\\nasaArchitech\\satellite_simulator_web\" && .\\scripts\\git-auto-deploy.ps1 -Message \"Auto-update: Train AstroBot with NASA Q&A\""
+      },
+      "id": "git-deploy",
+      "name": "Git Commit & Push",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1250, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Daily)": {
+      "main": [[{"node": "Select Q&A Source", "type": "main", "index": 0}]]
+    },
+    "Select Q&A Source": {
+      "main": [[{"node": "Generate Answer with AI", "type": "main", "index": 0}]]
+    },
+    "Generate Answer with AI": {
+      "main": [[{"node": "Format Knowledge Entry", "type": "main", "index": 0}]]
+    },
+    "Format Knowledge Entry": {
+      "main": [[{"node": "Add to AstroBot Knowledge", "type": "main", "index": 0}]]
+    },
+    "Add to AstroBot Knowledge": {
+      "main": [[{"node": "Git Commit & Push", "type": "main", "index": 0}]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2026-02-15T00:00:00.000Z",
+  "versionId": "1"
+}

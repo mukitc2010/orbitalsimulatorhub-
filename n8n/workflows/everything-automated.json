@@ -1,0 +1,110 @@
+{
+  "name": "Everything Automated: Blog + SEO + Daily Topic → GitHub → Vercel → Live",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger (Daily)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generate blog post\nconst categories = ['nasa-news', 'space-facts', 'satellite-tutorials', 'astronomy-lessons'];\nconst topics = {\n  'nasa-news': ['NASA Perseverance Rover discovers new evidence', 'James Webb Telescope reveals stunning images', 'SpaceX launches Falcon Heavy'],\n  'space-facts': ['The ISS orbits Earth 16 times per day', 'There are over 5,000 active satellites'],\n  'satellite-tutorials': ['How GPS satellites calculate your location', 'Why weather satellites orbit at 36,000 km'],\n  'astronomy-lessons': ['How stars are born from gas clouds', 'What happens when a star dies']\n};\nconst category = categories[Math.floor(Math.random() * categories.length)];\nconst title = topics[category][Math.floor(Math.random() * topics[category].length)];\nconst slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');\nconst today = new Date().toISOString().split('T')[0];\n\nreturn {\n  json: {\n    slug,\n    title,\n    excerpt: `Learn about ${title.toLowerCase()} and orbital mechanics.`,\n    content: `# ${title}\\n\\n${title} is fascinating. Learn more with our [simulator](/simulator) and [formulas](/formulas-library).`,\n    category,\n    date: today,\n    tags: ['space', 'orbital mechanics'],\n    seoKeywords: 'space, orbital mechanics, NASA'\n  }\n};"
+      },
+      "id": "generate-blog",
+      "name": "Generate Blog Post",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/blog/posts",
+        "method": "POST",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "post-blog",
+      "name": "Post Blog to API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generate daily topic\nconst categories = ['nasa', 'newton', 'quantum-physics', 'astrophysics'];\nconst topics = {\n  'nasa': [{ title: 'International Space Station', icon: '🛰️', url: '/satellites', desc: 'Learn how the ISS orbits Earth.', keywords: ['ISS', 'NASA'] }],\n  'newton': [{ title: 'Newton\\'s Laws of Motion', icon: '⚖️', url: '/learn/newton', desc: 'Learn Newton\\'s three laws.', keywords: ['Newton', 'physics'] }],\n  'quantum-physics': [{ title: 'Quantum Mechanics', icon: '⚛️', url: '/research', desc: 'Introduction to quantum physics.', keywords: ['quantum', 'physics'] }],\n  'astrophysics': [{ title: 'Black Holes', icon: '🕳️', url: '/research', desc: 'Learn about black holes.', keywords: ['black holes', 'astrophysics'] }]\n};\nconst category = categories[Math.floor(Math.random() * categories.length)];\nconst topic = topics[category][0];\nconst today = new Date().toISOString().split('T')[0];\n\nreturn {\n  json: {\n    id: `${category}-${today}`,\n    date: today,\n    title: topic.title,\n    icon: topic.icon,\n    category,\n    description: topic.desc,\n    learnMoreUrl: topic.url,\n    keywords: topic.keywords\n  }\n};"
+      },
+      "id": "generate-topic",
+      "name": "Generate Daily Topic",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/daily-topics/topics",
+        "method": "POST",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "post-topic",
+      "name": "Post Daily Topic",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "command": "cd \"c:\\Users\\mukit\\OneDrive\\Desktop\\nasaArchitech\\satellite_simulator_web\" && .\\scripts\\git-auto-deploy.ps1 -Message \"Auto-update: Blog post + Daily topic + SEO\""
+      },
+      "id": "git-deploy",
+      "name": "Git Commit & Push → Deploy",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1250, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Daily)": {
+      "main": [[{"node": "Generate Blog Post", "type": "main", "index": 0}]]
+    },
+    "Generate Blog Post": {
+      "main": [[{"node": "Post Blog to API", "type": "main", "index": 0}]]
+    },
+    "Post Blog to API": {
+      "main": [[{"node": "Generate Daily Topic", "type": "main", "index": 0}]]
+    },
+    "Generate Daily Topic": {
+      "main": [[{"node": "Post Daily Topic", "type": "main", "index": 0}]]
+    },
+    "Post Daily Topic": {
+      "main": [[{"node": "Git Commit & Push → Deploy", "type": "main", "index": 0}]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2026-02-15T00:00:00.000Z",
+  "versionId": "1"
+}

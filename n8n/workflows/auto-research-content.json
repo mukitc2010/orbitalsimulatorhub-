@@ -1,0 +1,111 @@
+{
+  "name": "Auto-Generate Research Content Daily",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger (Daily)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Select research content type and topic\nconst contentTypes = [\n  \"paper-summary\",\n  \"discovery\",\n  \"methodology\",\n  \"data-source\",\n  \"tool\",\n  \"case-study\",\n  \"trend\",\n  \"formula\",\n  \"documentation\"\n];\n\nconst categories = [\n  \"nasa\",\n  \"orbital-mechanics\",\n  \"astrophysics\",\n  \"quantum-physics\",\n  \"aerospace\",\n  \"general\"\n];\n\nconst topics = [\n  \"orbital debris mitigation\",\n  \"precision orbit determination\",\n  \"space weather effects\",\n  \"satellite constellation design\",\n  \"propulsion systems\",\n  \"attitude control\",\n  \"mission design\",\n  \"data analysis techniques\",\n  \"numerical methods\",\n  \"recent NASA discoveries\",\n  \"exoplanet research\",\n  \"black hole physics\",\n  \"quantum computing in space\",\n  \"materials science for space\"\n];\n\nconst selectedType = contentTypes[Math.floor(Math.random() * contentTypes.length)];\nconst selectedCategory = categories[Math.floor(Math.random() * categories.length)];\nconst selectedTopic = topics[Math.floor(Math.random() * topics.length)];\nconst today = new Date().toISOString().split('T')[0];\nconst id = `research-${Date.now()}`;\n\nreturn {\n  json: {\n    id,\n    date: today,\n    type: selectedType,\n    category: selectedCategory,\n    topic: selectedTopic,\n    prompt: `Generate comprehensive research content for PhD students and researchers about ${selectedTopic} in the ${selectedCategory} category.\n\nContent type: ${selectedType}\n\nRequirements:\n1. Provide a detailed summary (2-3 sentences)\n2. Write full content suitable for research papers (500-1000 words)\n3. Include relevant keywords\n4. Provide references to academic papers, NASA documentation, or authoritative sources\n5. Include formulas/equations if applicable\n6. Include data points if applicable\n7. Suggest related topics\n8. Include SEO keywords\n\nFormat as JSON:\n{\n  \"title\": \"...\",\n  \"summary\": \"...\",\n  \"content\": \"...\",\n  \"keywords\": [\"...\"],\n  \"references\": [{\"title\": \"...\", \"url\": \"...\", \"source\": \"...\", \"type\": \"paper|website|documentation|data|tool\"}],\n  \"formulas\": [{\"name\": \"...\", \"equation\": \"...\", \"description\": \"...\"}],\n  \"dataPoints\": [{\"label\": \"...\", \"value\": \"...\", \"unit\": \"...\", \"source\": \"...\"}],\n  \"relatedTopics\": [\"...\"],\n  \"seoKeywords\": \"...\"\n}`\n  }\n};"
+      },
+      "id": "select-topic",
+      "name": "Select Research Topic",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "resource": "text",
+        "operation": "completion",
+        "model": "gpt-4",
+        "options": {
+          "temperature": "0.7",
+          "maxTokens": "3000"
+        },
+        "prompt": "={{$json.prompt}}\n\nReturn ONLY valid JSON, no markdown, no explanations."
+      },
+      "id": "generate-content",
+      "name": "Generate Research Content",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1.3,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse AI response and format for API\nconst aiResponse = $input.item.json.choices[0].message.content;\nlet parsed;\n\ntry {\n  // Try to parse JSON\n  parsed = JSON.parse(aiResponse);\n} catch (e) {\n  // If not JSON, create structure manually\n  parsed = {\n    title: \"AI Generated Research Content\",\n    summary: aiResponse.substring(0, 200),\n    content: aiResponse,\n    keywords: [],\n    references: [],\n    relatedTopics: []\n  };\n}\n\n// Get metadata from previous node\nconst metadata = $('Select Research Topic').item.json;\n\n// Ensure all required fields\nconst researchContent = {\n  id: metadata.id,\n  date: metadata.date,\n  title: parsed.title || metadata.topic,\n  type: metadata.type,\n  category: metadata.category,\n  summary: parsed.summary || parsed.content?.substring(0, 200) || \"Research content about \" + metadata.topic,\n  content: parsed.content || aiResponse,\n  keywords: parsed.keywords || [metadata.topic, metadata.category],\n  references: parsed.references || [\n    {\n      title: \"NASA.gov\",\n      url: \"https://www.nasa.gov/\",\n      source: \"NASA\",\n      type: \"website\"\n    }\n  ],\n  formulas: parsed.formulas || [],\n  dataPoints: parsed.dataPoints || [],\n  relatedTopics: parsed.relatedTopics || [],\n  seoKeywords: parsed.seoKeywords || `${metadata.topic} ${metadata.category} research`\n};\n\nreturn { json: researchContent };"
+      },
+      "id": "format-content",
+      "name": "Format Research Content",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/research/content",
+        "method": "POST",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "post-content",
+      "name": "Post Research Content",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "command": "cd \"c:\\Users\\mukit\\OneDrive\\Desktop\\nasaArchitech\\satellite_simulator_web\" && .\\scripts\\git-auto-deploy.ps1 -Message \"Auto-update: Research content for PhD students and researchers\""
+      },
+      "id": "git-deploy",
+      "name": "Git Commit & Push",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1250, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Daily)": {
+      "main": [[{"node": "Select Research Topic", "type": "main", "index": 0}]]
+    },
+    "Select Research Topic": {
+      "main": [[{"node": "Generate Research Content", "type": "main", "index": 0}]]
+    },
+    "Generate Research Content": {
+      "main": [[{"node": "Format Research Content", "type": "main", "index": 0}]]
+    },
+    "Format Research Content": {
+      "main": [[{"node": "Post Research Content", "type": "main", "index": 0}]]
+    },
+    "Post Research Content": {
+      "main": [[{"node": "Git Commit & Push", "type": "main", "index": 0}]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2026-02-15T00:00:00.000Z",
+  "versionId": "1"
+}

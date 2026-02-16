@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere, Line } from "@react-three/drei";
 import * as THREE from "three";
@@ -53,19 +53,33 @@ function SatelliteMesh({
   color: string;
 }) {
   const scale = 0.02;
+  // Memoize color conversion to ensure proper updates
+  const threeColor = useMemo(() => new THREE.Color(color), [color]);
   return (
     <mesh position={position}>
       <boxGeometry args={[scale * 2, scale, scale]} />
-      <meshStandardMaterial color={color} emissive={color} emissiveIntensity={0.5} />
+      <meshStandardMaterial 
+        color={threeColor} 
+        emissive={threeColor} 
+        emissiveIntensity={0.5}
+      />
     </mesh>
   );
 }
 
 function TrailLine({ points, color }: { points: [number, number, number][]; color: string }) {
   if (points.length < 2) return null;
-  const vecs = points.map((p) => new THREE.Vector3(...p));
+  // Memoize vectors to ensure proper updates
+  const vecs = useMemo(() => points.map((p) => new THREE.Vector3(...p)), [points]);
+  // Use color string directly - drei Line accepts both string and THREE.Color
   return (
-    <Line points={vecs} color={color} lineWidth={1} transparent opacity={0.7} />
+    <Line 
+      points={vecs} 
+      color={color} 
+      lineWidth={2} 
+      transparent 
+      opacity={0.7}
+    />
   );
 }
 
@@ -110,9 +124,15 @@ export function EarthVisualization({
           maxDistance={20}
         />
         {satellites.map((sat) => (
-          <group key={sat.id}>
-            <SatelliteMesh position={sat.position} color={sat.color} />
-            <TrailLine points={sat.trail} color={sat.color} />
+          <group key={`${sat.id}-${sat.color}`}>
+            <SatelliteMesh 
+              position={sat.position} 
+              color={sat.color} 
+            />
+            <TrailLine 
+              points={sat.trail} 
+              color={sat.color} 
+            />
           </group>
         ))}
       </Canvas>

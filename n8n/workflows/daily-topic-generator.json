@@ -1,0 +1,78 @@
+{
+  "name": "Daily Topic Generator - NASA, Newton, Quantum, Astrophysics",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger (Daily)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generate daily featured topic\nconst categories = ['nasa', 'newton', 'quantum-physics', 'astrophysics', 'orbital-mechanics'];\n\nconst topics = {\n  'nasa': [\n    { title: 'International Space Station', icon: '🛰️', url: '/satellites', desc: 'Learn how the ISS orbits Earth 16 times per day and what life is like in microgravity.', keywords: ['ISS', 'NASA', 'space station', 'orbit'] },\n    { title: 'Mars Rovers', icon: '🤖', url: '/learn/aerospace#rovers', desc: 'Discover how NASA rovers explore Mars using orbital mechanics and robotics.', keywords: ['Mars', 'NASA', 'rovers', 'exploration'] },\n    { title: 'James Webb Telescope', icon: '🔭', url: '/learn/aerospace', desc: 'Explore how the James Webb Space Telescope observes the universe from L2 point.', keywords: ['James Webb', 'NASA', 'telescope', 'astronomy'] },\n    { title: 'Apollo Moon Missions', icon: '🌙', url: '/learn/aerospace#nasa', desc: 'Learn how NASA used Newton\\'s laws to land humans on the Moon.', keywords: ['Apollo', 'NASA', 'Moon', 'missions'] },\n    { title: 'GPS Satellites', icon: '📡', url: '/satellites', desc: 'Understand how GPS satellites in MEO enable global navigation.', keywords: ['GPS', 'satellites', 'navigation', 'MEO'] }\n  ],\n  'newton': [\n    { title: 'Newton\\'s First Law', icon: '⚖️', url: '/learn/newton', desc: 'Learn about inertia and why objects in motion stay in motion.', keywords: ['Newton', 'first law', 'inertia', 'physics'] },\n    { title: 'Newton\\'s Second Law', icon: '🚀', url: '/learn/newton', desc: 'Discover F=ma and how it explains rocket acceleration.', keywords: ['Newton', 'second law', 'force', 'acceleration'] },\n    { title: 'Newton\\'s Third Law', icon: '💥', url: '/learn/newton', desc: 'Understand action-reaction and how rockets propel forward.', keywords: ['Newton', 'third law', 'action-reaction', 'rockets'] },\n    { title: 'Law of Universal Gravitation', icon: '🌍', url: '/formulas-library', desc: 'Explore how gravity keeps satellites in orbit around Earth.', keywords: ['Newton', 'gravity', 'gravitation', 'orbits'] },\n    { title: 'Newton and Orbits', icon: '🛸', url: '/simulator', desc: 'See how Newton\\'s laws make satellite orbits possible.', keywords: ['Newton', 'orbits', 'satellites', 'physics'] }\n  ],\n  'quantum-physics': [\n    { title: 'Quantum Mechanics Basics', icon: '⚛️', url: '/research', desc: 'Introduction to quantum physics and its role in space technology.', keywords: ['quantum', 'physics', 'mechanics', 'science'] },\n    { title: 'Quantum Entanglement', icon: '🔗', url: '/research', desc: 'Learn about quantum entanglement and its applications in space communication.', keywords: ['quantum', 'entanglement', 'physics', 'communication'] },\n    { title: 'Quantum Computing in Space', icon: '💻', url: '/research', desc: 'Discover how quantum computing advances space exploration.', keywords: ['quantum', 'computing', 'space', 'technology'] },\n    { title: 'Quantum Sensors', icon: '📊', url: '/research', desc: 'Explore quantum sensors used in satellite navigation.', keywords: ['quantum', 'sensors', 'satellites', 'navigation'] }\n  ],\n  'astrophysics': [\n    { title: 'Black Holes', icon: '🕳️', url: '/research', desc: 'Learn about black holes, event horizons, and gravitational physics.', keywords: ['black holes', 'astrophysics', 'gravity', 'space'] },\n    { title: 'Star Formation', icon: '⭐', url: '/research', desc: 'Discover how stars are born from gas clouds in space.', keywords: ['stars', 'formation', 'astrophysics', 'space'] },\n    { title: 'Dark Matter', icon: '🌌', url: '/research', desc: 'Explore the mysterious dark matter that shapes the universe.', keywords: ['dark matter', 'astrophysics', 'universe', 'physics'] },\n    { title: 'Cosmic Microwave Background', icon: '🌠', url: '/research', desc: 'Learn about the oldest light in the universe and the Big Bang.', keywords: ['CMB', 'astrophysics', 'Big Bang', 'universe'] },\n    { title: 'Exoplanets', icon: '🪐', url: '/research', desc: 'Discover planets orbiting other stars and how we detect them.', keywords: ['exoplanets', 'astrophysics', 'planets', 'space'] }\n  ],\n  'orbital-mechanics': [\n    { title: 'Kepler\\'s Laws', icon: '🌍', url: '/formulas-library', desc: 'Learn Kepler\\'s three laws that describe planetary motion.', keywords: ['Kepler', 'laws', 'orbital mechanics', 'planets'] },\n    { title: 'Escape Velocity', icon: '🚀', url: '/formulas-library', desc: 'Understand the speed needed to escape Earth\\'s gravity.', keywords: ['escape velocity', 'gravity', 'rockets', 'physics'] },\n    { title: 'Hohmann Transfer', icon: '🔄', url: '/simulator', desc: 'Learn the most efficient way to transfer between orbits.', keywords: ['Hohmann', 'transfer', 'orbits', 'spacecraft'] },\n    { title: 'Lagrange Points', icon: '⚖️', url: '/learn/aerospace', desc: 'Discover the special points where gravity balances perfectly.', keywords: ['Lagrange', 'points', 'gravity', 'orbits'] }\n  ]\n};\n\n// Select random category and topic\nconst category = categories[Math.floor(Math.random() * categories.length)];\nconst topicList = topics[category];\nconst selectedTopic = topicList[Math.floor(Math.random() * topicList.length)];\n\n// Get today's date\nconst today = new Date().toISOString().split('T')[0];\n\n// Generate ID\nconst id = `${category}-${today}`;\n\nreturn {\n  json: {\n    id,\n    date: today,\n    title: selectedTopic.title,\n    icon: selectedTopic.icon,\n    category,\n    description: selectedTopic.desc,\n    learnMoreUrl: selectedTopic.url,\n    keywords: selectedTopic.keywords\n  }\n};"
+      },
+      "id": "generate-topic",
+      "name": "Generate Daily Topic",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/daily-topics/topics",
+        "method": "POST",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "post-topic",
+      "name": "Post Daily Topic",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "command": "cd \"c:\\Users\\mukit\\OneDrive\\Desktop\\nasaArchitech\\satellite_simulator_web\" && git add client/src/data/dailyTopics.ts && git commit -m \"Auto-update: Daily topic - {{$json.title}}\" && git push origin main"
+      },
+      "id": "git-push",
+      "name": "Git Commit & Push",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [850, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Daily)": {
+      "main": [[{"node": "Generate Daily Topic", "type": "main", "index": 0}]]
+    },
+    "Generate Daily Topic": {
+      "main": [[{"node": "Post Daily Topic", "type": "main", "index": 0}]]
+    },
+    "Post Daily Topic": {
+      "main": [[{"node": "Git Commit & Push", "type": "main", "index": 0}]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2026-02-15T00:00:00.000Z",
+  "versionId": "1"
+}

@@ -6,6 +6,7 @@ export function NavigationHeader() {
   const nav = [
     { path: "/", label: "Home", title: "Orbital mechanics simulator and space learning" },
     { path: "/simulator", label: "Simulator", title: "3D satellite orbit simulator — LEO, MEO, GEO" },
+    { path: "/blog", label: "Blog", title: "Daily NASA news, space facts, satellite tutorials, astronomy lessons" },
     { path: "/formulas-library", label: "Formulas", title: "Space formulas: gravity, orbital velocity, escape velocity, Kepler, rocket equation" },
     { path: "/satellites", label: "Satellites", title: "Real satellite orbits: ISS, Starlink, GPS, weather satellites" },
     { path: "/calculators", label: "Calculators", title: "Orbit calculator, gravity calculator, escape velocity" },

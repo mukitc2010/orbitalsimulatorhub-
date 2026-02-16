@@ -6,6 +6,12 @@ import { fileURLToPath } from "url";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
+import { createBlogRouter } from "../blog-api";
+import { createSEORouter } from "../seo-api";
+import { createDailyTopicsRouter } from "../daily-topics-api";
+import { createAstroBotRouter } from "../astrobot-api";
+import { createResearchContentRouter } from "../research-content-api";
+import { createResearchContentRouter } from "../research-content-api";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const isDev = process.env.NODE_ENV !== "production";
@@ -15,6 +21,22 @@ const app = express();
 app.use(cors({ origin: true }));
 app.use(express.json());
 
+// Blog API endpoints for n8n automation
+app.use("/api/blog", createBlogRouter());
+
+// SEO API endpoints for n8n automation
+app.use("/api/seo", createSEORouter());
+
+// Daily Topics API endpoints for n8n automation
+app.use("/api/daily-topics", createDailyTopicsRouter());
+
+// AstroBot Knowledge API endpoints for n8n automation
+app.use("/api/astrobot", createAstroBotRouter());
+
+// Research Content API endpoints for n8n automation
+app.use("/api/research", createResearchContentRouter());
+
+// tRPC endpoints
 app.use(
   "/api/trpc",
   createExpressMiddleware({

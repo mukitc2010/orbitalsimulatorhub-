@@ -1,0 +1,99 @@
+{
+  "name": "Update Blog Post - SEO Optimization",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 168
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger (Weekly)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get all blog posts and select one to update\n// This example updates the most recent post\n\n// In a real scenario, you'd fetch from API\n// For now, we'll generate update data\n\nconst updates = {\n  slug: 'your-post-slug-here', // Replace with actual slug\n  title: 'Updated Title with Better SEO Keywords',\n  excerpt: 'Updated excerpt with more SEO-friendly description.',\n  seoKeywords: 'updated, keywords, for, better, seo',\n  // content: '...', // Optional: update content\n  // tags: ['updated', 'tags'], // Optional: update tags\n};\n\nreturn {\n  json: updates\n};"
+      },
+      "id": "generate-updates",
+      "name": "Generate Updates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/blog/posts/={{$json.slug}}",
+        "method": "PUT",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "slug",
+              "value": "={{$json.slug}}"
+            },
+            {
+              "name": "title",
+              "value": "={{$json.title}}"
+            },
+            {
+              "name": "excerpt",
+              "value": "={{$json.excerpt}}"
+            },
+            {
+              "name": "seoKeywords",
+              "value": "={{$json.seoKeywords}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "update-post",
+      "name": "Update Blog Post",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [650, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Weekly)": {
+      "main": [
+        [
+          {
+            "node": "Generate Updates",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Updates": {
+      "main": [
+        [
+          {
+            "node": "Update Blog Post",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2026-02-15T00:00:00.000Z",
+  "versionId": "1"
+}

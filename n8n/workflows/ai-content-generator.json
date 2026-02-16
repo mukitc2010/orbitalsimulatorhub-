@@ -1,0 +1,132 @@
+{
+  "name": "AI Content Generator - OpenAI Integration",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 2
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger (Every 2 Hours)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Select category and generate prompt\nconst categories = [\n  'nasa-news',\n  'space-facts',\n  'satellite-tutorials',\n  'astronomy-lessons'\n];\n\nconst category = categories[Math.floor(Math.random() * categories.length)];\n\nconst prompts = {\n  'nasa-news': 'Write a 500-word blog post about the latest NASA mission or discovery. Include orbital mechanics concepts, link to simulator, and make it SEO-friendly.',\n  'space-facts': 'Write a 400-word blog post about an interesting space fact related to satellites or orbital mechanics. Include formulas and links to our simulator.',\n  'satellite-tutorials': 'Write a 600-word tutorial explaining how a specific type of satellite works. Include orbital mechanics, formulas, and practical examples.',\n  'astronomy-lessons': 'Write a 500-word educational post about astronomy concepts. Connect to orbital mechanics and include links to our learning resources.'\n};\n\nreturn {\n  json: {\n    category,\n    prompt: prompts[category],\n    temperature: 0.7,\n    maxTokens: 1000\n  }\n};"
+      },
+      "id": "generate-prompt",
+      "name": "Generate Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "resource": "text",
+        "operation": "completion",
+        "model": "gpt-4",
+        "options": {
+          "temperature": "={{$json.temperature}}",
+          "maxTokens": "={{$json.maxTokens}}"
+        },
+        "prompt": "={{$json.prompt}}\n\nRequirements:\n- Include internal links to /simulator, /formulas-library, /satellites\n- Use markdown formatting\n- Include SEO keywords\n- Write engaging, educational content\n- Target length: 400-600 words"
+      },
+      "id": "openai-generate",
+      "name": "OpenAI Generate",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "typeVersion": 1.3,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse AI response and format for blog API\nconst aiResponse = $input.item.json.choices[0].message.content;\nconst category = $('Generate Prompt').item.json.category;\n\n// Extract title (first line or generate from content)\nconst lines = aiResponse.split('\\n');\nlet title = lines[0].replace(/^#+\\s*/, '').trim();\nif (!title || title.length < 10) {\n  title = 'Space Science and Orbital Mechanics Explained';\n}\n\n// Generate slug\nconst slug = title\n  .toLowerCase()\n  .replace(/[^a-z0-9]+/g, '-')\  .replace(/^-|-$/g, '');\n\n// Extract excerpt (first paragraph or generate)\nlet excerpt = lines.find(line => line.trim().length > 50 && !line.startsWith('#'));\nif (!excerpt) {\n  excerpt = `Learn about ${title.toLowerCase()} and discover how orbital mechanics makes space exploration possible.`;\n}\nexcerpt = excerpt.substring(0, 200);\n\n// Get today's date\nconst today = new Date().toISOString().split('T')[0];\n\n// Generate tags\nconst tagMap = {\n  'nasa-news': ['NASA', 'space exploration', 'missions'],\n  'space-facts': ['space facts', 'orbital mechanics', 'satellites'],\n  'satellite-tutorials': ['satellites', 'tutorial', 'orbital mechanics'],\n  'astronomy-lessons': ['astronomy', 'stars', 'space science']\n};\n\nconst tags = tagMap[category] || ['space', 'orbital mechanics'];\nconst seoKeywords = tags.join(', ');\n\nreturn {\n  json: {\n    slug,\n    title,\n    excerpt,\n    content: aiResponse,\n    category,\n    date: today,\n    tags,\n    seoKeywords\n  }\n};"
+      },
+      "id": "format-content",
+      "name": "Format Content",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/blog/posts",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "slug",
+              "value": "={{$json.slug}}"
+            },
+            {
+              "name": "title",
+              "value": "={{$json.title}}"
+            },
+            {
+              "name": "excerpt",
+              "value": "={{$json.excerpt}}"
+            },
+            {
+              "name": "content",
+              "value": "={{$json.content}}"
+            },
+            {
+              "name": "category",
+              "value": "={{$json.category}}"
+            },
+            {
+              "name": "date",
+              "value": "={{$json.date}}"
+            },
+            {
+              "name": "tags",
+              "value": "={{$json.tags}}"
+            },
+            {
+              "name": "seoKeywords",
+              "value": "={{$json.seoKeywords}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "post-to-api",
+      "name": "Post to Blog API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1050, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Every 2 Hours)": {
+      "main": [[{ "node": "Generate Prompt", "type": "main", "index": 0 }]]
+    },
+    "Generate Prompt": {
+      "main": [[{ "node": "OpenAI Generate", "type": "main", "index": 0 }]]
+    },
+    "OpenAI Generate": {
+      "main": [[{ "node": "Format Content", "type": "main", "index": 0 }]]
+    },
+    "Format Content": {
+      "main": [[{ "node": "Post to Blog API", "type": "main", "index": 0 }]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2026-02-15T00:00:00.000Z",
+  "versionId": "1"
+}

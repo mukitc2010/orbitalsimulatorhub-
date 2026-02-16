@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Orbital Simulator Hub Blog</title>
+    <link>https://orbitalsimulatorhub.com/blog</link>
+    <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 15 Feb 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How the ISS Orbits Earth 16 Times Every Day</title>
+      <link>https://orbitalsimulatorhub.com/blog/how-iss-orbits-earth-16-times-daily</link>
+      <description>The International Space Station completes one orbit every 90 minutes, meaning astronauts see 16 sunrises and sunsets in a single day. Learn why this happens and how orbital mechanics make it possible.</description>
+      <pubDate>Sat, 15 Feb 2026 00:00:00 GMT</pubDate>
+      <category>space-facts</category>
+    </item>
+    <item>
+      <title>NASA James Webb Telescope: Latest Discoveries in 2026</title>
+      <link>https://orbitalsimulatorhub.com/blog/nasa-james-webb-telescope-new-discoveries-2026</link>
+      <description>The James Webb Space Telescope continues to revolutionize astronomy. Latest findings include ancient galaxies, exoplanet atmospheres, and insights into star formation.</description>
+      <pubDate>Sat, 15 Feb 2026 00:00:00 GMT</pubDate>
+      <category>nasa-news</category>
+    </item>
+    <item>
+      <title>What is Geostationary Orbit? Explained Simply</title>
+      <link>https://orbitalsimulatorhub.com/blog/what-is-geostationary-orbit-explained</link>
+      <description>Geostationary satellites appear to stay fixed in the sky. Learn why they orbit at exactly 35,786 km, how they're used for TV and weather, and the physics behind this special orbit.</description>
+      <pubDate>Fri, 14 Feb 2026 00:00:00 GMT</pubDate>
+      <category>satellite-tutorials</category>
+    </item>
+    <item>
+      <title>Why Satellites Don't Fall: Gravity and Velocity Explained</title>
+      <link>https://orbitalsimulatorhub.com/blog/why-satellites-dont-fall-gravity-explained</link>
+      <description>Satellites don't fall because they're moving fast enough sideways that they keep missing Earth. Learn the physics behind orbital motion and why speed matters.</description>
+      <pubDate>Fri, 14 Feb 2026 00:00:00 GMT</pubDate>
+      <category>astronomy-lessons</category>
+    </item>
+  </channel>
+</rss>

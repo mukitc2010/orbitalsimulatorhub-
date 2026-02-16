@@ -1,0 +1,127 @@
+{
+  "name": "Auto Blog Posting + Auto Deploy to Live Site",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generate blog post content\nconst categories = [\n  'nasa-news',\n  'space-facts',\n  'satellite-tutorials',\n  'astronomy-lessons'\n];\n\nconst topics = {\n  'nasa-news': [\n    'NASA Perseverance Rover discovers new evidence of ancient water on Mars',\n    'James Webb Telescope reveals stunning images of distant galaxies',\n    'SpaceX launches Falcon Heavy with 50 Starlink satellites',\n    'ISS astronauts conduct groundbreaking space experiments',\n    'NASA announces plans for Artemis Moon mission'\n  ],\n  'space-facts': [\n    'The ISS orbits Earth 16 times per day',\n    'There are over 5,000 active satellites in orbit',\n    'Satellites travel at speeds up to 17,000 mph',\n    'GPS satellites orbit at 20,200 km altitude',\n    'Geostationary satellites stay fixed above one point'\n  ],\n  'satellite-tutorials': [\n    'How GPS satellites calculate your exact location',\n    'Why weather satellites orbit at 36,000 km',\n    'How Starlink creates global internet coverage',\n    'Understanding Low Earth Orbit (LEO) satellites',\n    'How geostationary satellites stay in place'\n  ],\n  'astronomy-lessons': [\n    'How stars are born from gas clouds',\n    'What happens when a star dies: supernovas explained',\n    'Why black holes have event horizons',\n    'How planets form around young stars',\n    'Understanding the life cycle of stars'\n  ]\n};\n\nconst category = categories[Math.floor(Math.random() * categories.length)];\nconst topicList = topics[category];\nconst title = topicList[Math.floor(Math.random() * topicList.length)];\n\nconst slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');\nconst excerpt = `Learn about ${title.toLowerCase()} and how it relates to orbital mechanics and space physics.`;\n\nconst content = `# ${title}\n\n${title} is a fascinating topic in space science and orbital mechanics.\n\n## Key Points\n\n- This topic relates directly to how satellites and spacecraft operate\n- Understanding this helps explain orbital mechanics\n- Real-world applications include satellite communication and space exploration\n\n## How It Works\n\nThe physics behind ${title.toLowerCase()} involves fundamental principles of orbital mechanics, including:\n\n- Gravity and its effects on orbital motion\n- Velocity requirements for different orbits\n- The relationship between altitude and orbital period\n\n## Try It Yourself\n\nUse our [orbit simulator](/simulator) to see these concepts in action. Learn more about [orbital mechanics](/learn/orbital-mechanics) and [space formulas](/formulas-library).\n\n## Conclusion\n\n${title.toLowerCase()} demonstrates the incredible complexity and beauty of space physics. Understanding these concepts helps us appreciate how satellites and spacecraft navigate through space.`;\n\nconst tagMap = {\n  'nasa-news': ['NASA', 'space exploration', 'missions'],\n  'space-facts': ['space facts', 'orbital mechanics', 'satellites'],\n  'satellite-tutorials': ['satellites', 'tutorial', 'orbital mechanics'],\n  'astronomy-lessons': ['astronomy', 'stars', 'space science']\n};\n\nconst tags = tagMap[category] || ['space', 'orbital mechanics'];\nconst seoKeywords = tags.join(', ');\nconst today = new Date().toISOString().split('T')[0];\n\nreturn {\n  json: {\n    slug,\n    title,\n    excerpt,\n    content,\n    category,\n    date: today,\n    tags,\n    seoKeywords\n  }\n};"
+      },
+      "id": "generate-content",
+      "name": "Generate Content",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/blog/posts",
+        "method": "POST",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {"name": "slug", "value": "={{$json.slug}}"},
+            {"name": "title", "value": "={{$json.title}}"},
+            {"name": "excerpt", "value": "={{$json.excerpt}}"},
+            {"name": "content", "value": "={{$json.content}}"},
+            {"name": "category", "value": "={{$json.category}}"},
+            {"name": "date", "value": "={{$json.date}}"},
+            {"name": "tags", "value": "={{$json.tags}}"},
+            {"name": "seoKeywords", "value": "={{$json.seoKeywords}}"}
+          ]
+        },
+        "options": {}
+      },
+      "id": "post-to-api",
+      "name": "Post to Blog API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "command": "cd \"c:\\Users\\mukit\\OneDrive\\Desktop\\nasaArchitech\\satellite_simulator_web\" && git add client/src/data/blogPosts.ts client/src/data/seo-config.ts client/index.html && git commit -m \"Auto-update: New blog post - {{$json.title}}\" && git push origin main"
+      },
+      "id": "git-commit-push",
+      "name": "Git Commit & Push",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.vercel.com/v1/deployments",
+        "method": "POST",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_VERCEL_TOKEN"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "name",
+              "value": "orbitalsimulatorhub"
+            },
+            {
+              "name": "gitSource",
+              "value": "{\"type\":\"github\",\"repo\":\"mukithc/orbitalsimulatorhub-\",\"ref\":\"main\"}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "trigger-vercel",
+      "name": "Trigger Vercel Deploy (Optional)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1050, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [[{"node": "Generate Content", "type": "main", "index": 0}]]
+    },
+    "Generate Content": {
+      "main": [[{"node": "Post to Blog API", "type": "main", "index": 0}]]
+    },
+    "Post to Blog API": {
+      "main": [[{"node": "Git Commit & Push", "type": "main", "index": 0}]]
+    },
+    "Git Commit & Push": {
+      "main": [[{"node": "Trigger Vercel Deploy (Optional)", "type": "main", "index": 0}]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2026-02-15T00:00:00.000Z",
+  "versionId": "1"
+}

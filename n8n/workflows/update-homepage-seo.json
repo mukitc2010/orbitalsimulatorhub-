@@ -1,0 +1,140 @@
+{
+  "name": "Update Homepage SEO - Auto Optimization",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 168
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger (Weekly)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generate optimized SEO for homepage\n// Updates meta tags to improve Google rankings\n\nconst currentDate = new Date().toISOString().split('T')[0];\nconst year = new Date().getFullYear();\n\n// Generate fresh SEO data with current year and trending keywords\nconst seoUpdate = {\n  path: '/',\n  title: `Orbital Simulator Hub | orbitalsimulatorhub.com — Satellite Orbit Simulator & Space Learning ${year}`,\n  description: `Free interactive 3D satellite orbit simulator ${year}. Learn orbital mechanics, NASA physics, space science. Real-time LEO, MEO, GEO orbit visualization. Perfect for students, scientists, and PhD researchers. Updated ${currentDate}.`,\n  keywords: `orbital mechanics simulator ${year}, satellite orbit simulator free, 3D space simulator online, learn orbital mechanics, NASA orbit calculator, ISS orbit time, how satellites orbit earth, space physics for kids, gravity simulator, orbital mechanics for PhD, aerospace research tools`,\n  ogTitle: `Orbital Simulator Hub | Free Satellite Orbit Simulator ${year}`,\n  ogDescription: `Free interactive 3D satellite orbit simulator. Learn orbital mechanics with real NASA physics. Perfect for students, scientists, and researchers.`\n};\n\nreturn {\n  json: seoUpdate\n};"
+      },
+      "id": "generate-seo",
+      "name": "Generate Homepage SEO",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/seo/config",
+        "method": "PUT",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "path",
+              "value": "={{$json.path}}"
+            },
+            {
+              "name": "title",
+              "value": "={{$json.title}}"
+            },
+            {
+              "name": "description",
+              "value": "={{$json.description}}"
+            },
+            {
+              "name": "keywords",
+              "value": "={{$json.keywords}}"
+            },
+            {
+              "name": "ogTitle",
+              "value": "={{$json.ogTitle}}"
+            },
+            {
+              "name": "ogDescription",
+              "value": "={{$json.ogDescription}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "update-seo",
+      "name": "Update Homepage SEO",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/seo/update-html",
+        "method": "POST",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "path",
+              "value": "={{$json.path}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "update-html",
+      "name": "Update HTML File",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [850, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Weekly)": {
+      "main": [
+        [
+          {
+            "node": "Generate Homepage SEO",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Homepage SEO": {
+      "main": [
+        [
+          {
+            "node": "Update Homepage SEO",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update Homepage SEO": {
+      "main": [
+        [
+          {
+            "node": "Update HTML File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2026-02-15T00:00:00.000Z",
+  "versionId": "1"
+}

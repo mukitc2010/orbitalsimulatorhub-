@@ -3,7 +3,11 @@ import { trpc } from "../trpc";
 import { APP_NAME } from "../const";
 import { getAstroBotReplyLocal, ASTROBOT_FALLBACK } from "../astrobotKnowledge";
 
-type Message = { role: "user" | "astrobot"; text: string };
+type Message = { 
+  role: "user" | "astrobot"; 
+  text: string;
+  references?: Array<{ title: string; url: string; source: string }>;
+};
 
 const WELCOME = `Hey! I'm AstroBot — your NASA sidekick for the ${APP_NAME}. Ask me anything about orbits, the ISS, or why satellites don't fall down. I'll keep it clear and interesting!`;
 
@@ -28,7 +32,11 @@ export function AstroBot() {
 
     const localReply = getAstroBotReplyLocal(q);
     if (localReply) {
-      setMessages((m) => [...m, { role: "astrobot", text: localReply }]);
+      setMessages((m) => [...m, { 
+        role: "astrobot", 
+        text: localReply.answer,
+        references: localReply.references 
+      }]);
       setLoading(false);
       return;
     }
@@ -79,6 +87,24 @@ export function AstroBot() {
                   <span className="text-lg mr-1" aria-hidden>🛰️</span>
                 )}
                 <span className="whitespace-pre-wrap">{msg.text}</span>
+                {msg.role === "astrobot" && msg.references && msg.references.length > 0 && (
+                  <div className="mt-3 pt-3 border-t border-gray-300">
+                    <p className="text-xs font-semibold text-gray-600 mb-2">📚 Sources & References:</p>
+                    <div className="space-y-1">
+                      {msg.references.map((ref, idx) => (
+                        <a
+                          key={idx}
+                          href={ref.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-xs text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          • {ref.title} <span className="text-gray-500">({ref.source})</span>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           ))}

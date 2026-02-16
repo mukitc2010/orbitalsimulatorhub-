@@ -1,4 +1,6 @@
 import { Link } from "wouter";
+import { useState, useEffect } from "react";
+import { getLatestResearchContent, type ResearchContent } from "../data/researchContent";
 
 const CATEGORIES = [
   {
@@ -55,6 +57,14 @@ const CATEGORIES = [
 ];
 
 export function ResearchHub() {
+  const [researchContent, setResearchContent] = useState<ResearchContent[]>([]);
+
+  useEffect(() => {
+    // Load latest research content
+    const latest = getLatestResearchContent(10);
+    setResearchContent(latest);
+  }, []);
+
   return (
     <div className="max-w-4xl mx-auto space-y-10">
       <div className="text-center mb-8">
@@ -66,6 +76,66 @@ export function ResearchHub() {
           Researching <strong>NASA</strong> or <strong>Newton&apos;s laws</strong>? Doing <strong>PhD or graduate-level</strong> work? Need <strong>algorithms</strong>, <strong>real mission data</strong>, or <strong>curated references</strong>? Use the links below.
         </p>
       </div>
+
+      {/* Latest Research Content Section */}
+      {researchContent.length > 0 && (
+        <section className="rounded-xl bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200 p-6 mb-6">
+          <h2 className="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+            📚 Latest Research Content
+            <span className="text-sm font-normal text-slate-600">(Updated Daily)</span>
+          </h2>
+          <p className="text-sm text-slate-700 mb-4">
+            Fresh research content for PhD students and researchers. Updated every 24 hours with new papers, discoveries, methodologies, and data sources.
+          </p>
+          <div className="space-y-4">
+            {researchContent.slice(0, 5).map((content) => (
+              <div
+                key={content.id}
+                className="bg-white rounded-lg border border-slate-200 p-4 hover:shadow-md transition"
+              >
+                <div className="flex items-start justify-between mb-2">
+                  <div className="flex-1">
+                    <h3 className="font-bold text-slate-900 mb-1">{content.title}</h3>
+                    <div className="flex flex-wrap gap-2 mb-2">
+                      <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded">
+                        {content.type.replace("-", " ")}
+                      </span>
+                      <span className="text-xs px-2 py-1 bg-purple-100 text-purple-800 rounded">
+                        {content.category}
+                      </span>
+                      <span className="text-xs px-2 py-1 bg-gray-100 text-gray-800 rounded">
+                        {content.date}
+                      </span>
+                    </div>
+                    <p className="text-sm text-slate-700 mb-3">{content.summary}</p>
+                    {content.references && content.references.length > 0 && (
+                      <div className="mt-3 pt-3 border-t border-slate-200">
+                        <p className="text-xs font-semibold text-slate-600 mb-2">References:</p>
+                        <div className="flex flex-wrap gap-2">
+                          {content.references.slice(0, 3).map((ref, idx) => (
+                            <a
+                              key={idx}
+                              href={ref.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-xs text-blue-600 hover:text-blue-800 hover:underline"
+                            >
+                              {ref.title}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-slate-600 mt-4">
+            💡 <strong>Tip:</strong> All research content includes references, formulas, data points, and related topics to help with your research papers.
+          </p>
+        </section>
+      )}
 
       <section className="rounded-xl bg-slate-800 text-white p-4 mb-6 border-2 border-slate-700">
         <h2 className="font-bold mb-2">🎓 For PhD researchers &amp; advanced aerospace study</h2>
@@ -100,10 +170,70 @@ export function ResearchHub() {
         <div className="flex flex-wrap gap-2">
           <Link href="/learn/orbital-mechanics"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">What is orbital mechanics?</a></Link>
           <Link href="/learn/space-questions"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Why don&apos;t satellites fall?</a></Link>
+          <Link href="/learn/experiments"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Space Experiments</a></Link>
           <Link href="/formulas-library"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Formula library</a></Link>
           <Link href="/satellites"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Real satellite orbits</a></Link>
           <Link href="/calculators"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Calculators</a></Link>
+          <Link href="/compare/orbits"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Compare Orbits</a></Link>
+          <Link href="/quiz/orbital-mechanics"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Quiz</a></Link>
         </div>
+      </section>
+
+      <section className="rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 p-6 mb-6">
+        <h2 className="text-xl font-bold text-slate-800 mb-3">🚀 How It Works Pages</h2>
+        <p className="text-sm text-slate-700 mb-4">
+          Detailed explanations of how space technology works. Perfect for understanding real-world applications of orbital mechanics!
+        </p>
+        <div className="grid md:grid-cols-2 gap-3">
+          <Link href="/learn/how-gps-works">
+            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+              <span className="font-medium text-slate-800">📍 How GPS Works</span>
+              <p className="text-xs text-slate-600 mt-1">Trilateration, atomic clocks, GPS constellation</p>
+            </a>
+          </Link>
+          <Link href="/learn/how-nasa-launches-satellite">
+            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+              <span className="font-medium text-slate-800">🚀 How NASA Launches</span>
+              <p className="text-xs text-slate-600 mt-1">Rocket stages, launch sequence, orbital insertion</p>
+            </a>
+          </Link>
+          <Link href="/learn/how-spacex-lands-rockets">
+            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+              <span className="font-medium text-slate-800">🛬 How SpaceX Lands</span>
+              <p className="text-xs text-slate-600 mt-1">Reusable rockets, grid fins, landing sequence</p>
+            </a>
+          </Link>
+          <Link href="/learn/how-mars-rovers-work">
+            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+              <span className="font-medium text-slate-800">🤖 How Mars Rovers Work</span>
+              <p className="text-xs text-slate-600 mt-1">Landing, navigation, science instruments</p>
+            </a>
+          </Link>
+          <Link href="/learn/how-starlink-works">
+            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+              <span className="font-medium text-slate-800">🌐 How Starlink Works</span>
+              <p className="text-xs text-slate-600 mt-1">Satellite constellation, LEO internet, global coverage</p>
+            </a>
+          </Link>
+          <Link href="/learn/how-iss-works">
+            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+              <span className="font-medium text-slate-800">🏠 How ISS Works</span>
+              <p className="text-xs text-slate-600 mt-1">Orbit, life support, power, science on ISS</p>
+            </a>
+          </Link>
+        </div>
+      </section>
+
+      <section className="rounded-xl bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200 p-6 mb-6">
+        <h2 className="text-xl font-bold text-slate-800 mb-3">📅 Mission Timeline</h2>
+        <p className="text-sm text-slate-700 mb-4">
+          Explore the history of space exploration from Sputnik to James Webb. See key missions, achievements, and milestones.
+        </p>
+        <Link href="/missions/timeline">
+          <a className="inline-block px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+            View Mission Timeline →
+          </a>
+        </Link>
       </section>
 
       <section className="rounded-xl bg-[var(--accent-cyan)]/10 border-2 border-[var(--accent-cyan)]/40 p-4 mb-6">

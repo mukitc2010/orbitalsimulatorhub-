@@ -1,0 +1,107 @@
+{
+  "name": "Update SEO for Pages - Auto Optimization",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 168
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger (Weekly)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generate SEO updates for pages\n// This updates SEO meta tags for better Google ranking\n\nconst pages = [\n  {\n    path: '/learn/aerospace',\n    title: 'Aerospace & NASA Reference | Orbital Simulator Hub — PhD Research Resources 2026',\n    description: 'Comprehensive aerospace reference for PhD researchers: NASA missions, Newton laws, orbital mechanics algorithms, rover calculations, NTRS, SPICE, Horizons. Updated 2026.',\n    keywords: 'aerospace PhD research, NASA reference PhD, orbital mechanics algorithms, aerospace calculations PhD, NASA NTRS, SPICE toolkit, JPL Horizons, aerospace textbooks PhD',\n    ogTitle: 'Aerospace & NASA Reference — PhD Research Resources',\n    ogDescription: 'PhD-level aerospace reference: NASA missions, algorithms, calculations, and research resources.'\n  },\n  {\n    path: '/simulator',\n    title: '3D Satellite Orbit Simulator | LEO MEO GEO — Interactive Space Simulator 2026',\n    description: 'Free interactive 3D satellite orbit simulator. Visualize LEO, MEO, GEO orbits in real-time. Compare satellites, see orbital mechanics in action. Updated 2026.',\n    keywords: 'satellite orbit simulator 3D, LEO MEO GEO simulator, interactive orbit simulator, free space simulator, orbital mechanics visualization',\n    ogTitle: '3D Satellite Orbit Simulator — Interactive',\n    ogDescription: 'Interactive 3D simulator for satellite orbits. Visualize LEO, MEO, GEO in real-time.'\n  },\n  {\n    path: '/blog',\n    title: 'Space Blog | Daily NASA News & Space Facts — Orbital Simulator Hub Blog 2026',\n    description: 'Daily space blog: NASA news, space facts, satellite tutorials, astronomy lessons. Fresh content about orbital mechanics and space physics. Updated daily 2026.',\n    keywords: 'space blog 2026, NASA news blog, space facts daily, satellite tutorials blog, astronomy lessons, orbital mechanics blog',\n    ogTitle: 'Space Blog — Daily NASA News & Facts',\n    ogDescription: 'Daily blog about NASA, space facts, satellites, and orbital mechanics.'\n  }\n];\n\n// Select a page to update (or update all)\nconst pageToUpdate = pages[Math.floor(Math.random() * pages.length)];\n\nreturn {\n  json: pageToUpdate\n};"
+      },
+      "id": "generate-seo",
+      "name": "Generate SEO Updates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/seo/config",
+        "method": "PUT",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "path",
+              "value": "={{$json.path}}"
+            },
+            {
+              "name": "title",
+              "value": "={{$json.title}}"
+            },
+            {
+              "name": "description",
+              "value": "={{$json.description}}"
+            },
+            {
+              "name": "keywords",
+              "value": "={{$json.keywords}}"
+            },
+            {
+              "name": "ogTitle",
+              "value": "={{$json.ogTitle}}"
+            },
+            {
+              "name": "ogDescription",
+              "value": "={{$json.ogDescription}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "update-seo",
+      "name": "Update SEO Config",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [650, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Weekly)": {
+      "main": [
+        [
+          {
+            "node": "Generate SEO Updates",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate SEO Updates": {
+      "main": [
+        [
+          {
+            "node": "Update SEO Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2026-02-15T00:00:00.000Z",
+  "versionId": "1"
+}
