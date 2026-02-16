@@ -15,6 +15,24 @@ import { RealSatelliteData } from "./pages/RealSatelliteData";
 import { LearnOrbitalMechanics } from "./pages/LearnOrbitalMechanics";
 import { SpaceQuestions } from "./pages/SpaceQuestions";
 import { Calculators } from "./pages/Calculators";
+import { Blog } from "./pages/Blog";
+import { BlogPost } from "./pages/BlogPost";
+import { BlogCategory } from "./pages/BlogCategory";
+import { SpaceExperiments } from "./pages/SpaceExperiments";
+import { HowGPSWorks } from "./pages/HowGPSWorks";
+import { CompareOrbits } from "./pages/CompareOrbits";
+import { HowNASALaunches } from "./pages/HowNASALaunches";
+import { HowSpaceXLands } from "./pages/HowSpaceXLands";
+import { HowMarsRovers } from "./pages/HowMarsRovers";
+import { HowStarlinkWorks } from "./pages/HowStarlinkWorks";
+import { HowISSWorks } from "./pages/HowISSWorks";
+import { MissionTimeline } from "./pages/MissionTimeline";
+import { OrbitalMechanicsQuiz } from "./pages/OrbitalMechanicsQuiz";
+import { HowSolarSystemWorks } from "./pages/HowSolarSystemWorks";
+import { WhatIsMoon } from "./pages/WhatIsMoon";
+import { Astrophysics } from "./pages/Astrophysics";
+import { QuantumPhysics } from "./pages/QuantumPhysics";
+import { QuantumPhysicsNASA } from "./pages/QuantumPhysicsNASA";
 import { NotFound } from "./pages/NotFound";
 
 function App() {
@@ -37,6 +55,24 @@ function App() {
           <Route path="/learn/orbital-mechanics" component={LearnOrbitalMechanics} />
           <Route path="/learn/space-questions" component={SpaceQuestions} />
           <Route path="/calculators" component={Calculators} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/blog/category/:category" component={BlogCategory} />
+          <Route path="/blog/:slug" component={BlogPost} />
+          <Route path="/learn/experiments" component={SpaceExperiments} />
+          <Route path="/learn/how-gps-works" component={HowGPSWorks} />
+          <Route path="/learn/how-nasa-launches-satellite" component={HowNASALaunches} />
+          <Route path="/learn/how-spacex-lands-rockets" component={HowSpaceXLands} />
+          <Route path="/learn/how-mars-rovers-work" component={HowMarsRovers} />
+          <Route path="/learn/how-starlink-works" component={HowStarlinkWorks} />
+          <Route path="/learn/how-iss-works" component={HowISSWorks} />
+          <Route path="/compare/orbits" component={CompareOrbits} />
+          <Route path="/missions/timeline" component={MissionTimeline} />
+          <Route path="/quiz/orbital-mechanics" component={OrbitalMechanicsQuiz} />
+          <Route path="/learn/how-solar-system-works" component={HowSolarSystemWorks} />
+          <Route path="/learn/what-is-moon" component={WhatIsMoon} />
+          <Route path="/learn/astrophysics" component={Astrophysics} />
+          <Route path="/learn/quantum-physics" component={QuantumPhysics} />
+          <Route path="/learn/quantum-physics-nasa" component={QuantumPhysicsNASA} />
           <Route component={NotFound} />
         </Switch>
       </main>

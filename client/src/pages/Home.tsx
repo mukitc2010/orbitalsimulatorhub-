@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { APP_NAME } from "../const";
+import { DailyTopicIcon } from "../components/DailyTopicIcon";
 
 const FEATURES = [
   { href: "/play#simulator", icon: "🛸", title: "3D Simulator", desc: "Add LEO, MEO, GEO satellites and watch orbits in real time.", cyan: true },
@@ -9,13 +10,29 @@ const FEATURES = [
 
 const CARDS = [
   { href: "/simulator", icon: "🛸", title: "Orbit simulator", desc: "3D satellite orbit simulator — LEO, MEO, GEO. See height, speed, period.", cyan: true },
+  { href: "/blog", icon: "📰", title: "Space Blog", desc: "Daily NASA news, space facts, satellite tutorials, astronomy lessons. Fresh content daily.", pink: true },
   { href: "/formulas-library", icon: "🧮", title: "Space formulas", desc: "Gravity, orbital velocity, escape velocity, Kepler, rocket equation + calculators.", gold: true },
   { href: "/satellites", icon: "🛰", title: "Real satellite orbits", desc: "ISS, Starlink, GPS, weather satellites — altitude, speed, orbit time.", cyan: true },
   { href: "/calculators", icon: "🔢", title: "Orbit calculator", desc: "NASA-style orbit calculator, gravity calculator, escape velocity.", pink: true },
   { href: "/learn/orbital-mechanics", icon: "🌌", title: "What is orbital mechanics?", desc: "Kids, beginner, and engineer versions. Learn how satellites orbit Earth.", cyan: true },
   { href: "/learn/space-questions", icon: "❓", title: "Why don't satellites fall?", desc: "Simple answers: moon, astronauts float, what if satellite stops.", pink: true },
-  { href: "/astrobot", icon: "🤖", title: "Ask AstroBot", desc: "Ask anything about space, orbits, NASA, rockets.", gold: true },
-  { href: "/research", icon: "📚", title: "Research & PhD", desc: "NASA, Newton, algorithms, real data — for students and researchers.", cyan: true },
+  { href: "/learn/experiments", icon: "🔬", title: "Space Experiments", desc: "5 hands-on DIY experiments to understand orbital mechanics and space physics!", gold: true },
+  { href: "/learn/how-gps-works", icon: "📍", title: "How GPS Works", desc: "Learn how GPS satellites help you navigate. Trilateration, atomic clocks, constellation.", cyan: true },
+  { href: "/compare/orbits", icon: "📊", title: "Compare Orbits", desc: "Side-by-side comparison: LEO vs MEO vs GEO. See differences in altitude, speed, period.", pink: true },
+  { href: "/learn/how-nasa-launches-satellite", icon: "🚀", title: "How NASA Launches", desc: "Step-by-step guide: rocket stages, launch sequence, orbital insertion, real examples.", gold: true },
+  { href: "/learn/how-spacex-lands-rockets", icon: "🛬", title: "How SpaceX Lands", desc: "Revolutionary reusable rockets. Grid fins, landing sequence, boost-back burn explained.", cyan: true },
+  { href: "/learn/how-mars-rovers-work", icon: "🤖", title: "How Mars Rovers Work", desc: "Landing sequence, navigation systems, science instruments, communication with Earth.", pink: true },
+  { href: "/learn/how-starlink-works", icon: "🌐", title: "How Starlink Works", desc: "Global internet from space. Satellite constellation, LEO benefits, ground stations.", gold: true },
+  { href: "/learn/how-iss-works", icon: "🏠", title: "How ISS Works", desc: "International Space Station: orbit, life support, power, science, assembly in space.", cyan: true },
+  { href: "/missions/timeline", icon: "📅", title: "Mission Timeline", desc: "History of space exploration from Sputnik to James Webb. Key missions and achievements.", pink: true },
+  { href: "/quiz/orbital-mechanics", icon: "📝", title: "Orbital Mechanics Quiz", desc: "Test your knowledge! 15 questions on orbits, satellites, and space physics.", gold: true },
+  { href: "/learn/how-solar-system-works", icon: "🌍", title: "How Solar System Works", desc: "Kepler's laws, orbital mechanics, Hohmann transfers, gravity assists. Math behind planetary motion.", cyan: true },
+  { href: "/learn/what-is-moon", icon: "🌙", title: "What is the Moon?", desc: "Scientific facts: formation, composition, orbit, phases, tides. NASA missions and research.", pink: true },
+  { href: "/learn/astrophysics", icon: "⭐", title: "Astrophysics", desc: "Stars, black holes, dark matter, cosmology, exoplanets. Math and physics of the universe.", gold: true },
+  { href: "/learn/quantum-physics", icon: "⚛️", title: "Quantum Physics", desc: "Wave-particle duality, uncertainty principle, Schrödinger equation, quantum computing basics.", cyan: true },
+  { href: "/learn/quantum-physics-nasa", icon: "🔬", title: "Quantum Physics in NASA", desc: "How NASA uses quantum physics: atomic clocks, quantum sensors, quantum communication, future tech.", pink: true },
+  { href: "/astrobot", icon: "🤖", title: "Ask AstroBot", desc: "Ask anything about space, orbits, NASA, rockets.", cyan: true },
+  { href: "/research", icon: "📚", title: "Research & PhD", desc: "NASA, Newton, algorithms, real data — for students and researchers.", pink: true },
 ];
 
 function FeatureCard({ href, icon, title, desc, cyan, pink, gold }: {
@@ -59,6 +76,11 @@ export function Home() {
         </p>
       </section>
 
+      {/* Daily Featured Topic */}
+      <section className="mb-8">
+        <DailyTopicIcon />
+      </section>
+
       <section className="rounded-xl bg-white border border-slate-200 p-4 mb-8 text-sm text-slate-700">
         <h2 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">What this site teaches</h2>
         <p className="text-xs text-[var(--accent-cyan)] font-medium mb-2">✨ Same physics NASA uses — no magic, just math and gravity.</p>
@@ -100,6 +122,11 @@ export function Home() {
 
       {/* Quick links */}
       <div className="mt-10 flex flex-wrap justify-center gap-3">
+        <Link href="/blog">
+          <a className="px-4 py-2 rounded-full text-sm font-medium bg-slate-100 text-slate-700 hover:bg-[var(--accent-cyan)]/20 hover:text-[#0f172a] transition">
+            📰 Space Blog
+          </a>
+        </Link>
         <Link href="/research">
           <a className="px-4 py-2 rounded-full text-sm font-medium bg-slate-100 text-slate-700 hover:bg-[var(--accent-cyan)]/20 hover:text-[#0f172a] transition">
             Research &amp; topics
@@ -118,6 +145,16 @@ export function Home() {
         <Link href="/simulator">
           <a className="px-4 py-2 rounded-full text-sm font-medium bg-slate-100 text-slate-700 hover:bg-[var(--accent-cyan)]/20 hover:text-[#0f172a] transition">
             Open Simulator
+          </a>
+        </Link>
+        <Link href="/learn/experiments">
+          <a className="px-4 py-2 rounded-full text-sm font-medium bg-slate-100 text-slate-700 hover:bg-[var(--accent-cyan)]/20 hover:text-[#0f172a] transition">
+            🔬 Experiments
+          </a>
+        </Link>
+        <Link href="/quiz/orbital-mechanics">
+          <a className="px-4 py-2 rounded-full text-sm font-medium bg-slate-100 text-slate-700 hover:bg-[var(--accent-cyan)]/20 hover:text-[#0f172a] transition">
+            📝 Quiz
           </a>
         </Link>
       </div>
