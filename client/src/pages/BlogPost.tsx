@@ -1,5 +1,6 @@
 import { Link, useRoute } from "wouter";
 import { getPostBySlug, getRecentPosts } from "../data/blogPosts";
+import { BlogContent } from "../components/BlogContent";
 
 export function BlogPost() {
   const [match, params] = useRoute<{ slug: string }>("/blog/:slug");
@@ -27,11 +28,16 @@ export function BlogPost() {
           <time className="text-xs text-slate-500">{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</time>
         </div>
         <h1 className="headline mb-4">{post.title}</h1>
-        <div className="prose prose-slate max-w-none text-slate-700 whitespace-pre-line leading-relaxed">{post.content}</div>
+        <BlogContent content={post.content} />
         {post.tags.length > 0 && (
           <div className="mt-6 pt-6 border-t border-slate-200">
             <p className="text-sm text-slate-600 mb-2">Tags:</p>
             <div className="flex flex-wrap gap-2">
+              <Link href={`/blog/category/${post.category}`}>
+                <a className="px-2 py-1 rounded bg-slate-100 text-slate-700 text-xs hover:bg-[var(--accent-cyan)]/20 hover:text-[var(--accent-cyan)] transition">
+                  View more in {post.category.replace("-", " ")}
+                </a>
+              </Link>
               {post.tags.map((tag) => (
                 <span key={tag} className="px-2 py-1 rounded bg-slate-100 text-slate-700 text-xs">
                   {tag}

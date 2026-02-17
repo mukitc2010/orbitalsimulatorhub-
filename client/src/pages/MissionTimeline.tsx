@@ -93,6 +93,13 @@ const MISSIONS: Mission[] = [
     description: "Most powerful space telescope",
     achievement: "Sees the oldest light in the universe",
     category: "telescope"
+  },
+  {
+    year: "2025+",
+    name: "Artemis Program",
+    description: "NASA's return to the Moon",
+    achievement: "Crewed lunar flyby (Artemis II), then lunar landing; stepping stone to Mars",
+    category: "exploration"
   }
 ];
 
@@ -128,9 +135,22 @@ export function MissionTimeline() {
         </p>
       </div>
 
+      <div className="rounded-xl bg-gradient-to-br from-slate-50 to-blue-50 border-2 border-slate-200 p-6">
+        <h2 className="text-lg font-bold text-slate-800 mb-2">What is a mission timeline?</h2>
+        <p className="text-slate-700 mb-2">
+          A mission timeline is a chronological list of major space missions and milestones. It helps you see how human spaceflight and robotic exploration have evolved—from the first satellite (Sputnik) to the first Moon landing (Apollo 11), space stations, Mars rovers, and today’s Artemis program.
+        </p>
+        <p className="text-slate-700 mb-2">
+          <strong>Why it matters for students and researchers:</strong> Each mission relied on the same physics—orbital mechanics, gravity, and propulsion—that you can learn and experiment with on this site. Understanding the timeline helps you connect history to the math and science behind every launch and landing.
+        </p>
+        <p className="text-slate-700 text-sm">
+          Use the categories below to filter by type (launch, exploration, station, telescope, rover). For Artemis and NASA’s return to the Moon, see the <strong>Artemis Program</strong> entry and our <Link href="/blog/artemis-moon-mission-update-2026-humans-returning-to-moon"><a className="text-[var(--accent-cyan)] hover:underline font-medium">Artemis 2026 blog post</a></Link> for the latest updates.
+        </p>
+      </div>
+
       <div className="rounded-xl bg-blue-50 border-2 border-blue-200 p-4 mb-6">
         <p className="text-sm text-slate-700">
-          <strong>💡 Tip:</strong> Click on mission categories below to filter. Each mission used orbital mechanics - the same physics in our <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline font-medium">3D Simulator</Link>!
+          <strong>💡 Tip:</strong> Click on mission categories below to filter. Each mission used orbital mechanics—the same physics in our <Link href="/simulator"><a className="text-[var(--accent-cyan)] hover:underline font-medium">3D Simulator</a></Link>!
         </p>
       </div>
 
