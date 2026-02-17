@@ -4,13 +4,16 @@ import { APP_NAME } from "../const";
 export function NavigationHeader() {
   const [location] = useLocation();
   const nav = [
-    { path: "/", label: "Home", title: "Orbital mechanics simulator and space learning" },
-    { path: "/simulator", label: "Simulator", title: "3D satellite orbit simulator — LEO, MEO, GEO" },
-    { path: "/blog", label: "Blog", title: "Daily NASA news, space facts, satellite tutorials, astronomy lessons" },
-    { path: "/formulas-library", label: "Formulas", title: "Space formulas: gravity, orbital velocity, escape velocity, Kepler, rocket equation" },
-    { path: "/satellites", label: "Satellites", title: "Real satellite orbits: ISS, Starlink, GPS, weather satellites" },
-    { path: "/calculators", label: "Calculators", title: "Orbit calculator, gravity calculator, escape velocity" },
-    { path: "/astrobot", label: "AstroBot", title: "Ask AstroBot anything about space and orbits" },
+    { path: "/", label: "Home", title: "Orbital Simulator Hub — space, aerospace, and AI learning" },
+    { path: "/play", label: "Learn Space", title: "Learn orbits, NASA, and space with the simulator" },
+    { path: "/learn/aerospace", label: "Aerospace", title: "Aerospace & NASA reference for students and researchers" },
+    { path: "/ai-in-aerospace", label: "AI in Space", title: "How AI is transforming aerospace and space exploration" },
+    { path: "/learn/quantum-space", label: "Quantum", title: "Quantum physics and space technology" },
+    { path: "/simulator", label: "Simulators", title: "3D satellite orbit simulator — LEO, MEO, GEO" },
+    { path: "/learn/experiments", label: "Projects Lab", title: "Space experiments and projects" },
+    { path: "/blog", label: "Blog", title: "Daily NASA news, space facts, satellite tutorials" },
+    { path: "/astrobot", label: "Ask Astro AI", title: "Ask AstroBot anything about space, orbits, and NASA" },
+    { path: "/careers", label: "Space Careers", title: "How to become NASA engineer, astronaut, space scientist" },
     { path: "/research", label: "Research", title: "NASA, Newton, orbital mechanics — for students and PhD researchers" },
     { path: "/guide", label: "Guide", title: "How to use the simulator" },
   ];

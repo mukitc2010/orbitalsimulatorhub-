@@ -13,6 +13,7 @@ import { createSEORouter } from "../seo-api";
 import { createDailyTopicsRouter } from "../daily-topics-api";
 import { createAstroBotRouter } from "../astrobot-api";
 import { createResearchContentRouter } from "../research-content-api";
+import { createGitDeployRouter } from "../git-deploy-api";
 
 const PORT = Number(process.env.PORT) || 3001;
 const app = express();
@@ -34,6 +35,9 @@ app.use("/api/astrobot", createAstroBotRouter());
 // Research Content API endpoints for n8n automation
 app.use("/api/research", createResearchContentRouter());
 
+// Git Deploy API endpoints for n8n automation
+app.use("/api/git", createGitDeployRouter());
+
 // tRPC endpoints
 app.use(
   "/api/trpc",
@@ -50,4 +54,5 @@ app.listen(PORT, "0.0.0.0", () => {
   console.log(`Daily Topics API at http://localhost:${PORT}/api/daily-topics`);
   console.log(`AstroBot API at http://localhost:${PORT}/api/astrobot`);
   console.log(`Research Content API at http://localhost:${PORT}/api/research`);
+  console.log(`Git Deploy API at http://localhost:${PORT}/api/git`);
 });

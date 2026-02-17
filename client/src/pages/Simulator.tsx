@@ -151,6 +151,14 @@ export function Simulator() {
           <p className="text-xs text-slate-600 mb-2 rounded-lg bg-[var(--accent-gold)]/15 border border-[var(--accent-gold)]/40 px-3 py-2">
             🎯 <strong>Mission:</strong> Add LEO, MEO, and GEO — then compare their heights and orbital periods in the info panel below. Real physics, real numbers!
           </p>
+          <div className="flex flex-wrap items-center gap-3 mb-3">
+            <span className="text-xs font-medium text-slate-600">Mission mode:</span>
+            <span className="px-2 py-1 rounded bg-[var(--accent-cyan)]/20 text-slate-800 text-xs font-medium">Earth</span>
+            <span className="text-xs text-slate-500">Moon / Mars orbits coming soon</span>
+            <Link href="/compare/orbits">
+              <a className="text-xs text-[var(--accent-cyan)] font-medium hover:underline">Compare Earth vs Mars orbit →</a>
+            </Link>
+          </div>
           <EarthVisualization satellites={satellites} scale={SCALE} />
           <p className="text-xs text-slate-500 mt-1 mb-2" aria-hidden="true">
             What you&apos;re seeing: you&apos;re looking at Earth from space. Each dot is a satellite; the line behind it is the path it has taken.
@@ -158,7 +166,7 @@ export function Simulator() {
           <SimulatorInfoPanel satellites={satellites} stepSeconds={STEP_SEC} speedMultiplier={SIM_SPEEDS[speedIdx]} />
           <GravityLearnPanel />
           <div className="mt-4 rounded-lg border border-slate-200 bg-white p-3">
-            <h3 className="text-sm font-bold text-slate-700 mb-2">Time controls</h3>
+            <h3 className="text-sm font-bold text-slate-700 mb-2">Time controls &amp; speed</h3>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
               <div className="flex items-center gap-2">
                 <button type="button" onClick={() => setPlaying((p) => !p)} className="px-4 py-2 rounded-lg font-medium bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
@@ -173,15 +181,18 @@ export function Simulator() {
                 <span className="text-xs text-slate-500">Advance by {STEP_SEC * SIM_SPEEDS[speedIdx]} s of simulation time</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-medium text-slate-700">Speed:</span>
+                <span className="text-sm font-medium text-slate-700">Time speed:</span>
                 {SIM_SPEEDS.map((s, i) => (
                   <button key={s} type="button" onClick={() => setSpeedIdx(i)} className={`px-2 py-1 rounded text-sm ${speedIdx === i ? "bg-[var(--accent-cyan)] text-[#0f172a]" : "border border-slate-300 hover:bg-slate-50"}`} title={`${s}x: 1 real second = ${s} min in simulation`}>
                     {s}x
                   </button>
                 ))}
-                <span className="text-xs text-slate-500">How fast time runs</span>
+                <span className="text-xs text-slate-500">1x = real time; 8x = 8 min per second</span>
               </div>
             </div>
+          </div>
+          <div className="mt-3 rounded-lg border border-[var(--accent-gold)]/40 bg-[var(--accent-gold)]/10 p-3 text-sm text-slate-700">
+            <strong>Rocket launch simulator</strong> — coming soon. For now, explore <Link href="/learn/how-nasa-launches-satellite"><a className="text-[var(--accent-cyan)] font-medium hover:underline">How NASA launches</a></Link> and <Link href="/compare/orbits"><a className="text-[var(--accent-cyan)] font-medium hover:underline">Compare orbits</a></Link>.
           </div>
         </div>
         <div>

@@ -31,8 +31,12 @@ const CARDS = [
   { href: "/learn/astrophysics", icon: "⭐", title: "Astrophysics", desc: "Stars, black holes, dark matter, cosmology, exoplanets. Math and physics of the universe.", gold: true },
   { href: "/learn/quantum-physics", icon: "⚛️", title: "Quantum Physics", desc: "Wave-particle duality, uncertainty principle, Schrödinger equation, quantum computing basics.", cyan: true },
   { href: "/learn/quantum-physics-nasa", icon: "🔬", title: "Quantum Physics in NASA", desc: "How NASA uses quantum physics: atomic clocks, quantum sensors, quantum communication, future tech.", pink: true },
+  { href: "/learn/aerodynamics", icon: "✈", title: "Aerodynamics & Space Flight", desc: "Lift, drag, re-entry, rocket aerodynamics, heat shields, CFD. How NASA designs efficient vehicles.", cyan: true },
+  { href: "/learn/quantum-space", icon: "⚛", title: "Quantum Physics & Space", desc: "Quantum sensors, atomic clocks, GPS accuracy, quantum communication and computing for NASA.", pink: true },
+  { href: "/ai-in-aerospace", icon: "🤖", title: "AI in Aerospace", desc: "How AI transforms aerospace: satellite navigation, autonomous spacecraft, Mars rovers, mission planning.", gold: true },
   { href: "/astrobot", icon: "🤖", title: "Ask AstroBot", desc: "Ask anything about space, orbits, NASA, rockets.", cyan: true },
   { href: "/research", icon: "📚", title: "Research & PhD", desc: "NASA, Newton, algorithms, real data — for students and researchers.", pink: true },
+  { href: "/careers", icon: "👨‍🚀", title: "Space Careers", desc: "How to become NASA engineer, astronaut, space scientist, AI space engineer.", gold: true },
 ];
 
 function FeatureCard({ href, icon, title, desc, cyan, pink, gold }: {
@@ -59,16 +63,25 @@ export function Home() {
     <div className="max-w-4xl mx-auto">
       {/* Hero with gradient */}
       <section className="hero-gradient rounded-2xl px-6 py-10 sm:py-12 text-center mb-10">
+        <p className="text-sm font-medium text-[var(--accent-cyan)] uppercase tracking-wider mb-2">🌌 Welcome to</p>
         <h1 className="headline mb-3 text-white">{APP_NAME}</h1>
-        <p className="subhead max-w-xl mx-auto mb-2 text-slate-300">
-          Launch into learning — real orbits, real physics, real NASA.
+        <p className="text-lg sm:text-xl font-semibold text-white/95 max-w-xl mx-auto mb-2">
+          Explore Space. Learn Physics. Build the Future.
         </p>
-        <p className="text-sm text-slate-400 max-w-lg mx-auto mb-6">
-          Run a 3D satellite simulator, crack the formulas behind gravity &amp; motion, and ask anything about space.
+        <p className="subhead max-w-2xl mx-auto mb-4 text-slate-300">
+          Dive into real aerospace science, orbital mechanics, quantum physics, and AI-powered space technology.
+          From Newton&apos;s laws to satellite simulations and deep space exploration — everything here is built for students, engineers, researchers, and future astronauts.
         </p>
+        <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-slate-300 max-w-2xl mx-auto mb-6 list-none pl-0">
+          <li>🔭 Learn real NASA concepts</li>
+          <li>🛰 Run orbital simulations</li>
+          <li>🤖 Discover AI in aerospace</li>
+          <li>⚛ Explore quantum physics &amp; space science</li>
+          <li>📡 Study real mission data &amp; algorithms</li>
+        </ul>
         <Link href="/play">
-          <a className="hero-cta inline-block px-8 py-4 rounded-xl font-black text-lg bg-[var(--accent-cyan)] text-[#0f172a] shadow-lg hover:opacity-95 hover:scale-[1.03] transition mb-6">
-            🚀 Start Learning →
+          <a className="hero-cta inline-block px-8 py-4 rounded-xl font-black text-lg bg-[var(--accent-cyan)] text-[#0f172a] shadow-lg hover:opacity-95 hover:scale-[1.03] transition mb-2">
+            🚀 Start your journey beyond Earth →
           </a>
         </Link>
         <p className="text-xs text-slate-400 uppercase tracking-wider font-medium">
@@ -79,6 +92,37 @@ export function Home() {
       {/* Daily Featured Topic */}
       <section className="mb-8">
         <DailyTopicIcon />
+      </section>
+
+      {/* Homepage highlights: chatbot, news, featured mission */}
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-8">
+        <Link href="/astrobot">
+          <a className="rounded-xl border border-slate-200 bg-white p-4 hover:border-[var(--accent-cyan)] hover:shadow-sm transition block">
+            <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">AI space chatbot</h3>
+            <p className="text-sm text-slate-600 mb-2">Ask anything about space, orbits, NASA.</p>
+            <span className="text-xs text-[var(--accent-cyan)] font-medium">Ask AstroBot →</span>
+          </a>
+        </Link>
+        <Link href="/blog">
+          <a className="rounded-xl border border-slate-200 bg-white p-4 hover:border-[var(--accent-cyan)] hover:shadow-sm transition block">
+            <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Daily space news</h3>
+            <p className="text-sm text-slate-600 mb-2">NASA, SpaceX, missions, astronomy.</p>
+            <span className="text-xs text-[var(--accent-cyan)] font-medium">Read blog →</span>
+          </a>
+        </Link>
+        <div className="rounded-xl border border-slate-200 bg-white p-4">
+          <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Featured NASA mission</h3>
+          <p className="text-sm font-medium text-slate-800 mb-0.5">Artemis — return to the Moon</p>
+          <p className="text-xs text-slate-600">Orion, SLS, lunar Gateway, and crewed lunar landing.</p>
+          <Link href="/missions/timeline"><a className="text-xs text-[var(--accent-cyan)] font-medium hover:underline mt-1 inline-block">Mission timeline →</a></Link>
+        </div>
+      </section>
+
+      <section className="rounded-xl border-2 border-[var(--accent-pink)]/30 bg-gradient-to-br from-slate-50 to-pink-50/30 p-4 mb-4">
+        <h2 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">🪐 Space fact of the day</h2>
+        <p className="text-slate-700">
+          The ISS orbits Earth about every 90 minutes — astronauts see 16 sunrises and sunsets per day. At ~400 km altitude, orbital speed is roughly 7.66 km/s.
+        </p>
       </section>
 
       <section className="rounded-xl bg-white border border-slate-200 p-4 mb-8 text-sm text-slate-700">
@@ -119,6 +163,77 @@ export function Home() {
           <FeatureCard key={c.href} href={c.href} icon={c.icon} title={c.title} desc={c.desc} cyan={c.cyan} pink={c.pink} gold={c.gold} />
         ))}
       </div>
+
+      {/* Future Space Technology */}
+      <section className="rounded-xl border-2 border-[var(--accent-gold)]/50 bg-gradient-to-br from-slate-50 to-amber-50/50 p-6 mb-8">
+        <h2 className="text-xl font-bold text-slate-800 mb-2">🚀 Future Space Technology</h2>
+        <p className="text-sm text-slate-600 mb-4">
+          The next frontier: AI spacecraft, Mars cities, space tourism, space mining, and quantum space communication.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1.5 rounded-full text-xs font-medium bg-[var(--accent-gold)]/20 text-slate-800">AI spacecraft</span>
+          <span className="px-3 py-1.5 rounded-full text-xs font-medium bg-[var(--accent-gold)]/20 text-slate-800">Mars cities</span>
+          <span className="px-3 py-1.5 rounded-full text-xs font-medium bg-[var(--accent-gold)]/20 text-slate-800">Space tourism</span>
+          <span className="px-3 py-1.5 rounded-full text-xs font-medium bg-[var(--accent-gold)]/20 text-slate-800">Space mining</span>
+          <span className="px-3 py-1.5 rounded-full text-xs font-medium bg-[var(--accent-gold)]/20 text-slate-800">Quantum space communication</span>
+        </div>
+        <p className="text-xs text-slate-500 mt-3">
+          <Link href="/ai-in-aerospace"><a className="text-[var(--accent-cyan)] font-medium hover:underline">AI in Aerospace</a></Link>
+          {" · "}
+          <Link href="/learn/quantum-space"><a className="text-[var(--accent-cyan)] font-medium hover:underline">Quantum &amp; Space</a></Link>
+        </p>
+      </section>
+
+      {/* Ask AstroBot / Study Prompts */}
+      <section className="rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-white p-6 mb-8">
+        <h2 className="text-xl font-bold text-slate-800 mb-2">🧠 Ask AstroBot / Study Prompts</h2>
+        <p className="text-sm text-slate-600 mb-4">
+          Try these prompts with <Link href="/astrobot"><a className="text-[var(--accent-cyan)] font-medium hover:underline">Ask AstroBot</a></Link> for beginner to advanced learning.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 text-sm">
+          <div>
+            <h3 className="font-bold text-slate-700 mb-1">Beginner</h3>
+            <ul className="text-slate-600 space-y-0.5 list-disc pl-4">
+              <li>What is orbital mechanics?</li>
+              <li>How do satellites stay in orbit?</li>
+              <li>What is escape velocity?</li>
+              <li>How do rockets work?</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-700 mb-1">Intermediate</h3>
+            <ul className="text-slate-600 space-y-0.5 list-disc pl-4">
+              <li>Explain LEO vs GEO orbit</li>
+              <li>How GPS satellites work</li>
+              <li>How space stations stay in orbit</li>
+              <li>How re-entry works</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-700 mb-1">Advanced</h3>
+            <ul className="text-slate-600 space-y-0.5 list-disc pl-4">
+              <li>Explain Hohmann transfer orbit</li>
+              <li>AI in spacecraft navigation</li>
+              <li>Quantum physics in GPS</li>
+              <li>How SpaceX lands rockets</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-700 mb-1">Research</h3>
+            <ul className="text-slate-600 space-y-0.5 list-disc pl-4">
+              <li>Future of interplanetary travel</li>
+              <li>AI-controlled satellites</li>
+              <li>Quantum communication in space</li>
+              <li>Mars colonization systems</li>
+            </ul>
+          </div>
+        </div>
+        <Link href="/astrobot">
+          <a className="inline-block mt-4 px-5 py-2.5 rounded-xl font-medium bg-[var(--accent-cyan)]/20 text-[#0f172a] hover:bg-[var(--accent-cyan)]/30 transition">
+            🤖 Open Ask AstroBot →
+          </a>
+        </Link>
+      </section>
 
       {/* Quick links */}
       <div className="mt-10 flex flex-wrap justify-center gap-3">

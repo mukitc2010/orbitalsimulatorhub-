@@ -33,6 +33,10 @@ import { WhatIsMoon } from "./pages/WhatIsMoon";
 import { Astrophysics } from "./pages/Astrophysics";
 import { QuantumPhysics } from "./pages/QuantumPhysics";
 import { QuantumPhysicsNASA } from "./pages/QuantumPhysicsNASA";
+import { Aerodynamics } from "./pages/Aerodynamics";
+import { QuantumSpace } from "./pages/QuantumSpace";
+import { AIInAerospace } from "./pages/AIInAerospace";
+import { SpaceCareers } from "./pages/SpaceCareers";
 import { NotFound } from "./pages/NotFound";
 
 function App() {
@@ -73,6 +77,10 @@ function App() {
           <Route path="/learn/astrophysics" component={Astrophysics} />
           <Route path="/learn/quantum-physics" component={QuantumPhysics} />
           <Route path="/learn/quantum-physics-nasa" component={QuantumPhysicsNASA} />
+          <Route path="/learn/aerodynamics" component={Aerodynamics} />
+          <Route path="/learn/quantum-space" component={QuantumSpace} />
+          <Route path="/ai-in-aerospace" component={AIInAerospace} />
+          <Route path="/careers" component={SpaceCareers} />
           <Route component={NotFound} />
         </Switch>
       </main>

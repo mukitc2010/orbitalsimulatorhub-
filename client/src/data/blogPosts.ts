@@ -11,6 +11,95 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "latest-space-news-nasa-mission-today",
+    title: "Latest Space News and NASA Mission Today: Your Daily Guide to What’s Happening Beyond Earth",
+    excerpt: "Stay updated with today's space news: NASA missions, Artemis, Mars rovers, James Webb, and the technology shaping the future of space exploration. Written for students and researchers.",
+    content: `**Introduction**
+
+What is happening in space right now? From the International Space Station to NASA’s Moon and Mars programs, space agencies and companies are busy every day. This article gives you a clear, accurate summary of the latest space news and today’s NASA missions—written in simple language for students, teachers, and researchers.
+
+---
+
+**Daily space news summary**
+
+**NASA and Artemis:** NASA’s Artemis program aims to return humans to the Moon and prepare for Mars. Recent focus is on the Space Launch System (SLS), the Orion spacecraft, and the lunar Gateway. Uncrewed and crewed test flights are key milestones.
+
+**International Space Station (ISS):** The ISS remains a hub for science in low Earth orbit. Crews conduct experiments in biology, physics, and Earth observation. Commercial crew vehicles (SpaceX Crew Dragon, Boeing Starliner) ferry astronauts to and from the station.
+
+**Mars missions:** NASA’s Perseverance rover continues to explore Jezero Crater, collecting samples for future return to Earth. The Ingenuity helicopter has shown that powered flight is possible on Mars. ESA and other partners are planning the next steps for Mars exploration.
+
+**James Webb Space Telescope:** The James Webb Space Telescope keeps delivering new views of the early universe, exoplanet atmospheres, and star formation. Its infrared observations are changing how we understand galaxies and the origins of planetary systems.
+
+**Commercial space:** Companies like SpaceX, Blue Origin, and others are launching satellites, sending cargo and crew to the ISS, and developing heavy-lift rockets and lunar landers. Starlink and other constellations are expanding global connectivity from space.
+
+---
+
+**Featured NASA mission today**
+
+**Artemis: Return to the Moon**
+
+Artemis is NASA’s flagship program to land the first woman and the first person of color on the Moon and to build a sustainable presence there.
+
+**Main elements:**
+- **SLS (Space Launch System):** NASA’s heavy-lift rocket designed to send Orion and payloads to the Moon.
+- **Orion:** The crew capsule that will carry astronauts around the Moon and back to Earth.
+- **Gateway:** A small space station in lunar orbit that will support crewed landings and science.
+- **Human Landing System (HLS):** Spacecraft that will take astronauts from Gateway down to the lunar surface.
+
+**Why it matters:** Artemis is a stepping stone to Mars. Learning to live and work on the Moon will test the technology and operations needed for longer missions to the Red Planet.
+
+**Follow along:** Check [NASA’s Artemis page](https://www.nasa.gov/specials/artemis/) and our [Mission Timeline](/missions/timeline) for updates and history.
+
+---
+
+**Space technology explanation**
+
+**Orbital mechanics:** Satellites and spacecraft follow paths determined by gravity and speed. Low Earth orbit (LEO) is used by the ISS and many satellites; higher orbits are used for GPS and weather (e.g. geostationary orbit). The same physics—Kepler’s laws and Newton’s gravity—apply to the Moon, Mars, and beyond.
+
+**Propulsion and rockets:** Rockets provide the thrust needed to reach orbit and to change orbits. Multi-stage rockets discard empty stages to reduce mass. Reusable boosters (e.g. SpaceX Falcon 9) lower cost and enable more frequent launches.
+
+**Navigation and communication:** Spacecraft use radio links to talk to Earth. Atomic clocks on GPS satellites provide precise time for navigation. Deep-space missions rely on NASA’s Deep Space Network for tracking and data.
+
+**Instruments and sensors:** Cameras, spectrometers, radars, and other instruments on orbiters and rovers collect data. This data is used for science, navigation, and planning the next missions.
+
+You can explore the basics with our [orbit simulator](/simulator), [formulas library](/formulas-library), and [How NASA launches](/learn/how-nasa-launches-satellite).
+
+---
+
+**Future of space exploration**
+
+**Near term (this decade):** More Artemis Moon landings, construction of lunar Gateway, progress on Mars sample return, and continued science from James Webb and other telescopes. Commercial space stations may begin to supplement or follow the ISS.
+
+**Medium term (2030s):** Sustained lunar presence, first human missions to Mars, better space-based solar power and communications, and more capable robotics and landers.
+
+**Long term:** Permanent bases on the Moon and Mars, deeper space exploration, and advances in propulsion (e.g. nuclear or advanced chemical) could make faster trips and more ambitious missions possible.
+
+**Education and careers:** Students and researchers can get involved through NASA internships, university programs, and learning resources like our [Space Careers](/careers) and [Research](/research) pages.
+
+---
+
+**FAQ section**
+
+**1. What is NASA’s main mission right now?**
+NASA’s main human spaceflight goal is the Artemis program: returning humans to the Moon and building a sustainable presence there as a step toward Mars. Science missions (e.g. James Webb, Mars rovers, Earth science) continue in parallel.
+
+**2. How can I follow today’s space news?**
+You can follow NASA’s website and social media, ESA, SpaceX, and other agencies and companies. Our [Space Blog](/blog) and [Mission Timeline](/missions/timeline) summarize key missions and concepts in one place.
+
+**3. What is the difference between LEO, MEO, and GEO?**
+LEO (Low Earth Orbit) is roughly 200–2,000 km altitude—used by the ISS and many satellites. MEO (Medium Earth Orbit) is used by navigation satellites like GPS (~20,200 km). GEO (Geostationary) is about 35,786 km; satellites there appear fixed over one spot and are used for weather and communications.
+
+**4. Why does NASA want to go back to the Moon?**
+The Moon is a testbed for technology, operations, and science needed for Mars. It offers resources (e.g. water ice), and learning to work there helps NASA and partners prepare for longer, farther missions.
+
+**5. Where can I learn orbital mechanics and space physics?**
+You can start with our [orbital mechanics guide](/learn/orbital-mechanics), [formulas library](/formulas-library), and [3D simulator](/simulator). For deeper study, see our [Aerospace reference](/learn/aerospace) and [Research hub](/research).`,
+    category: "nasa-news",
+    date: "2026-02-15",
+    tags: ["NASA", "space news", "Artemis", "ISS", "Mars", "James Webb", "space exploration"],
+    seoKeywords: "latest space news, NASA mission today, space news today, NASA Artemis, daily space news, space exploration 2026, NASA Mars mission, James Webb telescope, space technology, orbital mechanics",
+  },
+  {
     slug: "how-iss-orbits-earth-16-times-daily",
     title: "How the ISS Orbits Earth 16 Times Every Day",
     excerpt: "The International Space Station completes one orbit every 90 minutes, meaning astronauts see 16 sunrises and sunsets in a single day. Learn why this happens and how orbital mechanics make it possible.",
