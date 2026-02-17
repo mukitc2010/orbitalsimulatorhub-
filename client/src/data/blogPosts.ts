@@ -261,6 +261,189 @@ Use our [orbit simulator](/simulator) to see this in action. Add a satellite and
     tags: ["gravity", "orbital mechanics", "physics", "satellites"],
     seoKeywords: "why satellites don't fall, gravity and orbits, orbital velocity explained",
   },
+  {
+    slug: "artemis-moon-mission-update-2026-humans-returning-to-moon",
+    title: "Artemis Moon Mission Update 2026: Humans Returning to the Moon",
+    excerpt: "NASA's Artemis program is preparing to return humans to the Moon for the first time in over 50 years. Learn about Artemis II, Orion, Lunar Gateway, and why it matters for Mars.",
+    content: `NASA's Artemis program is preparing to return humans to the Moon for the first time in over 50 years.
+
+**What is Artemis?**
+
+Artemis is NASA's next-generation Moon mission designed to:
+
+- Send astronauts back to the Moon
+- Build a lunar base
+- Prepare for future Mars missions
+
+**Current progress (2026)**
+
+- Artemis II preparing for crewed lunar flyby
+- Orion spacecraft testing complete
+- Lunar Gateway station under development
+- New lunar spacesuits being tested
+
+**Why it matters**
+
+Artemis will:
+
+- Establish permanent human presence on Moon
+- Test deep-space technologies
+- Prepare for Mars exploration
+
+For students and researchers, Artemis represents the future of space travel and human exploration. Follow [NASA Artemis](https://www.nasa.gov/specials/artemis/) and our [Mission Timeline](/missions/timeline) for updates.`,
+    category: "nasa-news",
+    date: "2026-02-17",
+    tags: ["Artemis", "NASA", "Moon", "Orion", "Gateway", "space exploration"],
+    seoKeywords: "Artemis 2026, NASA Moon mission, humans return to Moon, Artemis II, Orion spacecraft, Lunar Gateway",
+  },
+  {
+    slug: "what-happens-if-you-fall-into-black-hole",
+    title: "What Happens If You Fall Into a Black Hole?",
+    excerpt: "Black holes are among the most mysterious objects in the universe. Learn what a black hole is, what scientists predict would happen if you fell in, and why NASA studies them.",
+    content: `Black holes are among the most mysterious objects in the universe.
+
+**What is a black hole?**
+
+A black hole forms when a massive star collapses. Gravity becomes so strong that nothing — not even light — can escape.
+
+**If you fell into one…**
+
+Scientists predict:
+
+- You would stretch like spaghetti (spaghettification)
+- Time would slow down near the event horizon
+- Light would bend around you
+- You would never escape
+
+**Why NASA studies black holes**
+
+Black holes help us understand:
+
+- Gravity
+- Time
+- Quantum physics
+- Galaxy formation
+
+The James Webb telescope and other observatories are now studying black holes in deep space. Explore more in our [astronomy lessons](/blog/category/astronomy-lessons) and [orbital mechanics](/learn/orbital-mechanics).`,
+    category: "space-facts",
+    date: "2026-02-17",
+    tags: ["black hole", "gravity", "NASA", "James Webb", "astronomy"],
+    seoKeywords: "black hole, fall into black hole, spaghettification, event horizon, NASA black hole research",
+  },
+  {
+    slug: "how-satellites-send-internet-around-the-world",
+    title: "How Satellites Send Internet Around the World",
+    excerpt: "Modern satellites don't just take pictures — they provide global internet. Learn how it works, the types (LEO vs GEO), and why satellite internet matters for remote areas and the future.",
+    content: `Modern satellites don't just take pictures — they provide global internet.
+
+**How it works**
+
+1. Ground station sends signal to satellite
+2. Satellite receives and amplifies signal
+3. Satellite sends signal back to Earth
+4. Your phone or dish receives internet
+
+**Types of internet satellites**
+
+**LEO (Low Earth Orbit)**
+
+- Fast internet
+- Used by Starlink
+- Low latency
+
+**GEO (Geostationary)**
+
+- High altitude
+- Used for TV & weather
+- Covers large area
+
+**Why important**
+
+Satellite internet:
+
+- Connects remote areas
+- Supports aviation & ships
+- Enables global communication
+- Helps during disasters
+
+Future satellites will use AI and quantum communication for even faster and safer internet. Try our [orbit simulator](/simulator) and read [How GPS works](/learn/how-gps-works) and [Quantum physics in space](/learn/quantum-space).`,
+    category: "satellite-tutorials",
+    date: "2026-02-17",
+    tags: ["satellite internet", "LEO", "GEO", "Starlink", "communications"],
+    seoKeywords: "satellite internet, how satellite internet works, LEO GEO satellites, Starlink, global internet",
+  },
+  {
+    slug: "why-mars-looks-red-from-earth",
+    title: "Why Mars Looks Red From Earth",
+    excerpt: "Mars is called the Red Planet because of its color. Learn why it's red, what NASA rovers found, and why Mars matters for future human colonies and the search for life.",
+    content: `Mars is called the Red Planet because of its color.
+
+**Why is Mars red?**
+
+Mars surface contains **iron oxide (rust)**. Just like rust on Earth:
+
+- Iron + oxygen → red color
+- Dust storms spread this red dust across the entire planet
+
+**What NASA discovered**
+
+Mars rovers found:
+
+- Ancient rivers
+- Ice underground
+- Evidence of past water
+- Possible past life conditions
+
+**Why Mars matters**
+
+Mars is the top candidate for:
+
+- Future human colony
+- Space exploration base
+- Search for alien life
+
+NASA and SpaceX plan human missions to Mars within the next decades. Learn more about [orbital mechanics](/learn/orbital-mechanics) and [space careers](/careers).`,
+    category: "astronomy-lessons",
+    date: "2026-02-17",
+    tags: ["Mars", "Red Planet", "NASA", "rovers", "space exploration"],
+    seoKeywords: "why is Mars red, Red Planet, Mars surface, NASA Mars rovers, Mars exploration",
+  },
+  {
+    slug: "how-quantum-physics-helps-satellites-navigate-space",
+    title: "How Quantum Physics Helps Satellites Navigate Space",
+    excerpt: "Modern satellites rely on quantum physics more than most people realize. Atomic clocks, quantum sensors, and the future of deep space navigation and quantum internet.",
+    content: `Modern satellites rely on quantum physics more than most people realize.
+
+**Atomic clocks**
+
+GPS satellites use atomic clocks based on quantum vibrations of atoms.
+
+If timing off by **1 microsecond** → GPS error = **300 meters**
+
+**Quantum sensors**
+
+Future satellites use:
+
+- Quantum magnetometers
+- Quantum gravimeters
+- Atom interferometers
+
+These allow ultra-precise navigation and Earth mapping.
+
+**Future**
+
+Quantum tech will enable:
+
+- Deep space navigation
+- Quantum internet
+- Ultra-secure communication
+
+Dive deeper in our [Quantum physics & space](/learn/quantum-space) page and [AI in aerospace](/ai-in-aerospace) for how AI and quantum tech shape the future of space.`,
+    category: "astronomy-lessons",
+    date: "2026-02-17",
+    tags: ["quantum physics", "satellites", "atomic clocks", "GPS", "quantum sensors"],
+    seoKeywords: "quantum physics satellites, atomic clocks GPS, quantum sensors space, satellite navigation quantum",
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
