@@ -53,6 +53,7 @@ import { AstronautExplorer } from "./pages/AstronautExplorer";
 import { AstronautProfile } from "./pages/AstronautProfile";
 import { PlanetHub } from "./pages/PlanetHub";
 import { PlanetDetail } from "./pages/PlanetDetail";
+import { LunarGeology } from "./pages/LunarGeology";
 import { NotFound } from "./pages/NotFound";
 
 function App() {
@@ -94,6 +95,7 @@ function App() {
           <Route path="/quiz/orbital-mechanics" component={OrbitalMechanicsQuiz} />
           <Route path="/learn/how-solar-system-works" component={HowSolarSystemWorks} />
           <Route path="/learn/what-is-moon" component={WhatIsMoon} />
+          <Route path="/learn/lunar-geology" component={LunarGeology} />
           <Route path="/learn/astrophysics" component={Astrophysics} />
           <Route path="/learn/quantum-physics" component={QuantumPhysics} />
           <Route path="/learn/quantum-physics-nasa" component={QuantumPhysicsNASA} />

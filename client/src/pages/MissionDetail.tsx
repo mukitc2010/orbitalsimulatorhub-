@@ -213,6 +213,29 @@ export function MissionDetail() {
         </section>
       )}
 
+      {/* Landing Site Geology */}
+      {mission.surfaceOps?.geology && (
+        <section
+          className="rounded-xl p-6 mb-6"
+          style={{
+            backgroundColor: "var(--bg-card)",
+            border: "1px solid var(--border-color)",
+          }}
+        >
+          <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+            🪨 Landing Site Geology
+          </h2>
+          <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+            {mission.surfaceOps.geology}
+          </p>
+          <Link href="/learn/lunar-geology">
+            <a className="inline-block mt-3 text-sm font-semibold" style={{ color: "var(--accent-primary)" }}>
+              Read full Lunar Geology guide →
+            </a>
+          </Link>
+        </section>
+      )}
+
       {/* Samples Returned */}
       {mission.samplesReturnedKg != null && mission.samplesReturnedKg > 0 && (
         <section className="mb-8">

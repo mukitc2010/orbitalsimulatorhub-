@@ -23,6 +23,7 @@ export interface SurfaceOps {
   landingSite: string;
   moonwalkers: string[];
   surfaceTimeSeconds: number;
+  geology?: string;
 }
 
 export interface Mission {
@@ -72,6 +73,7 @@ const APOLLO_11: Mission = {
     landingSite: "Sea of Tranquility (Mare Tranquillitatis)",
     moonwalkers: ["astronaut_neil_armstrong", "astronaut_buzz_aldrin"],
     surfaceTimeSeconds: 78756,
+    geology: "Mare Tranquillitatis is a vast lunar mare (dark basaltic plain) formed by ancient volcanic eruptions ~3.5–3.8 billion years ago. The basalt lavas flooded a pre-existing impact basin. Apollo 11 collected basalt and regolith samples that confirmed the volcanic origin, established an absolute age for mare surfaces, and provided the first radiometric dates for any extraterrestrial body.",
   },
   samplesReturnedKg: 21.6,
   highlights: [
@@ -114,6 +116,7 @@ const APOLLO_12: Mission = {
     landingSite: "Ocean of Storms (Oceanus Procellarum)",
     moonwalkers: ["astronaut_pete_conrad", "astronaut_alan_bean"],
     surfaceTimeSeconds: 115668,
+    geology: "Oceanus Procellarum is the largest lunar mare — a massive basaltic plain on the Moon's near side. Apollo 12 landed near the Surveyor 3 crater and collected basalts dated ~3.2 billion years — significantly younger than Apollo 11's samples. This established that lunar volcanism persisted over hundreds of millions of years. KREEP (potassium, rare earth elements, phosphorus) enrichment in the region revealed the Moon's asymmetric interior composition.",
   },
   samplesReturnedKg: 34.3,
   highlights: [
@@ -156,19 +159,24 @@ const APOLLO_14: Mission = {
     landingSite: "Fra Mauro",
     moonwalkers: ["astronaut_alan_shepard", "astronaut_edgar_mitchell"],
     surfaceTimeSeconds: 120060,
+    geology: "The Fra Mauro formation is a widespread hilly geological region on the Moon, believed to be a thick blanket of ejecta (debris) from the massive Imbrium Basin impact ~3.85 billion years ago. The Imbrium impact — one of the largest events in lunar history — carved a basin over 1,100 km wide, hurling material hundreds of kilometers across the surface to form the ridged, hummocky Fra Mauro terrain. Apollo 14 targeted this site specifically to collect breccia samples (older rocks fused by impact heat and pressure) that would date the Imbrium event and illuminate the Late Heavy Bombardment period. The crew explored near Cone Crater, a 340-meter impact crater that punched through the Fra Mauro ejecta, exposing deeper, older material. Samples included 'Big Bertha' — a 9 kg breccia containing fragments possibly originating from Earth, and KREEP-rich rocks that revealed the Moon's internal geochemistry.",
   },
   samplesReturnedKg: 42.3,
   highlights: [
     "Alan Shepard became the oldest person to walk on the Moon at age 47",
     "Shepard hit two golf balls on the lunar surface with a makeshift 6-iron",
-    "First mission to land in the lunar highlands",
-    "Collected 42.3 kg of samples from Fra Mauro formation",
+    "First mission to land in the lunar highlands — the Fra Mauro formation",
+    "Fra Mauro ejecta blanket dates Imbrium Basin impact to ~3.85 billion years ago",
+    "Collected 42.3 kg of breccia and regolith samples from Fra Mauro",
+    "'Big Bertha' sample (14321) — 9 kg breccia, possibly contains Earth-origin fragments",
+    "Explored Cone Crater — exposing material from beneath the Fra Mauro ejecta layer",
+    "Deployed ALSEP experiments including seismometer and laser retroreflector",
     "Stuart Roosa carried tree seeds in orbit — later planted as 'Moon Trees'",
-    "Returned the intended Apollo 13 science objectives",
+    "Completed the science objectives originally planned for Apollo 13",
   ],
-  seoTitle: "Apollo 14 — Shepard's Golf Shot on the Moon | Orbital Simulator Hub",
+  seoTitle: "Apollo 14 — Fra Mauro Formation, Shepard's Golf Shot | Orbital Simulator Hub",
   seoDescription:
-    "Learn about Apollo 14: Alan Shepard's return to space, the golf shot on the Moon, and the Fra Mauro landing. Explore crew details, science, and Moon Tree history.",
+    "Learn about Apollo 14: the Fra Mauro formation geology, Alan Shepard's return to space, the golf shot on the Moon, breccia samples, and the Imbrium Basin dating.",
   updatedAt: "2026-02-18T00:00:00Z",
 };
 
@@ -198,6 +206,7 @@ const APOLLO_15: Mission = {
     landingSite: "Hadley-Apennine",
     moonwalkers: ["astronaut_david_scott", "astronaut_james_irwin"],
     surfaceTimeSeconds: 238336,
+    geology: "The Hadley-Apennine region sits at the base of the Apennine Mountains — the rim of the Imbrium Basin — beside Hadley Rille, a 1.5 km wide sinuous channel carved by ancient lava flows. Apollo 15 discovered the 'Genesis Rock' (anorthosite sample 15415), dated at ~4.1 billion years — one of the oldest lunar samples ever found, likely from the original lunar crust. The site provided critical evidence for the Lunar Magma Ocean hypothesis.",
   },
   samplesReturnedKg: 77,
   highlights: [
@@ -240,6 +249,7 @@ const APOLLO_16: Mission = {
     landingSite: "Descartes Highlands",
     moonwalkers: ["astronaut_john_young", "astronaut_charles_duke"],
     surfaceTimeSeconds: 259208,
+    geology: "The Descartes Highlands were expected to contain volcanic rocks, but Apollo 16 surprised scientists by finding impact breccias instead — proving the highlands are primarily shaped by impacts, not volcanism. The 'Descartes formation' consists of material ejected from the Nectaris and Imbrium impacts. This fundamentally changed understanding of lunar highland geology.",
   },
   samplesReturnedKg: 95.8,
   highlights: [
@@ -282,6 +292,7 @@ const APOLLO_17: Mission = {
     landingSite: "Taurus-Littrow Valley",
     moonwalkers: ["astronaut_gene_cernan", "astronaut_harrison_schmitt"],
     surfaceTimeSeconds: 270014,
+    geology: "Taurus-Littrow Valley sits between massive mountain blocks (South Massif, North Massif) at the edge of Mare Serenitatis. Harrison Schmitt — the only geologist to walk on the Moon — discovered orange volcanic glass beads (sample 74220) dated at 3.7 billion years, proving explosive volcanism on the Moon. The valley floor contains both ancient highland material and younger mare basalts, providing a geological cross-section spanning billions of years.",
   },
   samplesReturnedKg: 110.5,
   highlights: [
