@@ -614,10 +614,312 @@ Key principles include:
 How relativistic quantum effects correct GPS accuracy illustrates the beauty and complexity of physics at work in the cosmos. Whether you are a student, researcher, or enthusiast, understanding these concepts opens the door to appreciating the engineering and science that make space exploration possible.
 
 Explore more on our [orbit simulator](/simulator) and [orbital mechanics guide](/learn/orbital-mechanics).`,
-    category: "quantum-physics",
+    category: "astronomy-lessons",
     date: "2026-02-18",
     tags: ["quantum physics", "quantum computing", "NASA technology"],
     seoKeywords: "quantum physics, quantum computing, NASA technology",
+  },
+  {
+    slug: "how-fast-does-iss-travel-speed-mph-kmh",
+    title: "How Fast Does the ISS Travel? Speed in mph, km/h, and m/s",
+    excerpt: "The International Space Station travels at 17,500 mph (28,000 km/h). Learn the exact speed in mph, km/h, and m/s, why it orbits so fast, and how to calculate orbital velocity.",
+    content: `**How fast does the ISS travel?**
+
+The International Space Station travels at approximately **7.66 km/s** (kilometers per second). In other units:
+
+- **17,500 mph** (miles per hour)
+- **28,000 km/h** (kilometers per hour)
+- **7,660 m/s** (meters per second)
+
+At this speed, the ISS completes one orbit around Earth every **92 minutes**—about 15.5 orbits per day. Astronauts onboard experience 16 sunrises and 16 sunsets in 24 hours.
+
+---
+
+**Why does the ISS travel so fast?**
+
+The ISS is in Low Earth Orbit (LEO) at an altitude of about **408 km** (253 miles). At this height, Earth's gravity is still strong—about 90% of surface gravity. To stay in orbit, the station must move sideways fast enough that it "falls around" Earth instead of falling into it.
+
+The formula for orbital velocity is:
+
+**v = √(μ/r)**
+
+Where:
+- v = orbital speed
+- μ = Earth's gravitational parameter (398,600 km³/s²)
+- r = distance from Earth's center (6,371 + 408 = 6,779 km)
+
+Plugging in the numbers gives v ≈ 7.66 km/s.
+
+---
+
+**ISS speed compared to other objects**
+
+| Object | Speed | Altitude |
+|--------|-------|----------|
+| ISS | 7.66 km/s (17,500 mph) | 408 km |
+| Starlink satellite | ~7.5 km/s | 550 km |
+| GPS satellite | 3.87 km/s | 20,200 km |
+| Geostationary satellite | 3.07 km/s | 35,786 km |
+| Concorde (fastest airliner) | 0.6 km/s | 18 km |
+
+Higher orbits = slower speed. The ISS is the fastest human-made object in sustained orbit because it's so close to Earth.
+
+---
+
+**Try it yourself**
+
+Use our [3D orbit simulator](/simulator) to add a LEO satellite at 408 km and watch it orbit. You'll see the same physics that keeps the ISS moving at 17,500 mph. Check our [orbit calculator](/calculators) to compute orbital velocity for any altitude.
+
+---
+
+**FAQ**
+
+**How fast is the ISS in mph?**
+About 17,500 mph (28,000 km/h).
+
+**Why doesn't the ISS fall to Earth?**
+It is falling—but moving sideways so fast that it keeps missing Earth. That's what orbit means.
+
+**How many times does the ISS orbit Earth per day?**
+About 15.5 times (once every 92 minutes).`,
+    category: "space-facts",
+    date: "2026-02-19",
+    tags: ["ISS", "orbital speed", "orbital mechanics", "LEO", "space station"],
+    seoKeywords: "ISS speed, how fast ISS, ISS mph, ISS km/h, ISS orbital velocity, space station speed",
+  },
+  {
+    slug: "leo-vs-meo-vs-geo-complete-comparison-chart",
+    title: "LEO vs MEO vs GEO: Complete Comparison Chart",
+    excerpt: "Compare LEO, MEO, and GEO satellite orbits side by side. Altitude, speed, period, uses, and real examples. Free comparison chart for students and engineers.",
+    content: `**LEO vs MEO vs GEO: What's the difference?**
+
+Satellites orbit Earth at different altitudes. The three main types are **LEO** (Low Earth Orbit), **MEO** (Medium Earth Orbit), and **GEO** (Geostationary Earth Orbit). Each has different speed, period, and uses.
+
+---
+
+**Complete comparison chart**
+
+| | LEO | MEO | GEO |
+|--|-----|-----|-----|
+| **Altitude** | 200–2,000 km | 2,000–35,786 km | 35,786 km |
+| **Orbital period** | 90 min – 2 hours | 2–24 hours | 24 hours (exact) |
+| **Orbital speed** | 7.2–7.9 km/s | 3.1–4.7 km/s | 3.07 km/s |
+| **Latency** | Low (20–40 ms) | Medium (100–150 ms) | High (250+ ms) |
+| **Coverage** | Small area per pass | Regional | One hemisphere |
+| **Examples** | ISS, Starlink, Hubble | GPS, Galileo, GLONASS | Weather, TV, comms |
+
+---
+
+**LEO (Low Earth Orbit)**
+
+- **Altitude:** 200–2,000 km
+- **Speed:** ~7.66 km/s at 400 km
+- **Period:** 90–120 minutes
+- **Uses:** ISS, Starlink, Hubble, Earth observation, science
+- **Pros:** Low latency, easy to reach, high resolution
+- **Cons:** Needs many satellites for global coverage, short lifespan (drag)
+
+---
+
+**MEO (Medium Earth Orbit)**
+
+- **Altitude:** 2,000–35,786 km (typically 20,000 km for GPS)
+- **Speed:** ~3.87 km/s at 20,200 km
+- **Period:** ~12 hours (GPS)
+- **Uses:** GPS, Galileo, GLONASS, BeiDou navigation
+- **Pros:** Good balance of coverage and latency, stable
+- **Cons:** Higher launch cost, radiation exposure
+
+---
+
+**GEO (Geostationary Earth Orbit)**
+
+- **Altitude:** Exactly 35,786 km
+- **Speed:** 3.07 km/s
+- **Period:** 24 hours (matches Earth's rotation)
+- **Uses:** Weather (GOES, Meteosat), TV, communications
+- **Pros:** Fixed in sky—ground antennas don't track, continuous coverage
+- **Cons:** High latency, no polar coverage, crowded orbit
+
+---
+
+**Why altitude changes speed**
+
+Kepler's third law: T² ∝ a³. Higher orbit = longer period = slower speed. The ISS at 408 km zooms around in 92 minutes. A GEO satellite at 35,786 km takes 24 hours—and appears stationary.
+
+---
+
+**Try the simulator**
+
+Add LEO, MEO, and GEO satellites in our [3D orbit simulator](/simulator) and watch the difference. See [orbital mechanics explained](/learn/orbital-mechanics) for the math behind these orbits.`,
+    category: "satellite-tutorials",
+    date: "2026-02-19",
+    tags: ["LEO", "MEO", "GEO", "orbital mechanics", "satellites", "comparison"],
+    seoKeywords: "LEO vs GEO, LEO vs MEO vs GEO, satellite orbit types, geostationary vs low earth orbit, satellite altitude comparison",
+  },
+  {
+    slug: "keplers-laws-explained-simply",
+    title: "Kepler's Laws of Planetary Motion Explained Simply",
+    excerpt: "Kepler's three laws explain how planets and satellites orbit. Learn the laws in plain language, with formulas and examples. Essential for orbital mechanics.",
+    content: `**What are Kepler's laws?**
+
+Johannes Kepler discovered three laws that describe how planets (and satellites) move around the Sun (or Earth). NASA and every space agency use these laws for mission planning.
+
+---
+
+**Kepler's First Law: Orbits are ellipses**
+
+Planets and satellites orbit in **ellipses**, not circles. The Sun (or Earth) sits at one **focus** of the ellipse.
+
+- A circle is a special ellipse where both foci coincide
+- Most orbits are nearly circular (e.g., ISS, GPS)
+- Comets have very elongated ellipses
+
+---
+
+**Kepler's Second Law: Equal area in equal time**
+
+A line from the planet to the Sun sweeps out **equal areas in equal times**.
+
+- The planet moves **faster** when closer to the Sun
+- Slower when farther away
+- This is conservation of angular momentum
+
+---
+
+**Kepler's Third Law: T² ∝ a³**
+
+The square of the orbital period (T) is proportional to the cube of the semi-major axis (a).
+
+**T² = (4π²/μ) a³**
+
+For Earth orbits: **T = 2π√(a³/μ)** where μ = 398,600 km³/s²
+
+**Examples:**
+- ISS (a ≈ 6,779 km): T ≈ 92 min
+- GPS (a ≈ 26,571 km): T ≈ 12 hours
+- GEO (a ≈ 42,164 km): T = 24 hours
+
+---
+
+**Why Kepler matters**
+
+Kepler's laws (1609–1619) came before Newton's gravity. Newton later showed that these laws follow from F = GMm/r². Today, every satellite, rocket, and spacecraft trajectory uses them.
+
+---
+
+**Try it**
+
+Use our [orbit simulator](/simulator) to see elliptical orbits. Check the [formulas library](/formulas-library) for the full math. Learn [orbital mechanics for beginners](/learn/orbital-mechanics).`,
+    category: "astronomy-lessons",
+    date: "2026-02-19",
+    tags: ["Kepler", "orbital mechanics", "planetary motion", "physics", "astronomy"],
+    seoKeywords: "Kepler's laws, Kepler third law, planetary motion, orbital mechanics, Kepler explained",
+  },
+  {
+    slug: "how-many-satellites-are-in-space-2026",
+    title: "How Many Satellites Are in Space? (2026 Count)",
+    excerpt: "Over 9,000 active satellites orbit Earth in 2026. Plus 30,000+ pieces of trackable debris. Get the latest numbers, who operates them, and why the count keeps growing.",
+    content: `**How many satellites are in space?**
+
+As of 2026, there are approximately **9,000+ active satellites** orbiting Earth. The number grows every month as companies like SpaceX (Starlink), OneWeb, and others launch new constellations.
+
+---
+
+**Breakdown by type**
+
+| Category | Approximate count |
+|----------|-------------------|
+| Active satellites | ~9,000+ |
+| Starlink (SpaceX) | ~6,000+ |
+| OneWeb | ~600+ |
+| Other LEO (ISS, Hubble, Earth obs) | ~1,000+ |
+| MEO (GPS, Galileo, etc.) | ~100+ |
+| GEO (weather, TV, comms) | ~500+ |
+| Inactive / debris (trackable) | 30,000+ |
+
+*Numbers are estimates; exact counts vary by source (ESA, UCS, UNOOSA).*
+
+---
+
+**Who operates the most satellites?**
+
+**SpaceX (Starlink)** operates the largest constellation—over 6,000 satellites in LEO for global internet. OneWeb, Amazon (Project Kuiper), and others are building similar networks.
+
+---
+
+**Why the count is growing**
+
+- **Starlink and broadband:** Thousands of LEO satellites for internet
+- **Earth observation:** Companies like Planet, Maxar deploy imaging satellites
+- **CubeSats:** Small, cheap satellites for science and education
+- **Government:** NASA, ESA, military, weather agencies
+
+---
+
+**Space debris**
+
+Beyond active satellites, there are **30,000+ trackable objects** (old satellites, rocket stages, fragments). Millions of smaller pieces are too small to track but still dangerous. See our [research hub](/research) for orbital debris and sustainability topics.
+
+---
+
+**Try the simulator**
+
+See how satellites orbit in our [3D orbit simulator](/simulator). Add LEO, MEO, and GEO satellites and compare their paths. Check [real satellite orbits](/satellites) for ISS, Starlink, GPS, and more.`,
+    category: "space-facts",
+    date: "2026-02-19",
+    tags: ["satellites", "space debris", "Starlink", "LEO", "space statistics"],
+    seoKeywords: "how many satellites in space, satellites orbiting Earth 2026, Starlink satellites, space debris count",
+  },
+  {
+    slug: "why-do-astronauts-float-in-space",
+    title: "Why Do Astronauts Float in Space? (Microgravity Explained)",
+    excerpt: "Astronauts float because they're in free fall—constantly falling toward Earth but moving fast enough to miss it. It's not zero gravity. Simple explanation for kids and students.",
+    content: `**Why do astronauts float in space?**
+
+Astronauts float because they're **falling**—and so is everything around them. The International Space Station, the astronauts, and a floating pen are all falling together at the same rate. That's why they appear weightless.
+
+---
+
+**It's not zero gravity**
+
+Gravity at the ISS (408 km altitude) is about **90% of Earth's surface gravity**. If you stood on a scale there, you'd still weigh almost as much. So why do astronauts float?
+
+**Because they're in free fall.** The ISS is constantly falling toward Earth. But it's also moving sideways at 17,500 mph—so fast that it keeps missing Earth. The result: the station and everyone inside fall together, so there's no "up" or "down" relative to each other.
+
+---
+
+**The elevator thought experiment**
+
+Imagine you're in an elevator. The cable snaps. You, the elevator, and everything inside fall at the same rate. You'd float inside the elevator—not because gravity disappeared, but because you're all falling together. That's exactly what happens on the ISS.
+
+---
+
+**Why "microgravity"?**
+
+Scientists say "microgravity" instead of "zero gravity" because:
+- Gravity is still there (weaker but present)
+- Tiny forces (air drag, crew movement) create small accelerations
+- "Zero g" would mean no gravity at all—not accurate
+
+---
+
+**Effects on the body**
+
+- Bones and muscles weaken without weight-bearing
+- Fluids shift toward the head (puffy face, skinny legs)
+- Balance and coordination change
+- Astronauts exercise 2+ hours daily to counteract this
+
+---
+
+**Try it**
+
+Use our [orbit simulator](/simulator) to see why the ISS stays in orbit. Learn [orbital mechanics](/learn/orbital-mechanics) and [why satellites don't fall](/blog/why-satellites-dont-fall-gravity-explained).`,
+    category: "astronomy-lessons",
+    date: "2026-02-19",
+    tags: ["astronauts", "microgravity", "ISS", "free fall", "orbital mechanics"],
+    seoKeywords: "why astronauts float, microgravity, zero gravity, free fall, weightlessness in space",
   },
 ];
 

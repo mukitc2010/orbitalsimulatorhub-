@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { APP_NAME } from "../const";
 import { DailyTopicIcon } from "../components/DailyTopicIcon";
+import { ShareBar } from "../components/ShareBar";
 import { BLOG_POSTS } from "../data/blogPosts";
 
 const FEATURES = [
@@ -115,6 +116,9 @@ export function Home() {
         <p className="text-xs text-slate-400 uppercase tracking-wider font-medium">
           Simulator · Astronauts · Planets · Missions · AstroBot
         </p>
+        <div className="mt-4">
+          <ShareBar path="/" showRedditSubs />
+        </div>
       </section>
 
       {/* Daily Featured Topic */}

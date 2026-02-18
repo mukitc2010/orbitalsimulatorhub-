@@ -5,14 +5,49 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Wed, 18 Feb 2026 07:27:34 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 23:46:50 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Fast Does the ISS Travel? Speed in mph, km/h, and m/s</title>
+      <link>https://orbitalsimulatorhub.com/blog/how-fast-does-iss-travel-speed-mph-kmh</link>
+      <description>The International Space Station travels at 17,500 mph (28,000 km/h). Learn the exact speed in mph, km/h, and m/s, why it orbits so fast, and how to calculate orbital velocity.</description>
+      <pubDate>Thu, 19 Feb 2026 05:00:00 GMT</pubDate>
+      <category>space-facts</category>
+    </item>
+    <item>
+      <title>LEO vs MEO vs GEO: Complete Comparison Chart</title>
+      <link>https://orbitalsimulatorhub.com/blog/leo-vs-meo-vs-geo-complete-comparison-chart</link>
+      <description>Compare LEO, MEO, and GEO satellite orbits side by side. Altitude, speed, period, uses, and real examples. Free comparison chart for students and engineers.</description>
+      <pubDate>Thu, 19 Feb 2026 05:00:00 GMT</pubDate>
+      <category>satellite-tutorials</category>
+    </item>
+    <item>
+      <title>Kepler&apos;s Laws of Planetary Motion Explained Simply</title>
+      <link>https://orbitalsimulatorhub.com/blog/keplers-laws-explained-simply</link>
+      <description>Kepler&apos;s three laws explain how planets and satellites orbit. Learn the laws in plain language, with formulas and examples. Essential for orbital mechanics.</description>
+      <pubDate>Thu, 19 Feb 2026 05:00:00 GMT</pubDate>
+      <category>astronomy-lessons</category>
+    </item>
+    <item>
+      <title>How Many Satellites Are in Space? (2026 Count)</title>
+      <link>https://orbitalsimulatorhub.com/blog/how-many-satellites-are-in-space-2026</link>
+      <description>Over 9,000 active satellites orbit Earth in 2026. Plus 30,000+ pieces of trackable debris. Get the latest numbers, who operates them, and why the count keeps growing.</description>
+      <pubDate>Thu, 19 Feb 2026 05:00:00 GMT</pubDate>
+      <category>space-facts</category>
+    </item>
+    <item>
+      <title>Why Do Astronauts Float in Space? (Microgravity Explained)</title>
+      <link>https://orbitalsimulatorhub.com/blog/why-do-astronauts-float-in-space</link>
+      <description>Astronauts float because they&apos;re in free fall—constantly falling toward Earth but moving fast enough to miss it. It&apos;s not zero gravity. Simple explanation for kids and students.</description>
+      <pubDate>Thu, 19 Feb 2026 05:00:00 GMT</pubDate>
+      <category>astronomy-lessons</category>
+    </item>
     <item>
       <title>How relativistic quantum effects correct GPS accuracy</title>
       <link>https://orbitalsimulatorhub.com/blog/how-relativistic-quantum-effects-correct-gps-accuracy-20260218</link>
       <description>Learn about how relativistic quantum effects correct gps accuracy — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Wed, 18 Feb 2026 05:00:00 GMT</pubDate>
-      <category>quantum-physics</category>
+      <category>astronomy-lessons</category>
     </item>
     <item>
       <title>Artemis Moon Mission Update 2026: Humans Returning to the Moon</title>

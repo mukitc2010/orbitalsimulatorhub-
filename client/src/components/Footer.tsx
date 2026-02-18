@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { ShareBar } from "./ShareBar";
 
 const footerLinks = [
   { href: "/", label: "Home" },
@@ -57,6 +58,9 @@ export function Footer() {
           <Link href="/guide" className="hover:underline" style={{ color: "var(--accent-primary)" }}>Guide</Link> ·{" "}
           <Link href="/simulator" className="hover:underline" style={{ color: "var(--accent-primary)" }}>Simulator</Link>.
         </p>
+        <div className="mt-4 flex justify-center">
+          <ShareBar path="/" compact />
+        </div>
         <p className="mt-4 text-center text-sm" style={{ color: "var(--text-muted)" }}>
           Orbital Simulator Hub — orbitalsimulatorhub.com — aerospace study for students, scientists &amp; PhD researchers
         </p>
