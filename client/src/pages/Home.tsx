@@ -80,6 +80,9 @@ export function Home() {
         <p className="text-sm text-slate-400 max-w-2xl mx-auto mb-4">
           Orbital mechanics for beginners · Satellite orbit simulator · How satellites work · NASA study guide · Space physics course · AI in space technology · Astronomy for kids · NASA for students.
         </p>
+        <p className="text-xs text-slate-500 max-w-2xl mx-auto mb-4">
+          <strong>Orbital Simulator Hub</strong> (orbitalsimulatorhub.com) is a free 3D orbit simulator and NASA education platform. Learn orbital mechanics, explore 100+ astronaut profiles, study all 8 planets with NASA data, and use the interactive simulator — all free, no signup required.
+        </p>
         <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-slate-300 max-w-2xl mx-auto mb-6 list-none pl-0">
           <li>🔭 Learn real NASA concepts</li>
           <li>🛰 Run orbital simulations</li>
@@ -87,13 +90,30 @@ export function Home() {
           <li>⚛ Explore quantum physics &amp; space science</li>
           <li>📡 Study real mission data &amp; algorithms</li>
         </ul>
-        <Link href="/play">
-          <a className="hero-cta inline-block px-8 py-4 rounded-xl font-black text-lg shadow-lg hover:opacity-95 hover:scale-[1.03] transition mb-2" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>
-            🚀 Start your journey beyond Earth →
-          </a>
-        </Link>
+        <div className="flex flex-wrap justify-center gap-3 mb-2">
+          <Link href="/simulator">
+            <a className="hero-cta inline-block px-6 py-3 rounded-xl font-bold text-base shadow-lg hover:opacity-95 hover:scale-[1.02] transition" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>
+              🛰 Open 3D Simulator
+            </a>
+          </Link>
+          <Link href="/astrobot">
+            <a className="inline-block px-6 py-3 rounded-xl font-bold text-base border-2 transition" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-on-accent)", background: "rgba(0,217,255,0.15)" }}>
+              🤖 Ask AstroBot
+            </a>
+          </Link>
+          <Link href="/astronauts">
+            <a className="inline-block px-6 py-3 rounded-xl font-bold text-base border-2 transition" style={{ borderColor: "var(--accent-pink)", color: "var(--text-on-accent)", background: "rgba(244,114,182,0.15)" }}>
+              👨‍🚀 Astronaut Database
+            </a>
+          </Link>
+          <Link href="/planets">
+            <a className="inline-block px-6 py-3 rounded-xl font-bold text-base border-2 transition" style={{ borderColor: "var(--accent-gold)", color: "var(--text-on-accent)", background: "rgba(251,191,36,0.15)" }}>
+              🪐 Planet Explorer
+            </a>
+          </Link>
+        </div>
         <p className="text-xs text-slate-400 uppercase tracking-wider font-medium">
-          Simulate · Learn NASA · Ask AstroBot
+          Simulator · Astronauts · Planets · Missions · AstroBot
         </p>
       </section>
 
@@ -284,6 +304,29 @@ export function Home() {
               </a>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* FAQ Section — SEO + AI citation: same content as FAQ schema */}
+      <section className="rounded-xl border-2 border-[var(--accent-cyan)]/40 bg-white p-6 mb-8">
+        <h2 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>❓ Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            { q: "What is Orbital Simulator Hub?", a: "Orbital Simulator Hub is a free interactive space education platform at orbitalsimulatorhub.com. It features a 3D satellite orbit simulator (LEO, MEO, GEO), an astronaut database with 500+ profiles, a planet explorer with NASA data for all 8 planets, mission details for Apollo and other programs, lunar geology guides, aerospace engineering references, and AI-powered AstroBot for space Q&A. Designed for students, researchers, and PhD scientists." },
+            { q: "How does a satellite orbit simulator work?", a: "A satellite orbit simulator uses Kepler's laws and Newton's law of gravitation to calculate orbital paths. At orbitalsimulatorhub.com/simulator, you can add LEO (200-2000 km), MEO (2000-35786 km), and GEO (35786 km) satellites and watch their 3D orbits in real-time. The simulator shows altitude, orbital velocity, period, perigee, and apogee for each satellite." },
+            { q: "What is LEO, MEO, and GEO orbit?", a: "LEO (Low Earth Orbit) is 200-2000 km altitude — used by ISS and Starlink. MEO (Medium Earth Orbit) is 2000-35786 km — used by GPS and navigation satellites. GEO (Geostationary Orbit) is exactly 35,786 km — satellites appear stationary above one spot on Earth, used for weather and communications. Try the interactive simulator at orbitalsimulatorhub.com/simulator." },
+            { q: "How many astronauts walked on the Moon?", a: "12 astronauts walked on the Moon during NASA's Apollo program (1969-1972): Neil Armstrong and Buzz Aldrin (Apollo 11), Pete Conrad and Alan Bean (Apollo 12), Alan Shepard and Edgar Mitchell (Apollo 14), David Scott and James Irwin (Apollo 15), John Young and Charles Duke (Apollo 16), and Gene Cernan and Harrison Schmitt (Apollo 17). Explore all moonwalkers at orbitalsimulatorhub.com/astronauts." },
+            { q: "How fast does the ISS orbit Earth?", a: "The ISS orbits at approximately 7.66 km/s (27,600 km/h) at 408 km altitude. Its orbital period is about 92 minutes. Calculate orbital velocity for any altitude at orbitalsimulatorhub.com/calculators." },
+          ].map((faq, i) => (
+            <div key={i} className="rounded-lg p-4" style={{ background: "var(--bg-surface)", border: "1px solid var(--border-color)" }}>
+              <h3 className="font-bold text-sm mb-2" style={{ color: "var(--text-primary)" }}>{faq.q}</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>{faq.a}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-4 flex flex-wrap gap-2">
+          <Link href="/astrobot"><a className="text-sm font-medium" style={{ color: "var(--accent-primary)" }}>Ask AstroBot more →</a></Link>
+          <Link href="/simulator"><a className="text-sm font-medium" style={{ color: "var(--accent-primary)" }}>Try Simulator →</a></Link>
         </div>
       </section>
 
