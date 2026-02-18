@@ -178,12 +178,150 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     keywords: "space quiz, space quiz for kids, orbital mechanics quiz, NASA quiz, astronomy quiz",
     lastUpdated: "2026-02-17T00:00:00Z",
   },
+  "/astronauts": {
+    path: "/astronauts",
+    title: "Astronaut Explorer – All Astronauts, Moonwalkers, Apollo Missions | Orbital Simulator Hub",
+    description: "Explore 500+ astronaut profiles. All 12 moonwalkers from Apollo 11–17. Biography, missions, EVA details, lunar samples, fun facts. Kids Mode and Research Mode for every astronaut.",
+    keywords: "astronaut database, moonwalkers, Apollo astronauts, Neil Armstrong, Buzz Aldrin, astronaut profiles, NASA astronauts, who walked on the Moon, all astronauts list",
+    ogTitle: "Astronaut Explorer — Every Astronaut Who Traveled to Space",
+    lastUpdated: "2026-02-18T00:00:00Z",
+  },
+  "/planets": {
+    path: "/planets",
+    title: "Planet Study Hub – All 8 Planets with NASA Data | Orbital Simulator Hub",
+    description: "Explore every planet in our solar system with real NASA/JPL data. Distance, gravity, temperature, atmosphere, missions. Interactive comparison, weight calculator, AI quiz. Kids, General, and Research modes.",
+    keywords: "planet explorer, solar system planets, planet data NASA, Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune, planet comparison, planet gravity, planet distance from Sun",
+    ogTitle: "Planet Study Hub — All 8 Planets + Moon + Pluto",
+    lastUpdated: "2026-02-18T00:00:00Z",
+  },
+  "/missions": {
+    path: "/missions",
+    title: "NASA Missions – Apollo, Gemini, Mercury, Space Shuttle | Orbital Simulator Hub",
+    description: "Complete database of NASA missions: Apollo 11–17 lunar landings, Gemini, Mercury, Space Shuttle. Crew details, launch data, surface operations, geology findings, samples returned.",
+    keywords: "NASA missions, Apollo missions, Apollo 11, Moon landing missions, space missions history, Gemini missions, Mercury missions, Space Shuttle missions",
+    ogTitle: "NASA Mission Database — Apollo, Gemini, Mercury, Shuttle",
+    lastUpdated: "2026-02-18T00:00:00Z",
+  },
+  "/artifacts": {
+    path: "/artifacts",
+    title: "What Humans Brought Back From Space – Moon Rocks, Asteroid Samples | Orbital Simulator Hub",
+    description: "381.7 kg of lunar samples from Apollo missions. Asteroid samples from Hayabusa2 and OSIRIS-REx. Comet dust from Stardust. Explore what astronauts brought back from space and why it matters for science.",
+    keywords: "lunar samples, Moon rocks, Apollo samples, what astronauts brought back, Hayabusa2 samples, OSIRIS-REx Bennu, Stardust comet, space samples, lunar geology",
+    ogTitle: "What Humans Brought Back From Space — Moon Rocks & Beyond",
+    lastUpdated: "2026-02-18T00:00:00Z",
+  },
+  "/learn/lunar-geology": {
+    path: "/learn/lunar-geology",
+    title: "Lunar Geology & Fra Mauro Formation – Apollo Landing Sites | Orbital Simulator Hub",
+    description: "Complete guide to lunar geology: Fra Mauro formation, all 6 Apollo landing site geologies, rock types (basalt, breccia, anorthosite), geological timeline. The Fra Mauro formation is Imbrium Basin ejecta ~3.85 Ga. Kids, General, and Research modes.",
+    keywords: "Fra Mauro formation, lunar geology, Apollo landing sites, Moon geology, Imbrium Basin, lunar breccia, anorthosite, KREEP, Moon rocks, lunar geological timeline, Apollo 14 geology",
+    ogTitle: "Lunar Geology & Fra Mauro Formation — Apollo Landing Sites",
+    lastUpdated: "2026-02-18T00:00:00Z",
+  },
+  "/learn/how-solar-system-works": {
+    path: "/learn/how-solar-system-works",
+    title: "How the Solar System Works – Planets, Orbits, Gravity | Orbital Simulator Hub",
+    description: "Learn how the solar system works: planet orbits, gravity, Kepler's laws, tidal forces. Interactive guide for students and space fans.",
+    keywords: "how solar system works, planet orbits, solar system gravity, Kepler laws, solar system for students",
+    lastUpdated: "2026-02-18T00:00:00Z",
+  },
+  "/learn/astrophysics": {
+    path: "/learn/astrophysics",
+    title: "Astrophysics – Stars, Galaxies, Black Holes, Cosmology | Orbital Simulator Hub",
+    description: "Learn astrophysics: stars, galaxies, black holes, dark matter, cosmology. From stellar evolution to the expanding universe. For students and researchers.",
+    keywords: "astrophysics, stars, galaxies, black holes, dark matter, cosmology, stellar evolution, space physics",
+    lastUpdated: "2026-02-18T00:00:00Z",
+  },
+  "/learn/quantum-physics": {
+    path: "/learn/quantum-physics",
+    title: "Quantum Physics for Space – Wave-Particle Duality, Entanglement | Orbital Simulator Hub",
+    description: "Quantum physics concepts relevant to space: wave-particle duality, quantum entanglement, tunneling. How quantum effects impact GPS, atomic clocks, and satellite navigation.",
+    keywords: "quantum physics, quantum mechanics, wave-particle duality, quantum entanglement, quantum space, quantum GPS",
+    lastUpdated: "2026-02-18T00:00:00Z",
+  },
+  "/learn/aerodynamics": {
+    path: "/learn/aerodynamics",
+    title: "Aerodynamics – Lift, Drag, Bernoulli's Principle, Rocket Design | Orbital Simulator Hub",
+    description: "Learn aerodynamics: lift, drag, Bernoulli's principle, rocket design, re-entry physics. From aircraft to spacecraft aerodynamics.",
+    keywords: "aerodynamics, lift and drag, Bernoulli principle, rocket aerodynamics, re-entry physics, spacecraft design",
+    lastUpdated: "2026-02-18T00:00:00Z",
+  },
+  "/compare/orbits": {
+    path: "/compare/orbits",
+    title: "Compare Orbits – LEO vs MEO vs GEO Side by Side | Orbital Simulator Hub",
+    description: "Compare satellite orbits side by side: LEO, MEO, GEO. See altitude, speed, period differences. Interactive comparison for students and engineers.",
+    keywords: "compare orbits, LEO vs MEO vs GEO, orbit comparison, satellite orbit types, orbit altitude comparison",
+    lastUpdated: "2026-02-18T00:00:00Z",
+  },
+  "/missions/timeline": {
+    path: "/missions/timeline",
+    title: "Space Mission Timeline – From Sputnik to Artemis | Orbital Simulator Hub",
+    description: "Complete timeline of space missions from Sputnik (1957) to Artemis. Apollo, Gemini, Shuttle, ISS, Mars rovers, and future missions. Interactive timeline.",
+    keywords: "space mission timeline, NASA timeline, Apollo timeline, space history, mission history, Sputnik to Artemis",
+    lastUpdated: "2026-02-18T00:00:00Z",
+  },
 };
 
 export function getSEOConfig(path: string): SEOConfig | null {
-  // Remove hash fragments for matching
   const cleanPath = path.split('#')[0];
-  return SEO_CONFIGS[cleanPath] || null;
+  if (SEO_CONFIGS[cleanPath]) return SEO_CONFIGS[cleanPath];
+
+  const astronautMatch = cleanPath.match(/^\/astronauts\/(.+)$/);
+  if (astronautMatch) {
+    const slug = astronautMatch[1];
+    const name = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+    return {
+      path: cleanPath,
+      title: `${name} – Astronaut Profile, Missions & Biography | Orbital Simulator Hub`,
+      description: `Explore ${name}'s complete astronaut profile: biography, space missions, EVA details, Moon experience, fun facts. Kids Mode and Research Mode available. Orbital Simulator Hub astronaut database.`,
+      keywords: `${name}, astronaut, NASA, space missions, astronaut biography, ${name} missions`,
+      ogTitle: `${name} — Astronaut Profile & Missions`,
+      lastUpdated: "2026-02-18T00:00:00Z",
+    };
+  }
+
+  const planetMatch = cleanPath.match(/^\/planets\/(.+)$/);
+  if (planetMatch) {
+    const slug = planetMatch[1];
+    const name = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+    return {
+      path: cleanPath,
+      title: `${name} – Planet Facts, NASA Data, Distance, Gravity | Orbital Simulator Hub`,
+      description: `Explore ${name} with real NASA/JPL data: distance from Sun, gravity, temperature, atmosphere, missions. Weight calculator, AI quiz, Kids Mode, Research Mode with orbital equations.`,
+      keywords: `${name}, planet, NASA data, ${name} distance, ${name} gravity, ${name} temperature, ${name} moons, solar system`,
+      ogTitle: `${name} — Planet Explorer with NASA Data`,
+      lastUpdated: "2026-02-18T00:00:00Z",
+    };
+  }
+
+  const missionMatch = cleanPath.match(/^\/missions\/(.+)$/);
+  if (missionMatch) {
+    const slug = missionMatch[1];
+    const name = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+    return {
+      path: cleanPath,
+      title: `${name} Mission – Crew, Timeline, Samples, Geology | Orbital Simulator Hub`,
+      description: `Complete ${name} mission details: crew, launch data, surface operations, landing site geology, samples returned, highlights. Explore NASA's ${name} mission.`,
+      keywords: `${name}, NASA mission, ${name} crew, ${name} mission details, space mission, Apollo mission`,
+      ogTitle: `${name} — NASA Mission Details`,
+      lastUpdated: "2026-02-18T00:00:00Z",
+    };
+  }
+
+  const blogMatch = cleanPath.match(/^\/blog\/(.+)$/);
+  if (blogMatch) {
+    const slug = blogMatch[1];
+    const name = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+    return {
+      path: cleanPath,
+      title: `${name} | Space Blog – Orbital Simulator Hub`,
+      description: `Read about ${name.toLowerCase()} on the Orbital Simulator Hub space blog. Daily NASA news, space facts, and satellite tutorials.`,
+      keywords: `space blog, NASA news, ${slug.replace(/-/g, ", ")}`,
+      lastUpdated: "2026-02-18T00:00:00Z",
+    };
+  }
+
+  return null;
 }
 
 export function updateSEOConfig(path: string, config: Partial<SEOConfig>): void {

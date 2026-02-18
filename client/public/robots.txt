@@ -1,6 +1,51 @@
-# Orbital Simulator Hub - allow all crawlers
+# Orbital Simulator Hub — robots.txt
+# https://www.orbitalsimulatorhub.com
+
+# Allow all search engines and AI crawlers
 User-agent: *
 Allow: /
+Disallow: /api/
 
-# Sitemap (update base URL if your site is different)
-Sitemap: https://orbitalsimulatorhub.com/sitemap.xml
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# ChatGPT / OpenAI
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI / Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Common AI crawlers
+User-agent: CCBot
+Allow: /
+
+User-agent: FacebookExternalHit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.orbitalsimulatorhub.com/sitemap.xml
