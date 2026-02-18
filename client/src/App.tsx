@@ -28,6 +28,9 @@ import { HowMarsRovers } from "./pages/HowMarsRovers";
 import { HowStarlinkWorks } from "./pages/HowStarlinkWorks";
 import { HowISSWorks } from "./pages/HowISSWorks";
 import { MissionTimeline } from "./pages/MissionTimeline";
+import { MissionList } from "./pages/MissionList";
+import { MissionDetail } from "./pages/MissionDetail";
+import { BroughtFromSpace } from "./pages/BroughtFromSpace";
 import { OrbitalMechanicsQuiz } from "./pages/OrbitalMechanicsQuiz";
 import { HowSolarSystemWorks } from "./pages/HowSolarSystemWorks";
 import { WhatIsMoon } from "./pages/WhatIsMoon";
@@ -46,6 +49,10 @@ import { SpaceNews } from "./pages/SpaceNews";
 import { NASAForKids } from "./pages/NASAForKids";
 import { SatelliteTutorial } from "./pages/SatelliteTutorial";
 import { SpaceQuiz } from "./pages/SpaceQuiz";
+import { AstronautExplorer } from "./pages/AstronautExplorer";
+import { AstronautProfile } from "./pages/AstronautProfile";
+import { PlanetHub } from "./pages/PlanetHub";
+import { PlanetDetail } from "./pages/PlanetDetail";
 import { NotFound } from "./pages/NotFound";
 
 function App() {
@@ -80,7 +87,10 @@ function App() {
           <Route path="/learn/how-starlink-works" component={HowStarlinkWorks} />
           <Route path="/learn/how-iss-works" component={HowISSWorks} />
           <Route path="/compare/orbits" component={CompareOrbits} />
+          <Route path="/missions" component={MissionList} />
           <Route path="/missions/timeline" component={MissionTimeline} />
+          <Route path="/missions/:slug" component={MissionDetail} />
+          <Route path="/artifacts" component={BroughtFromSpace} />
           <Route path="/quiz/orbital-mechanics" component={OrbitalMechanicsQuiz} />
           <Route path="/learn/how-solar-system-works" component={HowSolarSystemWorks} />
           <Route path="/learn/what-is-moon" component={WhatIsMoon} />
@@ -100,6 +110,10 @@ function App() {
           <Route path="/learn/nasa-for-kids" component={NASAForKids} />
           <Route path="/learn/satellite-tutorial" component={SatelliteTutorial} />
           <Route path="/space-quiz" component={SpaceQuiz} />
+          <Route path="/astronauts" component={AstronautExplorer} />
+          <Route path="/astronauts/:slug" component={AstronautProfile} />
+          <Route path="/planets" component={PlanetHub} />
+          <Route path="/planets/:slug" component={PlanetDetail} />
           <Route component={NotFound} />
         </Switch>
       </main>
