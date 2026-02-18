@@ -47,6 +47,14 @@ app.use(
   })
 );
 
+// Avoid "Cannot GET /create-rule" — no such API route; Cursor rules live in .cursor/rules/
+app.get("/create-rule", (_req, res) => {
+  res.status(404).json({
+    error: "Not found",
+    message: "There is no API at /create-rule. Cursor rules are created in .cursor/rules/ as .mdc files — see the create-rule skill in Cursor.",
+  });
+});
+
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`API at http://localhost:${PORT}/api/trpc`);
   console.log(`Blog API at http://localhost:${PORT}/api/blog`);

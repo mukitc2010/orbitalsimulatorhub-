@@ -1,0 +1,110 @@
+{
+  "categories": [
+    {
+      "id": "nasa-news",
+      "name": "NASA News",
+      "tags": ["NASA", "space exploration", "missions"],
+      "topics": [
+        "Artemis program progress and Moon landing plans",
+        "James Webb Space Telescope latest discoveries",
+        "Mars Perseverance rover sample collection updates",
+        "SpaceX Starship development and test flights",
+        "International Space Station science experiments",
+        "NASA Europa Clipper mission to Jupiter's moon",
+        "Voyager spacecraft updates from interstellar space",
+        "Commercial crew program and private astronaut missions",
+        "NASA DART asteroid deflection mission results",
+        "Lunar Gateway construction and deep space habitation"
+      ]
+    },
+    {
+      "id": "space-facts",
+      "name": "Space Facts",
+      "tags": ["space facts", "orbital mechanics", "satellites"],
+      "topics": [
+        "Why a day on Venus is longer than its year",
+        "How neutron stars can spin 716 times per second",
+        "The Great Red Spot on Jupiter is shrinking",
+        "Saturn's rings are disappearing over millions of years",
+        "There are more stars than grains of sand on Earth",
+        "Space is completely silent because sound needs a medium",
+        "A teaspoon of neutron star weighs 6 billion tons",
+        "The footprints on the Moon will last 100 million years",
+        "Olympus Mons on Mars is 3 times taller than Everest",
+        "The observable universe is 93 billion light-years across"
+      ]
+    },
+    {
+      "id": "satellite-tutorials",
+      "name": "Satellite Tutorials",
+      "tags": ["satellites", "tutorial", "orbital mechanics"],
+      "topics": [
+        "How GPS satellites calculate your exact position using trilateration",
+        "LEO vs MEO vs GEO: choosing the right orbit for a mission",
+        "How Starlink creates global broadband internet from space",
+        "How weather satellites predict storms and track hurricanes",
+        "Satellite communication: how data travels from space to your phone",
+        "How spy satellites achieve sub-meter imaging resolution",
+        "CubeSats and nanosatellites: space access for universities",
+        "How satellite constellations maintain formation in orbit",
+        "The physics of geostationary orbit and why it matters",
+        "How orbital debris tracking and avoidance works"
+      ]
+    },
+    {
+      "id": "astronomy-lessons",
+      "name": "Astronomy Lessons",
+      "tags": ["astronomy", "astrophysics", "space science"],
+      "topics": [
+        "How stars are born inside molecular gas clouds",
+        "What happens when a massive star dies: supernovae and black holes",
+        "Dark matter: the invisible mass holding galaxies together",
+        "Exoplanet detection methods: transit and radial velocity",
+        "The cosmic microwave background and the Big Bang",
+        "How galaxies collide and merge over billions of years",
+        "Pulsars: the cosmic lighthouses of neutron stars",
+        "Gravitational waves and what they tell us about spacetime",
+        "The life cycle of Sun-like stars from birth to white dwarf",
+        "Hubble constant and the expanding universe controversy"
+      ]
+    },
+    {
+      "id": "aerodynamics",
+      "name": "Aerodynamics & Flight",
+      "tags": ["aerodynamics", "flight", "aerospace engineering"],
+      "topics": [
+        "How lift is generated: Bernoulli vs Newton explanations",
+        "Hypersonic flight: challenges above Mach 5",
+        "Re-entry physics: surviving 28000 km/h atmospheric entry",
+        "How heat shields protect spacecraft during re-entry",
+        "Rocket aerodynamics: designing nose cones and fairings",
+        "Computational fluid dynamics in spacecraft design",
+        "Why spacecraft have specific shapes for different missions",
+        "Scramjet engines: air-breathing propulsion at hypersonic speeds",
+        "How NASA tests aerodynamics in wind tunnels",
+        "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere"
+      ]
+    },
+    {
+      "id": "quantum-physics",
+      "name": "Quantum Physics & Space",
+      "tags": ["quantum physics", "quantum computing", "NASA technology"],
+      "topics": [
+        "How atomic clocks on GPS satellites use quantum mechanics",
+        "Quantum sensors for deep space navigation",
+        "The uncertainty principle and its real-world applications",
+        "Quantum entanglement and future space communication",
+        "How quantum computing could optimize mission planning",
+        "Wave-particle duality: the double-slit experiment explained",
+        "Quantum tunneling in nuclear fusion inside stars",
+        "Schrodinger equation: the foundation of quantum mechanics",
+        "Quantum key distribution for secure satellite communications",
+        "How relativistic quantum effects correct GPS accuracy"
+      ]
+    }
+  ],
+  "blog_prompt": "You are an expert science writer for Orbital Simulator Hub, an educational website about space, aerospace, and physics. Write a detailed, accurate blog post about: {topic}.\n\nRequirements:\n- 800-1200 words\n- Use clear, engaging language accessible to students and enthusiasts\n- Include a bold **Introduction** section\n- Include **Key Points** with bullet points\n- Include a **How It Works** section with technical detail\n- Include a **Real-World Applications** section\n- End with a **Conclusion**\n- Reference orbital mechanics, NASA missions, or physics where relevant\n- Use markdown formatting\n- Be scientifically accurate\n\nWrite the blog post now:",
+  "featured_prompt": "Write a 2-3 sentence educational excerpt about: {topic}. Make it engaging and informative for students learning about space and physics. Focus on one fascinating insight or key concept.",
+  "fact_prompt": "Give me one fascinating, scientifically accurate space or physics fact. Make it surprising and educational. Keep it to 1-2 sentences. No prefixes like 'Did you know' — just state the fact.",
+  "highlight_prompt": "Write a 2-sentence educational blurb about: {topic}. Focus on why it matters for space exploration or physics. Be concise and engaging."
+}

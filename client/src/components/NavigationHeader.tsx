@@ -1,5 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { APP_NAME } from "../const";
+import { ThemeSelector } from "./ThemeSelector";
 
 export function NavigationHeader() {
   const [location] = useLocation();
@@ -19,26 +20,53 @@ export function NavigationHeader() {
   ];
 
   return (
-    <header className="border-b-2 border-[var(--accent-cyan)] bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+    <header
+      className="border-b-2 backdrop-blur-sm sticky top-0 z-50 shadow-sm"
+      style={{
+        borderColor: "var(--border-accent)",
+        background: "var(--bg-header)",
+      }}
+    >
       <div className="container mx-auto px-4 py-3 max-w-7xl flex flex-wrap items-center justify-between gap-4">
-        <Link href="/" className="font-bold text-lg font-mono-tech text-[#0f172a] hover:text-[var(--accent-cyan)] transition">
+        <Link
+          href="/"
+          className="font-bold text-lg font-mono-tech transition"
+          style={{ color: "var(--text-primary)" }}
+        >
           {APP_NAME}
         </Link>
-        <nav className="flex flex-wrap gap-1">
+
+        <nav className="flex flex-wrap gap-1 items-center">
           {nav.map(({ path, label, title }) => (
             <Link
               key={path}
               href={path}
               title={title}
-              className={`px-3 py-2 rounded-lg font-medium transition text-sm ${
+              className="px-3 py-2 rounded-lg font-medium transition text-sm"
+              style={
                 location === path
-                  ? "bg-[var(--accent-cyan)] text-[#0f172a]"
-                  : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-              }`}
+                  ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
+                  : { color: "var(--text-secondary)" }
+              }
+              onMouseEnter={(e) => {
+                if (location !== path) {
+                  (e.currentTarget as HTMLElement).style.background = "var(--nav-hover-bg)";
+                  (e.currentTarget as HTMLElement).style.color = "var(--text-primary)";
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (location !== path) {
+                  (e.currentTarget as HTMLElement).style.background = "transparent";
+                  (e.currentTarget as HTMLElement).style.color = "var(--text-secondary)";
+                }
+              }}
             >
               {label}
             </Link>
           ))}
+          <div className="ml-2">
+            <ThemeSelector />
+          </div>
         </nav>
       </div>
     </header>

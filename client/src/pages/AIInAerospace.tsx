@@ -99,12 +99,6 @@ export function AIInAerospace() {
   }, [chatMessages]);
 
   useEffect(() => {
-    const prev = document.title;
-    document.title = "AI in Space: Satellites, Rovers, NASA & SpaceX | Orbital Simulator Hub";
-    return () => { document.title = prev; };
-  }, []);
-
-  useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") closeModal(); };
     if (modal) window.addEventListener("keydown", onKey); return () => window.removeEventListener("keydown", onKey);
   }, [modal]);

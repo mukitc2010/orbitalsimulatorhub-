@@ -1,11 +1,27 @@
+import { useEffect } from "react";
 import { Link, useRoute } from "wouter";
 import { getPostBySlug, getRecentPosts } from "../data/blogPosts";
 import { BlogContent } from "../components/BlogContent";
+
+const SITE_NAME = "Orbital Simulator Hub";
 
 export function BlogPost() {
   const [match, params] = useRoute<{ slug: string }>("/blog/:slug");
   const post = match && params ? getPostBySlug(params.slug) : null;
   const recent = getRecentPosts(5).filter((p) => p.slug !== params?.slug);
+
+  useEffect(() => {
+    if (!post) return;
+    const prevTitle = document.title;
+    const prevDesc = document.querySelector('meta[name="description"]')?.getAttribute("content") ?? "";
+    document.title = `${post.title} | ${SITE_NAME}`;
+    const descEl = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
+    if (descEl) descEl.content = post.excerpt;
+    return () => {
+      document.title = prevTitle;
+      if (descEl) descEl.content = prevDesc;
+    };
+  }, [post]);
 
   if (!post) {
     return (

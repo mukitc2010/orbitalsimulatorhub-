@@ -444,6 +444,181 @@ Dive deeper in our [Quantum physics & space](/learn/quantum-space) page and [AI 
     tags: ["quantum physics", "satellites", "atomic clocks", "GPS", "quantum sensors"],
     seoKeywords: "quantum physics satellites, atomic clocks GPS, quantum sensors space, satellite navigation quantum",
   },
+  {
+    slug: "how-artemis-moon-mission-works-2026-complete-guide",
+    title: "How Artemis Moon Mission Works: Complete Guide to NASA's Return to the Moon",
+    excerpt: "Learn how NASA's Artemis program works: SLS rocket, Orion spacecraft, lunar Gateway, and the science behind returning humans to the Moon. Perfect for students and space enthusiasts.",
+    content: `**Introduction**
+
+NASA's Artemis program is humanity's return to the Moon—and this time, we're staying. But how does the Artemis mission actually work? From the massive Space Launch System (SLS) rocket to the lunar Gateway station, this guide explains every step of NASA's plan to land astronauts on the Moon again.
+
+---
+
+**What is the Artemis Program?**
+
+Artemis is NASA's program to establish a sustainable human presence on the Moon by the end of this decade. Named after Apollo's twin sister in Greek mythology, Artemis will land the first woman and first person of color on the lunar surface.
+
+**Key Goals:**
+- Return humans to the Moon by 2026
+- Build a permanent lunar base
+- Test technologies for future Mars missions
+- Conduct scientific research on the Moon
+
+---
+
+**The Space Launch System (SLS) Rocket**
+
+The SLS is NASA's most powerful rocket ever built. Standing taller than the Statue of Liberty, it generates 8.8 million pounds of thrust—enough to send Orion and cargo to the Moon.
+
+**How SLS Works:**
+- **Core Stage:** Contains liquid hydrogen and liquid oxygen fuel
+- **Solid Rocket Boosters:** Two boosters provide extra thrust during launch
+- **Upper Stage:** Pushes Orion out of Earth orbit toward the Moon
+
+**Orbital Mechanics:** The SLS uses a technique called **trans-lunar injection (TLI)**. After reaching low Earth orbit, the upper stage fires its engines to escape Earth's gravity and head toward the Moon. You can see this in action with our [3D orbit simulator](/simulator).
+
+---
+
+**The Orion Spacecraft**
+
+Orion is the crew capsule that will carry astronauts to the Moon and back. It's designed to support a crew of four for up to 21 days.
+
+**Key Features:**
+- **Heat Shield:** Protects the crew during re-entry at 25,000 mph
+- **Service Module:** Provides power, propulsion, and life support
+- **Crew Module:** Living quarters for astronauts
+
+**Orbital Mechanics:** Orion uses the Moon's gravity to enter a **near-rectilinear halo orbit (NRHO)**—a special orbit that's stable and energy-efficient. Learn more about [orbital mechanics](/learn/orbital-mechanics) and how spacecraft use gravity assists.
+
+---
+
+**The Lunar Gateway**
+
+The Gateway is a small space station that will orbit the Moon. Think of it as a "staging area" for lunar missions.
+
+**Gateway's Role:**
+- **Docking Station:** Where Orion connects before landing
+- **Science Lab:** Conduct experiments in lunar orbit
+- **Refueling Station:** Store fuel for future missions
+- **Communication Hub:** Relay signals between Earth and the Moon
+
+**Orbit:** Gateway will orbit in NRHO, about 1,000 miles from the Moon's surface at its closest point. This orbit requires minimal fuel to maintain—perfect for long-term missions.
+
+---
+
+**The Human Landing System (HLS)**
+
+The HLS is the spacecraft that takes astronauts from Gateway down to the Moon's surface. SpaceX's Starship has been selected as the first HLS.
+
+**Landing Sequence:**
+1. **Descent:** HLS separates from Gateway and begins descent
+2. **Powered Landing:** Engines fire to slow down and land safely
+3. **Surface Operations:** Astronauts explore the Moon for up to 6 days
+4. **Ascent:** HLS launches back to Gateway
+5. **Return:** Astronauts board Orion and return to Earth
+
+**Gravity on the Moon:** The Moon's gravity is 1/6th of Earth's. This means a 180-pound person weighs only 30 pounds on the Moon! Learn more about [gravity and orbital mechanics](/formulas-library).
+
+---
+
+**Artemis Mission Timeline**
+
+**Artemis I (2022):** Uncrewed test flight—Orion orbited the Moon and returned safely.
+
+**Artemis II (2025):** First crewed flight—astronauts will orbit the Moon but not land.
+
+**Artemis III (2026):** First crewed landing—astronauts will land near the Moon's South Pole.
+
+**Artemis IV+:** Regular missions to build the lunar base and conduct science.
+
+---
+
+**Why the Moon's South Pole?**
+
+NASA chose the Moon's South Pole because:
+- **Water Ice:** Permanently shadowed craters contain water ice—essential for life support and rocket fuel
+- **Sunlight:** Some peaks get near-constant sunlight for solar power
+- **Science:** Unique geology and potential for discovering lunar resources
+
+---
+
+**The Science Behind Artemis**
+
+**Orbital Mechanics:** Artemis uses **Hohmann transfer orbits** to efficiently travel between Earth and the Moon. The spacecraft follows an elliptical path that minimizes fuel use. See this in action with our [orbit calculator](/calculators).
+
+**Gravity Assists:** The Moon's gravity helps slow Orion into orbit, reducing the fuel needed. This same technique is used for Mars missions.
+
+**Life Support:** Orion's life support system recycles air and water, similar to the International Space Station. Learn how the [ISS works](/learn/how-iss-works) to understand space life support.
+
+---
+
+**How to Follow Artemis Missions**
+
+- **NASA TV:** Watch live launches and mission updates
+- **NASA Website:** Track mission progress and see photos
+- **Our Blog:** Read daily [space news](/space-news) about Artemis and other missions
+
+---
+
+**Learn More**
+
+Want to understand the physics behind Artemis? Check out:
+- [Orbital mechanics for beginners](/learn/orbital-mechanics)
+- [How NASA launches satellites](/learn/how-nasa-launches-satellite)
+- [Space formulas and calculations](/formulas-library)
+- [3D orbit simulator](/simulator) - See how spacecraft orbit the Moon
+
+---
+
+**Conclusion**
+
+The Artemis program represents humanity's next giant leap. By understanding how rockets, spacecraft, and orbital mechanics work, you can follow along as NASA returns to the Moon and prepares for Mars. The same physics that powers Artemis—gravity, orbital velocity, and rocket propulsion—is what makes satellites orbit Earth every day.
+
+Ready to explore space? Try our [interactive 3D simulator](/simulator) and see orbital mechanics in action!`,
+    category: "nasa-news",
+    date: "2026-02-17",
+    tags: ["Artemis", "NASA", "Moon mission", "SLS", "Orion", "space exploration"],
+    seoKeywords: "Artemis mission, NASA Moon mission, how Artemis works, SLS rocket, Orion spacecraft, lunar Gateway, Moon landing 2026",
+  },
+  {
+    slug: "how-relativistic-quantum-effects-correct-gps-accuracy-20260218",
+    title: "How relativistic quantum effects correct GPS accuracy",
+    excerpt: "Learn about how relativistic quantum effects correct gps accuracy — covering the science, real-world applications, and how it connects to space exploration.",
+    content: `**Introduction**
+
+How relativistic quantum effects correct GPS accuracy is a fascinating topic in space science and physics that connects to how we explore and understand the universe.
+
+**Key Points**
+
+- This topic demonstrates fundamental principles of quantum physics & space
+- Real-world applications range from satellite technology to deep space missions
+- Understanding this helps explain phenomena that shape our understanding of the cosmos
+
+**How It Works**
+
+The science behind how relativistic quantum effects correct gps accuracy involves principles that aerospace engineers, physicists, and NASA scientists use daily. From orbital mechanics to quantum effects, these concepts are the building blocks of modern space exploration.
+
+Key principles include:
+- The mathematical relationships governing motion and energy in space
+- How measurements and observations lead to testable predictions
+- Engineering applications that put theory into practice
+
+**Real-World Applications**
+
+- NASA missions rely on these principles for trajectory planning and mission design
+- Satellite operators use related physics for constellation management
+- Research institutions advance our understanding through experiments and observation
+
+**Conclusion**
+
+How relativistic quantum effects correct GPS accuracy illustrates the beauty and complexity of physics at work in the cosmos. Whether you are a student, researcher, or enthusiast, understanding these concepts opens the door to appreciating the engineering and science that make space exploration possible.
+
+Explore more on our [orbit simulator](/simulator) and [orbital mechanics guide](/learn/orbital-mechanics).`,
+    category: "quantum-physics",
+    date: "2026-02-18",
+    tags: ["quantum physics", "quantum computing", "NASA technology"],
+    seoKeywords: "quantum physics, quantum computing, NASA technology",
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

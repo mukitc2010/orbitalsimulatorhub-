@@ -1,6 +1,7 @@
 import { Route, Switch } from "wouter";
 import { NavigationHeader } from "./components/NavigationHeader";
 import { Footer } from "./components/Footer";
+import { SEOHead } from "./components/SEOHead";
 import { Home } from "./pages/Home";
 import { PlayLearn } from "./pages/PlayLearn";
 import { Simulator } from "./pages/Simulator";
@@ -37,11 +38,20 @@ import { Aerodynamics } from "./pages/Aerodynamics";
 import { QuantumSpace } from "./pages/QuantumSpace";
 import { AIInAerospace } from "./pages/AIInAerospace";
 import { SpaceCareers } from "./pages/SpaceCareers";
+import { NASAStudyGuide } from "./pages/NASAStudyGuide";
+import { HowSatellitesWork } from "./pages/HowSatellitesWork";
+import { AstronomyForKids } from "./pages/AstronomyForKids";
+import { NASAForStudents } from "./pages/NASAForStudents";
+import { SpaceNews } from "./pages/SpaceNews";
+import { NASAForKids } from "./pages/NASAForKids";
+import { SatelliteTutorial } from "./pages/SatelliteTutorial";
+import { SpaceQuiz } from "./pages/SpaceQuiz";
 import { NotFound } from "./pages/NotFound";
 
 function App() {
   return (
     <div className="min-h-screen blueprint-bg flex flex-col">
+      <SEOHead />
       <NavigationHeader />
       <main className="container mx-auto px-4 py-6 max-w-7xl flex-1">
         <Switch>
@@ -80,7 +90,16 @@ function App() {
           <Route path="/learn/aerodynamics" component={Aerodynamics} />
           <Route path="/learn/quantum-space" component={QuantumSpace} />
           <Route path="/ai-in-aerospace" component={AIInAerospace} />
+          <Route path="/ai-in-space" component={AIInAerospace} />
           <Route path="/careers" component={SpaceCareers} />
+          <Route path="/learn/nasa-study-guide" component={NASAStudyGuide} />
+          <Route path="/learn/how-satellites-work" component={HowSatellitesWork} />
+          <Route path="/learn/astronomy-for-kids" component={AstronomyForKids} />
+          <Route path="/learn/nasa-for-students" component={NASAForStudents} />
+          <Route path="/space-news" component={SpaceNews} />
+          <Route path="/learn/nasa-for-kids" component={NASAForKids} />
+          <Route path="/learn/satellite-tutorial" component={SatelliteTutorial} />
+          <Route path="/space-quiz" component={SpaceQuiz} />
           <Route component={NotFound} />
         </Switch>
       </main>

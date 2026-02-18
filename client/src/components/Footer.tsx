@@ -1,23 +1,65 @@
 import { Link } from "wouter";
 
+const footerLinks = [
+  { href: "/", label: "Home" },
+  { href: "/space-news", label: "Space news" },
+  { href: "/learn/nasa-for-kids", label: "NASA for kids" },
+  { href: "/ai-in-space", label: "AI in space" },
+  { href: "/learn/satellite-tutorial", label: "Satellite tutorial" },
+  { href: "/space-quiz", label: "Space quiz" },
+  { href: "/simulator", label: "Simulator" },
+  { href: "/blog", label: "Blog" },
+  { href: "/formulas-library", label: "Formulas" },
+  { href: "/satellites", label: "Satellites" },
+  { href: "/astrobot", label: "AstroBot" },
+  { href: "/learn/orbital-mechanics", label: "Orbital mechanics" },
+  { href: "/research", label: "Research" },
+  { href: "/guide", label: "Guide" },
+];
+
 export function Footer() {
   return (
-    <footer className="border-t-2 border-slate-200 mt-auto py-8 bg-slate-50/80">
+    <footer
+      className="border-t-2 mt-auto py-8"
+      style={{
+        borderColor: "var(--border-color)",
+        background: "var(--bg-footer)",
+      }}
+    >
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
-          <Link href="/" className="text-slate-600 hover:text-[var(--accent-cyan)] font-medium transition">Home</Link>
-          <Link href="/simulator" className="text-slate-600 hover:text-[var(--accent-cyan)] font-medium transition">Simulator</Link>
-          <Link href="/formulas-library" className="text-slate-600 hover:text-[var(--accent-cyan)] font-medium transition">Formulas</Link>
-          <Link href="/satellites" className="text-slate-600 hover:text-[var(--accent-cyan)] font-medium transition">Satellites</Link>
-          <Link href="/calculators" className="text-slate-600 hover:text-[var(--accent-cyan)] font-medium transition">Calculators</Link>
-          <Link href="/astrobot" className="text-slate-600 hover:text-[var(--accent-cyan)] font-medium transition">AstroBot</Link>
-          <Link href="/learn/orbital-mechanics" className="text-slate-600 hover:text-[var(--accent-cyan)] font-medium transition">Orbital mechanics</Link>
-          <Link href="/learn/space-questions" className="text-slate-600 hover:text-[var(--accent-cyan)] font-medium transition">Space Q&amp;A</Link>
-          <Link href="/research" className="text-slate-600 hover:text-[var(--accent-cyan)] font-medium transition">Research</Link>
-          <Link href="/guide" className="text-slate-600 hover:text-[var(--accent-cyan)] font-medium transition">Guide</Link>
+          {footerLinks.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className="font-medium transition"
+              style={{ color: "var(--text-secondary)" }}
+            >
+              {label}
+            </Link>
+          ))}
+          <a
+            href={import.meta.env.VITE_COMMUNITY_URL || "http://localhost:3001"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium transition"
+            style={{ color: "var(--text-secondary)" }}
+          >
+            Community
+          </a>
         </div>
-        <p className="mt-2 text-center text-slate-600 text-sm font-medium">PhD researchers: <Link href="/learn/aerospace#phd" className="text-[var(--accent-cyan)] hover:underline">Advanced resources</Link>. <Link href="/research" className="text-[var(--accent-cyan)] hover:underline">Research & topics</Link> · <Link href="/learn/aerospace" className="text-[var(--accent-cyan)] hover:underline">Aerospace reference</Link>. New here? <Link href="/guide" className="text-[var(--accent-cyan)] hover:underline">Guide</Link> · <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">Simulator</Link>.</p>
-        <p className="mt-4 text-center text-slate-500 text-sm">Orbital Simulator Hub — orbitalsimulatorhub.com — aerospace study for students, scientists &amp; PhD researchers</p>
+        <p className="mt-2 text-center text-sm font-medium" style={{ color: "var(--text-secondary)" }}>
+          PhD researchers:{" "}
+          <Link href="/learn/aerospace#phd" className="hover:underline" style={{ color: "var(--accent-primary)" }}>Advanced resources</Link>.{" "}
+          <Link href="/research" className="hover:underline" style={{ color: "var(--accent-primary)" }}>Research &amp; topics</Link> ·{" "}
+          <Link href="/learn/aerospace" className="hover:underline" style={{ color: "var(--accent-primary)" }}>Aerospace reference</Link>.
+          New here?{" "}
+          <Link href="/guide" className="hover:underline" style={{ color: "var(--accent-primary)" }}>Guide</Link> ·{" "}
+          <Link href="/simulator" className="hover:underline" style={{ color: "var(--accent-primary)" }}>Simulator</Link>.
+        </p>
+        <p className="mt-4 text-center text-sm" style={{ color: "var(--text-muted)" }}>
+          Orbital Simulator Hub — orbitalsimulatorhub.com — aerospace study for students, scientists &amp; PhD researchers
+        </p>
       </div>
     </footer>
   );

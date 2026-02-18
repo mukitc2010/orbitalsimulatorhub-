@@ -1,0 +1,6 @@
+# Orbital Simulator Hub - allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap (update base URL if your site is different)
+Sitemap: https://orbitalsimulatorhub.com/sitemap.xml

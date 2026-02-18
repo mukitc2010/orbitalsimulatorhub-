@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { APP_NAME } from "../const";
 import { DailyTopicIcon } from "../components/DailyTopicIcon";
+import { BLOG_POSTS } from "../data/blogPosts";
 
 const FEATURES = [
   { href: "/play#simulator", icon: "🛸", title: "3D Simulator", desc: "Add LEO, MEO, GEO satellites and watch orbits in real time.", cyan: true },
@@ -14,7 +15,11 @@ const CARDS = [
   { href: "/formulas-library", icon: "🧮", title: "Space formulas", desc: "Gravity, orbital velocity, escape velocity, Kepler, rocket equation + calculators.", gold: true },
   { href: "/satellites", icon: "🛰", title: "Real satellite orbits", desc: "ISS, Starlink, GPS, weather satellites — altitude, speed, orbit time.", cyan: true },
   { href: "/calculators", icon: "🔢", title: "Orbit calculator", desc: "NASA-style orbit calculator, gravity calculator, escape velocity.", pink: true },
-  { href: "/learn/orbital-mechanics", icon: "🌌", title: "What is orbital mechanics?", desc: "Kids, beginner, and engineer versions. Learn how satellites orbit Earth.", cyan: true },
+  { href: "/learn/orbital-mechanics", icon: "🌌", title: "Orbital mechanics for beginners", desc: "What is orbital mechanics? Kids, beginner, and engineer versions. Learn how satellites orbit Earth.", cyan: true },
+  { href: "/learn/nasa-study-guide", icon: "📖", title: "NASA study guide", desc: "Key NASA missions, orbital mechanics, and space science. For students and teachers.", pink: true },
+  { href: "/learn/how-satellites-work", icon: "🛰", title: "How satellites work", desc: "Why satellites don't fall, LEO vs MEO vs GEO, communications, GPS, and real examples.", gold: true },
+  { href: "/learn/astronomy-for-kids", icon: "🌟", title: "Astronomy for kids", desc: "Solar system, Moon, planets, astronauts — fun space learning for kids and families.", cyan: true },
+  { href: "/learn/nasa-for-students", icon: "🎓", title: "NASA for students", desc: "Free resources: missions, orbital mechanics, AI in space, careers, internships.", pink: true },
   { href: "/learn/space-questions", icon: "❓", title: "Why don't satellites fall?", desc: "Simple answers: moon, astronauts float, what if satellite stops.", pink: true },
   { href: "/learn/experiments", icon: "🔬", title: "Space Experiments", desc: "5 hands-on DIY experiments to understand orbital mechanics and space physics!", gold: true },
   { href: "/learn/how-gps-works", icon: "📍", title: "How GPS Works", desc: "Learn how GPS satellites help you navigate. Trilateration, atomic clocks, constellation.", cyan: true },
@@ -51,7 +56,7 @@ function FeatureCard({ href, icon, title, desc, cyan, pink, gold }: {
         <div className={`card-icon-float inline-flex w-12 h-12 rounded-xl items-center justify-center text-2xl mb-3 ${bg} ${border} border transition-transform`}>
           {icon}
         </div>
-        <h2 className="font-bold text-xl mb-1.5 text-[#0f172a]">{title}</h2>
+        <h2 className="font-bold text-xl mb-1.5" style={{ color: "var(--text-primary)" }}>{title}</h2>
         <p className="subhead text-sm">{desc}</p>
       </a>
     </Link>
@@ -64,13 +69,16 @@ export function Home() {
       {/* Hero with gradient */}
       <section className="hero-gradient rounded-2xl px-6 py-10 sm:py-12 text-center mb-10">
         <p className="text-sm font-medium text-[var(--accent-cyan)] uppercase tracking-wider mb-2">🌌 Welcome to</p>
-        <h1 className="headline mb-3 text-white">{APP_NAME}</h1>
+        <h1 className="headline mb-3 text-white">Orbital Simulator Hub – Learn Space, Satellites &amp; NASA Science</h1>
         <p className="text-lg sm:text-xl font-semibold text-white/95 max-w-xl mx-auto mb-2">
           Explore Space. Learn Physics. Build the Future.
         </p>
         <p className="subhead max-w-2xl mx-auto mb-4 text-slate-300">
-          Dive into real aerospace science, orbital mechanics, quantum physics, and AI-powered space technology.
-          From Newton&apos;s laws to satellite simulations and deep space exploration — everything here is built for students, engineers, researchers, and future astronauts.
+          Learn orbital mechanics, satellites, aerospace engineering, AI in space, NASA missions, and real simulations.
+          Interactive space simulator for students, engineers, and researchers.
+        </p>
+        <p className="text-sm text-slate-400 max-w-2xl mx-auto mb-4">
+          Orbital mechanics for beginners · Satellite orbit simulator · How satellites work · NASA study guide · Space physics course · AI in space technology · Astronomy for kids · NASA for students.
         </p>
         <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-slate-300 max-w-2xl mx-auto mb-6 list-none pl-0">
           <li>🔭 Learn real NASA concepts</li>
@@ -80,7 +88,7 @@ export function Home() {
           <li>📡 Study real mission data &amp; algorithms</li>
         </ul>
         <Link href="/play">
-          <a className="hero-cta inline-block px-8 py-4 rounded-xl font-black text-lg bg-[var(--accent-cyan)] text-[#0f172a] shadow-lg hover:opacity-95 hover:scale-[1.03] transition mb-2">
+          <a className="hero-cta inline-block px-8 py-4 rounded-xl font-black text-lg shadow-lg hover:opacity-95 hover:scale-[1.03] transition mb-2" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>
             🚀 Start your journey beyond Earth →
           </a>
         </Link>
@@ -94,6 +102,28 @@ export function Home() {
         <DailyTopicIcon />
       </section>
 
+      {/* Traffic keywords — daily content hubs (Space news, NASA for kids, AI in space, Satellite tutorial, Space quiz) */}
+      <section className="mb-8 rounded-xl border-2 border-[var(--accent-cyan)]/40 bg-white p-4">
+        <h2 className="text-sm font-bold text-slate-600 uppercase tracking-wider mb-3">📡 Daily content · Fresh pages for learners</h2>
+        <div className="flex flex-wrap gap-2">
+          <Link href="/space-news">
+            <a className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-cyan)]/20 text-slate-800 font-medium text-sm transition">Space news</a>
+          </Link>
+          <Link href="/learn/nasa-for-kids">
+            <a className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-pink)]/20 text-slate-800 font-medium text-sm transition">NASA for kids</a>
+          </Link>
+          <Link href="/ai-in-space">
+            <a className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-gold)]/20 text-slate-800 font-medium text-sm transition">AI in space</a>
+          </Link>
+          <Link href="/learn/satellite-tutorial">
+            <a className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-cyan)]/20 text-slate-800 font-medium text-sm transition">Satellite tutorial</a>
+          </Link>
+          <Link href="/space-quiz">
+            <a className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-gold)]/20 text-slate-800 font-medium text-sm transition">Space quiz</a>
+          </Link>
+        </div>
+      </section>
+
       {/* Homepage highlights: chatbot, news, featured mission */}
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-8">
         <Link href="/astrobot">
@@ -103,11 +133,11 @@ export function Home() {
             <span className="text-xs text-[var(--accent-cyan)] font-medium">Ask AstroBot →</span>
           </a>
         </Link>
-        <Link href="/blog">
+        <Link href="/space-news">
           <a className="rounded-xl border border-slate-200 bg-white p-4 hover:border-[var(--accent-cyan)] hover:shadow-sm transition block">
-            <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Daily space news</h3>
-            <p className="text-sm text-slate-600 mb-2">NASA, SpaceX, missions, astronomy.</p>
-            <span className="text-xs text-[var(--accent-cyan)] font-medium">Read blog →</span>
+            <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Space news</h3>
+            <p className="text-sm text-slate-600 mb-2">Daily NASA, missions, astronomy. Fresh content.</p>
+            <span className="text-xs text-[var(--accent-cyan)] font-medium">Space news →</span>
           </a>
         </Link>
         <div className="rounded-xl border border-slate-200 bg-white p-4">
@@ -178,7 +208,7 @@ export function Home() {
           <span className="px-3 py-1.5 rounded-full text-xs font-medium bg-[var(--accent-gold)]/20 text-slate-800">Quantum space communication</span>
         </div>
         <p className="text-xs text-slate-500 mt-3">
-          <Link href="/ai-in-aerospace"><a className="text-[var(--accent-cyan)] font-medium hover:underline">AI in Aerospace</a></Link>
+          <Link href="/ai-in-space"><a className="text-[var(--accent-cyan)] font-medium hover:underline">AI in space</a></Link>
           {" · "}
           <Link href="/learn/quantum-space"><a className="text-[var(--accent-cyan)] font-medium hover:underline">Quantum &amp; Space</a></Link>
         </p>
@@ -229,10 +259,47 @@ export function Home() {
           </div>
         </div>
         <Link href="/astrobot">
-          <a className="inline-block mt-4 px-5 py-2.5 rounded-xl font-medium bg-[var(--accent-cyan)]/20 text-[#0f172a] hover:bg-[var(--accent-cyan)]/30 transition">
+          <a className="inline-block mt-4 px-5 py-2.5 rounded-xl font-medium transition" style={{ background: "color-mix(in srgb, var(--accent-primary) 20%, transparent)", color: "var(--text-primary)" }}>
             🤖 Open Ask AstroBot →
           </a>
         </Link>
+      </section>
+
+      {/* Latest Blog Posts */}
+      <section className="rounded-xl border-2 border-[var(--accent-cyan)]/40 bg-white p-6 mb-8">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xl font-bold text-slate-800">📰 Latest from the Blog</h2>
+          <Link href="/blog">
+            <a className="text-sm text-[var(--accent-cyan)] font-medium hover:underline">View all →</a>
+          </Link>
+        </div>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {BLOG_POSTS.slice(0, 3).map((post) => (
+            <Link key={post.slug} href={`/blog/${post.slug}`}>
+              <a className="block rounded-lg border border-slate-200 p-4 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
+                <span className="text-xs font-medium uppercase tracking-wider text-[var(--accent-pink)]">{post.category}</span>
+                <h3 className="font-semibold text-slate-800 text-sm mt-1 line-clamp-2">{post.title}</h3>
+                <p className="text-xs text-slate-500 mt-1 line-clamp-2">{post.excerpt}</p>
+                <p className="text-xs text-slate-400 mt-2">{post.date}</p>
+              </a>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Community CTA */}
+      <section className="rounded-xl border-2 border-[var(--accent-pink)]/40 bg-gradient-to-br from-slate-50 to-pink-50/30 p-6 mb-8 text-center">
+        <h2 className="text-xl font-bold text-slate-800 mb-2">🌐 Join the Community</h2>
+        <p className="text-sm text-slate-600 max-w-lg mx-auto mb-4">
+          Explore educational content about aerospace, quantum physics, and orbital mechanics — updated daily.
+        </p>
+        <a
+          href="https://www.orbitalsimulatorhub.com/welcome"
+          className="inline-block px-6 py-3 rounded-xl font-medium transition"
+          style={{ background: "color-mix(in srgb, var(--accent-secondary) 20%, transparent)", color: "var(--text-primary)" }}
+        >
+          Explore Community Hub →
+        </a>
       </section>
 
       {/* Quick links */}
