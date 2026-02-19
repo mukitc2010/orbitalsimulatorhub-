@@ -16,6 +16,16 @@ export interface DailyTopic {
 
 export const DAILY_TOPICS: DailyTopic[] = [
   {
+    id: "neuro-space-2026-02-19",
+    date: "2026-02-19",
+    title: "Neuro-Space: Light-Speed & Autonomous AI",
+    icon: "🌌",
+    category: "orbital-mechanics",
+    description: "Light-speed constraints, neuro-space cognition, and aerospace dynamics. Future autonomous spacecraft for Mars and beyond.",
+    learnMoreUrl: "/research/neuro-space",
+    keywords: ["neuro-space", "light-speed", "autonomous AI", "deep space", "aerospace"],
+  },
+  {
     id: "newton-laws-2026-02-15",
     date: "2026-02-15",
     title: "Newton's Laws of Motion",
