@@ -1,7 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "wouter";
-import { trpc } from "../trpc";
-import { getAstroBotReplyLocal, ASTROBOT_FALLBACK } from "../astrobotKnowledge";
 
 const TAB_IDS = ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"] as const;
 const TABS: { id: (typeof TAB_IDS)[number]; label: string }[] = [
@@ -27,14 +25,7 @@ const DIAGRAM_NODES: { title: string; desc: string; body: string }[] = [
 const FOCUS_NODES: { title: string; desc: string; body: string }[] = [
   { title: "Quick path: Learn in 10 minutes", desc: "Fast overview with key ideas.", body: "1) AI Navigation — how satellites and rovers know where they are and avoid collisions. 2) Anomaly Detection — how missions spot problems before they become failures. 3) Mars AI — how Perseverance and Curiosity drive and choose science targets autonomously. 4) Space ML — how data from telescopes and telemetry turns into discovery. This sequence gives you a complete mental model: move, stay healthy, explore, then learn from data." },
   { title: "Research path: Build a project", desc: "Turn this into a real project.", body: "Build a mini satellite health monitor: simulate telemetry (power, thermal, attitude), run simple anomaly detection (thresholds or a small ML model), and trigger a 'safe mode' response. Then add orbit prediction and collision alerts using two-body mechanics. Great for portfolio and interviews; the same concepts appear in space agency and commercial mission design." },
-  { title: "What makes this mission-grade?", desc: "Structure + clarity + mission logic.", body: "Clear modules (navigation, planning, FDIR, robotics), mission-grade logic that is testable and traceable, diagram-first learning so you see the autonomy loop, and a built-in assistant (AstroBot) that turns questions into explanations and next steps. The content mirrors how flight software and mission ops are actually structured." },
-];
-
-const ASTROBOT_PROMPTS = [
-  "How does satellite collision avoidance work?",
-  "What is FDIR in spacecraft?",
-  "How do Mars rovers drive autonomously?",
-  "Explain AI in SpaceX rocket landing",
+  { title: "What makes this mission-grade?", desc: "Structure + clarity + mission logic.", body: "Clear modules (navigation, planning, FDIR, robotics), mission-grade logic that is testable and traceable, diagram-first learning so you see the autonomy loop. The content mirrors how flight software and mission ops are actually structured." },
 ];
 
 const SECTIONS: { id: (typeof TAB_IDS)[number]; icon: string; title: string; desc: string }[] = [
@@ -58,20 +49,11 @@ const HERO_TAGS: { tag: string; tabId: (typeof TAB_IDS)[number] }[] = [
   { tag: "space ML", tabId: "t8" },
 ];
 
-type ChatMessage = { role: "user" | "bot"; text: string };
-
 export function AIInAerospace() {
   const [activeTab, setActiveTab] = useState<(typeof TAB_IDS)[number]>("t1");
   const [modal, setModal] = useState<{ title: string; body: string } | null>(null);
-  const [chatMessages, setChatMessages] = useState<ChatMessage[]>([
-    { role: "bot", text: "Hi! I'm AstroBot. Ask me: \"How does collision avoidance work?\" or \"Explain rover autonomy like a beginner.\"" },
-  ]);
-  const [chatInput, setChatInput] = useState("");
-  const [chatLoading, setChatLoading] = useState(false);
-  const chatLogRef = useRef<HTMLDivElement>(null);
   const guideRef = useRef<HTMLElement>(null);
   const diagramsRef = useRef<HTMLElement>(null);
-  const astrobotRef = useRef<HTMLDivElement>(null);
   const dailyNewsRef = useRef<HTMLElement>(null);
 
   const scrollToRef = (ref: { current: HTMLElement | null }) => {
@@ -88,15 +70,10 @@ export function AIInAerospace() {
     scrollToRef(guideRef);
   };
 
-  const scrollToSection = (target: "diagrams" | "astrobot" | "dailynews") => {
+  const scrollToSection = (target: "diagrams" | "dailynews") => {
     if (target === "diagrams") scrollToRef(diagramsRef);
-    else if (target === "astrobot") scrollToRef(astrobotRef);
     else if (target === "dailynews") scrollToRef(dailyNewsRef);
   };
-
-  useEffect(() => {
-    chatLogRef.current?.scrollTo({ top: chatLogRef.current.scrollHeight, behavior: "smooth" });
-  }, [chatMessages]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") closeModal(); };
@@ -105,30 +82,6 @@ export function AIInAerospace() {
 
   const openModal = (title: string, body: string) => setModal({ title, body });
   const closeModal = () => setModal(null);
-
-  const sendChat = async () => {
-    const text = chatInput.trim();
-    if (!text || chatLoading) return;
-    setChatInput("");
-    setChatMessages((m) => [...m, { role: "user", text }]);
-    setChatLoading(true);
-
-    const localReply = getAstroBotReplyLocal(text);
-    if (localReply) {
-      setChatMessages((m) => [...m, { role: "bot", text: localReply.answer }]);
-      setChatLoading(false);
-      return;
-    }
-
-    try {
-      const reply = await trpc.astrobot.ask.mutate({ question: text });
-      setChatMessages((m) => [...m, { role: "bot", text: reply }]);
-    } catch {
-      setChatMessages((m) => [...m, { role: "bot", text: ASTROBOT_FALLBACK }]);
-    } finally {
-      setChatLoading(false);
-    }
-  };
 
   return (
     <div className="nasa-ai-page max-w-6xl mx-auto">
@@ -141,7 +94,7 @@ export function AIInAerospace() {
             </h1>
             <p className="text-[var(--nasa-muted)] text-base leading-relaxed mb-3">
               A mission-grade learning hub covering autonomous orbit determination, collision avoidance, spacecraft decision-making,
-              robotics, anomaly detection, Mars AI, and space data machine learning — plus <strong>AstroBot</strong> and <strong>daily space news</strong>.
+              robotics, anomaly detection, Mars AI, and space data machine learning — plus <strong>daily space news</strong>.
             </p>
             <div className="flex flex-wrap gap-2 mt-3">
               <button type="button" onClick={() => goToTab("t1")} className="nasa-ai-kpi cursor-pointer text-left hover:opacity-90 hover:scale-[1.02] transition" title="Jump to 8 core modules">
@@ -149,9 +102,6 @@ export function AIInAerospace() {
               </button>
               <button type="button" onClick={() => { scrollToSection("diagrams"); }} className="nasa-ai-kpi cursor-pointer text-left hover:opacity-90 hover:scale-[1.02] transition" title="Jump to interactive diagram">
                 Interactive Diagrams <small>Click to learn</small>
-              </button>
-              <button type="button" onClick={() => { scrollToSection("astrobot"); }} className="nasa-ai-kpi cursor-pointer text-left hover:opacity-90 hover:scale-[1.02] transition" title="Jump to AstroBot chat">
-                AstroBot AI <small>Ask anything</small>
               </button>
               <button type="button" onClick={() => { scrollToSection("dailynews"); }} className="nasa-ai-kpi cursor-pointer text-left hover:opacity-90 hover:scale-[1.02] transition" title="Jump to daily space news">
                 Daily News <small>Auto publishing</small>
@@ -342,64 +292,18 @@ export function AIInAerospace() {
         </div>
       </section>
 
-      {/* Diagram + AstroBot */}
-      <section id="diagrams" ref={diagramsRef} className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
-        <div className="lg:col-span-2 nasa-ai-card">
-          <div className="nasa-ai-card-inner">
-            <h2 className="text-lg font-bold mb-2">Interactive Diagram: Spacecraft Autonomy Loop</h2>
-            <p className="text-[var(--nasa-muted)] text-sm mb-3">Click any node to open a mission-grade explanation.</p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-              {DIAGRAM_NODES.map((n) => (
-                <div key={n.title} className="nasa-ai-node" onClick={() => openModal(n.title, n.body)} role="button" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && openModal(n.title, n.body)}>
-                  <div className="nasa-ai-node-title">{n.title}</div>
-                  <div className="nasa-ai-node-desc">{n.desc}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div id="astrobot" ref={astrobotRef} className="nasa-ai-card">
-          <div className="nasa-ai-card-inner p-0 flex flex-col h-[520px]">
-            <div className="flex items-center justify-between px-4 py-3 border-b border-[var(--nasa-line)] bg-[rgba(255,255,255,.02)]">
-              <div>
-                <div className="font-black">🧠 AstroBot</div>
-                <div className="text-[var(--nasa-muted)] text-xs mt-0.5">Ask about satellites, space missions, Mars, ML.</div>
+      {/* Diagram */}
+      <section id="diagrams" ref={diagramsRef} className="nasa-ai-card mb-4">
+        <div className="nasa-ai-card-inner">
+          <h2 className="text-lg font-bold mb-2">Interactive Diagram: Spacecraft Autonomy Loop</h2>
+          <p className="text-[var(--nasa-muted)] text-sm mb-3">Click any node to open a mission-grade explanation.</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            {DIAGRAM_NODES.map((n) => (
+              <div key={n.title} className="nasa-ai-node" onClick={() => openModal(n.title, n.body)} role="button" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && openModal(n.title, n.body)}>
+                <div className="nasa-ai-node-title">{n.title}</div>
+                <div className="nasa-ai-node-desc">{n.desc}</div>
               </div>
-              <div className="flex items-center gap-2 text-[var(--nasa-muted)] font-bold text-sm">
-                <span className="nasa-ai-dot" /> Ready
-              </div>
-            </div>
-            <div ref={chatLogRef} className="nasa-ai-chat-log flex-1">
-              {chatMessages.map((msg, i) => (
-                <div key={i} className={`nasa-ai-msg ${msg.role}`}>
-                  <span className="whitespace-pre-wrap">{msg.text}</span>
-                </div>
-              ))}
-              {chatLoading && <div className="nasa-ai-msg bot">Thinking…</div>}
-            </div>
-            <div className="nasa-ai-chat-input-wrap">
-              <input
-                type="text"
-                className="nasa-ai-chat-input"
-                placeholder="Ask AstroBot…"
-                value={chatInput}
-                onChange={(e) => setChatInput(e.target.value)}
-                onKeyDown={(e) => e.key === "Enter" && sendChat()}
-                disabled={chatLoading}
-              />
-              <button type="button" className="nasa-ai-chat-send" onClick={sendChat}>Send</button>
-            </div>
-            <div className="px-3 pb-3 pt-0">
-              <p className="text-[var(--nasa-muted)] text-xs mb-1.5">Try:</p>
-              <div className="flex flex-wrap gap-1.5">
-                {ASTROBOT_PROMPTS.map((prompt) => (
-                  <button key={prompt} type="button" onClick={() => { setChatInput(prompt); }} className="text-xs px-2 py-1 rounded-lg border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] text-[var(--nasa-muted)] hover:border-[var(--nasa-brand)] hover:text-[var(--nasa-text)] transition truncate max-w-[180px]" title={prompt}>
-                    {prompt.length > 28 ? prompt.slice(0, 26) + "…" : prompt}
-                  </button>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -443,8 +347,6 @@ export function AIInAerospace() {
           <Link href="/learn/how-mars-rovers-work"><a>How Mars rovers work</a></Link>
           {" · "}
           <Link href="/learn/how-spacex-lands-rockets"><a>How SpaceX lands rockets</a></Link>
-          {" · "}
-          <Link href="/astrobot"><a>Ask AstroBot (AI)</a></Link>
           {" · "}
           <Link href="/research"><a>Research hub</a></Link>
         </div>
