@@ -55,6 +55,8 @@ import { PlanetHub } from "./pages/PlanetHub";
 import { PlanetDetail } from "./pages/PlanetDetail";
 import { LunarGeology } from "./pages/LunarGeology";
 import { NeuroSpaceResearch } from "./pages/NeuroSpaceResearch";
+import { FutureSpaceCivilization } from "./pages/FutureSpaceCivilization";
+import { Next100Years } from "./pages/Next100Years";
 import { NotFound } from "./pages/NotFound";
 
 function App() {
@@ -73,6 +75,8 @@ function App() {
           <Route path="/astrobot" component={AstroBot} />
           <Route path="/research" component={ResearchHub} />
           <Route path="/research/neuro-space" component={NeuroSpaceResearch} />
+          <Route path="/research/future-civilization" component={FutureSpaceCivilization} />
+          <Route path="/research/next-100-years" component={Next100Years} />
           <Route path="/learn/aerospace" component={AerospaceReference} />
           <Route path="/formulas-library" component={FormulaLibrary} />
           <Route path="/satellites" component={RealSatelliteData} />

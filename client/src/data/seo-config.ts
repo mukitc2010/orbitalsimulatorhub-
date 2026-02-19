@@ -17,8 +17,8 @@ export interface SEOConfig {
 export const SEO_CONFIGS: Record<string, SEOConfig> = {
   "/": {
     path: "/",
-    title: "Orbital Simulator Hub – Learn Space, Satellites & More | Interactive Simulator",
-    description: "Learn orbital mechanics, satellites, aerospace engineering, AI in space, space missions, and real simulations. Interactive space simulator for students, engineers, and researchers.",
+    title: "Orbital Simulator Hub – #1 Space Research & Learning Platform | Global Authority",
+    description: "Global Space Research & Future Civilization Hub. #1 space learning platform: orbital mechanics, AI in space, quantum tech, interstellar future. Free simulator, AstroBot, 500+ pages.",
     keywords: "orbital mechanics for beginners, satellite orbit simulator, learn aerospace engineering, space study guide, how satellites work, space physics course, AI in space technology, astronomy for kids, space engineering course, space for students",
     ogTitle: "Orbital Simulator Hub – Learn Space, Satellites & More",
     lastUpdated: "2026-02-17T00:00:00Z",
@@ -86,6 +86,20 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     description: "Research hub: space agency resources, orbital mechanics algorithms, real mission data. For students, PhD researchers, and space scientists.",
     keywords: "space research, orbital mechanics research, PhD aerospace",
     lastUpdated: "2026-02-17T00:00:00Z",
+  },
+  "/research/future-civilization": {
+    path: "/research/future-civilization",
+    title: "Future of Space Civilization – From Earth to Interstellar | Orbital Simulator Hub",
+    description: "Vision for humanity's space future: lunar presence, Mars, solar system economy, interstellar. Phases of space civilization. Global Space Research Hub.",
+    keywords: "future space civilization, space future, interstellar, Mars colonization, lunar base, space habitat",
+    lastUpdated: "2026-02-19T00:00:00Z",
+  },
+  "/research/next-100-years": {
+    path: "/research/next-100-years",
+    title: "Next 100 Years of Humanity – Space Roadmap 2025–2125 | Orbital Simulator Hub",
+    description: "Strategic roadmap for space exploration: Moon, Mars, solar system, interstellar. Decade-by-decade vision. Based on publicly available space agency research.",
+    keywords: "next 100 years space, space roadmap, Mars 2030s, interstellar 2100, space future",
+    lastUpdated: "2026-02-19T00:00:00Z",
   },
   "/research/neuro-space": {
     path: "/research/neuro-space",

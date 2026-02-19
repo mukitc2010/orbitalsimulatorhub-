@@ -69,10 +69,10 @@ export function Home() {
     <div className="max-w-4xl mx-auto">
       {/* Hero with gradient */}
       <section className="hero-gradient rounded-2xl px-6 py-10 sm:py-12 text-center mb-10">
-        <p className="text-sm font-medium text-[var(--accent-cyan)] uppercase tracking-wider mb-2">🌌 Welcome to</p>
+        <p className="text-sm font-medium text-[var(--accent-cyan)] uppercase tracking-wider mb-2">🌌 Global Space Research &amp; Future Civilization Hub</p>
         <h1 className="headline mb-3 text-white">Orbital Simulator Hub – Learn Space, Satellites &amp; More</h1>
         <p className="text-lg sm:text-xl font-semibold text-white/95 max-w-xl mx-auto mb-2">
-          Explore Space. Learn Physics. Build the Future.
+          The #1 Space Learning &amp; Research Platform on Earth
         </p>
         <p className="subhead max-w-2xl mx-auto mb-4 text-slate-300">
           Learn orbital mechanics, satellites, aerospace engineering, AI in space, space missions, and real simulations.
@@ -85,11 +85,11 @@ export function Home() {
           <strong>Orbital Simulator Hub</strong> (orbitalsimulatorhub.com) is a free 3D orbit simulator and space education platform. Learn orbital mechanics, explore 100+ astronaut profiles, study all 8 planets with real mission data, and use the interactive simulator — all free, no signup required.
         </p>
         <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-slate-300 max-w-2xl mx-auto mb-6 list-none pl-0">
-          <li>🔭 Learn real space concepts</li>
-          <li>🛰 Run orbital simulations</li>
-          <li>🤖 Discover AI in aerospace</li>
-          <li>⚛ Explore quantum physics &amp; space science</li>
-          <li>📡 Study real mission data &amp; algorithms</li>
+          <li>🔭 Space education &amp; research</li>
+          <li>🛰 AI spacecraft &amp; orbital simulations</li>
+          <li>🤖 Quantum space technology</li>
+          <li>⚛ Future interstellar civilization</li>
+          <li>📡 Real mission data &amp; algorithms</li>
         </ul>
         <div className="flex flex-wrap justify-center gap-3 mb-2">
           <Link href="/simulator">
@@ -114,7 +114,7 @@ export function Home() {
           </Link>
         </div>
         <p className="text-xs text-slate-400 uppercase tracking-wider font-medium">
-          Simulator · Astronauts · Planets · Missions · AstroBot
+          Simulator · Astronauts · Planets · Missions · AstroBot · Research &amp; Future
         </p>
         <div className="mt-4">
           <ShareBar path="/" showRedditSubs />
@@ -173,10 +173,26 @@ export function Home() {
       </section>
 
       <section className="rounded-xl border-2 border-[var(--accent-pink)]/30 bg-gradient-to-br from-slate-50 to-pink-50/30 p-4 mb-4">
-        <h2 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">🪐 Space fact of the day</h2>
-        <p className="text-slate-700">
-          The ISS orbits Earth about every 90 minutes — astronauts see 16 sunrises and sunsets per day. At ~400 km altitude, orbital speed is roughly 7.66 km/s.
+        <h2 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">💫 Did you know?</h2>
+        <p className="text-slate-700 mb-2">
+          <strong>The ISS orbits Earth about every 90 minutes</strong> — astronauts see 16 sunrises and sunsets per day. At ~400 km altitude, orbital speed is roughly 7.66 km/s.
         </p>
+        <p className="text-slate-600 text-sm">
+          A teaspoon of neutron star would weigh 6 billion tons. There are more stars in the universe than grains of sand on Earth. Share if you love space! 🚀
+        </p>
+      </section>
+
+      {/* Authority: Future & Research */}
+      <section className="rounded-xl border-2 border-[var(--accent-cyan)]/40 bg-white p-4 mb-6">
+        <h2 className="text-sm font-bold text-slate-700 uppercase tracking-wider mb-3">📚 Authority &amp; Future Research</h2>
+        <div className="flex flex-wrap gap-2">
+          <Link href="/research/neuro-space"><a className="px-3 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-cyan)]/20 text-slate-800 font-medium text-sm transition">Neuro-Space &amp; Light-Speed</a></Link>
+          <Link href="/research/future-civilization"><a className="px-3 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-cyan)]/20 text-slate-800 font-medium text-sm transition">Future of Space Civilization</a></Link>
+          <Link href="/research/next-100-years"><a className="px-3 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-cyan)]/20 text-slate-800 font-medium text-sm transition">Next 100 Years</a></Link>
+          <Link href="/research"><a className="px-3 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-cyan)]/20 text-slate-800 font-medium text-sm transition">Research Hub</a></Link>
+          <Link href="/ai-in-aerospace"><a className="px-3 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-cyan)]/20 text-slate-800 font-medium text-sm transition">AI in Aerospace</a></Link>
+          <Link href="/learn/quantum-space"><a className="px-3 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-cyan)]/20 text-slate-800 font-medium text-sm transition">Quantum Space</a></Link>
+        </div>
       </section>
 
       <section className="rounded-xl bg-white border border-slate-200 p-4 mb-8 text-sm text-slate-700">

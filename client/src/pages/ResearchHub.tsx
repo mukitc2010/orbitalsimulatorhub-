@@ -47,6 +47,16 @@ const CATEGORIES = [
     ],
   },
   {
+    title: "Future & authority",
+    desc: "Future of space civilization, next 100 years, neuro-space, interstellar doctrine.",
+    links: [
+      { href: "/research/future-civilization", label: "Future of Space Civilization", summary: "From Earth orbit to interstellar — humanity's next chapter." },
+      { href: "/research/next-100-years", label: "Next 100 Years of Humanity", summary: "Strategic roadmap 2025–2125 for space exploration." },
+      { href: "/research/neuro-space", label: "Neuro-Space & Light-Speed", summary: "Autonomous spacecraft, relativistic limits, future doctrine." },
+      { href: "/ai-in-aerospace", label: "AI in Aerospace", summary: "Autonomous spacecraft, Mars AI, mission planning." },
+    ],
+  },
+  {
     title: "Ask & explore",
     desc: "Get answers and explore further.",
     links: [

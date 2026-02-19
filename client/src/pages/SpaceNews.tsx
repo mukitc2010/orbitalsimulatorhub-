@@ -11,15 +11,15 @@ export function SpaceNews() {
   return (
     <div className="max-w-6xl mx-auto space-y-8">
       <div>
-        <h1 className="headline">Space News – Daily NASA, Missions &amp; Astronomy</h1>
+        <h1 className="headline">Space News – Daily Missions &amp; Astronomy</h1>
         <p className="subhead">
-          Latest space news: NASA missions, Artemis, Mars rovers, James Webb, SpaceX, and astronomy. Updated daily. Read space news for students, teachers, and space fans.
+          Latest space news: Artemis, Mars rovers, James Webb, SpaceX, ISS, and astronomy. Updated daily. Read space news for students, teachers, and space fans.
         </p>
       </div>
 
       <div className="rounded-xl bg-slate-50 border border-slate-200 p-4 text-slate-700">
         <p className="font-medium">📡 Fresh space news every day.</p>
-        <p className="text-sm mt-1">We publish NASA news, satellite tutorials, space facts, and astronomy lessons. Bookmark this page or follow our <Link href="/blog/rss.xml"><a className="text-[var(--accent-cyan)] hover:underline">RSS feed</a></Link> for daily updates. Google loves fresh content — we add new articles regularly.</p>
+        <p className="text-sm mt-1">We publish space mission news, satellite tutorials, space facts, and astronomy lessons. Bookmark this page or follow our <Link href="/blog/rss.xml"><a className="text-[var(--accent-cyan)] hover:underline">RSS feed</a></Link> for daily updates. Google loves fresh content — we add new articles regularly.</p>
       </div>
 
       <section>
@@ -43,7 +43,7 @@ export function SpaceNews() {
           <a className="px-5 py-2.5 rounded-xl bg-[var(--accent-cyan)] text-[#0f172a] font-semibold hover:opacity-90">All articles →</a>
         </Link>
         <Link href="/blog/category/nasa-news">
-          <a className="px-5 py-2.5 rounded-xl border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] font-medium hover:bg-[var(--accent-cyan)]/10">NASA news</a>
+          <a className="px-5 py-2.5 rounded-xl border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] font-medium hover:bg-[var(--accent-cyan)]/10">Space mission news</a>
         </Link>
         <Link href="/missions/timeline">
           <a className="px-5 py-2.5 rounded-xl border-2 border-slate-300 text-slate-700 font-medium hover:bg-slate-100">Mission timeline</a>

@@ -11,6 +11,38 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "space-news-february-2026-artemis-crew-12-starlink",
+    title: "Space News February 2026: Artemis II Fueling Test, Crew-12 at ISS, Starlink Launches",
+    excerpt: "Artemis II targets March launch after second SLS fueling test. SpaceX Crew-12 arrived at the ISS February 14. Starlink launches from California and Florida. Your February 2026 space news roundup.",
+    content: `**Space News Roundup — February 2026**
+
+**Artemis II: March Launch Target**
+
+The first crewed Moon mission in over 50 years is on track for a March 2026 launch. A wet dress rehearsal in early February revealed hydrogen fuel leaks and minor technical issues. Engineers completed repairs—including replacing a suspect filter in ground support equipment at Launch Pad 39B—and scheduled a second fueling test for February 19. The 50-hour countdown began February 17.
+
+The Space Launch System (SLS) will send four astronauts (three U.S., one Canadian) on a 10-day lunar flyby. This mission paves the way for future Artemis Moon landings and eventual Mars missions.
+
+**ISS: Crew-12 Arrival**
+
+SpaceX Crew-12 launched four crew members to the International Space Station on February 14, 2026. The station continues as a hub for science: biology, physics, Earth observation, and technology demonstrations. Commercial crew vehicles (SpaceX Crew Dragon, Boeing Starliner) ferry astronauts to and from the station.
+
+**Commercial Space: Starlink**
+
+SpaceX conducted Starlink satellite launches from both California and Florida in February. The constellation continues expanding global connectivity from space. Other companies are developing heavy-lift rockets and lunar landers.
+
+**Also in February**
+
+- Annular solar eclipse over Antarctica (February 17)
+- James Webb Space Telescope: ongoing discoveries in exoplanets and early galaxies
+- Mars: Perseverance rover continues sample collection; Mars Sample Return planning continues
+
+**Stay updated:** Bookmark our [Space News](/space-news) page and [Mission Timeline](/missions/timeline) for daily updates.`,
+    category: "nasa-news",
+    date: "2026-02-19",
+    tags: ["space news", "Artemis II", "ISS", "Crew-12", "Starlink", "space exploration"],
+    seoKeywords: "space news February 2026, Artemis II, Crew-12, ISS, Starlink, space mission news",
+  },
+  {
     slug: "latest-space-news-nasa-mission-today",
     title: "Latest Space News and Mission Today: Your Daily Guide to What’s Happening Beyond Earth",
     excerpt: "Stay updated with today's space news: space missions, Artemis, Mars rovers, James Webb, and the technology shaping the future of space exploration. Written for students and researchers.",
@@ -30,7 +62,7 @@ What is happening in space right now? From the International Space Station to NA
 
 **James Webb Space Telescope:** The James Webb Space Telescope keeps delivering new views of the early universe, exoplanet atmospheres, and star formation. Its infrared observations are changing how we understand galaxies and the origins of planetary systems.
 
-**Commercial space:** Companies like SpaceX, Blue Origin, and others are launching satellites, sending cargo and crew to the ISS, and developing heavy-lift rockets and lunar landers. Starlink and other constellations are expanding global connectivity from space.
+**Commercial space:** SpaceX conducted Starlink launches from California and Florida in February 2026. Companies like SpaceX, Blue Origin, and others are developing heavy-lift rockets and lunar landers. Starlink and other constellations are expanding global connectivity from space.
 
 ---
 
