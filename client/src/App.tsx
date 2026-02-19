@@ -54,6 +54,7 @@ import { AstronautProfile } from "./pages/AstronautProfile";
 import { PlanetHub } from "./pages/PlanetHub";
 import { PlanetDetail } from "./pages/PlanetDetail";
 import { LunarGeology } from "./pages/LunarGeology";
+import { NeuroSpaceResearch } from "./pages/NeuroSpaceResearch";
 import { NotFound } from "./pages/NotFound";
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
           <Route path="/guide" component={KidsGuide} />
           <Route path="/astrobot" component={AstroBot} />
           <Route path="/research" component={ResearchHub} />
+          <Route path="/research/neuro-space" component={NeuroSpaceResearch} />
           <Route path="/learn/aerospace" component={AerospaceReference} />
           <Route path="/formulas-library" component={FormulaLibrary} />
           <Route path="/satellites" component={RealSatelliteData} />

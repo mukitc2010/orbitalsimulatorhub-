@@ -87,6 +87,13 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     keywords: "space research, NASA research, orbital mechanics research, PhD aerospace",
     lastUpdated: "2026-02-17T00:00:00Z",
   },
+  "/research/neuro-space": {
+    path: "/research/neuro-space",
+    title: "Light-Speed Constraints, Neuro-Space Cognition & Aerospace Dynamics | Orbital Simulator Hub Research",
+    description: "Unified framework for future space navigation: relativistic aerospace, signal delay, neuro-space AI, autonomous spacecraft. OrbitalSimulatorHub Research Division.",
+    keywords: "neuro-space, light-speed constraints, autonomous spacecraft, aerospace AI, deep space navigation, relativistic aerospace, quantum space communication",
+    lastUpdated: "2026-02-19T00:00:00Z",
+  },
   "/careers": {
     path: "/careers",
     title: "Space Careers – NASA Engineer, Astronaut, Space Scientist | Orbital Simulator Hub",

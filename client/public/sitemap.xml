@@ -11,6 +11,7 @@
   <url><loc>https://www.orbitalsimulatorhub.com/space-news</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.orbitalsimulatorhub.com/astrobot</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.orbitalsimulatorhub.com/research</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.orbitalsimulatorhub.com/research/neuro-space</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- ═══ LEARN PAGES ═══ -->
   <url><loc>https://www.orbitalsimulatorhub.com/learn/orbital-mechanics</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>

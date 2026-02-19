@@ -137,6 +137,18 @@ export function ResearchHub() {
         </section>
       )}
 
+      <section className="rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-gradient-to-br from-slate-50 to-cyan-50 p-6 mb-6">
+        <h2 className="font-bold text-slate-800 mb-2">🌌 Featured Research: Neuro-Space Framework</h2>
+        <p className="text-sm text-slate-700 mb-3">
+          <strong>Light-Speed Constraints, Neuro-Space Cognition, and Aerospace Dynamics</strong> — A unified framework for future space navigation and intelligence systems. Covers relativistic aerospace, autonomous AI, warp metrics, quantum navigation, and the proposed Neuro-Space Research Institute.
+        </p>
+        <Link href="/research/neuro-space">
+          <a className="inline-block px-5 py-2.5 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+            Read Neuro-Space Research →
+          </a>
+        </Link>
+      </section>
+
       <section className="rounded-xl bg-slate-800 text-white p-4 mb-6 border-2 border-slate-700">
         <h2 className="font-bold mb-2">🎓 For PhD researchers &amp; advanced aerospace study</h2>
         <p className="text-sm text-slate-200 mb-3">
