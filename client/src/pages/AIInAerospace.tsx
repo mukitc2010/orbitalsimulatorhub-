@@ -10,7 +10,7 @@ const TABS: { id: (typeof TAB_IDS)[number]; label: string }[] = [
   { id: "t3", label: "📋 Mission Planning" },
   { id: "t4", label: "🦾 Space Robotics" },
   { id: "t5", label: "⚠ Anomaly Detection" },
-  { id: "t6", label: "🚀 NASA & SpaceX" },
+  { id: "t6", label: "🚀 Space Agencies & SpaceX" },
   { id: "t7", label: "🔴 Mars AI" },
   { id: "t8", label: "📊 Space ML & Data" },
 ];
@@ -26,8 +26,8 @@ const DIAGRAM_NODES: { title: string; desc: string; body: string }[] = [
 
 const FOCUS_NODES: { title: string; desc: string; body: string }[] = [
   { title: "Quick path: Learn in 10 minutes", desc: "Fast overview with key ideas.", body: "1) AI Navigation — how satellites and rovers know where they are and avoid collisions. 2) Anomaly Detection — how missions spot problems before they become failures. 3) Mars AI — how Perseverance and Curiosity drive and choose science targets autonomously. 4) Space ML — how data from telescopes and telemetry turns into discovery. This sequence gives you a complete mental model: move, stay healthy, explore, then learn from data." },
-  { title: "Research path: Build a project", desc: "Turn this into a real project.", body: "Build a mini satellite health monitor: simulate telemetry (power, thermal, attitude), run simple anomaly detection (thresholds or a small ML model), and trigger a 'safe mode' response. Then add orbit prediction and collision alerts using two-body mechanics. Great for portfolio and interviews; the same concepts appear in NASA and commercial mission design." },
-  { title: "What makes this NASA-style?", desc: "Structure + clarity + mission logic.", body: "Clear modules (navigation, planning, FDIR, robotics), mission-grade logic that is testable and traceable, diagram-first learning so you see the autonomy loop, and a built-in assistant (AstroBot) that turns questions into explanations and next steps. The content mirrors how flight software and mission ops are actually structured." },
+  { title: "Research path: Build a project", desc: "Turn this into a real project.", body: "Build a mini satellite health monitor: simulate telemetry (power, thermal, attitude), run simple anomaly detection (thresholds or a small ML model), and trigger a 'safe mode' response. Then add orbit prediction and collision alerts using two-body mechanics. Great for portfolio and interviews; the same concepts appear in space agency and commercial mission design." },
+  { title: "What makes this mission-grade?", desc: "Structure + clarity + mission logic.", body: "Clear modules (navigation, planning, FDIR, robotics), mission-grade logic that is testable and traceable, diagram-first learning so you see the autonomy loop, and a built-in assistant (AstroBot) that turns questions into explanations and next steps. The content mirrors how flight software and mission ops are actually structured." },
 ];
 
 const ASTROBOT_PROMPTS = [
@@ -43,7 +43,7 @@ const SECTIONS: { id: (typeof TAB_IDS)[number]; icon: string; title: string; des
   { id: "t3", icon: "📋", title: "AI mission planning", desc: "Optimizing trajectories, launch windows, and resource allocation." },
   { id: "t4", icon: "🦾", title: "Space robotics", desc: "Rovers, arms, and robots that see, plan, and act in space." },
   { id: "t5", icon: "⚠", title: "AI anomaly detection", desc: "Predicting and diagnosing failures before they happen." },
-  { id: "t6", icon: "🚀", title: "AI in NASA & SpaceX", desc: "How NASA and SpaceX use AI in launch, landing, and operations." },
+  { id: "t6", icon: "🚀", title: "AI in Space Agencies & SpaceX", desc: "How space agencies and SpaceX use AI in launch, landing, and operations." },
   { id: "t7", icon: "🔴", title: "AI for Mars missions", desc: "Mars rovers, helicopters, and future crewed mission support." },
   { id: "t8", icon: "📊", title: "Space data analysis with ML", desc: "Image recognition, telemetry analysis, and scientific discovery." },
 ];
@@ -137,10 +137,10 @@ export function AIInAerospace() {
         <div className="nasa-ai-card">
           <div className="nasa-ai-card-inner">
             <h1 className="text-2xl sm:text-3xl font-extrabold mb-2 leading-tight">
-              AI in Space: Satellites, Rovers, Mission Planning, NASA & SpaceX
+              AI in Space: Satellites, Rovers, Mission Planning, Space Agencies & SpaceX
             </h1>
             <p className="text-[var(--nasa-muted)] text-base leading-relaxed mb-3">
-              A NASA-style learning hub covering autonomous orbit determination, collision avoidance, spacecraft decision-making,
+              A mission-grade learning hub covering autonomous orbit determination, collision avoidance, spacecraft decision-making,
               robotics, anomaly detection, Mars AI, and space data machine learning — plus <strong>AstroBot</strong> and <strong>daily space news</strong>.
             </p>
             <div className="flex flex-wrap gap-2 mt-3">
@@ -188,7 +188,7 @@ export function AIInAerospace() {
       {/* Key facts strip */}
       <section className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] px-4 py-3 mb-4">
         <p className="text-sm text-[var(--nasa-muted)]">
-          <strong className="text-[var(--nasa-text)]">AI in space today:</strong> NASA&apos;s Perseverance rover uses autonomous driving and science targeting. SpaceX uses closed-loop guidance for landing. ISS and commercial satellites use automated collision avoidance. James Webb and Hubble data are analyzed with ML. Future missions will rely even more on onboard AI for navigation, health monitoring, and science.
+          <strong className="text-[var(--nasa-text)]">AI in space today:</strong> The Perseverance rover uses autonomous driving and science targeting. SpaceX uses closed-loop guidance for landing. ISS and commercial satellites use automated collision avoidance. James Webb and Hubble data are analyzed with ML. Future missions will rely even more on onboard AI for navigation, health monitoring, and science.
         </p>
       </section>
 
@@ -289,7 +289,7 @@ export function AIInAerospace() {
               <li><strong>&quot;See–Plan–Act&quot; loop:</strong> perception → plan → execute → re-check.</li>
             </ul>
             <p><strong>Future:</strong> robots will assemble large telescopes in orbit and build lunar base infrastructure.</p>
-            <p className="mt-3">Perseverance uses multiple cameras and vision algorithms to avoid hazards and select paths. The ISS Canadarm2 and Dextre perform delicate operations. NASA&apos;s VIPER and future lunar rovers will add more autonomy. In orbit, projects like OSAM-1 aim to robotically service and assemble spacecraft.</p>
+            <p className="mt-3">Perseverance uses multiple cameras and vision algorithms to avoid hazards and select paths. The ISS Canadarm2 and Dextre perform delicate operations. The VIPER and future lunar rovers will add more autonomy. In orbit, projects like OSAM-1 aim to robotically service and assemble spacecraft.</p>
           </div>
           <div className={`nasa-ai-panel ${activeTab === "t5" ? "active" : ""}`} id="t5">
             <h2>⚠ AI Anomaly Detection</h2>
@@ -301,11 +301,11 @@ export function AIInAerospace() {
               <li><strong>Auto recovery:</strong> safe-mode triggers, switch redundancy, reduce load, reset subsystems.</li>
             </ul>
             <p><strong>Why it matters:</strong> early detection prevents mission loss and extends spacecraft lifetime.</p>
-            <p className="mt-3">Techniques range from simple limit checks to ML models trained on nominal and fault telemetry. NASA and ESA use ground-based and increasingly onboard anomaly detection. For constellations, automating health screening reduces ops burden and speeds response.</p>
+            <p className="mt-3">Techniques range from simple limit checks to ML models trained on nominal and fault telemetry. Space agencies use ground-based and increasingly onboard anomaly detection. For constellations, automating health screening reduces ops burden and speeds response.</p>
           </div>
           <div className={`nasa-ai-panel ${activeTab === "t6" ? "active" : ""}`} id="t6">
-            <h2>🚀 AI in NASA & SpaceX</h2>
-            <p>NASA and SpaceX use autonomy to handle complex operations where timing and precision are everything.</p>
+            <h2>🚀 AI in Space Agencies & SpaceX</h2>
+            <p>Space agencies and SpaceX use autonomy to handle complex operations where timing and precision are everything.</p>
             <ul className="nasa-ai-bullets">
               <li><strong>Launch + landing:</strong> guidance & control adjust rapidly under changing conditions.</li>
               <li><strong>Operations:</strong> automate checks, optimize timelines, detect anomalies faster than humans.</li>
@@ -313,7 +313,7 @@ export function AIInAerospace() {
               <li><strong>Science:</strong> ML accelerates discovery in images and signals from telescopes and probes.</li>
             </ul>
             <p><strong>Reality:</strong> mission-grade &quot;AI&quot; is often a blend of control theory + robust rules + ML where it&apos;s safe.</p>
-            <p className="mt-3">SpaceX&apos;s Falcon 9 first stage lands using closed-loop guidance and control. NASA uses ML for Mars image analysis, exoplanet detection from Kepler/TESS, and mission planning. JPL and other centers develop autonomous systems for rovers, landers, and future crewed missions.</p>
+            <p className="mt-3">SpaceX&apos;s Falcon 9 first stage lands using closed-loop guidance and control. Space agencies use ML for Mars image analysis, exoplanet detection from Kepler/TESS, and mission planning. JPL and other centers develop autonomous systems for rovers, landers, and future crewed missions.</p>
           </div>
           <div className={`nasa-ai-panel ${activeTab === "t7" ? "active" : ""}`} id="t7">
             <h2>🔴 AI for Mars Missions</h2>
@@ -364,7 +364,7 @@ export function AIInAerospace() {
             <div className="flex items-center justify-between px-4 py-3 border-b border-[var(--nasa-line)] bg-[rgba(255,255,255,.02)]">
               <div>
                 <div className="font-black">🧠 AstroBot</div>
-                <div className="text-[var(--nasa-muted)] text-xs mt-0.5">Ask about satellites, NASA missions, Mars, ML.</div>
+                <div className="text-[var(--nasa-muted)] text-xs mt-0.5">Ask about satellites, space missions, Mars, ML.</div>
               </div>
               <div className="flex items-center gap-2 text-[var(--nasa-muted)] font-bold text-sm">
                 <span className="nasa-ai-dot" /> Ready
@@ -409,14 +409,14 @@ export function AIInAerospace() {
         <div className="nasa-ai-card-inner">
           <h2 className="text-lg font-bold mb-2">🗞 Daily Space News</h2>
           <p className="text-[var(--nasa-muted)] text-sm mb-4 leading-relaxed">
-            Key updates in space exploration, AI in aerospace, and NASA missions. This block can be updated daily via automation.
+            Key updates in space exploration, AI in aerospace, and space missions. This block can be updated daily via automation.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             {/* Daily Brief */}
             <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
               <h3 className="font-bold mb-3">Daily Brief</h3>
               <ul className="space-y-2 text-sm text-[var(--nasa-muted)]">
-                <li><strong className="text-[var(--nasa-text)]">Artemis &amp; Moon:</strong> NASA&apos;s SLS and Orion are paving the way for crewed lunar landings and Gateway. <span className="block text-xs mt-0.5 opacity-90">Why it matters: first steps toward sustainable Moon presence and Mars.</span></li>
+                <li><strong className="text-[var(--nasa-text)]">Artemis &amp; Moon:</strong> The SLS and Orion are paving the way for crewed lunar landings and Gateway. <span className="block text-xs mt-0.5 opacity-90">Why it matters: first steps toward sustainable Moon presence and Mars.</span></li>
                 <li><strong className="text-[var(--nasa-text)]">ISS &amp; crew:</strong> International Space Station crews run science in microgravity; commercial crew (SpaceX, Boeing) ferry astronauts. <span className="block text-xs mt-0.5 opacity-90">Why it matters: continuous human presence and research in LEO.</span></li>
                 <li><strong className="text-[var(--nasa-text)]">Mars rovers:</strong> Perseverance and Curiosity keep exploring; AI helps with driving and science targeting. <span className="block text-xs mt-0.5 opacity-90">Why it matters: autonomy is essential when signals take minutes to reach Earth.</span></li>
                 <li><strong className="text-[var(--nasa-text)]">James Webb:</strong> JWST keeps revealing early galaxies and exoplanet atmospheres in infrared. <span className="block text-xs mt-0.5 opacity-90">Why it matters: understanding cosmic origins and habitability.</span></li>
@@ -424,12 +424,12 @@ export function AIInAerospace() {
               </ul>
               <Link href="/blog"><a className="text-[var(--nasa-brand)] text-xs font-semibold mt-2 inline-block hover:underline">Read more on the blog →</a></Link>
             </div>
-            {/* Featured NASA Mission */}
+            {/* Featured Space Mission */}
             <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
-              <h3 className="font-bold mb-3">Featured NASA Mission: Artemis</h3>
+              <h3 className="font-bold mb-3">Featured Space Mission: Artemis</h3>
               <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong className="text-[var(--nasa-text)]">Goal:</strong> Return humans to the Moon (including the first woman and first person of color) and build a sustainable lunar presence as a stepping stone to Mars.</p>
               <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong className="text-[var(--nasa-text)]">Tech:</strong> Space Launch System (SLS), Orion crew capsule, Human Landing System (HLS), and the lunar Gateway station in orbit around the Moon.</p>
-              <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong className="text-[var(--nasa-text)]">Fun facts:</strong> Orion has flown uncrewed around the Moon (Artemis I). Gateway will support landings and deep-space science. SLS is the most powerful rocket NASA has built.</p>
+              <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong className="text-[var(--nasa-text)]">Fun facts:</strong> Orion has flown uncrewed around the Moon (Artemis I). Gateway will support landings and deep-space science. SLS is the most powerful rocket ever built.</p>
               <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong className="text-[var(--nasa-text)]">Learning:</strong> Artemis uses the same orbital mechanics and mission design principles you can explore in our <Link href="/simulator"><a className="text-[var(--nasa-brand)] hover:underline">simulator</a></Link> and <Link href="/missions/timeline"><a className="text-[var(--nasa-brand)] hover:underline">mission timeline</a></Link>.</p>
               <Link href="/missions/timeline"><a className="text-[var(--nasa-brand)] text-xs font-semibold mt-2 inline-block hover:underline">Mission timeline →</a></Link>
             </div>
@@ -448,7 +448,7 @@ export function AIInAerospace() {
           {" · "}
           <Link href="/research"><a>Research hub</a></Link>
         </div>
-        <div className="mt-2">© Orbital Simulator Hub · NASA-style learning layout · Built for speed + SEO</div>
+        <div className="mt-2">© Orbital Simulator Hub · Learning layout · Built for speed + SEO</div>
       </footer>
 
       {/* Modal */}

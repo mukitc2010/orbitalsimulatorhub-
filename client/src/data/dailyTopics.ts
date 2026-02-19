@@ -1,6 +1,6 @@
 /**
  * Daily Featured Topics
- * Auto-updated daily with new NASA, Newton, quantum physics, astrophysics topics
+ * Auto-updated daily with new space, Newton, quantum physics, astrophysics topics
  */
 
 export interface DailyTopic {
@@ -43,7 +43,7 @@ export const DAILY_TOPICS: DailyTopic[] = [
     category: "nasa",
     description: "Discover how the ISS orbits Earth 16 times per day and what life is like in microgravity.",
     learnMoreUrl: "/satellites",
-    keywords: ["ISS", "NASA", "space station", "orbit"],
+    keywords: ["ISS", "space station", "orbit"],
   },
 ];
 

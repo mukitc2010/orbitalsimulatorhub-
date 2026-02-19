@@ -6,26 +6,26 @@ import { BLOG_POSTS } from "../data/blogPosts";
 
 const FEATURES = [
   { href: "/play#simulator", icon: "🛸", title: "3D Simulator", desc: "Add LEO, MEO, GEO satellites and watch orbits in real time.", cyan: true },
-  { href: "/play#nasa", icon: "🌟", title: "Learn NASA", desc: "Missions, astronauts, rovers, Moon, solar system.", pink: true },
+  { href: "/play#nasa", icon: "🌟", title: "Learn Space", desc: "Missions, astronauts, rovers, Moon, solar system.", pink: true },
   { href: "/astrobot", icon: "🤖", title: "Ask AstroBot", desc: "Get answers about orbits, satellites, ISS, and space.", gold: true },
 ];
 
 const CARDS = [
   { href: "/simulator", icon: "🛸", title: "Orbit simulator", desc: "3D satellite orbit simulator — LEO, MEO, GEO. See height, speed, period.", cyan: true },
-  { href: "/blog", icon: "📰", title: "Space Blog", desc: "Daily NASA news, space facts, satellite tutorials, astronomy lessons. Fresh content daily.", pink: true },
+  { href: "/blog", icon: "📰", title: "Space Blog", desc: "Daily space news, space facts, satellite tutorials, astronomy lessons. Fresh content daily.", pink: true },
   { href: "/formulas-library", icon: "🧮", title: "Space formulas", desc: "Gravity, orbital velocity, escape velocity, Kepler, rocket equation + calculators.", gold: true },
   { href: "/satellites", icon: "🛰", title: "Real satellite orbits", desc: "ISS, Starlink, GPS, weather satellites — altitude, speed, orbit time.", cyan: true },
-  { href: "/calculators", icon: "🔢", title: "Orbit calculator", desc: "NASA-style orbit calculator, gravity calculator, escape velocity.", pink: true },
+  { href: "/calculators", icon: "🔢", title: "Orbit calculator", desc: "Orbit calculator, gravity calculator, escape velocity.", pink: true },
   { href: "/learn/orbital-mechanics", icon: "🌌", title: "Orbital mechanics for beginners", desc: "What is orbital mechanics? Kids, beginner, and engineer versions. Learn how satellites orbit Earth.", cyan: true },
-  { href: "/learn/nasa-study-guide", icon: "📖", title: "NASA study guide", desc: "Key NASA missions, orbital mechanics, and space science. For students and teachers.", pink: true },
+  { href: "/learn/nasa-study-guide", icon: "📖", title: "Space study guide", desc: "Key space missions, orbital mechanics, and space science. For students and teachers.", pink: true },
   { href: "/learn/how-satellites-work", icon: "🛰", title: "How satellites work", desc: "Why satellites don't fall, LEO vs MEO vs GEO, communications, GPS, and real examples.", gold: true },
   { href: "/learn/astronomy-for-kids", icon: "🌟", title: "Astronomy for kids", desc: "Solar system, Moon, planets, astronauts — fun space learning for kids and families.", cyan: true },
-  { href: "/learn/nasa-for-students", icon: "🎓", title: "NASA for students", desc: "Free resources: missions, orbital mechanics, AI in space, careers, internships.", pink: true },
+  { href: "/learn/nasa-for-students", icon: "🎓", title: "Space for students", desc: "Free resources: missions, orbital mechanics, AI in space, careers, internships.", pink: true },
   { href: "/learn/space-questions", icon: "❓", title: "Why don't satellites fall?", desc: "Simple answers: moon, astronauts float, what if satellite stops.", pink: true },
   { href: "/learn/experiments", icon: "🔬", title: "Space Experiments", desc: "5 hands-on DIY experiments to understand orbital mechanics and space physics!", gold: true },
   { href: "/learn/how-gps-works", icon: "📍", title: "How GPS Works", desc: "Learn how GPS satellites help you navigate. Trilateration, atomic clocks, constellation.", cyan: true },
   { href: "/compare/orbits", icon: "📊", title: "Compare Orbits", desc: "Side-by-side comparison: LEO vs MEO vs GEO. See differences in altitude, speed, period.", pink: true },
-  { href: "/learn/how-nasa-launches-satellite", icon: "🚀", title: "How NASA Launches", desc: "Step-by-step guide: rocket stages, launch sequence, orbital insertion, real examples.", gold: true },
+  { href: "/learn/how-nasa-launches-satellite", icon: "🚀", title: "How Satellites Launch", desc: "Step-by-step guide: rocket stages, launch sequence, orbital insertion, real examples.", gold: true },
   { href: "/learn/how-spacex-lands-rockets", icon: "🛬", title: "How SpaceX Lands", desc: "Revolutionary reusable rockets. Grid fins, landing sequence, boost-back burn explained.", cyan: true },
   { href: "/learn/how-mars-rovers-work", icon: "🤖", title: "How Mars Rovers Work", desc: "Landing sequence, navigation systems, science instruments, communication with Earth.", pink: true },
   { href: "/learn/how-starlink-works", icon: "🌐", title: "How Starlink Works", desc: "Global internet from space. Satellite constellation, LEO benefits, ground stations.", gold: true },
@@ -33,16 +33,16 @@ const CARDS = [
   { href: "/missions/timeline", icon: "📅", title: "Mission Timeline", desc: "History of space exploration from Sputnik to James Webb. Key missions and achievements.", pink: true },
   { href: "/quiz/orbital-mechanics", icon: "📝", title: "Orbital Mechanics Quiz", desc: "Test your knowledge! 15 questions on orbits, satellites, and space physics.", gold: true },
   { href: "/learn/how-solar-system-works", icon: "🌍", title: "How Solar System Works", desc: "Kepler's laws, orbital mechanics, Hohmann transfers, gravity assists. Math behind planetary motion.", cyan: true },
-  { href: "/learn/what-is-moon", icon: "🌙", title: "What is the Moon?", desc: "Scientific facts: formation, composition, orbit, phases, tides. NASA missions and research.", pink: true },
+  { href: "/learn/what-is-moon", icon: "🌙", title: "What is the Moon?", desc: "Scientific facts: formation, composition, orbit, phases, tides. Space missions and research.", pink: true },
   { href: "/learn/astrophysics", icon: "⭐", title: "Astrophysics", desc: "Stars, black holes, dark matter, cosmology, exoplanets. Math and physics of the universe.", gold: true },
   { href: "/learn/quantum-physics", icon: "⚛️", title: "Quantum Physics", desc: "Wave-particle duality, uncertainty principle, Schrödinger equation, quantum computing basics.", cyan: true },
-  { href: "/learn/quantum-physics-nasa", icon: "🔬", title: "Quantum Physics in NASA", desc: "How NASA uses quantum physics: atomic clocks, quantum sensors, quantum communication, future tech.", pink: true },
-  { href: "/learn/aerodynamics", icon: "✈", title: "Aerodynamics & Space Flight", desc: "Lift, drag, re-entry, rocket aerodynamics, heat shields, CFD. How NASA designs efficient vehicles.", cyan: true },
-  { href: "/learn/quantum-space", icon: "⚛", title: "Quantum Physics & Space", desc: "Quantum sensors, atomic clocks, GPS accuracy, quantum communication and computing for NASA.", pink: true },
+  { href: "/learn/quantum-physics-nasa", icon: "🔬", title: "Quantum Physics in Space", desc: "How space agencies use quantum physics: atomic clocks, quantum sensors, quantum communication, future tech.", pink: true },
+  { href: "/learn/aerodynamics", icon: "✈", title: "Aerodynamics & Space Flight", desc: "Lift, drag, re-entry, rocket aerodynamics, heat shields, CFD. How space agencies design efficient vehicles.", cyan: true },
+  { href: "/learn/quantum-space", icon: "⚛", title: "Quantum Physics & Space", desc: "Quantum sensors, atomic clocks, GPS accuracy, quantum communication and computing in space.", pink: true },
   { href: "/ai-in-aerospace", icon: "🤖", title: "AI in Aerospace", desc: "How AI transforms aerospace: satellite navigation, autonomous spacecraft, Mars rovers, mission planning.", gold: true },
-  { href: "/astrobot", icon: "🤖", title: "Ask AstroBot", desc: "Ask anything about space, orbits, NASA, rockets.", cyan: true },
-  { href: "/research", icon: "📚", title: "Research & PhD", desc: "NASA, Newton, algorithms, real data — for students and researchers.", pink: true },
-  { href: "/careers", icon: "👨‍🚀", title: "Space Careers", desc: "How to become NASA engineer, astronaut, space scientist, AI space engineer.", gold: true },
+  { href: "/astrobot", icon: "🤖", title: "Ask AstroBot", desc: "Ask anything about space, orbits, rockets.", cyan: true },
+  { href: "/research", icon: "📚", title: "Research & PhD", desc: "Newton, algorithms, real mission data — for students and researchers.", pink: true },
+  { href: "/careers", icon: "👨‍🚀", title: "Space Careers", desc: "How to become aerospace engineer, astronaut, space scientist, AI space engineer.", gold: true },
 ];
 
 function FeatureCard({ href, icon, title, desc, cyan, pink, gold }: {
@@ -70,22 +70,22 @@ export function Home() {
       {/* Hero with gradient */}
       <section className="hero-gradient rounded-2xl px-6 py-10 sm:py-12 text-center mb-10">
         <p className="text-sm font-medium text-[var(--accent-cyan)] uppercase tracking-wider mb-2">🌌 Welcome to</p>
-        <h1 className="headline mb-3 text-white">Orbital Simulator Hub – Learn Space, Satellites &amp; NASA Science</h1>
+        <h1 className="headline mb-3 text-white">Orbital Simulator Hub – Learn Space, Satellites &amp; More</h1>
         <p className="text-lg sm:text-xl font-semibold text-white/95 max-w-xl mx-auto mb-2">
           Explore Space. Learn Physics. Build the Future.
         </p>
         <p className="subhead max-w-2xl mx-auto mb-4 text-slate-300">
-          Learn orbital mechanics, satellites, aerospace engineering, AI in space, NASA missions, and real simulations.
+          Learn orbital mechanics, satellites, aerospace engineering, AI in space, space missions, and real simulations.
           Interactive space simulator for students, engineers, and researchers.
         </p>
         <p className="text-sm text-slate-400 max-w-2xl mx-auto mb-4">
-          Orbital mechanics for beginners · Satellite orbit simulator · How satellites work · NASA study guide · Space physics course · AI in space technology · Astronomy for kids · NASA for students.
+          Orbital mechanics for beginners · Satellite orbit simulator · How satellites work · Space study guide · Space physics course · AI in space technology · Astronomy for kids · Space for students.
         </p>
         <p className="text-xs text-slate-500 max-w-2xl mx-auto mb-4">
-          <strong>Orbital Simulator Hub</strong> (orbitalsimulatorhub.com) is a free 3D orbit simulator and NASA education platform. Learn orbital mechanics, explore 100+ astronaut profiles, study all 8 planets with NASA data, and use the interactive simulator — all free, no signup required.
+          <strong>Orbital Simulator Hub</strong> (orbitalsimulatorhub.com) is a free 3D orbit simulator and space education platform. Learn orbital mechanics, explore 100+ astronaut profiles, study all 8 planets with real mission data, and use the interactive simulator — all free, no signup required.
         </p>
         <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-slate-300 max-w-2xl mx-auto mb-6 list-none pl-0">
-          <li>🔭 Learn real NASA concepts</li>
+          <li>🔭 Learn real space concepts</li>
           <li>🛰 Run orbital simulations</li>
           <li>🤖 Discover AI in aerospace</li>
           <li>⚛ Explore quantum physics &amp; space science</li>
@@ -126,7 +126,7 @@ export function Home() {
         <DailyTopicIcon />
       </section>
 
-      {/* Traffic keywords — daily content hubs (Space news, NASA for kids, AI in space, Satellite tutorial, Space quiz) */}
+      {/* Traffic keywords — daily content hubs (Space news, space for kids, AI in space, Satellite tutorial, Space quiz) */}
       <section className="mb-8 rounded-xl border-2 border-[var(--accent-cyan)]/40 bg-white p-4">
         <h2 className="text-sm font-bold text-slate-600 uppercase tracking-wider mb-3">📡 Daily content · Fresh pages for learners</h2>
         <div className="flex flex-wrap gap-2">
@@ -134,7 +134,7 @@ export function Home() {
             <a className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-cyan)]/20 text-slate-800 font-medium text-sm transition">Space news</a>
           </Link>
           <Link href="/learn/nasa-for-kids">
-            <a className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-pink)]/20 text-slate-800 font-medium text-sm transition">NASA for kids</a>
+            <a className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-pink)]/20 text-slate-800 font-medium text-sm transition">Space for kids</a>
           </Link>
           <Link href="/ai-in-space">
             <a className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-[var(--accent-gold)]/20 text-slate-800 font-medium text-sm transition">AI in space</a>
@@ -153,19 +153,19 @@ export function Home() {
         <Link href="/astrobot">
           <a className="rounded-xl border border-slate-200 bg-white p-4 hover:border-[var(--accent-cyan)] hover:shadow-sm transition block">
             <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">AI space chatbot</h3>
-            <p className="text-sm text-slate-600 mb-2">Ask anything about space, orbits, NASA.</p>
+            <p className="text-sm text-slate-600 mb-2">Ask anything about space, orbits, rockets.</p>
             <span className="text-xs text-[var(--accent-cyan)] font-medium">Ask AstroBot →</span>
           </a>
         </Link>
         <Link href="/space-news">
           <a className="rounded-xl border border-slate-200 bg-white p-4 hover:border-[var(--accent-cyan)] hover:shadow-sm transition block">
             <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Space news</h3>
-            <p className="text-sm text-slate-600 mb-2">Daily NASA, missions, astronomy. Fresh content.</p>
+            <p className="text-sm text-slate-600 mb-2">Daily space news, missions, astronomy. Fresh content.</p>
             <span className="text-xs text-[var(--accent-cyan)] font-medium">Space news →</span>
           </a>
         </Link>
         <div className="rounded-xl border border-slate-200 bg-white p-4">
-          <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Featured NASA mission</h3>
+          <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Featured space mission</h3>
           <p className="text-sm font-medium text-slate-800 mb-0.5">Artemis — return to the Moon</p>
           <p className="text-xs text-slate-600">Orion, SLS, lunar Gateway, and crewed lunar landing.</p>
           <Link href="/missions/timeline"><a className="text-xs text-[var(--accent-cyan)] font-medium hover:underline mt-1 inline-block">Mission timeline →</a></Link>
@@ -181,18 +181,18 @@ export function Home() {
 
       <section className="rounded-xl bg-white border border-slate-200 p-4 mb-8 text-sm text-slate-700">
         <h2 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">What this site teaches</h2>
-        <p className="text-xs text-[var(--accent-cyan)] font-medium mb-2">✨ Same physics NASA uses — no magic, just math and gravity.</p>
+        <p className="text-xs text-[var(--accent-cyan)] font-medium mb-2">✨ Same physics used by space agencies — no magic, just math and gravity.</p>
         <p className="mb-2">
           <strong>Orbits &amp; satellites:</strong> Why satellites stay in orbit (LEO, MEO, GEO), how height and speed relate, and what the numbers mean.
         </p>
         <p className="mb-2">
-          <strong>Newton &amp; gravity:</strong> The three laws of motion and the law of gravity — the same physics NASA uses for rockets and orbits.
+          <strong>Newton &amp; gravity:</strong> The three laws of motion and the law of gravity — the same physics used by space agencies for rockets and orbits.
         </p>
         <p className="mb-3">
-          <strong>NASA &amp; space:</strong> Missions, astronauts, the ISS, and how to explore further with the simulator and AstroBot.
+          <strong>Missions &amp; space:</strong> Space missions, astronauts, the ISS, and how to explore further with the simulator and AstroBot.
         </p>
         <p className="rounded-lg bg-[var(--accent-cyan)]/10 border border-[var(--accent-cyan)]/30 px-3 py-2 text-slate-800">
-          <strong>For students, scientists &amp; PhD researchers:</strong> Real NASA data, math and algorithms, and real-life calculations. <Link href="/learn/aerospace#phd"><a className="text-[var(--accent-cyan)] font-medium hover:underline">PhD &amp; advanced resources</a></Link> (textbooks, NTRS, SPICE, Horizons). <Link href="/research"><a className="text-[var(--accent-cyan)] font-medium hover:underline">Research &amp; topics</a></Link> · <Link href="/learn/aerospace"><a className="text-[var(--accent-cyan)] font-medium hover:underline">Aerospace reference</a></Link>.
+          <strong>For students, scientists &amp; PhD researchers:</strong> Real mission data, math and algorithms, and real-life calculations. <Link href="/learn/aerospace#phd"><a className="text-[var(--accent-cyan)] font-medium hover:underline">PhD &amp; advanced resources</a></Link> (textbooks, NTRS, SPICE, Horizons). <Link href="/research"><a className="text-[var(--accent-cyan)] font-medium hover:underline">Research &amp; topics</a></Link> · <Link href="/learn/aerospace"><a className="text-[var(--accent-cyan)] font-medium hover:underline">Aerospace reference</a></Link>.
         </p>
       </section>
 
@@ -316,10 +316,10 @@ export function Home() {
         <h2 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>❓ Frequently Asked Questions</h2>
         <div className="space-y-4">
           {[
-            { q: "What is Orbital Simulator Hub?", a: "Orbital Simulator Hub is a free interactive space education platform at orbitalsimulatorhub.com. It features a 3D satellite orbit simulator (LEO, MEO, GEO), an astronaut database with 500+ profiles, a planet explorer with NASA data for all 8 planets, mission details for Apollo and other programs, lunar geology guides, aerospace engineering references, and AI-powered AstroBot for space Q&A. Designed for students, researchers, and PhD scientists." },
+            { q: "What is Orbital Simulator Hub?", a: "Orbital Simulator Hub is a free interactive space education platform at orbitalsimulatorhub.com. It features a 3D satellite orbit simulator (LEO, MEO, GEO), an astronaut database with 500+ profiles, a planet explorer with real mission data for all 8 planets, mission details for Apollo and other programs, lunar geology guides, aerospace engineering references, and AI-powered AstroBot for space Q&A. Designed for students, researchers, and PhD scientists." },
             { q: "How does a satellite orbit simulator work?", a: "A satellite orbit simulator uses Kepler's laws and Newton's law of gravitation to calculate orbital paths. At orbitalsimulatorhub.com/simulator, you can add LEO (200-2000 km), MEO (2000-35786 km), and GEO (35786 km) satellites and watch their 3D orbits in real-time. The simulator shows altitude, orbital velocity, period, perigee, and apogee for each satellite." },
             { q: "What is LEO, MEO, and GEO orbit?", a: "LEO (Low Earth Orbit) is 200-2000 km altitude — used by ISS and Starlink. MEO (Medium Earth Orbit) is 2000-35786 km — used by GPS and navigation satellites. GEO (Geostationary Orbit) is exactly 35,786 km — satellites appear stationary above one spot on Earth, used for weather and communications. Try the interactive simulator at orbitalsimulatorhub.com/simulator." },
-            { q: "How many astronauts walked on the Moon?", a: "12 astronauts walked on the Moon during NASA's Apollo program (1969-1972): Neil Armstrong and Buzz Aldrin (Apollo 11), Pete Conrad and Alan Bean (Apollo 12), Alan Shepard and Edgar Mitchell (Apollo 14), David Scott and James Irwin (Apollo 15), John Young and Charles Duke (Apollo 16), and Gene Cernan and Harrison Schmitt (Apollo 17). Explore all moonwalkers at orbitalsimulatorhub.com/astronauts." },
+            { q: "How many astronauts walked on the Moon?", a: "12 astronauts walked on the Moon during the Apollo program (1969-1972): Neil Armstrong and Buzz Aldrin (Apollo 11), Pete Conrad and Alan Bean (Apollo 12), Alan Shepard and Edgar Mitchell (Apollo 14), David Scott and James Irwin (Apollo 15), John Young and Charles Duke (Apollo 16), and Gene Cernan and Harrison Schmitt (Apollo 17). Explore all moonwalkers at orbitalsimulatorhub.com/astronauts." },
             { q: "How fast does the ISS orbit Earth?", a: "The ISS orbits at approximately 7.66 km/s (27,600 km/h) at 408 km altitude. Its orbital period is about 92 minutes. Calculate orbital velocity for any altitude at orbitalsimulatorhub.com/calculators." },
           ].map((faq, i) => (
             <div key={i} className="rounded-lg p-4" style={{ background: "var(--bg-surface)", border: "1px solid var(--border-color)" }}>

@@ -1,7 +1,7 @@
 /**
- * Planet database with real NASA/JPL data for the Orbital Simulator Hub.
+ * Planet database with real mission data for the Orbital Simulator Hub.
  * Includes all 8 planets, Moon, and Pluto (dwarf planet).
- * Data sources: NASA NSSDC, JPL Planetary Physical Parameters.
+ * Data sources: NSSDC, JPL Planetary Physical Parameters.
  */
 
 export interface Planet {
@@ -66,10 +66,10 @@ const MERCURY: Planet = {
     "Mercury is like a tiny speedster zooming around the Sun! It's so close that it gets super hot during the day and freezing at night. If you could stand on Mercury, you'd weigh much less than on Earth — like floating in a dream!",
   researchNotes:
     "Orbital mechanics: a ≈ 0.387 AU, e ≈ 0.206. Precession of perihelion ~43 arcsec/century (Einstein). Kepler's 3rd: T² ∝ a³. Surface gravity g = GM/r² ≈ 3.7 m/s².",
-  seoTitle: "Mercury — Closest Planet to the Sun | NASA Data | Orbital Simulator",
+  seoTitle: "Mercury — Closest Planet to the Sun | Real Data | Orbital Simulator",
   seoDescription:
-    "Explore Mercury: 57.9M km from the Sun, 0.38g gravity, extreme temperatures. Real NASA data, orbital mechanics, and simulator.",
-  seoKeywords: ["Mercury", "innermost planet", "solar system", "NASA", "MESSENGER", "orbital mechanics"],
+    "Explore Mercury: 57.9M km from the Sun, 0.38g gravity, extreme temperatures. Real mission data, orbital mechanics, and simulator.",
+  seoKeywords: ["Mercury", "innermost planet", "solar system", "space agency", "MESSENGER", "orbital mechanics"],
   simulatorLink: "/simulator",
   color: "#8C7853",
 };
@@ -107,10 +107,10 @@ const VENUS: Planet = {
     "Venus is like a super-hot sauna in space! It's wrapped in thick clouds that trap heat, so it's even hotter than Mercury. Venus spins the wrong way — if you lived there, you'd see the Sun rise in the west!",
   researchNotes:
     "Retrograde rotation: P_rot = -243.0 days. Orbital period 224.7 days. Surface gravity 8.87 m/s² (≈0.91g). Escape velocity 10.36 km/s. Atmospheric scale height H = kT/(mg).",
-  seoTitle: "Venus — Hottest Planet, Thick CO₂ Atmosphere | NASA Data | Orbital Simulator",
+  seoTitle: "Venus — Hottest Planet, Thick CO₂ Atmosphere | Real Data | Orbital Simulator",
   seoDescription:
-    "Explore Venus: 108.2M km from Sun, 462°C surface, thick CO₂ atmosphere. Real NASA data and orbital simulator.",
-  seoKeywords: ["Venus", "hottest planet", "greenhouse effect", "CO2 atmosphere", "NASA", "Magellan"],
+    "Explore Venus: 108.2M km from Sun, 462°C surface, thick CO₂ atmosphere. Real mission data and orbital simulator.",
+  seoKeywords: ["Venus", "hottest planet", "greenhouse effect", "CO2 atmosphere", "space agency", "Magellan"],
   simulatorLink: "/simulator",
   color: "#E6C229",
 };
@@ -148,10 +148,10 @@ const EARTH: Planet = {
     "Earth is our home — a blue and green marble floating in space! We have air to breathe, water to drink, and the perfect distance from the Sun. The Moon is our nighttime friend, and we're the only planet we know with life!",
   researchNotes:
     "1 AU = 149.6×10⁶ km. Orbital velocity v = √(GM☉/a) ≈ 29.78 km/s. g = 9.8 m/s². Hill sphere ~1.5×10⁶ km. T² = (4π²/GM)a³.",
-  seoTitle: "Earth — Our Home Planet | NASA Data | Orbital Simulator",
+  seoTitle: "Earth — Our Home Planet | Real Data | Orbital Simulator",
   seoDescription:
-    "Explore Earth: 149.6M km from Sun, 1g gravity, 1 moon. Real NASA data, orbital mechanics, and simulator.",
-  seoKeywords: ["Earth", "home planet", "solar system", "NASA", "orbital mechanics", "1 AU"],
+    "Explore Earth: 149.6M km from Sun, 1g gravity, 1 moon. Real mission data, orbital mechanics, and simulator.",
+  seoKeywords: ["Earth", "home planet", "solar system", "space agency", "orbital mechanics", "1 AU"],
   simulatorLink: "/simulator",
   color: "#1E90FF",
 };
@@ -188,10 +188,10 @@ const MOON: Planet = {
     "The Moon is Earth's best buddy in space! It orbits us every month and lights up our nights. Astronauts have walked on it! On the Moon you'd weigh way less — you could jump really high like a bunny!",
   researchNotes:
     "Semi-major axis a = 384,400 km. Orbital period 27.32 days (sidereal). Tidal locking: P_rot = P_orb. g = 1.62 m/s². Mass ratio M_moon/M_earth ≈ 0.0123. Hill radius of Earth ~1.5×10⁶ km.",
-  seoTitle: "Moon — Earth's Natural Satellite | NASA Data | Orbital Simulator",
+  seoTitle: "Moon — Earth's Natural Satellite | Real Data | Orbital Simulator",
   seoDescription:
-    "Explore the Moon: 384,400 km from Earth, 0.16g gravity, Apollo landings. Real NASA data and orbital simulator.",
-  seoKeywords: ["Moon", "lunar", "Apollo", "NASA", "tidal locking", "orbital mechanics"],
+    "Explore the Moon: 384,400 km from Earth, 0.16g gravity, Apollo landings. Real mission data and orbital simulator.",
+  seoKeywords: ["Moon", "lunar", "Apollo", "space agency", "tidal locking", "orbital mechanics"],
   simulatorLink: "/simulator",
   color: "#C0C0C0",
 };
@@ -238,10 +238,10 @@ const MARS: Planet = {
     "Mars is the Red Planet — rusty and dusty! It has giant volcanoes and canyons bigger than anything on Earth. Robots like Curiosity and Perseverance are exploring it right now. Maybe humans will visit someday!",
   researchNotes:
     "a ≈ 1.52 AU, e ≈ 0.093. Orbital period 687 days. g = 3.71 m/s². Moons: Phobos (27 km), Deimos (15 km). Hohmann transfer to Mars: Δv ~5.6 km/s from LEO.",
-  seoTitle: "Mars — The Red Planet | NASA Data | Orbital Simulator",
+  seoTitle: "Mars — The Red Planet | Real Data | Orbital Simulator",
   seoDescription:
-    "Explore Mars: 227.9M km from Sun, 0.38g, 2 moons, Perseverance rover. Real NASA data and orbital simulator.",
-  seoKeywords: ["Mars", "Red Planet", "Perseverance", "Olympus Mons", "NASA", "orbital mechanics"],
+    "Explore Mars: 227.9M km from Sun, 0.38g, 2 moons, Perseverance rover. Real mission data and orbital simulator.",
+  seoKeywords: ["Mars", "Red Planet", "Perseverance", "Olympus Mons", "space agency", "orbital mechanics"],
   simulatorLink: "/simulator",
   color: "#E27B58",
 };
@@ -279,10 +279,10 @@ const JUPITER: Planet = {
     "Jupiter is the king of the planets — a giant ball of gas! It has a huge storm called the Great Red Spot. If you could stand on Jupiter (you can't — it's all gas!), you'd weigh more than twice as much as on Earth!",
   researchNotes:
     "a ≈ 5.2 AU, e ≈ 0.048. Orbital period 11.86 years. g = 24.79 m/s² at 1 bar level. Jupiter mass ≈ 318 M⊕. Tisserand parameter for comet encounters. Roche limit for moon disruption.",
-  seoTitle: "Jupiter — Largest Planet, Great Red Spot | NASA Data | Orbital Simulator",
+  seoTitle: "Jupiter — Largest Planet, Great Red Spot | Real Data | Orbital Simulator",
   seoDescription:
-    "Explore Jupiter: 778.5M km from Sun, 2.53g, 95+ moons, Great Red Spot. Real NASA data and orbital simulator.",
-  seoKeywords: ["Jupiter", "gas giant", "Great Red Spot", "Juno", "Europa", "NASA", "orbital mechanics"],
+    "Explore Jupiter: 778.5M km from Sun, 2.53g, 95+ moons, Great Red Spot. Real mission data and orbital simulator.",
+  seoKeywords: ["Jupiter", "gas giant", "Great Red Spot", "Juno", "Europa", "space agency", "orbital mechanics"],
   simulatorLink: "/simulator",
   color: "#C88B3A",
 };
@@ -320,10 +320,10 @@ const SATURN: Planet = {
     "Saturn is the ringed beauty of the solar system! Those gorgeous rings are made of ice and rocks. Saturn is so light it would float in water — if you had a pool big enough! Its moon Titan has lakes of methane.",
   researchNotes:
     "a ≈ 9.5 AU, e ≈ 0.056. Orbital period 29.45 years. g = 10.44 m/s². Ring system: A, B, C rings; Cassini Division. Roche limit ~2.44 R_Saturn. Titan: N₂ atmosphere, liquid methane.",
-  seoTitle: "Saturn — Ringed Planet | NASA Data | Orbital Simulator",
+  seoTitle: "Saturn — Ringed Planet | Real Data | Orbital Simulator",
   seoDescription:
-    "Explore Saturn: 1.43B km from Sun, 1.07g, 146+ moons, spectacular rings. Real NASA data and orbital simulator.",
-  seoKeywords: ["Saturn", "rings", "Cassini", "Titan", "gas giant", "NASA", "orbital mechanics"],
+    "Explore Saturn: 1.43B km from Sun, 1.07g, 146+ moons, spectacular rings. Real mission data and orbital simulator.",
+  seoKeywords: ["Saturn", "rings", "Cassini", "Titan", "gas giant", "space agency", "orbital mechanics"],
   simulatorLink: "/simulator",
   color: "#F4D03F",
 };
@@ -361,10 +361,10 @@ const URANUS: Planet = {
     "Uranus is the sideways planet! It rolls around the Sun instead of spinning upright. It's icy and blue-green. Only one spacecraft, Voyager 2, has ever said hello — way back in 1986!",
   researchNotes:
     "a ≈ 19.2 AU, e ≈ 0.046. Orbital period 84 years. Axial tilt 97.77°. g = 8.87 m/s². Ice giant: H₂O, NH₃, CH₄ ices. Voyager 2 flyby Jan 1986. Ring system discovered 1977.",
-  seoTitle: "Uranus — Ice Giant, Tilted 98° | NASA Data | Orbital Simulator",
+  seoTitle: "Uranus — Ice Giant, Tilted 98° | Real Data | Orbital Simulator",
   seoDescription:
-    "Explore Uranus: 2.87B km from Sun, 0.89g, 28 moons, tilted 98°. Real NASA data and orbital simulator.",
-  seoKeywords: ["Uranus", "ice giant", "tilted planet", "Voyager 2", "NASA", "orbital mechanics"],
+    "Explore Uranus: 2.87B km from Sun, 0.89g, 28 moons, tilted 98°. Real mission data and orbital simulator.",
+  seoKeywords: ["Uranus", "ice giant", "tilted planet", "Voyager 2", "space agency", "orbital mechanics"],
   simulatorLink: "/simulator",
   color: "#4FD0E7",
 };
@@ -402,10 +402,10 @@ const NEPTUNE: Planet = {
     "Neptune is the windiest planet — its storms blow faster than a jet! It's deep blue and super far away. Scientists found it with math before they saw it through a telescope. Voyager 2 is the only visitor!",
   researchNotes:
     "a ≈ 30.1 AU, e ≈ 0.009. Orbital period 164.8 years. g = 11.15 m/s². Great Dark Spot (Voyager 2). Triton: retrograde orbit, geysers. Predicted 1846 by Le Verrier and Adams.",
-  seoTitle: "Neptune — Strongest Winds, Ice Giant | NASA Data | Orbital Simulator",
+  seoTitle: "Neptune — Strongest Winds, Ice Giant | Real Data | Orbital Simulator",
   seoDescription:
-    "Explore Neptune: 4.5B km from Sun, 1.14g, 16 moons, strongest winds. Real NASA data and orbital simulator.",
-  seoKeywords: ["Neptune", "ice giant", "strongest winds", "Voyager 2", "Triton", "NASA", "orbital mechanics"],
+    "Explore Neptune: 4.5B km from Sun, 1.14g, 16 moons, strongest winds. Real mission data and orbital simulator.",
+  seoKeywords: ["Neptune", "ice giant", "strongest winds", "Voyager 2", "Triton", "space agency", "orbital mechanics"],
   simulatorLink: "/simulator",
   color: "#4166F5",
 };
@@ -443,10 +443,10 @@ const PLUTO: Planet = {
     "Pluto is a tiny, icy world way out in the cold! It used to be called a planet, but now it's a dwarf planet. It has a heart-shaped spot and a big moon named Charon. New Horizons visited in 2015 and sent back amazing pictures!",
   researchNotes:
     "a ≈ 39.5 AU, e ≈ 0.249 (highly elliptical). Orbital period 247.9 years. g = 0.62 m/s². Pluto-Charon barycenter outside Pluto. Kuiper Belt object. IAU definition: must clear neighborhood.",
-  seoTitle: "Pluto — Dwarf Planet | NASA Data | Orbital Simulator",
+  seoTitle: "Pluto — Dwarf Planet | Real Data | Orbital Simulator",
   seoDescription:
-    "Explore Pluto: 5.9B km from Sun, 0.06g, 5 moons, New Horizons. Real NASA data and orbital simulator.",
-  seoKeywords: ["Pluto", "dwarf planet", "New Horizons", "Kuiper Belt", "Charon", "NASA", "orbital mechanics"],
+    "Explore Pluto: 5.9B km from Sun, 0.06g, 5 moons, New Horizons. Real mission data and orbital simulator.",
+  seoKeywords: ["Pluto", "dwarf planet", "New Horizons", "Kuiper Belt", "Charon", "space agency", "orbital mechanics"],
   simulatorLink: "/simulator",
   color: "#8B7355",
 };

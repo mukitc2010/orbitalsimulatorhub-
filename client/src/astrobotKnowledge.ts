@@ -87,45 +87,45 @@ export const ASTROBOT_KNOWLEDGE: AstroBotKnowledgeEntry[] = [
   {
     keywords: ["mars", "rover", "robot mars"],
     answer:
-      "NASA sends robots called rovers to Mars! They take pictures and send data back. The rover is like a smart car: if it sees a rock it turns, if safe it goes forward. Scientists use math and computers to plan their paths. Do you want a space mission challenge?",
+      "Space agencies send robots called rovers to Mars! They take pictures and send data back. The rover is like a smart car: if it sees a rock it turns, if safe it goes forward. Scientists use math and computers to plan their paths. Do you want a space mission challenge?",
   },
   {
     keywords: ["nasa", "what does nasa do"],
     answer:
-      "NASA is the USA's space agency! They send rockets, satellites, and robots to space. They study the Moon, Mars, and stars. NASA uses orbital mechanics to plan every satellite and mission. Do you want a space mission challenge?",
+      "Space agencies send rockets, satellites, and robots to space. They study the Moon, Mars, and stars. Orbital mechanics is used to plan every satellite and mission. Do you want a space mission challenge?",
     references: [
       {
-        title: "About NASA",
+        title: "About space agencies",
         url: "https://www.nasa.gov/about/index.html",
-        source: "NASA.gov"
+        source: "Space agency reference"
       }
     ],
   },
   {
     keywords: ["hello", "hi", "hey", "how are you"],
     answer:
-      "Hello. I'm AstroBot from Orbital Simulator Hub (orbitalsimulatorhub.com). I can help with orbits, LEO, MEO, GEO, satellites, NASA missions, Newton's laws, quantum physics, astrophysics, or the ISS. What would you like to explore?",
+      "Hello. I'm AstroBot from Orbital Simulator Hub (orbitalsimulatorhub.com). I can help with orbits, LEO, MEO, GEO, satellites, space missions, Newton's laws, quantum physics, astrophysics, or the ISS. What would you like to explore?",
   },
-  // NASA Topics
+  // Space mission topics
   {
     keywords: ["nasa missions", "nasa projects", "nasa programs", "what nasa does"],
     answer:
-      "NASA conducts amazing missions! They send rovers to Mars (Curiosity, Perseverance), telescopes to space (James Webb, Hubble), astronauts to the ISS, and probes to planets. NASA uses orbital mechanics for every mission. Learn more at /learn/aerospace#nasa",
+      "Space agencies conduct amazing missions! They send rovers to Mars (Curiosity, Perseverance), telescopes to space (James Webb, Hubble), astronauts to the ISS, and probes to planets. Orbital mechanics is used for every mission. Learn more at /learn/aerospace#nasa",
   },
   {
     keywords: ["james webb", "jwst", "webb telescope", "space telescope"],
     answer:
-      "The James Webb Space Telescope (JWST) is NASA's most powerful telescope! It's at the Sun-Earth L2 point, 1.5 million km away. It sees the oldest light in the universe and studies exoplanets. Learn more at /learn/aerospace",
+      "The James Webb Space Telescope (JWST) is the most powerful space telescope! It's at the Sun-Earth L2 point, 1.5 million km away. It sees the oldest light in the universe and studies exoplanets. Learn more at /learn/aerospace",
   },
   {
     keywords: ["mars rover", "curiosity", "perseverance", "mars exploration"],
     answer:
-      "NASA's Mars rovers are amazing robots! Curiosity and Perseverance explore Mars, collect samples, and send data back. They use orbital mechanics to get to Mars and land safely. Learn more at /learn/aerospace#rovers",
+      "Mars rovers are amazing robots! Curiosity and Perseverance explore Mars, collect samples, and send data back. They use orbital mechanics to get to Mars and land safely. Learn more at /learn/aerospace#rovers",
   },
   {
     keywords: ["apollo", "moon landing", "apollo mission", "moon mission"],
     answer:
-      "Apollo missions landed humans on the Moon! Apollo 11 was the first in 1969. NASA used Newton's laws and orbital mechanics to get there and back. Learn more at /learn/aerospace#nasa",
+      "Apollo missions landed humans on the Moon! Apollo 11 was the first in 1969. Newton's laws and orbital mechanics were used to get there and back. Learn more at /learn/aerospace#nasa",
   },
   {
     keywords: ["starlink", "spacex starlink", "internet satellites"],
@@ -172,7 +172,7 @@ export const ASTROBOT_KNOWLEDGE: AstroBotKnowledgeEntry[] = [
   {
     keywords: ["quantum computing", "quantum computer", "quantum processor"],
     answer:
-      "Quantum computers use quantum mechanics to solve problems faster! NASA and other agencies research quantum computing for space missions and complex calculations. Learn more at /research",
+      "Quantum computers use quantum mechanics to solve problems faster! Space agencies research quantum computing for space missions and complex calculations. Learn more at /research",
   },
   // Astrophysics Topics
   {
@@ -214,7 +214,7 @@ export const ASTROBOT_KNOWLEDGE: AstroBotKnowledgeEntry[] = [
   {
     keywords: ["hohmann transfer", "orbit transfer", "changing orbits"],
     answer:
-      "Hohmann transfer is the most efficient way to change orbits! It uses two engine burns to move from one orbit to another. NASA uses this for interplanetary missions! Learn more at /simulator",
+      "Hohmann transfer is the most efficient way to change orbits! It uses two engine burns to move from one orbit to another. Space agencies use this for interplanetary missions! Learn more at /simulator",
   },
   {
     keywords: ["lagrange points", "l1 l2 l3", "l4 l5", "gravitational balance"],
@@ -240,12 +240,12 @@ export const ASTROBOT_KNOWLEDGE: AstroBotKnowledgeEntry[] = [
   {
     keywords: ["blog", "space blog", "nasa news", "space facts"],
     answer:
-      "Our Space Blog has daily NASA news, space facts, satellite tutorials, and astronomy lessons! Fresh content every day. Check it out at /blog",
+      "Our Space Blog has daily space news, space facts, satellite tutorials, and astronomy lessons! Fresh content every day. Check it out at /blog",
   },
   {
     keywords: ["research", "phd", "aerospace research", "advanced"],
     answer:
-      "For PhD researchers and advanced study, we have comprehensive resources! NASA data, algorithms, real calculations, textbooks, NTRS, SPICE, Horizons. Visit /research and /learn/aerospace#phd",
+      "For PhD researchers and advanced study, we have comprehensive resources! Real mission data, algorithms, real calculations, textbooks, NTRS, SPICE, Horizons. Visit /research and /learn/aerospace#phd",
   },
 ];
 
@@ -270,4 +270,4 @@ export function getAstroBotReplyLocal(question: string): { answer: string; refer
 }
 
 export const ASTROBOT_FALLBACK =
-  "I can help with orbits, LEO, MEO, GEO, the simulator, satellites, NASA missions, or the ISS. Try the [simulator](/simulator) to see orbits in 3D, or the [formulas library](/formulas-library) for the math behind gravity and orbital velocity. Continue exploring with AstroBot on OrbitalSimulatorHub 🚀";
+  "I can help with orbits, LEO, MEO, GEO, the simulator, satellites, space missions, or the ISS. Try the [simulator](/simulator) to see orbits in 3D, or the [formulas library](/formulas-library) for the math behind gravity and orbital velocity. Continue exploring with AstroBot on OrbitalSimulatorHub 🚀";

@@ -4,21 +4,21 @@ import { getLatestResearchContent, type ResearchContent } from "../data/research
 
 const CATEGORIES = [
   {
-    title: "NASA & space",
+    title: "Space missions & reference",
     desc: "Missions, astronauts, ISS, rovers, Moon, solar system. Real mission data and calculations for researchers.",
     links: [
-      { href: "/learn/aerospace#nasa", label: "NASA reference", summary: "Apollo, ISS, Mars rovers, James Webb, GPS, GEO — structured facts." },
+      { href: "/learn/aerospace#nasa", label: "Space agency reference", summary: "Apollo, ISS, Mars rovers, James Webb, GPS, GEO — structured facts." },
       { href: "/learn/aerospace#rovers", label: "Rovers & real mission data", summary: "ISS, Curiosity, Perseverance, Apollo: real numbers, masses, orbits, EDL." },
-      { href: "/play#nasa", label: "Learn NASA (Play & Learn)", summary: "Solar system, missions, astronauts, rovers, Moon, stars." },
+      { href: "/play#nasa", label: "Learn Space (Play & Learn)", summary: "Solar system, missions, astronauts, rovers, Moon, stars." },
     ],
   },
   {
     title: "Newton's laws & physics",
-    desc: "The three laws of motion and the law of gravity — the same physics NASA uses for rockets and orbits.",
+    desc: "The three laws of motion and the law of gravity — the same physics used by space agencies for rockets and orbits.",
     links: [
       { href: "/learn/newton", label: "Newton's laws", summary: "1st (inertia), 2nd (F=ma), 3rd (action-reaction) with orbital examples." },
       { href: "/learn/formulas", label: "Formulas playground", summary: "F=ma, gravity F=GMm/r², orbital speed v=√(μ/r), calculators and quiz." },
-      { href: "/learn/aerospace#newton", label: "Newton in aerospace", summary: "Full law statements and how NASA uses them in spaceflight." },
+      { href: "/learn/aerospace#newton", label: "Newton in aerospace", summary: "Full law statements and how space agencies use them in spaceflight." },
     ],
   },
   {
@@ -29,7 +29,7 @@ const CATEGORIES = [
       { href: "/learn/space-questions", label: "Why don't satellites fall? & more", summary: "Why moon doesn't crash, why astronauts float, what if satellite stops." },
       { href: "/satellites", label: "Real satellite orbits", summary: "ISS, Starlink, GPS, weather satellites — altitude, speed, orbit time." },
       { href: "/simulator", label: "3D Simulator", summary: "Add LEO/MEO/GEO, see height, period, speed, perigee, apogee; compare orbits." },
-      { href: "/learn/aerospace#algorithms", label: "Algorithms used on this site", summary: "Two-body, Keplerian↔Cartesian, propagation; same types as NASA mission design." },
+      { href: "/learn/aerospace#algorithms", label: "Algorithms used on this site", summary: "Two-body, Keplerian↔Cartesian, propagation; same types as space agency mission design." },
       { href: "/learn/aerospace#calculations", label: "Real-life calculations", summary: "Worked examples: ISS period & speed, GPS, GEO altitude, rover weight on Mars." },
       { href: "/guide", label: "Simulator guide", summary: "What an orbit is, what the numbers mean, how to use the simulator." },
       { href: "/learn/aerospace#orbits", label: "Orbital mechanics reference", summary: "LEO, MEO, GEO definitions; Kepler; key equations." },
@@ -50,8 +50,8 @@ const CATEGORIES = [
     title: "Ask & explore",
     desc: "Get answers and explore further.",
     links: [
-      { href: "/astrobot", label: "Ask AstroBot", summary: "Ask questions about orbits, NASA, ISS, satellites; get explained answers." },
-      { href: "/play", label: "Play & Learn", summary: "Simulator, NASA, math, science, physics, chemistry in one page." },
+      { href: "/astrobot", label: "Ask AstroBot", summary: "Ask questions about orbits, ISS, satellites; get explained answers." },
+      { href: "/play", label: "Play & Learn", summary: "Simulator, math, science, physics, chemistry in one page." },
     ],
   },
 ];
@@ -70,10 +70,10 @@ export function ResearchHub() {
       <div className="text-center mb-8">
         <h1 className="headline">Research & topics</h1>
         <p className="subhead max-w-2xl mx-auto">
-          Find everything on this site: NASA, Newton&apos;s laws, orbital mechanics, algorithms, rovers, and real calculations. For students, scientists, PhD researchers, and aerospace study.
+          Find everything on this site: space missions, Newton&apos;s laws, orbital mechanics, algorithms, rovers, and real calculations. For students, scientists, PhD researchers, and aerospace study.
         </p>
         <p className="text-sm text-slate-600 mt-2">
-          Researching <strong>NASA</strong> or <strong>Newton&apos;s laws</strong>? Doing <strong>PhD or graduate-level</strong> work? Need <strong>algorithms</strong>, <strong>real mission data</strong>, or <strong>curated references</strong>? Use the links below.
+          Researching <strong>space missions</strong> or <strong>Newton&apos;s laws</strong>? Doing <strong>PhD or graduate-level</strong> work? Need <strong>algorithms</strong>, <strong>real mission data</strong>, or <strong>curated references</strong>? Use the links below.
         </p>
       </div>
 
@@ -152,7 +152,7 @@ export function ResearchHub() {
       <section className="rounded-xl bg-slate-800 text-white p-4 mb-6 border-2 border-slate-700">
         <h2 className="font-bold mb-2">🎓 For PhD researchers &amp; advanced aerospace study</h2>
         <p className="text-sm text-slate-200 mb-3">
-          Curated resources so you have <strong>enough depth for thesis and publication work</strong>: CODATA/IAU standards, textbooks (Vallado, Bate, Curtis, Battin), NASA NTRS technical reports, JPL Horizons &amp; SPICE, and topics beyond this site (perturbations, coordinate frames, numerical integration, GNC).
+          Curated resources so you have <strong>enough depth for thesis and publication work</strong>: CODATA/IAU standards, textbooks (Vallado, Bate, Curtis, Battin), NTRS technical reports, JPL Horizons &amp; SPICE, and topics beyond this site (perturbations, coordinate frames, numerical integration, GNC).
         </p>
         <Link href="/learn/aerospace#phd">
           <a className="inline-block px-5 py-2.5 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
@@ -164,15 +164,15 @@ export function ResearchHub() {
       <section className="rounded-xl bg-[var(--accent-gold)]/15 border-2 border-[var(--accent-gold)]/50 p-4 mb-6">
         <h2 className="font-bold text-slate-800 mb-2">🔬 For scientists &amp; researchers</h2>
         <p className="text-sm text-slate-700 mb-3">
-          One reference page with <strong>real NASA project data</strong>, the <strong>math and algorithm types</strong> we use, and <strong>real-life calculations</strong> (ISS, GPS, GEO, rovers). All numbers and formulas are consistent with NASA and standard astrodynamics.
+          One reference page with <strong>real mission data</strong>, the <strong>math and algorithm types</strong> we use, and <strong>real-life calculations</strong> (ISS, GPS, GEO, rovers). All numbers and formulas are consistent with standard astrodynamics.
         </p>
         <Link href="/learn/aerospace">
           <a className="inline-block px-5 py-2.5 rounded-xl font-bold bg-[var(--accent-gold)]/80 text-[#0f172a] hover:opacity-90 mb-2">
-            Aerospace &amp; NASA reference →
+            Aerospace reference →
           </a>
         </Link>
         <p className="text-xs text-slate-600">
-          Direct links: <Link href="/learn/aerospace#nasa"><a className="text-[var(--accent-cyan)] hover:underline">NASA</a></Link> · <Link href="/learn/aerospace#rovers"><a className="text-[var(--accent-cyan)] hover:underline">Rovers &amp; mission data</a></Link> · <Link href="/learn/aerospace#algorithms"><a className="text-[var(--accent-cyan)] hover:underline">Algorithms</a></Link> · <Link href="/learn/aerospace#formulas"><a className="text-[var(--accent-cyan)] hover:underline">Formulas</a></Link> · <Link href="/learn/aerospace#calculations"><a className="text-[var(--accent-cyan)] hover:underline">Real-life calculations</a></Link> · <Link href="/learn/aerospace#phd"><a className="text-[var(--accent-cyan)] hover:underline">PhD resources</a></Link>
+          Direct links: <Link href="/learn/aerospace#nasa"><a className="text-[var(--accent-cyan)] hover:underline">Space missions</a></Link> · <Link href="/learn/aerospace#rovers"><a className="text-[var(--accent-cyan)] hover:underline">Rovers &amp; mission data</a></Link> · <Link href="/learn/aerospace#algorithms"><a className="text-[var(--accent-cyan)] hover:underline">Algorithms</a></Link> · <Link href="/learn/aerospace#formulas"><a className="text-[var(--accent-cyan)] hover:underline">Formulas</a></Link> · <Link href="/learn/aerospace#calculations"><a className="text-[var(--accent-cyan)] hover:underline">Real-life calculations</a></Link> · <Link href="/learn/aerospace#phd"><a className="text-[var(--accent-cyan)] hover:underline">PhD resources</a></Link>
         </p>
       </section>
 
@@ -205,7 +205,7 @@ export function ResearchHub() {
           </Link>
           <Link href="/learn/how-nasa-launches-satellite">
             <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
-              <span className="font-medium text-slate-800">🚀 How NASA Launches</span>
+              <span className="font-medium text-slate-800">🚀 How Satellites Launch</span>
               <p className="text-xs text-slate-600 mt-1">Rocket stages, launch sequence, orbital insertion</p>
             </a>
           </Link>
@@ -251,7 +251,7 @@ export function ResearchHub() {
       <section className="rounded-xl bg-[var(--accent-cyan)]/10 border-2 border-[var(--accent-cyan)]/40 p-4 mb-6">
         <h2 className="font-bold text-slate-800 mb-2">📚 Full reference (all sections)</h2>
         <p className="text-sm text-slate-700 mb-3">
-          The same page also covers Newton&apos;s laws, orbital mechanics (LEO/MEO/GEO, Kepler), and further reading with NASA and Vallado references.
+          The same page also covers Newton&apos;s laws, orbital mechanics (LEO/MEO/GEO, Kepler), and further reading with Vallado and standard references.
         </p>
         <Link href="/learn/aerospace">
           <a className="inline-block px-5 py-2.5 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">

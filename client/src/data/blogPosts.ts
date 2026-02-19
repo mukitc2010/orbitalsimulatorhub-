@@ -12,17 +12,17 @@ export interface BlogPost {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "latest-space-news-nasa-mission-today",
-    title: "Latest Space News and NASA Mission Today: Your Daily Guide to What’s Happening Beyond Earth",
-    excerpt: "Stay updated with today's space news: NASA missions, Artemis, Mars rovers, James Webb, and the technology shaping the future of space exploration. Written for students and researchers.",
+    title: "Latest Space News and Mission Today: Your Daily Guide to What’s Happening Beyond Earth",
+    excerpt: "Stay updated with today's space news: space missions, Artemis, Mars rovers, James Webb, and the technology shaping the future of space exploration. Written for students and researchers.",
     content: `**Introduction**
 
-What is happening in space right now? From the International Space Station to NASA’s Moon and Mars programs, space agencies and companies are busy every day. This article gives you a clear, accurate summary of the latest space news and today’s NASA missions—written in simple language for students, teachers, and researchers.
+What is happening in space right now? From the International Space Station to NASA’s Moon and Mars programs, space agencies and companies are busy every day. This article gives you a clear, accurate summary of the latest space news and today’s space missions—written in simple language for students, teachers, and researchers.
 
 ---
 
 **Daily space news summary**
 
-**NASA and Artemis:** NASA’s Artemis program aims to return humans to the Moon and prepare for Mars. Recent focus is on the Space Launch System (SLS), the Orion spacecraft, and the lunar Gateway. Uncrewed and crewed test flights are key milestones.
+**Artemis:** NASA’s Artemis program aims to return humans to the Moon and prepare for Mars. Recent focus is on the Space Launch System (SLS), the Orion spacecraft, and the lunar Gateway. Uncrewed and crewed test flights are key milestones.
 
 **International Space Station (ISS):** The ISS remains a hub for science in low Earth orbit. Crews conduct experiments in biology, physics, and Earth observation. Commercial crew vehicles (SpaceX Crew Dragon, Boeing Starliner) ferry astronauts to and from the station.
 
@@ -34,7 +34,7 @@ What is happening in space right now? From the International Space Station to NA
 
 ---
 
-**Featured NASA mission today**
+**Featured space mission today**
 
 **Artemis: Return to the Moon**
 
@@ -62,7 +62,7 @@ Artemis is NASA’s flagship program to land the first woman and the first perso
 
 **Instruments and sensors:** Cameras, spectrometers, radars, and other instruments on orbiters and rovers collect data. This data is used for science, navigation, and planning the next missions.
 
-You can explore the basics with our [orbit simulator](/simulator), [formulas library](/formulas-library), and [How NASA launches](/learn/how-nasa-launches-satellite).
+You can explore the basics with our [orbit simulator](/simulator), [formulas library](/formulas-library), and [How satellites launch](/learn/how-nasa-launches-satellite).
 
 ---
 
@@ -74,7 +74,7 @@ You can explore the basics with our [orbit simulator](/simulator), [formulas lib
 
 **Long term:** Permanent bases on the Moon and Mars, deeper space exploration, and advances in propulsion (e.g. nuclear or advanced chemical) could make faster trips and more ambitious missions possible.
 
-**Education and careers:** Students and researchers can get involved through NASA internships, university programs, and learning resources like our [Space Careers](/careers) and [Research](/research) pages.
+**Education and careers:** Students and researchers can get involved through space agency internships, university programs, and learning resources like our [Space Careers](/careers) and [Research](/research) pages.
 
 ---
 
@@ -89,15 +89,15 @@ You can follow NASA’s website and social media, ESA, SpaceX, and other agencie
 **3. What is the difference between LEO, MEO, and GEO?**
 LEO (Low Earth Orbit) is roughly 200–2,000 km altitude—used by the ISS and many satellites. MEO (Medium Earth Orbit) is used by navigation satellites like GPS (~20,200 km). GEO (Geostationary) is about 35,786 km; satellites there appear fixed over one spot and are used for weather and communications.
 
-**4. Why does NASA want to go back to the Moon?**
-The Moon is a testbed for technology, operations, and science needed for Mars. It offers resources (e.g. water ice), and learning to work there helps NASA and partners prepare for longer, farther missions.
+**4. Why go back to the Moon?**
+The Moon is a testbed for technology, operations, and science needed for Mars. It offers resources (e.g. water ice), and learning to work there helps space agencies and partners prepare for longer, farther missions.
 
 **5. Where can I learn orbital mechanics and space physics?**
 You can start with our [orbital mechanics guide](/learn/orbital-mechanics), [formulas library](/formulas-library), and [3D simulator](/simulator). For deeper study, see our [Aerospace reference](/learn/aerospace) and [Research hub](/research).`,
     category: "nasa-news",
     date: "2026-02-15",
-    tags: ["NASA", "space news", "Artemis", "ISS", "Mars", "James Webb", "space exploration"],
-    seoKeywords: "latest space news, NASA mission today, space news today, NASA Artemis, daily space news, space exploration 2026, NASA Mars mission, James Webb telescope, space technology, orbital mechanics",
+    tags: ["space news", "Artemis", "ISS", "Mars", "James Webb", "space exploration"],
+    seoKeywords: "latest space news, space mission today, space news today, Artemis, daily space news, space exploration 2026, Mars mission, James Webb telescope, space technology, orbital mechanics",
   },
   {
     slug: "how-iss-orbits-earth-16-times-daily",
@@ -133,7 +133,7 @@ Use our [orbit simulator](/simulator) to add a LEO satellite and watch it comple
   },
   {
     slug: "nasa-james-webb-telescope-new-discoveries-2026",
-    title: "NASA James Webb Telescope: Latest Discoveries in 2026",
+    title: "James Webb Telescope: Latest Discoveries in 2026",
     excerpt: "The James Webb Space Telescope continues to revolutionize astronomy. Latest findings include ancient galaxies, exoplanet atmospheres, and insights into star formation.",
     content: `The James Webb Space Telescope (JWST), launched in December 2021, has been making groundbreaking discoveries since it began operations. Positioned at the Sun-Earth L2 point (about 1.5 million kilometers from Earth), JWST observes the universe in infrared light.
 
@@ -158,13 +158,13 @@ The L2 point is not a true orbit around Earth, but rather a gravitational balanc
 
 **Learn more:**
 
-- [NASA JWST official site](https://www.jwst.nasa.gov)
+- [JWST official site](https://www.jwst.nasa.gov)
 - Try our [orbit simulator](/simulator) to understand how satellites maintain their positions
 - Read about [orbital mechanics](/learn/orbital-mechanics) to understand Lagrange points`,
     category: "nasa-news",
     date: "2026-02-15",
-    tags: ["NASA", "James Webb", "telescope", "astronomy", "space"],
-    seoKeywords: "James Webb telescope discoveries, NASA JWST 2026, space telescope news",
+    tags: ["space", "James Webb", "telescope", "astronomy", "space"],
+    seoKeywords: "James Webb telescope discoveries, JWST 2026, space telescope news",
   },
   {
     slug: "what-is-geostationary-orbit-explained",
@@ -264,12 +264,12 @@ Use our [orbit simulator](/simulator) to see this in action. Add a satellite and
   {
     slug: "artemis-moon-mission-update-2026-humans-returning-to-moon",
     title: "Artemis Moon Mission Update 2026: Humans Returning to the Moon",
-    excerpt: "NASA's Artemis program is preparing to return humans to the Moon for the first time in over 50 years. Learn about Artemis II, Orion, Lunar Gateway, and why it matters for Mars.",
-    content: `NASA's Artemis program is preparing to return humans to the Moon for the first time in over 50 years.
+    excerpt: "The Artemis program is preparing to return humans to the Moon for the first time in over 50 years. Learn about Artemis II, Orion, Lunar Gateway, and why it matters for Mars.",
+    content: `The Artemis program is preparing to return humans to the Moon for the first time in over 50 years.
 
 **What is Artemis?**
 
-Artemis is NASA's next-generation Moon mission designed to:
+Artemis is The next-generation Moon mission designed to:
 
 - Send astronauts back to the Moon
 - Build a lunar base
@@ -446,17 +446,17 @@ Dive deeper in our [Quantum physics & space](/learn/quantum-space) page and [AI 
   },
   {
     slug: "how-artemis-moon-mission-works-2026-complete-guide",
-    title: "How Artemis Moon Mission Works: Complete Guide to NASA's Return to the Moon",
-    excerpt: "Learn how NASA's Artemis program works: SLS rocket, Orion spacecraft, lunar Gateway, and the science behind returning humans to the Moon. Perfect for students and space enthusiasts.",
+    title: "How Artemis Moon Mission Works: Complete Guide to The Return to the Moon",
+    excerpt: "Learn how The Artemis program works: SLS rocket, Orion spacecraft, lunar Gateway, and the science behind returning humans to the Moon. Perfect for students and space enthusiasts.",
     content: `**Introduction**
 
-NASA's Artemis program is humanity's return to the Moon—and this time, we're staying. But how does the Artemis mission actually work? From the massive Space Launch System (SLS) rocket to the lunar Gateway station, this guide explains every step of NASA's plan to land astronauts on the Moon again.
+The Artemis program is humanity's return to the Moon—and this time, we're staying. But how does the Artemis mission actually work? From the massive Space Launch System (SLS) rocket to the lunar Gateway station, this guide explains every step of The plan to land astronauts on the Moon again.
 
 ---
 
 **What is the Artemis Program?**
 
-Artemis is NASA's program to establish a sustainable human presence on the Moon by the end of this decade. Named after Apollo's twin sister in Greek mythology, Artemis will land the first woman and first person of color on the lunar surface.
+Artemis is The program to establish a sustainable human presence on the Moon by the end of this decade. Named after Apollo's twin sister in Greek mythology, Artemis will land the first woman and first person of color on the lunar surface.
 
 **Key Goals:**
 - Return humans to the Moon by 2026
@@ -468,7 +468,7 @@ Artemis is NASA's program to establish a sustainable human presence on the Moon 
 
 **The Space Launch System (SLS) Rocket**
 
-The SLS is NASA's most powerful rocket ever built. Standing taller than the Statue of Liberty, it generates 8.8 million pounds of thrust—enough to send Orion and cargo to the Moon.
+The SLS is The most powerful rocket ever built. Standing taller than the Statue of Liberty, it generates 8.8 million pounds of thrust—enough to send Orion and cargo to the Moon.
 
 **How SLS Works:**
 - **Core Stage:** Contains liquid hydrogen and liquid oxygen fuel
@@ -605,7 +605,7 @@ Key principles include:
 
 **Real-World Applications**
 
-- NASA missions rely on these principles for trajectory planning and mission design
+- space missions rely on these principles for trajectory planning and mission design
 - Satellite operators use related physics for constellation management
 - Research institutions advance our understanding through experiments and observation
 

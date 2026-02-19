@@ -1,5 +1,5 @@
 /**
- * Mission database with real NASA data for the Orbital Simulator Hub.
+ * Mission database with real mission data for the Orbital Simulator Hub.
  * Includes Apollo lunar landings, historic firsts, and Space Shuttle missions.
  */
 

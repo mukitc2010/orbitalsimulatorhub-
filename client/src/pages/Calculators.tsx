@@ -10,7 +10,7 @@ export function Calculators() {
       <div>
         <h1 className="headline">Space &amp; Orbit Calculators</h1>
         <p className="subhead">
-          NASA-style orbit calculator, gravity calculator, and escape velocity calculator. Enter values and get speed, period, and force.
+          Orbit calculator, gravity calculator, and escape velocity calculator. Enter values and get speed, period, and force.
         </p>
       </div>
 

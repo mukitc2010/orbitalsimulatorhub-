@@ -11,10 +11,10 @@ export function NavigationHeader() {
     { path: "/missions", label: "Missions", title: "Space missions — Apollo, Gemini, Shuttle, and more" },
     { path: "/artifacts", label: "Brought Back", title: "What humans brought back from space — Moon rocks, asteroid samples" },
     { path: "/simulator", label: "Simulator", title: "3D satellite orbit simulator — LEO, MEO, GEO" },
-    { path: "/learn/aerospace", label: "Aerospace", title: "Aerospace & NASA reference for students and researchers" },
+    { path: "/learn/aerospace", label: "Aerospace", title: "Aerospace reference for students and researchers" },
     { path: "/ai-in-aerospace", label: "AI in Space", title: "How AI is transforming aerospace and space exploration" },
-    { path: "/blog", label: "Blog", title: "Daily NASA news, space facts, satellite tutorials" },
-    { path: "/astrobot", label: "AstroBot", title: "Ask AstroBot anything about space, orbits, and NASA" },
+    { path: "/blog", label: "Blog", title: "Daily space news, space facts, satellite tutorials" },
+    { path: "/astrobot", label: "AstroBot", title: "Ask AstroBot anything about space, orbits, and satellites" },
     { path: "/research", label: "Research", title: "NASA, Newton, orbital mechanics — for students and PhD researchers" },
   ];
 

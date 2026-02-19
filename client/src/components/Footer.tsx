@@ -4,7 +4,7 @@ import { ShareBar } from "./ShareBar";
 const footerLinks = [
   { href: "/", label: "Home" },
   { href: "/space-news", label: "Space news" },
-  { href: "/learn/nasa-for-kids", label: "NASA for kids" },
+  { href: "/learn/nasa-for-kids", label: "Space for kids" },
   { href: "/ai-in-space", label: "AI in space" },
   { href: "/learn/satellite-tutorial", label: "Satellite tutorial" },
   { href: "/space-quiz", label: "Space quiz" },

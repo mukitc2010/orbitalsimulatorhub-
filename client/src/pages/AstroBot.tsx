@@ -72,7 +72,7 @@ const EXAMPLE_QUESTIONS: Record<Mode, string[]> = {
   ],
   astronaut: [
     "How do astronauts sleep on the ISS?",
-    "What training does NASA require to become an astronaut?",
+    "What training is required to become an astronaut?",
     "What happens to the human body in microgravity?",
     "What is an EVA (spacewalk) like?",
     "What are satellite subsystems (EPS, ADCS, OBC)?",
@@ -85,7 +85,7 @@ const EXAMPLE_QUESTIONS: Record<Mode, string[]> = {
     "Explain eccentricity like I'm 10",
   ],
   ai: [
-    "How does AI help NASA navigate spacecraft?",
+    "How does AI help navigate spacecraft?",
     "What AI does the Perseverance rover use?",
     "How is machine learning used in satellite imagery?",
     "What is autonomous rendezvous in space?",
@@ -454,7 +454,7 @@ Go to → [/simulator](/simulator)
 🔎 **Quick Facts:**
 - Sleep schedule is strictly controlled to maintain circadian rhythm
 - Astronauts often report vivid dreams in space
-- NASA studies sleep on ISS because poor sleep affects cognitive performance for missions to Mars
+- Sleep on ISS is studied because poor sleep affects cognitive performance for missions to Mars
 
 🎯 **Try This:**
 Go to [/astronauts](/astronauts) and read about an ISS crew member's daily routine!
@@ -462,13 +462,13 @@ Go to [/astronauts](/astronauts) and read about an ISS crew member's daily routi
 *Want a quiz on astronaut life?*`;
     }
     if (q.includes("train") || q.includes("select") || q.includes("become")) {
-      return `🛰️ **Mission Brief:** How to become a NASA astronaut.
+      return `🛰️ **Mission Brief:** How to become an astronaut.
 
-✅ **NASA Requirements:**
+✅ **Requirements:**
 - US citizenship
 - Master's degree in STEM (science, engineering, math, or medicine)
 - 2+ years of relevant professional experience OR 1000+ hours as jet pilot
-- Pass the NASA physical (near/far vision, blood pressure, height 62–75 inches)
+- Pass the physical (near/far vision, blood pressure, height 62–75 inches)
 
 📌 **Training after selection:**
 1. **Basic training** — 2 years at Johnson Space Center
@@ -478,7 +478,7 @@ Go to [/astronauts](/astronauts) and read about an ISS crew member's daily routi
 5. **Spacewalk (EVA) training** — Neutral Buoyancy Lab (giant pool!)
 6. **Mission-specific training** — assigned mission, 1–3 years
 
-🔎 **Fun stat:** NASA typically accepts 10–13 astronauts from ~18,000 applicants!
+🔎 **Fun stat:** Space agencies typically accept 10–13 astronauts from ~18,000 applicants!
 
 *Want a quiz on astronaut selection?*`;
     }
@@ -569,7 +569,7 @@ Visit [/planets/mars](/planets/mars) — use the weight calculator to see how mu
 - Pluto: New Horizons (2015) — first close-up ever
 
 🎯 **Try This:**
-Go to [/planets](/planets) — every planet has its own page with NASA data, weight calculator, and quiz!
+Go to [/planets](/planets) — every planet has its own page with real mission data, weight calculator, and quiz!
 
 *Want to explore a specific planet? Or want a quiz?*`;
   }
@@ -581,7 +581,7 @@ Go to [/planets](/planets) — every planet has its own page with NASA data, wei
 ✅ **Key Areas:**
 
 🤖 **Spacecraft Navigation**
-- NASA's Deep Space 1 (1998) — first AI-controlled spacecraft
+- Deep Space 1 (1998) — first AI-controlled spacecraft
 - Terrain Relative Navigation — Perseverance used AI to land precisely on Mars by analyzing the ground 20 times/second
 
 🛰 **Satellite Operations**
@@ -768,7 +768,7 @@ Here's where everything lives:
 
 🛰 **[/simulator](/simulator)** — 3D orbit simulator. Add LEO, MEO, GEO satellites.
 👨‍🚀 **[/astronauts](/astronauts)** — All astronauts. Click any name for full profile.
-🪐 **[/planets](/planets)** — Solar system. Each planet has NASA data + quiz.
+🪐 **[/planets](/planets)** — Solar system. Each planet has real mission data + quiz.
 🚀 **[/missions](/missions)** — Apollo, Gemini, Shuttle missions with crew & geology.
 🪨 **[/artifacts](/artifacts)** — What astronauts brought back from space.
 🌙 **[/learn/lunar-geology](/learn/lunar-geology)** — Fra Mauro, Apollo site geology.
@@ -963,7 +963,7 @@ export function AstroBot() {
         </p>
         <h1 className="headline mb-2">🛰️ AstroBot</h1>
         <p className="subhead max-w-xl mx-auto">
-          Your NASA-style space instructor. Ask anything about orbits, missions, planets, math, or how to use the simulator.
+          Your space & orbital mechanics instructor. Ask anything about orbits, missions, planets, math, or how to use the simulator.
         </p>
       </section>
 
@@ -1207,7 +1207,7 @@ export function AstroBot() {
           ))}
         </div>
         <p className="text-xs mt-3 italic" style={{ color: "var(--text-muted)" }}>
-          If AstroBot isn't 100% sure about something, it will say so and suggest verifying via NASA.gov or official mission data.
+          If AstroBot isn't 100% sure about something, it will say so and suggest verifying via official mission data.
         </p>
       </div>
     </div>

@@ -3,7 +3,7 @@
  * When users share on Reddit, the link gets indexed; Reddit search finds posts linking here.
  */
 const SITE_URL = "https://www.orbitalsimulatorhub.com";
-const DEFAULT_TITLE = "Orbital Simulator Hub – Free 3D Satellite Orbit Simulator & NASA Education";
+const DEFAULT_TITLE = "Orbital Simulator Hub – Free 3D Satellite Orbit Simulator & Space Education";
 
 function getShareUrls(path = "/", title = DEFAULT_TITLE) {
   const url = path.startsWith("http") ? path : `${SITE_URL}${path === "/" ? "" : path}`;

@@ -76,7 +76,7 @@ Explore [astrophysics](/learn/astrophysics) for more. Continue exploring with As
 
 **The problem:** 27,000+ tracked objects orbit Earth (>10 cm). Millions of smaller fragments exist. Relative collision velocity in LEO: 10–15 km/s.
 
-**Kessler Syndrome:** A chain reaction where collisions create debris that causes more collisions, potentially making some altitudes unusable. Proposed by Donald Kessler (NASA, 1978).
+**Kessler Syndrome:** A chain reaction where collisions create debris that causes more collisions, potentially making some altitudes unusable. Proposed by Donald Kessler (1978).
 
 **Notable incidents:** 2009—Iridium 33 and Cosmos 2251 collided (1,800+ fragments). 2007—China ASAT test on Fengyun-1C (worst single debris event).
 

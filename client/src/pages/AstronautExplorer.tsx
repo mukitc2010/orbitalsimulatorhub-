@@ -117,7 +117,7 @@ export function AstronautExplorer() {
               border: `1px solid ${filter === f ? "var(--accent-primary)" : "var(--border-color)"}`,
             }}
           >
-            {f === "all" ? "All" : f === "moonwalkers" ? "Moonwalkers" : f === "nasa" ? "NASA" : "International"}
+            {f === "all" ? "All" : f === "moonwalkers" ? "Moonwalkers" : f === "nasa" ? "U.S. Space Agency" : "International"}
           </button>
         ))}
       </div>
@@ -255,7 +255,7 @@ export function AstronautExplorer() {
           The Astronaut Explorer Database is a comprehensive resource for space enthusiasts, students, and researchers.
           It includes detailed profiles of every astronaut who has flown in space, from Yuri Gagarin&apos;s historic first orbit
           in 1961 to the International Space Station crews of today. Explore mission timelines, moonwalk experiences,
-          awards, and fun facts. Use filters to find NASA astronauts, international space agency crew members, or the
+          awards, and fun facts. Use filters to find U.S. space agency astronauts, international space agency crew members, or the
           exclusive group of 12 moonwalkers who set foot on the lunar surface between 1969 and 1972.
         </p>
       </section>
