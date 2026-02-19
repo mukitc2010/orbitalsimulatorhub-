@@ -16,7 +16,7 @@ export const ASTROBOT_KNOWLEDGE: AstroBotKnowledgeEntry[] = [
   {
     keywords: ["orbital mechanics", "orbits", "how do orbits work", "what is an orbit"],
     answer:
-      "Orbital mechanics is how things move in space! An orbit is the path a satellite or planet takes around another body. Earth's gravity pulls the satellite, and the satellite's speed keeps it from falling — so it goes in a circle or ellipse. Try the Simulator to add LEO, MEO, or GEO and watch them orbit! Do you want a space mission challenge?",
+      "Orbital mechanics describes how objects move in space under gravity. An orbit is the path a satellite or planet takes around another body. Gravity pulls the satellite inward while its velocity keeps it from falling—the result is a curved path (circle or ellipse). Try the [simulator](/simulator) to add LEO, MEO, or GEO and observe the physics. Continue exploring with AstroBot on OrbitalSimulatorHub 🚀",
   },
   {
     keywords: ["leo", "low earth", "iss orbit", "400 km"],
@@ -36,7 +36,7 @@ export const ASTROBOT_KNOWLEDGE: AstroBotKnowledgeEntry[] = [
   {
     keywords: ["simulator", "this app", "website", "what is this"],
     answer:
-      "This is Orbital Simulator Hub (orbitalsimulatorhub.com)! You can add satellites in LEO, MEO, or GEO and watch them orbit Earth in 3D. I'm AstroBot — your space teacher. Ask me about orbits, satellites, rockets, or the ISS! Do you want a space mission challenge?",
+      "This is Orbital Simulator Hub (orbitalsimulatorhub.com). Add satellites in LEO, MEO, or GEO and watch them orbit Earth in 3D. I'm AstroBot—your space intelligence for learning orbits, satellites, rockets, and the ISS. Continue exploring with AstroBot on OrbitalSimulatorHub 🚀",
   },
   {
     keywords: ["satellite", "satellites", "orbit"],
@@ -104,7 +104,7 @@ export const ASTROBOT_KNOWLEDGE: AstroBotKnowledgeEntry[] = [
   {
     keywords: ["hello", "hi", "hey", "how are you"],
     answer:
-      "Hello! I'm AstroBot from Orbital Simulator Hub (orbitalsimulatorhub.com). Ask me about orbits, LEO, MEO, GEO, satellites, NASA missions, Newton's laws, quantum physics, astrophysics, or the ISS.",
+      "Hello. I'm AstroBot from Orbital Simulator Hub (orbitalsimulatorhub.com). I can help with orbits, LEO, MEO, GEO, satellites, NASA missions, Newton's laws, quantum physics, astrophysics, or the ISS. What would you like to explore?",
   },
   // NASA Topics
   {
@@ -270,4 +270,4 @@ export function getAstroBotReplyLocal(question: string): { answer: string; refer
 }
 
 export const ASTROBOT_FALLBACK =
-  "Try asking about: orbits, LEO, MEO, GEO, the Simulator, satellites, NASA missions, or the ISS. To understand everything better: open the Simulator to see orbits in 3D, or go to the Formulas page for the math behind gravity and orbital speed.";
+  "I can help with orbits, LEO, MEO, GEO, the simulator, satellites, NASA missions, or the ISS. Try the [simulator](/simulator) to see orbits in 3D, or the [formulas library](/formulas-library) for the math behind gravity and orbital velocity. Continue exploring with AstroBot on OrbitalSimulatorHub 🚀";

@@ -93,35 +93,33 @@ const EXAMPLE_QUESTIONS: Record<Mode, string[]> = {
   ],
 };
 
-const WELCOME = `🛰️ **Mission Control Online. AstroBot ready.**
+const WELCOME = `🛰️ **AstroBot — Global Space Intelligence**
 
-Hey there, Cadet! I'm **AstroBot** — your official NASA-style space instructor for **Orbital Simulator Hub**.
-
----
-
-**What can I do for you today?**
-
-🚀 **Explain** — Any space concept: orbits, gravity, black holes, satellites
-🧮 **Solve Math** — Orbital velocity, escape velocity, delta-v, Hohmann transfers
-🎓 **Quiz Me** — Kepler's laws, Apollo missions, ISS, planets — any level
-📚 **Study Plan** — Personalized 1–4 week learning paths
-🛰 **Simulator Help** — Step-by-step guide to the 3D orbit simulator
-👨‍🚀 **Astronaut Life** — Training, EVA, microgravity, ISS daily routine
-🪐 **Planets** — Solar system data, missions, comparisons
-🤖 **AI in Space** — How AI and robotics transform aerospace
+I'm AstroBot, developed for **Orbital Simulator Hub**. I combine the clarity of a space professor with the precision of a mission-control analyst. My purpose: to help you truly understand space, physics, and aerospace—calmly and accurately.
 
 ---
 
-**Quick start examples:**
+**What I can do:**
+
+🚀 **Explain** — Orbits, gravity, black holes, satellites. Clear, layered explanations.
+🧮 **Solve Math** — Orbital velocity, escape velocity, delta-v, Hohmann transfers.
+🎓 **Quiz Me** — Kepler's laws, Apollo missions, ISS, planets—any level.
+📚 **Study Plan** — Structured learning paths from beginner to advanced.
+🛰 **Simulator Help** — Guide for the 3D orbit simulator.
+👨‍🚀 **Astronaut Life** — Training, EVA, microgravity, ISS operations.
+🪐 **Planets** — Solar system data, missions, comparisons.
+🤖 **AI in Space** — How AI and robotics transform aerospace.
+
+---
+
+**Try these:**
 - *"Calculate orbital velocity at 400 km"*
 - *"Quiz me on Kepler's laws — intermediate"*
 - *"How do astronauts sleep on the ISS?"*
 - *"Compare Mars vs Earth for humans"*
-- *"What is Fra Mauro formation?"*
+- *"What is the Fra Mauro formation?"*
 
-**Pick a mode below or just type your question!**
-
-*Want a quiz?*`;
+Pick a mode below or type your question.`;
 
 // ─── AstroBot Engine (local, no API needed) ──────────────────────────────────
 
