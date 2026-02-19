@@ -70,7 +70,7 @@ export function Home() {
       {/* Hero with gradient */}
       <section className="hero-gradient rounded-2xl px-6 py-10 sm:py-12 text-center mb-10">
         <p className="text-sm font-medium text-[var(--accent-cyan)] uppercase tracking-wider mb-2">🌌 Global Space Research &amp; Future Civilization Hub</p>
-        <h1 className="headline mb-3 text-white">Orbital Simulator Hub – Learn Space, Satellites &amp; More</h1>
+        <h1 className="headline mb-3 text-white">Orbital Mechanics Simulator – Free 3D Satellite Orbit Simulator</h1>
         <p className="text-lg sm:text-xl font-semibold text-white/95 max-w-xl mx-auto mb-2">
           The #1 Space Learning &amp; Research Platform on Earth
         </p>
@@ -79,7 +79,7 @@ export function Home() {
           Interactive space simulator for students, engineers, and researchers.
         </p>
         <p className="text-sm text-slate-400 max-w-2xl mx-auto mb-4">
-          Orbital mechanics for beginners · Satellite orbit simulator · How satellites work · Space study guide · Space physics course · AI in space technology · Astronomy for kids · Space for students.
+          <strong>Orbital mechanics simulator</strong> — free 3D satellite orbit simulator. Add LEO, MEO, GEO satellites. How satellites work · Space study guide · Orbital velocity calculator · Astronomy for kids · Space for students.
         </p>
         <p className="text-xs text-slate-500 max-w-2xl mx-auto mb-4">
           <strong>Orbital Simulator Hub</strong> (orbitalsimulatorhub.com) is a free 3D orbit simulator and space education platform. Learn orbital mechanics, explore 100+ astronaut profiles, study all 8 planets with real mission data, and use the interactive simulator — all free, no signup required.
@@ -342,6 +342,19 @@ export function Home() {
               </a>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* Popular searches — keyword-rich internal links for SEO */}
+      <section className="rounded-xl border border-slate-200 bg-slate-50/50 p-4 mb-6">
+        <h2 className="text-sm font-bold text-slate-600 uppercase tracking-wider mb-3">🔍 Popular searches</h2>
+        <div className="flex flex-wrap gap-2">
+          <Link href="/calculators"><a className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 text-sm hover:border-[var(--accent-cyan)] hover:text-[var(--accent-cyan)] transition">How fast does ISS orbit?</a></Link>
+          <Link href="/astronauts"><a className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 text-sm hover:border-[var(--accent-cyan)] hover:text-[var(--accent-cyan)] transition">How many astronauts walked on Moon?</a></Link>
+          <Link href="/learn/how-satellites-work"><a className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 text-sm hover:border-[var(--accent-cyan)] hover:text-[var(--accent-cyan)] transition">What is LEO MEO GEO?</a></Link>
+          <Link href="/learn/space-questions"><a className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 text-sm hover:border-[var(--accent-cyan)] hover:text-[var(--accent-cyan)] transition">Why don&apos;t satellites fall?</a></Link>
+          <Link href="/simulator"><a className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 text-sm hover:border-[var(--accent-cyan)] hover:text-[var(--accent-cyan)] transition">Orbital mechanics simulator</a></Link>
+          <Link href="/learn/orbital-mechanics"><a className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 text-sm hover:border-[var(--accent-cyan)] hover:text-[var(--accent-cyan)] transition">Orbital mechanics for beginners</a></Link>
         </div>
       </section>
 

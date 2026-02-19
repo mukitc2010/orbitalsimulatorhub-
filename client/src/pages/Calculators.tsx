@@ -1,18 +1,35 @@
 import { useState } from "react";
 import { Link } from "wouter";
+import { FAQSchema } from "../components/FAQSchema";
 
 const MU_KM = 398600.4418;
 const R_EARTH_KM = 6371;
 
+const CALCULATOR_FAQS = [
+  { question: "How fast does the ISS orbit Earth?", answer: "The International Space Station orbits at approximately 7.66 km/s (27,600 km/h) at 408 km altitude. Its orbital period is about 92 minutes. Use the orbit calculator at orbitalsimulatorhub.com/calculators — enter 408 km altitude to verify." },
+  { question: "What is orbital velocity?", answer: "Orbital velocity is the speed needed for an object to stay in a stable orbit around Earth. Formula: v = √(μ/r) where μ = 398,600 km³/s² for Earth. At 400 km altitude, orbital velocity is ~7.66 km/s. Higher altitude = slower speed, longer period." },
+  { question: "What is escape velocity?", answer: "Escape velocity is the minimum speed needed to escape Earth's gravity without further propulsion. At Earth's surface it's about 11.2 km/s. From higher altitude it's less. Use the escape velocity calculator at orbitalsimulatorhub.com/calculators." },
+];
+
 export function Calculators() {
   return (
     <div className="max-w-4xl mx-auto space-y-10">
+      <FAQSchema items={CALCULATOR_FAQS} />
       <div>
-        <h1 className="headline">Space &amp; Orbit Calculators</h1>
+        <h1 className="headline">How Fast Does the ISS Orbit? | Orbit Calculator</h1>
         <p className="subhead">
-          Orbit calculator, gravity calculator, and escape velocity calculator. Enter values and get speed, period, and force.
+          The ISS orbits at <strong>7.66 km/s (27,600 km/h)</strong> at 408 km altitude. Orbital period ~92 min. Use the calculator below to find orbital speed for any altitude.
         </p>
       </div>
+
+      {/* Featured snippet: How fast does ISS orbit — direct answer for Position 0 */}
+      <section className="rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-cyan-50/50 p-6">
+        <h2 className="text-lg font-bold text-slate-800 mb-2">How fast does the ISS orbit Earth?</h2>
+        <p className="text-slate-700 mb-2">
+          The International Space Station orbits at approximately <strong>7.66 km/s (27,600 km/h)</strong> at 408 km altitude. Its orbital period is about <strong>92 minutes</strong> — astronauts see 16 sunrises per day. Enter 408 km in the orbit calculator below to verify.
+        </p>
+        <Link href="/satellites"><a className="text-sm text-[var(--accent-cyan)] font-medium hover:underline">Real satellite data: ISS, Starlink, GPS →</a></Link>
+      </section>
 
       <section className="rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-bold text-slate-800 mb-2">Satellite orbit calculator</h2>

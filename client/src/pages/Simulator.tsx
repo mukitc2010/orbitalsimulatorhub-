@@ -1,6 +1,7 @@
 import { useState, useCallback, useRef, useEffect } from "react";
 import { Link } from "wouter";
 import { EarthVisualization, type SatelliteState } from "../components/EarthVisualization";
+import { FAQSchema } from "../components/FAQSchema";
 import { SatelliteCreationForm } from "../components/SatelliteCreationForm";
 import { SimulatorInfoPanel } from "../components/SimulatorInfoPanel";
 import { GravityLearnPanel } from "../components/GravityLearnPanel";
@@ -13,6 +14,12 @@ import type { OrbitalElements, CartesianState } from "../../../shared/types";
 const SCALE = 6371;
 const STEP_SEC = 60;
 const MAX_TRAIL = 150;
+
+const SIMULATOR_FAQS = [
+  { question: "How does the 3D satellite orbit simulator work?", answer: "The Orbital Simulator Hub simulator uses Kepler's laws and Newton's law of gravitation to calculate orbital paths in real-time. Add LEO (200-2000 km), MEO (2000-35786 km), or GEO (35786 km) satellites and watch their 3D orbits. The simulator displays altitude, orbital velocity, period, perigee, and apogee for each satellite. No download required — runs in your browser." },
+  { question: "What is LEO, MEO, and GEO in the orbit simulator?", answer: "LEO (Low Earth Orbit) is 200-2000 km — used by ISS and Starlink. MEO (Medium Earth Orbit) is 2000-35786 km — used by GPS. GEO (Geostationary Orbit) is 35,786 km — satellites appear stationary. Use the preset buttons to add each type and compare their orbits side-by-side." },
+  { question: "How do I add a satellite to the orbit simulator?", answer: "Click Add LEO, Add MEO, or Add GEO for a preset, or fill the form with altitude, eccentricity, and inclination. Click Add Satellite. Then click Play to run the simulation. The orbit info panel shows height, speed, and period for each satellite." },
+];
 
 export function Simulator() {
   const [satellites, setSatellites] = useState<SatelliteState[]>([]);
@@ -104,6 +111,7 @@ export function Simulator() {
 
   return (
     <div className="space-y-6">
+      <FAQSchema items={SIMULATOR_FAQS} />
       <div className="flex flex-wrap items-center justify-between gap-4">
         <h1 className="headline">Simulator</h1>
         <Link href="/guide" className="text-sm text-[var(--accent-cyan)] font-medium hover:underline">
