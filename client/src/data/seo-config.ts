@@ -23,6 +23,14 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     ogTitle: "Orbital Simulator Hub – Learn Space, Satellites & More",
     lastUpdated: "2026-02-17T00:00:00Z",
   },
+  "/welcome": {
+    path: "/welcome",
+    title: "Welcome | Community Hub | Orbital Simulator Hub",
+    description: "Welcome to Orbital Simulator Hub community. Explore the 3D simulator, Ask AstroBot, space blog, research hub, astronaut database, and planet explorer.",
+    keywords: "space community, orbital simulator hub, space learning, simulator, AstroBot, space blog, research hub",
+    ogTitle: "Welcome | Orbital Simulator Hub Community",
+    lastUpdated: "2026-02-19T00:00:00Z",
+  },
   "/learn/aerospace": {
     path: "/learn/aerospace",
     title: "Aerospace Reference | Orbital Simulator Hub — For Students, Scientists & PhD Researchers",

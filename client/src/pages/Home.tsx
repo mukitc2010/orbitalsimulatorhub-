@@ -121,6 +121,24 @@ export function Home() {
         </div>
       </section>
 
+      {/* What's New — signals fresh content to visitors */}
+      <section className="mb-8 rounded-xl border-2 border-[var(--accent-gold)]/50 bg-gradient-to-br from-amber-50/60 to-slate-50 p-4">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-[var(--accent-gold)]/30 text-slate-800">New</span>
+          <h2 className="text-sm font-bold text-slate-700">Fresh content added regularly — new topics &amp; research</h2>
+        </div>
+        <p className="text-sm text-slate-600 mb-3">
+          We keep expanding. Recent additions: Future Space Civilization, Next 100 Years roadmap, AI in Aerospace, quantum space tech, space news updates, and more. Check back often for new learning paths.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <Link href="/research/future-civilization"><a className="px-3 py-1.5 rounded-lg bg-white border border-[var(--accent-gold)]/40 text-slate-700 text-sm font-medium hover:bg-[var(--accent-gold)]/15 transition">Future Civilization</a></Link>
+          <Link href="/research/next-100-years"><a className="px-3 py-1.5 rounded-lg bg-white border border-[var(--accent-gold)]/40 text-slate-700 text-sm font-medium hover:bg-[var(--accent-gold)]/15 transition">Next 100 Years</a></Link>
+          <Link href="/ai-in-aerospace"><a className="px-3 py-1.5 rounded-lg bg-white border border-[var(--accent-gold)]/40 text-slate-700 text-sm font-medium hover:bg-[var(--accent-gold)]/15 transition">AI in Aerospace</a></Link>
+          <Link href="/space-news"><a className="px-3 py-1.5 rounded-lg bg-white border border-[var(--accent-gold)]/40 text-slate-700 text-sm font-medium hover:bg-[var(--accent-gold)]/15 transition">Space News</a></Link>
+          <Link href="/learn/quantum-space"><a className="px-3 py-1.5 rounded-lg bg-white border border-[var(--accent-gold)]/40 text-slate-700 text-sm font-medium hover:bg-[var(--accent-gold)]/15 transition">Quantum Space</a></Link>
+        </div>
+      </section>
+
       {/* Daily Featured Topic */}
       <section className="mb-8">
         <DailyTopicIcon />
@@ -348,21 +366,6 @@ export function Home() {
           <Link href="/astrobot"><a className="text-sm font-medium" style={{ color: "var(--accent-primary)" }}>Ask AstroBot more →</a></Link>
           <Link href="/simulator"><a className="text-sm font-medium" style={{ color: "var(--accent-primary)" }}>Try Simulator →</a></Link>
         </div>
-      </section>
-
-      {/* Community CTA */}
-      <section className="rounded-xl border-2 border-[var(--accent-pink)]/40 bg-gradient-to-br from-slate-50 to-pink-50/30 p-6 mb-8 text-center">
-        <h2 className="text-xl font-bold text-slate-800 mb-2">🌐 Join the Community</h2>
-        <p className="text-sm text-slate-600 max-w-lg mx-auto mb-4">
-          Explore educational content about aerospace, quantum physics, and orbital mechanics — updated daily.
-        </p>
-        <a
-          href="https://www.orbitalsimulatorhub.com/welcome"
-          className="inline-block px-6 py-3 rounded-xl font-medium transition"
-          style={{ background: "color-mix(in srgb, var(--accent-secondary) 20%, transparent)", color: "var(--text-primary)" }}
-        >
-          Explore Community Hub →
-        </a>
       </section>
 
       {/* Quick links */}
