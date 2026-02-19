@@ -4,6 +4,7 @@ import { getPostBySlug, getRecentPosts } from "../data/blogPosts";
 import { BlogContent } from "../components/BlogContent";
 
 const SITE_NAME = "Orbital Simulator Hub";
+const SITE_URL = "https://www.orbitalsimulatorhub.com";
 
 export function BlogPost() {
   const [match, params] = useRoute<{ slug: string }>("/blog/:slug");
@@ -17,9 +18,32 @@ export function BlogPost() {
     document.title = `${post.title} | ${SITE_NAME}`;
     const descEl = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
     if (descEl) descEl.content = post.excerpt;
+
+    // Article schema for rich results & AI citation
+    const articleSchema = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: post.title,
+      description: post.excerpt,
+      datePublished: post.date,
+      dateModified: post.date,
+      author: { "@type": "Organization", name: SITE_NAME },
+      publisher: { "@type": "Organization", name: SITE_NAME, logo: { "@type": "ImageObject", url: `${SITE_URL}/og-image.png` } },
+      mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/blog/${post.slug}` },
+    };
+    let scriptEl = document.getElementById("article-schema") as HTMLScriptElement | null;
+    if (!scriptEl) {
+      scriptEl = document.createElement("script");
+      scriptEl.id = "article-schema";
+      scriptEl.type = "application/ld+json";
+      document.head.appendChild(scriptEl);
+    }
+    scriptEl.textContent = JSON.stringify(articleSchema);
+
     return () => {
       document.title = prevTitle;
       if (descEl) descEl.content = prevDesc;
+      scriptEl?.remove();
     };
   }, [post]);
 

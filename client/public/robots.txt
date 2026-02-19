@@ -6,15 +6,13 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-# Google
+# Google (Crawl-delay not supported; use Search Console for crawl rate)
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 # Bing
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
 # ChatGPT / OpenAI
 User-agent: ChatGPT-User
