@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import { useLocation } from "wouter";
 import { getSEOConfig } from "../data/seo-config";
 
-const DEFAULT_TITLE = "Orbital Simulator Hub – #1 Space Research & Learning Platform | Global Authority";
-const DEFAULT_DESCRIPTION = "Free interactive 3D satellite orbit simulator. Learn orbital mechanics, space missions, astronaut database, planet explorer, aerospace engineering, AI in space. For students, researchers, and PhD scientists.";
+const DEFAULT_TITLE = "Space Study & Aerospace Engineering | Free 3D Orbit Simulator | NASA Missions | Orbital Simulator Hub";
+const DEFAULT_DESCRIPTION = "Free space study platform for aerospace engineering. 3D satellite orbit simulator, NASA missions, astronaut database, orbital mechanics. For students, researchers & PhD scientists.";
 const SITE_URL = "https://www.orbitalsimulatorhub.com";
 const SITE_NAME = "Orbital Simulator Hub";
 const OG_IMAGE = `${SITE_URL}/og-image.png`;

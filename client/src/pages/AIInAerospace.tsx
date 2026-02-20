@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "wouter";
 
-const TAB_IDS = ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"] as const;
+const TAB_IDS = ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"] as const;
 const TABS: { id: (typeof TAB_IDS)[number]; label: string }[] = [
   { id: "t1", label: "🛰 AI Navigation" },
   { id: "t2", label: "🤖 Autonomous Spacecraft" },
@@ -11,6 +11,7 @@ const TABS: { id: (typeof TAB_IDS)[number]; label: string }[] = [
   { id: "t6", label: "🚀 Space Agencies & SpaceX" },
   { id: "t7", label: "🔴 Mars AI" },
   { id: "t8", label: "📊 Space ML & Data" },
+  { id: "t9", label: "🛠 AI Tools & Platforms" },
 ];
 
 const DIAGRAM_NODES: { title: string; desc: string; body: string }[] = [
@@ -37,6 +38,7 @@ const SECTIONS: { id: (typeof TAB_IDS)[number]; icon: string; title: string; des
   { id: "t6", icon: "🚀", title: "AI in Space Agencies & SpaceX", desc: "How space agencies and SpaceX use AI in launch, landing, and operations." },
   { id: "t7", icon: "🔴", title: "AI for Mars missions", desc: "Mars rovers, helicopters, and future crewed mission support." },
   { id: "t8", icon: "📊", title: "Space data analysis with ML", desc: "Image recognition, telemetry analysis, and scientific discovery." },
+  { id: "t9", icon: "🛠", title: "AI tools & platforms", desc: "Commercial and open source AI tools, what they do, and computer requirements." },
 ];
 
 const HERO_TAGS: { tag: string; tabId: (typeof TAB_IDS)[number] }[] = [
@@ -47,6 +49,7 @@ const HERO_TAGS: { tag: string; tabId: (typeof TAB_IDS)[number] }[] = [
   { tag: "anomaly detection", tabId: "t5" },
   { tag: "Mars rover AI", tabId: "t7" },
   { tag: "space ML", tabId: "t8" },
+  { tag: "AI tools open source", tabId: "t9" },
 ];
 
 export function AIInAerospace() {
@@ -288,6 +291,61 @@ export function AIInAerospace() {
             </ul>
             <p><strong>Tip:</strong> show examples + interactive visuals to boost engagement and SEO time-on-page.</p>
             <p className="mt-3">Kepler and TESS use ML to find exoplanet transits. Hubble and JWST pipelines use ML for classification and anomaly detection. Earth observation satellites use ML for weather, climate, and land use. Mission control uses ML to summarize telemetry and prioritize alerts.</p>
+          </div>
+          <div className={`nasa-ai-panel ${activeTab === "t9" ? "active" : ""}`} id="t9">
+            <h2>🛠 AI Tools in the Market: Commercial &amp; Open Source</h2>
+            <p>AI tools have exploded in the last few years. Here&apos;s a guide to what&apos;s available, what they do, and what you need to run them.</p>
+
+            <h3 className="mt-4 font-bold">Commercial AI Tools</h3>
+            <ul className="nasa-ai-bullets">
+              <li><strong>ChatGPT (OpenAI):</strong> Text generation, coding help, analysis. GPT-4 for reasoning; GPT-4o for multimodal (text + image). Web and API.</li>
+              <li><strong>Claude (Anthropic):</strong> Long context (200K tokens), strong at coding and analysis. Used for research and writing.</li>
+              <li><strong>Gemini (Google):</strong> Multimodal, integrated with Google Workspace. Good for search, docs, and coding.</li>
+              <li><strong>Copilot (Microsoft):</strong> Code completion in VS Code, GitHub. Powered by GPT and Codex.</li>
+              <li><strong>Grok (xAI):</strong> Real-time info, bold personality. Tuned for current events.</li>
+              <li><strong>Perplexity:</strong> AI search — answers with citations. Good for research.</li>
+            </ul>
+
+            <h3 className="mt-4 font-bold">Open Source AI Tools</h3>
+            <ul className="nasa-ai-bullets">
+              <li><strong>Ollama:</strong> Run LLMs locally (Llama, Mistral, Qwen, etc.). One command: <code>ollama run llama3</code>. Free, private, no API cost.</li>
+              <li><strong>Llama (Meta):</strong> Open weights. Llama 3.2 (3B–70B). Used for coding, chat, RAG. Run via Ollama or Hugging Face.</li>
+              <li><strong>Mistral:</strong> Mistral 7B, Mixtral 8x7B. Fast, efficient. Good for European data privacy.</li>
+              <li><strong>Qwen (Alibaba):</strong> Qwen2.5, Qwen2.5-Coder. Strong for coding and long context.</li>
+              <li><strong>Code Llama / DeepSeek Coder:</strong> Specialized for code generation and debugging.</li>
+              <li><strong>LM Studio / GPT4All:</strong> Desktop apps to run local models. No coding required.</li>
+            </ul>
+
+            <h3 className="mt-4 font-bold">What These Tools Can Do</h3>
+            <ul className="nasa-ai-bullets">
+              <li><strong>Code:</strong> Write, debug, refactor code. Explain algorithms. Generate full apps.</li>
+              <li><strong>Research:</strong> Summarize papers, answer questions with sources, compare ideas.</li>
+              <li><strong>Writing:</strong> Draft articles, emails, reports. Translate and edit.</li>
+              <li><strong>Analysis:</strong> Parse data, suggest visualizations, find patterns.</li>
+              <li><strong>Space &amp; aerospace:</strong> Explain orbital mechanics, help with mission design, generate educational content.</li>
+            </ul>
+
+            <h3 className="mt-4 font-bold">How AI Tools Have Built the Future</h3>
+            <p>AI tools have accelerated software development, research, and education. Developers use Copilot and ChatGPT to ship faster. Researchers use LLMs to explore literature and draft papers. Students use AI for tutoring. In aerospace, AI assists with trajectory optimization, anomaly detection, and mission planning. The trend: AI as a copilot that augments human capability rather than replaces it.</p>
+
+            <h3 className="mt-4 font-bold">Computer Requirements</h3>
+            <table className="w-full mt-2 text-sm border-collapse border border-[var(--nasa-line)]">
+              <thead>
+                <tr className="bg-[rgba(255,255,255,.05)]">
+                  <th className="border border-[var(--nasa-line)] px-3 py-2 text-left">Model Size</th>
+                  <th className="border border-[var(--nasa-line)] px-3 py-2 text-left">RAM</th>
+                  <th className="border border-[var(--nasa-line)] px-3 py-2 text-left">VRAM (GPU)</th>
+                  <th className="border border-[var(--nasa-line)] px-3 py-2 text-left">Examples</th>
+                </tr>
+              </thead>
+              <tbody className="text-[var(--nasa-muted)]">
+                <tr><td className="border border-[var(--nasa-line)] px-3 py-2">1–3B</td><td className="border border-[var(--nasa-line)] px-3 py-2">4–8 GB</td><td className="border border-[var(--nasa-line)] px-3 py-2">2–4 GB</td><td className="border border-[var(--nasa-line)] px-3 py-2">Phi-3 mini, Qwen 1.5B</td></tr>
+                <tr><td className="border border-[var(--nasa-line)] px-3 py-2">7B</td><td className="border border-[var(--nasa-line)] px-3 py-2">8–16 GB</td><td className="border border-[var(--nasa-line)] px-3 py-2">6–8 GB</td><td className="border border-[var(--nasa-line)] px-3 py-2">Llama 3.2, Mistral 7B, Qwen2.5-Coder</td></tr>
+                <tr><td className="border border-[var(--nasa-line)] px-3 py-2">13B</td><td className="border border-[var(--nasa-line)] px-3 py-2">16–24 GB</td><td className="border border-[var(--nasa-line)] px-3 py-2">10–12 GB</td><td className="border border-[var(--nasa-line)] px-3 py-2">Llama 3.1 13B, Code Llama 13B</td></tr>
+                <tr><td className="border border-[var(--nasa-line)] px-3 py-2">70B+</td><td className="border border-[var(--nasa-line)] px-3 py-2">64+ GB</td><td className="border border-[var(--nasa-line)] px-3 py-2">40–80 GB</td><td className="border border-[var(--nasa-line)] px-3 py-2">Llama 70B, Qwen 72B (or cloud API)</td></tr>
+              </tbody>
+            </table>
+            <p className="mt-3 text-sm"><strong>Tip:</strong> For most users, a 7B model (e.g. <code>ollama run qwen2.5-coder:7b</code>) runs well on 16 GB RAM or an 8 GB GPU. No GPU? Use CPU — slower but works. Cloud APIs (OpenAI, Anthropic) require no local hardware.</p>
           </div>
         </div>
       </section>

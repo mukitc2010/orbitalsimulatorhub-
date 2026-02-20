@@ -17,10 +17,10 @@ export interface SEOConfig {
 export const SEO_CONFIGS: Record<string, SEOConfig> = {
   "/": {
     path: "/",
-    title: "Orbital Mechanics Simulator – Free 3D Satellite Orbit Simulator | Orbital Simulator Hub",
-    description: "Orbital mechanics simulator: free 3D satellite orbit simulator. Add LEO, MEO, GEO. ISS speed, astronauts, space news. Orbital velocity calculator. Free for students.",
-    keywords: "orbital mechanics simulator, free satellite orbit simulator, 3D orbit simulator, space news, ISS, astronauts, Mars rover, SpaceX, orbital mechanics for beginners, how satellites work, LEO MEO GEO, space study guide, astronomy for kids, space quiz, space careers, orbital velocity calculator, space physics, AI in space, James Webb, Artemis",
-    ogTitle: "Orbital Simulator Hub – Free 3D Orbit Simulator & Space Education",
+    title: "Space Study & Aerospace Engineering | Free 3D Orbit Simulator | NASA Missions | Orbital Simulator Hub",
+    description: "Free space study for aerospace engineering. 3D orbit simulator, NASA missions. Free for students in Africa, Asia, Americas. No signup. For researchers & PhD scientists worldwide.",
+    keywords: "space study, aerospace engineering, NASA, free space education Africa, space education Nigeria, space education Kenya, space education South Africa, orbital mechanics simulator, free satellite orbit simulator, 3D orbit simulator, space news, ISS, astronauts, Mars rover, SpaceX, orbital mechanics for beginners, how satellites work, LEO MEO GEO, space study guide, astronomy for kids, space quiz, space careers, orbital velocity calculator, space physics, AI in space, James Webb, Artemis",
+    ogTitle: "Space Study & Aerospace Engineering | Free 3D Orbit Simulator | NASA Missions",
     lastUpdated: "2026-02-19T00:00:00Z",
   },
   "/welcome": {
@@ -33,9 +33,9 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
   },
   "/learn/aerospace": {
     path: "/learn/aerospace",
-    title: "Aerospace Reference | Orbital Simulator Hub — For Students, Scientists & PhD Researchers",
-    description: "Comprehensive aerospace reference: space missions, Newton's laws, orbital mechanics, algorithms, rovers, real-life calculations. Resources for students, scientists, and PhD researchers including textbooks, NTRS, SPICE, and Horizons.",
-    keywords: "aerospace reference, space missions, Newton laws, orbital mechanics, PhD research, aerospace algorithms, space rovers, space calculations, aerospace textbooks, NTRS, SPICE, Horizons",
+    title: "Space Study & Aerospace Engineering Reference | NASA, Orbital Mechanics | Orbital Simulator Hub",
+    description: "Aerospace engineering reference: space study, NASA missions, orbital mechanics, Newton's laws, algorithms, rovers. For students, scientists, and PhD researchers. NTRS, SPICE, Horizons.",
+    keywords: "space study, aerospace engineering, NASA, aerospace reference, space missions, Newton laws, orbital mechanics, PhD research, aerospace algorithms, space rovers, NTRS, SPICE, Horizons",
     ogTitle: "Aerospace Reference — PhD Research Resources",
     lastUpdated: "2026-02-15T00:00:00Z",
   },
@@ -139,9 +139,9 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
   },
   "/learn/nasa-study-guide": {
     path: "/learn/nasa-study-guide",
-    title: "Space Study Guide – Learn Space & Missions | Orbital Simulator Hub",
-    description: "Space study guide: missions, orbital mechanics, ISS, Mars rovers, GPS, AI in aerospace. For students and teachers. Free simulator and quiz.",
-    keywords: "space study guide, space missions, orbital mechanics study, space for students",
+    title: "Space Study Guide – NASA Missions, Aerospace Engineering | Orbital Simulator Hub",
+    description: "Space study guide: NASA missions, aerospace engineering, orbital mechanics, ISS, Mars rovers, GPS. For students and teachers. Free simulator and quiz.",
+    keywords: "space study, space study guide, NASA, aerospace engineering, space missions, orbital mechanics study, space for students",
     lastUpdated: "2026-02-17T00:00:00Z",
   },
   "/learn/how-satellites-work": {
@@ -181,9 +181,9 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
   },
   "/ai-in-aerospace": {
     path: "/ai-in-aerospace",
-    title: "AI in Aerospace – Satellites, Rovers & SpaceX | Orbital Simulator Hub",
-    description: "How AI transforms aerospace: satellite navigation, autonomous spacecraft, Mars rovers, mission planning. Space agencies and SpaceX use AI for space exploration.",
-    keywords: "AI in aerospace, AI in space, space AI, autonomous spacecraft, AI satellites, Mars rover AI",
+    title: "AI in Aerospace – AI Tools, Open Source, Satellites, Rovers & SpaceX | Orbital Simulator Hub",
+    description: "AI tools in the market: ChatGPT, Claude, Ollama, Llama. Open source AI, computer requirements. How AI transforms aerospace: satellites, Mars rovers, mission planning.",
+    keywords: "AI tools, open source AI, Ollama, Llama, ChatGPT, Claude, AI in aerospace, AI in space, space AI, autonomous spacecraft, AI satellites, Mars rover AI, AI computer requirements",
     lastUpdated: "2026-02-17T00:00:00Z",
   },
   "/ai-in-space": {

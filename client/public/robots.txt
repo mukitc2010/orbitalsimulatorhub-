@@ -1,10 +1,21 @@
 # Orbital Simulator Hub — robots.txt
 # https://www.orbitalsimulatorhub.com
+# Free space education for Africa, Americas, Asia, Europe
 
 # Allow all search engines and AI crawlers
 User-agent: *
 Allow: /
 Disallow: /api/
+
+# Crawl hints: index all pages for better discovery
+User-agent: Googlebot
+Allow: /
+Allow: /simulator
+Allow: /astronauts
+Allow: /planets
+Allow: /missions
+Allow: /blog
+Allow: /learn/
 
 # Google (Crawl-delay not supported; use Search Console for crawl rate)
 User-agent: Googlebot
