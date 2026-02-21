@@ -22,6 +22,11 @@ Allow: /formulas-library
 Allow: /learn/
 Allow: /ai-in-aerospace
 Allow: /research/
+Allow: /satellites
+Allow: /compare/
+Allow: /planets
+Allow: /missions
+Allow: /artifacts
 
 # Bing
 User-agent: Bingbot
