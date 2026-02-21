@@ -27,7 +27,8 @@
     "db:main-site": "node scripts/run-main-site-tables.js",
     "content:generate": "node scripts/content-agent.js",
     "content:dry-run": "node scripts/content-agent.js --dry-run",
-    "content:schedule": "node scripts/content-scheduler.js"
+    "content:schedule": "node scripts/content-scheduler.js",
+    "seo:auto": "node scripts/auto-seo-update.js"
   },
   "dependencies": {
     "@react-three/drei": "^9.120.0",
@@ -37,9 +38,9 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.0",
     "drizzle-orm": "^0.36.0",
-    "pg": "^8.13.0",
     "express": "^4.21.0",
     "mysql2": "^3.11.0",
+    "pg": "^8.13.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "superjson": "^2.2.0",
@@ -54,6 +55,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@types/three": "^0.170.0",
+    "@vercel/node": "^5.6.6",
     "@vitejs/plugin-react": "^4.3.0",
     "autoprefixer": "^10.4.20",
     "concurrently": "^9.2.1",
