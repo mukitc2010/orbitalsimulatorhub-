@@ -30,107 +30,124 @@ function MathExplainedTab() {
       </div>
 
       <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>
-        <h3 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>🚀 Part 1 — Optimal Control (The Big Idea)</h3>
-        <div className="space-y-6">
-          <div>
-            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-cyan)" }}>What is it?</h4>
-            <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
-              <strong>Optimal control</strong> = finding the <em>best</em> way to do something. Not just any way — the one that uses the least fuel, takes the shortest time, or avoids the most risk.
-            </p>
-            <div className="rounded-lg p-4 text-sm" style={{ background: "var(--bg-surface)" }}>
-              <p className="font-bold mb-2">Example: Parking a car</p>
-              <p>You could zigzag into a spot (wastes gas) or take 3 smooth turns (efficient). Optimal control finds the smooth path that uses the least steering and gas.</p>
-            </div>
-          </div>
-          <div>
-            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-cyan)" }}>In space?</h4>
-            <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
-              A satellite needs to move from one orbit to another. There are infinite paths. <strong>Optimal control</strong> picks the one that burns the least fuel — critical when you can&apos;t refuel in space.
-            </p>
-            <div className="rounded-lg p-4 text-sm" style={{ background: "var(--bg-surface)" }}>
-              <p className="font-bold mb-2">Real example: ISS docking</p>
-              <p>When a Dragon capsule docks with the ISS, it doesn&apos;t fly straight. It follows a fuel-optimal path computed by — you guessed it — optimal control math.</p>
-            </div>
-          </div>
-          <div>
-            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-cyan)" }}>Pontryagin&apos;s Maximum Principle — The Short Version</h4>
-            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-              This is a <strong>math trick</strong> from the 1960s that turns &quot;find the best path&quot; into a set of equations you can solve. Engineers use it for fuel-optimal transfers, Mars missions, and low-thrust trajectories.
-            </p>
-          </div>
-        </div>
-      </section>
+        <h3 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>🚀 Part 1 — Optimal Control Theory</h3>
 
-      <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-gold)" }}>
-        <h3 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>🎮 Part 2 — MPC & LQR (How AI Satellites Decide)</h3>
         <div className="space-y-6">
           <div>
-            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-gold)" }}>MPC = Model Predictive Control</h4>
-            <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
-              <strong>Idea:</strong> Don&apos;t plan the whole mission at once. Plan the next few steps, execute them, then <em>replan</em>. Like playing a video game — you react to what happens.
-            </p>
-            <div className="rounded-lg p-4 text-sm" style={{ background: "var(--bg-surface)" }}>
-              <p className="font-bold mb-2">Example: Starlink collision avoidance</p>
-              <p>Starlink has 5,000+ satellites. They can&apos;t pre-plan forever — space debris moves. So every few minutes they recompute: &quot;Where will I be in 10 minutes? Will I hit anything? If yes, nudge now.&quot; That&apos;s MPC.</p>
+            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-cyan)" }}>1️⃣ Optimal Control Problem (Continuous Time)</h4>
+            <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
+              <p className="mb-1"><strong>Spacecraft dynamics:</strong> ẋ(t) = f(x, u, t)</p>
+              <p className="mb-1"><strong>Mission objective:</strong> min J = ∫₀ᵀ L(x,u,t) dt + Φ(x(T))</p>
+              <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>L = running cost (fuel, risk, energy) · Φ = terminal cost · u(t) = thrust control</p>
             </div>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+              <strong>In plain English:</strong> The spacecraft moves according to f (physics). You want to minimize a total cost J: the cost along the way (L) plus the cost at the end (Φ). L is &quot;how much fuel/risk&quot; you use; Φ is &quot;how far from target&quot; you end up. Optimal control finds the thrust u(t) that makes J as small as possible. <em>Example:</em> ISS docking — Dragon picks the path that burns least fuel.
+            </p>
           </div>
+
           <div>
-            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-gold)" }}>LQR = Linear Quadratic Regulator</h4>
-            <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
-              <strong>Idea:</strong> When you&apos;re <em>close</em> to where you want to be, the math gets simpler. LQR says: &quot;Apply thrust proportional to how far off you are.&quot; Like a thermostat.
-            </p>
-            <div className="rounded-lg p-4 text-sm" style={{ background: "var(--bg-surface)" }}>
-              <p className="font-bold mb-2">Example: Orbit correction</p>
-              <p>GPS satellites drift. Ground control tells them: &quot;You&apos;re 100 m off. Fire thrusters this much.&quot; The &quot;this much&quot; comes from LQR.</p>
+            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-cyan)" }}>2️⃣ Pontryagin&apos;s Maximum Principle</h4>
+            <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
+              <p className="mb-1"><strong>Hamiltonian:</strong> H = L(x,u,t) + λᵀf(x,u,t)</p>
+              <p className="mb-1"><strong>Costate:</strong> λ̇ = −∂H/∂x</p>
+              <p><strong>Optimal control:</strong> u* = argmin H</p>
             </div>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+              <strong>In plain English:</strong> Pontryagin (1960s) gave a recipe: define H (Hamiltonian) = cost + a &quot;shadow price&quot; λ times how the state changes. The costate λ evolves backward in time. The best thrust u* is the one that minimizes H at each instant. This turns an infinite-dimensional problem into solvable equations. Used for fuel-optimal transfers, Mars missions, low-thrust trajectories.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-cyan)" }}>3️⃣ Model Predictive Control (MPC)</h4>
+            <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
+              <p className="mb-1"><strong>Discrete form:</strong> xₖ₊₁ = Axₖ + Buₖ</p>
+              <p><strong>Optimize:</strong> min ∑ₖ (xₖ−x_ref)ᵀQ(xₖ−x_ref) + uₖᵀRuₖ</p>
+            </div>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+              <strong>In plain English:</strong> Don&apos;t plan the whole mission. At each step, predict the next N steps (using xₖ₊₁ = Axₖ + Buₖ), find the thrust sequence that keeps you near target (x_ref) with minimal effort (R penalizes big thrusts). Execute the first step, then replan. Like a video game — react to what happens. <em>Example:</em> Starlink — 5,000+ satellites recompute every few minutes: &quot;Will I hit debris? Nudge now if yes.&quot;
+            </p>
+          </div>
+
+          <div>
+            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-cyan)" }}>4️⃣ LQR (Linear Quadratic Regulator)</h4>
+            <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
+              <p className="mb-1"><strong>Cost:</strong> J = ∫₀^∞ (xᵀQx + uᵀRu) dt</p>
+              <p className="mb-1"><strong>Solution:</strong> u = −Kx</p>
+              <p className="text-xs" style={{ color: "var(--text-muted)" }}>K from Riccati: AᵀP + PA − PBR⁻¹BᵀP + Q = 0</p>
+            </div>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+              <strong>In plain English:</strong> When you&apos;re close to target, the math simplifies. LQR says: thrust u = −Kx — proportional to how far off you are, with a gain matrix K from the Riccati equation. Like a thermostat: if 2° too cold, heat a bit more. Used for orbit correction, station-keeping. GPS satellites use this to stay in their slot.
+            </p>
           </div>
         </div>
       </section>
 
       <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-pink)" }}>
-        <h3 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>🧠 Part 3 — Space-AGI (Future Spacecraft Brains)</h3>
+        <h3 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>🧠 Part 3 — Space-AGI Mathematical Framework</h3>
+        <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>
+          This is where you differentiate from NASA. No one explains this publicly — until now.
+        </p>
+
         <div className="space-y-6">
           <div>
-            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-pink)" }}>1. Knowledge–Energy Optimization</h4>
-            <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
-              <strong>Idea:</strong> Future spacecraft have limited power. The goal: learn as much as possible per watt. Mars rover Perseverance picks targets that maximize &quot;new knowledge per joule.&quot;
+            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-pink)" }}>1️⃣ Knowledge–Energy Optimization Law</h4>
+            <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
+              <p className="mb-1"><strong>Mission intelligence:</strong> D = (dK/dt) / P_use</p>
+              <p><strong>Maximize:</strong> max ∫₀ᵀ (dK/dt) / P_use dt</p>
+            </div>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+              <strong>In plain English:</strong> D = &quot;knowledge gained per watt.&quot; Future spacecraft have limited power (solar, batteries). The goal: learn as much as possible per joule. Maximize the integral = get the most science for your energy budget. <em>Example:</em> Mars rover Perseverance can&apos;t photograph every rock — it picks targets that maximize &quot;new knowledge per joule.&quot;
             </p>
           </div>
+
           <div>
-            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-pink)" }}>2. Autonomous Intelligence Growth</h4>
-            <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
-              <strong>Idea:</strong> A spacecraft&apos;s brain gets smarter over time. dI/dt = αI + βK + γE — intelligence grows from current smarts (I), knowledge (K), and energy (E).
+            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-pink)" }}>2️⃣ Autonomous Intelligence Growth Model</h4>
+            <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
+              <p>dI/dt = αI + βK + γE</p>
+              <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>I = onboard intelligence · K = knowledge · E = energy access</p>
+            </div>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+              <strong>In plain English:</strong> The spacecraft&apos;s brain gets smarter over time. Intelligence grows from: (α) current smarts I, (β) knowledge K gathered, (γ) energy E available. It&apos;s a growth equation — recursive improvement. Like studying: each day you know more, so you learn faster the next day.
             </p>
           </div>
+
           <div>
-            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-pink)" }}>3. Reaction–Diffusion</h4>
-            <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
-              <strong>Idea:</strong> AI &quot;spreading&quot; from Earth to Moon to Mars — like a rumor in a school. Models how intelligence propagates across lunar bases, Mars colony, probes.
+            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-pink)" }}>3️⃣ Reaction–Diffusion Interplanetary AI Network</h4>
+            <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
+              <p>∂I/∂t = D∇²I + αI</p>
+            </div>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+              <strong>In plain English:</strong> AI &quot;spreads&quot; across space. D∇²I = diffusion (intelligence flows from node to node, like heat); αI = local growth. Imagine Earth → Moon → Mars bases sharing software updates, navigation data, learned models. This equation describes how that &quot;intelligence flow&quot; works. Very futuristic but mathematically clean.
             </p>
           </div>
+
           <div>
-            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-pink)" }}>4. Safety-Constrained</h4>
-            <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
-              <strong>Idea:</strong> Optimize — but never cross into unsafe zones. Like a self-driving car: get there fast, but never run a red light.
+            <h4 className="text-base font-bold mb-2" style={{ color: "var(--accent-pink)" }}>4️⃣ Safety-Constrained Cosmic Optimization</h4>
+            <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
+              <p>J_safe = ∫₀ᵀ (U(x,u) − κ/Φ(x,u)) dt</p>
+              <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>Φ = barrier · κ = safety weight</p>
+            </div>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+              <strong>In plain English:</strong> Optimize your mission (U = utility) — but the term κ/Φ adds a &quot;barrier&quot; that blows up when you approach unsafe states (Φ → 0). So the optimal path never enters the danger zone. Like a self-driving car: get there fast, but never run a red light. Brings AI safety (alignment) math into space engineering.
             </p>
           </div>
         </div>
       </section>
 
       <section className="rounded-xl p-6" style={{ background: "var(--bg-surface)", border: "1px solid var(--border-color)" }}>
-        <h3 className="text-lg font-bold mb-4" style={{ color: "var(--text-primary)" }}>📚 Summary</h3>
+        <h3 className="text-lg font-bold mb-4" style={{ color: "var(--text-primary)" }}>📚 Summary — All Equations Explained</h3>
         <ul className="text-sm space-y-2 mb-4" style={{ color: "var(--text-secondary)" }}>
-          <li><strong>Optimal control</strong> — find the best path (least fuel, least risk)</li>
-          <li><strong>Pontryagin</strong> — math trick to compute that path</li>
-          <li><strong>MPC</strong> — replan often (Starlink, formation flying)</li>
-          <li><strong>LQR</strong> — simple rule when close to target (orbit correction)</li>
-          <li><strong>Knowledge–Energy</strong> — maximize science per watt</li>
-          <li><strong>Intelligence growth</strong> — spacecraft get smarter over time</li>
-          <li><strong>Reaction–diffusion</strong> — AI spreads across Moon, Mars, probes</li>
-          <li><strong>Safety-constrained</strong> — optimize but never enter danger zones</li>
+          <li><strong>Optimal control</strong> — ẋ=f(x,u,t), min J = ∫L dt + Φ. Find best thrust path.</li>
+          <li><strong>Pontryagin</strong> — H = L + λᵀf, u* = argmin H. Recipe to compute best path.</li>
+          <li><strong>MPC</strong> — xₖ₊₁ = Axₖ + Buₖ. Replan every step (Starlink, formation flying).</li>
+          <li><strong>LQR</strong> — u = −Kx. Simple rule when close (orbit correction, GPS).</li>
+          <li><strong>Knowledge–Energy</strong> — D = (dK/dt)/P_use. Maximize science per watt.</li>
+          <li><strong>Intelligence growth</strong> — dI/dt = αI + βK + γE. Spacecraft get smarter over time.</li>
+          <li><strong>Reaction–diffusion</strong> — ∂I/∂t = D∇²I + αI. AI spreads across Moon, Mars.</li>
+          <li><strong>Safety-constrained</strong> — J_safe with κ/Φ barrier. Never enter danger zones.</li>
         </ul>
         <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-          Ready for the real equations? <Link href="/research/space-agi-math"><a className="text-[var(--accent-cyan)] hover:underline">Space-AGI Mathematics</a></Link> (graduate level). Or try the <Link href="/simulator"><a className="text-[var(--accent-gold)] hover:underline">Orbit & Swarm Simulators</a></Link>.
+          Ready for the full notation? <Link href="/research/space-agi-math"><a className="text-[var(--accent-cyan)] hover:underline">Space-AGI Mathematics</a></Link> (graduate level). Or try the <Link href="/simulator"><a className="text-[var(--accent-gold)] hover:underline">Orbit & Swarm Simulators</a></Link>.
         </p>
       </section>
     </div>
