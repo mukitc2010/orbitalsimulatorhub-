@@ -60,8 +60,6 @@ import { FutureSpaceCivilization } from "./pages/FutureSpaceCivilization";
 import { Next100Years } from "./pages/Next100Years";
 import { Welcome } from "./pages/Welcome";
 import { NotFound } from "./pages/NotFound";
-import { ChatWidget } from "./components/ChatWidget";
-
 function App() {
   return (
     <div className="min-h-screen blueprint-bg flex flex-col">
@@ -131,7 +129,6 @@ function App() {
         </Switch>
       </main>
       <Footer />
-      <ChatWidget />
     </div>
   );
 }
