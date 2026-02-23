@@ -6,8 +6,9 @@ import { BLOG_POSTS } from "../data/blogPosts";
 
 const FEATURES = [
   { href: "/simulator", icon: "🛸", title: "3D Simulator", desc: "Add LEO, MEO, GEO satellites. Watch orbits in real time.", color: "cyan" },
-  { href: "/astrobot", icon: "🤖", title: "Ask AstroBot", desc: "Get answers about orbits, satellites, ISS.", color: "gold" },
-  { href: "/play", icon: "🌟", title: "Learn Space", desc: "Missions, astronauts, planets, solar system.", color: "pink" },
+  { href: "/astrobot", icon: "🤖", title: "AstroBot", desc: "Your AI Space Professor. Orbital mechanics, satellites, missions.", color: "gold" },
+  { href: "/learn/orbital-mechanics", icon: "🧠", title: "Orbital Mechanics", desc: "Master orbits, escape velocity, Hohmann transfer.", color: "cyan" },
+  { href: "/ai-in-aerospace", icon: "🚀", title: "AI in Space", desc: "Autonomous spacecraft, Mars rover AI, Space AGI.", color: "pink" },
 ];
 
 const QUICK_LINKS = [
@@ -38,22 +39,22 @@ export function Home() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      {/* Hero — compact, light */}
+      {/* Hero — Intelligence for the Space Age */}
       <section className="rounded-2xl px-6 py-8 sm:py-10 text-center mb-8 hero-gradient">
-        <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">🌌 Global Space Research & Future Civilization Hub</p>
+        <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">Orbital Mechanics • AI in Space • Future Space Intelligence</p>
         <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2 leading-tight">
-          Orbital Mechanics Simulator — Free 3D Satellite Orbit Simulator
+          OrbitalSimulatorHub — Intelligence for the Space Age
         </h1>
         <p className="text-base sm:text-lg text-white/90 max-w-xl mx-auto mb-1">
-          The #1 Space Learning & Research Platform on Earth
+          Learn orbital mechanics, satellites, aerospace engineering, and the future of AI-powered space exploration.
         </p>
         <p className="text-sm text-slate-300 max-w-lg mx-auto mb-5">
-          Learn orbital mechanics, satellites, aerospace engineering, AI in space. For students, engineers, researchers worldwide.
+          The most advanced open platform for students, engineers, and researchers worldwide.
         </p>
         <div className="flex flex-wrap justify-center gap-2 mb-4">
           <Link href="/simulator">
             <a className="px-5 py-2.5 rounded-xl font-semibold text-sm transition hover:opacity-95" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>
-              🛰 Open Simulator
+              🛰 Open Orbital Simulator
             </a>
           </Link>
           <Link href="/astrobot">
@@ -61,23 +62,23 @@ export function Home() {
               🤖 Ask AstroBot
             </a>
           </Link>
-          <Link href="/astronauts">
+          <Link href="/learn/orbital-mechanics">
             <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-pink)", color: "var(--text-on-accent)" }}>
-              👨‍🚀 Astronauts
+              🧠 Learn Orbital Mechanics
             </a>
           </Link>
-          <Link href="/planets">
+          <Link href="/ai-in-aerospace">
             <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-gold)", color: "var(--text-on-accent)" }}>
-              🪐 Planets
+              🚀 AI in Space
             </a>
           </Link>
         </div>
-        <p className="text-xs text-slate-400">Use the navigation bar above to explore all topics</p>
+        <p className="text-xs text-slate-400">Trusted by students, engineers, researchers worldwide</p>
         <ShareBar path="/" showRedditSubs />
       </section>
 
-      {/* 3 main features */}
-      <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+      {/* 4 main features — Simulator, AstroBot, Orbital Mechanics, AI in Space */}
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         {FEATURES.map((f) => (
           <Link key={f.href} href={f.href}>
             <a className="block p-5 rounded-xl border-2 transition hover:shadow-lg hover:scale-[1.02]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
@@ -108,25 +109,31 @@ export function Home() {
         </div>
       </section>
 
-      {/* Latest Research Update — Space-AGI Doctrine */}
-      <section className="rounded-xl border-2 p-5 mb-8" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(0,217,255,0.08) 100%)", borderColor: "var(--accent-cyan)" }}>
-        <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>🔬 Latest Research Update — Feb 2026</h3>
-        <p className="font-semibold mb-2 text-lg" style={{ color: "var(--text-primary)" }}>Space-AGI Doctrine: Orbital Mechanics + Autonomous Decision Models</p>
-        <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
-          Reproducible simulation package: two-body & J2 propagation, Hohmann transfer, debris Monte Carlo, delayed MDP, Bayesian belief, energy-aware planning, scientific discovery loop. Unified mission score: safety + precision + energy + discovery + autonomy.
-        </p>
-        <div className="flex flex-wrap gap-2">
-          <Link href="/research/space-agi-doctrine">
-            <a className="px-4 py-2 rounded-lg font-semibold text-sm transition" style={{ background: "var(--accent-cyan)", color: "var(--text-on-accent)" }}>
-              Read Space-AGI Doctrine →
-            </a>
-          </Link>
-          <Link href="/research">
-            <a className="px-4 py-2 rounded-lg font-medium text-sm border-2 transition" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>
-              Research Hub
-            </a>
-          </Link>
-        </div>
+      {/* Orbital Mechanics Master Hub + AI in Space + Future Space Intelligence */}
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <Link href="/learn/orbital-mechanics">
+          <a className="block rounded-xl border-2 p-4 transition hover:shadow-lg hover:scale-[1.02]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>🧠 Master Orbital Mechanics</h3>
+            <p className="text-sm mb-2" style={{ color: "var(--text-primary)" }}>Best on the Internet</p>
+            <p className="text-xs mb-2" style={{ color: "var(--text-secondary)" }}>What is orbit • Why satellites don&apos;t fall • LEO MEO GEO • Escape velocity • Hohmann transfer</p>
+            <span className="text-xs font-medium" style={{ color: "var(--accent-cyan)" }}>Learn more →</span>
+          </a>
+        </Link>
+        <Link href="/ai-in-aerospace">
+          <a className="block rounded-xl border-2 p-4 transition hover:shadow-lg hover:scale-[1.02]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-pink)" }}>🚀 #1 AI + Space Platform</h3>
+            <p className="text-sm mb-2" style={{ color: "var(--text-primary)" }}>AI controls satellites • Autonomous spacecraft • Mars rover AI • Space AGI</p>
+            <span className="text-xs font-medium" style={{ color: "var(--accent-pink)" }}>Explore AI in Space →</span>
+          </a>
+        </Link>
+        <Link href="/research/space-agi-doctrine">
+          <a className="block rounded-xl border-2 p-4 transition hover:shadow-lg hover:scale-[1.02]" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(0,217,255,0.08) 100%)", borderColor: "var(--accent-cyan)" }}>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>🔬 Latest Research</h3>
+            <p className="text-sm mb-2 font-semibold" style={{ color: "var(--text-primary)" }}>Space-AGI Doctrine</p>
+            <p className="text-xs mb-2" style={{ color: "var(--text-secondary)" }}>Orbital mechanics + autonomous decision models. Delayed MDP, Bayesian belief, energy-aware planning.</p>
+            <span className="text-xs font-medium" style={{ color: "var(--accent-cyan)" }}>Read doctrine →</span>
+          </a>
+        </Link>
       </section>
 
       {/* Explore by topic — collapsible */}
@@ -153,6 +160,24 @@ export function Home() {
           </div>
         )}
         <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>Use the navigation bar for full site map</p>
+      </section>
+
+      {/* AstroBot highlight + Trending */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <Link href="/astrobot">
+          <a className="block rounded-xl border-2 p-4 transition hover:shadow-lg" style={{ background: "var(--bg-card)", borderColor: "var(--accent-gold)" }}>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-gold)" }}>🤖 AstroBot — Your AI Space Professor</h3>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Orbital mechanics • Satellites • Missions • AI in space • Future tech</p>
+          </a>
+        </Link>
+        <div className="rounded-xl border p-4" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+          <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📡 Trending in Space</h3>
+          <div className="flex flex-wrap gap-2">
+            <Link href="/space-news"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI in Space News</a></Link>
+            <Link href="/missions/timeline"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Future Missions</a></Link>
+            <Link href="/blog"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Technology</a></Link>
+          </div>
+        </div>
       </section>
 
       {/* Latest blog */}
@@ -183,6 +208,17 @@ export function Home() {
           <Link href="/learn/how-satellites-work"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>LEO MEO GEO</a></Link>
           <Link href="/learn/space-questions"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Why don&apos;t satellites fall?</a></Link>
           <Link href="/simulator"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Orbit simulator</a></Link>
+        </div>
+      </section>
+
+      {/* Advanced Research */}
+      <section className="rounded-xl border p-4 mb-8" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📚 Advanced Space Research</h3>
+        <div className="flex flex-wrap gap-2 mb-4">
+          <Link href="/formulas-library"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Orbital formulas</a></Link>
+          <Link href="/learn/aerospace"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Mission design</a></Link>
+          <Link href="/research"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Aerospace concepts</a></Link>
+          <Link href="/ai-in-aerospace"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI for space research</a></Link>
         </div>
       </section>
 

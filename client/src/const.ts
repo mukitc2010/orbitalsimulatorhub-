@@ -1,4 +1,4 @@
-export const APP_NAME = "Orbital Simulator Hub";
+export const APP_NAME = "OrbitalSimulatorHub";
 export const SITE_DOMAIN = "orbitalsimulatorhub.com";
 
 export const SATELLITE_COLORS = [

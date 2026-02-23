@@ -5,7 +5,7 @@ import { ThemeSelector } from "./ThemeSelector";
 export function NavigationHeader() {
   const [location] = useLocation();
   const nav = [
-    { path: "/", label: "Home", title: "Orbital Simulator Hub — space, aerospace, and AI learning" },
+    { path: "/", label: "Home", title: "OrbitalSimulatorHub — Orbital Mechanics • AI in Space • Future Space Intelligence" },
     { path: "/astronauts", label: "Astronauts", title: "Astronaut Explorer — all astronauts, moonwalkers, missions" },
     { path: "/planets", label: "Planets", title: "Planet Study Hub — explore every planet in our solar system" },
     { path: "/missions", label: "Missions", title: "Space missions — Apollo, Gemini, Shuttle, and more" },
