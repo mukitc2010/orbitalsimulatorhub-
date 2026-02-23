@@ -128,8 +128,8 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
   },
   "/research/space-agi-roadmap": {
     path: "/research/space-agi-roadmap",
-    title: "Space-AGI Roadmap 2025–2060+ — AI Satellites to Interstellar | Orbital Simulator Hub",
-    description: "Vision timeline: AI satellites to interstellar probes. 2025–2030 autonomous navigation, 2030–2040 Mars AI missions, 2040–2060 self-repair spacecraft, 2060+ interstellar. Real engineering future.",
+    title: "Space-AGI Engineering Roadmap — Future of Autonomous Space Systems | Orbital Simulator Hub",
+    description: "Phase 1 (2025–2030): AI orbit correction, collision avoidance, predictive navigation under delay, space traffic AI. Mathematical foundations. Real engineering future.",
     keywords: "Space-AGI roadmap, AI satellites 2025, autonomous Mars missions, self-repair spacecraft, interstellar probes, space AGI future",
     ogTitle: "Space-AGI Roadmap — From AI Satellites to Interstellar",
     lastUpdated: "2026-02-23T00:00:00Z",
