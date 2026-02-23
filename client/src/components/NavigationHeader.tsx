@@ -1,22 +1,43 @@
+import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { APP_NAME } from "../const";
 import { ThemeSelector } from "./ThemeSelector";
 
+const MISSION_SUBNAV = [
+  { path: "/missions", label: "Missions", title: "Space missions — Apollo, Gemini, Shuttle" },
+  { path: "/astronauts", label: "Astronauts", title: "Astronaut Explorer — all astronauts, moonwalkers" },
+  { path: "/artifacts", label: "Brought Back", title: "What humans brought back from space" },
+];
+
+const NAV = [
+  { path: "/", label: "Home", title: "OrbitalSimulatorHub — Orbital Mechanics • AI in Space • Future Space Intelligence" },
+  { path: "/planets", label: "Planets", title: "Planet Study Hub — explore every planet in our solar system" },
+  { path: "/simulator", label: "Simulator", title: "3D satellite orbit simulator — LEO, MEO, GEO" },
+  { path: "/learn/aerospace", label: "Aerospace", title: "Aerospace reference for students and researchers" },
+  { path: "/ai-in-aerospace", label: "AI in Space", title: "How AI is transforming aerospace and space exploration" },
+  { path: "/blog", label: "Blog", title: "Daily space news, space facts, satellite tutorials" },
+  { path: "/astrobot", label: "AstroBot", title: "Ask AstroBot anything about space, orbits, and satellites" },
+  { path: "/research", label: "Research", title: "NASA, Newton, orbital mechanics — for students and PhD researchers" },
+];
+
+function isMissionsActive(location: string) {
+  return location === "/missions" || location.startsWith("/missions/") || location === "/astronauts" || location.startsWith("/astronauts/") || location === "/artifacts";
+}
+
 export function NavigationHeader() {
   const [location] = useLocation();
-  const nav = [
-    { path: "/", label: "Home", title: "OrbitalSimulatorHub — Orbital Mechanics • AI in Space • Future Space Intelligence" },
-    { path: "/astronauts", label: "Astronauts", title: "Astronaut Explorer — all astronauts, moonwalkers, missions" },
-    { path: "/planets", label: "Planets", title: "Planet Study Hub — explore every planet in our solar system" },
-    { path: "/missions", label: "Missions", title: "Space missions — Apollo, Gemini, Shuttle, and more" },
-    { path: "/artifacts", label: "Brought Back", title: "What humans brought back from space — Moon rocks, asteroid samples" },
-    { path: "/simulator", label: "Simulator", title: "3D satellite orbit simulator — LEO, MEO, GEO" },
-    { path: "/learn/aerospace", label: "Aerospace", title: "Aerospace reference for students and researchers" },
-    { path: "/ai-in-aerospace", label: "AI in Space", title: "How AI is transforming aerospace and space exploration" },
-    { path: "/blog", label: "Blog", title: "Daily space news, space facts, satellite tutorials" },
-    { path: "/astrobot", label: "AstroBot", title: "Ask AstroBot anything about space, orbits, and satellites" },
-    { path: "/research", label: "Research", title: "NASA, Newton, orbital mechanics — for students and PhD researchers" },
-  ];
+  const [missionsOpen, setMissionsOpen] = useState(false);
+  const missionsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (missionsRef.current && !missionsRef.current.contains(e.target as Node)) {
+        setMissionsOpen(false);
+      }
+    }
+    if (missionsOpen) document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [missionsOpen]);
 
   return (
     <header
@@ -27,47 +48,95 @@ export function NavigationHeader() {
       }}
     >
       <div className="container mx-auto px-4 py-3 max-w-7xl flex flex-wrap items-center justify-between gap-4">
-        <Link
-          href="/"
-          className="font-bold text-lg font-mono-tech transition"
-          style={{ color: "var(--text-primary)" }}
-        >
-          {APP_NAME}
-        </Link>
+        <div className="flex items-center gap-3">
+          <div className="flex-shrink-0">
+            <ThemeSelector />
+          </div>
+          <Link
+            href="/"
+            className="font-bold text-lg font-mono-tech transition"
+            style={{ color: "var(--text-primary)" }}
+          >
+            {APP_NAME}
+          </Link>
+        </div>
 
         <nav className="flex flex-wrap gap-1 items-center">
-          {nav.map(({ path, label, title }) => (
-            <Link
-              key={path}
-              href={path}
-              title={title}
-              className="px-3 py-2 rounded-lg font-medium transition text-sm"
+          {NAV.slice(0, 2).map(({ path, label, title }) => (
+            <NavLink key={path} path={path} label={label} title={title} location={location} />
+          ))}
+          <div ref={missionsRef} className="relative">
+            <button
+              onClick={() => setMissionsOpen((v) => !v)}
+              onMouseEnter={() => setMissionsOpen(true)}
+              className="px-3 py-2 rounded-lg font-medium transition text-sm flex items-center gap-1"
               style={
-                location === path
+                isMissionsActive(location)
                   ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
                   : { color: "var(--text-secondary)" }
               }
-              onMouseEnter={(e) => {
-                if (location !== path) {
-                  (e.currentTarget as HTMLElement).style.background = "var(--nav-hover-bg)";
-                  (e.currentTarget as HTMLElement).style.color = "var(--text-primary)";
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (location !== path) {
-                  (e.currentTarget as HTMLElement).style.background = "transparent";
-                  (e.currentTarget as HTMLElement).style.color = "var(--text-secondary)";
-                }
-              }}
             >
-              {label}
-            </Link>
-          ))}
-          <div className="ml-2">
-            <ThemeSelector />
+              Missions
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ opacity: missionsOpen ? 1 : 0.7 }}>
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            {missionsOpen && (
+              <div
+                className="absolute top-full left-0 mt-1 py-1 rounded-lg shadow-lg min-w-[160px]"
+                style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}
+                onMouseLeave={() => setMissionsOpen(false)}
+              >
+                {MISSION_SUBNAV.map(({ path, label, title }) => (
+                  <Link key={path} href={path} onClick={() => setMissionsOpen(false)}>
+                    <a
+                      className="block px-4 py-2 text-sm font-medium transition"
+                      style={{
+                        color: location === path || (path === "/missions" && location.startsWith("/missions")) ? "var(--accent-cyan)" : "var(--text-primary)",
+                      }}
+                    >
+                      {label}
+                    </a>
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
+          {NAV.slice(2).map(({ path, label, title }) => (
+            <NavLink key={path} path={path} label={label} title={title} location={location} />
+          ))}
         </nav>
       </div>
     </header>
+  );
+}
+
+function NavLink({ path, label, title, location }: { path: string; label: string; title: string; location: string }) {
+  const active = location === path || (path !== "/" && location.startsWith(path));
+  return (
+    <Link href={path} title={title}>
+      <a
+        className="px-3 py-2 rounded-lg font-medium transition text-sm"
+        style={
+          active
+            ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
+            : { color: "var(--text-secondary)" }
+        }
+        onMouseEnter={(e) => {
+          if (!active) {
+            (e.currentTarget as HTMLElement).style.background = "var(--nav-hover-bg)";
+            (e.currentTarget as HTMLElement).style.color = "var(--text-primary)";
+          }
+        }}
+        onMouseLeave={(e) => {
+          if (!active) {
+            (e.currentTarget as HTMLElement).style.background = "transparent";
+            (e.currentTarget as HTMLElement).style.color = "var(--text-secondary)";
+          }
+        }}
+      >
+        {label}
+      </a>
+    </Link>
   );
 }
