@@ -4,6 +4,8 @@
  * Can be updated via API for n8n automation
  */
 
+import { getPostBySlug } from "./blogPosts";
+
 export interface SEOConfig {
   path: string;
   title: string;
@@ -17,11 +19,11 @@ export interface SEOConfig {
 export const SEO_CONFIGS: Record<string, SEOConfig> = {
   "/": {
     path: "/",
-    title: "Free 3D Orbit Simulator — Try LEO, MEO, GEO Now | NASA & Space Study",
-    description: "Try the #1 free orbit simulator. Add satellites, watch ISS & Starlink in 3D. 500+ astronauts, all 8 planets, NASA missions. No signup — start now.",
-    keywords: "space study, aerospace engineering, NASA, free space education Africa, space education Nigeria, space education Kenya, space education South Africa, orbital mechanics simulator, free satellite orbit simulator, 3D orbit simulator, space news, ISS, astronauts, Mars rover, SpaceX, orbital mechanics for beginners, how satellites work, LEO MEO GEO, space study guide, astronomy for kids, space quiz, space careers, orbital velocity calculator, space physics, AI in space, James Webb, Artemis",
-    ogTitle: "Free 3D Orbit Simulator — Try LEO, MEO, GEO Now | NASA & Space Study",
-    lastUpdated: "2026-02-20T00:00:00Z",
+    title: "Orbital Mechanics Simulator — Free 3D Satellite Orbit Simulator | NASA & Space Study",
+    description: "Free orbital mechanics simulator. Add LEO, MEO, GEO satellites. Watch ISS at 7.66 km/s, Starlink, GPS in 3D. 500+ astronauts, nuclear rockets, Mars missions. No signup.",
+    keywords: "orbital mechanics simulator, free satellite orbit simulator, 3D orbit simulator online, space study, NASA, nuclear rocket, DRACO, Mars mission, ISS orbital speed, LEO MEO GEO, how fast does ISS orbit, astronaut database, planet explorer, space news, James Webb, Artemis, SpaceX, orbital velocity calculator, space careers, space for kids",
+    ogTitle: "Orbital Mechanics Simulator — Free 3D Satellite Orbit Simulator",
+    lastUpdated: "2026-02-22T00:00:00Z",
   },
   "/welcome": {
     path: "/welcome",
@@ -115,6 +117,22 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     description: "Unified framework for future space navigation: relativistic aerospace, signal delay, neuro-space AI, autonomous spacecraft. OrbitalSimulatorHub Research Division.",
     keywords: "neuro-space, light-speed constraints, autonomous spacecraft, aerospace AI, deep space navigation, relativistic aerospace, quantum space communication",
     lastUpdated: "2026-02-19T00:00:00Z",
+  },
+  "/research/space-agi-lab": {
+    path: "/research/space-agi-lab",
+    title: "Space-AGI Engineering Lab — Autonomous Spacecraft, AI, Orbital Math | Orbital Simulator Hub",
+    description: "World-first platform: real simulations, real mathematics, real engineering logic, future AGI for space. 5 pillars: autonomous spacecraft, decision intelligence, orbital math, future systems, live simulation lab.",
+    keywords: "Space-AGI, autonomous spacecraft, AI satellites, Mars rover intelligence, swarm satellites, orbital mechanics AI, space decision intelligence, delayed MDP, Mars delay, autonomous navigation",
+    ogTitle: "Space-AGI Engineering Lab — Intelligence for the Space Age",
+    lastUpdated: "2026-02-23T00:00:00Z",
+  },
+  "/research/space-agi-roadmap": {
+    path: "/research/space-agi-roadmap",
+    title: "Space-AGI Roadmap 2025–2060+ — AI Satellites to Interstellar | Orbital Simulator Hub",
+    description: "Vision timeline: AI satellites to interstellar probes. 2025–2030 autonomous navigation, 2030–2040 Mars AI missions, 2040–2060 self-repair spacecraft, 2060+ interstellar. Real engineering future.",
+    keywords: "Space-AGI roadmap, AI satellites 2025, autonomous Mars missions, self-repair spacecraft, interstellar probes, space AGI future",
+    ogTitle: "Space-AGI Roadmap — From AI Satellites to Interstellar",
+    lastUpdated: "2026-02-23T00:00:00Z",
   },
   "/careers": {
     path: "/careers",
@@ -339,6 +357,17 @@ export function getSEOConfig(path: string): SEOConfig | null {
   const blogMatch = cleanPath.match(/^\/blog\/(.+)$/);
   if (blogMatch) {
     const slug = blogMatch[1];
+    const post = getPostBySlug(slug);
+    if (post) {
+      return {
+        path: cleanPath,
+        title: `${post.title} | Space Blog – Orbital Simulator Hub`,
+        description: post.excerpt,
+        keywords: post.seoKeywords || post.tags.join(", ") || `space blog, space news, ${slug.replace(/-/g, ", ")}`,
+        ogTitle: post.title,
+        lastUpdated: `${post.date}T00:00:00Z`,
+      };
+    }
     const name = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
     return {
       path: cleanPath,

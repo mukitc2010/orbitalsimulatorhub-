@@ -56,6 +56,8 @@ import { PlanetDetail } from "./pages/PlanetDetail";
 import { LunarGeology } from "./pages/LunarGeology";
 import { NeuroSpaceResearch } from "./pages/NeuroSpaceResearch";
 import { SpaceAGIDoctrine } from "./pages/SpaceAGIDoctrine";
+import { SpaceAGIEngineeringLab } from "./pages/SpaceAGIEngineeringLab";
+import { SpaceAGIRoadmap } from "./pages/SpaceAGIRoadmap";
 import { FutureSpaceCivilization } from "./pages/FutureSpaceCivilization";
 import { Next100Years } from "./pages/Next100Years";
 import { Welcome } from "./pages/Welcome";
@@ -79,6 +81,8 @@ function App() {
           <Route path="/research/future-civilization" component={FutureSpaceCivilization} />
           <Route path="/research/next-100-years" component={Next100Years} />
           <Route path="/research/space-agi-doctrine" component={SpaceAGIDoctrine} />
+          <Route path="/research/space-agi-lab" component={SpaceAGIEngineeringLab} />
+          <Route path="/research/space-agi-roadmap" component={SpaceAGIRoadmap} />
           <Route path="/welcome" component={Welcome} />
           <Route path="/learn/aerospace" component={AerospaceReference} />
           <Route path="/formulas-library" component={FormulaLibrary} />

@@ -20,9 +20,11 @@ const QUICK_LINKS = [
   { href: "/blog", label: "Blog" },
   { href: "/space-news", label: "Space News" },
   { href: "/research", label: "Research" },
+  { href: "/research/space-agi-lab", label: "Space-AGI Lab" },
 ];
 
 const EXPLORE_BY_TOPIC = [
+  { href: "/research/space-agi-lab", icon: "🧠", title: "Space-AGI Engineering Lab" },
   { href: "/research/space-agi-doctrine", icon: "🔬", title: "Space-AGI Doctrine" },
   { href: "/learn/orbital-mechanics", icon: "🌌", title: "Orbital mechanics" },
   { href: "/learn/how-satellites-work", icon: "🛰", title: "How satellites work" },
@@ -123,12 +125,12 @@ export function Home() {
             <span className="text-xs font-medium" style={{ color: "var(--accent-pink)" }}>Explore AI in Space →</span>
           </a>
         </Link>
-        <Link href="/research/space-agi-doctrine">
+        <Link href="/research/space-agi-lab">
           <a className="block rounded-xl border-2 p-4 transition hover:shadow-lg hover:scale-[1.02]" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(0,217,255,0.08) 100%)", borderColor: "var(--accent-cyan)" }}>
-            <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>🔬 Latest Research</h3>
-            <p className="text-sm mb-2 font-semibold" style={{ color: "var(--text-primary)" }}>Space-AGI Doctrine</p>
-            <p className="text-xs mb-2" style={{ color: "var(--text-secondary)" }}>Orbital mechanics + autonomous decision models. Delayed MDP, Bayesian belief, energy-aware planning.</p>
-            <span className="text-xs font-medium" style={{ color: "var(--accent-cyan)" }}>Read doctrine →</span>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>🧠 Space-AGI Engineering Lab</h3>
+            <p className="text-sm mb-2 font-semibold" style={{ color: "var(--text-primary)" }}>World-First Platform</p>
+            <p className="text-xs mb-2" style={{ color: "var(--text-secondary)" }}>5 pillars: autonomous spacecraft, decision intelligence, orbital math, future systems, live simulation lab.</p>
+            <span className="text-xs font-medium" style={{ color: "var(--accent-cyan)" }}>Enter Lab →</span>
           </a>
         </Link>
       </section>
