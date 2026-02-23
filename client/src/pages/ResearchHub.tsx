@@ -160,33 +160,6 @@ export function ResearchHub() {
         </Link>
       </section>
 
-      <section className="rounded-xl bg-slate-800 text-white p-4 mb-6 border-2 border-slate-700">
-        <h2 className="font-bold mb-2">🎓 For PhD researchers &amp; advanced aerospace study</h2>
-        <p className="text-sm text-slate-200 mb-3">
-          Curated resources so you have <strong>enough depth for thesis and publication work</strong>: CODATA/IAU standards, textbooks (Vallado, Bate, Curtis, Battin), NTRS technical reports, JPL Horizons &amp; SPICE, and topics beyond this site (perturbations, coordinate frames, numerical integration, GNC).
-        </p>
-        <Link href="/learn/aerospace#phd">
-          <a className="inline-block px-5 py-2.5 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
-            PhD &amp; advanced resources →
-          </a>
-        </Link>
-      </section>
-
-      <section className="rounded-xl bg-[var(--accent-gold)]/15 border-2 border-[var(--accent-gold)]/50 p-4 mb-6">
-        <h2 className="font-bold text-slate-800 mb-2">🔬 For scientists &amp; researchers</h2>
-        <p className="text-sm text-slate-700 mb-3">
-          One reference page with <strong>real mission data</strong>, the <strong>math and algorithm types</strong> we use, and <strong>real-life calculations</strong> (ISS, GPS, GEO, rovers). All numbers and formulas are consistent with standard astrodynamics.
-        </p>
-        <Link href="/learn/aerospace">
-          <a className="inline-block px-5 py-2.5 rounded-xl font-bold bg-[var(--accent-gold)]/80 text-[#0f172a] hover:opacity-90 mb-2">
-            Aerospace reference →
-          </a>
-        </Link>
-        <p className="text-xs text-slate-600">
-          Direct links: <Link href="/learn/aerospace#nasa"><a className="text-[var(--accent-cyan)] hover:underline">Space missions</a></Link> · <Link href="/learn/aerospace#rovers"><a className="text-[var(--accent-cyan)] hover:underline">Rovers &amp; mission data</a></Link> · <Link href="/learn/aerospace#algorithms"><a className="text-[var(--accent-cyan)] hover:underline">Algorithms</a></Link> · <Link href="/learn/aerospace#formulas"><a className="text-[var(--accent-cyan)] hover:underline">Formulas</a></Link> · <Link href="/learn/aerospace#calculations"><a className="text-[var(--accent-cyan)] hover:underline">Real-life calculations</a></Link> · <Link href="/learn/aerospace#phd"><a className="text-[var(--accent-cyan)] hover:underline">PhD resources</a></Link>
-        </p>
-      </section>
-
       <section className="rounded-xl bg-white border-2 border-slate-200 p-4 mb-6">
         <h2 className="font-bold text-slate-800 mb-2">🛰 Learning hub &amp; tools</h2>
         <p className="text-sm text-slate-600 mb-3">Orbital mechanics lessons, real satellite data, space formulas, and calculators.</p>
