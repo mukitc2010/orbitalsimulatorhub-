@@ -154,7 +154,7 @@ export const EXPANDED_ASTROBOT_KNOWLEDGE: AstroBotKnowledge[] = [
   },
   {
     keywords: ["research", "phd", "aerospace research", "advanced"],
-    answer: "For PhD researchers and advanced study, we have comprehensive resources! NASA data, algorithms, real calculations, textbooks, NTRS, SPICE, Horizons. Visit /research and /learn/aerospace#phd",
+    answer: "For advanced aerospace study, we have mission data, algorithms, formulas, and calculations. Visit /research and /learn/aerospace",
     category: "general",
   },
 ];

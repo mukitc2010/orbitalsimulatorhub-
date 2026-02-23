@@ -12,7 +12,7 @@ export function AerospaceReference() {
           One-page reference for NASA, Newton&apos;s laws, orbital mechanics, algorithms, rovers, and real-life calculations. For students, scientists, and researchers.
         </p>
         <p className="text-sm text-slate-600 mt-2">
-          Jump to: <a href="#nasa" className="text-[var(--accent-cyan)] hover:underline">NASA</a> · <a href="#rovers" className="text-[var(--accent-cyan)] hover:underline">Rovers</a> · <a href="#newton" className="text-[var(--accent-cyan)] hover:underline">Newton</a> · <a href="#orbits" className="text-[var(--accent-cyan)] hover:underline">Orbits</a> · <a href="#algorithms" className="text-[var(--accent-cyan)] hover:underline">Algorithms</a> · <a href="#formulas" className="text-[var(--accent-cyan)] hover:underline">Formulas</a> · <a href="#calculations" className="text-[var(--accent-cyan)] hover:underline">Calculations</a> · <a href="#phd" className="text-[var(--accent-cyan)] hover:underline">For PhD researchers</a>
+          Jump to: <a href="#nasa" className="text-[var(--accent-cyan)] hover:underline">NASA</a> · <a href="#rovers" className="text-[var(--accent-cyan)] hover:underline">Rovers</a> · <a href="#newton" className="text-[var(--accent-cyan)] hover:underline">Newton</a> · <a href="#orbits" className="text-[var(--accent-cyan)] hover:underline">Orbits</a> · <a href="#algorithms" className="text-[var(--accent-cyan)] hover:underline">Algorithms</a> · <a href="#formulas" className="text-[var(--accent-cyan)] hover:underline">Formulas</a> · <a href="#calculations" className="text-[var(--accent-cyan)] hover:underline">Calculations</a>
         </p>
       </div>
 
@@ -278,58 +278,6 @@ export function AerospaceReference() {
           <li><a href="https://spaceplace.nasa.gov" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-cyan)] hover:underline">NASA Space Place</a> — space science for everyone</li>
           <li>Vallado, <em>Fundamentals of Astrodynamics and Applications</em> — algorithms and derivations</li>
         </ul>
-      </section>
-
-      {/* For PhD researchers & advanced study */}
-      <section id="phd" className="scroll-mt-6 rounded-xl border-2 border-slate-300 bg-white p-6 shadow-sm">
-        <h2 className="text-xl font-bold text-slate-800 mb-2">For PhD researchers &amp; advanced aerospace study</h2>
-        <p className="text-sm text-slate-600 mb-4">
-          This page and the simulator use the two-body problem and standard Keplerian formulation. For thesis work, mission design, and publication-grade work you will need primary literature, technical reports, and authoritative data. Below is a curated list of resources that provide enough depth for graduate-level aerospace research.
-        </p>
-
-        <h3 className="font-bold text-slate-800 mt-4 mb-2">Constants &amp; standards</h3>
-        <ul className="text-sm text-slate-700 space-y-1 list-disc pl-5 mb-4">
-          <li><a href="https://physics.nist.gov/cuu/Constants/" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-cyan)] hover:underline">CODATA</a> — SI values for G, c; used for rigorous conversion and uncertainty.</li>
-          <li><a href="https://iau.org/administration/resolutions/general-assembly/" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-cyan)] hover:underline">IAU resolutions</a> — standard gravitational parameters, reference frames, time scales (TT, TDB, UTC).</li>
-          <li>JPL <a href="https://ssd.jpl.nasa.gov/astro_par.html" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-cyan)] hover:underline">astrodynamics parameters</a> — μ for Sun, planets, moons; planetary ephemerides.</li>
-        </ul>
-
-        <h3 className="font-bold text-slate-800 mt-4 mb-2">Textbooks &amp; course-level references</h3>
-        <ul className="text-sm text-slate-700 space-y-1 list-disc pl-5 mb-4">
-          <li>Vallado &amp; McClain, <em>Fundamentals of Astrodynamics and Applications</em> (4th ed.) — full derivations, state transition, perturbations, coordinate frames.</li>
-          <li>Bate, Mueller &amp; White, <em>Fundamentals of Astrodynamics</em> — Dover; classical two-body and transfer orbits.</li>
-          <li>Curtis, <em>Orbital Mechanics for Engineering Students</em> — algorithms, examples, MATLAB-oriented.</li>
-          <li>Battin, <em>An Introduction to the Mathematics and Methods of Astrodynamics</em> — rigorous treatment used in graduate courses.</li>
-        </ul>
-
-        <h3 className="font-bold text-slate-800 mt-4 mb-2">NASA technical resources</h3>
-        <ul className="text-sm text-slate-700 space-y-1 list-disc pl-5 mb-4">
-          <li><a href="https://ntrs.nasa.gov" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-cyan)] hover:underline">NASA NTRS</a> (Technical Report Server) — mission reports, trajectory design, EDL studies, citable PDFs.</li>
-          <li>NASA SP series &amp; TM — e.g. orbital mechanics, guidance &amp; navigation; search NTRS by mission or topic.</li>
-          <li>Mission design documents — Apollo, Mars Science Laboratory, Mars 2020 press kits and technical summaries on nasa.gov and mars.nasa.gov.</li>
-        </ul>
-
-        <h3 className="font-bold text-slate-800 mt-4 mb-2">Software &amp; data (ephemerides, propagation)</h3>
-        <ul className="text-sm text-slate-700 space-y-1 list-disc pl-5 mb-4">
-          <li><a href="https://ssd.jpl.nasa.gov/horizons/" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-cyan)] hover:underline">JPL Horizons</a> — positions and velocities for planets, moons, spacecraft; export for your own propagation or analysis.</li>
-          <li><a href="https://naif.jpl.nasa.gov/naif/" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-cyan)] hover:underline">NAIF SPICE</a> — kernels for frames, ephemerides, instruments; standard in planetary science and mission design.</li>
-          <li>GMAT, STK, Orekit — high-fidelity propagation (J2, drag, SRP, third body); used in industry and research.</li>
-        </ul>
-
-        <h3 className="font-bold text-slate-800 mt-4 mb-2">Topics beyond this site (for thesis-level work)</h3>
-        <p className="text-sm text-slate-700 mb-2">
-          Our simulator uses unperturbed two-body dynamics. For PhD-level work you will typically need:
-        </p>
-        <ul className="text-sm text-slate-700 space-y-1 list-disc pl-5 mb-4">
-          <li><strong>Perturbations:</strong> J2 (oblateness), atmospheric drag, solar radiation pressure (SRP), third-body (Moon, Sun). See Vallado or mission design papers.</li>
-          <li><strong>Coordinate frames:</strong> ECI, ECEF, RIC/LVLH, classical elements vs state vectors; time systems (UT1, TAI, TDB).</li>
-          <li><strong>Numerical integration:</strong> Runge–Kutta, multistep methods; variational equations for sensitivity.</li>
-          <li><strong>Estimation &amp; GNC:</strong> orbit determination (OD), Kalman filtering, guidance for entry/landing (e.g. Mars EDL literature).</li>
-        </ul>
-
-        <p className="text-sm text-slate-600 border-t border-slate-200 pt-4">
-          This site is a gateway: the formulas, constants, and algorithms here match textbook and NASA practice. For full rigor and citation, use the links above and the primary literature in your field.
-        </p>
       </section>
 
       <p className="text-center">
