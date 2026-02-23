@@ -45,11 +45,8 @@ export function Home() {
         <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2 leading-tight">
           OrbitalSimulatorHub — Intelligence for the Space Age
         </h1>
-        <p className="text-base sm:text-lg text-white/90 max-w-xl mx-auto mb-1">
+        <p className="text-base sm:text-lg text-white/90 max-w-xl mx-auto mb-5">
           Learn orbital mechanics, satellites, aerospace engineering, and the future of AI-powered space exploration.
-        </p>
-        <p className="text-sm text-slate-300 max-w-lg mx-auto mb-5">
-          The most advanced open platform for students, engineers, and researchers worldwide.
         </p>
         <div className="flex flex-wrap justify-center gap-2 mb-4">
           <Link href="/simulator">
