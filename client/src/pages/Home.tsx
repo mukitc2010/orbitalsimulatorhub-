@@ -23,6 +23,13 @@ const QUICK_LINKS = [
   { href: "/research/space-agi-lab", label: "Space-AGI Lab" },
 ];
 
+const TODAYS_UPDATES = [
+  { href: "/research/space-agi-roadmap", label: "Space-AGI Roadmap", desc: "Phases 2–4 expanded: Mars autonomy, self-repair, interstellar" },
+  { href: "/research/space-agi-math", label: "Space-AGI Mathematics", desc: "Optimal control, Pontryagin, MPC, LQR, Space-AGI framework" },
+  { href: "/calculators", label: "New Calculators", desc: "Hohmann transfer, collision probability, Mars delay, escape by planet" },
+  { href: "/research/space-agi-lab", label: "Space-AGI Engineering Lab", desc: "5 pillars, Research Mode, nav dropdown" },
+];
+
 const EXPLORE_BY_TOPIC = [
   { href: "/research/space-agi-lab", icon: "🧠", title: "Space-AGI Engineering Lab" },
   { href: "/research/space-agi-doctrine", icon: "🔬", title: "Space-AGI Doctrine" },
@@ -41,6 +48,21 @@ export function Home() {
 
   return (
     <div className="max-w-4xl mx-auto">
+      {/* Today's Updates — top of page */}
+      <section className="rounded-xl border-2 p-4 mb-6" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(0,217,255,0.06) 100%)", borderColor: "var(--accent-cyan)" }}>
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-cyan)" }}>✨ Today&apos;s Updates</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+          {TODAYS_UPDATES.map((u) => (
+            <Link key={u.href} href={u.href}>
+              <a className="block p-3 rounded-lg transition hover:opacity-90" style={{ background: "var(--bg-surface)", border: "1px solid var(--border-color)" }}>
+                <span className="font-bold text-sm" style={{ color: "var(--accent-cyan)" }}>{u.label} →</span>
+                <span className="block text-xs mt-0.5" style={{ color: "var(--text-secondary)" }}>{u.desc}</span>
+              </a>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Hero — Intelligence for the Space Age */}
       <section className="rounded-2xl px-6 py-8 sm:py-10 text-center mb-8 hero-gradient">
         <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">Orbital Mechanics • AI in Space • Future Space Intelligence</p>

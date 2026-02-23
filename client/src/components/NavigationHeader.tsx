@@ -12,6 +12,7 @@ const MISSION_SUBNAV = [
 const SPACE_AGI_SUBNAV = [
   { path: "/research/space-agi-lab", label: "Engineering Lab", title: "5 pillars: autonomous spacecraft, decision intelligence, orbital math" },
   { path: "/research/space-agi-roadmap", label: "Roadmap", title: "2025–2060+ timeline: AI satellites to interstellar" },
+  { path: "/research/space-agi-math", label: "Mathematics", title: "Optimal control, MPC, LQR, Space-AGI framework" },
 ];
 
 const NAV = [
@@ -31,7 +32,7 @@ function isMissionsActive(location: string) {
 }
 
 function isSpaceAgiActive(location: string) {
-  return location === "/research/space-agi-lab" || location === "/research/space-agi-roadmap";
+  return location === "/research/space-agi-lab" || location === "/research/space-agi-roadmap" || location === "/research/space-agi-math";
 }
 
 export function NavigationHeader() {

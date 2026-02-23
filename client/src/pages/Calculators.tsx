@@ -45,14 +45,34 @@ export function Calculators() {
 
       <section className="rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-bold text-slate-800 mb-2">Escape velocity calculator</h2>
-        <p className="text-sm text-slate-600 mb-4">Minimum speed needed to escape Earth&apos;s gravity from a given altitude.</p>
-        <EscapeCalc />
+        <p className="text-sm text-slate-600 mb-4">Minimum speed needed to escape a planet&apos;s gravity. Choose planet, enter altitude.</p>
+        <EscapeCalcPlanet />
+      </section>
+
+      <section className="rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-white p-6 shadow-sm">
+        <h2 className="text-xl font-bold text-slate-800 mb-2">🚀 Hohmann transfer calculator</h2>
+        <p className="text-sm text-slate-600 mb-4">Most efficient two-burn transfer between circular orbits. Enter initial and target altitudes. Get Δv₁, Δv₂, total fuel cost.</p>
+        <HohmannCalc />
+      </section>
+
+      <section className="rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-white p-6 shadow-sm">
+        <h2 className="text-xl font-bold text-slate-800 mb-2">☄️ Collision probability estimator</h2>
+        <p className="text-sm text-slate-600 mb-4">Approximate P<sub>c</sub> from miss distance and position uncertainty. Rare online. Used in autonomous collision avoidance.</p>
+        <CollisionProbCalc />
+      </section>
+
+      <section className="rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-white p-6 shadow-sm">
+        <h2 className="text-xl font-bold text-slate-800 mb-2">🤖 Mars delay simulator</h2>
+        <p className="text-sm text-slate-600 mb-4">τ = d/c. Set distance from Earth. See one-way light-time. Control delay impact — predictive vs naive AI.</p>
+        <MarsDelayCalc />
       </section>
 
       <p className="text-center text-sm text-slate-600">
         <Link href="/formulas-library" className="text-[var(--accent-cyan)] hover:underline">Full formula library</Link>
         {" · "}
         <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">3D orbit simulator</Link>
+        {" · "}
+        <Link href="/research/space-agi-math" className="text-[var(--accent-cyan)] hover:underline">Space-AGI Mathematics</Link>
       </p>
     </div>
   );
@@ -87,16 +107,74 @@ function GravityCalc() {
   );
 }
 
-function EscapeCalc() {
+const PLANETS: { id: string; name: string; mu: number; radius: number }[] = [
+  { id: "earth", name: "Earth", mu: 398600.4418, radius: 6371 },
+  { id: "mars", name: "Mars", mu: 42828.3, radius: 3390 },
+  { id: "moon", name: "Moon", mu: 4902.8, radius: 1737 },
+  { id: "jupiter", name: "Jupiter", mu: 126686534, radius: 69911 },
+];
+
+function EscapeCalcPlanet() {
+  const [planet, setPlanet] = useState("earth");
   const [alt, setAlt] = useState(0);
-  const r = (R_EARTH_KM + alt) * 1000;
-  const G = 6.674e-11;
-  const M = 5.972e24;
-  const v = Math.sqrt((2 * G * M) / r) / 1000;
+  const p = PLANETS.find((x) => x.id === planet) || PLANETS[0];
+  const r = p.radius + alt;
+  const v = Math.sqrt((2 * p.mu) / r);
   return (
     <div className="bg-slate-50 p-4 rounded-lg">
+      <label className="block mb-2 font-medium">Planet: <select value={planet} onChange={(e) => setPlanet(e.target.value)} className="border rounded px-3 py-1"><option value="earth">Earth</option><option value="mars">Mars</option><option value="moon">Moon</option><option value="jupiter">Jupiter</option></select></label>
       <label className="block mb-2 font-medium">Altitude (km): <input type="number" value={alt} onChange={(e) => setAlt(Number(e.target.value) || 0)} className="border rounded px-3 py-1 w-28" /></label>
       <p className="text-slate-700"><strong>Escape velocity:</strong> {v.toFixed(2)} km/s</p>
+    </div>
+  );
+}
+
+function HohmannCalc() {
+  const [r1, setR1] = useState(6771);
+  const [r2, setR2] = useState(42164);
+  const a = (r1 + r2) / 2;
+  const dv1 = Math.sqrt(MU_KM / r1) * (Math.sqrt(2 * r2 / (r1 + r2)) - 1);
+  const dv2 = Math.sqrt(MU_KM / r2) * (1 - Math.sqrt(2 * r1 / (r1 + r2)));
+  const total = dv1 + dv2;
+  return (
+    <div className="bg-slate-50 p-4 rounded-lg">
+      <label className="block mb-2 font-medium">Initial orbit radius (km): <input type="number" value={r1} onChange={(e) => setR1(Number(e.target.value) || 0)} className="border rounded px-3 py-1 w-28" /></label>
+      <label className="block mb-2 font-medium">Target orbit radius (km): <input type="number" value={r2} onChange={(e) => setR2(Number(e.target.value) || 0)} className="border rounded px-3 py-1 w-28" /></label>
+      <p className="text-slate-700"><strong>Δv₁:</strong> {dv1.toFixed(2)} km/s</p>
+      <p className="text-slate-700"><strong>Δv₂:</strong> {dv2.toFixed(2)} km/s</p>
+      <p className="text-slate-700"><strong>Total Δv (fuel cost):</strong> {total.toFixed(2)} km/s</p>
+    </div>
+  );
+}
+
+function CollisionProbCalc() {
+  const [missDist, setMissDist] = useState(1);
+  const [sigma, setSigma] = useState(0.5);
+  const d = Math.max(0.001, missDist);
+  const s = Math.max(0.001, sigma);
+  const Pc = Math.exp(-(d * d) / (2 * s * s));
+  return (
+    <div className="bg-slate-50 p-4 rounded-lg">
+      <label className="block mb-2 font-medium">Miss distance (km): <input type="number" value={missDist} onChange={(e) => setMissDist(Number(e.target.value) || 0)} step={0.1} className="border rounded px-3 py-1 w-28" /></label>
+      <label className="block mb-2 font-medium">Position uncertainty σ (km): <input type="number" value={sigma} onChange={(e) => setSigma(Number(e.target.value) || 0)} step={0.1} className="border rounded px-3 py-1 w-28" /></label>
+      <p className="text-slate-700"><strong>Approx. P<sub>c</sub>:</strong> {(Pc * 100).toFixed(4)}%</p>
+      <p className="text-xs text-slate-500 mt-1">Simplified: P ≈ exp(−d²/(2σ²)). Full model uses covariance.</p>
+    </div>
+  );
+}
+
+function MarsDelayCalc() {
+  const C_KM_S = 299792;
+  const [dist, setDist] = useState(78);
+  const distKm = dist * 1e6;
+  const tauSec = distKm / C_KM_S;
+  const tauMin = tauSec / 60;
+  return (
+    <div className="bg-slate-50 p-4 rounded-lg">
+      <label className="block mb-2 font-medium">Distance from Earth (million km): <input type="number" value={dist} onChange={(e) => setDist(Number(e.target.value) || 0)} step={1} className="border rounded px-3 py-1 w-28" /></label>
+      <p className="text-slate-700"><strong>One-way light-time τ:</strong> {tauMin >= 1 ? `${tauMin.toFixed(1)} min` : `${(tauSec).toFixed(1)} s`}</p>
+      <p className="text-slate-700"><strong>Round-trip delay:</strong> {(2 * tauMin).toFixed(1)} min</p>
+      <p className="text-xs text-slate-500 mt-1">Mars: 55–401 M km. Predictive AI outperforms naive control when τ increases.</p>
     </div>
   );
 }

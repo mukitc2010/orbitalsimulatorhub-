@@ -93,7 +93,9 @@ export function SpaceAGIEngineeringLab() {
           </div>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
+          <Link href="/research/space-agi-math"><a className="px-3 py-1.5 rounded-lg text-sm font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Space-AGI Mathematics →</a></Link>
           <Link href="/formulas-library"><a className="px-3 py-1.5 rounded-lg text-sm font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Formulas Library →</a></Link>
+          <Link href="/calculators"><a className="px-3 py-1.5 rounded-lg text-sm font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Calculators →</a></Link>
           <Link href="/simulator"><a className="px-3 py-1.5 rounded-lg text-sm font-medium border-2" style={{ borderColor: "var(--accent-gold)", color: "var(--text-primary)" }}>3D Simulator →</a></Link>
         </div>
       </section>
@@ -133,10 +135,15 @@ export function SpaceAGIEngineeringLab() {
         <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>
           Space-AGI Simulation Lab — collision avoidance, traffic simulation, mission planning, Mars delay, energy optimization.
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 mb-4">
           <Link href="/simulator">
             <a className="px-5 py-2.5 rounded-xl font-bold" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
               Open 3D Simulator →
+            </a>
+          </Link>
+          <Link href="/calculators">
+            <a className="px-5 py-2.5 rounded-xl font-bold" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
+              Interactive Calculators →
             </a>
           </Link>
           <Link href="/research/space-agi-doctrine">
@@ -145,6 +152,9 @@ export function SpaceAGIEngineeringLab() {
             </a>
           </Link>
         </div>
+        <p className="text-xs" style={{ color: "var(--text-secondary)" }}>
+          Calculators: Orbital speed, escape velocity (by planet), Hohmann transfer, collision probability, Mars delay.
+        </p>
       </section>
 
       {/* Research Mode content */}
@@ -160,6 +170,7 @@ export function SpaceAGIEngineeringLab() {
             <li><Link href="/formulas-library"><a className="text-[var(--accent-cyan)] hover:underline">Formulas library</a></Link> — orbital mechanics</li>
             <li><Link href="/research/neuro-space"><a className="text-[var(--accent-cyan)] hover:underline">Neuro-Space</a></Link> — relativistic aerospace</li>
             <li><Link href="/research/space-agi-roadmap"><a className="text-[var(--accent-cyan)] hover:underline">Space-AGI Roadmap</a></Link> — 2025–2060+ vision</li>
+            <li><Link href="/research/space-agi-math"><a className="text-[var(--accent-cyan)] hover:underline">Space-AGI Mathematics</a></Link> — optimal control, MPC, LQR, Space-AGI framework</li>
           </ul>
         </section>
       )}

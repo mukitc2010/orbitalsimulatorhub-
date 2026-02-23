@@ -1,39 +1,6 @@
 import { Link } from "wouter";
 
 export function SpaceAGIRoadmap() {
-  const laterPhases = [
-    {
-      period: "2030–2040",
-      title: "Mars Autonomous Missions & AI Mission Control",
-      items: [
-        "Mars rover autonomy",
-        "AI mission planning",
-        "Autonomous sample return",
-        "Human-Mars AI collaboration",
-      ],
-    },
-    {
-      period: "2040–2060",
-      title: "Self-Repair Spacecraft & Swarm Exploration",
-      items: [
-        "Self-repair satellites",
-        "Swarm exploration",
-        "AI space stations",
-        "Interplanetary internet",
-      ],
-    },
-    {
-      period: "2060+",
-      title: "Interstellar Probes & Space AGI Systems",
-      items: [
-        "Interstellar probes",
-        "Space AGI systems",
-        "Autonomous deep-space missions",
-        "Beyond solar system",
-      ],
-    },
-  ];
-
   return (
     <div className="max-w-4xl mx-auto space-y-10">
       <div>
@@ -51,7 +18,7 @@ export function SpaceAGIRoadmap() {
           <h2 className="text-lg font-bold" style={{ color: "var(--text-primary)" }}>AI Satellites & Autonomous Navigation</h2>
         </div>
         <p className="text-sm mb-6" style={{ color: "var(--text-secondary)" }}>
-          The next five years will mark the transition from manually operated spacecraft to intelligent autonomous orbital systems. Modern satellite constellations, deep-space probes, and lunar missions already require onboard decision-making due to communication delays and increasing orbital congestion. OrbitalSimulatorHub explores and simulates the mathematical and engineering foundations of this transition.
+          The transition from human-controlled spacecraft to AI-assisted orbital systems begins. Future satellites will continuously monitor orbital conditions and adjust trajectories without waiting for Earth-based commands. This marks the first step toward autonomous orbital infrastructure.
         </p>
 
         {/* 1️⃣ AI-Powered Orbit Correction */}
@@ -122,29 +89,108 @@ export function SpaceAGIRoadmap() {
         </div>
       </section>
 
-      {/* Later phases — compact */}
-      <div className="space-y-6">
-        {laterPhases.map((phase) => (
-          <section
-            key={phase.period}
-            className="rounded-xl border-2 p-6"
-            style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-2xl font-bold" style={{ color: "var(--accent-cyan)" }}>{phase.period}</span>
-              <h2 className="text-lg font-bold" style={{ color: "var(--text-primary)" }}>{phase.title}</h2>
+      {/* Phase 2: 2030–2040 — Mars Autonomous Missions */}
+      <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-pink)" }}>
+        <div className="flex items-center gap-3 mb-6">
+          <span className="text-2xl font-bold" style={{ color: "var(--accent-pink)" }}>🟥 Phase 2: 2030–2040</span>
+          <h2 className="text-lg font-bold" style={{ color: "var(--text-primary)" }}>Mars Autonomous Missions & AI Mission Control</h2>
+        </div>
+        <p className="text-sm mb-6" style={{ color: "var(--text-secondary)" }}>
+          Deep-space communication delays make full autonomy essential. Mars delay: τ = distance/c. Real-time control becomes impossible. Spacecraft must think and decide independently.
+        </p>
+
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-base font-bold mb-2" style={{ color: "var(--text-primary)" }}>▸ Mars rover autonomy</h3>
+            <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>Rovers capable of planning routes, analyzing terrain, and performing science without Earth instruction.</p>
+            <div className="rounded-lg p-3 font-mono text-sm" style={{ background: "var(--bg-surface)" }}>
+              <p>π*(s) = argmax<sub>a</sub> E[R + γV]</p>
             </div>
-            <ul className="space-y-2">
-              {phase.items.map((item) => (
-                <li key={item} className="flex items-center gap-2 text-sm" style={{ color: "var(--text-secondary)" }}>
-                  <span style={{ color: "var(--accent-cyan)" }}>▸</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
-      </div>
+          </div>
+          <div>
+            <h3 className="text-base font-bold mb-2" style={{ color: "var(--text-primary)" }}>▸ AI mission planning</h3>
+            <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>Autonomous systems dynamically optimize: energy use, navigation, science tasks, communication windows.</p>
+            <div className="rounded-lg p-3 font-mono text-sm" style={{ background: "var(--bg-surface)" }}>
+              <p>min ∫<sub>0</sub><sup>T</sup> (Energy + Risk − Science Gain) dt</p>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-base font-bold mb-2" style={{ color: "var(--text-primary)" }}>▸ Autonomous sample return</h3>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>AI selects, collects, and returns samples with minimal human input. Includes: adaptive navigation, fault detection, trajectory optimization.</p>
+          </div>
+          <div>
+            <h3 className="text-base font-bold mb-2" style={{ color: "var(--text-primary)" }}>▸ Human–Mars AI collaboration</h3>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>AI systems become co-pilots for astronauts: habitat control, life-support optimization, mission scheduling, predictive hazard detection.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Phase 3: 2040–2060 — Self-Repair & Swarm */}
+      <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-gold)" }}>
+        <div className="flex items-center gap-3 mb-6">
+          <span className="text-2xl font-bold" style={{ color: "var(--accent-gold)" }}>🟥 Phase 3: 2040–2060</span>
+          <h2 className="text-lg font-bold" style={{ color: "var(--text-primary)" }}>Self-Repair Spacecraft & Swarm Exploration</h2>
+        </div>
+        <p className="text-sm mb-6" style={{ color: "var(--text-secondary)" }}>
+          Spacecraft must survive decades without maintenance.
+        </p>
+
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-base font-bold mb-2" style={{ color: "var(--text-primary)" }}>▸ Self-repair satellites</h3>
+            <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>Structural integrity model. H = system health, I = onboard intelligence. AI-driven repair maintains long-term survival.</p>
+            <div className="rounded-lg p-3 font-mono text-sm" style={{ background: "var(--bg-surface)" }}>
+              <p>∂H/∂t = −λH + αI(1 − H)</p>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-base font-bold mb-2" style={{ color: "var(--text-primary)" }}>▸ Swarm exploration</h3>
+            <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>Multiple intelligent probes operate as coordinated network. Applications: asteroid mapping, planetary scanning, distributed telescopes, debris monitoring.</p>
+            <div className="rounded-lg p-3 font-mono text-sm" style={{ background: "var(--bg-surface)" }}>
+              <p>I<sub>total</sub> = ∑I<sub>i</sub> + ∑C<sub>ij</sub></p>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-base font-bold mb-2" style={{ color: "var(--text-primary)" }}>▸ AI space stations</h3>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Fully autonomous orbital platforms managing: docking, power, repairs, research, crew support.</p>
+          </div>
+          <div>
+            <h3 className="text-base font-bold mb-2" style={{ color: "var(--text-primary)" }}>▸ Interplanetary internet</h3>
+            <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>Delay-tolerant networking connecting Earth ↔ Moon ↔ Mars ↔ deep space. AI manages data flow.</p>
+            <div className="rounded-lg p-3 font-mono text-sm" style={{ background: "var(--bg-surface)" }}>
+              <p>min (latency + energy + data loss)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Phase 4: 2060+ — Interstellar */}
+      <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+        <div className="flex items-center gap-3 mb-6">
+          <span className="text-2xl font-bold" style={{ color: "var(--accent-cyan)" }}>🟥 Phase 4: 2060+</span>
+          <h2 className="text-lg font-bold" style={{ color: "var(--text-primary)" }}>Interstellar Probes & Space-AGI Systems</h2>
+        </div>
+        <p className="text-sm mb-6" style={{ color: "var(--text-secondary)" }}>
+          Human-controlled missions cannot scale beyond solar system. Autonomous intelligence becomes primary explorer.
+        </p>
+
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-base font-bold mb-2" style={{ color: "var(--text-primary)" }}>▸ Interstellar probes</h3>
+            <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>Self-navigating spacecraft operating for decades or centuries. Relativistic planning: τ = proper time.</p>
+            <div className="rounded-lg p-3 font-mono text-sm" style={{ background: "var(--bg-surface)" }}>
+              <p>min ∫<sub>0</sub><sup>τ</sup> L(x, u, τ) dτ</p>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-base font-bold mb-2" style={{ color: "var(--text-primary)" }}>▸ Space-AGI systems</h3>
+            <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>Highly advanced onboard intelligence capable of: scientific discovery, self-repair, adaptive navigation, mission redesign.</p>
+            <div className="rounded-lg p-3 font-mono text-sm" style={{ background: "var(--bg-surface)" }}>
+              <p>dI/dt = αI + βK + γE</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Why OrbitalSimulatorHub */}
       <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>

@@ -126,6 +126,13 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     ogTitle: "Space-AGI Engineering Lab — Intelligence for the Space Age",
     lastUpdated: "2026-02-23T00:00:00Z",
   },
+  "/research/space-agi-math": {
+    path: "/research/space-agi-math",
+    title: "Space-AGI Mathematics — Optimal Control, MPC, LQR, Pontryagin | Orbital Simulator Hub",
+    description: "Graduate-level aerospace control: optimal control, Pontryagin's maximum principle, MPC, LQR. Space-AGI framework: knowledge-energy optimization, intelligence growth, safety-constrained cosmic optimization.",
+    keywords: "optimal control space, Pontryagin maximum principle, MPC satellites, LQR aerospace, Space-AGI mathematics, orbital control theory",
+    lastUpdated: "2026-02-23T00:00:00Z",
+  },
   "/research/space-agi-roadmap": {
     path: "/research/space-agi-roadmap",
     title: "Space-AGI Engineering Roadmap — Future of Autonomous Space Systems | Orbital Simulator Hub",
