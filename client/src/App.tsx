@@ -59,6 +59,7 @@ import { SpaceAGIDoctrine } from "./pages/SpaceAGIDoctrine";
 import { SpaceAGIEngineeringLab } from "./pages/SpaceAGIEngineeringLab";
 import { SpaceAGIRoadmap } from "./pages/SpaceAGIRoadmap";
 import { SpaceAGIMathematics } from "./pages/SpaceAGIMathematics";
+import { SpaceAGISwarmSimulator } from "./pages/SpaceAGISwarmSimulator";
 import { FutureSpaceCivilization } from "./pages/FutureSpaceCivilization";
 import { Next100Years } from "./pages/Next100Years";
 import { Welcome } from "./pages/Welcome";
@@ -74,6 +75,7 @@ function App() {
           <Route path="/" component={Home} />
           <Route path="/play" component={PlayLearn} />
           <Route path="/simulator" component={Simulator} />
+          <Route path="/simulator/swarm" component={SpaceAGISwarmSimulator} />
           <Route path="/learn/newton" component={LearnNewton} />
           <Route path="/learn/formulas" component={NewtonFormulas} />
           <Route path="/guide" component={KidsGuide} />

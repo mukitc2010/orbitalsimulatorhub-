@@ -114,10 +114,18 @@ export function Simulator() {
       <FAQSchema items={SIMULATOR_FAQS} />
       <div className="flex flex-wrap items-center justify-between gap-4">
         <h1 className="headline">Simulator</h1>
-        <Link href="/guide" className="text-sm text-[var(--accent-cyan)] font-medium hover:underline">
-          📖 Read the Guide
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link href="/simulator/swarm" className="text-sm font-medium px-3 py-1.5 rounded-lg transition" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
+            🛰 Swarm Simulator
+          </Link>
+          <Link href="/guide" className="text-sm text-[var(--accent-cyan)] font-medium hover:underline">
+            📖 Read the Guide
+          </Link>
+        </div>
       </div>
+      <p className="subhead">
+        Orbit Simulator: add LEO, MEO, GEO satellites and watch real physics. <Link href="/simulator/swarm"><span className="text-[var(--accent-cyan)] font-medium hover:underline">Swarm Simulator</span></Link>: AI collision avoidance with 500+ satellites.
+      </p>
 
       <section className="rounded-xl bg-slate-50 border border-slate-200 p-4" aria-label="How to use the simulator">
         <h2 className="text-sm font-bold text-slate-700 mb-3">How to use</h2>

@@ -9,6 +9,11 @@ const MISSION_SUBNAV = [
   { path: "/artifacts", label: "Brought Back", title: "What humans brought back from space" },
 ];
 
+const SIMULATOR_SUBNAV = [
+  { path: "/simulator", label: "Orbit Simulator", title: "3D satellite orbit simulator — LEO, MEO, GEO" },
+  { path: "/simulator/swarm", label: "Swarm Simulator", title: "AI swarm collision avoidance — J2, Pc, OSQP" },
+];
+
 const SPACE_AGI_SUBNAV = [
   { path: "/research/space-agi-lab", label: "Engineering Lab", title: "5 pillars: autonomous spacecraft, decision intelligence, orbital math" },
   { path: "/research/space-agi-roadmap", label: "Roadmap", title: "2025–2060+ timeline: AI satellites to interstellar" },
@@ -18,7 +23,7 @@ const SPACE_AGI_SUBNAV = [
 const NAV = [
   { path: "/", label: "Home", title: "OrbitalSimulatorHub — Orbital Mechanics • AI in Space • Future Space Intelligence" },
   { path: "/planets", label: "Planets", title: "Planet Study Hub — explore every planet in our solar system" },
-  { path: "/simulator", label: "Simulator", title: "3D satellite orbit simulator — LEO, MEO, GEO" },
+  { path: "/simulator", label: "Simulator", title: "Orbit & Swarm simulators — LEO, MEO, GEO, AI collision avoidance", subnav: SIMULATOR_SUBNAV },
   { path: "/research/space-agi-lab", label: "🧠 Space-AGI Lab", title: "Space-AGI Engineering Lab — autonomous spacecraft, decision intelligence, orbital math", subnav: SPACE_AGI_SUBNAV },
   { path: "/learn/aerospace", label: "Aerospace", title: "Aerospace reference for students and researchers" },
   { path: "/ai-in-aerospace", label: "AI in Space", title: "How AI is transforming aerospace and space exploration" },
@@ -31,6 +36,10 @@ function isMissionsActive(location: string) {
   return location === "/missions" || location.startsWith("/missions/") || location === "/astronauts" || location.startsWith("/astronauts/") || location === "/artifacts";
 }
 
+function isSimulatorActive(location: string) {
+  return location === "/simulator" || location === "/simulator/swarm";
+}
+
 function isSpaceAgiActive(location: string) {
   return location === "/research/space-agi-lab" || location === "/research/space-agi-roadmap" || location === "/research/space-agi-math";
 }
@@ -38,8 +47,10 @@ function isSpaceAgiActive(location: string) {
 export function NavigationHeader() {
   const [location] = useLocation();
   const [missionsOpen, setMissionsOpen] = useState(false);
+  const [simulatorOpen, setSimulatorOpen] = useState(false);
   const [spaceAgiOpen, setSpaceAgiOpen] = useState(false);
   const missionsRef = useRef<HTMLDivElement>(null);
+  const simulatorRef = useRef<HTMLDivElement>(null);
   const spaceAgiRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -47,13 +58,16 @@ export function NavigationHeader() {
       if (missionsRef.current && !missionsRef.current.contains(e.target as Node)) {
         setMissionsOpen(false);
       }
+      if (simulatorRef.current && !simulatorRef.current.contains(e.target as Node)) {
+        setSimulatorOpen(false);
+      }
       if (spaceAgiRef.current && !spaceAgiRef.current.contains(e.target as Node)) {
         setSpaceAgiOpen(false);
       }
     }
-    if (missionsOpen || spaceAgiOpen) document.addEventListener("mousedown", handleClick);
+    if (missionsOpen || simulatorOpen || spaceAgiOpen) document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
-  }, [missionsOpen, spaceAgiOpen]);
+  }, [missionsOpen, simulatorOpen, spaceAgiOpen]);
 
   return (
     <header
@@ -78,9 +92,46 @@ export function NavigationHeader() {
         </div>
 
         <nav className="flex flex-wrap gap-1 items-center">
-          {NAV.slice(0, 2).map(({ path, label, title }) => (
-            <NavLink key={path} path={path} label={label} title={title} location={location} />
+          {NAV.slice(0, 2).map(({ path, label, title, subnav }) => (
+            subnav ? null : <NavLink key={path} path={path} label={label} title={title} location={location} />
           ))}
+          <div ref={simulatorRef} className="relative">
+            <button
+              onClick={() => setSimulatorOpen((v) => !v)}
+              onMouseEnter={() => setSimulatorOpen(true)}
+              className="px-3 py-2 rounded-lg font-medium transition text-sm flex items-center gap-1"
+              style={
+                isSimulatorActive(location)
+                  ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
+                  : { color: "var(--text-secondary)" }
+              }
+            >
+              Simulator
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ opacity: simulatorOpen ? 1 : 0.7 }}>
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            {simulatorOpen && (
+              <div
+                className="absolute top-full left-0 mt-1 py-1 rounded-lg shadow-lg min-w-[180px]"
+                style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}
+                onMouseLeave={() => setSimulatorOpen(false)}
+              >
+                {SIMULATOR_SUBNAV.map(({ path, label, title }) => (
+                  <Link key={path} href={path} onClick={() => setSimulatorOpen(false)}>
+                    <a
+                      className="block px-4 py-2 text-sm font-medium transition"
+                      style={{
+                        color: location === path || (path === "/simulator" && location === "/simulator") ? "var(--accent-cyan)" : "var(--text-primary)",
+                      }}
+                    >
+                      {label}
+                    </a>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
           <div ref={missionsRef} className="relative">
             <button
               onClick={() => setMissionsOpen((v) => !v)}
@@ -155,7 +206,7 @@ export function NavigationHeader() {
               </div>
             )}
           </div>
-          {NAV.slice(2).filter((n) => n.path !== "/research/space-agi-lab").map(({ path, label, title }) => (
+          {NAV.slice(2).filter((n) => n.path !== "/research/space-agi-lab" && n.path !== "/simulator").map(({ path, label, title }) => (
             <NavLink key={path} path={path} label={label} title={title} location={location} />
           ))}
         </nav>

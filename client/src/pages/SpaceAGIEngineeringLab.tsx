@@ -3,7 +3,7 @@ import { Link } from "wouter";
 
 const LAB_QUICK_START = [
   { href: "/research/space-agi-math", icon: "📐", title: "Learn the Math", desc: "Optimal control, MPC, LQR, Pontryagin" },
-  { href: "/simulator", icon: "🛰", title: "Run Simulations", desc: "3D orbits, add satellites, watch dynamics" },
+  { href: "/simulator", icon: "🛰", title: "Orbit & Swarm Simulators", desc: "3D orbits, swarm AI collision avoidance" },
   { href: "/calculators", icon: "🧮", title: "Use Calculators", desc: "Hohmann, collision P, Mars delay" },
 ];
 
