@@ -59,7 +59,8 @@ async function executeTools(routerResult: ReturnType<typeof routeIntent>, messag
     }
     if (call.tool === "simActions") {
       const params = call.params as { action?: string; altitude?: number };
-      const suggested = suggestSimActions(params.action || "", { altitude: params.altitude });
+      const opts = params.altitude != null ? { altitude: params.altitude } : undefined;
+      const suggested = suggestSimActions(params.action || "", opts);
       actions.push(...suggested);
     }
   }
