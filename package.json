@@ -56,8 +56,22 @@
       "react": "$react",
       "react-dom": "$react-dom"
     },
+    "@react-spring/animated": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "@react-spring/core": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "@react-spring/three": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
     "@react-three/drei": {
-      "@react-three/fiber": "$@react-three/fiber"
+      "@react-three/fiber": "$@react-three/fiber",
+      "react": "$react",
+      "react-dom": "$react-dom"
     }
   },
   "devDependencies": {
