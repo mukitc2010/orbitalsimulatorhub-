@@ -5,8 +5,22 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Thu, 19 Feb 2026 20:29:42 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 19:56:56 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Infinity Math Affects Aerospace Engineering</title>
+      <link>https://orbitalsimulatorhub.com/blog/how-infinity-math-affects-aerospace-engineering</link>
+      <description>Limits, infinite series, and unbounded behavior shape orbital mechanics, escape velocity, control theory, and numerical methods. How aerospace engineers use infinity.</description>
+      <pubDate>Sun, 22 Feb 2026 05:00:00 GMT</pubDate>
+      <category>astronomy-lessons</category>
+    </item>
+    <item>
+      <title>Nuclear Rockets to Mars and Beyond: DRACO, Space Elevators, and the Future of Space Travel</title>
+      <link>https://orbitalsimulatorhub.com/blog/nuclear-rockets-mars-draco-space-elevators-future-space-travel</link>
+      <description>NASA and DARPA are launching the world&apos;s first nuclear thermal rocket in 2026. Mars in 4 months instead of 9. Plus: orbital rings, space elevators, and megastructures that could transform humanity&apos;s reach.</description>
+      <pubDate>Fri, 20 Feb 2026 05:00:00 GMT</pubDate>
+      <category>nasa-news</category>
+    </item>
     <item>
       <title>Space News February 2026: Artemis II Fueling Test, Crew-12 at ISS, Starlink Launches</title>
       <link>https://orbitalsimulatorhub.com/blog/space-news-february-2026-artemis-crew-12-starlink</link>

@@ -13,12 +13,11 @@ interface Message {
 interface AstroBotChatProps {
   userId?: string;
   pageContext?: string;
-  locale?: string;
   onAction?: (action: { type: string; payload: Record<string, unknown> }) => void;
   className?: string;
 }
 
-export function AstroBotChat({ userId = "anonymous", pageContext, locale = "en", onAction, className = "" }: AstroBotChatProps) {
+export function AstroBotChat({ userId = "anonymous", pageContext, onAction, className = "" }: AstroBotChatProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -53,7 +52,6 @@ export function AstroBotChat({ userId = "anonymous", pageContext, locale = "en",
           message: text,
           userId,
           pageContext,
-          locale,
           history: messages.slice(-10).map((m) => ({ role: m.role, content: m.text })),
         }),
       });

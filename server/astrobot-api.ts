@@ -75,7 +75,7 @@ export function createAstroBotRouter() {
 
   // AstroBot AGI Chat
   router.post("/chat", async (req, res) => {
-    const body = req.body as { message?: string; userId?: string; pageContext?: string; history?: Array<{ role: string; content: string }>; locale?: string };
+    const body = req.body as { message?: string; userId?: string; pageContext?: string; history?: Array<{ role: string; content: string }> };
     const message = typeof body?.message === "string" ? body.message.trim() : "";
     if (!message) return res.status(400).json({ error: "Message is required" });
     try {
@@ -84,7 +84,6 @@ export function createAstroBotRouter() {
         userId: body.userId || "anonymous",
         pageContext: body.pageContext,
         history: Array.isArray(body.history) ? body.history : [],
-        locale: body.locale || "en",
       });
       return res.json({ reply: result.reply, actions: result.actions, memoryPatch: result.memoryPatch });
     } catch (err) {

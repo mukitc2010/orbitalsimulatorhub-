@@ -11,6 +11,143 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "how-infinity-math-affects-aerospace-engineering",
+    title: "How Infinity Math Affects Aerospace Engineering",
+    excerpt: "Limits, infinite series, and unbounded behavior shape orbital mechanics, escape velocity, control theory, and numerical methods. How aerospace engineers use infinity.",
+    content: `**Infinity in Aerospace: Limits, Series, and Unbounded Orbits**
+
+"Infinity math"—limits, infinite series, and asymptotic behavior—shows up throughout aerospace engineering. Here's where and why.
+
+---
+
+**1. Orbital Mechanics — Escape Velocity & Hyperbolic Orbits**
+
+**Escape velocity** is defined as the speed at which an object "reaches infinity" and never comes back. The vis-viva equation:
+
+\`v² = μ(2/r − 1/a)\`
+
+For escape, the semi-major axis \`a\` goes to infinity (the orbit becomes a parabola). At that point, \`1/a → 0\`, and we get \`v_esc = √(2μ/r)\`.
+
+**Hyperbolic orbits** (e.g., Voyager leaving the solar system) have \`e > 1\`—the orbit is unbounded. The math explicitly treats "infinity" as the asymptotic destination.
+
+---
+
+**2. Calculus — Limits & Infinite Series**
+
+- **Taylor series** approximate functions (e^x, sin, cos) with infinite sums—used in orbit propagation, attitude dynamics, and navigation.
+- **Differential equations** for trajectories use limits: \`dy/dt\` is defined as \`Δy/Δt\` as \`Δt → 0\`.
+- **Numerical integration** (Runge-Kutta, etc.) approximates solutions by taking smaller and smaller time steps—convergence as step size → 0.
+
+---
+
+**3. Asymptotic Behavior**
+
+- **Drag** at high altitude: density \`ρ → 0\` as altitude → ∞.
+- **Thrust-to-weight** as fuel burns: mass decreases, so T/W → ∞ (in theory).
+- **Orbital period** for very high orbits: \`T ∝ a^(3/2)\`, so \`T → ∞\` as \`a → ∞\` (Kepler's third law).
+
+---
+
+**4. Control Theory**
+
+- **Infinite-horizon optimal control** (e.g., LQR): optimize over \`t ∈ [0, ∞)\`.
+- **Stability analysis**: eigenvalues must lie in the left half-plane (or inside unit circle for discrete systems) as \`t → ∞\`.
+
+---
+
+**5. Numerical Methods**
+
+- **Convergence**: iterative solvers (Newton, Gauss-Seidel) are analyzed as iterations → ∞.
+- **Singularities**: near-body gravity, division-by-zero—engineers must handle "infinite" or near-infinite values carefully.
+
+---
+
+**Summary**
+
+| Concept | Aerospace Use |
+|---------|---------------|
+| Limits \`x → ∞\` | Escape velocity, asymptotic drag, long-term stability |
+| Infinite series | Taylor expansions for orbit/attitude dynamics |
+| Unbounded orbits | Hyperbolic trajectories for interplanetary missions |
+| Infinite horizon | Optimal control for long-duration missions |
+
+Infinity isn't just abstract—it defines escape, approximates dynamics, and describes missions that never come back.
+
+**Explore more:** [Orbital mechanics guide](/learn/orbital-mechanics), [Formulas library](/formulas-library), [3D simulator](/simulator).`,
+    category: "astronomy-lessons",
+    date: "2026-02-22",
+    tags: ["infinity math", "aerospace engineering", "orbital mechanics", "escape velocity", "calculus", "control theory"],
+    seoKeywords: "infinity math aerospace, how infinity affects aerospace engineering, escape velocity math, orbital mechanics limits, aerospace calculus",
+  },
+  {
+    slug: "nuclear-rockets-mars-draco-space-elevators-future-space-travel",
+    title: "Nuclear Rockets to Mars and Beyond: DRACO, Space Elevators, and the Future of Space Travel",
+    excerpt: "NASA and DARPA are launching the world's first nuclear thermal rocket in 2026. Mars in 4 months instead of 9. Plus: orbital rings, space elevators, and megastructures that could transform humanity's reach.",
+    content: `**The Future of Space Travel Is Here**
+
+While chemical rockets have taken us to the Moon and the ISS, they hit a hard limit: fuel efficiency. To reach Mars in a reasonable time, we need something radically better. Enter **nuclear thermal propulsion**—and the megastructures that could one day make space travel as routine as flying across the ocean.
+
+---
+
+**DRACO: The World's First Nuclear Rocket in Orbit**
+
+In late 2025 or early 2026, NASA and DARPA will launch **DRACO** (Demonstration Rocket for Agile Cislunar Operations)—the world's first in-orbit test of a nuclear thermal rocket engine. Lockheed Martin is building the spacecraft; BWX Technologies is developing the reactor. The program budget is nearly $500 million.
+
+**How it works:** A nuclear reactor heats hydrogen propellant to extreme temperatures. The hot gas shoots out the nozzle, creating thrust. Unlike chemical rockets that burn fuel and oxidizer, nuclear thermal engines use the reactor as a heat source. Result: **2–3 times higher efficiency** than the best chemical engines.
+
+**Why it matters for Mars:**
+
+| Mission Type | Chemical Rocket | Nuclear Thermal |
+|--------------|-----------------|-----------------|
+| Earth → Mars | ~9 months | ~4 months |
+| Crew radiation exposure | High | Cut in half |
+| Propellant mass | Heavy | Lighter |
+
+Shorter transit means less cosmic radiation, fewer supplies, and lower risk. NASA aims for crewed Mars missions in the late 2030s or early 2040s—and nuclear propulsion is now a central piece of that plan.
+
+**Safety:** DRACO uses low-enriched uranium (HALEU). The reactor stays cold until it reaches orbit; it will be launched on a Vulcan Centaur rocket with U.S. Space Force support. This isn't science fiction—it's scheduled hardware.
+
+---
+
+**From NERVA to DRACO: A 50-Year Journey**
+
+NASA studied nuclear propulsion in the 1960s and 70s through the **NERVA** (Nuclear Engine for Rocket Vehicle Application) program. Ground tests proved the concept, but the program was canceled in 1973. DRACO picks up where NERVA left off—with modern materials, safety protocols, and a clear mission: prove it works in space.
+
+---
+
+**Beyond Rockets: Orbital Rings and Space Elevators**
+
+Nuclear rockets are near-term. But what about the far future? Engineers and physicists have designed **megastructures** that could make leaving Earth as easy as taking an elevator.
+
+**Orbital rings:** A giant ring circling Earth at ~500 km altitude, spinning faster than orbital velocity. The centrifugal force counteracts gravity; the ring stays up. Motorized platforms run along the ring in the opposite direction to stay stationary above any point on Earth. One orbital ring could support **multiple space elevators**—each only 500 km long instead of 100,000 km.
+
+**Space elevators:** A cable from the ground to a counterweight in space. Climbers (powered by lasers or electricity) ride the cable up. Traditional space elevators need materials stronger than anything we have. But an orbital ring changes the math: shorter cables mean existing materials could work.
+
+**Why it matters:** If we could build an orbital ring, the cost of reaching orbit could drop by orders of magnitude. No more rockets for routine cargo—just climbers on a cable. Paul Birch formalized the orbital ring concept in 1982; research from 2008–2011 explored applications in communications, space-based solar power, and even climate control.
+
+---
+
+**The Roadmap: 2026 to 2040**
+
+- **2026:** DRACO launches, demonstrates nuclear thermal propulsion in orbit
+- **2027:** In-space engine tests, data for Mars mission design
+- **2030s:** Artemis Moon base, Gateway station, Mars mission development
+- **2040s:** First crewed Mars missions with nuclear propulsion
+- **Beyond:** Orbital rings, space elevators, and megastructures—if we choose to build them
+
+---
+
+**Learn the Basics**
+
+Nuclear rockets and megastructures both rely on the same physics: **orbital mechanics**, gravity, and thrust. You can explore these concepts with our [3D orbit simulator](/simulator), [formulas library](/formulas-library), and [orbital mechanics guide](/learn/orbital-mechanics). Understanding how the ISS orbits at 7.66 km/s is the first step toward understanding how we might one day ride an elevator to space.
+
+**Stay updated:** Follow our [Space News](/space-news) and [Mission Timeline](/missions/timeline) for DRACO launch updates and the latest in space exploration.`,
+    category: "nasa-news",
+    date: "2026-02-20",
+    tags: ["nuclear propulsion", "DRACO", "Mars mission", "space elevator", "orbital ring", "future space travel", "NASA", "DARPA"],
+    seoKeywords: "nuclear rocket, DRACO, nuclear thermal propulsion, Mars mission, space elevator, orbital ring, future space travel, NASA 2026, Lockheed Martin space",
+  },
+  {
     slug: "space-news-february-2026-artemis-crew-12-starlink",
     title: "Space News February 2026: Artemis II Fueling Test, Crew-12 at ISS, Starlink Launches",
     excerpt: "Artemis II targets March launch after second SLS fueling test. SpaceX Crew-12 arrived at the ISS February 14. Starlink launches from California and Florida. Your February 2026 space news roundup.",

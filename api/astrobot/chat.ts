@@ -24,7 +24,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     userId?: string;
     pageContext?: string;
     history?: Array<{ role: string; content: string }>;
-    locale?: string;
   };
 
   const message = typeof body?.message === "string" ? body.message.trim() : "";
@@ -38,7 +37,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       userId: body.userId || "anonymous",
       pageContext: body.pageContext,
       history: Array.isArray(body.history) ? body.history : [],
-      locale: body.locale || "en",
     });
 
     return res.status(200).json({

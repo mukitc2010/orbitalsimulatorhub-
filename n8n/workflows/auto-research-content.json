@@ -20,7 +20,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Select research content type and topic\nconst contentTypes = [\n  \"paper-summary\",\n  \"discovery\",\n  \"methodology\",\n  \"data-source\",\n  \"tool\",\n  \"case-study\",\n  \"trend\",\n  \"formula\",\n  \"documentation\"\n];\n\nconst categories = [\n  \"nasa\",\n  \"orbital-mechanics\",\n  \"astrophysics\",\n  \"quantum-physics\",\n  \"aerospace\",\n  \"general\"\n];\n\nconst topics = [\n  \"orbital debris mitigation\",\n  \"precision orbit determination\",\n  \"space weather effects\",\n  \"satellite constellation design\",\n  \"propulsion systems\",\n  \"attitude control\",\n  \"mission design\",\n  \"data analysis techniques\",\n  \"numerical methods\",\n  \"recent NASA discoveries\",\n  \"exoplanet research\",\n  \"black hole physics\",\n  \"quantum computing in space\",\n  \"materials science for space\"\n];\n\nconst selectedType = contentTypes[Math.floor(Math.random() * contentTypes.length)];\nconst selectedCategory = categories[Math.floor(Math.random() * categories.length)];\nconst selectedTopic = topics[Math.floor(Math.random() * topics.length)];\nconst today = new Date().toISOString().split('T')[0];\nconst id = `research-${Date.now()}`;\n\nreturn {\n  json: {\n    id,\n    date: today,\n    type: selectedType,\n    category: selectedCategory,\n    topic: selectedTopic,\n    prompt: `Generate comprehensive research content for PhD students and researchers about ${selectedTopic} in the ${selectedCategory} category.\n\nContent type: ${selectedType}\n\nRequirements:\n1. Provide a detailed summary (2-3 sentences)\n2. Write full content suitable for research papers (500-1000 words)\n3. Include relevant keywords\n4. Provide references to academic papers, NASA documentation, or authoritative sources\n5. Include formulas/equations if applicable\n6. Include data points if applicable\n7. Suggest related topics\n8. Include SEO keywords\n\nFormat as JSON:\n{\n  \"title\": \"...\",\n  \"summary\": \"...\",\n  \"content\": \"...\",\n  \"keywords\": [\"...\"],\n  \"references\": [{\"title\": \"...\", \"url\": \"...\", \"source\": \"...\", \"type\": \"paper|website|documentation|data|tool\"}],\n  \"formulas\": [{\"name\": \"...\", \"equation\": \"...\", \"description\": \"...\"}],\n  \"dataPoints\": [{\"label\": \"...\", \"value\": \"...\", \"unit\": \"...\", \"source\": \"...\"}],\n  \"relatedTopics\": [\"...\"],\n  \"seoKeywords\": \"...\"\n}`\n  }\n};"
+        "jsCode": "// Select topic AND build OpenAI request body (no separate Build node = no json validation error)\nconst contentTypes = [\"paper-summary\",\"discovery\",\"methodology\",\"data-source\",\"tool\",\"case-study\",\"trend\",\"formula\",\"documentation\"];\nconst categories = [\"nasa\",\"orbital-mechanics\",\"astrophysics\",\"quantum-physics\",\"aerospace\",\"general\"];\nconst topics = [\"orbital debris mitigation\",\"precision orbit determination\",\"space weather effects\",\"satellite constellation design\",\"propulsion systems\",\"attitude control\",\"mission design\",\"data analysis techniques\",\"numerical methods\",\"recent NASA discoveries\",\"exoplanet research\",\"black hole physics\",\"quantum computing in space\",\"materials science for space\"];\nconst selectedType = contentTypes[Math.floor(Math.random() * contentTypes.length)];\nconst selectedCategory = categories[Math.floor(Math.random() * categories.length)];\nconst selectedTopic = topics[Math.floor(Math.random() * topics.length)];\nconst today = new Date().toISOString().split('T')[0];\nconst id = `research-${Date.now()}`;\nconst prompt = `Generate comprehensive research content for PhD students and researchers about ${selectedTopic} in the ${selectedCategory} category.\n\nContent type: ${selectedType}\n\nRequirements:\n1. Provide a detailed summary (2-3 sentences)\n2. Write full content suitable for research papers (500-1000 words)\n3. Include relevant keywords\n4. Provide references to academic papers, NASA documentation, or authoritative sources\n5. Include formulas/equations if applicable\n6. Include data points if applicable\n7. Suggest related topics\n8. Include SEO keywords\n\nFormat as JSON:\n{\n  \"title\": \"...\",\n  \"summary\": \"...\",\n  \"content\": \"...\",\n  \"keywords\": [\"...\"],\n  \"references\": [{\"title\": \"...\", \"url\": \"...\", \"source\": \"...\", \"type\": \"paper|website|documentation|data|tool\"}],\n  \"formulas\": [{\"name\": \"...\", \"equation\": \"...\", \"description\": \"...\"}],\n  \"dataPoints\": [{\"label\": \"...\", \"value\": \"...\", \"unit\": \"...\", \"source\": \"...\"}],\n  \"relatedTopics\": [\"...\"],\n  \"seoKeywords\": \"...\"\n}`;\nconst openAIBody = JSON.stringify({ model: 'gpt-5-mini', messages: [{ role: 'user', content: prompt + '\\n\\nReturn ONLY valid JSON, no markdown, no explanations.' }], temperature: 0.7, max_tokens: 3000 });\nreturn { json: { id, date: today, type: selectedType, category: selectedCategory, topic: selectedTopic, prompt, openAIBody } };"
       },
       "id": "select-topic",
       "name": "Select Research Topic",
@@ -30,24 +30,33 @@
     },
     {
       "parameters": {
-        "resource": "text",
-        "operation": "completion",
-        "model": "gpt-4",
-        "options": {
-          "temperature": "0.7",
-          "maxTokens": "3000"
+        "url": "https://api.openai.com/v1/chat/completions",
+        "method": "POST",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_OPENAI_API_KEY"
+            }
+          ]
         },
-        "prompt": "={{$json.prompt}}\n\nReturn ONLY valid JSON, no markdown, no explanations."
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={{ $json.openAIBody }}",
+        "options": {}
       },
       "id": "generate-content",
-      "name": "Generate Research Content",
-      "type": "n8n-nodes-base.openAi",
-      "typeVersion": 1.3,
-      "position": [650, 300]
+      "name": "HTTP Request1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [750, 300]
     },
     {
       "parameters": {
-        "jsCode": "// Parse AI response and format for API\nconst aiResponse = $input.item.json.choices[0].message.content;\nlet parsed;\n\ntry {\n  // Try to parse JSON\n  parsed = JSON.parse(aiResponse);\n} catch (e) {\n  // If not JSON, create structure manually\n  parsed = {\n    title: \"AI Generated Research Content\",\n    summary: aiResponse.substring(0, 200),\n    content: aiResponse,\n    keywords: [],\n    references: [],\n    relatedTopics: []\n  };\n}\n\n// Get metadata from previous node\nconst metadata = $('Select Research Topic').item.json;\n\n// Ensure all required fields\nconst researchContent = {\n  id: metadata.id,\n  date: metadata.date,\n  title: parsed.title || metadata.topic,\n  type: metadata.type,\n  category: metadata.category,\n  summary: parsed.summary || parsed.content?.substring(0, 200) || \"Research content about \" + metadata.topic,\n  content: parsed.content || aiResponse,\n  keywords: parsed.keywords || [metadata.topic, metadata.category],\n  references: parsed.references || [\n    {\n      title: \"NASA.gov\",\n      url: \"https://www.nasa.gov/\",\n      source: \"NASA\",\n      type: \"website\"\n    }\n  ],\n  formulas: parsed.formulas || [],\n  dataPoints: parsed.dataPoints || [],\n  relatedTopics: parsed.relatedTopics || [],\n  seoKeywords: parsed.seoKeywords || `${metadata.topic} ${metadata.category} research`\n};\n\nreturn { json: researchContent };"
+        "jsCode": "// Parse AI response and format for API - Robust version\n// Handle when previous node returns json as string (e.g. HTTP response)\nlet inputData;\ntry {\n  const raw = $input.item?.json ?? $input.first()?.json;\n  inputData = typeof raw === 'string' ? JSON.parse(raw) : raw;\n} catch (e) {\n  inputData = $input;\n}\n\nif (!inputData || typeof inputData !== 'object') {\n  throw new Error(\"No input data received from OpenAI node\");\n}\n\n// Get AI response - try multiple possible structures\nlet aiResponse = \"\";\ntry {\n  if (inputData.choices && inputData.choices[0] && inputData.choices[0].message) {\n    aiResponse = inputData.choices[0].message.content;\n  } else if (inputData.message && inputData.message.content) {\n    aiResponse = inputData.message.content;\n  } else if (inputData.content) {\n    aiResponse = inputData.content;\n  } else if (inputData.text) {\n    aiResponse = inputData.text;\n  } else if (typeof inputData === 'string') {\n    aiResponse = inputData;\n  } else {\n    // Try to extract from nested structure\n    aiResponse = JSON.stringify(inputData);\n  }\n} catch (e) {\n  console.error(\"Error getting AI response:\", e);\n  aiResponse = \"Error: Could not parse AI response\";\n}\n\nif (!aiResponse || aiResponse.trim() === \"\") {\n  throw new Error(\"Empty AI response received\");\n}\n\n// Parse JSON response\nlet parsed = {};\ntry {\n  // Remove markdown code blocks if present\n  let cleanedResponse = aiResponse.trim();\n  if (cleanedResponse.startsWith('```json')) {\n    cleanedResponse = cleanedResponse.replace(/```json\\s*/g, '').replace(/```\\s*$/g, '');\n  } else if (cleanedResponse.startsWith('```')) {\n    cleanedResponse = cleanedResponse.replace(/```\\s*/g, '').replace(/```\\s*$/g, '');\n  }\n  parsed = JSON.parse(cleanedResponse);\n} catch (e) {\n  // If not JSON, create structure manually\n  console.warn(\"Could not parse as JSON, creating fallback structure:\", e.message);\n  parsed = {\n    title: \"AI Generated Research Content\",\n    summary: aiResponse.substring(0, 200),\n    content: aiResponse,\n    keywords: [],\n    references: [],\n    relatedTopics: []\n  };\n}\n\n// Get metadata from previous node\nlet metadata = {};\ntry {\n  const selectTopicNode = $('Select Research Topic');\n  metadata = selectTopicNode.item?.json || {};\n} catch (e) {\n  console.warn(\"Could not get metadata from Select Topic node:\", e.message);\n  metadata = {\n    id: `research-${Date.now()}`,\n    date: new Date().toISOString().split('T')[0],\n    topic: \"Research\",\n    type: \"paper-summary\",\n    category: \"nasa\"\n  };\n}\n\n// Ensure all required fields\nconst researchContent = {\n  id: metadata.id || `research-${Date.now()}`,\n  date: metadata.date || new Date().toISOString().split('T')[0],\n  title: parsed.title || metadata.topic || \"Research Content\",\n  type: metadata.type || \"paper-summary\",\n  category: metadata.category || \"nasa\",\n  summary: parsed.summary || parsed.content?.substring(0, 200) || aiResponse.substring(0, 200) || \"Research content\",\n  content: parsed.content || aiResponse,\n  keywords: parsed.keywords || [metadata.topic || \"research\", metadata.category || \"nasa\"],\n  references: parsed.references || [\n    {\n      title: \"NASA.gov\",\n      url: \"https://www.nasa.gov/\",\n      source: \"NASA\",\n      type: \"website\"\n    }\n  ],\n  formulas: parsed.formulas || [],\n  dataPoints: parsed.dataPoints || [],\n  relatedTopics: parsed.relatedTopics || [],\n  seoKeywords: parsed.seoKeywords || `${metadata.topic || \"research\"} ${metadata.category || \"nasa\"} research`\n};\n\n// Return in correct format - must be array\nreturn [{ json: researchContent }];"
       },
       "id": "format-content",
       "name": "Format Research Content",
@@ -87,9 +96,9 @@
       "main": [[{"node": "Select Research Topic", "type": "main", "index": 0}]]
     },
     "Select Research Topic": {
-      "main": [[{"node": "Generate Research Content", "type": "main", "index": 0}]]
+      "main": [[{"node": "HTTP Request1", "type": "main", "index": 0}]]
     },
-    "Generate Research Content": {
+    "HTTP Request1": {
       "main": [[{"node": "Format Research Content", "type": "main", "index": 0}]]
     },
     "Format Research Content": {

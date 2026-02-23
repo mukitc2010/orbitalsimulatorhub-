@@ -14,6 +14,7 @@ import { createDailyTopicsRouter } from "../daily-topics-api";
 import { createAstroBotRouter } from "../astrobot-api";
 import { createResearchContentRouter } from "../research-content-api";
 import { createGitDeployRouter } from "../git-deploy-api";
+import { createChatRouter } from "../chat-api";
 
 const PORT = Number(process.env.PORT) || 3001;
 const app = express();
@@ -37,6 +38,7 @@ app.use("/api/research", createResearchContentRouter());
 
 // Git Deploy API endpoints for n8n automation
 app.use("/api/git", createGitDeployRouter());
+app.use("/api/chat", createChatRouter());
 
 // tRPC endpoints
 app.use(

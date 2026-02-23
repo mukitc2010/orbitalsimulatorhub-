@@ -108,6 +108,8 @@
   <url><loc>https://www.orbitalsimulatorhub.com/missions/sts-7</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ═══ BLOG POSTS (fresh content = more crawls) ═══ -->
+  <url><loc>https://www.orbitalsimulatorhub.com/blog/how-infinity-math-affects-aerospace-engineering</loc><lastmod>2026-02-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.orbitalsimulatorhub.com/blog/nuclear-rockets-mars-draco-space-elevators-future-space-travel</loc><lastmod>2026-02-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.orbitalsimulatorhub.com/blog/space-news-february-2026-artemis-crew-12-starlink</loc><lastmod>2026-02-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.orbitalsimulatorhub.com/blog/latest-space-news-nasa-mission-today</loc><lastmod>2026-02-21</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://www.orbitalsimulatorhub.com/blog/how-iss-orbits-earth-16-times-daily</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>

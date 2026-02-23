@@ -16,6 +16,16 @@ export interface DailyTopic {
 
 export const DAILY_TOPICS: DailyTopic[] = [
   {
+    id: "nuclear-rockets-draco-2026-02-22",
+    date: "2026-02-22",
+    title: "Nuclear Rockets to Mars: DRACO",
+    icon: "🚀",
+    category: "nasa",
+    description: "NASA & DARPA launch the world's first nuclear thermal rocket in 2026. Mars in 4 months instead of 9.",
+    learnMoreUrl: "/blog/nuclear-rockets-mars-draco-space-elevators-future-space-travel",
+    keywords: ["nuclear propulsion", "DRACO", "Mars mission", "NASA", "space travel"],
+  },
+  {
     id: "neuro-space-2026-02-19",
     date: "2026-02-19",
     title: "Neuro-Space: Light-Speed & Autonomous AI",

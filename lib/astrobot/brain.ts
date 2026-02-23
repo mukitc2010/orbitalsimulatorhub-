@@ -22,7 +22,6 @@ export interface AstroBotInput {
   userId?: string;
   pageContext?: string;
   history?: Array<{ role: string; content: string }>;
-  locale?: string;
 }
 
 async function executeTools(routerResult: ReturnType<typeof routeIntent>, message: string): Promise<{ toolResults: string; actions: SimAction[] }> {
@@ -90,7 +89,7 @@ function buildContext(memory: UserMemory | null, pageContext?: string, toolResul
 }
 
 export async function processAstroBot(input: AstroBotInput): Promise<AstroBotResponse> {
-  const { message, userId = "anonymous", pageContext, history = [], locale = "en" } = input;
+  const { message, userId = "anonymous", pageContext, history = [] } = input;
 
   const memory = await getUserMemory(userId);
   const routerResult = routeIntent(message);
@@ -121,11 +120,8 @@ export async function processAstroBot(input: AstroBotInput): Promise<AstroBotRes
 
   const openaiKey = process.env.OPENAI_API_KEY;
   if (openaiKey && openaiKey.length >= 10) {
-    const localeInstruction = locale && locale !== "en"
-      ? `\n\nLANGUAGE: Respond in ${locale}. Use the user's language for all explanations, while keeping technical terms (LEO, MEO, GEO, NASA, ISS, delta-v, vis-viva, etc.) in English when appropriate.`
-      : "";
     const messages: Array<{ role: "system" | "user" | "assistant"; content: string }> = [
-      { role: "system", content: `${SYSTEM_PROMPT}${localeInstruction}\n\n${context}` },
+      { role: "system", content: `${SYSTEM_PROMPT}\n\n${context}` },
       ...history.slice(-6).map((m) => ({
         role: (m.role === "user" ? "user" : "assistant") as "user" | "assistant",
         content: String(m.content).slice(0, 1500),

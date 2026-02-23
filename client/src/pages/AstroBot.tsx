@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { useLocale } from "../lib/LocaleContext";
 import { getAstroBotReplyLocal, ASTROBOT_FALLBACK } from "../astrobotKnowledge";
 import { generateAstroBotResponse } from "../lib/astrobotEngine";
 import { AstroBotChat } from "../components/astrobot/AstroBotChat";
@@ -906,7 +905,6 @@ export function AstroBot() {
   const [showExamples, setShowExamples] = useState(true);
   const bottomRef = useRef<HTMLDivElement>(null);
   const [location] = useLocation();
-  const { locale } = useLocale();
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -986,7 +984,6 @@ export function AstroBot() {
       {agiMode && (
         <AstroBotChat
           pageContext={location}
-          locale={locale}
           onAction={(action) => window.dispatchEvent(new CustomEvent("astrobot-action", { detail: action }))}
         />
       )}
