@@ -76,6 +76,16 @@ export function SEOHead() {
 
     setLink("canonical", fullUrl);
 
+    setJsonLd("seo-website", {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: SITE_NAME,
+      url: SITE_URL,
+      description: "Free orbital mechanics simulator, space blog, astronaut database, planet explorer. NASA, ISS, Starlink, Mars missions.",
+      publisher: { "@type": "Organization", name: SITE_NAME, logo: { "@type": "ImageObject", url: OG_IMAGE } },
+      inLanguage: "en-US",
+    });
+
     const breadcrumbItems: { name: string; item: string }[] = [
       { name: "Home", item: SITE_URL + "/" },
     ];

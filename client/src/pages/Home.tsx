@@ -201,22 +201,35 @@ export function Home() {
         </div>
       </section>
 
-      {/* Latest blog */}
-      <section className="rounded-xl border p-4 mb-8" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
-        <div className="flex justify-between items-center mb-3">
-          <h2 className="font-bold" style={{ color: "var(--text-primary)" }}>📰 Latest from the Blog</h2>
-          <Link href="/blog"><a className="text-sm font-medium" style={{ color: "var(--accent-primary)" }}>View all →</a></Link>
+      {/* Blog & News section — OrbitalSimulatorHub style */}
+      <section className="rounded-xl border-2 p-6 mb-8" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(0,217,255,0.06) 100%)", borderColor: "var(--accent-cyan)" }}>
+        <div className="flex justify-between items-center mb-4">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-widest mb-1" style={{ color: "var(--accent-cyan)" }}>Blog & News</p>
+            <h2 className="font-bold text-lg" style={{ color: "var(--text-primary)" }}>📰 Latest Space News & Articles</h2>
+          </div>
+          <Link href="/blog">
+            <a className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>View all →</a>
+          </Link>
         </div>
-        <div className="grid sm:grid-cols-3 gap-3">
+        <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>
+          Daily NASA news, space facts, satellite tutorials, astronomy lessons. Fresh content every day.
+        </p>
+        <div className="grid sm:grid-cols-3 gap-4">
           {BLOG_POSTS.slice(0, 3).map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>
-              <a className="block p-3 rounded-lg border transition hover:border-[var(--accent-cyan)]" style={{ borderColor: "var(--border-color)" }}>
-                <span className="text-xs font-medium uppercase" style={{ color: "var(--accent-pink)" }}>{post.category}</span>
+              <a className="block p-4 rounded-xl border-2 transition hover:shadow-lg hover:scale-[1.02]" style={{ background: "var(--bg-surface)", borderColor: "var(--border-color)" }}>
+                <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
                 <h3 className="font-semibold text-sm mt-1 line-clamp-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
-                <p className="text-xs mt-1" style={{ color: "var(--text-muted)" }}>{post.date}</p>
+                <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>{post.date}</p>
               </a>
             </Link>
           ))}
+        </div>
+        <div className="flex flex-wrap gap-2 mt-4">
+          <Link href="/space-news"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space News</a></Link>
+          <Link href="/blog/category/nasa-news"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>NASA News</a></Link>
+          <Link href="/blog/category/space-facts"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Facts</a></Link>
         </div>
       </section>
 

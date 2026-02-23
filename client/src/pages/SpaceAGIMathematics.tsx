@@ -6,6 +6,9 @@ export function SpaceAGIMathematics() {
       <div>
         <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">Graduate-Level Credible</p>
         <h1 className="headline">Space-AGI Mathematics</h1>
+        <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>
+          New to this? <Link href="/research/space-agi-explanation"><a className="text-[var(--accent-gold)] hover:underline">Read the easy version</a></Link> — same concepts, plain English, examples.
+        </p>
         <p className="subhead max-w-2xl">
           The first open platform teaching Orbital Mechanics + Advanced Control Theory + Space-AGI Engineering. Elite aerospace control math.
         </p>
@@ -128,23 +131,15 @@ export function SpaceAGIMathematics() {
         </div>
       </section>
 
-      {/* Differentiator */}
-      <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-gold)" }}>
-        <h2 className="text-lg font-bold mb-4" style={{ color: "var(--accent-gold)" }}>🧠 This Makes Your Site Different</h2>
-        <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>
-          Now you are not: A space blog. A simulator tool.
-        </p>
-        <p className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
-          You are: The first open platform teaching Orbital Mechanics + Advanced Control Theory + Space-AGI Engineering. That is extremely rare.
-        </p>
-      </section>
-
       <div className="flex flex-wrap gap-3">
         <Link href="/research/space-agi-lab">
           <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>← Space-AGI Engineering Lab</a>
         </Link>
+        <Link href="/research/space-agi-explanation">
+          <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Easy Version →</a>
+        </Link>
         <Link href="/calculators">
-          <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Interactive Calculators →</a>
+          <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Interactive Calculators</a>
         </Link>
         <Link href="/research/space-agi-doctrine">
           <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Space-AGI Doctrine</a>

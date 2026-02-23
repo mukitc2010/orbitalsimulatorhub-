@@ -19,10 +19,11 @@ export function BlogPost() {
     const descEl = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
     if (descEl) descEl.content = post.excerpt;
 
-    // Article schema for rich results & AI citation
+    // Article/NewsArticle schema for rich results & AI citation
+    const isNews = post.category === "nasa-news";
     const articleSchema = {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": isNews ? "NewsArticle" : "Article",
       headline: post.title,
       description: post.excerpt,
       datePublished: post.date,

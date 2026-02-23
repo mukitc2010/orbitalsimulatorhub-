@@ -59,6 +59,7 @@ import { SpaceAGIDoctrine } from "./pages/SpaceAGIDoctrine";
 import { SpaceAGIEngineeringLab } from "./pages/SpaceAGIEngineeringLab";
 import { SpaceAGIRoadmap } from "./pages/SpaceAGIRoadmap";
 import { SpaceAGIMathematics } from "./pages/SpaceAGIMathematics";
+import { SpaceAGIExplanation } from "./pages/SpaceAGIExplanation";
 import { SpaceAGISwarmSimulator } from "./pages/SpaceAGISwarmSimulator";
 import { FutureSpaceCivilization } from "./pages/FutureSpaceCivilization";
 import { Next100Years } from "./pages/Next100Years";
@@ -88,6 +89,7 @@ function App() {
           <Route path="/research/space-agi-lab" component={SpaceAGIEngineeringLab} />
           <Route path="/research/space-agi-roadmap" component={SpaceAGIRoadmap} />
           <Route path="/research/space-agi-math" component={SpaceAGIMathematics} />
+          <Route path="/research/space-agi-explanation" component={SpaceAGIExplanation} />
           <Route path="/welcome" component={Welcome} />
           <Route path="/learn/aerospace" component={AerospaceReference} />
           <Route path="/formulas-library" component={FormulaLibrary} />

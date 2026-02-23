@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link } from "wouter";
 
 const LAB_QUICK_START = [
-  { href: "/research/space-agi-math", icon: "📐", title: "Learn the Math", desc: "Optimal control, MPC, LQR, Pontryagin" },
+  { href: "/research/space-agi-explanation", icon: "📖", title: "Explanation", desc: "Math Explained tab — plain English, examples for teens & college" },
+  { href: "/research/space-agi-math", icon: "📐", title: "Learn the Math (Full)", desc: "Optimal control, MPC, LQR, Pontryagin — graduate level" },
   { href: "/simulator", icon: "🛰", title: "Orbit & Swarm Simulators", desc: "3D orbits, swarm AI collision avoidance" },
   { href: "/calculators", icon: "🧮", title: "Use Calculators", desc: "Hohmann, collision P, Mars delay" },
 ];

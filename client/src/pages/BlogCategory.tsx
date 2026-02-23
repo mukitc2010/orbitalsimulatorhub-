@@ -38,10 +38,10 @@ export function BlogCategory() {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`}>
-            <a className="block p-5 rounded-xl border border-slate-200 bg-white hover:border-[var(--accent-cyan)] hover:shadow-md transition">
-              <h3 className="font-bold text-lg text-slate-800 mb-2">{post.title}</h3>
-              <p className="text-sm text-slate-600 mb-3 line-clamp-2">{post.excerpt}</p>
-              <p className="text-xs text-slate-500">{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+            <a className="block p-5 rounded-xl border-2 transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+              <h3 className="font-bold text-lg mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
+              <p className="text-sm mb-3 line-clamp-2" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
+              <p className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
             </a>
           </Link>
         ))}

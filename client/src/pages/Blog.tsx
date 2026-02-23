@@ -18,8 +18,9 @@ export function Blog() {
   return (
     <div className="max-w-6xl mx-auto space-y-10">
       <div>
-        <h1 className="headline">Space Blog</h1>
-        <p className="subhead">
+        <p className="text-xs font-medium uppercase tracking-widest mb-2" style={{ color: "var(--accent-cyan)" }}>Blog & News</p>
+        <h1 className="headline">Space Blog & News</h1>
+        <p className="subhead max-w-2xl">
           Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Fresh content to help you learn orbital mechanics, space physics, and how satellites work.
         </p>
       </div>
@@ -27,38 +28,38 @@ export function Blog() {
       <section className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {byCategory.map((cat) => (
           <Link key={cat.id} href={`/blog/category/${cat.id}`}>
-            <a className="block p-4 rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-white hover:border-[var(--accent-cyan)] hover:shadow-md transition">
+            <a className="block p-4 rounded-xl border-2 transition hover:shadow-lg" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>
               <span className="text-2xl block mb-2">{cat.emoji}</span>
-              <h2 className="font-bold text-slate-800 mb-1">{cat.label}</h2>
-              <p className="text-sm text-slate-600">{cat.posts.length} articles</p>
+              <h2 className="font-bold mb-1" style={{ color: "var(--text-primary)" }}>{cat.label}</h2>
+              <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{cat.posts.length} articles</p>
             </a>
           </Link>
         ))}
       </section>
 
       <section>
-        <h2 className="text-xl font-bold text-slate-800 mb-4">Latest articles</h2>
+        <h2 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>Latest articles</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {recent.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>
-              <a className="block p-5 rounded-xl border border-slate-200 bg-white hover:border-[var(--accent-cyan)] hover:shadow-md transition">
-                <span className="text-xs text-slate-500 uppercase tracking-wide">{post.category.replace("-", " ")}</span>
-                <h3 className="font-bold text-lg text-slate-800 mt-1 mb-2">{post.title}</h3>
-                <p className="text-sm text-slate-600 mb-3 line-clamp-2">{post.excerpt}</p>
-                <p className="text-xs text-slate-500">{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+              <a className="block p-5 rounded-xl border-2 transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+                <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
+                <h3 className="font-bold text-lg mt-1 mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
+                <p className="text-sm mb-3 line-clamp-2" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
+                <p className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
               </a>
             </Link>
           ))}
         </div>
       </section>
 
-      <section className="rounded-xl bg-[var(--accent-cyan)]/10 border-2 border-[var(--accent-cyan)]/40 p-4">
-        <h2 className="font-bold text-slate-800 mb-2">📰 Daily fresh content</h2>
-        <p className="text-sm text-slate-700 mb-2">
+      <section className="rounded-xl border-2 p-6" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(0,217,255,0.06) 100%)", borderColor: "var(--accent-cyan)" }}>
+        <h2 className="font-bold mb-2" style={{ color: "var(--accent-cyan)" }}>📰 Daily fresh content</h2>
+        <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>
           New articles added regularly covering NASA missions, space facts, satellite tutorials, and astronomy lessons. Bookmark this page and check back daily!
         </p>
-        <p className="text-xs text-slate-600">
-          <Link href="/blog/rss.xml" className="text-[var(--accent-cyan)] hover:underline">RSS Feed</Link> available for automatic updates.
+        <p className="text-xs" style={{ color: "var(--text-muted)" }}>
+          <Link href="/blog/rss.xml"><a className="text-[var(--accent-cyan)] hover:underline">RSS Feed</a></Link> available for automatic updates.
         </p>
       </section>
     </div>

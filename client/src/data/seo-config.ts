@@ -141,6 +141,13 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     keywords: "optimal control space, Pontryagin maximum principle, MPC satellites, LQR aerospace, Space-AGI mathematics, orbital control theory",
     lastUpdated: "2026-02-23T00:00:00Z",
   },
+  "/research/space-agi-explanation": {
+    path: "/research/space-agi-explanation",
+    title: "Space-AGI Explanations — Math Explained for Teens & College | Orbital Simulator Hub",
+    description: "Plain-language Space-AGI guides. Math Explained tab: optimal control, MPC, LQR, Pontryagin — ISS docking, Starlink, Mars rover examples. No PhD required.",
+    keywords: "orbital mechanics for beginners, optimal control explained, satellite math easy, space AI for students, MPC LQR explained, Space-AGI for teens",
+    lastUpdated: "2026-02-23T00:00:00Z",
+  },
   "/research/space-agi-roadmap": {
     path: "/research/space-agi-roadmap",
     title: "Space-AGI Engineering Roadmap — Future of Autonomous Space Systems | Orbital Simulator Hub",
@@ -165,10 +172,11 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
   },
   "/blog": {
     path: "/blog",
-    title: "Space News Today — Artemis, ISS, Starlink | Daily Blog",
-    description: "Daily space news: Artemis, ISS, Starlink, Mars rovers. Space facts, satellite tutorials. Fresh every day. Read free.",
-    keywords: "space blog, space news, space facts, satellite tutorials, astronomy lessons, orbital mechanics blog, space physics blog",
-    lastUpdated: "2026-02-15T00:00:00Z",
+    title: "Space Blog & News — Artemis, ISS, Starlink | Daily Space Updates | Orbital Simulator Hub",
+    description: "Daily space blog and news: Artemis, ISS, Starlink, Mars rovers. Space facts, satellite tutorials, astronomy lessons. Fresh content every day. Free — no paywall.",
+    keywords: "space blog, space news, space facts, satellite tutorials, astronomy lessons, orbital mechanics blog, space physics blog, NASA news, Artemis, Starlink",
+    ogTitle: "Space Blog & News — Daily Space Updates | Orbital Simulator Hub",
+    lastUpdated: "2026-02-23T00:00:00Z",
   },
   "/learn/nasa-study-guide": {
     path: "/learn/nasa-study-guide",
@@ -200,10 +208,11 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
   },
   "/space-news": {
     path: "/space-news",
-    title: "Space News Today — Artemis, ISS, Mars, SpaceX | What's Happening",
-    description: "What's happening in space right now. Artemis, ISS, Mars rovers, James Webb, Starlink. Updated daily. Free — no paywall.",
+    title: "Space News Today — Artemis, ISS, Mars, SpaceX | What's Happening in Space",
+    description: "What's happening in space right now. Artemis, ISS, Mars rovers, James Webb, Starlink. Updated daily. Free — no paywall. Orbital Simulator Hub.",
     keywords: "space news, space news today, astronomy news, Artemis, ISS, Mars rover, James Webb, SpaceX, space mission news, daily space news",
-    lastUpdated: "2026-02-19T00:00:00Z",
+    ogTitle: "Space News Today — Artemis, ISS, Mars, SpaceX",
+    lastUpdated: "2026-02-23T00:00:00Z",
   },
   "/learn/nasa-for-kids": {
     path: "/learn/nasa-for-kids",
@@ -366,6 +375,26 @@ export function getSEOConfig(path: string): SEOConfig | null {
       keywords: `${name}, space mission, ${name} crew, ${name} mission details, Apollo mission`,
       ogTitle: `${name} — Mission Details`,
       lastUpdated: "2026-02-18T00:00:00Z",
+    };
+  }
+
+  const blogCategoryMatch = cleanPath.match(/^\/blog\/category\/(.+)$/);
+  if (blogCategoryMatch) {
+    const cat = blogCategoryMatch[1];
+    const labels: Record<string, { title: string; desc: string; kw: string }> = {
+      "nasa-news": { title: "NASA News", desc: "Latest NASA mission news: Artemis, ISS, Mars rovers, James Webb, SpaceX. Daily updates.", kw: "NASA news, Artemis, ISS, Mars rover, James Webb, SpaceX, space mission news" },
+      "space-facts": { title: "Space Facts", desc: "Space facts and science: orbital mechanics, satellites, planets, astronomy. Learn something new every day.", kw: "space facts, space science, orbital mechanics, satellite facts, astronomy facts" },
+      "satellite-tutorials": { title: "Satellite Tutorials", desc: "How satellites work: GPS, ISS, Starlink, LEO MEO GEO. Step-by-step tutorials for students and space fans.", kw: "satellite tutorial, how satellites work, GPS, ISS, Starlink, orbital mechanics tutorial" },
+      "astronomy-lessons": { title: "Astronomy Lessons", desc: "Astronomy lessons: solar system, stars, galaxies, black holes. Free space education.", kw: "astronomy lessons, solar system, stars, galaxies, space education" },
+    };
+    const info = labels[cat] || { title: cat.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()), desc: `Articles in ${cat}.`, kw: cat };
+    return {
+      path: cleanPath,
+      title: `${info.title} — Space Blog & News | Orbital Simulator Hub`,
+      description: info.desc,
+      keywords: info.kw,
+      ogTitle: `${info.title} | Orbital Simulator Hub`,
+      lastUpdated: "2026-02-23T00:00:00Z",
     };
   }
 

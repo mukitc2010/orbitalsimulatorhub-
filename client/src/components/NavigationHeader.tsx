@@ -17,7 +17,15 @@ const SIMULATOR_SUBNAV = [
 const SPACE_AGI_SUBNAV = [
   { path: "/research/space-agi-lab", label: "Engineering Lab", title: "5 pillars: autonomous spacecraft, decision intelligence, orbital math" },
   { path: "/research/space-agi-roadmap", label: "Roadmap", title: "2025–2060+ timeline: AI satellites to interstellar" },
-  { path: "/research/space-agi-math", label: "Mathematics", title: "Optimal control, MPC, LQR, Space-AGI framework" },
+  { path: "/research/space-agi-explanation", label: "Explanation", title: "Plain-language guides — Math Explained tab for teens & college" },
+  { path: "/research/space-agi-math", label: "Mathematics", title: "Optimal control, MPC, LQR, Space-AGI framework (graduate level)" },
+];
+
+const BLOG_SUBNAV = [
+  { path: "/blog", label: "Blog", title: "Daily space news, space facts, satellite tutorials" },
+  { path: "/learn/aerospace", label: "Aerospace", title: "Aerospace reference for students and researchers" },
+  { path: "/ai-in-aerospace", label: "AI in Space", title: "How AI is transforming aerospace and space exploration" },
+  { path: "/research", label: "Research", title: "NASA, Newton, orbital mechanics — for students and PhD researchers" },
 ];
 
 const NAV = [
@@ -25,9 +33,7 @@ const NAV = [
   { path: "/planets", label: "Planets", title: "Planet Study Hub — explore every planet in our solar system" },
   { path: "/simulator", label: "Simulator", title: "Orbit & Swarm simulators — LEO, MEO, GEO, AI collision avoidance", subnav: SIMULATOR_SUBNAV },
   { path: "/research/space-agi-lab", label: "🧠 Space-AGI Lab", title: "Space-AGI Engineering Lab — autonomous spacecraft, decision intelligence, orbital math", subnav: SPACE_AGI_SUBNAV },
-  { path: "/learn/aerospace", label: "Aerospace", title: "Aerospace reference for students and researchers" },
-  { path: "/ai-in-aerospace", label: "AI in Space", title: "How AI is transforming aerospace and space exploration" },
-  { path: "/blog", label: "Blog", title: "Daily space news, space facts, satellite tutorials" },
+  { path: "/blog", label: "Blog", title: "Daily space news, aerospace, AI in space, research", subnav: BLOG_SUBNAV },
   { path: "/astrobot", label: "AstroBot", title: "Ask AstroBot anything about space, orbits, and satellites" },
   { path: "/research", label: "Research", title: "NASA, Newton, orbital mechanics — for students and PhD researchers" },
 ];
@@ -41,7 +47,12 @@ function isSimulatorActive(location: string) {
 }
 
 function isSpaceAgiActive(location: string) {
-  return location === "/research/space-agi-lab" || location === "/research/space-agi-roadmap" || location === "/research/space-agi-math";
+  return location === "/research/space-agi-lab" || location === "/research/space-agi-roadmap" || location === "/research/space-agi-math" || location === "/research/space-agi-explanation";
+}
+
+function isBlogActive(location: string) {
+  return location === "/blog" || location.startsWith("/blog/") || location === "/learn/aerospace" || location.startsWith("/learn/aerospace")
+    || location === "/ai-in-aerospace" || location === "/ai-in-space" || location === "/research" || location.startsWith("/research/");
 }
 
 export function NavigationHeader() {
@@ -49,9 +60,11 @@ export function NavigationHeader() {
   const [missionsOpen, setMissionsOpen] = useState(false);
   const [simulatorOpen, setSimulatorOpen] = useState(false);
   const [spaceAgiOpen, setSpaceAgiOpen] = useState(false);
+  const [blogOpen, setBlogOpen] = useState(false);
   const missionsRef = useRef<HTMLDivElement>(null);
   const simulatorRef = useRef<HTMLDivElement>(null);
   const spaceAgiRef = useRef<HTMLDivElement>(null);
+  const blogRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
@@ -64,10 +77,13 @@ export function NavigationHeader() {
       if (spaceAgiRef.current && !spaceAgiRef.current.contains(e.target as Node)) {
         setSpaceAgiOpen(false);
       }
+      if (blogRef.current && !blogRef.current.contains(e.target as Node)) {
+        setBlogOpen(false);
+      }
     }
-    if (missionsOpen || simulatorOpen || spaceAgiOpen) document.addEventListener("mousedown", handleClick);
+    if (missionsOpen || simulatorOpen || spaceAgiOpen || blogOpen) document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
-  }, [missionsOpen, simulatorOpen, spaceAgiOpen]);
+  }, [missionsOpen, simulatorOpen, spaceAgiOpen, blogOpen]);
 
   return (
     <header
@@ -206,7 +222,49 @@ export function NavigationHeader() {
               </div>
             )}
           </div>
-          {NAV.slice(2).filter((n) => n.path !== "/research/space-agi-lab" && n.path !== "/simulator").map(({ path, label, title }) => (
+          <div ref={blogRef} className="relative">
+            <button
+              onClick={() => setBlogOpen((v) => !v)}
+              onMouseEnter={() => setBlogOpen(true)}
+              className="px-3 py-2 rounded-lg font-medium transition text-sm flex items-center gap-1"
+              style={
+                isBlogActive(location)
+                  ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
+                  : { color: "var(--text-secondary)" }
+              }
+            >
+              Blog
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ opacity: blogOpen ? 1 : 0.7 }}>
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            {blogOpen && (
+              <div
+                className="absolute top-full left-0 mt-1 py-1 rounded-lg shadow-lg min-w-[160px]"
+                style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}
+                onMouseLeave={() => setBlogOpen(false)}
+              >
+                {BLOG_SUBNAV.map(({ path, label, title }) => {
+                  const isActive =
+                    (path === "/blog" && (location === "/blog" || location.startsWith("/blog/")))
+                    || (path === "/learn/aerospace" && location.startsWith("/learn/aerospace"))
+                    || (path === "/ai-in-aerospace" && (location === "/ai-in-aerospace" || location === "/ai-in-space"))
+                    || (path === "/research" && (location === "/research" || location.startsWith("/research/")));
+                  return (
+                    <Link key={path} href={path} onClick={() => setBlogOpen(false)}>
+                      <a
+                        className="block px-4 py-2 text-sm font-medium transition"
+                        style={{ color: isActive ? "var(--accent-cyan)" : "var(--text-primary)" }}
+                      >
+                        {label}
+                      </a>
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+          {NAV.slice(2).filter((n) => n.path !== "/research/space-agi-lab" && n.path !== "/simulator" && n.path !== "/blog" && n.path !== "/ai-in-aerospace" && n.path !== "/research").map(({ path, label, title }) => (
             <NavLink key={path} path={path} label={label} title={title} location={location} />
           ))}
         </nav>
