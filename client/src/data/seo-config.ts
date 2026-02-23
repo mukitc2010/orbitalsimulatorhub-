@@ -19,11 +19,11 @@ export interface SEOConfig {
 export const SEO_CONFIGS: Record<string, SEOConfig> = {
   "/": {
     path: "/",
-    title: "Orbital Mechanics Simulator — Free 3D Satellite Orbit Simulator | NASA & Space Study",
-    description: "Free orbital mechanics simulator. Add LEO, MEO, GEO satellites. Watch ISS at 7.66 km/s, Starlink, GPS in 3D. 500+ astronauts, nuclear rockets, Mars missions. No signup.",
-    keywords: "orbital mechanics simulator, free satellite orbit simulator, 3D orbit simulator online, space study, NASA, nuclear rocket, DRACO, Mars mission, ISS orbital speed, LEO MEO GEO, how fast does ISS orbit, astronaut database, planet explorer, space news, James Webb, Artemis, SpaceX, orbital velocity calculator, space careers, space for kids",
-    ogTitle: "Orbital Mechanics Simulator — Free 3D Satellite Orbit Simulator",
-    lastUpdated: "2026-02-22T00:00:00Z",
+    title: "Orbital Mechanics Simulator — Free 3D Orbit & Swarm Simulator | NASA & Space Study",
+    description: "Free orbital mechanics simulator. Orbit Simulator: LEO, MEO, GEO. Swarm Simulator: 500+ AI satellites, collision avoidance. ISS 7.66 km/s, Starlink, GPS. 500+ astronauts, nuclear rockets, Mars. No signup.",
+    keywords: "orbital mechanics simulator, free satellite orbit simulator, swarm simulator, AI collision avoidance, 3D orbit simulator online, space study, NASA, nuclear rocket, DRACO, Mars mission, ISS orbital speed, LEO MEO GEO, Starlink simulator, astronaut database, planet explorer, space news, James Webb, Artemis, SpaceX, orbital velocity calculator, space careers, space for kids",
+    ogTitle: "Orbital Mechanics Simulator — Free 3D Orbit & Swarm Simulator",
+    lastUpdated: "2026-02-23T00:00:00Z",
   },
   "/welcome": {
     path: "/welcome",
@@ -43,10 +43,18 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
   },
   "/simulator": {
     path: "/simulator",
-    title: "3D Orbit Simulator — Add ISS, Starlink, GPS | Free, No Download",
-    description: "Add LEO, MEO, GEO satellites and watch orbits in real-time. See ISS at 7.66 km/s, Starlink, GPS. Height, speed, period. Try free — no signup.",
-    keywords: "satellite orbit simulator, 3D orbit simulator, free orbit simulator, LEO MEO GEO simulator, orbital mechanics simulator, satellite orbit calculator, space simulator, ISS orbit simulator, best orbit simulator online, orbital mechanics simulator free",
-    lastUpdated: "2026-02-19T00:00:00Z",
+    title: "3D Orbit Simulator & Swarm Simulator — ISS, Starlink, AI Collision Avoidance | Free",
+    description: "Orbit Simulator: Add LEO, MEO, GEO satellites. Swarm Simulator: 500+ AI satellites avoiding collisions. J2 propagation, collision probability, OSQP control. Free — no signup.",
+    keywords: "satellite orbit simulator, 3D orbit simulator, swarm simulator, AI collision avoidance, free orbit simulator, LEO MEO GEO simulator, orbital mechanics simulator, satellite collision probability, Starlink simulator, ISS orbit simulator, space traffic management, orbital debris avoidance",
+    lastUpdated: "2026-02-23T00:00:00Z",
+  },
+  "/simulator/swarm": {
+    path: "/simulator/swarm",
+    title: "Swarm Simulator — AI Satellite Collision Avoidance | 500+ Satellites, J2, Pc, OSQP",
+    description: "World-first AI swarm collision avoidance simulator. 500+ satellites, J2 propagation, covariance, collision probability Pc, OSQP control. Research-grade autonomous space traffic. Free online.",
+    keywords: "swarm simulator, satellite collision avoidance, AI space traffic, orbital collision probability, J2 propagation, OSQP satellite control, Starlink constellation simulator, space debris avoidance, autonomous satellite navigation, collision probability Pc, mega-constellation simulator",
+    ogTitle: "Swarm Simulator — AI Collision Avoidance for 500+ Satellites",
+    lastUpdated: "2026-02-23T00:00:00Z",
   },
   "/play": {
     path: "/play",
