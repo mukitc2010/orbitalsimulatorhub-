@@ -22,6 +22,7 @@ const QUICK_LINKS = [
 ];
 
 const EXPLORE_BY_TOPIC = [
+  { href: "/research/space-agi-doctrine", icon: "🔬", title: "Space-AGI Doctrine" },
   { href: "/learn/orbital-mechanics", icon: "🌌", title: "Orbital mechanics" },
   { href: "/learn/how-satellites-work", icon: "🛰", title: "How satellites work" },
   { href: "/formulas-library", icon: "🧮", title: "Formulas & calculators" },
@@ -107,19 +108,24 @@ export function Home() {
         </div>
       </section>
 
-      {/* Featured mission + Did you know */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-        <div className="rounded-xl border p-4" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
-          <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>Featured mission</h3>
-          <p className="font-semibold mb-1" style={{ color: "var(--text-primary)" }}>Artemis — return to the Moon</p>
-          <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>Orion, SLS, lunar Gateway, crewed lunar landing.</p>
-          <Link href="/missions/timeline"><a className="text-sm font-medium" style={{ color: "var(--accent-primary)" }}>Mission timeline →</a></Link>
-        </div>
-        <div className="rounded-xl border p-4" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
-          <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>💫 Did you know?</h3>
-          <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-            The ISS orbits Earth every ~90 minutes — astronauts see 16 sunrises per day. Orbital speed ~7.66 km/s at 400 km.
-          </p>
+      {/* Latest Research Update — Space-AGI Doctrine */}
+      <section className="rounded-xl border-2 p-5 mb-8" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(0,217,255,0.08) 100%)", borderColor: "var(--accent-cyan)" }}>
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>🔬 Latest Research Update — Feb 2026</h3>
+        <p className="font-semibold mb-2 text-lg" style={{ color: "var(--text-primary)" }}>Space-AGI Doctrine: Orbital Mechanics + Autonomous Decision Models</p>
+        <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
+          Reproducible simulation package: two-body & J2 propagation, Hohmann transfer, debris Monte Carlo, delayed MDP, Bayesian belief, energy-aware planning, scientific discovery loop. Unified mission score: safety + precision + energy + discovery + autonomy.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <Link href="/research/space-agi-doctrine">
+            <a className="px-4 py-2 rounded-lg font-semibold text-sm transition" style={{ background: "var(--accent-cyan)", color: "var(--text-on-accent)" }}>
+              Read Space-AGI Doctrine →
+            </a>
+          </Link>
+          <Link href="/research">
+            <a className="px-4 py-2 rounded-lg font-medium text-sm border-2 transition" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>
+              Research Hub
+            </a>
+          </Link>
         </div>
       </section>
 

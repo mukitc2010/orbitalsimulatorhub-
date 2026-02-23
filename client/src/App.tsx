@@ -55,10 +55,12 @@ import { PlanetHub } from "./pages/PlanetHub";
 import { PlanetDetail } from "./pages/PlanetDetail";
 import { LunarGeology } from "./pages/LunarGeology";
 import { NeuroSpaceResearch } from "./pages/NeuroSpaceResearch";
+import { SpaceAGIDoctrine } from "./pages/SpaceAGIDoctrine";
 import { FutureSpaceCivilization } from "./pages/FutureSpaceCivilization";
 import { Next100Years } from "./pages/Next100Years";
 import { Welcome } from "./pages/Welcome";
 import { NotFound } from "./pages/NotFound";
+import { ChatWidget } from "./components/ChatWidget";
 
 function App() {
   return (
@@ -78,6 +80,7 @@ function App() {
           <Route path="/research/neuro-space" component={NeuroSpaceResearch} />
           <Route path="/research/future-civilization" component={FutureSpaceCivilization} />
           <Route path="/research/next-100-years" component={Next100Years} />
+          <Route path="/research/space-agi-doctrine" component={SpaceAGIDoctrine} />
           <Route path="/welcome" component={Welcome} />
           <Route path="/learn/aerospace" component={AerospaceReference} />
           <Route path="/formulas-library" component={FormulaLibrary} />
@@ -128,6 +131,7 @@ function App() {
         </Switch>
       </main>
       <Footer />
+      <ChatWidget />
     </div>
   );
 }
