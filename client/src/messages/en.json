@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Home",
+    "planets": "Planets",
+    "simulator": "Simulator",
+    "spaceAgiLab": "Space-AGI Lab",
+    "aerospace": "Aerospace",
+    "aiInSpace": "AI in Space",
+    "blog": "Blog",
+    "astrobot": "AstroBot",
+    "research": "Research",
+    "missions": "Missions",
+    "astronauts": "Astronauts",
+    "artifacts": "Brought Back",
+    "engineeringLab": "Engineering Lab",
+    "roadmap": "Roadmap",
+    "mathematics": "Mathematics"
+  },
+  "theme": {
+    "label": "Theme",
+    "customize": "Customize theme"
+  },
+  "lang": {
+    "label": "Language",
+    "searchPlaceholder": "Search language...",
+    "auto": "Auto (Browser)"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "trySimulator": "Try Simulator",
+    "askAstrobot": "Ask AstroBot",
+    "send": "Send",
+    "loading": "Loading..."
+  },
+  "astrobot": {
+    "title": "AstroBot",
+    "subtitle": "Orbital mechanics • Calculations • Simulator control • Quizzes",
+    "placeholder": "Ask AstroBot...",
+    "welcome": "Ask anything: \"Calculate orbital velocity at 400 km\", \"Quiz me on Kepler\", \"Add a LEO satellite\"",
+    "thinking": "Thinking...",
+    "sentActions": "Sent {count} simulator action(s)",
+    "error": "I couldn't connect to the AGI processor. Check your connection or try the local AstroBot mode.",
+    "agiMode": "AGI Mode ON",
+    "tryAgiMode": "Try AGI Mode"
+  },
+  "footer": {
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTitle": "Orbital Simulator Hub",
+    "heroSubtitle": "AI-powered space learning and orbital simulation"
+  },
+  "simulator": {
+    "title": "3D Orbit Simulator",
+    "addSatellite": "Add Satellite",
+    "leo": "LEO",
+    "meo": "MEO",
+    "geo": "GEO"
+  }
+}

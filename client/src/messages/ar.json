@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "planets": "الكواكب",
+    "simulator": "المحاكي",
+    "spaceAgiLab": "مختبر Space-AGI",
+    "aerospace": "الفضاء الجوي",
+    "aiInSpace": "الذكاء الاصطناعي في الفضاء",
+    "blog": "المدونة",
+    "astrobot": "أسترو بوت",
+    "research": "البحث",
+    "missions": "المهام",
+    "astronauts": "رواد الفضاء",
+    "artifacts": "ما جلب من الفضاء",
+    "engineeringLab": "مختبر الهندسة",
+    "roadmap": "خارطة الطريق",
+    "mathematics": "الرياضيات"
+  },
+  "theme": { "label": "المظهر", "customize": "تخصيص المظهر" },
+  "lang": { "label": "اللغة", "searchPlaceholder": "البحث عن لغة...", "auto": "تلقائي (المتصفح)" }
+}

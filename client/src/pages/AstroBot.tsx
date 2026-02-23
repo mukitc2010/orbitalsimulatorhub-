@@ -1,7 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "wouter";
+import { useLocale } from "../lib/LocaleContext";
 import { getAstroBotReplyLocal, ASTROBOT_FALLBACK } from "../astrobotKnowledge";
 import { generateAstroBotResponse } from "../lib/astrobotEngine";
+import { AstroBotChat } from "../components/astrobot/AstroBotChat";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -893,6 +895,7 @@ function extractCTAs(text: string): { label: string; query: string }[] {
 // ─── Main Component ───────────────────────────────────────────────────────────
 
 export function AstroBot() {
+  const [agiMode, setAgiMode] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     { role: "astrobot", text: WELCOME },
   ]);
@@ -902,6 +905,8 @@ export function AstroBot() {
   const [difficulty, setDifficulty] = useState<Difficulty>("beginner");
   const [showExamples, setShowExamples] = useState(true);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const [location] = useLocation();
+  const { locale } = useLocale();
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -965,8 +970,29 @@ export function AstroBot() {
         <p className="subhead max-w-xl mx-auto">
           Your space & orbital mechanics instructor. Ask anything about orbits, missions, planets, math, or how to use the simulator.
         </p>
+        <button
+          onClick={() => setAgiMode(!agiMode)}
+          className="mt-4 px-4 py-2 rounded-xl font-bold text-sm"
+          style={{
+            background: agiMode ? "var(--accent-cyan)" : "rgba(255,255,255,0.2)",
+            color: agiMode ? "#0f172a" : "white",
+            border: "2px solid rgba(255,255,255,0.5)",
+          }}
+        >
+          {agiMode ? "🧠 AGI Mode ON" : "🧠 Try AGI Mode"}
+        </button>
       </section>
 
+      {agiMode && (
+        <AstroBotChat
+          pageContext={location}
+          locale={locale}
+          onAction={(action) => window.dispatchEvent(new CustomEvent("astrobot-action", { detail: action }))}
+        />
+      )}
+
+      {!agiMode && (
+      <>
       {/* Mode Selector */}
       <div>
         <p className="text-xs font-semibold uppercase tracking-wide mb-2" style={{ color: "var(--text-muted)" }}>
@@ -1210,6 +1236,7 @@ export function AstroBot() {
           If AstroBot isn't 100% sure about something, it will say so and suggest verifying via official mission data.
         </p>
       </div>
+      </> )}
     </div>
   );
 }

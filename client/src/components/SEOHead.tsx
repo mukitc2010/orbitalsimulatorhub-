@@ -1,9 +1,10 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "wouter";
 import { getSEOConfig } from "../data/seo-config";
+import { pathWithLocale, pathWithoutLocale } from "../lib/localeRoutes";
 
-const DEFAULT_TITLE = "Free 3D Orbit Simulator — Try LEO, MEO, GEO Now | NASA & Space Study";
-const DEFAULT_DESCRIPTION = "Try the #1 free orbit simulator. Add satellites, watch ISS & Starlink in 3D. 500+ astronauts, all 8 planets, NASA missions. No signup — start now.";
+const DEFAULT_TITLE = "Orbital Mechanics Simulator — Free 3D Satellite Orbit Simulator | NASA & Space Study";
+const DEFAULT_DESCRIPTION = "Free orbital mechanics simulator. Add LEO, MEO, GEO satellites. Watch ISS at 7.66 km/s, Starlink, GPS in 3D. 500+ astronauts, nuclear rockets, Mars missions. No signup.";
 const SITE_URL = "https://www.orbitalsimulatorhub.com";
 const SITE_NAME = "Orbital Simulator Hub";
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
@@ -19,11 +20,15 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.content = content;
 }
 
-function setLink(rel: string, href: string) {
-  let el = document.querySelector(`link[rel="${rel}"]`) as HTMLLinkElement | null;
+function setLink(rel: string, href: string, hreflang?: string) {
+  const selector = hreflang
+    ? `link[rel="${rel}"][hreflang="${hreflang}"]`
+    : `link[rel="${rel}"]`;
+  let el = document.querySelector(selector) as HTMLLinkElement | null;
   if (!el) {
     el = document.createElement("link");
     el.setAttribute("rel", rel);
+    if (hreflang) el.setAttribute("hreflang", hreflang);
     document.head.appendChild(el);
   }
   el.href = href;
@@ -75,6 +80,14 @@ export function SEOHead() {
     setMeta("twitter:image", OG_IMAGE);
 
     setLink("canonical", fullUrl);
+
+    const basePath = pathWithoutLocale(cleanPath);
+    const enUrl = `${SITE_URL}${pathWithLocale(basePath, "en")}`;
+    setLink("alternate", enUrl, "en");
+    setLink("alternate", enUrl, "x-default");
+    for (const loc of ["es", "fr", "de", "it", "pt", "ru", "ar", "zh", "ja", "ko"]) {
+      setLink("alternate", `${SITE_URL}${pathWithLocale(basePath, loc)}`, loc);
+    }
 
     const breadcrumbItems: { name: string; item: string }[] = [
       { name: "Home", item: SITE_URL + "/" },

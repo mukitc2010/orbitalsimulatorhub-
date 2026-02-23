@@ -2,6 +2,8 @@ import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { APP_NAME } from "../const";
 import { ThemeSelector } from "./ThemeSelector";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useLocale } from "../lib/LocaleContext";
 
 const MISSION_SUBNAV = [
   { path: "/missions", label: "Missions", title: "Space missions — Apollo, Gemini, Shuttle" },
@@ -27,16 +29,19 @@ const NAV = [
   { path: "/research", label: "Research", title: "NASA, Newton, orbital mechanics — for students and PhD researchers" },
 ];
 
-function isMissionsActive(location: string) {
-  return location === "/missions" || location.startsWith("/missions/") || location === "/astronauts" || location.startsWith("/astronauts/") || location === "/artifacts";
+function isMissionsActive(location: string, pathWithoutLocaleFn: (p: string) => string) {
+  const base = pathWithoutLocaleFn(location);
+  return base === "/missions" || base.startsWith("/missions/") || base === "/astronauts" || base.startsWith("/astronauts/") || base === "/artifacts";
 }
 
-function isSpaceAgiActive(location: string) {
-  return location === "/research/space-agi-lab" || location === "/research/space-agi-roadmap" || location === "/research/space-agi-math";
+function isSpaceAgiActive(location: string, pathWithoutLocaleFn: (p: string) => string) {
+  const base = pathWithoutLocaleFn(location);
+  return base === "/research/space-agi-lab" || base === "/research/space-agi-roadmap" || base === "/research/space-agi-math";
 }
 
 export function NavigationHeader() {
   const [location] = useLocation();
+  const { localizedPath, pathWithoutLocale } = useLocale();
   const [missionsOpen, setMissionsOpen] = useState(false);
   const [spaceAgiOpen, setSpaceAgiOpen] = useState(false);
   const missionsRef = useRef<HTMLDivElement>(null);
@@ -65,11 +70,12 @@ export function NavigationHeader() {
     >
       <div className="container mx-auto px-4 py-3 max-w-7xl flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-2">
             <ThemeSelector />
+            <LanguageSwitcher />
           </div>
           <Link
-            href="/"
+            href={localizedPath("/")}
             className="font-bold text-lg font-mono-tech transition"
             style={{ color: "var(--text-primary)" }}
           >
@@ -79,7 +85,7 @@ export function NavigationHeader() {
 
         <nav className="flex flex-wrap gap-1 items-center">
           {NAV.slice(0, 2).map(({ path, label, title }) => (
-            <NavLink key={path} path={path} label={label} title={title} location={location} />
+            <NavLink key={path} path={localizedPath(path)} label={label} title={title} location={location} pathWithoutLocale={pathWithoutLocale} />
           ))}
           <div ref={missionsRef} className="relative">
             <button
@@ -87,7 +93,7 @@ export function NavigationHeader() {
               onMouseEnter={() => setMissionsOpen(true)}
               className="px-3 py-2 rounded-lg font-medium transition text-sm flex items-center gap-1"
               style={
-                isMissionsActive(location)
+                isMissionsActive(location, pathWithoutLocale)
                   ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
                   : { color: "var(--text-secondary)" }
               }
@@ -104,11 +110,11 @@ export function NavigationHeader() {
                 onMouseLeave={() => setMissionsOpen(false)}
               >
                 {MISSION_SUBNAV.map(({ path, label, title }) => (
-                  <Link key={path} href={path} onClick={() => setMissionsOpen(false)}>
+                  <Link key={path} href={localizedPath(path)} onClick={() => setMissionsOpen(false)}>
                     <a
                       className="block px-4 py-2 text-sm font-medium transition"
                       style={{
-                        color: location === path || (path === "/missions" && location.startsWith("/missions")) ? "var(--accent-cyan)" : "var(--text-primary)",
+                        color: pathWithoutLocale(location) === path || (path === "/missions" && pathWithoutLocale(location).startsWith("/missions")) ? "var(--accent-cyan)" : "var(--text-primary)",
                       }}
                     >
                       {label}
@@ -124,7 +130,7 @@ export function NavigationHeader() {
               onMouseEnter={() => setSpaceAgiOpen(true)}
               className="px-3 py-2 rounded-lg font-medium transition text-sm flex items-center gap-1"
               style={
-                isSpaceAgiActive(location)
+                isSpaceAgiActive(location, pathWithoutLocale)
                   ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
                   : { color: "var(--text-secondary)" }
               }
@@ -141,11 +147,11 @@ export function NavigationHeader() {
                 onMouseLeave={() => setSpaceAgiOpen(false)}
               >
                 {SPACE_AGI_SUBNAV.map(({ path, label, title }) => (
-                  <Link key={path} href={path} onClick={() => setSpaceAgiOpen(false)}>
+                  <Link key={path} href={localizedPath(path)} onClick={() => setSpaceAgiOpen(false)}>
                     <a
                       className="block px-4 py-2 text-sm font-medium transition"
                       style={{
-                        color: location === path ? "var(--accent-cyan)" : "var(--text-primary)",
+                        color: pathWithoutLocale(location) === path ? "var(--accent-cyan)" : "var(--text-primary)",
                       }}
                     >
                       {label}
@@ -156,7 +162,7 @@ export function NavigationHeader() {
             )}
           </div>
           {NAV.slice(2).filter((n) => n.path !== "/research/space-agi-lab").map(({ path, label, title }) => (
-            <NavLink key={path} path={path} label={label} title={title} location={location} />
+            <NavLink key={path} path={localizedPath(path)} label={label} title={title} location={location} pathWithoutLocale={pathWithoutLocale} />
           ))}
         </nav>
       </div>
@@ -164,8 +170,10 @@ export function NavigationHeader() {
   );
 }
 
-function NavLink({ path, label, title, location }: { path: string; label: string; title: string; location: string }) {
-  const active = location === path || (path !== "/" && location.startsWith(path)) || (path === "/research/space-agi-lab" && location === "/research/space-agi-roadmap");
+function NavLink({ path, label, title, location, pathWithoutLocale }: { path: string; label: string; title: string; location: string; pathWithoutLocale: (p: string) => string }) {
+  const base = pathWithoutLocale(location);
+  const basePath = pathWithoutLocale(path);
+  const active = base === basePath || (basePath !== "/" && base.startsWith(basePath)) || (basePath === "/research/space-agi-lab" && base === "/research/space-agi-roadmap");
   return (
     <Link href={path} title={title}>
       <a

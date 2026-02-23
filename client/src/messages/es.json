@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "planets": "Planetas",
+    "simulator": "Simulador",
+    "spaceAgiLab": "Laboratorio Space-AGI",
+    "aerospace": "Aeroespacial",
+    "aiInSpace": "IA en el Espacio",
+    "blog": "Blog",
+    "astrobot": "AstroBot",
+    "research": "Investigación",
+    "missions": "Misiones",
+    "astronauts": "Astronautas",
+    "artifacts": "Traído del Espacio",
+    "engineeringLab": "Laboratorio de Ingeniería",
+    "roadmap": "Hoja de Ruta",
+    "mathematics": "Matemáticas"
+  },
+  "theme": { "label": "Tema", "customize": "Personalizar tema" },
+  "lang": { "label": "Idioma", "searchPlaceholder": "Buscar idioma...", "auto": "Auto (Navegador)" },
+  "common": { "learnMore": "Saber más", "trySimulator": "Probar Simulador", "askAstrobot": "Preguntar a AstroBot", "send": "Enviar", "loading": "Cargando..." },
+  "astrobot": {
+    "title": "AstroBot",
+    "subtitle": "Mecánica orbital • Cálculos • Control del simulador • Cuestionarios",
+    "placeholder": "Pregunta a AstroBot...",
+    "welcome": "Pregunta lo que quieras: \"Calcula la velocidad orbital a 400 km\", \"Examen sobre Kepler\", \"Añadir satélite LEO\"",
+    "thinking": "Pensando...",
+    "sentActions": "Enviadas {count} acción(es) del simulador",
+    "error": "No pude conectar con el procesador AGI. Comprueba tu conexión o prueba el modo AstroBot local.",
+    "agiMode": "Modo AGI activado",
+    "tryAgiMode": "Probar modo AGI"
+  }
+}

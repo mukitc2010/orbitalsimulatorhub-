@@ -1,8 +1,10 @@
 /**
  * AstroBot Knowledge API endpoints for n8n automation
  * REST API endpoints to update AstroBot's knowledge base
+ * + AstroBot AGI Chat endpoint
  */
 import express from "express";
+import { processAstroBot } from "../../lib/astrobot/brain";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -69,6 +71,26 @@ export function createAstroBotRouter() {
   // Health check
   router.get("/health", (req, res) => {
     res.json({ status: "ok", service: "astrobot-api" });
+  });
+
+  // AstroBot AGI Chat
+  router.post("/chat", async (req, res) => {
+    const body = req.body as { message?: string; userId?: string; pageContext?: string; history?: Array<{ role: string; content: string }>; locale?: string };
+    const message = typeof body?.message === "string" ? body.message.trim() : "";
+    if (!message) return res.status(400).json({ error: "Message is required" });
+    try {
+      const result = await processAstroBot({
+        message,
+        userId: body.userId || "anonymous",
+        pageContext: body.pageContext,
+        history: Array.isArray(body.history) ? body.history : [],
+        locale: body.locale || "en",
+      });
+      return res.json({ reply: result.reply, actions: result.actions, memoryPatch: result.memoryPatch });
+    } catch (err) {
+      console.error("AstroBot AGI error:", err);
+      return res.status(500).json({ error: "AstroBot encountered an error. Please try again." });
+    }
   });
 
   // Add AstroBot knowledge

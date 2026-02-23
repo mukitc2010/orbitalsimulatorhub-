@@ -2,6 +2,8 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { ThemeProvider } from "./lib/ThemeContext";
+import { LocaleProvider } from "./lib/LocaleContext";
+import "./lib/i18n";
 import App from "./App";
 import "./index.css";
 
@@ -23,7 +25,9 @@ if (!rootEl) {
       <StrictMode>
         <ErrorBoundary>
           <ThemeProvider>
-            <App />
+            <LocaleProvider>
+              <App />
+            </LocaleProvider>
           </ThemeProvider>
         </ErrorBoundary>
       </StrictMode>
