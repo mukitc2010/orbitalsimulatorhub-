@@ -11,6 +11,66 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "artemis-ii-launch-pad-ops-february-2026-nasa-begins-countdown",
+    title: "Artemis II Launch Pad Ops: NASA Begins Countdown After Successful Fuel Test",
+    excerpt: "NASA completed a successful wet dress rehearsal for Artemis II on Feb 19, 2026. Over 700,000 gallons of propellant loaded. Crew in quarantine for March launch. ISS research contributed to Orion life support.",
+    content: `**Artemis II: Launch Pad Operations Underway**
+
+NASA successfully completed a wet dress rehearsal for Artemis II on February 19, 2026, loading over 700,000 gallons of liquid propellant into the Space Launch System (SLS) rocket and demonstrating the full launch countdown. The test proved successful for hydrogen fueling operations—a critical milestone after previous attempts revealed seal issues.
+
+---
+
+**What Happened**
+
+- **Wet dress rehearsal:** Engineers loaded liquid hydrogen and liquid oxygen into the SLS core stage and upper stage
+- **New seals:** Hydrogen gas concentrations stayed within safe limits after installing improved seals
+- **50-hour countdown:** The test validated the countdown sequence from T-50 hours through to ignition
+- **Rollback planned:** NASA will rollback the rocket and spacecraft for additional work on the flight termination system before the actual launch
+
+---
+
+**Artemis II Crew**
+
+The four astronauts have begun quarantine (February 20) to prepare for a March launch window:
+
+- **Commander Reid Wiseman** (NASA)
+- **Pilot Victor Glover** (NASA)
+- **Mission Specialist Christina Koch** (NASA)
+- **Mission Specialist Jeremy Hansen** (Canadian Space Agency)
+
+This will be the first crewed Moon mission in over 50 years—a 10-day lunar flyby that paves the way for Artemis III landings.
+
+---
+
+**ISS Research → Artemis**
+
+Research on the International Space Station has directly contributed to Artemis II. Testing aboard the ISS helped develop Orion's life support and safety systems:
+
+- Radiation sensing equipment
+- Carbon dioxide removal systems
+- Water-based fire extinguishers
+- Emergency navigation systems
+
+---
+
+**Also in February 2026**
+
+- **SpaceX Crew-12** launched to the ISS—four crew members began a science expedition
+- **Private astronaut missions:** NASA selected Vast and Axiom Space for the fifth and sixth private astronaut missions to the station (targeted 2027)
+
+---
+
+**Learn More**
+
+- [Orbit simulator](/simulator) — see how SLS will send Orion to the Moon
+- [Mission timeline](/missions/timeline) — from Sputnik to Artemis
+- [Space News](/space-news) — daily updates`,
+    category: "nasa-news",
+    date: "2026-02-23",
+    tags: ["Artemis II", "NASA", "SLS", "Orion", "Moon mission", "ISS", "Crew-12", "wet dress rehearsal"],
+    seoKeywords: "Artemis II 2026, NASA Artemis launch, SLS wet dress rehearsal, Artemis II crew, Moon mission 2026",
+  },
+  {
     slug: "how-infinity-math-affects-aerospace-engineering",
     title: "How Infinity Math Affects Aerospace Engineering",
     excerpt: "Limits, infinite series, and unbounded behavior shape orbital mechanics, escape velocity, control theory, and numerical methods. How aerospace engineers use infinity.",

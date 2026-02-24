@@ -35,7 +35,66 @@ export interface ResearchContent {
 }
 
 export const RESEARCH_CONTENT: ResearchContent[] = [
-  // Example entries - will be auto-populated daily
+  {
+    id: "research-003",
+    date: "2026-02-23",
+    title: "MDP and MPC for Autonomous Satellite Collision Avoidance",
+    type: "paper-summary",
+    category: "orbital-mechanics",
+    summary: "2025–2026 research on Markov Decision Process (MDP) and Model Predictive Control (MPC) for autonomous satellite collision avoidance. Covers reinforcement learning, decentralized control, and propellant-optimal maneuvers.",
+    content: `# MDP and MPC for Autonomous Satellite Collision Avoidance
+
+## Overview
+
+Recent research (2025–2026) advances autonomous satellite collision avoidance using Markov Decision Processes (MDPs), Model Predictive Control (MPC), and reinforcement learning. These methods enable scalable, fuel-efficient collision avoidance for mega-constellations like Starlink.
+
+## Key Approaches
+
+### 1. MDP with Reinforcement Learning
+
+MDP frameworks optimize early maneuver decisions for collision avoidance maneuvers (CAMs). Policy gradient algorithms minimize propellant consumption while maintaining acceptable collision risk. Compared to conventional cut-off policies, MDP-based approaches show significant propellant savings.
+
+### 2. Decentralized MPC
+
+Decentralized MDP-based approaches generate optimal maneuver policies online with low computational cost—critical for large satellite constellations. They compare favorably to traditional rule-based collision avoidance.
+
+### 3. Swarm Intelligence
+
+Multi-agent systems and distributed algorithms address collision-free trajectory planning in satellite constellations. Decentralized control improves scalability and resilience over centralized systems.
+
+## Mathematical Framework
+
+### MPC Formulation
+
+\`\`\`
+x_{k+1} = A x_k + B u_k
+min Σ (x_k - x_ref)^T Q (x_k - x_ref) + u_k^T R u_k
+\`\`\`
+
+### MDP State-Action
+
+- **State:** Relative position, velocity, covariance (uncertainty)
+- **Action:** Thrust magnitude and direction
+- **Reward:** -propellant_used - collision_risk_penalty
+
+## Applications
+
+- Starlink and mega-constellation operations
+- Space traffic management
+- On-orbit servicing and debris avoidance
+- Space-AGI autonomous navigation
+
+## References
+
+See NASA Orbital Debris Program, ESA Space Debris Office, and recent arXiv/IEEE publications on autonomous collision avoidance.`,
+    keywords: ["MDP", "MPC", "collision avoidance", "satellite", "reinforcement learning", "autonomous", "Starlink", "space traffic"],
+    references: [
+      { title: "NASA Orbital Debris Program Office", url: "https://orbitaldebris.jsc.nasa.gov/", source: "NASA.gov", type: "website" },
+      { title: "ESA Space Debris Office", url: "https://www.esa.int/Safety_Security/Space_Debris", source: "ESA", type: "website" }
+    ],
+    relatedTopics: ["Space-AGI", "orbital mechanics", "MPC", "collision probability"],
+    seoKeywords: "satellite collision avoidance MDP MPC, autonomous collision avoidance, reinforcement learning space, Starlink collision avoidance",
+  },
   {
     id: "research-001",
     date: "2026-02-14",

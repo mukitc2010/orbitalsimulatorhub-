@@ -16,6 +16,16 @@ export interface DailyTopic {
 
 export const DAILY_TOPICS: DailyTopic[] = [
   {
+    id: "artemis-ii-launch-pad-2026-02-23",
+    date: "2026-02-23",
+    title: "Artemis II: Launch Pad Ops Begin",
+    icon: "🌙",
+    category: "nasa",
+    description: "NASA completed wet dress rehearsal Feb 19. 700,000+ gallons propellant loaded. Crew in quarantine for March launch. First crewed Moon mission in 50+ years.",
+    learnMoreUrl: "/blog/artemis-ii-launch-pad-ops-february-2026-nasa-begins-countdown",
+    keywords: ["Artemis II", "NASA", "SLS", "Moon mission", "wet dress rehearsal"],
+  },
+  {
     id: "nuclear-rockets-draco-2026-02-22",
     date: "2026-02-22",
     title: "Nuclear Rockets to Mars: DRACO",
