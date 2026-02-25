@@ -26,14 +26,26 @@ const QUICK_LINKS = [
   { href: "/space-shop", label: "Space Shop" },
 ];
 
-const TODAYS_UPDATES = [
-  { href: "/blog/what-is-space-agi-why-it-matters", label: "🆕 What Is Space AGI?", desc: "AI satellites, autonomous spacecraft, five pillars, MPC, LQR" },
-  { href: "/blog/vis-viva-equation-explained-master-formula-orbits", label: "🆕 Vis-Viva Equation", desc: "Master formula for all orbits — derivation, ISS, GPS" },
-  { href: "/space-news", label: "📰 Daily Space News", desc: "NASA, Artemis, SpaceX, James Webb — updated daily" },
-  { href: "/research/space-agi-lab", label: "🧠 Space-AGI Lab", desc: "5 pillars, autonomous spacecraft, decision intelligence" },
-  { href: "/learn/quantum-space", label: "⚛ Quantum & Space", desc: "Quantum physics, atomic clocks, GPS, quantum sensors" },
-  { href: "/blog", label: "📚 All Articles", desc: "Space engineering, AI, formulas — fresh content every day" },
-];
+// Sort by date descending so newest is first (content-agent appends to end of array)
+const LATEST_POSTS = [...BLOG_POSTS].sort((a, b) => b.date.localeCompare(a.date));
+
+// Build dynamic updates: latest 3 blog posts first, then static links
+function getTodaysUpdates() {
+  const latest = LATEST_POSTS.slice(0, 3).map((p) => ({
+    href: `/blog/${p.slug}`,
+    label: `🆕 ${p.title.length > 45 ? p.title.slice(0, 42) + "…" : p.title}`,
+    desc: p.excerpt.slice(0, 80) + (p.excerpt.length > 80 ? "…" : ""),
+    isNew: true,
+  }));
+  const staticLinks = [
+    { href: "/space-news", label: "📰 Daily Space News", desc: "NASA, Artemis, SpaceX, James Webb — updated daily", isNew: false },
+    { href: "/research/space-agi-lab", label: "🧠 Space-AGI Lab", desc: "5 pillars, autonomous spacecraft, decision intelligence", isNew: false },
+    { href: "/learn/quantum-space", label: "⚛ Quantum & Space", desc: "Quantum physics, atomic clocks, GPS, quantum sensors", isNew: false },
+    { href: "/blog", label: "📚 All Articles", desc: "Space engineering, AI, formulas — fresh content every day", isNew: false },
+    { href: "/space-shop", label: "🛒 Space Shop", desc: "NASA t-shirts, toys, books — verified Amazon", isNew: false },
+  ];
+  return [...latest, ...staticLinks];
+}
 
 const EXPLORE_BY_TOPIC = [
   { href: "/blog/category/space-agi", icon: "🧠", title: "Space AGI" },
@@ -53,13 +65,14 @@ export function Home() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      {/* Today's Updates — top of page */}
+      {/* Today's Updates — top of page, latest posts highlighted */}
       <section className="rounded-xl border-2 p-4 mb-6" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(0,217,255,0.06) 100%)", borderColor: "var(--accent-cyan)" }}>
-        <h3 className="text-sm font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-cyan)" }}>✨ New Posts • Daily News • Space Engineering • AI • Quantum</h3>
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-cyan)" }}>✨ Latest Updates • New Posts Every 6h • Space Engineering • AI • Quantum</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-          {TODAYS_UPDATES.map((u) => (
+          {getTodaysUpdates().map((u) => (
             <Link key={u.href} href={u.href}>
-              <a className="block p-3 rounded-lg transition hover:opacity-90" style={{ background: "var(--bg-surface)", border: "1px solid var(--border-color)" }}>
+              <a className="block p-3 rounded-lg transition hover:opacity-90 relative" style={{ background: u.isNew ? "rgba(0,217,255,0.08)" : "var(--bg-surface)", border: u.isNew ? "1px solid var(--accent-cyan)" : "1px solid var(--border-color)" }}>
+                {u.isNew && <span className="absolute top-2 right-2 text-[10px] font-bold px-1.5 py-0.5 rounded" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>NEW</span>}
                 <span className="font-bold text-sm" style={{ color: "var(--accent-cyan)" }}>{u.label} →</span>
                 <span className="block text-xs mt-0.5" style={{ color: "var(--text-secondary)" }}>{u.desc}</span>
               </a>
@@ -223,20 +236,24 @@ export function Home() {
           Space AGI, space engineering formulas, NASA news, quantum physics, AI in space. Everything futuristic and helpful.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {BLOG_POSTS.slice(0, 6).map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`}>
-              <a className="block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.02]" style={{ background: "var(--bg-surface)", borderColor: "var(--border-color)" }}>
-                <div className="aspect-video w-full bg-slate-200">
-                  <img src={getBlogImage(post)} alt="" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <div className="p-4">
-                  <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
-                  <h3 className="font-semibold text-sm mt-1 line-clamp-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
-                  <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</p>
-                </div>
-              </a>
-            </Link>
-          ))}
+          {LATEST_POSTS.slice(0, 6).map((post, i) => {
+            const isNewest = i === 0;
+            return (
+              <Link key={post.slug} href={`/blog/${post.slug}`}>
+                <a className="block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.02] relative" style={{ background: isNewest ? "rgba(0,217,255,0.06)" : "var(--bg-surface)", borderColor: isNewest ? "var(--accent-cyan)" : "var(--border-color)" }}>
+                  {isNewest && <span className="absolute top-2 left-2 z-10 text-xs font-bold px-2 py-0.5 rounded" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>LATEST</span>}
+                  <div className="aspect-video w-full bg-slate-200">
+                    <img src={getBlogImage(post)} alt="" className="w-full h-full object-cover" loading="lazy" />
+                  </div>
+                  <div className="p-4">
+                    <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
+                    <h3 className="font-semibold text-sm mt-1 line-clamp-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
+                    <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</p>
+                  </div>
+                </a>
+              </Link>
+            );
+          })}
         </div>
         <div className="flex flex-wrap gap-2 mt-4">
           <Link href="/blog/category/space-agi"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</a></Link>
