@@ -7,7 +7,7 @@ import { AMAZON_TAG } from "../data/affiliateBooks";
 
 const RECOMMENDED_BOOKS = [
   { name: "Astrophysics for People in a Hurry", asin: "0393609391" },
-  { name: "Orbital Mechanics for Engineering Students", asin: "B00B9Y4B8M" },
+  { name: "Orbital Mechanics for Engineering Students", asin: "0080977472" },
 ];
 
 export function SupportSection() {

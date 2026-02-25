@@ -19,7 +19,7 @@ export const AFFILIATE_BOOKS_BY_CATEGORY: Record<string, AffiliateBook[]> = {
     { name: "Cosmos", asin: "0345539435", desc: "Carl Sagan" },
   ],
   "satellite-tutorials": [
-    { name: "Orbital Mechanics for Engineering Students", asin: "B00B9Y4B8M", desc: "Howard Curtis — university textbook" },
+    { name: "Orbital Mechanics for Engineering Students", asin: "0080977472", desc: "Howard Curtis — university textbook" },
     { name: "Fundamentals of Spacecraft Attitude Determination and Control", asin: "1493903149", desc: "Markley & Crassidis" },
     { name: "Spacecraft Systems Engineering", asin: "1119974665", desc: "Fortescue, Swinerd & Stark" },
   ],
@@ -34,7 +34,7 @@ export const AFFILIATE_BOOKS_BY_CATEGORY: Record<string, AffiliateBook[]> = {
     { name: "Rocket Propulsion Elements", asin: "1118753658", desc: "Sutton & Biblarz" },
   ],
   "quantum-physics": [
-    { name: "Quantum Physics for Beginners", asin: "B09B8L1Q11", desc: "Accessible intro" },
+    { name: "Quantum Physics for Dummies", asin: "1118460820", desc: "Steven Holzner — accessible intro" },
     { name: "The Quantum Universe", asin: "0306822712", desc: "Cox & Forshaw" },
     { name: "Six Easy Pieces", asin: "0465025277", desc: "Richard Feynman" },
   ],
@@ -44,7 +44,7 @@ export const AFFILIATE_BOOKS_BY_CATEGORY: Record<string, AffiliateBook[]> = {
     { name: "Deep Learning", asin: "0262035619", desc: "Goodfellow, Bengio, Courville" },
   ],
   "space-engineering": [
-    { name: "Orbital Mechanics for Engineering Students", asin: "B00B9Y4B8M", desc: "Howard Curtis" },
+    { name: "Orbital Mechanics for Engineering Students", asin: "0080977472", desc: "Howard Curtis" },
     { name: "Fundamentals of Astrodynamics", asin: "0486600610", desc: "Bate, Mueller, White" },
     { name: "Spacecraft Systems Engineering", asin: "1119974665", desc: "Fortescue, Swinerd, Stark" },
   ],
