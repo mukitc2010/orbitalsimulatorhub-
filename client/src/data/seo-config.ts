@@ -178,6 +178,14 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     ogTitle: "Space Blog & News — Daily Space Updates | Orbital Simulator Hub",
     lastUpdated: "2026-02-23T00:00:00Z",
   },
+  "/recommended-books": {
+    path: "/recommended-books",
+    title: "Recommended Space & Aerospace Books — Orbital Mechanics, Astrophysics | Orbital Simulator Hub",
+    description: "Curated space, aerospace, and physics books for students and enthusiasts. Orbital mechanics, astrophysics, NASA history, quantum physics. Purchases support OrbitalSimulatorHub.",
+    keywords: "space books, orbital mechanics books, astrophysics books, aerospace engineering books, NASA books, space science books, physics books for students, recommended space books",
+    ogTitle: "Recommended Space & Aerospace Books | Orbital Simulator Hub",
+    lastUpdated: "2026-02-25T00:00:00Z",
+  },
   "/learn/nasa-study-guide": {
     path: "/learn/nasa-study-guide",
     title: "Space Study Guide – NASA Missions, Aerospace Engineering | Orbital Simulator Hub",
@@ -382,10 +390,14 @@ export function getSEOConfig(path: string): SEOConfig | null {
   if (blogCategoryMatch) {
     const cat = blogCategoryMatch[1];
     const labels: Record<string, { title: string; desc: string; kw: string }> = {
+      "space-agi": { title: "Space AGI", desc: "AI satellites, autonomous spacecraft, Space AGI. MPC, LQR, collision avoidance. The future of space intelligence.", kw: "Space AGI, AI satellites, autonomous spacecraft, orbital mechanics AI, swarm satellites, collision avoidance" },
+      "space-engineering": { title: "Space Engineering", desc: "Orbital mechanics formulas: vis-viva, Tsiolkovsky, Hohmann, Kepler. Aerospace engineering explained.", kw: "space engineering, orbital mechanics formulas, vis-viva, Tsiolkovsky, Hohmann transfer, aerospace formulas" },
       "nasa-news": { title: "NASA News", desc: "Latest NASA mission news: Artemis, ISS, Mars rovers, James Webb, SpaceX. Daily updates.", kw: "NASA news, Artemis, ISS, Mars rover, James Webb, SpaceX, space mission news" },
       "space-facts": { title: "Space Facts", desc: "Space facts and science: orbital mechanics, satellites, planets, astronomy. Learn something new every day.", kw: "space facts, space science, orbital mechanics, satellite facts, astronomy facts" },
       "satellite-tutorials": { title: "Satellite Tutorials", desc: "How satellites work: GPS, ISS, Starlink, LEO MEO GEO. Step-by-step tutorials for students and space fans.", kw: "satellite tutorial, how satellites work, GPS, ISS, Starlink, orbital mechanics tutorial" },
       "astronomy-lessons": { title: "Astronomy Lessons", desc: "Astronomy lessons: solar system, stars, galaxies, black holes. Free space education.", kw: "astronomy lessons, solar system, stars, galaxies, space education" },
+      aerodynamics: { title: "Aerodynamics", desc: "Aerodynamics and flight: re-entry, hypersonic, rocket design. Aerospace engineering.", kw: "aerodynamics, aerospace engineering, re-entry, hypersonic flight" },
+      "quantum-physics": { title: "Quantum & Space", desc: "Quantum physics in space: atomic clocks, GPS, quantum sensors. NASA technology.", kw: "quantum physics space, atomic clocks, GPS, quantum sensors" },
     };
     const info = labels[cat] || { title: cat.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()), desc: `Articles in ${cat}.`, kw: cat };
     return {

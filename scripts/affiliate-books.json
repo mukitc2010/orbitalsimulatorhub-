@@ -1,0 +1,49 @@
+{
+  "tag": "hubdepot-20",
+  "categories": {
+    "nasa-news": [
+      { "name": "NASA Space Shuttle: 40th Anniversary", "asin": "0762499085" },
+      { "name": "The Right Stuff", "asin": "0312857043" },
+      { "name": "Failure Is Not an Option", "asin": "1439148813" }
+    ],
+    "space-facts": [
+      { "name": "Astrophysics for People in a Hurry", "asin": "0393609391" },
+      { "name": "A Brief History of Time", "asin": "0553380168" },
+      { "name": "Cosmos", "asin": "0345539435" }
+    ],
+    "satellite-tutorials": [
+      { "name": "Orbital Mechanics for Engineering Students", "asin": "B00B9Y4B8M" },
+      { "name": "Fundamentals of Spacecraft Attitude Determination and Control", "asin": "1493903149" },
+      { "name": "Spacecraft Systems Engineering", "asin": "1119974665" }
+    ],
+    "astronomy-lessons": [
+      { "name": "Astrophysics for People in a Hurry", "asin": "0393609391" },
+      { "name": "The Elegant Universe", "asin": "039333646X" },
+      { "name": "Death by Black Hole", "asin": "0393350381" }
+    ],
+    "aerodynamics": [
+      { "name": "Introduction to Flight", "asin": "1260226844" },
+      { "name": "Fundamentals of Aerodynamics", "asin": "1259129918" },
+      { "name": "Rocket Propulsion Elements", "asin": "1118753658" }
+    ],
+    "quantum-physics": [
+      { "name": "Quantum Physics for Beginners", "asin": "B09B8L1Q11" },
+      { "name": "The Quantum Universe", "asin": "0306822712" },
+      { "name": "Six Easy Pieces", "asin": "0465025277" }
+    ],
+    "space-agi": [
+      { "name": "Artificial Intelligence: A Modern Approach", "asin": "0134610997" },
+      { "name": "Reinforcement Learning", "asin": "0262039249" },
+      { "name": "Deep Learning", "asin": "0262035619" }
+    ],
+    "space-engineering": [
+      { "name": "Orbital Mechanics for Engineering Students", "asin": "B00B9Y4B8M" },
+      { "name": "Fundamentals of Astrodynamics", "asin": "0486600610" },
+      { "name": "Spacecraft Systems Engineering", "asin": "1119974665" }
+    ]
+  },
+  "fallback": [
+    { "name": "Astrophysics for People in a Hurry", "asin": "0393609391" },
+    { "name": "Orbital Mechanics for Engineering Students", "asin": "B00B9Y4B8M" }
+  ]
+}

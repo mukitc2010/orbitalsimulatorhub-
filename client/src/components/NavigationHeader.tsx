@@ -23,6 +23,7 @@ const SPACE_AGI_SUBNAV = [
 
 const BLOG_SUBNAV = [
   { path: "/blog", label: "Blog", title: "Daily space news, space facts, satellite tutorials" },
+  { path: "/recommended-books", label: "Books", title: "Recommended space & aerospace books — affiliate" },
   { path: "/learn/aerospace", label: "Aerospace", title: "Aerospace reference for students and researchers" },
   { path: "/ai-in-aerospace", label: "AI in Space", title: "How AI is transforming aerospace and space exploration" },
   { path: "/research", label: "Research", title: "NASA, Newton, orbital mechanics — for students and PhD researchers" },
@@ -51,7 +52,8 @@ function isSpaceAgiActive(location: string) {
 }
 
 function isBlogActive(location: string) {
-  return location === "/blog" || location.startsWith("/blog/") || location === "/learn/aerospace" || location.startsWith("/learn/aerospace")
+  return location === "/blog" || location.startsWith("/blog/") || location === "/recommended-books"
+    || location === "/learn/aerospace" || location.startsWith("/learn/aerospace")
     || location === "/ai-in-aerospace" || location === "/ai-in-space" || location === "/research" || location.startsWith("/research/");
 }
 
@@ -108,7 +110,7 @@ export function NavigationHeader() {
         </div>
 
         <nav className="flex flex-wrap gap-1 items-center">
-          {NAV.slice(0, 2).map(({ path, label, title, subnav }) => (
+          {NAV.slice(0, 3).map(({ path, label, title, subnav }) => (
             subnav ? null : <NavLink key={path} path={path} label={label} title={title} location={location} />
           ))}
           <div ref={simulatorRef} className="relative">

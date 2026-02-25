@@ -1,15 +1,143 @@
+export type BlogCategory =
+  | "nasa-news"
+  | "space-facts"
+  | "satellite-tutorials"
+  | "astronomy-lessons"
+  | "aerodynamics"
+  | "quantum-physics"
+  | "space-agi"
+  | "space-engineering";
+
 export interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
   content: string;
-  category: "nasa-news" | "space-facts" | "satellite-tutorials" | "astronomy-lessons";
+  category: BlogCategory;
   date: string; // YYYY-MM-DD
   tags: string[];
   seoKeywords?: string;
+  imageUrl?: string;
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "what-is-space-agi-why-it-matters",
+    title: "What Is Space AGI? Why Artificial General Intelligence in Space Matters",
+    excerpt: "Space AGI is AI that can perceive, plan, and act autonomously in orbit—without waiting for Earth. Learn the five pillars, delayed MDP, and why Mars missions need it.",
+    content: `**Introduction**
+
+Space AGI (Artificial General Intelligence for Space) is the next frontier in aerospace: AI systems that can perceive their environment, plan trajectories, make control decisions, and learn—all without real-time human input. As we send more satellites, rovers, and probes beyond Earth, the communication delay makes human-in-the-loop control impossible. Space AGI solves that.
+
+---
+
+**Key Points**
+
+- **Five pillars:** Perception, Planning, Control, Learning, Communication
+- **Delayed MDP:** Mars is 4–24 minutes away; AI must act on its own
+- **MPC & LQR:** Model Predictive Control and Linear Quadratic Regulator keep swarms safe
+- **Collision avoidance:** 500+ satellites can coordinate without ground stations
+- **Self-repair:** Future spacecraft will diagnose and fix themselves in deep space
+
+---
+
+**How It Works**
+
+**1. Perception** — Cameras, lidar, star trackers, and GPS give the spacecraft a model of its state (position, velocity, attitude). AI fuses this into a belief state.
+
+**2. Planning** — Given goals (e.g., "avoid collision," "reach Mars"), the AI computes optimal trajectories. This uses optimal control (Pontryagin, MPC) and often reinforcement learning for uncertain environments.
+
+**3. Control** — Thrusters and reaction wheels execute the plan. LQR and MPC provide feedback that is robust to disturbances (solar radiation, J2 perturbation).
+
+**4. Learning** — The system improves from experience. Reinforcement learning (e.g., Q-learning, policy gradient) lets it adapt when models are wrong.
+
+**5. Communication** — When a link exists, the AI reports and receives updates. When it doesn't (Mars occultation, deep space), it operates autonomously.
+
+---
+
+**Real-World Applications**
+
+- **Starlink-style constellations:** Thousands of satellites need autonomous collision avoidance
+- **Mars rovers:** 20-minute delay means rovers must navigate and sample on their own
+- **Lunar Gateway:** AI assists docking, power management, and science prioritization
+- **Interstellar probes:** Voyager's successors will need full autonomy for decades
+
+---
+
+**Conclusion**
+
+Space AGI is not science fiction—it's the engineering path to scalable space exploration. Our [Swarm Simulator](/simulator/swarm) demonstrates AI collision avoidance with 500+ satellites. Explore the [Space-AGI Lab](/research/space-agi-lab) for the full framework and math.`,
+    category: "space-agi",
+    date: "2026-02-25",
+    tags: ["Space AGI", "AI satellites", "autonomous spacecraft", "MPC", "LQR", "collision avoidance"],
+    seoKeywords: "Space AGI, AI satellites, autonomous spacecraft, orbital mechanics AI, Mars rover AI, swarm satellites",
+  },
+  {
+    slug: "vis-viva-equation-explained-master-formula-orbits",
+    title: "Vis-Viva Equation Explained: The Master Formula for All Orbits",
+    excerpt: "The vis-viva equation v² = μ(2/r − 1/a) gives orbital speed at any point. Learn the derivation, circular vs elliptical orbits, and why it's the most important formula in orbital mechanics.",
+    content: `**Introduction**
+
+The **vis-viva equation** is the single most important formula in orbital mechanics. It tells you the speed of a satellite (or planet, or spacecraft) at any point along its orbit—given only the distance from the central body and the orbit's size. Every orbital engineer uses it daily.
+
+---
+
+**The Formula**
+
+\`v² = μ(2/r − 1/a)\`
+
+Where:
+- \`v\` = orbital speed (m/s or km/s)
+- \`μ\` = standard gravitational parameter (G × M) — for Earth, μ ≈ 398,600 km³/s²
+- \`r\` = current distance from center of Earth (km)
+- \`a\` = semi-major axis of the orbit (km)
+
+---
+
+**Key Points**
+
+- **Circular orbit:** When r = a, we get v = √(μ/r) — the familiar circular orbital velocity
+- **Elliptical orbit:** At periapsis (closest), r is smallest, so v is largest. At apoapsis (farthest), v is smallest
+- **Escape velocity:** When a → ∞ (parabolic orbit), v_esc = √(2μ/r)
+- **Energy:** The equation comes from conservation of specific orbital energy
+
+---
+
+**How It Works — Derivation**
+
+Specific orbital energy is constant:
+
+\`E = v²/2 − μ/r = −μ/(2a)\`
+
+Rearrange:
+
+\`v²/2 = μ/r − μ/(2a) = μ(2/(2r) − 1/(2a))\`
+
+Multiply by 2:
+
+\`v² = μ(2/r − 1/a)\`
+
+That's vis-viva. No calculus needed—just energy conservation.
+
+---
+
+**Real-World Applications**
+
+- **ISS:** At r ≈ 6771 km, a ≈ 6771 km (circular) → v ≈ 7.66 km/s
+- **GPS:** At r ≈ 26,560 km, a ≈ 26,560 km → v ≈ 3.87 km/s
+- **Hohmann transfer:** Use vis-viva at each burn point to compute delta-v
+- **Mars missions:** Apply vis-viva in heliocentric frame for interplanetary trajectories
+
+---
+
+**Conclusion**
+
+Master the vis-viva equation and you've mastered the core of orbital mechanics. Try our [orbit simulator](/simulator) to see it in action—add a satellite and watch the speed change as it moves along its path. For more formulas, see the [Formulas Library](/formulas-library) and [Recommended Books](/recommended-books).`,
+    category: "space-engineering",
+    date: "2026-02-25",
+    tags: ["vis-viva", "orbital mechanics", "orbital velocity", "Kepler", "aerospace formulas"],
+    seoKeywords: "vis-viva equation, orbital velocity formula, orbital mechanics, aerospace engineering, satellite speed",
+  },
   {
     slug: "artemis-ii-launch-pad-ops-february-2026-nasa-begins-countdown",
     title: "Artemis II Launch Pad Ops: NASA Begins Countdown After Successful Fuel Test",

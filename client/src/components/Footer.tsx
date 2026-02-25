@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { ShareBar } from "./ShareBar";
+import { SupportSection } from "./SupportSection";
 
 const footerLinks = [
   { href: "/", label: "Home" },
@@ -28,6 +29,7 @@ export function Footer() {
       }}
     >
       <div className="container mx-auto px-4 max-w-7xl">
+        <SupportSection />
         <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
           {footerLinks.map(({ href, label }) => (
             <Link

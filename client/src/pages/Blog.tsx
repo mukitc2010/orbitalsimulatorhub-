@@ -1,11 +1,16 @@
 import { Link } from "wouter";
 import { BLOG_POSTS, getRecentPosts, type BlogPost } from "../data/blogPosts";
+import { getBlogImage } from "../data/blogImages";
 
 const CATEGORIES: { id: BlogPost["category"]; label: string; emoji: string }[] = [
+  { id: "space-agi", label: "Space AGI", emoji: "🧠" },
+  { id: "space-engineering", label: "Space Engineering", emoji: "⚙️" },
   { id: "nasa-news", label: "NASA News", emoji: "🚀" },
   { id: "space-facts", label: "Space Facts", emoji: "⭐" },
   { id: "satellite-tutorials", label: "Satellite Tutorials", emoji: "🛰️" },
   { id: "astronomy-lessons", label: "Astronomy Lessons", emoji: "🔭" },
+  { id: "aerodynamics", label: "Aerodynamics", emoji: "✈️" },
+  { id: "quantum-physics", label: "Quantum & Space", emoji: "⚛" },
 ];
 
 export function Blog() {
@@ -42,11 +47,21 @@ export function Blog() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {recent.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>
-              <a className="block p-5 rounded-xl border-2 transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
-                <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
-                <h3 className="font-bold text-lg mt-1 mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
-                <p className="text-sm mb-3 line-clamp-2" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
-                <p className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+              <a className="block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+                <div className="aspect-video w-full bg-slate-200">
+                  <img
+                    src={getBlogImage(post)}
+                    alt=""
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-5">
+                  <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
+                  <h3 className="font-bold text-lg mt-1 mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
+                  <p className="text-sm mb-3 line-clamp-2" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
+                  <p className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+                </div>
               </a>
             </Link>
           ))}

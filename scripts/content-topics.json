@@ -1,6 +1,39 @@
 {
   "categories": [
     {
+      "id": "space-agi",
+      "name": "Space AGI",
+      "tags": ["Space AGI", "AI satellites", "autonomous spacecraft"],
+      "topics": [
+        "What is Space AGI and why it matters for future space exploration",
+        "How AI satellites make autonomous decisions in orbit",
+        "Space AGI five pillars: perception, planning, control, learning, communication",
+        "Delayed MDP and Mars communication delay: why AI must act without Earth",
+        "How MPC and LQR control algorithms keep satellite swarms safe",
+        "Pontryagin maximum principle explained for orbital maneuvers",
+        "Self-repairing spacecraft: AI that fixes itself in deep space",
+        "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+        "AI collision avoidance: how 500+ satellites avoid each other without human input"
+      ]
+    },
+    {
+      "id": "space-engineering",
+      "name": "Space Engineering",
+      "tags": ["space engineering", "aerospace", "orbital mechanics", "formulas"],
+      "topics": [
+        "Vis-viva equation explained: the master formula for all orbits",
+        "Tsiolkovsky rocket equation: why we need staging to reach orbit",
+        "Hohmann transfer formula: the most fuel-efficient way to change orbits",
+        "Kepler's three laws with derivations and real satellite examples",
+        "J2 perturbation: why orbits drift and how to correct them",
+        "Orbital energy and specific orbital energy formula",
+        "Escape velocity derivation from conservation of energy",
+        "Lambert's problem: how to plan an intercept between two orbits",
+        "Patched conic approximation for interplanetary trajectories",
+        "N-body equations: when two-body mechanics is not enough"
+      ]
+    },
+    {
       "id": "nasa-news",
       "name": "NASA News",
       "tags": ["NASA", "space exploration", "missions"],
@@ -103,7 +136,7 @@
       ]
     }
   ],
-  "blog_prompt": "You are an expert science writer for Orbital Simulator Hub, an educational website about space, aerospace, and physics. Write a detailed, accurate blog post about: {topic}.\n\nRequirements:\n- 800-1200 words\n- Use clear, engaging language accessible to students and enthusiasts\n- Include a bold **Introduction** section\n- Include **Key Points** with bullet points\n- Include a **How It Works** section with technical detail\n- Include a **Real-World Applications** section\n- End with a **Conclusion**\n- Reference orbital mechanics, NASA missions, or physics where relevant\n- Use markdown formatting\n- Be scientifically accurate\n\nWrite the blog post now:",
+  "blog_prompt": "You are an expert science writer for Orbital Simulator Hub, the #1 free learning platform for orbital mechanics, Space AGI, and aerospace engineering. Write a detailed, SEO-optimized blog post about: {topic}.\n\nRequirements:\n- 800-1200 words\n- Include **Introduction**, **Key Points**, **How It Works** (with formulas), **Real-World Applications**, **Conclusion**\n- Use markdown, be scientifically accurate\n- SEO: naturally include keywords like orbital mechanics, aerospace, satellites, Space AGI, NASA\n- End with a call to explore our simulator or recommended books\n\nWrite the blog post now:",
   "featured_prompt": "Write a 2-3 sentence educational excerpt about: {topic}. Make it engaging and informative for students learning about space and physics. Focus on one fascinating insight or key concept.",
   "fact_prompt": "Give me one fascinating, scientifically accurate space or physics fact. Make it surprising and educational. Keep it to 1-2 sentences. No prefixes like 'Did you know' — just state the fact.",
   "highlight_prompt": "Write a 2-sentence educational blurb about: {topic}. Focus on why it matters for space exploration or physics. Be concise and engaging."

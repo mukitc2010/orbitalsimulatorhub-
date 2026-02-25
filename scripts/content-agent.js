@@ -26,6 +26,7 @@ const ROOT = path.join(__dirname, '..');
 const BLOG_FILE = path.join(ROOT, 'client/src/data/blogPosts.ts');
 const DAILY_JSON = path.join(ROOT, 'community/data/daily-content.json');
 const TOPICS_FILE = path.join(ROOT, 'scripts/content-topics.json');
+const AFFILIATE_BOOKS = path.join(ROOT, 'scripts/affiliate-books.json');
 
 const OLLAMA_URL = process.env.OLLAMA_URL || 'http://localhost:11434';
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || 'llama3';
@@ -69,6 +70,8 @@ async function ollamaGenerate(prompt, fallback) {
 const topicsData = JSON.parse(fs.readFileSync(TOPICS_FILE, 'utf8'));
 const categories = topicsData.categories;
 
+const PRIORITY_CATEGORIES = ['space-agi', 'space-engineering'];
+
 function pickCategory() {
   if (FORCE_CATEGORY) {
     const found = categories.find(c => c.id === FORCE_CATEGORY);
@@ -77,6 +80,11 @@ function pickCategory() {
       process.exit(1);
     }
     return found;
+  }
+  // 50% bias toward Space AGI and Space Engineering (revenue + learning focus)
+  if (Math.random() < 0.5) {
+    const priority = categories.filter(c => PRIORITY_CATEGORIES.includes(c.id));
+    if (priority.length > 0) return pickRandom(priority);
   }
   return pickRandom(categories);
 }
@@ -116,13 +124,30 @@ ${title} illustrates the beauty and complexity of physics at work in the cosmos.
 Explore more on our [orbit simulator](/simulator) and [orbital mechanics guide](/learn/orbital-mechanics).`;
 }
 
+function getAffiliateBooksForCategory(categoryId) {
+  if (!fs.existsSync(AFFILIATE_BOOKS)) return [];
+  const data = JSON.parse(fs.readFileSync(AFFILIATE_BOOKS, 'utf8'));
+  const tag = data.tag || 'hubdepot-20';
+  const books = data.categories?.[categoryId] || data.fallback || [];
+  return books.slice(0, 2).map((b) => ({ ...b, tag }));
+}
+
+function appendAffiliateSection(content, categoryId) {
+  const books = getAffiliateBooksForCategory(categoryId);
+  if (books.length === 0) return content;
+  const tag = books[0]?.tag || 'hubdepot-20';
+  const lines = books.map((b) => `- [${b.name}](https://www.amazon.com/dp/${b.asin}?tag=${tag})`);
+  return content.trimEnd() + `\n\n**Recommended Reading**\n\n${lines.join('\n')}\n`;
+}
+
 async function generateBlogPost(cat) {
   const topic = pickRandom(cat.topics);
   const title = topic;
   const slug = slugify(title) + '-' + today().replace(/-/g, '');
   const prompt = topicsData.blog_prompt.replace('{topic}', topic);
   const fallback = templateBlogContent(title, cat);
-  const content = await ollamaGenerate(prompt, fallback);
+  let content = await ollamaGenerate(prompt, fallback);
+  content = appendAffiliateSection(content, cat.id);
   const excerpt = `Learn about ${title.toLowerCase()} — covering the science, real-world applications, and how it connects to space exploration.`;
 
   return {

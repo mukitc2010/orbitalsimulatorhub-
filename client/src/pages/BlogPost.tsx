@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link, useRoute } from "wouter";
 import { getPostBySlug, getRecentPosts } from "../data/blogPosts";
 import { BlogContent } from "../components/BlogContent";
+import { getBlogImage } from "../data/blogImages";
 
 const SITE_NAME = "Orbital Simulator Hub";
 const SITE_URL = "https://www.orbitalsimulatorhub.com";
@@ -21,11 +22,13 @@ export function BlogPost() {
 
     // Article/NewsArticle schema for rich results & AI citation
     const isNews = post.category === "nasa-news";
+    const imageUrl = getBlogImage(post);
     const articleSchema = {
       "@context": "https://schema.org",
       "@type": isNews ? "NewsArticle" : "Article",
       headline: post.title,
       description: post.excerpt,
+      image: imageUrl,
       datePublished: post.date,
       dateModified: post.date,
       author: { "@type": "Organization", name: SITE_NAME },
@@ -60,16 +63,22 @@ export function BlogPost() {
     );
   }
 
+  const imageUrl = getBlogImage(post);
+
   return (
     <div className="max-w-4xl mx-auto space-y-8">
-      <article className="bg-white rounded-xl border border-slate-200 p-8 shadow-sm">
-        <div className="mb-4">
-          <span className="text-xs text-slate-500 uppercase tracking-wide">{post.category.replace("-", " ")}</span>
-          <span className="text-slate-400 mx-2">·</span>
-          <time className="text-xs text-slate-500">{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</time>
+      <article className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+        <div className="aspect-video w-full bg-slate-200">
+          <img src={imageUrl} alt="" className="w-full h-full object-cover" />
         </div>
-        <h1 className="headline mb-4">{post.title}</h1>
-        <BlogContent content={post.content} />
+        <div className="p-8">
+          <div className="mb-4">
+            <span className="text-xs text-slate-500 uppercase tracking-wide">{post.category.replace("-", " ")}</span>
+            <span className="text-slate-400 mx-2">·</span>
+            <time className="text-xs text-slate-500">{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</time>
+          </div>
+          <h1 className="headline mb-4">{post.title}</h1>
+          <BlogContent content={post.content} />
         {post.tags.length > 0 && (
           <div className="mt-6 pt-6 border-t border-slate-200">
             <p className="text-sm text-slate-600 mb-2">Tags:</p>
@@ -87,6 +96,7 @@ export function BlogPost() {
             </div>
           </div>
         )}
+        </div>
       </article>
 
       {recent.length > 0 && (

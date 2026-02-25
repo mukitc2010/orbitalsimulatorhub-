@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { DailyTopicIcon } from "../components/DailyTopicIcon";
 import { ShareBar } from "../components/ShareBar";
 import { BLOG_POSTS } from "../data/blogPosts";
+import { getBlogImage } from "../data/blogImages";
 
 const FEATURES = [
   { href: "/simulator", icon: "🛸", title: "3D Simulator", desc: "Add LEO, MEO, GEO satellites. Watch orbits in real time.", color: "cyan" },
@@ -21,26 +22,29 @@ const QUICK_LINKS = [
   { href: "/space-news", label: "Space News" },
   { href: "/research", label: "Research" },
   { href: "/research/space-agi-lab", label: "Space-AGI Lab" },
+  { href: "/recommended-books", label: "Books" },
 ];
 
 const TODAYS_UPDATES = [
-  { href: "/research/space-agi-roadmap", label: "Space-AGI Roadmap", desc: "Phases 2–4 expanded: Mars autonomy, self-repair, interstellar" },
-  { href: "/research/space-agi-math", label: "Space-AGI Mathematics", desc: "Optimal control, Pontryagin, MPC, LQR, Space-AGI framework" },
-  { href: "/calculators", label: "New Calculators", desc: "Hohmann transfer, collision probability, Mars delay, escape by planet" },
-  { href: "/research/space-agi-lab", label: "Space-AGI Engineering Lab", desc: "5 pillars, Research Mode, nav dropdown" },
+  { href: "/blog/what-is-space-agi-why-it-matters", label: "🆕 What Is Space AGI?", desc: "AI satellites, autonomous spacecraft, five pillars, MPC, LQR" },
+  { href: "/blog/vis-viva-equation-explained-master-formula-orbits", label: "🆕 Vis-Viva Equation", desc: "Master formula for all orbits — derivation, ISS, GPS" },
+  { href: "/space-news", label: "📰 Daily Space News", desc: "NASA, Artemis, SpaceX, James Webb — updated daily" },
+  { href: "/research/space-agi-lab", label: "🧠 Space-AGI Lab", desc: "5 pillars, autonomous spacecraft, decision intelligence" },
+  { href: "/learn/quantum-space", label: "⚛ Quantum & Space", desc: "Quantum physics, atomic clocks, GPS, quantum sensors" },
+  { href: "/blog", label: "📚 All Articles", desc: "Space engineering, AI, formulas — fresh content every day" },
 ];
 
 const EXPLORE_BY_TOPIC = [
-  { href: "/research/space-agi-lab", icon: "🧠", title: "Space-AGI Engineering Lab" },
-  { href: "/research/space-agi-doctrine", icon: "🔬", title: "Space-AGI Doctrine" },
+  { href: "/blog/category/space-agi", icon: "🧠", title: "Space AGI" },
+  { href: "/blog/category/space-engineering", icon: "⚙️", title: "Space Engineering" },
+  { href: "/research/space-agi-lab", icon: "🔬", title: "Space-AGI Lab" },
+  { href: "/learn/quantum-space", icon: "⚛", title: "Quantum & Space" },
+  { href: "/ai-in-aerospace", icon: "🤖", title: "AI in Aerospace" },
   { href: "/learn/orbital-mechanics", icon: "🌌", title: "Orbital mechanics" },
-  { href: "/learn/how-satellites-work", icon: "🛰", title: "How satellites work" },
   { href: "/formulas-library", icon: "🧮", title: "Formulas & calculators" },
   { href: "/calculators", icon: "📐", title: "Orbit calculator" },
-  { href: "/compare/orbits", icon: "📊", title: "Compare LEO MEO GEO" },
-  { href: "/ai-in-aerospace", icon: "🤖", title: "AI in Aerospace" },
-  { href: "/learn/quantum-space", icon: "⚛", title: "Quantum & Space" },
   { href: "/research/future-civilization", icon: "🚀", title: "Future Civilization" },
+  { href: "/space-news", icon: "📰", title: "Daily Space News" },
 ];
 
 export function Home() {
@@ -50,8 +54,8 @@ export function Home() {
     <div className="max-w-4xl mx-auto">
       {/* Today's Updates — top of page */}
       <section className="rounded-xl border-2 p-4 mb-6" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(0,217,255,0.06) 100%)", borderColor: "var(--accent-cyan)" }}>
-        <h3 className="text-sm font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-cyan)" }}>✨ Today&apos;s Updates</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-cyan)" }}>✨ New Posts • Daily News • Space Engineering • AI • Quantum</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
           {TODAYS_UPDATES.map((u) => (
             <Link key={u.href} href={u.href}>
               <a className="block p-3 rounded-lg transition hover:opacity-90" style={{ background: "var(--bg-surface)", border: "1px solid var(--border-color)" }}>
@@ -65,12 +69,12 @@ export function Home() {
 
       {/* Hero — Intelligence for the Space Age */}
       <section className="rounded-2xl px-6 py-8 sm:py-10 text-center mb-8 hero-gradient">
-        <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">Orbital Mechanics • AI in Space • Future Space Intelligence</p>
+        <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">Space Engineering • AI • Quantum • Daily News • Futuristic</p>
         <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2 leading-tight">
           OrbitalSimulatorHub — Intelligence for the Space Age
         </h1>
         <p className="text-base sm:text-lg text-white/90 max-w-xl mx-auto mb-5">
-          Learn orbital mechanics, satellites, aerospace engineering, and the future of AI-powered space exploration.
+          Space AGI, orbital mechanics, quantum computing in space, aerospace formulas. New posts daily. Everything futuristic and helpful.
         </p>
         <div className="flex flex-wrap justify-center gap-2 mb-4">
           <Link href="/simulator">
@@ -192,67 +196,78 @@ export function Home() {
           </a>
         </Link>
         <div className="rounded-xl border p-4" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
-          <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📡 Trending in Space</h3>
+          <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📡 Trending: Space Engineering • AI • Quantum • Futuristic</h3>
           <div className="flex flex-wrap gap-2">
-            <Link href="/space-news"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI in Space News</a></Link>
-            <Link href="/missions/timeline"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Future Missions</a></Link>
-            <Link href="/blog"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Technology</a></Link>
+            <Link href="/blog/category/space-agi"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</a></Link>
+            <Link href="/blog/category/space-engineering"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Engineering</a></Link>
+            <Link href="/learn/quantum-space"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum Computing</a></Link>
+            <Link href="/space-news"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Daily News</a></Link>
+            <Link href="/research/future-civilization"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Future Tech</a></Link>
           </div>
         </div>
       </section>
 
-      {/* Blog & News section — OrbitalSimulatorHub style */}
+      {/* Blog & News section — Latest posts with images */}
       <section className="rounded-xl border-2 p-6 mb-8" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(0,217,255,0.06) 100%)", borderColor: "var(--accent-cyan)" }}>
         <div className="flex justify-between items-center mb-4">
           <div>
-            <p className="text-xs font-medium uppercase tracking-widest mb-1" style={{ color: "var(--accent-cyan)" }}>Blog & News</p>
-            <h2 className="font-bold text-lg" style={{ color: "var(--text-primary)" }}>📰 Latest Space News & Articles</h2>
+            <p className="text-xs font-medium uppercase tracking-widest mb-1" style={{ color: "var(--accent-cyan)" }}>New Posts • Daily News • Space Engineering • AI • Quantum</p>
+            <h2 className="font-bold text-lg" style={{ color: "var(--text-primary)" }}>📰 Latest Articles — Fresh Every Day</h2>
           </div>
           <Link href="/blog">
             <a className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>View all →</a>
           </Link>
         </div>
         <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>
-          Daily NASA news, space facts, satellite tutorials, astronomy lessons. Fresh content every day.
+          Space AGI, space engineering formulas, NASA news, quantum physics, AI in space. Everything futuristic and helpful.
         </p>
-        <div className="grid sm:grid-cols-3 gap-4">
-          {BLOG_POSTS.slice(0, 3).map((post) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {BLOG_POSTS.slice(0, 6).map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>
-              <a className="block p-4 rounded-xl border-2 transition hover:shadow-lg hover:scale-[1.02]" style={{ background: "var(--bg-surface)", borderColor: "var(--border-color)" }}>
-                <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
-                <h3 className="font-semibold text-sm mt-1 line-clamp-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
-                <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>{post.date}</p>
+              <a className="block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.02]" style={{ background: "var(--bg-surface)", borderColor: "var(--border-color)" }}>
+                <div className="aspect-video w-full bg-slate-200">
+                  <img src={getBlogImage(post)} alt="" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div className="p-4">
+                  <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
+                  <h3 className="font-semibold text-sm mt-1 line-clamp-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
+                  <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</p>
+                </div>
               </a>
             </Link>
           ))}
         </div>
         <div className="flex flex-wrap gap-2 mt-4">
-          <Link href="/space-news"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space News</a></Link>
+          <Link href="/blog/category/space-agi"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</a></Link>
+          <Link href="/blog/category/space-engineering"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Engineering</a></Link>
           <Link href="/blog/category/nasa-news"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>NASA News</a></Link>
-          <Link href="/blog/category/space-facts"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Facts</a></Link>
+          <Link href="/blog/category/quantum-physics"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum</a></Link>
+          <Link href="/space-news"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Daily News</a></Link>
         </div>
       </section>
 
       {/* Popular searches — compact */}
       <section className="rounded-xl border p-4 mb-8" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
-        <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>🔍 Popular searches</h3>
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>🔍 Popular: Space Engineering • AI • Quantum • Futuristic</h3>
         <div className="flex flex-wrap gap-2">
+          <Link href="/blog/what-is-space-agi-why-it-matters"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>What is Space AGI?</a></Link>
+          <Link href="/blog/vis-viva-equation-explained-master-formula-orbits"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Vis-viva equation</a></Link>
           <Link href="/calculators"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>How fast does ISS orbit?</a></Link>
-          <Link href="/astronauts"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>How many astronauts on Moon?</a></Link>
-          <Link href="/learn/how-satellites-work"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>LEO MEO GEO</a></Link>
-          <Link href="/learn/space-questions"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Why don&apos;t satellites fall?</a></Link>
+          <Link href="/learn/quantum-space"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum in space</a></Link>
           <Link href="/simulator"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Orbit simulator</a></Link>
         </div>
       </section>
 
-      {/* Advanced Research */}
+      {/* Advanced Research — Space Engineering • AI • Quantum */}
       <section className="rounded-xl border p-4 mb-8" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
-        <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📚 Advanced Space Research</h3>
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📚 Space Engineering • AI • Quantum • Futuristic</h3>
         <div className="flex flex-wrap gap-2 mb-4">
+          <Link href="/blog/category/space-engineering"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Engineering</a></Link>
+          <Link href="/blog/category/space-agi"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</a></Link>
           <Link href="/formulas-library"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Orbital formulas</a></Link>
-          <Link href="/learn/aerospace"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Mission design</a></Link>
-          <Link href="/research"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Aerospace concepts</a></Link>
-          <Link href="/ai-in-aerospace"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI for space research</a></Link>
+          <Link href="/learn/quantum-space"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum computing</a></Link>
+          <Link href="/ai-in-aerospace"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI in space</a></Link>
+          <Link href="/research/future-civilization"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Future tech</a></Link>
         </div>
       </section>
 

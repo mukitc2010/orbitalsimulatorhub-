@@ -1,11 +1,16 @@
 import { Link, useRoute } from "wouter";
 import { getPostsByCategory, type BlogPost } from "../data/blogPosts";
+import { getBlogImage } from "../data/blogImages";
 
 const CATEGORY_LABELS: Record<BlogPost["category"], { label: string; emoji: string }> = {
+  "space-agi": { label: "Space AGI", emoji: "🧠" },
+  "space-engineering": { label: "Space Engineering", emoji: "⚙️" },
   "nasa-news": { label: "NASA News", emoji: "🚀" },
   "space-facts": { label: "Space Facts", emoji: "⭐" },
   "satellite-tutorials": { label: "Satellite Tutorials", emoji: "🛰️" },
   "astronomy-lessons": { label: "Astronomy Lessons", emoji: "🔭" },
+  aerodynamics: { label: "Aerodynamics", emoji: "✈️" },
+  "quantum-physics": { label: "Quantum & Space", emoji: "⚛" },
 };
 
 export function BlogCategory() {
@@ -38,10 +43,15 @@ export function BlogCategory() {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`}>
-            <a className="block p-5 rounded-xl border-2 transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
-              <h3 className="font-bold text-lg mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
-              <p className="text-sm mb-3 line-clamp-2" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
-              <p className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+            <a className="block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+              <div className="aspect-video w-full bg-slate-200">
+                <img src={getBlogImage(post)} alt="" className="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold text-lg mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
+                <p className="text-sm mb-3 line-clamp-2" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
+                <p className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+              </div>
             </a>
           </Link>
         ))}

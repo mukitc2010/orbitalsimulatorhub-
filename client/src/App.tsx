@@ -19,6 +19,7 @@ import { Calculators } from "./pages/Calculators";
 import { Blog } from "./pages/Blog";
 import { BlogPost } from "./pages/BlogPost";
 import { BlogCategory } from "./pages/BlogCategory";
+import { RecommendedBooks } from "./pages/RecommendedBooks";
 import { SpaceExperiments } from "./pages/SpaceExperiments";
 import { HowGPSWorks } from "./pages/HowGPSWorks";
 import { CompareOrbits } from "./pages/CompareOrbits";
@@ -100,6 +101,7 @@ function App() {
           <Route path="/blog" component={Blog} />
           <Route path="/blog/category/:category" component={BlogCategory} />
           <Route path="/blog/:slug" component={BlogPost} />
+          <Route path="/recommended-books" component={RecommendedBooks} />
           <Route path="/learn/experiments" component={SpaceExperiments} />
           <Route path="/learn/how-gps-works" component={HowGPSWorks} />
           <Route path="/learn/how-nasa-launches-satellite" component={HowNASALaunches} />
