@@ -23,7 +23,8 @@ const SPACE_AGI_SUBNAV = [
 
 const BLOG_SUBNAV = [
   { path: "/blog", label: "Blog", title: "Daily space news, space facts, satellite tutorials" },
-  { path: "/recommended-books", label: "Books", title: "Recommended space & aerospace books — affiliate" },
+  { path: "/recommended-books", label: "Books", title: "Recommended space & aerospace books" },
+  { path: "/space-shop", label: "Space Shop", title: "NASA t-shirts, toys, books — verified Amazon" },
   { path: "/learn/aerospace", label: "Aerospace", title: "Aerospace reference for students and researchers" },
   { path: "/ai-in-aerospace", label: "AI in Space", title: "How AI is transforming aerospace and space exploration" },
   { path: "/research", label: "Research", title: "NASA, Newton, orbital mechanics — for students and PhD researchers" },
@@ -52,7 +53,7 @@ function isSpaceAgiActive(location: string) {
 }
 
 function isBlogActive(location: string) {
-  return location === "/blog" || location.startsWith("/blog/") || location === "/recommended-books"
+  return location === "/blog" || location.startsWith("/blog/") || location === "/recommended-books" || location === "/space-shop"
     || location === "/learn/aerospace" || location.startsWith("/learn/aerospace")
     || location === "/ai-in-aerospace" || location === "/ai-in-space" || location === "/research" || location.startsWith("/research/");
 }

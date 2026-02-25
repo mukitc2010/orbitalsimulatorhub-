@@ -121,7 +121,7 @@ Key principles include:
 
 ${title} illustrates the beauty and complexity of physics at work in the cosmos. Whether you are a student, researcher, or enthusiast, understanding these concepts opens the door to appreciating the engineering and science that make space exploration possible.
 
-Explore more on our [orbit simulator](/simulator) and [orbital mechanics guide](/learn/orbital-mechanics).`;
+Explore more on our [orbit simulator](/simulator), [Space Shop](/space-shop) (NASA t-shirts, books, toys), and [orbital mechanics guide](/learn/orbital-mechanics).`;
 }
 
 function getAffiliateBooksForCategory(categoryId) {

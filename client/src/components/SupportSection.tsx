@@ -1,14 +1,14 @@
 /**
  * Support / Monetization section — Ko-fi, affiliate, AdSense placeholder
  * Add your links in .env: VITE_KOFI_URL, VITE_BMC_URL, VITE_ADSENSE_ID
+ * Products: verified available on Amazon.com only
  */
 import { Link } from "wouter";
-import { AMAZON_TAG } from "../data/affiliateBooks";
+import { NASA_MERCHANDISE, AMAZON_TAG } from "../data/nasaMerchandise";
 
-const RECOMMENDED_BOOKS = [
-  { name: "Astrophysics for People in a Hurry", asin: "0393609391" },
-  { name: "Orbital Mechanics for Engineering Students", asin: "0080977472" },
-];
+const FEATURED = NASA_MERCHANDISE.filter(
+  (p) => ["0393609391", "0080977472", "B0B92VHTVD", "B08STQBXN5"].includes(p.asin)
+);
 
 export function SupportSection() {
   const kofi = import.meta.env.VITE_KOFI_URL;
@@ -59,30 +59,30 @@ export function SupportSection() {
         )}
       </div>
 
-      {/* Recommended books — Amazon affiliate */}
+      {/* Books, NASA t-shirts, toys — verified Amazon affiliate */}
       <div className="mt-4 pt-4 border-t" style={{ borderColor: "var(--border-color)" }}>
         <p className="text-xs font-medium mb-2" style={{ color: "var(--text-muted)" }}>
-          📚 Recommended for learning (affiliate links)
+          📚 Books • 👕 NASA T-Shirts • 🚀 Toys (verified on Amazon)
         </p>
         <div className="flex flex-wrap gap-2">
-          {RECOMMENDED_BOOKS.map((b) => (
+          {FEATURED.map((p) => (
             <a
-              key={b.asin}
-              href={`https://www.amazon.com/dp/${b.asin}?tag=${AMAZON_TAG}`}
+              key={p.asin}
+              href={`https://www.amazon.com/dp/${p.asin}?tag=${AMAZON_TAG}`}
               target="_blank"
               rel="noopener noreferrer sponsored"
               className="block px-3 py-2 rounded-lg text-sm"
               style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}
             >
-              {b.name} →
+              {p.name} →
             </a>
           ))}
-          <Link href="/recommended-books">
+          <Link href="/space-shop">
             <a
               className="block px-3 py-2 rounded-lg text-sm font-medium"
               style={{ background: "var(--accent-cyan)", color: "var(--text-on-accent)" }}
             >
-              See all books →
+              See all →
             </a>
           </Link>
         </div>

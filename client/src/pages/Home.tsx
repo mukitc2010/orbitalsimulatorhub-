@@ -23,6 +23,7 @@ const QUICK_LINKS = [
   { href: "/research", label: "Research" },
   { href: "/research/space-agi-lab", label: "Space-AGI Lab" },
   { href: "/recommended-books", label: "Books" },
+  { href: "/space-shop", label: "Space Shop" },
 ];
 
 const TODAYS_UPDATES = [

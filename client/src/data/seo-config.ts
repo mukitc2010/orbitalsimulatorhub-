@@ -186,6 +186,14 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     ogTitle: "Recommended Space & Aerospace Books | Orbital Simulator Hub",
     lastUpdated: "2026-02-25T00:00:00Z",
   },
+  "/space-shop": {
+    path: "/space-shop",
+    title: "Space Shop — NASA T-Shirts, Toys, Books | Verified Amazon | Orbital Simulator Hub",
+    description: "NASA t-shirts, space toys, LEGO rockets, orbital mechanics books. All products verified available on Amazon. Purchases support OrbitalSimulatorHub.",
+    keywords: "NASA t-shirt, NASA toy, space toy, LEGO NASA, orbital mechanics book, NASA merchandise, space shop",
+    ogTitle: "Space Shop — NASA T-Shirts, Toys, Books | Orbital Simulator Hub",
+    lastUpdated: "2026-02-25T00:00:00Z",
+  },
   "/learn/nasa-study-guide": {
     path: "/learn/nasa-study-guide",
     title: "Space Study Guide – NASA Missions, Aerospace Engineering | Orbital Simulator Hub",

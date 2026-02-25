@@ -59,10 +59,13 @@ export function RecommendedBooks() {
       </div>
 
       <p className="mt-6 text-sm" style={{ color: "var(--text-muted)" }}>
-        As an Amazon Associate we earn from qualifying purchases.
+        As an Amazon Associate we earn from qualifying purchases. All books verified available on Amazon.com.
       </p>
 
-      <div className="mt-6">
+      <div className="mt-6 flex gap-4">
+        <Link href="/space-shop">
+          <a className="text-[var(--accent-cyan)] hover:underline font-medium">NASA T-Shirts & Toys →</a>
+        </Link>
         <Link href="/blog">
           <a className="text-[var(--accent-cyan)] hover:underline font-medium">
             ← Back to Blog

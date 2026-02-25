@@ -132,7 +132,20 @@ VITE_BMC_URL=https://buymeacoffee.com/yourname
 VITE_ADSENSE_ID=ca-pub-xxxxxxxxxx
 ```
 
-**Amazon affiliate** (hubdepot-20) is already used for recommended books in the Support section. OpenClaw can add more affiliate links to blog posts or new pages when extending content.
+**Amazon affiliate** (hubdepot-20) — **Space Shop** (`/space-shop`):
+- **Books** — Only verified available on Amazon.com (0393609391, 0080977472, etc.)
+- **NASA t-shirts** — B0B92VHTVD, B07SSCVV4G, B07KW5ZV6M, B07PKRBHK7
+- **NASA toys** — LEGO Shuttle (B08STQBXN5), LEGO Rocket (B09JHZY7JF), STEM rocket (B0CSNN775Y)
+- **Accessories** — NASA tote (B08P15CLQ5)
+
+**OpenClaw deploy checklist** — When running `npm run openclaw:update`, the script:
+1. Generates blog post (content-agent) — uses `scripts/affiliate-books.json` for book links (verified ASINs only)
+2. Updates SEO/sitemap
+3. Regenerates RSS
+4. Commits: `blogPosts.ts`, `seo-config.ts`, `sitemap.xml`, `rss.xml`, `index.html`
+5. Pushes to GitHub → Vercel auto-deploys
+
+**Do NOT** add unverified ASINs. Only use products in `client/src/data/nasaMerchandise.ts`.
 
 ---
 
