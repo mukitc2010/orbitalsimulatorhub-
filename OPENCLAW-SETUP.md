@@ -93,16 +93,20 @@ openclaw cron run <job-id>   # Run once now to test
 
 ---
 
-## Post Journal Everywhere (Optional)
+## Post to LinkedIn (Optional)
 
-To cross-post your latest blog to Twitter, Medium, LinkedIn:
+To auto-post your latest blog to LinkedIn when OpenClaw runs:
 
-1. **Install OpenClaw xurl skill** (for Twitter/X):
-   ```powershell
-   npx clawhub install xurl
+1. **Setup LinkedIn** — see `LINKEDIN-SETUP.md`:
+   - Create app at [LinkedIn Developers](https://www.linkedin.com/developers/apps)
+   - Request "Share on LinkedIn" permission
+   - Get OAuth access token (w_member_social scope)
+
+2. **Add to .env**:
    ```
-
-2. **Extend `scripts/post-to-social.js`** with your API keys and logic
+   POST_TO_SOCIAL=1
+   LINKEDIN_ACCESS_TOKEN=your_token
+   ```
 
 3. **Enable in the update**:
    ```powershell
@@ -110,7 +114,9 @@ To cross-post your latest blog to Twitter, Medium, LinkedIn:
    npm run openclaw:update
    ```
 
-4. **Add to cron message** — include "Then run scripts/post-to-social.js" in the agent message
+4. **Add to cron message** — "Set POST_TO_SOCIAL=1, then run npm run openclaw:update"
+
+**Note:** LinkedIn tokens expire in ~60 days. Re-run OAuth to refresh.
 
 ---
 

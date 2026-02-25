@@ -6,12 +6,14 @@
  * 2. Update SEO / sitemap (auto-seo-update)
  * 3. Regenerate RSS feed
  * 4. Git commit & push → triggers Vercel deploy
- *
- * Optional: Post latest to social (extend POST_TO_SOCIAL env)
+ * 5. Optional: Post to LinkedIn (POST_TO_SOCIAL=1, LINKEDIN_ACCESS_TOKEN in .env)
  *
  * Usage: node scripts/openclaw-full-update.js
  * Or:    npm run openclaw:update
  */
+
+import { config } from "dotenv";
+config({ path: ".env" });
 
 import { execSync } from "child_process";
 import { existsSync } from "fs";
