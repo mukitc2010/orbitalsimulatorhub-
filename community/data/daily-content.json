@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-02-25T10:20:27.197Z",
+  "featured_article": {
+    "title": "How lift is generated: Bernoulli vs Newton explanations",
+    "excerpt": "How lift is generated: Bernoulli vs Newton explanations is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-lift-is-generated-bernoulli-vs-newton-explanations-20260225"
+  },
+  "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
+  "topic_highlights": [
+    {
+      "title": "Gravitational waves and what they tell us about...",
+      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "icon": "rocket"
+    },
+    {
+      "title": "How spy satellites achieve sub-meter imaging re...",
+      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "icon": "atom"
+    },
+    {
+      "title": "Quantum key distribution for secure satellite c...",
+      "blurb": "Quantum key distribution for secure satellite communications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "icon": "plane"
+    }
+  ],
+  "latest_posts": [
+    {
+      "slug": "how-lift-is-generated-bernoulli-vs-newton-explanations-20260225",
+      "title": "How lift is generated: Bernoulli vs Newton explanations",
+      "excerpt": "Learn about how lift is generated: bernoulli vs newton explanations — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "aerodynamics",
+      "date": "2026-02-25"
+    },
+    {
+      "slug": "artemis-ii-launch-pad-ops-february-2026-nasa-begins-countdown",
+      "title": "Artemis II Launch Pad Ops: NASA Begins Countdown After Successful Fuel Test",
+      "excerpt": "NASA completed a successful wet dress rehearsal for Artemis II on Feb 19, 2026. Over 700,000 gallons of propellant loaded. Crew in quarantine for March launch. ISS research contributed to Orion life support.",
+      "category": "nasa-news",
+      "date": "2026-02-23"
+    },
+    {
+      "slug": "how-infinity-math-affects-aerospace-engineering",
+      "title": "How Infinity Math Affects Aerospace Engineering",
+      "excerpt": "Limits, infinite series, and unbounded behavior shape orbital mechanics, escape velocity, control theory, and numerical methods. How aerospace engineers use infinity.",
+      "category": "astronomy-lessons",
+      "date": "2026-02-22"
+    }
+  ],
+  "learning_paths": {
+    "beginner": [
+      "What is orbital mechanics?",
+      "How do satellites stay up?",
+      "What is escape velocity?",
+      "How rockets work",
+      "The solar system explained"
+    ],
+    "intermediate": [
+      "LEO vs MEO vs GEO orbits",
+      "Hohmann transfer orbits",
+      "How GPS works",
+      "Re-entry physics",
+      "Aerodynamics of launch vehicles"
+    ],
+    "advanced": [
+      "Quantum physics in space navigation",
+      "AI-guided spacecraft",
+      "N-body problem simulations",
+      "Relativistic corrections for GPS",
+      "Interplanetary trajectory design"
+    ]
+  }
+}
