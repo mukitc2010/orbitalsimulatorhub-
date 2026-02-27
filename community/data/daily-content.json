@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-02-25T23:28:00.659Z",
+  "generated_at": "2026-02-27T05:35:49.136Z",
   "featured_article": {
     "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
     "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260225"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260227"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Schrodinger equation: the foundation of quantum...",
-      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Quantum key distribution for secure satellite c...",
+      "blurb": "Quantum key distribution for secure satellite communications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Space is completely silent because sound needs ...",
-      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
+      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
+      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Patched conic approximation for interplanetary ...",
-      "blurb": "Patched conic approximation for interplanetary trajectories is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Exoplanet detection methods: transit and radial...",
+      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260227",
+      "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+      "excerpt": "Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-02-27"
+    },
     {
       "slug": "what-is-space-agi-why-it-matters",
       "title": "What Is Space AGI? Why Artificial General Intelligence in Space Matters",
@@ -37,13 +44,6 @@
       "title": "Vis-Viva Equation Explained: The Master Formula for All Orbits",
       "excerpt": "The vis-viva equation v² = μ(2/r − 1/a) gives orbital speed at any point. Learn the derivation, circular vs elliptical orbits, and why it's the most important formula in orbital mechanics.",
       "category": "space-engineering",
-      "date": "2026-02-25"
-    },
-    {
-      "slug": "how-lift-is-generated-bernoulli-vs-newton-explanations-20260225",
-      "title": "How lift is generated: Bernoulli vs Newton explanations",
-      "excerpt": "Learn about how lift is generated: bernoulli vs newton explanations — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
       "date": "2026-02-25"
     }
   ],
