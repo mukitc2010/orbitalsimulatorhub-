@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-02-27T05:35:49.136Z",
+  "generated_at": "2026-02-27T21:22:08.324Z",
   "featured_article": {
-    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
-    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Pontryagin maximum principle explained for orbital maneuvers",
+    "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260227"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260227"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Quantum key distribution for secure satellite c...",
-      "blurb": "Quantum key distribution for secure satellite communications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Voyager spacecraft updates from interstellar space",
+      "blurb": "Voyager spacecraft updates from interstellar space is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
-      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "The observable universe is 93 billion light-yea...",
+      "blurb": "The observable universe is 93 billion light-years across is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Exoplanet detection methods: transit and radial...",
-      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How quantum computing could optimize mission pl...",
+      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-02-27"
     },
     {
+      "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260227",
+      "title": "Pontryagin maximum principle explained for orbital maneuvers",
+      "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-02-27"
+    },
+    {
       "slug": "what-is-space-agi-why-it-matters",
       "title": "What Is Space AGI? Why Artificial General Intelligence in Space Matters",
       "excerpt": "Space AGI is AI that can perceive, plan, and act autonomously in orbit—without waiting for Earth. Learn the five pillars, delayed MDP, and why Mars missions need it.",
       "category": "space-agi",
-      "date": "2026-02-25"
-    },
-    {
-      "slug": "vis-viva-equation-explained-master-formula-orbits",
-      "title": "Vis-Viva Equation Explained: The Master Formula for All Orbits",
-      "excerpt": "The vis-viva equation v² = μ(2/r − 1/a) gives orbital speed at any point. Learn the derivation, circular vs elliptical orbits, and why it's the most important formula in orbital mechanics.",
-      "category": "space-engineering",
       "date": "2026-02-25"
     }
   ],
