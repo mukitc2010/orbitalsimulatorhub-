@@ -23,9 +23,8 @@ export const DAILY_TOPICS: DailyTopic[] = [
     icon: "🤖",
     category: "orbital-mechanics",
     description: "New research: Multi-Gravity Intelligence Hypothesis, humanoid robotics for Earth/Moon/Mars/zero-G. PhD-level architecture for Space-Ready AGI.",
-    learnMoreUrl: "/docs/EMBODIED-AGI-MULTI-GRAVITY-RESEARCH.md",
+    learnMoreUrl: "/research/embodied-agi-multi-gravity-research",
     keywords: ["Embodied AGI", "Multi-Gravity", "humanoid robotics", "Space AGI", "Mars", "Moon"],
-    external: true,
   },
   {
     id: "artemis-ii-launch-pad-2026-02-23",

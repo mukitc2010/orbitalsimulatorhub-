@@ -29,7 +29,8 @@
     "content:generate": "node scripts/content-agent.js",
     "content:dry-run": "node scripts/content-agent.js --dry-run",
     "content:schedule": "node scripts/content-scheduler.js",
-    "seo:auto": "node scripts/auto-seo-update.js"
+    "seo:auto": "node scripts/auto-seo-update.js",
+    "openclaw:update": "node scripts/openclaw-full-update.js"
   },
   "dependencies": {
     "@react-three/drei": "^9.120.0",
@@ -40,11 +41,15 @@
     "dotenv": "^16.4.0",
     "drizzle-orm": "^0.36.0",
     "express": "^4.21.0",
+    "katex": "^0.16.33",
     "msgpackr": "^1.11.8",
     "mysql2": "^3.11.0",
     "pg": "^8.13.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
     "superjson": "^2.2.0",
     "three": "^0.170.0",
     "wouter": "^2.12.0",

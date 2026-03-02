@@ -193,6 +193,55 @@ body {
   background-color: var(--bg-grid);
 }
 
+/* Homepage: vibrant gradient overlay (less plain black) */
+.home-page-wrapper {
+  background: 
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(0,217,255,0.15), transparent 50%),
+    radial-gradient(ellipse 80% 60% at 100% 50%, rgba(251,191,36,0.08), transparent 45%),
+    radial-gradient(ellipse 80% 60% at 0% 80%, rgba(0,217,255,0.06), transparent 45%),
+    var(--bg-grid);
+}
+[data-theme="light-clean"] .home-page-wrapper {
+  background: 
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(37,99,235,0.08), transparent 50%),
+    radial-gradient(ellipse 80% 60% at 100% 50%, rgba(217,119,6,0.05), transparent 45%),
+    var(--bg-grid);
+}
+
+/* Updates banner - highlighted at top */
+.updates-banner {
+  background: linear-gradient(135deg, rgba(0,217,255,0.2) 0%, rgba(251,191,36,0.15) 50%, rgba(0,217,255,0.12) 100%);
+  border: 1px solid rgba(0,217,255,0.4);
+  box-shadow: 0 4px 24px rgba(0,217,255,0.2), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+[data-theme="light-clean"] .updates-banner {
+  background: linear-gradient(135deg, rgba(37,99,235,0.12) 0%, rgba(217,119,6,0.08) 50%, rgba(37,99,235,0.1) 100%);
+  border: 1px solid rgba(37,99,235,0.3);
+  box-shadow: 0 4px 20px rgba(37,99,235,0.15);
+}
+
+/* Beautiful card with glow */
+.home-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.home-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2), 0 0 24px rgba(0,217,255,0.08);
+  border-color: rgba(0,217,255,0.25);
+}
+[data-theme="light-clean"] .home-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+[data-theme="light-clean"] .home-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1), 0 0 16px rgba(37,99,235,0.08);
+  border-color: rgba(37,99,235,0.3);
+}
+
 .font-mono-tech {
   font-family: "Space Mono", monospace;
 }

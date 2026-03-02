@@ -148,6 +148,13 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     keywords: "orbital mechanics for beginners, optimal control explained, MPC LQR explained, Pontryagin explained simply, satellite math easy, space AI for students, Space-AGI for teens, control theory for beginners, how satellites avoid collisions",
     lastUpdated: "2026-02-23T00:00:00Z",
   },
+  "/research/embodied-agi-multi-gravity-research": {
+    path: "/research/embodied-agi-multi-gravity-research",
+    title: "Embodied AGI for Multi-Gravity Space — Humanoid Robotics, Moon/Mars/Zero-G | Orbital Simulator Hub",
+    description: "PhD-level research: Multi-Gravity Intelligence Hypothesis, humanoid robotics for Earth/Moon/Mars/zero-G. Physics-grounded AGI architecture for Space-Ready intelligence. 10,000+ words.",
+    keywords: "Embodied AGI, multi-gravity intelligence, humanoid robotics space, Moon Mars zero-G, Space-Ready AGI, GIPN, EGI, MPL, gravity-invariant policy",
+    lastUpdated: "2026-02-23T00:00:00Z",
+  },
   "/research/space-agi-roadmap": {
     path: "/research/space-agi-roadmap",
     title: "Space-AGI Engineering Roadmap — Future of Autonomous Space Systems | Orbital Simulator Hub",

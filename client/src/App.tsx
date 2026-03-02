@@ -67,6 +67,7 @@ import { FutureSpaceCivilization } from "./pages/FutureSpaceCivilization";
 import { Next100Years } from "./pages/Next100Years";
 import { Welcome } from "./pages/Welcome";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { ResearchDocViewer } from "./pages/ResearchDocViewer";
 import { NotFound } from "./pages/NotFound";
 
 function App() {
@@ -93,6 +94,7 @@ function App() {
           <Route path="/research/space-agi-roadmap" component={SpaceAGIRoadmap} />
           <Route path="/research/space-agi-math" component={SpaceAGIMathematics} />
           <Route path="/research/space-agi-explanation" component={SpaceAGIExplanation} />
+          <Route path="/research/embodied-agi-multi-gravity-research" component={ResearchDocViewer} />
           <Route path="/welcome" component={Welcome} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/learn/aerospace" component={AerospaceReference} />

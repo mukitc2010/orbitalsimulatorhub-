@@ -50,6 +50,7 @@ const CATEGORIES = [
     title: "Future & authority",
     desc: "Future of space civilization, next 100 years, neuro-space, Space-AGI Lab, interstellar.",
     links: [
+      { href: "/research/embodied-agi-multi-gravity-research", label: "📄 Embodied AGI for Multi-Gravity", summary: "PhD-level research: humanoid robotics for Earth/Moon/Mars/zero-G. Multi-Gravity Intelligence Hypothesis, Space-Ready AGI architecture." },
       { href: "/research/space-agi-lab", label: "🧠 Space-AGI Engineering Lab", summary: "5 pillars: autonomous spacecraft, decision intelligence, orbital math, future systems, live simulation lab." },
       { href: "/research/space-agi-roadmap", label: "Space-AGI Roadmap 2025–2060+", summary: "AI satellites to interstellar probes. Real engineering future." },
       { href: "/research/space-agi-explanation", label: "Space-AGI Explanation", summary: "Plain-language guides. Math Explained tab — ISS, Starlink, Mars rover examples for teens & college." },
