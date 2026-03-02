@@ -1,7 +1,6 @@
 # Embodied Artificial General Intelligence for Multi-Gravity Space Environments: A Physics-Grounded Architecture for Humanoid Intelligence Beyond Earth
 
-**Author:** Mukit Hasan Chowdhury  
-**Affiliation:** Independent AGI & Space Robotics Researcher, USA  
+**Author:** Independent AGI & Space Robotics Researcher  
 **Document Version:** 1.0  
 **Date:** February 2026
 
@@ -952,11 +951,11 @@ Each experiment run produces a JSON log with: `experiment_id`, `config_hash`, `s
 
 ## Appendix I: Author Biography
 
-**Mukit Hasan Chowdhury** is an independent researcher focused on artificial general intelligence, humanoid robotics, and space intelligence systems. His work bridges theoretical AI, control theory, and space systems engineering. He holds a vision for Space-Ready AGI—intelligent systems that can operate autonomously across the gravitational diversity of the solar system—and this document represents a comprehensive blueprint toward that goal.
+Independent researcher focused on artificial general intelligence, humanoid robotics, and space intelligence systems. This work bridges theoretical AI, control theory, and space systems engineering, with a vision for Space-Ready AGI—intelligent systems that can operate autonomously across the gravitational diversity of the solar system.
 
 ## Appendix J: Suggested Citation
 
-Chowdhury, M. H. (2026). *Embodied Artificial General Intelligence for Multi-Gravity Space Environments: A Physics-Grounded Architecture for Humanoid Intelligence Beyond Earth*. Independent Research Report. Available at [project repository].
+*Embodied Artificial General Intelligence for Multi-Gravity Space Environments: A Physics-Grounded Architecture for Humanoid Intelligence Beyond Earth*. Independent Research Report, 2026. Available at [project repository].
 
 ## Appendix K: Version History
 
@@ -1014,7 +1013,7 @@ This document presents a comprehensive blueprint for Embodied Artificial General
 
 The contributions of this work—the Multi-Gravity Intelligence Hypothesis, Embodied Gravity Intelligence, Multi-Planet Learning, Gravity-Invariant Policy Networks, and the full technical specification—are offered as a foundation for the next generation of space-capable autonomous systems. As Artemis returns humans to the Moon and Mars missions take shape, the need for robots that can operate across gravitational diversity has never been more urgent. This document provides the roadmap; the implementation is the task ahead.
 
-— *Mukit Hasan Chowdhury, Independent AGI & Space Robotics Researcher, February 2026*
+— *Independent AGI & Space Robotics Researcher, February 2026*
 
 ---
 
@@ -1037,6 +1036,6 @@ These equations form the mathematical backbone of the Space-Ready AGI framework.
 
 ---
 
-*Document prepared for research dissemination. © 2026 Mukit Hasan Chowdhury. All rights reserved.*
+*Document prepared for research dissemination. © 2026. All rights reserved.*
 
 *This work is intended for academic and research use. For commercial licensing or collaboration inquiries, please contact the author.*

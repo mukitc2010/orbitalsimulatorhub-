@@ -174,7 +174,7 @@ export function Home() {
       <section className="rounded-xl border-2 p-4 mb-8" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(255,193,7,0.06) 100%)", borderColor: "var(--accent-gold)" }}>
         <h3 className="text-sm font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-gold)" }}>📄 New: Embodied AGI for Multi-Gravity Space</h3>
         <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
-          Publication-level research by Mukit Hasan Chowdhury — Multi-Gravity Intelligence Hypothesis, humanoid robotics for Earth/Moon/Mars/zero-G, physics-grounded AGI architecture. 10,000+ words. PhD + NASA quality.
+          Publication-level research — Multi-Gravity Intelligence Hypothesis, humanoid robotics for Earth/Moon/Mars/zero-G, physics-grounded AGI architecture. 10,000+ words. PhD + NASA quality.
         </p>
         <div className="flex flex-wrap gap-2">
           <a href="/docs/EMBODIED-AGI-MULTI-GRAVITY-RESEARCH.md" className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--accent-gold)", color: "#0f172a" }} target="_blank" rel="noopener noreferrer">Read Full Research →</a>
