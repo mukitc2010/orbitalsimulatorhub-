@@ -17,16 +17,6 @@ export interface DailyTopic {
 
 export const DAILY_TOPICS: DailyTopic[] = [
   {
-    id: "embodied-agi-multi-gravity-2026-03-01",
-    date: "2026-03-01",
-    title: "Embodied AGI for Multi-Gravity Space",
-    icon: "🤖",
-    category: "orbital-mechanics",
-    description: "New research: Multi-Gravity Intelligence Hypothesis, humanoid robotics for Earth/Moon/Mars/zero-G. PhD-level architecture for Space-Ready AGI.",
-    learnMoreUrl: "/research/embodied-agi-multi-gravity-research",
-    keywords: ["Embodied AGI", "Multi-Gravity", "humanoid robotics", "Space AGI", "Mars", "Moon"],
-  },
-  {
     id: "artemis-ii-launch-pad-2026-02-23",
     date: "2026-02-23",
     title: "Artemis II: Launch Pad Ops Begin",
