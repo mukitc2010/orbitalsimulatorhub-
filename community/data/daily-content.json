@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-03-02T06:48:30.186Z",
+  "generated_at": "2026-03-02T11:30:25.623Z",
   "featured_article": {
-    "title": "What is Space AGI and why it matters for future space exploration",
-    "excerpt": "What is Space AGI and why it matters for future space exploration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260302"
+    "title": "N-body equations: when two-body mechanics is not enough",
+    "excerpt": "N-body equations: when two-body mechanics is not enough is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/n-body-equations-when-two-body-mechanics-is-not-enough-20260302"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
-      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "International Space Station science experiments",
+      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How atomic clocks on GPS satellites use quantum...",
-      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How weather satellites predict storms and track...",
+      "blurb": "How weather satellites predict storms and track hurricanes is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum tunneling in nuclear fusion inside stars",
-      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "CubeSats and nanosatellites: space access for u...",
+      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "how-space-will-build-ai-based-astronaut-robots-for-future-missions",
+      "title": "How Space Will Build AI-Based Astronaut Robots for Future Missions",
+      "excerpt": "NASA and SpaceX need AI astronaut robots for Moon, Mars, and deep space. Learn how AGI, computer vision, and autonomous repair systems will power the next generation of space robotics. Trusted by engineers, researchers, future space pioneers.",
+      "category": "space-agi",
+      "date": "2026-03-05"
+    },
     {
       "slug": "what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260302",
       "title": "What is Space AGI and why it matters for future space exploration",
@@ -33,18 +40,11 @@
       "date": "2026-03-02"
     },
     {
-      "slug": "how-ai-satellites-make-autonomous-decisions-in-orbit-20260301",
-      "title": "How AI satellites make autonomous decisions in orbit",
-      "excerpt": "Learn about how ai satellites make autonomous decisions in orbit — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-01"
-    },
-    {
-      "slug": "what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260301",
-      "title": "What is Space AGI and why it matters for future space exploration",
-      "excerpt": "Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-01"
+      "slug": "n-body-equations-when-two-body-mechanics-is-not-enough-20260302",
+      "title": "N-body equations: when two-body mechanics is not enough",
+      "excerpt": "Learn about n-body equations: when two-body mechanics is not enough — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-03-02"
     }
   ],
   "learning_paths": {

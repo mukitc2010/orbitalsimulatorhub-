@@ -7,6 +7,7 @@ import { getBlogImage } from "../data/blogImages";
 
 const FEATURES = [
   { href: "/simulator", icon: "🛸", title: "3D Simulator", desc: "Add LEO, MEO, GEO satellites. Watch orbits in real time.", color: "cyan" },
+  { href: "/simulator/ai-astronaut-robot", icon: "🤖", title: "AI Robot Lab", desc: "Build and train AI space robots. Humanoid, rover, vision AI.", color: "purple" },
   { href: "/astrobot", icon: "🤖", title: "AstroBot", desc: "Your AI Space Professor. Orbital mechanics, satellites, missions.", color: "gold" },
   { href: "/learn/orbital-mechanics", icon: "🧠", title: "Orbital Mechanics", desc: "Master orbits, escape velocity, Hohmann transfer.", color: "cyan" },
   { href: "/ai-in-aerospace", icon: "🚀", title: "AI in Space", desc: "Autonomous spacecraft, Mars rover AI, Space AGI.", color: "pink" },
@@ -22,6 +23,7 @@ const QUICK_LINKS = [
   { href: "/blog", label: "Blog" },
   { href: "/space-news", label: "Space News" },
   { href: "/research", label: "Research" },
+  { href: "/simulator/ai-astronaut-robot", label: "AI Robot Simulator" },
   { href: "/research/space-agi-lab", label: "Space-AGI Lab" },
   { href: "/research/space-agi-math", label: "Space-AGI Math" },
   { href: "/recommended-books", label: "Books" },
@@ -41,6 +43,8 @@ function getTodaysUpdates() {
     isNew: true,
   }));
   const featuredResearch = [
+    { href: "/simulator/ai-astronaut-robot", label: "🤖 AI Astronaut Robot Lab", desc: "Build and train AI space robots. World-first Space-AGI simulator.", isNew: true },
+    { href: "/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions", label: "📄 AI Astronaut Robots", desc: "How NASA & SpaceX will build AI robots for Moon, Mars, deep space.", isNew: true },
     { href: "/research/space-agi-math", label: "🧮 Space-AGI Mathematics", desc: "MPC, LQR, Pontryagin, optimal control — graduate-level", isNew: false },
   ];
   const staticLinks = [
@@ -54,6 +58,7 @@ function getTodaysUpdates() {
 }
 
 const EXPLORE_BY_TOPIC = [
+  { href: "/simulator/ai-astronaut-robot", icon: "🤖", title: "AI Astronaut Robots" },
   { href: "/blog/category/space-agi", icon: "🧠", title: "Space AGI" },
   { href: "/blog/category/space-engineering", icon: "⚙️", title: "Space Engineering" },
   { href: "/research/space-agi-lab", icon: "🔬", title: "Space-AGI Lab" },
@@ -172,6 +177,47 @@ export function Home() {
           </div>
         </section>
 
+        {/* AI Astronaut Robot Lab — NEW featured block */}
+        <section
+          className="rounded-2xl p-6 md:p-8 mb-8 relative overflow-hidden"
+          style={{
+            background: "linear-gradient(135deg, rgba(0,217,255,0.15) 0%, rgba(167,139,250,0.12) 50%, rgba(0,217,255,0.1) 100%)",
+            border: "2px solid rgba(0,217,255,0.4)",
+            boxShadow: "0 0 40px rgba(0,217,255,0.2), inset 0 1px 0 rgba(255,255,255,0.1)",
+          }}
+        >
+          <div className="absolute top-2 right-2 flex gap-2">
+            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full uppercase" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>NEW</span>
+            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ background: "rgba(167,139,250,0.5)", color: "#fff" }}>World First</span>
+          </div>
+          <h2 className="text-xl md:text-2xl font-bold mb-2" style={{ color: "var(--text-primary)" }}>
+            🤖 AI Astronaut Robot Lab
+          </h2>
+          <p className="text-sm mb-4 max-w-2xl" style={{ color: "var(--text-secondary)" }}>
+            Build and train your own AI space robot inside a simulator. Design humanoid space robots, train vision AI, simulate missions in zero gravity and Mars terrain.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/simulator/ai-astronaut-robot">
+              <a className="px-5 py-2.5 rounded-xl font-semibold text-sm transition hover:opacity-95" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
+                Launch Robot Simulator
+              </a>
+            </Link>
+            <Link href="/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions">
+              <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-cyan)", color: "var(--accent-cyan)" }}>
+                Learn Space Robotics
+              </a>
+            </Link>
+            <Link href="/simulator/ai-astronaut-robot#training">
+              <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "rgba(167,139,250,0.8)", color: "#a78bfa" }}>
+                Train Vision AI
+              </a>
+            </Link>
+          </div>
+          <p className="text-xs mt-4" style={{ color: "var(--text-muted)" }}>
+            Trusted by engineers, researchers, future space pioneers.
+          </p>
+        </section>
+
         {/* Orbital Mechanics Master Hub + AI in Space + Future Space Intelligence */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
           <Link href="/learn/orbital-mechanics">
@@ -243,8 +289,10 @@ export function Home() {
           <div className="home-card rounded-xl p-4">
           <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📡 Trending: Space Engineering • AI • Quantum • Futuristic</h3>
           <div className="flex flex-wrap gap-2">
+            <Link href="/simulator/ai-astronaut-robot"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI Astronaut Robots</a></Link>
             <Link href="/blog/category/space-agi"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</a></Link>
-            <Link href="/blog/category/space-engineering"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Engineering</a></Link>
+            <Link href="/blog/category/space-engineering"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Robotics</a></Link>
+            <Link href="/research/space-agi-lab"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AGI Robotics Lab</a></Link>
             <Link href="/research/space-agi-math"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space-AGI Math</a></Link>
             <Link href="/learn/quantum-space"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum Computing</a></Link>
             <Link href="/space-news"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Daily News</a></Link>
@@ -300,6 +348,8 @@ export function Home() {
         <section className="home-card rounded-xl p-4 mb-8">
         <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>🔍 Popular: Space Engineering • AI • Quantum • Futuristic</h3>
         <div className="flex flex-wrap gap-2">
+          <Link href="/simulator/ai-astronaut-robot"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI Astronaut Robot</a></Link>
+          <Link href="/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space robotics</a></Link>
           <Link href="/blog/what-is-space-agi-why-it-matters"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>What is Space AGI?</a></Link>
           <Link href="/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260227"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI collision avoidance</a></Link>
           <Link href="/blog/vis-viva-equation-explained-master-formula-orbits"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Vis-viva equation</a></Link>
@@ -314,6 +364,7 @@ export function Home() {
         <section className="home-card rounded-xl p-4 mb-8">
         <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📚 Space Engineering • AI • Quantum • Futuristic</h3>
         <div className="flex flex-wrap gap-2 mb-4">
+          <Link href="/simulator/ai-astronaut-robot"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI Astronaut Robots</a></Link>
           <Link href="/blog/category/space-engineering"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Engineering</a></Link>
           <Link href="/blog/category/space-agi"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</a></Link>
           <Link href="/research/space-agi-math"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space-AGI Math</a></Link>
