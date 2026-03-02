@@ -8,9 +8,8 @@ export function DailyTopicIcon() {
     return null;
   }
 
-  return (
-    <Link href={topic.learnMoreUrl}>
-      <a className="group block">
+  const content = (
+    <div className="group block">
         <div className="relative inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-gradient-to-r from-[var(--accent-cyan)]/20 to-[var(--accent-pink)]/20 border-2 border-[var(--accent-cyan)]/50 hover:border-[var(--accent-cyan)] hover:shadow-lg transition-all">
           <div className="text-4xl animate-pulse group-hover:scale-110 transition-transform">
             {topic.icon}
@@ -30,7 +29,16 @@ export function DailyTopicIcon() {
             →
           </div>
         </div>
-      </a>
+    </div>
+  );
+
+  return topic.external ? (
+    <a href={topic.learnMoreUrl} target="_blank" rel="noopener noreferrer" className="block">
+      {content}
+    </a>
+  ) : (
+    <Link href={topic.learnMoreUrl}>
+      <a className="block">{content}</a>
     </Link>
   );
 }

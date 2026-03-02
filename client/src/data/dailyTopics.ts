@@ -12,6 +12,7 @@ export interface DailyTopic {
   description: string;
   learnMoreUrl: string;
   keywords: string[];
+  external?: boolean;
 }
 
 export const DAILY_TOPICS: DailyTopic[] = [
@@ -24,6 +25,7 @@ export const DAILY_TOPICS: DailyTopic[] = [
     description: "New research: Multi-Gravity Intelligence Hypothesis, humanoid robotics for Earth/Moon/Mars/zero-G. PhD-level architecture for Space-Ready AGI.",
     learnMoreUrl: "/docs/EMBODIED-AGI-MULTI-GRAVITY-RESEARCH.md",
     keywords: ["Embodied AGI", "Multi-Gravity", "humanoid robotics", "Space AGI", "Mars", "Moon"],
+    external: true,
   },
   {
     id: "artemis-ii-launch-pad-2026-02-23",
