@@ -10,6 +10,7 @@ const FEATURES = [
   { href: "/astrobot", icon: "🤖", title: "AstroBot", desc: "Your AI Space Professor. Orbital mechanics, satellites, missions.", color: "gold" },
   { href: "/learn/orbital-mechanics", icon: "🧠", title: "Orbital Mechanics", desc: "Master orbits, escape velocity, Hohmann transfer.", color: "cyan" },
   { href: "/ai-in-aerospace", icon: "🚀", title: "AI in Space", desc: "Autonomous spacecraft, Mars rover AI, Space AGI.", color: "pink" },
+  { href: "/research/space-agi-lab", icon: "🔬", title: "Space-AGI Lab", desc: "5 pillars, humanoid robotics, multi-gravity AGI, live swarm simulator.", color: "cyan" },
 ];
 
 const QUICK_LINKS = [
@@ -22,14 +23,16 @@ const QUICK_LINKS = [
   { href: "/space-news", label: "Space News" },
   { href: "/research", label: "Research" },
   { href: "/research/space-agi-lab", label: "Space-AGI Lab" },
+  { href: "/research/space-agi-math", label: "Space-AGI Math" },
   { href: "/recommended-books", label: "Books" },
   { href: "/space-shop", label: "Space Shop" },
+  { href: "/privacy-policy", label: "Privacy" },
 ];
 
 // Sort by date descending so newest is first (content-agent appends to end of array)
 const LATEST_POSTS = [...BLOG_POSTS].sort((a, b) => b.date.localeCompare(a.date));
 
-// Build dynamic updates: latest 3 blog posts first, then static links
+// Build dynamic updates: latest 3 blog posts first, then featured research, then static links
 function getTodaysUpdates() {
   const latest = LATEST_POSTS.slice(0, 3).map((p) => ({
     href: `/blog/${p.slug}`,
@@ -37,6 +40,10 @@ function getTodaysUpdates() {
     desc: p.excerpt.slice(0, 80) + (p.excerpt.length > 80 ? "…" : ""),
     isNew: true,
   }));
+  const featuredResearch = [
+    { href: "/docs/EMBODIED-AGI-MULTI-GRAVITY-RESEARCH.md", label: "📄 Embodied AGI for Multi-Gravity", desc: "PhD-level research: humanoid robotics, Moon/Mars/zero-G, Space-Ready AGI architecture", isNew: true },
+    { href: "/research/space-agi-math", label: "🧮 Space-AGI Mathematics", desc: "MPC, LQR, Pontryagin, optimal control — graduate-level", isNew: false },
+  ];
   const staticLinks = [
     { href: "/space-news", label: "📰 Daily Space News", desc: "NASA, Artemis, SpaceX, James Webb — updated daily", isNew: false },
     { href: "/research/space-agi-lab", label: "🧠 Space-AGI Lab", desc: "5 pillars, autonomous spacecraft, decision intelligence", isNew: false },
@@ -44,13 +51,15 @@ function getTodaysUpdates() {
     { href: "/blog", label: "📚 All Articles", desc: "Space engineering, AI, formulas — fresh content every day", isNew: false },
     { href: "/space-shop", label: "🛒 Space Shop", desc: "NASA t-shirts, toys, books — verified Amazon", isNew: false },
   ];
-  return [...latest, ...staticLinks];
+  return [...latest, ...featuredResearch, ...staticLinks];
 }
 
 const EXPLORE_BY_TOPIC = [
+  { href: "/docs/EMBODIED-AGI-MULTI-GRAVITY-RESEARCH.md", icon: "📄", title: "Embodied AGI Research" },
   { href: "/blog/category/space-agi", icon: "🧠", title: "Space AGI" },
   { href: "/blog/category/space-engineering", icon: "⚙️", title: "Space Engineering" },
   { href: "/research/space-agi-lab", icon: "🔬", title: "Space-AGI Lab" },
+  { href: "/research/space-agi-math", icon: "🧮", title: "Space-AGI Math" },
   { href: "/learn/quantum-space", icon: "⚛", title: "Quantum & Space" },
   { href: "/ai-in-aerospace", icon: "🤖", title: "AI in Aerospace" },
   { href: "/learn/orbital-mechanics", icon: "🌌", title: "Orbital mechanics" },
@@ -67,7 +76,7 @@ export function Home() {
     <div className="max-w-4xl mx-auto">
       {/* Today's Updates — top of page, latest posts highlighted */}
       <section className="rounded-xl border-2 p-4 mb-6" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(0,217,255,0.06) 100%)", borderColor: "var(--accent-cyan)" }}>
-        <h3 className="text-sm font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-cyan)" }}>✨ Latest Updates • New Posts Every 6h • Space Engineering • AI • Quantum</h3>
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-cyan)" }}>✨ Latest Updates • New Posts Every 6h • Embodied AGI Research • Space Engineering • AI • Quantum</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
           {getTodaysUpdates().map((u) => (
             <Link key={u.href} href={u.href}>
@@ -101,13 +110,18 @@ export function Home() {
               🤖 Ask AstroBot
             </a>
           </Link>
-          <Link href="/learn/orbital-mechanics">
-            <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-pink)", color: "var(--text-on-accent)" }}>
-              🧠 Learn Orbital Mechanics
+          <Link href="/research/space-agi-lab">
+            <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-on-accent)" }}>
+              🔬 Space-AGI Lab
+            </a>
+          </Link>
+          <Link href="/docs/EMBODIED-AGI-MULTI-GRAVITY-RESEARCH.md">
+            <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-gold)", color: "var(--text-on-accent)" }} target="_blank" rel="noopener noreferrer">
+              📄 Embodied AGI Research
             </a>
           </Link>
           <Link href="/ai-in-aerospace">
-            <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-gold)", color: "var(--text-on-accent)" }}>
+            <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-pink)", color: "var(--text-on-accent)" }}>
               🚀 AI in Space
             </a>
           </Link>
@@ -116,8 +130,8 @@ export function Home() {
         <ShareBar path="/" showRedditSubs />
       </section>
 
-      {/* 4 main features — Simulator, AstroBot, Orbital Mechanics, AI in Space */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      {/* 5 main features — Simulator, AstroBot, Orbital Mechanics, AI in Space, Space-AGI Lab */}
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
         {FEATURES.map((f) => (
           <Link key={f.href} href={f.href}>
             <a className="block p-5 rounded-xl border-2 transition hover:shadow-lg hover:scale-[1.02]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
@@ -145,6 +159,25 @@ export function Home() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Featured Research — Embodied AGI + Space-AGI Lab */}
+      <section className="rounded-xl border-2 p-4 mb-8" style={{ background: "linear-gradient(135deg, var(--bg-card) 0%, rgba(255,193,7,0.06) 100%)", borderColor: "var(--accent-gold)" }}>
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-gold)" }}>📄 New: Embodied AGI for Multi-Gravity Space</h3>
+        <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
+          Publication-level research by Mukit Hasan Chowdhury — Multi-Gravity Intelligence Hypothesis, humanoid robotics for Earth/Moon/Mars/zero-G, physics-grounded AGI architecture. 10,000+ words. PhD + NASA quality.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <Link href="/docs/EMBODIED-AGI-MULTI-GRAVITY-RESEARCH.md">
+            <a className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--accent-gold)", color: "#0f172a" }} target="_blank" rel="noopener noreferrer">Read Full Research →</a>
+          </Link>
+          <Link href="/research/space-agi-math">
+            <a className="px-4 py-2 rounded-lg font-medium text-sm border-2" style={{ borderColor: "var(--accent-gold)", color: "var(--text-on-accent)" }}>Space-AGI Mathematics</a>
+          </Link>
+          <Link href="/simulator/swarm">
+            <a className="px-4 py-2 rounded-lg font-medium text-sm border-2" style={{ borderColor: "var(--accent-gold)", color: "var(--text-on-accent)" }}>Swarm Simulator</a>
+          </Link>
         </div>
       </section>
 
@@ -212,8 +245,10 @@ export function Home() {
         <div className="rounded-xl border p-4" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
           <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📡 Trending: Space Engineering • AI • Quantum • Futuristic</h3>
           <div className="flex flex-wrap gap-2">
+            <Link href="/docs/EMBODIED-AGI-MULTI-GRAVITY-RESEARCH.md"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Embodied AGI</a></Link>
             <Link href="/blog/category/space-agi"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</a></Link>
             <Link href="/blog/category/space-engineering"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Engineering</a></Link>
+            <Link href="/research/space-agi-math"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space-AGI Math</a></Link>
             <Link href="/learn/quantum-space"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum Computing</a></Link>
             <Link href="/space-news"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Daily News</a></Link>
             <Link href="/research/future-civilization"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Future Tech</a></Link>
@@ -268,8 +303,11 @@ export function Home() {
       <section className="rounded-xl border p-4 mb-8" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
         <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>🔍 Popular: Space Engineering • AI • Quantum • Futuristic</h3>
         <div className="flex flex-wrap gap-2">
+          <Link href="/docs/EMBODIED-AGI-MULTI-GRAVITY-RESEARCH.md"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Embodied AGI Research</a></Link>
           <Link href="/blog/what-is-space-agi-why-it-matters"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>What is Space AGI?</a></Link>
+          <Link href="/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260227"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI collision avoidance</a></Link>
           <Link href="/blog/vis-viva-equation-explained-master-formula-orbits"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Vis-viva equation</a></Link>
+          <Link href="/research/space-agi-math"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space-AGI Math</a></Link>
           <Link href="/calculators"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>How fast does ISS orbit?</a></Link>
           <Link href="/learn/quantum-space"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum in space</a></Link>
           <Link href="/simulator"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Orbit simulator</a></Link>
@@ -280,8 +318,10 @@ export function Home() {
       <section className="rounded-xl border p-4 mb-8" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
         <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📚 Space Engineering • AI • Quantum • Futuristic</h3>
         <div className="flex flex-wrap gap-2 mb-4">
+          <Link href="/docs/EMBODIED-AGI-MULTI-GRAVITY-RESEARCH.md"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Embodied AGI Research</a></Link>
           <Link href="/blog/category/space-engineering"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Engineering</a></Link>
           <Link href="/blog/category/space-agi"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</a></Link>
+          <Link href="/research/space-agi-math"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space-AGI Math</a></Link>
           <Link href="/formulas-library"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Orbital formulas</a></Link>
           <Link href="/learn/quantum-space"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum computing</a></Link>
           <Link href="/ai-in-aerospace"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI in space</a></Link>
