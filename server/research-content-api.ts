@@ -56,11 +56,11 @@ function addResearchContent(content: z.infer<typeof researchContentSchema>): { s
     let entry = `  {\n    id: "${content.id}",\n    date: "${content.date}",\n    title: ${JSON.stringify(content.title)},\n    type: "${content.type}",\n    category: "${content.category}",\n    summary: ${JSON.stringify(content.summary)},\n    content: ${JSON.stringify(content.content)},\n    keywords: [${content.keywords.map(k => JSON.stringify(k)).join(", ")}],\n    references: [\n${content.references.map(ref => `      {\n        title: ${JSON.stringify(ref.title)},\n        url: ${JSON.stringify(ref.url)},\n        source: ${JSON.stringify(ref.source)},\n        type: "${ref.type}"\n      }`).join(",\n")}\n    ]`;
 
     if (content.formulas && content.formulas.length > 0) {
-      entry += `,\n    formulas: [\n${content.formulas.map(f => `      {\n        name: ${JSON.stringify(f.name)},\n        equation: ${JSON.stringify(f.equation)},\n        description: ${JSON.stringify(f.description)}\n      }`).join(",\n")}\n    ]`;
+      entry += `,\n    formulas: [\n${content.formulas.map((f) => `      {\n        name: ${JSON.stringify(f!.name)},\n        equation: ${JSON.stringify(f!.equation)},\n        description: ${JSON.stringify(f!.description)}\n      }`).join(",\n")}\n    ]`;
     }
 
     if (content.dataPoints && content.dataPoints.length > 0) {
-      entry += `,\n    dataPoints: [\n${content.dataPoints.map(dp => `      {\n        label: ${JSON.stringify(dp.label)},\n        value: ${JSON.stringify(dp.value)},\n        unit: ${JSON.stringify(dp.unit || "")},\n        source: ${JSON.stringify(dp.source)}\n      }`).join(",\n")}\n    ]`;
+      entry += `,\n    dataPoints: [\n${content.dataPoints.map((dp) => `      {\n        label: ${JSON.stringify(dp!.label)},\n        value: ${JSON.stringify(dp!.value)},\n        unit: ${JSON.stringify(dp!.unit || "")},\n        source: ${JSON.stringify(dp!.source)}\n      }`).join(",\n")}\n    ]`;
     }
 
     if (content.relatedTopics && content.relatedTopics.length > 0) {

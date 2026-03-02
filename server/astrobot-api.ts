@@ -4,7 +4,7 @@
  * + AstroBot AGI Chat endpoint
  */
 import express from "express";
-import { processAstroBot } from "../../lib/astrobot/brain";
+import { processAstroBot } from "../lib/astrobot/brain";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";

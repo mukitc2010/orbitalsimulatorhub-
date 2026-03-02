@@ -163,7 +163,7 @@ export function AIInAerospace() {
             </div>
             <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
               <h3 className="font-bold mb-2">Delayed MDP & Mars Communication</h3>
-              <p className="text-sm text-[var(--nasa-muted)] mb-2">Mars is 4–24 minutes away (one-way). A Markov Decision Process (MDP) with delay means the agent observes state s_t but must act on s_{t−d}. The optimal policy must account for this lag: plan ahead, buffer decisions, or use belief-state MDPs. Reinforcement learning (Q-learning, policy gradient) can learn policies that are robust to delay.</p>
+              <p className="text-sm text-[var(--nasa-muted)] mb-2">Mars is 4–24 minutes away (one-way). A Markov Decision Process (MDP) with delay means the agent observes state s_t but must act on s_{'{t-d}'}. The optimal policy must account for this lag: plan ahead, buffer decisions, or use belief-state MDPs. Reinforcement learning (Q-learning, policy gradient) can learn policies that are robust to delay.</p>
               <p className="text-xs text-[var(--nasa-muted)]"><strong>Space use:</strong> Mars rovers, deep-space probes. Perseverance drives autonomously; ground cannot joystick in real time.</p>
             </div>
             <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
