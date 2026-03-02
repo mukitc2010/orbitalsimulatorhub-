@@ -67,6 +67,9 @@ export function Footer() {
         <p className="mt-4 text-center text-sm" style={{ color: "var(--text-muted)" }}>
           Orbital Simulator Hub — orbitalsimulatorhub.com — aerospace study for students, scientists &amp; PhD researchers
         </p>
+        <p className="mt-1 text-center text-xs" style={{ color: "var(--text-muted)", opacity: 0.8 }}>
+          Made with Cursor
+        </p>
       </div>
     </footer>
   );
