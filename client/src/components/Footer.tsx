@@ -17,6 +17,7 @@ const footerLinks = [
   { href: "/learn/orbital-mechanics", label: "Orbital mechanics" },
   { href: "/research", label: "Research" },
   { href: "/guide", label: "Guide" },
+  { href: "/privacy-policy", label: "Privacy" },
 ];
 
 export function Footer() {

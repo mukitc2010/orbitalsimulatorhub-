@@ -145,6 +145,36 @@ export function AIInAerospace() {
         </p>
       </section>
 
+      {/* Advanced AI & Space — MPC, LQR, Space AGI, Delayed MDP */}
+      <section className="nasa-ai-card mb-4">
+        <div className="nasa-ai-card-inner">
+          <h2 className="text-lg font-bold mb-3">🧠 Advanced: MPC, LQR, Space AGI & Delayed MDP</h2>
+          <p className="text-[var(--nasa-muted)] text-sm mb-4">Mission-grade control theory and Space AGI concepts used in autonomous satellites and Mars missions.</p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
+              <h3 className="font-bold mb-2">Model Predictive Control (MPC)</h3>
+              <p className="text-sm text-[var(--nasa-muted)] mb-2">MPC solves a finite-horizon optimization at each step: predict future states, minimize cost (fuel, risk), enforce constraints (collision avoidance, pointing limits). The first control action is applied; the rest are discarded. Repeating at each timestep gives feedback that handles disturbances (J2, drag, solar radiation pressure).</p>
+              <p className="text-xs text-[var(--nasa-muted)]"><strong>Space use:</strong> Starlink-style collision avoidance, station-keeping, formation flying. Our <Link href="/simulator/swarm"><a className="text-[var(--nasa-brand)] hover:underline">Swarm Simulator</a></Link> uses OSQP (quadratic programming) for similar logic.</p>
+            </div>
+            <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
+              <h3 className="font-bold mb-2">Linear Quadratic Regulator (LQR)</h3>
+              <p className="text-sm text-[var(--nasa-muted)] mb-2">LQR finds the optimal feedback gain K that minimizes J = ∫(x&apos;Qx + u&apos;Ru) dt for linear systems. The solution is u = −Kx. LQR is computationally cheap and gives globally optimal control for linearized dynamics. Used for attitude control, station-keeping, and as a baseline before adding constraints.</p>
+              <p className="text-xs text-[var(--nasa-muted)]"><strong>Space use:</strong> Attitude control loops, fine pointing, reaction wheel desaturation. Often combined with MPC when constraints matter.</p>
+            </div>
+            <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
+              <h3 className="font-bold mb-2">Delayed MDP & Mars Communication</h3>
+              <p className="text-sm text-[var(--nasa-muted)] mb-2">Mars is 4–24 minutes away (one-way). A Markov Decision Process (MDP) with delay means the agent observes state s_t but must act on s_{t−d}. The optimal policy must account for this lag: plan ahead, buffer decisions, or use belief-state MDPs. Reinforcement learning (Q-learning, policy gradient) can learn policies that are robust to delay.</p>
+              <p className="text-xs text-[var(--nasa-muted)]"><strong>Space use:</strong> Mars rovers, deep-space probes. Perseverance drives autonomously; ground cannot joystick in real time.</p>
+            </div>
+            <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
+              <h3 className="font-bold mb-2">Space AGI Five Pillars</h3>
+              <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong>1. Perception</strong> — Star trackers, IMU, GNSS, cameras fuse into state estimate. <strong>2. Planning</strong> — Trajectory optimization, Lambert solvers, MPC. <strong>3. Control</strong> — LQR, thruster logic, reaction wheels. <strong>4. Learning</strong> — RL from sim and flight data. <strong>5. Communication</strong> — Report when link exists; act autonomously when it doesn&apos;t.</p>
+              <p className="text-xs text-[var(--nasa-muted)]"><strong>Explore:</strong> <Link href="/research/space-agi-lab"><a className="text-[var(--nasa-brand)] hover:underline">Space-AGI Lab</a></Link> · <Link href="/blog/what-is-space-agi-why-it-matters"><a className="text-[var(--nasa-brand)] hover:underline">What Is Space AGI?</a></Link></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why this page matters */}
       <section className="nasa-ai-card mb-4">
         <div className="nasa-ai-card-inner">

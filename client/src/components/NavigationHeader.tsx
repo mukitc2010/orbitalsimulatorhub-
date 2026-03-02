@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { APP_NAME } from "../const";
 import { ThemeSelector } from "./ThemeSelector";
 
 const MISSION_SUBNAV = [
@@ -101,12 +100,12 @@ export function NavigationHeader() {
           <div className="flex-shrink-0">
             <ThemeSelector />
           </div>
-          <Link
-            href="/"
-            className="font-bold text-lg font-mono-tech transition"
-            style={{ color: "var(--text-primary)" }}
-          >
-            {APP_NAME}
+          <Link href="/" className="flex items-center gap-2 transition opacity-90 hover:opacity-100">
+            <img
+              src="/logo.svg"
+              alt="OrbitalSimulatorHub"
+              className="h-9 sm:h-10 w-auto max-w-[180px] sm:max-w-none"
+            />
           </Link>
         </div>
 
