@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Tue, 03 Mar 2026 11:30:12 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 23:30:31 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Space Will Build AI-Based Astronaut Robots for Future Missions</title>
@@ -27,6 +27,13 @@
       <description>Learn about the footprints on the moon will last 100 million years — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Tue, 03 Mar 2026 05:00:00 GMT</pubDate>
       <category>space-facts</category>
+    </item>
+    <item>
+      <title>Pontryagin maximum principle explained for orbital maneuvers</title>
+      <link>https://orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260303</link>
+      <description>Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 03 Mar 2026 05:00:00 GMT</pubDate>
+      <category>space-agi</category>
     </item>
     <item>
       <title>What is Space AGI and why it matters for future space exploration</title>
