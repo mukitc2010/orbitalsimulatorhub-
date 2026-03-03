@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-02T23:34:02.225Z",
+  "generated_at": "2026-03-03T07:45:42.994Z",
   "featured_article": {
-    "title": "Patched conic approximation for interplanetary trajectories",
-    "excerpt": "Patched conic approximation for interplanetary trajectories is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Kepler's three laws with derivations and real satellite examples",
+    "excerpt": "Kepler's three laws with derivations and real satellite examples is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/patched-conic-approximation-for-interplanetary-trajectories-20260302"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/keplers-three-laws-with-derivations-and-real-satellite-examples-20260303"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Quantum entanglement and future space communica...",
-      "blurb": "Quantum entanglement and future space communication is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How lift is generated: Bernoulli vs Newton expl...",
+      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How NASA tests aerodynamics in wind tunnels",
-      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How AI satellites make autonomous decisions in ...",
+      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "A teaspoon of neutron star weighs 6 billion tons",
-      "blurb": "A teaspoon of neutron star weighs 6 billion tons is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How satellite constellations maintain formation...",
+      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-03-05"
     },
     {
+      "slug": "keplers-three-laws-with-derivations-and-real-satellite-examples-20260303",
+      "title": "Kepler's three laws with derivations and real satellite examples",
+      "excerpt": "Learn about kepler's three laws with derivations and real satellite examples — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-03-03"
+    },
+    {
       "slug": "what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260302",
       "title": "What is Space AGI and why it matters for future space exploration",
       "excerpt": "Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-03-02"
-    },
-    {
-      "slug": "n-body-equations-when-two-body-mechanics-is-not-enough-20260302",
-      "title": "N-body equations: when two-body mechanics is not enough",
-      "excerpt": "Learn about n-body equations: when two-body mechanics is not enough — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-03-02"
     }
   ],
