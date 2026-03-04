@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-03-04T17:33:18.097Z",
+  "generated_at": "2026-03-04T23:30:12.105Z",
   "featured_article": {
-    "title": "Pontryagin maximum principle explained for orbital maneuvers",
-    "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260304"
+    "title": "How satellite constellations maintain formation in orbit",
+    "excerpt": "How satellite constellations maintain formation in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-satellite-constellations-maintain-formation-in-orbit-20260304"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How GPS satellites calculate your exact positio...",
-      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How heat shields protect spacecraft during re-e...",
+      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Why spacecraft have specific shapes for differe...",
-      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Computational fluid dynamics in spacecraft design",
+      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
