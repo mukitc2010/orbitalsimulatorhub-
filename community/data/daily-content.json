@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-04T07:19:38.142Z",
+  "generated_at": "2026-03-04T17:33:18.097Z",
   "featured_article": {
-    "title": "How galaxies collide and merge over billions of years",
-    "excerpt": "How galaxies collide and merge over billions of years is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-galaxies-collide-and-merge-over-billions-of-years-20260304"
+    "title": "Pontryagin maximum principle explained for orbital maneuvers",
+    "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260304"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "International Space Station science experiments",
-      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How GPS satellites calculate your exact positio...",
+      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
-    },
-    {
-      "title": "Hypersonic flight: challenges above Mach 5",
-      "blurb": "Hypersonic flight: challenges above Mach 5 is a key area in aerodynamics & flight that impacts how we understand and explore space.",
-      "icon": "atom"
     },
     {
       "title": "Why spacecraft have specific shapes for differe...",
       "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "icon": "atom"
+    },
+    {
+      "title": "The uncertainty principle and its real-world ap...",
+      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-03-04"
     },
     {
-      "slug": "keplers-three-laws-with-derivations-and-real-satellite-examples-20260303",
-      "title": "Kepler's three laws with derivations and real satellite examples",
-      "excerpt": "Learn about kepler's three laws with derivations and real satellite examples — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
-      "date": "2026-03-03"
+      "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260304",
+      "title": "Pontryagin maximum principle explained for orbital maneuvers",
+      "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-03-04"
     }
   ],
   "learning_paths": {

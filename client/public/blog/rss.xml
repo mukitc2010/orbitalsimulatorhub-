@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Wed, 04 Mar 2026 07:19:38 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 17:33:18 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Space Will Build AI-Based Astronaut Robots for Future Missions</title>
@@ -20,6 +20,13 @@
       <description>Learn about how galaxies collide and merge over billions of years — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Wed, 04 Mar 2026 05:00:00 GMT</pubDate>
       <category>astronomy-lessons</category>
+    </item>
+    <item>
+      <title>Pontryagin maximum principle explained for orbital maneuvers</title>
+      <link>https://orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260304</link>
+      <description>Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Wed, 04 Mar 2026 05:00:00 GMT</pubDate>
+      <category>space-agi</category>
     </item>
     <item>
       <title>Kepler&apos;s three laws with derivations and real satellite examples</title>
