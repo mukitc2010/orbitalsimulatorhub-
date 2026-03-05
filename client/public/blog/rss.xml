@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Thu, 05 Mar 2026 06:08:11 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 23:30:12 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Space Will Build AI-Based Astronaut Robots for Future Missions</title>
@@ -18,6 +18,13 @@
       <title>Vis-viva equation explained: the master formula for all orbits</title>
       <link>https://orbitalsimulatorhub.com/blog/vis-viva-equation-explained-the-master-formula-for-all-orbits-20260305</link>
       <description>Learn about vis-viva equation explained: the master formula for all orbits — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Thu, 05 Mar 2026 05:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+    </item>
+    <item>
+      <title>J2 perturbation: why orbits drift and how to correct them</title>
+      <link>https://orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260305</link>
+      <description>Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Thu, 05 Mar 2026 05:00:00 GMT</pubDate>
       <category>space-engineering</category>
     </item>
