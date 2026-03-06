@@ -1,49 +1,49 @@
 {
-  "generated_at": "2026-03-05T23:30:11.984Z",
+  "generated_at": "2026-03-06T20:36:53.046Z",
   "featured_article": {
-    "title": "J2 perturbation: why orbits drift and how to correct them",
-    "excerpt": "J2 perturbation: why orbits drift and how to correct them is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260305"
+    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260306"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Pontryagin maximum principle explained for orbi...",
-      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
+      "title": "J2 perturbation: why orbits drift and how to co...",
+      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How atomic clocks on GPS satellites use quantum...",
+      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How satellite constellations maintain formation...",
-      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Voyager spacecraft updates from interstellar space",
+      "blurb": "Voyager spacecraft updates from interstellar space is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
     {
+      "slug": "space-is-completely-silent-because-sound-needs-a-medium-20260306",
+      "title": "Space is completely silent because sound needs a medium",
+      "excerpt": "Learn about space is completely silent because sound needs a medium — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-facts",
+      "date": "2026-03-06"
+    },
+    {
+      "slug": "ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260306",
+      "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+      "excerpt": "Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-03-06"
+    },
+    {
       "slug": "how-space-will-build-ai-based-astronaut-robots-for-future-missions",
       "title": "How Space Will Build AI-Based Astronaut Robots for Future Missions",
       "excerpt": "NASA and SpaceX need AI astronaut robots for Moon, Mars, and deep space. Learn how AGI, computer vision, and autonomous repair systems will power the next generation of space robotics. Trusted by engineers, researchers, future space pioneers.",
       "category": "space-agi",
-      "date": "2026-03-05"
-    },
-    {
-      "slug": "vis-viva-equation-explained-the-master-formula-for-all-orbits-20260305",
-      "title": "Vis-viva equation explained: the master formula for all orbits",
-      "excerpt": "Learn about vis-viva equation explained: the master formula for all orbits — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
-      "date": "2026-03-05"
-    },
-    {
-      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260305",
-      "title": "J2 perturbation: why orbits drift and how to correct them",
-      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-03-05"
     }
   ],
