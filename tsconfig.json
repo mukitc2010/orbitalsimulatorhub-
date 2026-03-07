@@ -12,9 +12,10 @@
     "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./*"]
+      "~/*": ["./*"],
+      "@/*": ["client/src/*"]
     }
   },
-  "include": ["client/**/*", "server/**/*", "shared/**/*"],
+  "include": ["client/**/*", "server/**/*", "shared/**/*", "api/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev:astronaut": "cd ai-astronaut-simulator && npm run dev",
     "dev": "concurrently -n v,api \"vite\" \"node --import tsx server/_core/api-only.ts\"",
     "dev:3002": "concurrently -n v,api \"cross-env PORT=3002 API_PORT=3003 vite\" \"cross-env PORT=3003 node --import tsx server/_core/api-only.ts\"",
     "dev:single": "node --import tsx server/_core/index.ts",
@@ -13,6 +14,8 @@
     "dev:swarm": "cd space-agi-swarm-backend && .venv/Scripts/python -m uvicorn main:app --reload --port 8000",
     "build": "tsc -p tsconfig.server.json && vite build",
     "build:client": "npm run generate:rss && vite build && node -e \"import('fs').then(fs => fs.copyFileSync('dist/index.html','dist/404.html'))\"",
+    "deploy": "vercel --prod",
+    "deploy:preview": "vercel",
     "generate:rss": "node scripts/generate-rss.js",
     "generate:post": "node scripts/generate-blog-post.js",
     "auto-deploy": "node scripts/auto-deploy-after-post.js",
@@ -33,8 +36,9 @@
     "openclaw:update": "node scripts/openclaw-full-update.js"
   },
   "dependencies": {
-    "@react-three/drei": "^9.120.0",
-    "@react-three/fiber": "^9.0.0",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^9.5.0",
+    "@supabase/supabase-js": "^2.98.0",
     "@trpc/client": "^11.0.0",
     "@trpc/server": "^11.0.0",
     "cors": "^2.8.5",

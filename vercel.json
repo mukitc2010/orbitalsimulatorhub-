@@ -6,7 +6,10 @@
   "rewrites": [
     { "source": "/docs/:path*", "destination": "/docs/:path*" },
     { "source": "/assets/:path*", "destination": "/assets/:path*" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/blog/rss.xml", "destination": "/blog/rss.xml" },
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/robots.txt", "destination": "/robots.txt" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
   ],
   "redirects": [
     {
