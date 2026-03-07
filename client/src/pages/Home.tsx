@@ -75,11 +75,34 @@ const EXPLORE_BY_TOPIC = [
 export function Home() {
   const [showExplore, setShowExplore] = useState(false);
   const updates = getTodaysUpdates();
+  const latestPost = LATEST_POSTS[0];
 
   return (
     <div className="home-page-wrapper -mx-4 px-4 py-2 rounded-2xl">
       <div className="max-w-4xl mx-auto">
-        {/* ═══ UPDATES BANNER — Highlighted at top ═══ */}
+        {/* ═══ NEWEST BLOG POST — Prominent at top ═══ */}
+        {latestPost && (
+          <section className="mb-6 animate-fade-in-up">
+            <Link href={`/blog/${latestPost.slug}`}>
+              <a className="block rounded-2xl border overflow-hidden transition hover:opacity-95" style={{ background: "rgba(0,217,255,0.08)", borderColor: "rgba(0,217,255,0.35)" }}>
+                <div className="flex flex-col sm:flex-row">
+                  <div className="sm:w-2/5 min-h-[160px] sm:min-h-[200px] relative">
+                    <img src={getBlogImage(latestPost)} alt="" className="absolute inset-0 w-full h-full object-cover" loading="eager" />
+                    <span className="absolute top-3 left-3 text-[10px] font-bold px-2 py-1 rounded uppercase" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>Newest</span>
+                  </div>
+                  <div className="p-4 sm:p-5 flex-1 flex flex-col justify-center">
+                    <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{latestPost.category.replace(/-/g, " ")}</span>
+                    <h2 className="text-lg sm:text-xl font-bold mt-1 mb-2 line-clamp-2" style={{ color: "var(--text-primary)" }}>{latestPost.title}</h2>
+                    <p className="text-sm line-clamp-2 mb-2" style={{ color: "var(--text-secondary)" }}>{latestPost.excerpt}</p>
+                    <span className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(latestPost.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} · Read more →</span>
+                  </div>
+                </div>
+              </a>
+            </Link>
+          </section>
+        )}
+
+        {/* ═══ UPDATES BANNER — Latest Updates ═══ */}
         <section className="updates-banner rounded-2xl p-5 md:p-6 mb-8 animate-fade-in-up">
           <div className="flex items-center gap-2 mb-4">
             <span className="text-2xl">✨</span>
