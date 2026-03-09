@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-03-07T16:31:25.945Z",
+  "generated_at": "2026-03-09T04:20:11.897Z",
   "featured_article": {
-    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
-    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
+    "excerpt": "Self-repairing spacecraft: AI that fixes itself in deep space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260307"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260309"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Scramjet engines: air-breathing propulsion at h...",
-      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How orbital debris tracking and avoidance works",
+      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How spy satellites achieve sub-meter imaging re...",
-      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Escape velocity derivation from conservation of...",
+      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The life cycle of Sun-like stars from birth to ...",
-      "blurb": "The life cycle of Sun-like stars from birth to white dwarf is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "A teaspoon of neutron star weighs 6 billion tons",
+      "blurb": "A teaspoon of neutron star weighs 6 billion tons is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260309",
+      "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
+      "excerpt": "Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-03-09"
+    },
     {
       "slug": "what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260307",
       "title": "What is Space AGI and why it matters for future space exploration",
@@ -38,13 +45,6 @@
       "excerpt": "Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
       "date": "2026-03-07"
-    },
-    {
-      "slug": "space-is-completely-silent-because-sound-needs-a-medium-20260306",
-      "title": "Space is completely silent because sound needs a medium",
-      "excerpt": "Learn about space is completely silent because sound needs a medium — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
-      "date": "2026-03-06"
     }
   ],
   "learning_paths": {
