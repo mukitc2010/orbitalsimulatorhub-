@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-10T05:30:11.784Z",
+  "generated_at": "2026-03-10T23:44:49.458Z",
   "featured_article": {
-    "title": "Orbital energy and specific orbital energy formula",
-    "excerpt": "Orbital energy and specific orbital energy formula is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/orbital-energy-and-specific-orbital-energy-formula-20260310"
+    "title": "How stars are born inside molecular gas clouds",
+    "excerpt": "How stars are born inside molecular gas clouds is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "astronomy-lessons",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-stars-are-born-inside-molecular-gas-clouds-20260310"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Wave-particle duality: the double-slit experime...",
-      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How GPS satellites calculate your exact positio...",
+      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How Starlink creates global broadband internet ...",
-      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Artemis program progress and Moon landing plans",
+      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How galaxies collide and merge over billions of...",
-      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Pontryagin maximum principle explained for orbi...",
+      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-03-10"
     },
     {
-      "slug": "self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260309",
-      "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
-      "excerpt": "Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-09"
+      "slug": "how-stars-are-born-inside-molecular-gas-clouds-20260310",
+      "title": "How stars are born inside molecular gas clouds",
+      "excerpt": "Learn about how stars are born inside molecular gas clouds — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "astronomy-lessons",
+      "date": "2026-03-10"
     }
   ],
   "learning_paths": {
