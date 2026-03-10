@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-10T05:01:10.813Z",
+  "generated_at": "2026-03-10T05:30:11.784Z",
   "featured_article": {
-    "title": "Wave-particle duality: the double-slit experiment explained",
-    "excerpt": "Wave-particle duality: the double-slit experiment explained is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/wave-particle-duality-the-double-slit-experiment-explained-20260310"
+    "title": "Orbital energy and specific orbital energy formula",
+    "excerpt": "Orbital energy and specific orbital energy formula is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/orbital-energy-and-specific-orbital-energy-formula-20260310"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Commercial crew program and private astronaut m...",
-      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Wave-particle duality: the double-slit experime...",
+      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How Starlink creates global broadband internet ...",
+      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How GPS satellites calculate your exact positio...",
-      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How galaxies collide and merge over billions of...",
+      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,16 +33,16 @@
       "date": "2026-03-10"
     },
     {
+      "slug": "orbital-energy-and-specific-orbital-energy-formula-20260310",
+      "title": "Orbital energy and specific orbital energy formula",
+      "excerpt": "Learn about orbital energy and specific orbital energy formula — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-03-10"
+    },
+    {
       "slug": "self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260309",
       "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
       "excerpt": "Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-09"
-    },
-    {
-      "slug": "how-ai-satellites-make-autonomous-decisions-in-orbit-20260309",
-      "title": "How AI satellites make autonomous decisions in orbit",
-      "excerpt": "Learn about how ai satellites make autonomous decisions in orbit — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
       "date": "2026-03-09"
     }
