@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-11T06:07:59.947Z",
+  "generated_at": "2026-03-11T23:41:39.082Z",
   "featured_article": {
-    "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
-    "excerpt": "Self-repairing spacecraft: AI that fixes itself in deep space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260311"
+    "title": "J2 perturbation: why orbits drift and how to correct them",
+    "excerpt": "J2 perturbation: why orbits drift and how to correct them is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260311"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "What happens when a massive star dies: supernov...",
-      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Space AGI five pillars: perception, planning, c...",
+      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Wave-particle duality: the double-slit experime...",
+      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Why spacecraft have specific shapes for differe...",
+      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-03-11"
     },
     {
+      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260311",
+      "title": "J2 perturbation: why orbits drift and how to correct them",
+      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-03-11"
+    },
+    {
       "slug": "wave-particle-duality-the-double-slit-experiment-explained-20260310",
       "title": "Wave-particle duality: the double-slit experiment explained",
       "excerpt": "Learn about wave-particle duality: the double-slit experiment explained — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "quantum-physics",
-      "date": "2026-03-10"
-    },
-    {
-      "slug": "orbital-energy-and-specific-orbital-energy-formula-20260310",
-      "title": "Orbital energy and specific orbital energy formula",
-      "excerpt": "Learn about orbital energy and specific orbital energy formula — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-03-10"
     }
   ],
