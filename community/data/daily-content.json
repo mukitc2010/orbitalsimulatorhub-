@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-14T03:38:12.695Z",
+  "generated_at": "2026-03-14T06:44:43.051Z",
   "featured_article": {
-    "title": "Why spacecraft have specific shapes for different missions",
-    "excerpt": "Why spacecraft have specific shapes for different missions is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/why-spacecraft-have-specific-shapes-for-different-missions-20260314"
+    "title": "How stars are born inside molecular gas clouds",
+    "excerpt": "How stars are born inside molecular gas clouds is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "astronomy-lessons",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-stars-are-born-inside-molecular-gas-clouds-20260314"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How neutron stars can spin 716 times per second",
-      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
+      "title": "NASA Europa Clipper mission to Jupiter's moon",
+      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The footprints on the Moon will last 100 millio...",
-      "blurb": "The footprints on the Moon will last 100 million years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Space is completely silent because sound needs ...",
+      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How AI satellites make autonomous decisions in ...",
-      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Vis-viva equation explained: the master formula...",
+      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,11 +33,11 @@
       "date": "2026-03-14"
     },
     {
-      "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260312",
-      "title": "How MPC and LQR control algorithms keep satellite swarms safe",
-      "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-12"
+      "slug": "how-stars-are-born-inside-molecular-gas-clouds-20260314",
+      "title": "How stars are born inside molecular gas clouds",
+      "excerpt": "Learn about how stars are born inside molecular gas clouds — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "astronomy-lessons",
+      "date": "2026-03-14"
     },
     {
       "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260312",
