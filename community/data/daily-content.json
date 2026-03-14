@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-14T06:44:43.051Z",
+  "generated_at": "2026-03-14T23:45:39.022Z",
   "featured_article": {
-    "title": "How stars are born inside molecular gas clouds",
-    "excerpt": "How stars are born inside molecular gas clouds is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-stars-are-born-inside-molecular-gas-clouds-20260314"
+    "title": "Orbital energy and specific orbital energy formula",
+    "excerpt": "Orbital energy and specific orbital energy formula is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/orbital-energy-and-specific-orbital-energy-formula-20260314"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "NASA Europa Clipper mission to Jupiter's moon",
-      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Dark matter: the invisible mass holding galaxie...",
+      "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Space is completely silent because sound needs ...",
-      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How NASA tests aerodynamics in wind tunnels",
+      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Vis-viva equation explained: the master formula...",
-      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How relativistic quantum effects correct GPS ac...",
+      "blurb": "How relativistic quantum effects correct GPS accuracy is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-03-14"
     },
     {
-      "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260312",
-      "title": "How MPC and LQR control algorithms keep satellite swarms safe",
-      "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-12"
+      "slug": "orbital-energy-and-specific-orbital-energy-formula-20260314",
+      "title": "Orbital energy and specific orbital energy formula",
+      "excerpt": "Learn about orbital energy and specific orbital energy formula — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-03-14"
     }
   ],
   "learning_paths": {
