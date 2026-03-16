@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-03-15T18:15:35.256Z",
+  "generated_at": "2026-03-16T00:05:14.570Z",
   "featured_article": {
-    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
-    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260315"
+    "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
+    "excerpt": "Hohmann transfer formula: the most fuel-efficient way to change orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260316"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How quantum computing could optimize mission pl...",
-      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How relativistic quantum effects correct GPS ac...",
+      "blurb": "How relativistic quantum effects correct GPS accuracy is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Voyager spacecraft updates from interstellar space",
-      "blurb": "Voyager spacecraft updates from interstellar space is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How AI satellites make autonomous decisions in ...",
+      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Hypersonic flight: challenges above Mach 5",
-      "blurb": "Hypersonic flight: challenges above Mach 5 is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Quantum sensors for deep space navigation",
+      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260316",
+      "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
+      "excerpt": "Learn about hohmann transfer formula: the most fuel-efficient way to change orbits — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-03-16"
+    },
     {
       "slug": "commercial-crew-program-and-private-astronaut-missions-20260315",
       "title": "Commercial crew program and private astronaut missions",
@@ -37,13 +44,6 @@
       "title": "N-body equations: when two-body mechanics is not enough",
       "excerpt": "Learn about n-body equations: when two-body mechanics is not enough — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-03-15"
-    },
-    {
-      "slug": "ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260315",
-      "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
-      "excerpt": "Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-03-15"
     }
   ],
