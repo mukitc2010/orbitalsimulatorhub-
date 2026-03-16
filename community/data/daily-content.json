@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-16T05:43:24.104Z",
+  "generated_at": "2026-03-16T20:52:12.271Z",
   "featured_article": {
-    "title": "Vis-viva equation explained: the master formula for all orbits",
-    "excerpt": "Vis-viva equation explained: the master formula for all orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/vis-viva-equation-explained-the-master-formula-for-all-orbits-20260316"
+    "title": "Quantum sensors for deep space navigation",
+    "excerpt": "Quantum sensors for deep space navigation is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/quantum-sensors-for-deep-space-navigation-20260316"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "SpaceX Starship development and test flights",
-      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How GPS satellites calculate your exact positio...",
+      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Why a day on Venus is longer than its year",
+      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Self-repairing spacecraft: AI that fixes itself...",
-      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Why spacecraft have specific shapes for differe...",
+      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-03-16"
     },
     {
-      "slug": "commercial-crew-program-and-private-astronaut-missions-20260315",
-      "title": "Commercial crew program and private astronaut missions",
-      "excerpt": "Learn about commercial crew program and private astronaut missions — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "nasa-news",
-      "date": "2026-03-15"
+      "slug": "quantum-sensors-for-deep-space-navigation-20260316",
+      "title": "Quantum sensors for deep space navigation",
+      "excerpt": "Learn about quantum sensors for deep space navigation — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "quantum-physics",
+      "date": "2026-03-16"
     }
   ],
   "learning_paths": {
