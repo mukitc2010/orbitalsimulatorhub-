@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-16T00:05:14.570Z",
+  "generated_at": "2026-03-16T05:43:24.104Z",
   "featured_article": {
-    "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
-    "excerpt": "Hohmann transfer formula: the most fuel-efficient way to change orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Vis-viva equation explained: the master formula for all orbits",
+    "excerpt": "Vis-viva equation explained: the master formula for all orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260316"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/vis-viva-equation-explained-the-master-formula-for-all-orbits-20260316"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How relativistic quantum effects correct GPS ac...",
-      "blurb": "How relativistic quantum effects correct GPS accuracy is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "SpaceX Starship development and test flights",
+      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How AI satellites make autonomous decisions in ...",
-      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
+      "title": "How stars are born inside molecular gas clouds",
+      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum sensors for deep space navigation",
-      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Self-repairing spacecraft: AI that fixes itself...",
+      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-03-16"
     },
     {
+      "slug": "vis-viva-equation-explained-the-master-formula-for-all-orbits-20260316",
+      "title": "Vis-viva equation explained: the master formula for all orbits",
+      "excerpt": "Learn about vis-viva equation explained: the master formula for all orbits — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-03-16"
+    },
+    {
       "slug": "commercial-crew-program-and-private-astronaut-missions-20260315",
       "title": "Commercial crew program and private astronaut missions",
       "excerpt": "Learn about commercial crew program and private astronaut missions — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "nasa-news",
-      "date": "2026-03-15"
-    },
-    {
-      "slug": "n-body-equations-when-two-body-mechanics-is-not-enough-20260315",
-      "title": "N-body equations: when two-body mechanics is not enough",
-      "excerpt": "Learn about n-body equations: when two-body mechanics is not enough — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-03-15"
     }
   ],
