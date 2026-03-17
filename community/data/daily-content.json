@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-17T05:30:12.397Z",
+  "generated_at": "2026-03-17T20:35:43.791Z",
   "featured_article": {
-    "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
-    "excerpt": "Delayed MDP and Mars communication delay: why AI must act without Earth is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260317"
+    "title": "Escape velocity derivation from conservation of energy",
+    "excerpt": "Escape velocity derivation from conservation of energy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/escape-velocity-derivation-from-conservation-of-energy-20260317"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Rocket aerodynamics: designing nose cones and f...",
-      "blurb": "Rocket aerodynamics: designing nose cones and fairings is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Saturn's rings are disappearing over millions o...",
+      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Why spacecraft have specific shapes for differe...",
-      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Hubble constant and the expanding universe cont...",
+      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The uncertainty principle and its real-world ap...",
-      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How stars are born inside molecular gas clouds",
+      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,16 +33,16 @@
       "date": "2026-03-17"
     },
     {
+      "slug": "escape-velocity-derivation-from-conservation-of-energy-20260317",
+      "title": "Escape velocity derivation from conservation of energy",
+      "excerpt": "Learn about escape velocity derivation from conservation of energy — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-03-17"
+    },
+    {
       "slug": "hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260316",
       "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
       "excerpt": "Learn about hohmann transfer formula: the most fuel-efficient way to change orbits — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
-      "date": "2026-03-16"
-    },
-    {
-      "slug": "vis-viva-equation-explained-the-master-formula-for-all-orbits-20260316",
-      "title": "Vis-viva equation explained: the master formula for all orbits",
-      "excerpt": "Learn about vis-viva equation explained: the master formula for all orbits — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
       "date": "2026-03-16"
     }
