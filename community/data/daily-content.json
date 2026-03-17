@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-03-16T23:42:31.499Z",
+  "generated_at": "2026-03-17T05:30:12.397Z",
   "featured_article": {
-    "title": "Pulsars: the cosmic lighthouses of neutron stars",
-    "excerpt": "Pulsars: the cosmic lighthouses of neutron stars is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pulsars-the-cosmic-lighthouses-of-neutron-stars-20260316"
+    "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
+    "excerpt": "Delayed MDP and Mars communication delay: why AI must act without Earth is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260317"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The Great Red Spot on Jupiter is shrinking",
-      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Rocket aerodynamics: designing nose cones and f...",
+      "blurb": "Rocket aerodynamics: designing nose cones and fairings is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Pontryagin maximum principle explained for orbi...",
-      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Why spacecraft have specific shapes for differe...",
+      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How neutron stars can spin 716 times per second",
-      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
+      "title": "The uncertainty principle and its real-world ap...",
+      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260317",
+      "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
+      "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-03-17"
+    },
     {
       "slug": "hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260316",
       "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
@@ -37,13 +44,6 @@
       "title": "Vis-viva equation explained: the master formula for all orbits",
       "excerpt": "Learn about vis-viva equation explained: the master formula for all orbits — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-03-16"
-    },
-    {
-      "slug": "quantum-sensors-for-deep-space-navigation-20260316",
-      "title": "Quantum sensors for deep space navigation",
-      "excerpt": "Learn about quantum sensors for deep space navigation — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "quantum-physics",
       "date": "2026-03-16"
     }
   ],
