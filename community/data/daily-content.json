@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-03-17T23:46:39.122Z",
+  "generated_at": "2026-03-19T07:32:36.179Z",
   "featured_article": {
-    "title": "Re-entry physics: surviving 28000 km/h atmospheric entry",
-    "excerpt": "Re-entry physics: surviving 28000 km/h atmospheric entry is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260317"
+    "title": "How GPS satellites calculate your exact position using trilateration",
+    "excerpt": "How GPS satellites calculate your exact position using trilateration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-gps-satellites-calculate-your-exact-position-using-trilateration-20260319"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Space is completely silent because sound needs ...",
-      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "NASA Europa Clipper mission to Jupiter's moon",
-      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Hypersonic flight: challenges above Mach 5",
+      "blurb": "Hypersonic flight: challenges above Mach 5 is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How relativistic quantum effects correct GPS ac...",
-      "blurb": "How relativistic quantum effects correct GPS accuracy is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Self-repairing spacecraft: AI that fixes itself...",
+      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "how-gps-satellites-calculate-your-exact-position-using-trilateration-20260319",
+      "title": "How GPS satellites calculate your exact position using trilateration",
+      "excerpt": "Learn about how gps satellites calculate your exact position using trilateration — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "satellite-tutorials",
+      "date": "2026-03-19"
+    },
     {
       "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260317",
       "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
@@ -37,13 +44,6 @@
       "title": "Escape velocity derivation from conservation of energy",
       "excerpt": "Learn about escape velocity derivation from conservation of energy — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-03-17"
-    },
-    {
-      "slug": "re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260317",
-      "title": "Re-entry physics: surviving 28000 km/h atmospheric entry",
-      "excerpt": "Learn about re-entry physics: surviving 28000 km/h atmospheric entry — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
       "date": "2026-03-17"
     }
   ],
