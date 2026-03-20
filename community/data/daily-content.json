@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-03-19T07:32:36.179Z",
+  "generated_at": "2026-03-20T05:30:11.952Z",
   "featured_article": {
-    "title": "How GPS satellites calculate your exact position using trilateration",
-    "excerpt": "How GPS satellites calculate your exact position using trilateration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-gps-satellites-calculate-your-exact-position-using-trilateration-20260319"
+    "title": "Escape velocity derivation from conservation of energy",
+    "excerpt": "Escape velocity derivation from conservation of energy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/escape-velocity-derivation-from-conservation-of-energy-20260320"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "There are more stars than grains of sand on Earth",
-      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Computational fluid dynamics in spacecraft design",
+      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Hypersonic flight: challenges above Mach 5",
-      "blurb": "Hypersonic flight: challenges above Mach 5 is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "SpaceX Starship development and test flights",
+      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Self-repairing spacecraft: AI that fixes itself...",
-      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
+      "title": "How quantum computing could optimize mission pl...",
+      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "escape-velocity-derivation-from-conservation-of-energy-20260320",
+      "title": "Escape velocity derivation from conservation of energy",
+      "excerpt": "Learn about escape velocity derivation from conservation of energy — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-03-20"
+    },
     {
       "slug": "how-gps-satellites-calculate-your-exact-position-using-trilateration-20260319",
       "title": "How GPS satellites calculate your exact position using trilateration",
@@ -37,13 +44,6 @@
       "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
       "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-03-17"
-    },
-    {
-      "slug": "escape-velocity-derivation-from-conservation-of-energy-20260317",
-      "title": "Escape velocity derivation from conservation of energy",
-      "excerpt": "Learn about escape velocity derivation from conservation of energy — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-03-17"
     }
   ],
