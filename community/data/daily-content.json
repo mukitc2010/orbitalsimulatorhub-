@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-03-20T05:30:11.952Z",
+  "generated_at": "2026-03-21T09:28:01.755Z",
   "featured_article": {
-    "title": "Escape velocity derivation from conservation of energy",
-    "excerpt": "Escape velocity derivation from conservation of energy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Lambert's problem: how to plan an intercept between two orbits",
+    "excerpt": "Lambert's problem: how to plan an intercept between two orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/escape-velocity-derivation-from-conservation-of-energy-20260320"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260321"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Computational fluid dynamics in spacecraft design",
-      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How atomic clocks on GPS satellites use quantum...",
+      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "SpaceX Starship development and test flights",
-      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "James Webb Space Telescope latest discoveries",
+      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How quantum computing could optimize mission pl...",
-      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Satellite communication: how data travels from ...",
+      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260321",
+      "title": "Lambert's problem: how to plan an intercept between two orbits",
+      "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-03-21"
+    },
     {
       "slug": "escape-velocity-derivation-from-conservation-of-energy-20260320",
       "title": "Escape velocity derivation from conservation of energy",
@@ -38,13 +45,6 @@
       "excerpt": "Learn about how gps satellites calculate your exact position using trilateration — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "satellite-tutorials",
       "date": "2026-03-19"
-    },
-    {
-      "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260317",
-      "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
-      "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-17"
     }
   ],
   "learning_paths": {
