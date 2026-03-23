@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-03-22T05:54:53.931Z",
+  "generated_at": "2026-03-23T04:11:55.030Z",
   "featured_article": {
-    "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
-    "excerpt": "Delayed MDP and Mars communication delay: why AI must act without Earth is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "What is Space AGI and why it matters for future space exploration",
+    "excerpt": "What is Space AGI and why it matters for future space exploration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260322"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260323"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How spy satellites achieve sub-meter imaging re...",
-      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Mars Perseverance rover sample collection updates",
+      "blurb": "Mars Perseverance rover sample collection updates is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How atomic clocks on GPS satellites use quantum...",
-      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Exoplanet detection methods: transit and radial...",
+      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How galaxies collide and merge over billions of...",
+      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260323",
+      "title": "What is Space AGI and why it matters for future space exploration",
+      "excerpt": "Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-03-23"
+    },
     {
       "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260322",
       "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
@@ -38,13 +45,6 @@
       "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
       "date": "2026-03-21"
-    },
-    {
-      "slug": "escape-velocity-derivation-from-conservation-of-energy-20260320",
-      "title": "Escape velocity derivation from conservation of energy",
-      "excerpt": "Learn about escape velocity derivation from conservation of energy — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
-      "date": "2026-03-20"
     }
   ],
   "learning_paths": {
