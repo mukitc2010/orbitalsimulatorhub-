@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-03-24T02:31:53.363Z",
+  "generated_at": "2026-03-24T05:30:12.159Z",
   "featured_article": {
-    "title": "Space AGI five pillars: perception, planning, control, learning, communication",
-    "excerpt": "Space AGI five pillars: perception, planning, control, learning, communication is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-five-pillars-perception-planning-control-learning-communication-20260324"
+    "title": "N-body equations: when two-body mechanics is not enough",
+    "excerpt": "N-body equations: when two-body mechanics is not enough is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/n-body-equations-when-two-body-mechanics-is-not-enough-20260324"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Patched conic approximation for interplanetary ...",
-      "blurb": "Patched conic approximation for interplanetary trajectories is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How spy satellites achieve sub-meter imaging re...",
+      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Space is completely silent because sound needs ...",
-      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How spy satellites achieve sub-meter imaging re...",
+      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
@@ -33,18 +33,18 @@
       "date": "2026-03-24"
     },
     {
+      "slug": "n-body-equations-when-two-body-mechanics-is-not-enough-20260324",
+      "title": "N-body equations: when two-body mechanics is not enough",
+      "excerpt": "Learn about n-body equations: when two-body mechanics is not enough — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-03-24"
+    },
+    {
       "slug": "what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260323",
       "title": "What is Space AGI and why it matters for future space exploration",
       "excerpt": "Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
       "date": "2026-03-23"
-    },
-    {
-      "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260322",
-      "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
-      "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-22"
     }
   ],
   "learning_paths": {
