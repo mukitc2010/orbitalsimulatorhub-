@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-03-24T05:30:12.159Z",
+  "generated_at": "2026-03-26T04:58:26.643Z",
   "featured_article": {
-    "title": "N-body equations: when two-body mechanics is not enough",
-    "excerpt": "N-body equations: when two-body mechanics is not enough is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/n-body-equations-when-two-body-mechanics-is-not-enough-20260324"
+    "title": "Pontryagin maximum principle explained for orbital maneuvers",
+    "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260326"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How spy satellites achieve sub-meter imaging re...",
-      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How orbital debris tracking and avoidance works",
+      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How spy satellites achieve sub-meter imaging re...",
-      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How GPS satellites calculate your exact positio...",
+      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "CubeSats and nanosatellites: space access for u...",
-      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Schrodinger equation: the foundation of quantum...",
+      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260326",
+      "title": "Pontryagin maximum principle explained for orbital maneuvers",
+      "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-03-26"
+    },
     {
       "slug": "space-agi-five-pillars-perception-planning-control-learning-communication-20260324",
       "title": "Space AGI five pillars: perception, planning, control, learning, communication",
@@ -38,13 +45,6 @@
       "excerpt": "Learn about n-body equations: when two-body mechanics is not enough — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
       "date": "2026-03-24"
-    },
-    {
-      "slug": "what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260323",
-      "title": "What is Space AGI and why it matters for future space exploration",
-      "excerpt": "Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-23"
     }
   ],
   "learning_paths": {
