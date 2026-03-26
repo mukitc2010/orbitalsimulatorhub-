@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-26T04:58:26.643Z",
+  "generated_at": "2026-03-26T05:30:11.495Z",
   "featured_article": {
     "title": "Pontryagin maximum principle explained for orbital maneuvers",
     "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
@@ -9,18 +9,18 @@
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How orbital debris tracking and avoidance works",
-      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "NASA DART asteroid deflection mission results",
+      "blurb": "NASA DART asteroid deflection mission results is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How GPS satellites calculate your exact positio...",
-      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Quantum key distribution for secure satellite c...",
+      "blurb": "Quantum key distribution for secure satellite communications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Schrodinger equation: the foundation of quantum...",
-      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Pulsars: the cosmic lighthouses of neutron stars",
+      "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-03-26"
     },
     {
+      "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260326",
+      "title": "Pontryagin maximum principle explained for orbital maneuvers",
+      "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-03-26"
+    },
+    {
       "slug": "space-agi-five-pillars-perception-planning-control-learning-communication-20260324",
       "title": "Space AGI five pillars: perception, planning, control, learning, communication",
       "excerpt": "Learn about space agi five pillars: perception, planning, control, learning, communication — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-03-24"
-    },
-    {
-      "slug": "n-body-equations-when-two-body-mechanics-is-not-enough-20260324",
-      "title": "N-body equations: when two-body mechanics is not enough",
-      "excerpt": "Learn about n-body equations: when two-body mechanics is not enough — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-03-24"
     }
   ],
