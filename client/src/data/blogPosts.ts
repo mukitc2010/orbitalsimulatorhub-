@@ -6,7 +6,9 @@ export type BlogCategory =
   | "aerodynamics"
   | "quantum-physics"
   | "space-agi"
-  | "space-engineering";
+  | "space-engineering"
+  | "agi-research"
+  | "robot-engineering";
 
 export interface BlogPost {
   slug: string;
@@ -4070,6 +4072,265 @@ Explore more in our [Space Shop](/space-shop) — NASA t-shirts, LEGO sets, and 
     date: "2026-03-27",
     tags: ["space engineering", "aerospace", "orbital mechanics", "formulas"],
     seoKeywords: "space engineering, aerospace, orbital mechanics, formulas",
+  },
+  {
+    slug: "arc-agi-benchmark-measuring-progress-toward-agi-2026",
+    title: "ARC-AGI Benchmark: Measuring Real Progress Toward Artificial General Intelligence in 2026",
+    excerpt: "The ARC-AGI benchmark reveals where AI truly stands on the path to AGI. Systems hit 93% on ARC-AGI-1 but crash to 13% on ARC-AGI-3 — while humans stay near perfect.",
+    content: `**Introduction**
+
+Artificial General Intelligence (AGI) remains the grand challenge of computer science — building systems that can reason, learn, and adapt across novel domains the way humans do. In 2026, the ARC-AGI benchmark series has become the definitive yardstick for measuring genuine progress toward this goal, revealing both remarkable advances and sobering limitations.
+
+---
+
+**The ARC-AGI Benchmark Series**
+
+The ARC (Abstraction and Reasoning Corpus) tests fluid intelligence — the ability to solve novel problems never seen before. Unlike narrow benchmarks that reward memorization, ARC tasks require compositional generalization:
+
+- **ARC-AGI-1:** Current systems reach 93.0% accuracy
+- **ARC-AGI-2:** Performance drops to 68.8%
+- **ARC-AGI-3:** Only 13% accuracy — while humans maintain near-perfect scores
+
+This 2-3x performance degradation across versions confirms that today's AI reasoning remains "knowledge-bound." The ARC Prize 2025 winners needed hundreds of thousands of synthetic training examples just to reach 24% on ARC-AGI-2.
+
+---
+
+**Emerging Technical Approaches**
+
+**Transformer-Based Abstract Reasoning:** Advanced transformer systems combine neural inference with structure-aware priors, test-time training, and symmetry-aware decoding. These approaches show promise on pattern recognition but struggle with compositional generalization.
+
+**Multimodal Agentic Models:** Systems like Kimi K2.5 optimize text and vision jointly, introducing "Agent Swarm" — a parallel orchestration framework that decomposes complex tasks into concurrent sub-problems, reducing latency by up to 4.5x over sequential approaches.
+
+**Neuro-Symbolic Hybrids:** Combining neural pattern recognition with symbolic logical reasoning offers a path forward. Program synthesis approaches can solve specific ARC tasks but don't generalize well across the full corpus.
+
+---
+
+**Google DeepMind's Cognitive Framework**
+
+Google DeepMind identified 10 key cognitive abilities necessary for AGI:
+
+1. **Perception** — sensory understanding
+2. **Attention** — selective focus
+3. **Memory** — information storage and retrieval
+4. **Learning** — acquiring new knowledge
+5. **Reasoning** — logical deduction
+6. **Problem Solving** — novel challenge navigation
+7. **Executive Functions** — planning and task management
+8. **Social Cognition** — understanding others
+9. **Metacognition** — self-awareness of reasoning
+10. **Generation** — creative output
+
+A new structural theory (SMGI) proposes mathematical foundations for AGI through typed meta-models and dynamical systems, offering a more rigorous framework for measuring progress.
+
+---
+
+**Critical Limitations**
+
+Despite impressive headline numbers, fundamental challenges persist:
+
+- **Compositional reasoning** — combining learned primitives in novel ways
+- **Interactive learning** — improving from minimal examples like humans do
+- **Transfer across domains** — applying knowledge from one context to another
+- **Causal understanding** — grasping why things happen, not just patterns
+
+All approaches — program synthesis, neuro-symbolic, and pure neural — show consistent degradation when task complexity increases.
+
+---
+
+**Why This Matters for Space Exploration**
+
+AGI capabilities directly impact Space-AGI development. Autonomous spacecraft operating with 4-24 minute communication delays to Mars need genuine reasoning, not pattern matching. The same compositional reasoning measured by ARC-AGI is exactly what a Mars rover needs to handle novel terrain, equipment failures, and unexpected scientific discoveries without human guidance.
+
+---
+
+**Conclusion**
+
+The ARC-AGI benchmarks paint an honest picture: we've made extraordinary progress in narrow AI, but the leap to genuine general intelligence requires breakthroughs in compositional reasoning and transfer learning. The path to AGI is measurable, and the gap is real — but the research community is converging on the right problems.
+
+Explore our [Space-AGI Research Lab](/research/space-agi-lab) and [orbit simulator](/simulator) to see how autonomous AI applies to space missions.`,
+    category: "agi-research",
+    date: "2026-03-26",
+    tags: ["AGI", "artificial general intelligence", "ARC-AGI", "machine learning", "AI research", "Google DeepMind"],
+    seoKeywords: "AGI 2026, artificial general intelligence benchmark, ARC-AGI, AI reasoning, compositional generalization, Google DeepMind AGI",
+  },
+  {
+    slug: "nasa-valkyrie-humanoid-robot-mars-missions-2026",
+    title: "NASA's Valkyrie Humanoid Robot Returns Home After a Decade — Ready for Mars",
+    excerpt: "NASA's 1.8m humanoid robot Valkyrie completed a decade of AI research at Edinburgh and returned to Johnson Space Center. Plus: bipedal walking stability improved 81%.",
+    content: `**Introduction**
+
+In 2026, NASA's humanoid robot Valkyrie completed a landmark decade-long research mission at the University of Edinburgh and returned to Johnson Space Center in Texas. Standing 1.8 meters tall and weighing 125 kilograms, Valkyrie represents the cutting edge of robot engineering for future Mars surface operations. Combined with breakthroughs in bipedal walking stability, we are closer than ever to robots that can work alongside astronauts on other worlds.
+
+---
+
+**Valkyrie: A Decade of Breakthroughs**
+
+Over ten years at Edinburgh, researchers dramatically expanded Valkyrie's capabilities:
+
+- **AI-Driven Walking:** Machine learning algorithms enable Valkyrie to walk on uneven terrain, adapting gait in real-time to surface conditions — essential for Mars operations where terrain is unpredictable
+- **Object Manipulation:** Improved hand-eye coordination for tasks like tool use, sample collection, and habitat construction
+- **Sensor Fusion:** Combining lidar, cameras, force sensors, and IMUs into a unified perception system that operates in real-time
+- **Human-Proximate Safety:** Algorithms that ensure safe operation near human crew, critical for shared habitat environments
+
+Valkyrie was designed specifically for "human-engineered environments" — meaning it can operate in habitats, airlocks, and vehicles built for human crew. This makes it ideal for Mars base construction and maintenance.
+
+---
+
+**Walking Stability: 81% Recovery Improvement**
+
+Georgia Tech researchers achieved a breakthrough in bipedal locomotion in 2026, developing a real-time planning and control framework that increases stability recovery by 81%. Tested on the Cassie bipedal robot:
+
+- Robots autonomously adjust gait when encountering obstacles or directional changes
+- Safer navigation at faster speeds with improved collision avoidance
+- Handles moving platforms and varying terrain types
+- Real-time decision-making without pre-programmed responses
+
+The mathematical framework combines Model Predictive Control (MPC) with learned gait libraries:
+
+\\\`\\\`\\\`
+min Σ ||q_k - q_ref||² + ||τ_k||²
+subject to:
+  q_{k+1} = f(q_k, τ_k)    (robot dynamics)
+  τ_min ≤ τ_k ≤ τ_max      (torque limits)
+  ZMP ∈ support_polygon     (balance constraint)
+\\\`\\\`\\\`
+
+This approach lets humanoids recover from pushes, slips, and unexpected terrain changes — exactly what's needed on the rocky Martian surface.
+
+---
+
+**Robonaut 2: Heritage from the ISS**
+
+NASA's earlier humanoid, Robonaut 2 (R2), became the first humanoid robot deployed to space in 2011 aboard the International Space Station. Key specifications:
+
+- 7 degrees of freedom per arm
+- Can hold 20 pounds in any pose
+- Upgraded in 2014 with climbing manipulators ("legs"), enhanced processors, and new sensors
+- Demonstrated dexterous manipulation in microgravity
+
+Robonaut 2 proved that humanoid robots can perform useful work in space. Valkyrie builds on that heritage for planetary surface operations.
+
+---
+
+**The Future: Robots Building Mars Habitats**
+
+The convergence of these technologies points toward a near-future where robots prepare Mars habitats before human crews arrive:
+
+1. **Advance deployment** — robots land 2+ years before humans
+2. **ISRU operations** — extracting water ice, producing oxygen and fuel
+3. **Habitat construction** — assembling pre-fabricated modules, sealing, and pressurizing
+4. **Maintenance** — ongoing inspection and repair of life support systems
+5. **Science support** — sample collection, drilling, instrument deployment
+
+Swarm robotics adds another dimension: multiple robots coordinating autonomously to build large structures, with each unit handling specialized tasks while communicating through mesh networks.
+
+---
+
+**Conclusion**
+
+Valkyrie's return to NASA marks the beginning of a new chapter in space robotics. With a decade of AI and machine learning research embedded in its systems, combined with the 81% walking stability improvements from Georgia Tech, humanoid robots are rapidly approaching the capability needed for Mars surface operations. The era of robot astronauts is arriving.
+
+Explore how AI guides autonomous systems in our [Space-AGI Roadmap](/research/space-agi-roadmap) and test orbital maneuvers in our [simulator](/simulator).`,
+    category: "robot-engineering",
+    date: "2026-03-26",
+    tags: ["NASA", "Valkyrie", "humanoid robot", "robot engineering", "Mars", "Robonaut", "bipedal locomotion"],
+    seoKeywords: "NASA Valkyrie robot 2026, humanoid robot Mars, robot engineering space, Robonaut 2 ISS, bipedal walking stability",
+  },
+  {
+    slug: "nasa-sr1-freedom-nuclear-propulsion-mars-2028",
+    title: "NASA's SR-1 Freedom: Nuclear-Powered Mars Mission Launching 2028",
+    excerpt: "NASA unveiled Space Reactor-1 Freedom — the first nuclear-propelled spacecraft to exit Earth's sphere of influence, carrying xenon ion thrusters powered by a fission reactor.",
+    content: `**Introduction**
+
+NASA announced the Space Reactor-1 Freedom (SR-1 Freedom) mission in March 2026, set to launch in December 2028. This will be the first-ever nuclear-propelled spacecraft to exit Earth's sphere of influence, demonstrating Nuclear Electric Propulsion (NEP) — a technology that could revolutionize deep space exploration and cut Mars transit times dramatically.
+
+---
+
+**What is SR-1 Freedom?**
+
+SR-1 Freedom is a technology demonstration mission combining a 20+ kilowatt fission reactor with xenon ion thrusters:
+
+- **Reactor:** High-Assay Low-Enriched Uranium (HALEU) fission reactor
+- **Power Conversion:** Advanced closed Brayton cycle — a high-efficiency, closed-loop heat engine converting thermal energy to electrical power
+- **Propulsion:** Xenon ion thrusters powered by reactor electricity
+- **Payload:** Three Ingenuity-class Mars helicopters plus science instruments
+- **Timeline:** Launch December 2028, arrive near Mars approximately one year later
+
+This represents a fundamental shift from chemical rockets. Where traditional propulsion provides high thrust for short burns, nuclear electric propulsion delivers continuous low thrust over months, achieving higher total velocity changes with far less propellant.
+
+---
+
+**The Physics of Nuclear Electric Propulsion**
+
+The specific impulse (Isp) advantage of ion propulsion over chemical rockets is dramatic:
+
+- **Chemical rockets:** Isp ≈ 300-450 seconds
+- **Xenon ion thrusters:** Isp ≈ 3,000-12,000 seconds
+
+The Tsiolkovsky rocket equation shows why this matters:
+
+\\\`\\\`\\\`
+Δv = Isp × g₀ × ln(m_initial / m_final)
+\\\`\\\`\\\`
+
+With 10x higher Isp, ion thrusters achieve the same Δv with exponentially less propellant mass. This means more payload capacity, longer missions, and the ability to reach destinations that chemical rockets simply cannot.
+
+The closed Brayton cycle operates at higher efficiency than traditional thermoelectric converters:
+
+\\\`\\\`\\\`
+η_Brayton = 1 - (T_cold / T_hot)^((γ-1)/γ)
+\\\`\\\`\\\`
+
+This thermodynamic efficiency, combined with the compact HALEU reactor, makes the system practical for deep space missions where solar panels become ineffective.
+
+---
+
+**Testing Milestones**
+
+NASA completed critical testing milestones in 2025:
+
+- **100+ cold-flow tests** on a full-scale nuclear rocket reactor prototype at Marshall Space Flight Center — the first such tests since the 1960s NERVA program
+- Validated stable hydrogen flow through the reactor
+- Confirmed the design operates safely without dangerous oscillations
+- Generated "some of the most detailed flow responses for a flight-like space reactor design in more than 50 years"
+
+These tests bridge a 60-year gap in nuclear propulsion development, proving that modern materials and engineering can make space nuclear propulsion safe and reliable.
+
+---
+
+**Why Nuclear Propulsion Changes Everything**
+
+Nuclear propulsion solves several fundamental challenges of deep space exploration:
+
+1. **Faster transit times** — reducing crew radiation exposure on Mars missions
+2. **Distance independence** — reactors work regardless of distance from the Sun, unlike solar panels
+3. **Higher payload capacity** — less propellant mass means more science instruments and supplies
+4. **Mission flexibility** — continuous thrust enables trajectory corrections and abort options
+5. **Outer solar system access** — enables missions to Jupiter, Saturn, and beyond with reasonable timelines
+
+---
+
+**From SR-1 to Crewed Mars Missions**
+
+SR-1 Freedom is a stepping stone. The technology it demonstrates scales up to crewed missions:
+
+- **SR-1 (2028):** 20 kW demo, unmanned, Mars flyby
+- **Future cargo missions:** 100+ kW reactors pre-positioning supplies at Mars
+- **Crewed transit vehicles:** Megawatt-class reactors cutting Mars transit from 9 months to potentially 3-4 months
+
+Combined with NASA's Artemis program building lunar infrastructure, nuclear propulsion creates a realistic pathway to sustainable Mars exploration.
+
+---
+
+**Conclusion**
+
+SR-1 Freedom represents the most significant propulsion advancement since the Space Shuttle. By demonstrating nuclear electric propulsion beyond Earth orbit, NASA is laying the foundation for a new era of deep space exploration. The fusion of nuclear engineering and space engineering makes missions possible that were pure science fiction a decade ago.
+
+Calculate orbital transfers and trajectory planning in our [orbit simulator](/simulator) and explore the [space engineering formulas library](/formulas-library).`,
+    category: "space-engineering",
+    date: "2026-03-26",
+    tags: ["NASA", "nuclear propulsion", "SR-1 Freedom", "Mars mission", "space engineering", "ion thruster", "NEP"],
+    seoKeywords: "NASA SR-1 Freedom nuclear propulsion 2026, nuclear electric propulsion Mars, space reactor fission, xenon ion thruster, Mars mission 2028",
   },
 ];
 

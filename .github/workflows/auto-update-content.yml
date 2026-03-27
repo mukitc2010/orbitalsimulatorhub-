@@ -1,0 +1,56 @@
+name: Auto-Update Content (Every 6 Hours)
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Generate new content (Claude-powered)
+        env:
+          AI_PROVIDER: anthropic
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: claude-sonnet-4-20250514
+        run: node scripts/content-agent.js
+
+      - name: Update SEO and sitemap
+        run: node scripts/auto-seo-update.js
+        continue-on-error: true
+
+      - name: Regenerate RSS feed
+        run: node scripts/generate-rss.js
+        continue-on-error: true
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update: content refresh $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi

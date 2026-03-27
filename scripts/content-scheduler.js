@@ -1,15 +1,16 @@
 #!/usr/bin/env node
 /**
- * Content Scheduler — runs content-agent.js every 24 hours.
+ * Content Scheduler — runs content-agent.js every 6 hours.
  *
  * Usage:
- *   node scripts/content-scheduler.js          (runs agent immediately + every 24h)
- *   node scripts/content-scheduler.js --wait   (waits for first 24h cycle, then repeats)
+ *   node scripts/content-scheduler.js          (runs agent immediately + every 6h)
+ *   node scripts/content-scheduler.js --wait   (waits for first 6h cycle, then repeats)
  *
  * To keep this running permanently:
- *   - Windows: use Task Scheduler to run `node scripts/content-agent.js` daily
- *   - Linux/Mac: use cron: 0 6 * * * cd /path/to/project && node scripts/content-agent.js
+ *   - Windows: use Task Scheduler to run `node scripts/content-agent.js` every 6 hours
+ *   - Linux/Mac: use cron: 0 */6 * * * cd /path/to/project && node scripts/content-agent.js
  *   - Or keep this script running with pm2: pm2 start scripts/content-scheduler.js
+ *   - Or use GitHub Actions (see .github/workflows/auto-update-content.yml)
  *   - Or use the existing n8n workflow system
  */
 
@@ -19,7 +20,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
-const INTERVAL_MS = 24 * 60 * 60 * 1000; // 24 hours
+const INTERVAL_MS = 6 * 60 * 60 * 1000; // 6 hours
 
 const WAIT_FIRST = process.argv.includes('--wait');
 
@@ -44,7 +45,7 @@ function scheduleNext() {
 }
 
 console.log('📅 Content Scheduler started');
-console.log(`   Interval: 24 hours (${INTERVAL_MS}ms)`);
+console.log(`   Interval: 6 hours (${INTERVAL_MS}ms)`);
 console.log(`   Wait for first cycle: ${WAIT_FIRST}`);
 console.log('   Press Ctrl+C to stop.\n');
 

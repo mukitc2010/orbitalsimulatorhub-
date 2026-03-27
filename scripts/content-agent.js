@@ -28,8 +28,11 @@ const DAILY_JSON = path.join(ROOT, 'community/data/daily-content.json');
 const TOPICS_FILE = path.join(ROOT, 'scripts/content-topics.json');
 const AFFILIATE_BOOKS = path.join(ROOT, 'scripts/affiliate-books.json');
 
+const AI_PROVIDER = process.env.AI_PROVIDER || 'anthropic';
 const OLLAMA_URL = process.env.OLLAMA_URL || 'http://localhost:11434';
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || 'llama3';
+const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || '';
+const ANTHROPIC_MODEL = process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514';
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
@@ -49,6 +52,35 @@ function pickRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+async function claudeGenerate(prompt, fallback) {
+  if (!ANTHROPIC_API_KEY) {
+    console.warn('⚠ ANTHROPIC_API_KEY not set, falling back to Ollama...');
+    return ollamaGenerate(prompt, fallback);
+  }
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': ANTHROPIC_API_KEY,
+        'anthropic-version': '2023-06-01',
+      },
+      body: JSON.stringify({
+        model: ANTHROPIC_MODEL,
+        max_tokens: 4096,
+        messages: [{ role: 'user', content: prompt }],
+      }),
+    });
+    if (!res.ok) throw new Error(`Anthropic ${res.status}`);
+    const data = await res.json();
+    const text = data.content?.[0]?.text || '';
+    return text.trim() || fallback;
+  } catch (e) {
+    console.warn(`⚠ Claude unavailable (${e.message}), falling back to Ollama...`);
+    return ollamaGenerate(prompt, fallback);
+  }
+}
+
 async function ollamaGenerate(prompt, fallback) {
   try {
     const res = await fetch(`${OLLAMA_URL}/api/generate`, {
@@ -65,12 +97,17 @@ async function ollamaGenerate(prompt, fallback) {
   }
 }
 
+async function aiGenerate(prompt, fallback) {
+  if (AI_PROVIDER === 'anthropic') return claudeGenerate(prompt, fallback);
+  return ollamaGenerate(prompt, fallback);
+}
+
 // ─── Load topics ───────────────────────────────────────
 
 const topicsData = JSON.parse(fs.readFileSync(TOPICS_FILE, 'utf8'));
 const categories = topicsData.categories;
 
-const PRIORITY_CATEGORIES = ['space-agi', 'space-engineering'];
+const PRIORITY_CATEGORIES = ['space-agi', 'space-engineering', 'agi-research', 'robot-engineering'];
 
 function pickCategory() {
   if (FORCE_CATEGORY) {
@@ -129,7 +166,7 @@ function getAffiliateBooksForCategory(categoryId) {
   const data = JSON.parse(fs.readFileSync(AFFILIATE_BOOKS, 'utf8'));
   const tag = data.tag || 'hubdepot-20';
   const books = data.categories?.[categoryId] || data.fallback || [];
-  return books.slice(0, 2).map((b) => ({ ...b, tag }));
+  return books.slice(0, 4).map((b) => ({ ...b, tag }));
 }
 
 function appendAffiliateSection(content, categoryId) {
@@ -137,7 +174,7 @@ function appendAffiliateSection(content, categoryId) {
   if (books.length === 0) return content;
   const tag = books[0]?.tag || 'hubdepot-20';
   const lines = books.map((b) => `- [${b.name}](https://www.amazon.com/dp/${b.asin}?tag=${tag})`);
-  return content.trimEnd() + `\n\n**Recommended Reading**\n\n${lines.join('\n')}\n`;
+  return content.trimEnd() + `\n\n**Recommended Reading & Products**\n\n${lines.join('\n')}\n\nExplore more in our [Space Shop](/space-shop) — NASA t-shirts, LEGO sets, and verified Amazon products.\n`;
 }
 
 async function generateBlogPost(cat) {
@@ -146,7 +183,7 @@ async function generateBlogPost(cat) {
   const slug = slugify(title) + '-' + today().replace(/-/g, '');
   const prompt = topicsData.blog_prompt.replace('{topic}', topic);
   const fallback = templateBlogContent(title, cat);
-  let content = await ollamaGenerate(prompt, fallback);
+  let content = await aiGenerate(prompt, fallback);
   content = appendAffiliateSection(content, cat.id);
   const excerpt = `Learn about ${title.toLowerCase()} — covering the science, real-world applications, and how it connects to space exploration.`;
 
@@ -191,17 +228,17 @@ async function generateDailyContent(blogPost) {
     const hTopic = pickRandom(hCat.topics);
     const hPrompt = topicsData.highlight_prompt.replace('{topic}', hTopic);
     const hFallback = `${hTopic} is a key area in ${hCat.name.toLowerCase()} that impacts how we understand and explore space.`;
-    const blurb = await ollamaGenerate(hPrompt, hFallback);
+    const blurb = await aiGenerate(hPrompt, hFallback);
     const icons = ['rocket', 'atom', 'plane', 'satellite', 'star', 'telescope'];
     pickedHighlights.push({ title: hTopic.length > 50 ? hTopic.slice(0, 47) + '...' : hTopic, blurb, icon: icons[i % icons.length] });
   }
 
   const featuredPrompt = topicsData.featured_prompt.replace('{topic}', blogPost.title);
   const featuredFallback = `${blogPost.title} is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.`;
-  const featuredExcerpt = await ollamaGenerate(featuredPrompt, featuredFallback);
+  const featuredExcerpt = await aiGenerate(featuredPrompt, featuredFallback);
 
   const factFallback = 'The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.';
-  const didYouKnow = await ollamaGenerate(topicsData.fact_prompt, factFallback);
+  const didYouKnow = await aiGenerate(topicsData.fact_prompt, factFallback);
 
   // Read existing blog posts for latest_posts
   const blogSrc = fs.readFileSync(BLOG_FILE, 'utf8');
@@ -246,7 +283,8 @@ async function generateDailyContent(blogPost) {
 
 async function main() {
   console.log('🤖 Content Agent starting...');
-  console.log(`   Model: ${OLLAMA_MODEL} at ${OLLAMA_URL}`);
+  console.log(`   Provider: ${AI_PROVIDER}`);
+  console.log(`   Model: ${AI_PROVIDER === 'anthropic' ? ANTHROPIC_MODEL : OLLAMA_MODEL}`);
   console.log(`   Dry run: ${DRY_RUN}`);
   console.log('');
 

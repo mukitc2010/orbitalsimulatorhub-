@@ -38,7 +38,7 @@ function main() {
   const start = new Date().toISOString();
   console.log(`\n🦞 OpenClaw OrbitalSimulatorHub Update — ${start}\n`);
 
-  // 1. Generate new blog post (Ollama-powered)
+  // 1. Generate new blog post (Claude-powered, falls back to Ollama)
   const contentOk = run("node scripts/content-agent.js");
   if (!contentOk) {
     console.warn("⚠ Content generation failed (Ollama may be offline). Continuing with SEO...");
@@ -54,6 +54,7 @@ function main() {
   const files = [
     "client/src/data/blogPosts.ts",
     "client/src/data/seo-config.ts",
+    "client/src/pages/Home.tsx",
     "client/public/sitemap.xml",
     "client/public/blog/rss.xml",
     "client/index.html",
