@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Fri, 27 Mar 2026 03:40:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 05:30:12 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Escape velocity derivation from conservation of energy</title>
@@ -15,6 +15,13 @@
       <category>space-engineering</category>
     </item>
     <item>
+      <title>Self-repairing spacecraft: AI that fixes itself in deep space</title>
+      <link>https://orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260327</link>
+      <description>Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 27 Mar 2026 04:00:00 GMT</pubDate>
+      <category>space-agi</category>
+    </item>
+    <item>
       <title>Pontryagin maximum principle explained for orbital maneuvers</title>
       <link>https://orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260326</link>
       <description>Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.</description>
@@ -27,6 +34,27 @@
       <description>Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Thu, 26 Mar 2026 04:00:00 GMT</pubDate>
       <category>space-agi</category>
+    </item>
+    <item>
+      <title>ARC-AGI Benchmark: Measuring Real Progress Toward Artificial General Intelligence in 2026</title>
+      <link>https://orbitalsimulatorhub.com/blog/arc-agi-benchmark-measuring-progress-toward-agi-2026</link>
+      <description>The ARC-AGI benchmark reveals where AI truly stands on the path to AGI. Systems hit 93% on ARC-AGI-1 but crash to 13% on ARC-AGI-3 — while humans stay near perfect.</description>
+      <pubDate>Thu, 26 Mar 2026 04:00:00 GMT</pubDate>
+      <category>agi-research</category>
+    </item>
+    <item>
+      <title>NASA&apos;s Valkyrie Humanoid Robot Returns Home After a Decade — Ready for Mars</title>
+      <link>https://orbitalsimulatorhub.com/blog/nasa-valkyrie-humanoid-robot-mars-missions-2026</link>
+      <description>NASA&apos;s 1.8m humanoid robot Valkyrie completed a decade of AI research at Edinburgh and returned to Johnson Space Center. Plus: bipedal walking stability improved 81%.</description>
+      <pubDate>Thu, 26 Mar 2026 04:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
+    </item>
+    <item>
+      <title>NASA&apos;s SR-1 Freedom: Nuclear-Powered Mars Mission Launching 2028</title>
+      <link>https://orbitalsimulatorhub.com/blog/nasa-sr1-freedom-nuclear-propulsion-mars-2028</link>
+      <description>NASA unveiled Space Reactor-1 Freedom — the first nuclear-propelled spacecraft to exit Earth&apos;s sphere of influence, carrying xenon ion thrusters powered by a fission reactor.</description>
+      <pubDate>Thu, 26 Mar 2026 04:00:00 GMT</pubDate>
+      <category>space-engineering</category>
     </item>
     <item>
       <title>Space AGI five pillars: perception, planning, control, learning, communication</title>
