@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-03-27T05:30:12.033Z",
+  "generated_at": "2026-03-28T23:29:24.903Z",
   "featured_article": {
-    "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
-    "excerpt": "Self-repairing spacecraft: AI that fixes itself in deep space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "How MPC and LQR control algorithms keep satellite swarms safe",
+    "excerpt": "How MPC and LQR control algorithms keep satellite swarms safe is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260327"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260328"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Orbital energy and specific orbital energy formula",
-      "blurb": "Orbital energy and specific orbital energy formula is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Mars Perseverance rover sample collection updates",
+      "blurb": "Mars Perseverance rover sample collection updates is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Exoplanet detection methods: transit and radial...",
-      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "The uncertainty principle and its real-world ap...",
+      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Robot engineering for lunar and Martian surface...",
-      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "How neutron stars can spin 716 times per second",
+      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260328",
+      "title": "How MPC and LQR control algorithms keep satellite swarms safe",
+      "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-03-28"
+    },
     {
       "slug": "escape-velocity-derivation-from-conservation-of-energy-20260327",
       "title": "Escape velocity derivation from conservation of energy",
@@ -38,13 +45,6 @@
       "excerpt": "Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
       "date": "2026-03-27"
-    },
-    {
-      "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260326",
-      "title": "Pontryagin maximum principle explained for orbital maneuvers",
-      "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-26"
     }
   ],
   "learning_paths": {
