@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-31T04:46:54.492Z",
+  "generated_at": "2026-03-31T05:30:12.982Z",
   "featured_article": {
-    "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
-    "excerpt": "Self-repairing spacecraft: AI that fixes itself in deep space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260331"
+    "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
+    "excerpt": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260331"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "There are more stars than grains of sand on Earth",
-      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How MPC and LQR control algorithms keep satelli...",
+      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Quantum entanglement and future space communica...",
-      "blurb": "Quantum entanglement and future space communication is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "International Space Station science experiments",
+      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum sensors for deep space navigation",
-      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Satellite communication: how data travels from ...",
+      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,18 +33,18 @@
       "date": "2026-03-31"
     },
     {
+      "slug": "arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260331",
+      "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
+      "excerpt": "Learn about arc-agi benchmark: measuring progress toward artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-03-31"
+    },
+    {
       "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260329",
       "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
       "excerpt": "Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
       "date": "2026-03-29"
-    },
-    {
-      "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260328",
-      "title": "How MPC and LQR control algorithms keep satellite swarms safe",
-      "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-28"
     }
   ],
   "learning_paths": {
