@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-01T05:30:13.220Z",
+  "generated_at": "2026-04-01T19:39:14.745Z",
   "featured_article": {
-    "title": "Space AGI five pillars: perception, planning, control, learning, communication",
-    "excerpt": "Space AGI five pillars: perception, planning, control, learning, communication is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-five-pillars-perception-planning-control-learning-communication-20260401"
+    "title": "Satellite communication: how data travels from space to your phone",
+    "excerpt": "Satellite communication: how data travels from space to your phone is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/satellite-communication-how-data-travels-from-space-to-your-phone-20260401"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The observable universe is 93 billion light-yea...",
-      "blurb": "The observable universe is 93 billion light-years across is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Orbital energy and specific orbital energy formula",
+      "blurb": "Orbital energy and specific orbital energy formula is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "There are more stars than grains of sand on Earth",
-      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Self-repairing spacecraft: AI that fixes itself...",
+      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Mars Perseverance rover sample collection updates",
-      "blurb": "Mars Perseverance rover sample collection updates is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Quantum tunneling in nuclear fusion inside stars",
+      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-01"
     },
     {
-      "slug": "self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260331",
-      "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
-      "excerpt": "Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-03-31"
+      "slug": "satellite-communication-how-data-travels-from-space-to-your-phone-20260401",
+      "title": "Satellite communication: how data travels from space to your phone",
+      "excerpt": "Learn about satellite communication: how data travels from space to your phone — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "satellite-tutorials",
+      "date": "2026-04-01"
     }
   ],
   "learning_paths": {
