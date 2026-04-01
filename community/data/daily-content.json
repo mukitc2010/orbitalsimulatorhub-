@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-01T05:18:33.996Z",
+  "generated_at": "2026-04-01T05:30:13.220Z",
   "featured_article": {
-    "title": "Lambert's problem: how to plan an intercept between two orbits",
-    "excerpt": "Lambert's problem: how to plan an intercept between two orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260401"
+    "title": "Space AGI five pillars: perception, planning, control, learning, communication",
+    "excerpt": "Space AGI five pillars: perception, planning, control, learning, communication is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-five-pillars-perception-planning-control-learning-communication-20260401"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The life cycle of Sun-like stars from birth to ...",
-      "blurb": "The life cycle of Sun-like stars from birth to white dwarf is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "The observable universe is 93 billion light-yea...",
+      "blurb": "The observable universe is 93 billion light-years across is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How GPS satellites calculate your exact positio...",
-      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Humanoid robot locomotion on uneven terrain and...",
-      "blurb": "Humanoid robot locomotion on uneven terrain and moving platforms is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Mars Perseverance rover sample collection updates",
+      "blurb": "Mars Perseverance rover sample collection updates is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-01"
     },
     {
+      "slug": "space-agi-five-pillars-perception-planning-control-learning-communication-20260401",
+      "title": "Space AGI five pillars: perception, planning, control, learning, communication",
+      "excerpt": "Learn about space agi five pillars: perception, planning, control, learning, communication — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-04-01"
+    },
+    {
       "slug": "self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260331",
       "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
       "excerpt": "Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-03-31"
-    },
-    {
-      "slug": "arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260331",
-      "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
-      "excerpt": "Learn about arc-agi benchmark: measuring progress toward artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-03-31"
     }
   ],
