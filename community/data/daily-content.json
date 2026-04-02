@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-02T22:02:44.553Z",
+  "generated_at": "2026-04-02T23:31:09.186Z",
   "featured_article": {
-    "title": "Kepler's three laws with derivations and real satellite examples",
-    "excerpt": "Kepler's three laws with derivations and real satellite examples is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/keplers-three-laws-with-derivations-and-real-satellite-examples-20260402"
+    "title": "Space-AGI convergence: how orbital autonomy accelerates AGI research",
+    "excerpt": "The harsh isolation of space creates the perfect laboratory for developing Artificial General Intelligence (AGI), as spacecraft must make complex, life-or-death decisions without waiting for instructions from Earth that can take up to 22 minutes to arrive. This extreme autonomy requirement forces engineers to create AI systems that can reason, adapt, and problem-solve across unpredictable scenarios—from navigating asteroid fields to repairing critical systems—essentially accelerating the development of truly intelligent machines. In space, there's no room for narrow AI that only performs one task; survival demands the kind of flexible, general intelligence that could revolutionize technology back on Earth.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-convergence-how-orbital-autonomy-accelerates-agi-research-20260402"
   },
-  "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
+  "did_you_know": "If you could fold a piece of paper in half just 42 times, it would be thick enough to reach the Moon—that's the incredible power of exponential growth, where each fold doubles the thickness.",
   "topic_highlights": [
     {
-      "title": "Why a day on Venus is longer than its year",
-      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Gravitational waves and what they tell us about...",
+      "blurb": "Gravitational waves are ripples in spacetime itself, created when massive objects like black holes collide and literally stretch and compress the fabric of reality as they travel at light speed. These cosmic messengers allow us to \"hear\" the universe in an entirely new way, revealing hidden black hole mergers, neutron star collisions, and potentially even echoes from the Big Bang—opening up revolutionary possibilities for deep space navigation and our understanding of gravity's role in the cosmos.",
       "icon": "rocket"
     },
     {
-      "title": "James Webb Space Telescope latest discoveries",
-      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Soft robotics and compliant actuators for safe ...",
+      "blurb": "Soft robotics with compliant actuators enable spacecraft and rovers to safely interact with astronauts in cramped environments while adapting to unpredictable surfaces and delicate samples, reducing the risk of mission-critical damage from rigid collisions. These bio-inspired systems also allow robots to grip irregular asteroids, navigate rough planetary terrain, and handle fragile scientific instruments with human-like dexterity—capabilities essential for future Mars missions and asteroid mining operations.",
       "icon": "atom"
     },
     {
-      "title": "The cosmic microwave background and the Big Bang",
-      "blurb": "The cosmic microwave background and the Big Bang is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Dark matter: the invisible mass holding galaxie...",
+      "blurb": "Dark matter makes up about 85% of all matter in the universe, yet we can't see it directly—we only know it exists because its gravitational pull holds galaxies together and prevents them from flying apart as they spin. Understanding this invisible cosmic scaffolding is crucial for space exploration because it shapes the large-scale structure of the universe and could reveal entirely new physics beyond our current theories, potentially unlocking revolutionary technologies for future interstellar travel.",
       "icon": "plane"
     }
   ],
