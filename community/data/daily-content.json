@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-02T19:33:25.508Z",
+  "generated_at": "2026-04-02T22:02:44.553Z",
   "featured_article": {
-    "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
-    "excerpt": "By 2025, artificial intelligence will begin managing entire satellite constellations in low Earth orbit autonomously, but the real breakthrough comes in the 2040s when AI systems will need to make critical decisions during multi-year journeys to Mars with no possibility of real-time communication with Earth. The most fascinating challenge lies in developing AI that can evolve and learn during decades-long interstellar missions—imagine an artificial mind that launches from Earth in 2060 knowing only basic physics, but arrives at Proxima Centauri 40 years later having become humanity's first true space explorer, capable of making discoveries we never imagined. This represents the ultimate test of machine intelligence: creating digital astronauts that can think, adapt, and explore the cosmos entirely on their own.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260402"
+    "title": "Kepler's three laws with derivations and real satellite examples",
+    "excerpt": "Kepler's three laws with derivations and real satellite examples is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/keplers-three-laws-with-derivations-and-real-satellite-examples-20260402"
   },
-  "did_you_know": "If you could fold a piece of paper in half just 42 times, it would be thick enough to reach the Moon—that's the extraordinary power of exponential growth, where each fold doubles the thickness until you've created a stack over 384,000 kilometers tall.",
+  "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How weather satellites predict storms and track...",
-      "blurb": "Weather satellites use infrared and microwave sensors to detect temperature and moisture patterns in Earth's atmosphere, allowing meteorologists to track hurricane formation and predict storm paths days in advance. This technology is crucial for space exploration because accurate weather forecasting protects rocket launches from dangerous conditions and helps mission planners understand how atmospheric physics works on other planets with weather systems like Mars and Jupiter.",
+      "title": "Why a day on Venus is longer than its year",
+      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How satellite constellations maintain formation...",
-      "blurb": "Satellite constellations maintain their precise formations through a delicate dance of orbital mechanics, using automated thrust adjustments and gravitational physics to counteract natural drift caused by Earth's uneven gravity field, atmospheric drag, and solar radiation pressure. This formation-keeping capability is revolutionizing space exploration by enabling distributed sensor networks that can map gravitational anomalies, track climate changes with unprecedented precision, and create the foundation for future deep-space missions requiring coordinated spacecraft swarms.",
+      "title": "James Webb Space Telescope latest discoveries",
+      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "AI-driven robot autonomy: from teleoperation to...",
-      "blurb": "AI-driven robot autonomy is revolutionizing space exploration by enabling robots to evolve from remote-controlled tools requiring constant human input to intelligent agents capable of making split-second decisions during critical missions like Mars landings or asteroid mining. This leap from teleoperation to full autonomy is essential for deep space missions where communication delays of up to 24 minutes make real-time human control impossible, allowing robots to conduct complex scientific experiments and navigate hazardous terrain independently while humans sleep.",
+      "title": "The cosmic microwave background and the Big Bang",
+      "blurb": "The cosmic microwave background and the Big Bang is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
