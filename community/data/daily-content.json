@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-02T12:58:28.007Z",
+  "generated_at": "2026-04-02T13:25:45.614Z",
   "featured_article": {
-    "title": "A teaspoon of neutron star weighs 6 billion tons",
-    "excerpt": "A single teaspoon of neutron star material weighs about 6 billion tons—roughly the same as Mount Everest crammed into something smaller than a sugar cube! This mind-boggling density occurs because neutron stars are the collapsed cores of massive stars, where gravity has crushed matter so intensely that protons and electrons are mashed together into neutrons, creating the densest objects in the known universe besides black holes. If you could somehow bring a teaspoon of this material to Earth, its immense gravity would instantly pull you toward it with a force millions of times stronger than Earth's gravity.",
-    "category": "space-facts",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/a-teaspoon-of-neutron-star-weighs-6-billion-tons-20260402"
+    "title": "Robot engineering for lunar and Martian surface operations",
+    "excerpt": "Robot engineering for lunar and Martian surface operations is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-engineering-for-lunar-and-martian-surface-operations-20260402"
   },
-  "did_you_know": "If you could fold a piece of paper in half just 42 times, it would be thick enough to reach the moon—despite starting at only 0.1 millimeters thick, the exponential growth of doubling (2^42) creates a stack over 400,000 kilometers tall.",
+  "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Walking stability breakthroughs: 81% recovery i...",
-      "blurb": "Revolutionary bipedal robot stability algorithms have achieved an 81% improvement in recovery from falls and stumbles, mimicking the complex physics of human balance through real-time center-of-mass adjustments and predictive leg positioning. This breakthrough could transform space exploration by enabling humanoid robots to navigate unpredictable terrain on Mars or asteroids while maintaining stability in low-gravity environments where traditional wheeled rovers would struggle.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "International Space Station science experiments",
-      "blurb": "The International Space Station's microgravity environment allows scientists to conduct experiments impossible on Earth, from growing perfect protein crystals for drug development to studying how flames behave without gravity's influence. These discoveries not only advance our understanding of fundamental physics and biology, but also help us develop the technologies and medical knowledge essential for future long-duration missions to Mars and beyond.",
+      "title": "Quantum tunneling in nuclear fusion inside stars",
+      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Mars Perseverance rover sample collection updates",
-      "blurb": "NASA's Perseverance rover has collected over 20 rock and soil samples from Mars' Jezero Crater, including specimens that may contain biosignatures from ancient microbial life that existed when the crater was a lake billions of years ago. These samples, sealed in titanium tubes and cached on the Martian surface, represent humanity's best chance yet to definitively answer whether life ever existed beyond Earth when they're eventually returned by a future mission in the 2030s.",
+      "title": "How galaxies collide and merge over billions of...",
+      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-02"
     },
     {
-      "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260401",
-      "title": "Lambert's problem: how to plan an intercept between two orbits",
-      "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
-      "date": "2026-04-01"
+      "slug": "robot-engineering-for-lunar-and-martian-surface-operations-20260402",
+      "title": "Robot engineering for lunar and Martian surface operations",
+      "excerpt": "Learn about robot engineering for lunar and martian surface operations — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-04-02"
     }
   ],
   "learning_paths": {
