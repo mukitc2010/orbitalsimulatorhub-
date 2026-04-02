@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-02T07:37:03.783Z",
+  "generated_at": "2026-04-02T12:58:28.007Z",
   "featured_article": {
-    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-    "excerpt": "Soft robotics represents a revolutionary approach where robots are built with flexible, compliant materials that can safely interact with humans—imagine a robotic arm that feels more like an octopus tentacle than a rigid mechanical crane! These \"soft\" actuators use pneumatic pressure, shape-memory alloys, or electroactive polymers to create gentle, adaptive movements that can handle delicate objects or work alongside astronauts without risk of injury. This technology is particularly exciting for space missions, where traditional rigid robots might damage sensitive equipment or pose safety risks in the confined spaces of spacecraft and space stations.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260402"
+    "title": "A teaspoon of neutron star weighs 6 billion tons",
+    "excerpt": "A single teaspoon of neutron star material weighs about 6 billion tons—roughly the same as Mount Everest crammed into something smaller than a sugar cube! This mind-boggling density occurs because neutron stars are the collapsed cores of massive stars, where gravity has crushed matter so intensely that protons and electrons are mashed together into neutrons, creating the densest objects in the known universe besides black holes. If you could somehow bring a teaspoon of this material to Earth, its immense gravity would instantly pull you toward it with a force millions of times stronger than Earth's gravity.",
+    "category": "space-facts",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/a-teaspoon-of-neutron-star-weighs-6-billion-tons-20260402"
   },
-  "did_you_know": "If you could fold a piece of paper in half just 42 times, it would be thick enough to reach the Moon, demonstrating the incredible power of exponential growth where each fold doubles the thickness.",
+  "did_you_know": "If you could fold a piece of paper in half just 42 times, it would be thick enough to reach the moon—despite starting at only 0.1 millimeters thick, the exponential growth of doubling (2^42) creates a stack over 400,000 kilometers tall.",
   "topic_highlights": [
     {
-      "title": "How heat shields protect spacecraft during re-e...",
-      "blurb": "Heat shields protect spacecraft by absorbing and dissipating the intense heat generated when a vehicle slams into Earth's atmosphere at speeds up to 25,000 mph, where friction can create temperatures exceeding 3,000°F—hot enough to melt steel. Without these thermal barriers made of specialized materials like carbon composites or ablative coatings, astronauts and equipment would be incinerated during re-entry, making heat shield technology absolutely critical for safely returning crews and scientific samples from space missions.",
+      "title": "Walking stability breakthroughs: 81% recovery i...",
+      "blurb": "Revolutionary bipedal robot stability algorithms have achieved an 81% improvement in recovery from falls and stumbles, mimicking the complex physics of human balance through real-time center-of-mass adjustments and predictive leg positioning. This breakthrough could transform space exploration by enabling humanoid robots to navigate unpredictable terrain on Mars or asteroids while maintaining stability in low-gravity environments where traditional wheeled rovers would struggle.",
       "icon": "rocket"
     },
     {
-      "title": "Quantum entanglement and future space communica...",
-      "blurb": "Quantum entanglement creates mysterious \"spooky\" connections between particles that could enable instantaneous communication across vast cosmic distances, potentially revolutionizing how we stay in contact with Mars missions or deep space probes. While we can't yet send messages faster than light, this quantum phenomenon might one day allow ultra-secure communications and could help solve the frustrating time delays that currently plague space exploration—imagine real-time conversations with astronauts on distant planets!",
+      "title": "International Space Station science experiments",
+      "blurb": "The International Space Station's microgravity environment allows scientists to conduct experiments impossible on Earth, from growing perfect protein crystals for drug development to studying how flames behave without gravity's influence. These discoveries not only advance our understanding of fundamental physics and biology, but also help us develop the technologies and medical knowledge essential for future long-duration missions to Mars and beyond.",
       "icon": "atom"
     },
     {
-      "title": "Space is completely silent because sound needs ...",
-      "blurb": "Space is completely silent because sound waves need matter (like air or water) to travel through, and the vacuum of space contains virtually no particles to carry these vibrations. This means astronauts must rely entirely on radio communications and visual signals to stay connected during spacewalks, as they couldn't hear a fellow astronaut shouting just inches away without their communication systems.",
+      "title": "Mars Perseverance rover sample collection updates",
+      "blurb": "NASA's Perseverance rover has collected over 20 rock and soil samples from Mars' Jezero Crater, including specimens that may contain biosignatures from ancient microbial life that existed when the crater was a lake billions of years ago. These samples, sealed in titanium tubes and cached on the Martian surface, represent humanity's best chance yet to definitively answer whether life ever existed beyond Earth when they're eventually returned by a future mission in the 2030s.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-02"
     },
     {
+      "slug": "a-teaspoon-of-neutron-star-weighs-6-billion-tons-20260402",
+      "title": "A teaspoon of neutron star weighs 6 billion tons",
+      "excerpt": "Learn about a teaspoon of neutron star weighs 6 billion tons — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-facts",
+      "date": "2026-04-02"
+    },
+    {
       "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260401",
       "title": "Lambert's problem: how to plan an intercept between two orbits",
       "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-04-01"
-    },
-    {
-      "slug": "space-agi-five-pillars-perception-planning-control-learning-communication-20260401",
-      "title": "Space AGI five pillars: perception, planning, control, learning, communication",
-      "excerpt": "Learn about space agi five pillars: perception, planning, control, learning, communication — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-04-01"
     }
   ],
