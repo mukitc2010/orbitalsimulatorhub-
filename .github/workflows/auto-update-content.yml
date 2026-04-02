@@ -23,17 +23,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci --legacy-peer-deps
+        run: npm install --legacy-peer-deps
 
-      - name: Generate new content (Claude-powered)
+      - name: Generate new content
         env:
-          AI_PROVIDER: anthropic
+          AI_PROVIDER: ${{ secrets.ANTHROPIC_API_KEY && 'anthropic' || 'ollama' }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: claude-sonnet-4-20250514
         run: node scripts/content-agent.js
+        continue-on-error: true
 
       - name: Update SEO and sitemap
         run: node scripts/auto-seo-update.js
