@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-03T02:23:35.718Z",
+  "generated_at": "2026-04-03T07:08:56.542Z",
   "featured_article": {
-    "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
-    "excerpt": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260403"
+    "title": "How lift is generated: Bernoulli vs Newton explanations",
+    "excerpt": "How lift is generated: Bernoulli vs Newton explanations is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-lift-is-generated-bernoulli-vs-newton-explanations-20260403"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Escape velocity derivation from conservation of...",
-      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "NASA Europa Clipper mission to Jupiter's moon",
+      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Quantum key distribution for secure satellite c...",
-      "blurb": "Quantum key distribution for secure satellite communications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Vis-viva equation explained: the master formula...",
+      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Dark matter: the invisible mass holding galaxie...",
-      "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "ARC-AGI benchmark: measuring progress toward ar...",
+      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-03"
     },
     {
+      "slug": "how-lift-is-generated-bernoulli-vs-newton-explanations-20260403",
+      "title": "How lift is generated: Bernoulli vs Newton explanations",
+      "excerpt": "Learn about how lift is generated: bernoulli vs newton explanations — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "aerodynamics",
+      "date": "2026-04-03"
+    },
+    {
       "slug": "soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260402",
       "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
       "excerpt": "Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
-      "date": "2026-04-02"
-    },
-    {
-      "slug": "a-teaspoon-of-neutron-star-weighs-6-billion-tons-20260402",
-      "title": "A teaspoon of neutron star weighs 6 billion tons",
-      "excerpt": "Learn about a teaspoon of neutron star weighs 6 billion tons — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
       "date": "2026-04-02"
     }
   ],
