@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-04T04:01:24.790Z",
+  "generated_at": "2026-04-04T05:31:08.321Z",
   "featured_article": {
-    "title": "How lift is generated: Bernoulli vs Newton explanations",
-    "excerpt": "While many students learn that airplane wings generate lift solely through Bernoulli's principle (faster airflow over the curved top creates lower pressure), the complete picture is far more fascinating: **Newton's third law plays the equally crucial role** as wings deflect massive amounts of air downward, creating an equal and opposite upward force. Think of it this way—a wing doesn't just \"surf\" on pressure differences, it actively **punches down tons of air every second**, and that air punches back with enough force to lift a 500-ton jumbo jet into the sky! Both explanations work together in nature, showing how the same physical phenomenon can be understood through multiple complementary principles of physics.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-lift-is-generated-bernoulli-vs-newton-explanations-20260404"
+    "title": "Quantum entanglement and future space communication",
+    "excerpt": "Quantum entanglement creates an invisible connection between particles that allows them to instantly \"know\" what happens to each other, no matter how far apart they are—even across entire galaxies. Scientists are working to harness this spooky phenomenon for future space missions, where a message sent from Mars to Earth could arrive instantaneously instead of taking up to 24 minutes with current radio technology. This quantum communication could revolutionize how astronauts stay connected with home and coordinate complex deep space explorations.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/quantum-entanglement-and-future-space-communication-20260404"
   },
   "did_you_know": "If you could fold a piece of paper in half just 42 times, it would be thick enough to reach the Moon—that's the incredible power of exponential growth, where each fold doubles the thickness.",
   "topic_highlights": [
     {
-      "title": "International Space Station science experiments",
-      "blurb": "The International Space Station serves as a unique laboratory where scientists conduct experiments in microgravity, studying everything from protein crystal growth to combustion flames that burn in perfect spheres impossible to create on Earth. These weightless conditions reveal fundamental physics principles and help develop technologies essential for long-duration space missions to Mars and beyond, while also advancing medical treatments and materials science here on Earth.",
+      "title": "Vis-viva equation explained: the master formula...",
+      "blurb": "The vis-viva equation (v² = GM(2/r - 1/a)) is the universal \"speed limit calculator\" that determines exactly how fast any object must travel at any point in its orbit around a massive body. This master formula is essential for space missions because it tells engineers the precise velocity needed for spacecraft to reach other planets, escape Earth's gravity, or maintain stable orbits around celestial bodies.",
       "icon": "rocket"
     },
     {
-      "title": "Gravitational waves and what they tell us about...",
-      "blurb": "Gravitational waves are ripples in the fabric of spacetime itself, created when massive objects like black holes collide and literally stretch and compress the universe around us. These cosmic messengers allow us to \"hear\" the universe in an entirely new way, revealing hidden black hole mergers, neutron star crashes, and potentially even echoes from the Big Bang that could revolutionize our understanding of physics and guide future space exploration.",
+      "title": "AI collision avoidance: how 500+ satellites avo...",
+      "blurb": "AI collision avoidance systems enable hundreds of satellites to autonomously calculate orbital trajectories and execute precise maneuvers in real-time, preventing catastrophic collisions that could create debris fields lasting centuries. This technology is crucial for space exploration because it protects critical infrastructure like GPS, communication networks, and scientific missions while preventing the cascade effect of space junk that could make entire orbital regions unusable for future missions.",
       "icon": "atom"
     },
     {
-      "title": "Mars Perseverance rover sample collection updates",
-      "blurb": "NASA's Perseverance rover has successfully collected over 20 rock and soil samples from Mars' Jezero Crater, preserving potential evidence of ancient microbial life in sealed tubes for future retrieval. This groundbreaking sample caching mission represents humanity's first step toward confirming extraterrestrial life and will revolutionize our understanding of planetary evolution when the samples return to Earth in the 2030s.",
+      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
+      "blurb": "Olympus Mons, towering at 69,649 feet—three times taller than Mount Everest—demonstrates how Mars' weaker gravity and lack of plate tectonics allowed volcanoes to grow to impossible heights that could never exist on Earth. This massive shield volcano serves as a natural laboratory for understanding planetary geology and offers future Mars explorers a unique vantage point that rises above most of the planet's dust storms.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-04"
     },
     {
+      "slug": "quantum-entanglement-and-future-space-communication-20260404",
+      "title": "Quantum entanglement and future space communication",
+      "excerpt": "Learn about quantum entanglement and future space communication — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "quantum-physics",
+      "date": "2026-04-04"
+    },
+    {
       "slug": "cubesats-and-nanosatellites-space-access-for-universities-20260403",
       "title": "CubeSats and nanosatellites: space access for universities",
       "excerpt": "Learn about cubesats and nanosatellites: space access for universities — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "satellite-tutorials",
-      "date": "2026-04-03"
-    },
-    {
-      "slug": "how-ai-satellites-make-autonomous-decisions-in-orbit-20260403",
-      "title": "How AI satellites make autonomous decisions in orbit",
-      "excerpt": "Learn about how ai satellites make autonomous decisions in orbit — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-04-03"
     }
   ],
