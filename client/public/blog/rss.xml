@@ -5,8 +5,15 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Sat, 04 Apr 2026 05:31:08 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 05:45:09 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How MPC and LQR control algorithms keep satellite swarms safe</title>
+      <link>https://orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260405</link>
+      <description>Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 05 Apr 2026 04:00:00 GMT</pubDate>
+      <category>space-agi</category>
+    </item>
     <item>
       <title>How lift is generated: Bernoulli vs Newton explanations</title>
       <link>https://orbitalsimulatorhub.com/blog/how-lift-is-generated-bernoulli-vs-newton-explanations-20260404</link>

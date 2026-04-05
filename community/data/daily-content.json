@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-04-04T05:31:08.321Z",
+  "generated_at": "2026-04-05T05:45:09.028Z",
   "featured_article": {
-    "title": "Quantum entanglement and future space communication",
-    "excerpt": "Quantum entanglement creates an invisible connection between particles that allows them to instantly \"know\" what happens to each other, no matter how far apart they are—even across entire galaxies. Scientists are working to harness this spooky phenomenon for future space missions, where a message sent from Mars to Earth could arrive instantaneously instead of taking up to 24 minutes with current radio technology. This quantum communication could revolutionize how astronauts stay connected with home and coordinate complex deep space explorations.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/quantum-entanglement-and-future-space-communication-20260404"
+    "title": "How MPC and LQR control algorithms keep satellite swarms safe",
+    "excerpt": "When dozens of satellites fly in formation just meters apart, one wrong move could trigger a catastrophic chain reaction of collisions—but Model Predictive Control (MPC) and Linear Quadratic Regulator (LQR) algorithms act like an invisible traffic control system in space. These smart algorithms continuously calculate the optimal thrust patterns for each satellite by predicting future positions and minimizing fuel use, while ensuring safe distances are maintained even when unexpected forces like solar radiation pressure try to push the swarm apart. Think of it as giving each satellite a crystal ball that can see several orbits into the future, allowing the entire swarm to dance through space in perfect, fuel-efficient harmony.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260405"
   },
-  "did_you_know": "If you could fold a piece of paper in half just 42 times, it would be thick enough to reach the Moon—that's the incredible power of exponential growth, where each fold doubles the thickness.",
+  "did_you_know": "If you could fold a piece of paper in half just 42 times, it would be thick enough to reach the Moon—that's the incredible power of exponential growth, where each fold doubles the thickness until you've created a stack over 400,000 kilometers tall.",
   "topic_highlights": [
     {
-      "title": "Vis-viva equation explained: the master formula...",
-      "blurb": "The vis-viva equation (v² = GM(2/r - 1/a)) is the universal \"speed limit calculator\" that determines exactly how fast any object must travel at any point in its orbit around a massive body. This master formula is essential for space missions because it tells engineers the precise velocity needed for spacecraft to reach other planets, escape Earth's gravity, or maintain stable orbits around celestial bodies.",
+      "title": "NASA Europa Clipper mission to Jupiter's moon",
+      "blurb": "NASA's Europa Clipper mission will conduct detailed flybys of Jupiter's ice-covered moon Europa to investigate the vast ocean beneath its frozen surface, which may contain twice as much water as all of Earth's oceans combined. This groundbreaking mission could reveal whether Europa harbors the conditions necessary for life, potentially answering one of humanity's most profound questions: are we alone in the universe?",
       "icon": "rocket"
     },
     {
-      "title": "AI collision avoidance: how 500+ satellites avo...",
-      "blurb": "AI collision avoidance systems enable hundreds of satellites to autonomously calculate orbital trajectories and execute precise maneuvers in real-time, preventing catastrophic collisions that could create debris fields lasting centuries. This technology is crucial for space exploration because it protects critical infrastructure like GPS, communication networks, and scientific missions while preventing the cascade effect of space junk that could make entire orbital regions unusable for future missions.",
+      "title": "Exoskeletons and wearable robots for astronaut ...",
+      "blurb": "Exoskeletons and wearable robots could revolutionize spacewalks by counteracting the restrictive forces of pressurized spacesuits, allowing astronauts to move with Earth-like dexterity while performing delicate repairs on spacecraft traveling at 17,500 mph. These powered assistance systems would dramatically extend EVA duration and precision, enabling complex construction tasks essential for building lunar bases, Mars habitats, and deep-space vessels that require intricate assembly in the unforgiving vacuum of space.",
       "icon": "atom"
     },
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons, towering at 69,649 feet—three times taller than Mount Everest—demonstrates how Mars' weaker gravity and lack of plate tectonics allowed volcanoes to grow to impossible heights that could never exist on Earth. This massive shield volcano serves as a natural laboratory for understanding planetary geology and offers future Mars explorers a unique vantage point that rises above most of the planet's dust storms.",
+      "title": "J2 perturbation: why orbits drift and how to co...",
+      "blurb": "Earth's equatorial bulge creates a gravitational perturbation called J2 that causes satellite orbits to slowly drift and precess over time, making spacecraft gradually deviate from their intended paths. Mission planners must account for this effect when designing long-term satellite constellations like GPS or planning interplanetary trajectories, often requiring periodic orbital corrections to maintain precise positioning for navigation, communication, and scientific observations.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260405",
+      "title": "How MPC and LQR control algorithms keep satellite swarms safe",
+      "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-04-05"
+    },
     {
       "slug": "how-lift-is-generated-bernoulli-vs-newton-explanations-20260404",
       "title": "How lift is generated: Bernoulli vs Newton explanations",
@@ -38,13 +45,6 @@
       "excerpt": "Learn about quantum entanglement and future space communication — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "quantum-physics",
       "date": "2026-04-04"
-    },
-    {
-      "slug": "cubesats-and-nanosatellites-space-access-for-universities-20260403",
-      "title": "CubeSats and nanosatellites: space access for universities",
-      "excerpt": "Learn about cubesats and nanosatellites: space access for universities — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "satellite-tutorials",
-      "date": "2026-04-03"
     }
   ],
   "learning_paths": {

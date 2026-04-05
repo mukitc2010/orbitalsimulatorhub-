@@ -392,6 +392,85 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     keywords: "space mission timeline, Apollo timeline, space history, mission history, Sputnik to Artemis",
     lastUpdated: "2026-02-18T00:00:00Z",
   },
+  "/simulator/ai-astronaut-robot": {
+    path: "/simulator/ai-astronaut-robot",
+    title: "AI Astronaut Robot Simulator — Build & Train Space Robots | Space-AGI Robotics Lab",
+    description: "Build humanoid, rover, drone robots. Train computer vision AI. Simulate ISS, Moon, Mars, deep space environments. Object detection, autonomous navigation, satellite repair. World-first Space-AGI Robotics Lab.",
+    keywords: "AI astronaut robot simulator, space robot simulator, humanoid robot space, build space robot online, space AGI robotics, NASA Valkyrie robot, Robonaut 2, Mars rover AI, ISS robot, computer vision space, robot engineering, space robotics training, autonomous robot space, AI humanoid robot, robot manipulation space, bipedal robot Mars, space construction robot, swarm robotics orbit",
+    ogTitle: "AI Astronaut Robot Simulator — World First Space-AGI Robotics Lab",
+    lastUpdated: "2026-04-04T00:00:00Z",
+  },
+  "/quantum-space-agi": {
+    path: "/quantum-space-agi",
+    title: "Quantum Space AGI Lab — Curvature-Aware Navigation, Black Hole Flyby Simulator | OrbitalSimulatorHub",
+    description: "Quantum-assisted black hole flyby simulator with curvature-aware navigation, safety shields, Schwarzschild/Kerr/Wormhole scenarios. Educational sandbox for general relativity and quantum computing in space.",
+    keywords: "quantum space AGI, quantum navigation space, black hole simulator, Schwarzschild metric, Kerr black hole, wormhole simulator, quantum computing space, general relativity simulator, curvature navigation, quantum assist planner, event horizon simulation, tidal forces simulator, spacetime curvature, gravitational lensing, quantum gravity",
+    ogTitle: "Quantum Space AGI Lab — Black Hole Flyby Simulator",
+    lastUpdated: "2026-04-04T00:00:00Z",
+  },
+  "/learn/how-gps-works": {
+    path: "/learn/how-gps-works",
+    title: "How GPS Works — Satellite Trilateration, Atomic Clocks & Relativity | Orbital Simulator Hub",
+    description: "How GPS satellites use trilateration, atomic clocks, and relativistic corrections to pinpoint your location. 31 satellites at 20,200 km altitude. Interactive guide.",
+    keywords: "how GPS works, GPS satellite trilateration, GPS atomic clock, GPS relativistic correction, satellite navigation, GPS accuracy, 31 GPS satellites, MEO orbit GPS, GPS signal travel time, how does GPS calculate position",
+    lastUpdated: "2026-04-04T00:00:00Z",
+  },
+  "/learn/how-iss-works": {
+    path: "/learn/how-iss-works",
+    title: "How the ISS Works — International Space Station Science & Operations | Orbital Simulator Hub",
+    description: "Inside the International Space Station: life support, solar panels, 408 km orbit at 7.66 km/s, crew rotations, science experiments. How 16 countries built a home in space.",
+    keywords: "how ISS works, International Space Station, ISS life support, ISS orbit altitude 408 km, ISS speed 7.66 km/s, ISS crew, ISS solar panels, ISS modules, space station science, ISS experiments, microgravity research",
+    lastUpdated: "2026-04-04T00:00:00Z",
+  },
+  "/learn/how-starlink-works": {
+    path: "/learn/how-starlink-works",
+    title: "How Starlink Works — SpaceX Satellite Internet Constellation Explained | Orbital Simulator Hub",
+    description: "How SpaceX Starlink delivers broadband internet from 550 km LEO orbit. 6,000+ satellites, laser inter-satellite links, phased array antennas. Complete technical guide.",
+    keywords: "how Starlink works, Starlink satellite internet, SpaceX Starlink constellation, Starlink LEO orbit, satellite internet explained, Starlink phased array, Starlink laser links, Starlink coverage, low latency satellite internet, Starlink 6000 satellites",
+    lastUpdated: "2026-04-04T00:00:00Z",
+  },
+  "/learn/how-spacex-lands-rockets": {
+    path: "/learn/how-spacex-lands-rockets",
+    title: "How SpaceX Lands Rockets — Falcon 9 Boostback, Reentry & Landing Burns | Orbital Simulator Hub",
+    description: "The engineering behind SpaceX Falcon 9 rocket landing: boostback burn, reentry burn, landing burn, grid fins, cold gas thrusters. Why reusability changes everything.",
+    keywords: "how SpaceX lands rockets, Falcon 9 landing, rocket landing explained, SpaceX reusability, boostback burn, reentry burn, landing burn, grid fins, SpaceX drone ship, Starship catch, rocket propulsive landing",
+    lastUpdated: "2026-04-04T00:00:00Z",
+  },
+  "/learn/how-mars-rovers-work": {
+    path: "/learn/how-mars-rovers-work",
+    title: "How Mars Rovers Work — Perseverance, Curiosity, Spirit & Opportunity | Orbital Simulator Hub",
+    description: "How NASA Mars rovers explore the Red Planet: autonomous navigation, sample collection, nuclear power (RTG), communication via relay satellites. From Spirit to Perseverance.",
+    keywords: "how Mars rovers work, Perseverance rover, Curiosity rover, Mars rover autonomous navigation, RTG nuclear power Mars, Mars sample return, Mars helicopter Ingenuity, Spirit Opportunity rover, Mars rover communication delay",
+    lastUpdated: "2026-04-04T00:00:00Z",
+  },
+  "/learn/how-nasa-launches-satellite": {
+    path: "/learn/how-nasa-launches-satellite",
+    title: "How NASA Launches Satellites — From Assembly to Orbit Insertion | Orbital Simulator Hub",
+    description: "Step-by-step guide to satellite launch: clean room assembly, rocket integration, countdown, ascent, fairing separation, orbit insertion. How NASA gets payloads to space.",
+    keywords: "how NASA launches satellites, satellite launch process, rocket launch explained, orbit insertion, fairing separation, launch countdown, satellite clean room, launch vehicle selection, Delta V budget launch",
+    lastUpdated: "2026-04-04T00:00:00Z",
+  },
+  "/research/space-agi-doctrine": {
+    path: "/research/space-agi-doctrine",
+    title: "Space-AGI Doctrine — Engineering Principles for Autonomous Space Intelligence | Orbital Simulator Hub",
+    description: "The Space-AGI Doctrine: foundational engineering principles for building autonomous space intelligence. From delayed communication to self-healing spacecraft systems.",
+    keywords: "Space-AGI doctrine, autonomous space intelligence, spacecraft autonomy principles, space AI engineering, delayed communication space, self-healing spacecraft, space intelligence framework, autonomous navigation principles",
+    lastUpdated: "2026-04-04T00:00:00Z",
+  },
+  "/learn/experiments": {
+    path: "/learn/experiments",
+    title: "Space Experiments — ISS Science, Microgravity Research & Space Biology | Orbital Simulator Hub",
+    description: "Space experiments aboard the ISS: microgravity crystal growth, space biology, fluid physics, combustion science. How experiments in space advance Earth science.",
+    keywords: "space experiments, ISS science experiments, microgravity research, space biology, crystal growth space, combustion science space, fluid physics microgravity, space station experiments, zero gravity experiments",
+    lastUpdated: "2026-04-04T00:00:00Z",
+  },
+  "/learn/space-questions": {
+    path: "/learn/space-questions",
+    title: "Space Questions Answered — Why Do Satellites Float? How Fast Is Light? | Orbital Simulator Hub",
+    description: "Common space questions answered: Why don't satellites fall? How fast is light? What is zero gravity? How do astronauts breathe in space? Clear, scientific answers for students.",
+    keywords: "space questions, why dont satellites fall, how fast is light, what is zero gravity, how do astronauts breathe, space FAQ, space questions for kids, astronomy questions answered, why is space dark, can you hear sound in space",
+    lastUpdated: "2026-04-04T00:00:00Z",
+  },
 };
 
 export function getSEOConfig(path: string): SEOConfig | null {
@@ -452,6 +531,8 @@ export function getSEOConfig(path: string): SEOConfig | null {
       "astronomy-lessons": { title: "Astronomy Lessons", desc: "Astronomy lessons: solar system, stars, galaxies, black holes. Free space education.", kw: "astronomy lessons, solar system, stars, galaxies, space education" },
       aerodynamics: { title: "Aerodynamics", desc: "Aerodynamics and flight: re-entry, hypersonic, rocket design. Aerospace engineering.", kw: "aerodynamics, aerospace engineering, re-entry, hypersonic flight" },
       "quantum-physics": { title: "Quantum & Space", desc: "Quantum physics in space: atomic clocks, GPS, quantum sensors. NASA technology.", kw: "quantum physics space, atomic clocks, GPS, quantum sensors" },
+      "agi-research": { title: "AGI Research", desc: "Artificial General Intelligence research: ARC-AGI benchmark, compositional reasoning, neuro-symbolic AI, multi-agent swarm architectures. How AGI connects to space autonomy.", kw: "AGI research, artificial general intelligence, ARC-AGI benchmark, AGI safety, AGI alignment, neuro-symbolic AI, compositional reasoning, machine learning AGI, general intelligence, AGI 2026" },
+      "robot-engineering": { title: "Robot Engineering", desc: "Humanoid robotics and robot engineering: NASA Valkyrie, Robonaut 2, bipedal locomotion, swarm robotics, soft actuators. Building robots for Moon, Mars, and deep space.", kw: "robot engineering, humanoid robot, NASA Valkyrie, Robonaut 2, space robotics, bipedal robot, robot locomotion, soft robotics, swarm robotics, Mars rover robot, robot manipulation space, exoskeleton astronaut" },
     };
     const info = labels[cat] || { title: cat.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()), desc: `Articles in ${cat}.`, kw: cat };
     return {
