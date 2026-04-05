@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-05T07:06:38.296Z",
+  "generated_at": "2026-04-05T12:58:02.323Z",
   "featured_article": {
-    "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
-    "excerpt": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
+    "excerpt": "Google DeepMind cognitive framework: 10 abilities needed for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260405"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260405"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "AI collision avoidance: how 500+ satellites avo...",
-      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Quantum tunneling in nuclear fusion inside stars",
+      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Hypersonic flight: challenges above Mach 5",
-      "blurb": "Hypersonic flight: challenges above Mach 5 is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Exoskeletons and wearable robots for astronaut ...",
+      "blurb": "Exoskeletons and wearable robots for astronaut EVA assistance is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "James Webb Space Telescope latest discoveries",
-      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Space is completely silent because sound needs ...",
+      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-05"
     },
     {
-      "slug": "satellite-communication-how-data-travels-from-space-to-your-phone-20260404",
-      "title": "Satellite communication: how data travels from space to your phone",
-      "excerpt": "Learn about satellite communication: how data travels from space to your phone — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "satellite-tutorials",
-      "date": "2026-04-04"
+      "slug": "google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260405",
+      "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
+      "excerpt": "Learn about google deepmind cognitive framework: 10 abilities needed for agi — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-04-05"
     }
   ],
   "learning_paths": {

@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Sun, 05 Apr 2026 07:06:38 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 12:58:02 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exoplanet detection methods: transit and radial velocity</title>
@@ -18,6 +18,13 @@
       <title>Agent swarm architectures: parallel multi-agent orchestration for AGI tasks</title>
       <link>https://orbitalsimulatorhub.com/blog/agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260405</link>
       <description>Learn about agent swarm architectures: parallel multi-agent orchestration for agi tasks — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
+      <category>agi-research</category>
+    </item>
+    <item>
+      <title>Google DeepMind cognitive framework: 10 abilities needed for AGI</title>
+      <link>https://orbitalsimulatorhub.com/blog/google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260405</link>
+      <description>Learn about google deepmind cognitive framework: 10 abilities needed for agi — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
       <category>agi-research</category>
     </item>
