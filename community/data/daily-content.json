@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-04-05T05:45:09.028Z",
+  "generated_at": "2026-04-05T18:43:41.061Z",
   "featured_article": {
     "title": "How MPC and LQR control algorithms keep satellite swarms safe",
-    "excerpt": "When dozens of satellites fly in formation just meters apart, one wrong move could trigger a catastrophic chain reaction of collisions—but Model Predictive Control (MPC) and Linear Quadratic Regulator (LQR) algorithms act like an invisible traffic control system in space. These smart algorithms continuously calculate the optimal thrust patterns for each satellite by predicting future positions and minimizing fuel use, while ensuring safe distances are maintained even when unexpected forces like solar radiation pressure try to push the swarm apart. Think of it as giving each satellite a crystal ball that can see several orbits into the future, allowing the entire swarm to dance through space in perfect, fuel-efficient harmony.",
+    "excerpt": "How MPC and LQR control algorithms keep satellite swarms safe is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-agi",
     "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260405"
   },
-  "did_you_know": "If you could fold a piece of paper in half just 42 times, it would be thick enough to reach the Moon—that's the incredible power of exponential growth, where each fold doubles the thickness until you've created a stack over 400,000 kilometers tall.",
+  "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "NASA Europa Clipper mission to Jupiter's moon",
-      "blurb": "NASA's Europa Clipper mission will conduct detailed flybys of Jupiter's ice-covered moon Europa to investigate the vast ocean beneath its frozen surface, which may contain twice as much water as all of Earth's oceans combined. This groundbreaking mission could reveal whether Europa harbors the conditions necessary for life, potentially answering one of humanity's most profound questions: are we alone in the universe?",
+      "title": "Tsiolkovsky rocket equation: why we need stagin...",
+      "blurb": "Tsiolkovsky rocket equation: why we need staging to reach orbit is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Exoskeletons and wearable robots for astronaut ...",
-      "blurb": "Exoskeletons and wearable robots could revolutionize spacewalks by counteracting the restrictive forces of pressurized spacesuits, allowing astronauts to move with Earth-like dexterity while performing delicate repairs on spacecraft traveling at 17,500 mph. These powered assistance systems would dramatically extend EVA duration and precision, enabling complex construction tasks essential for building lunar bases, Mars habitats, and deep-space vessels that require intricate assembly in the unforgiving vacuum of space.",
+      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
+      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "J2 perturbation: why orbits drift and how to co...",
-      "blurb": "Earth's equatorial bulge creates a gravitational perturbation called J2 that causes satellite orbits to slowly drift and precess over time, making spacecraft gradually deviate from their intended paths. Mission planners must account for this effect when designing long-term satellite constellations like GPS or planning interplanetary trajectories, often requiring periodic orbital corrections to maintain precise positioning for navigation, communication, and scientific observations.",
+      "title": "NASA Valkyrie humanoid robot: a decade of resea...",
+      "blurb": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
     {
-      "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260405",
-      "title": "How MPC and LQR control algorithms keep satellite swarms safe",
-      "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
+      "slug": "exoplanet-detection-methods-transit-and-radial-velocity-20260405",
+      "title": "Exoplanet detection methods: transit and radial velocity",
+      "excerpt": "Learn about exoplanet detection methods: transit and radial velocity — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "astronomy-lessons",
       "date": "2026-04-05"
     },
     {
-      "slug": "how-lift-is-generated-bernoulli-vs-newton-explanations-20260404",
-      "title": "How lift is generated: Bernoulli vs Newton explanations",
-      "excerpt": "Learn about how lift is generated: bernoulli vs newton explanations — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
-      "date": "2026-04-04"
+      "slug": "agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260405",
+      "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
+      "excerpt": "Learn about agent swarm architectures: parallel multi-agent orchestration for agi tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-04-05"
     },
     {
-      "slug": "quantum-entanglement-and-future-space-communication-20260404",
-      "title": "Quantum entanglement and future space communication",
-      "excerpt": "Learn about quantum entanglement and future space communication — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "quantum-physics",
-      "date": "2026-04-04"
+      "slug": "google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260405",
+      "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
+      "excerpt": "Learn about google deepmind cognitive framework: 10 abilities needed for agi — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-04-05"
     }
   ],
   "learning_paths": {
