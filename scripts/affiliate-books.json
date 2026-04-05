@@ -2,48 +2,68 @@
   "tag": "hubdepot-20",
   "categories": {
     "nasa-news": [
-      { "name": "NASA Space Shuttle: 40th Anniversary", "asin": "0762499085" },
-      { "name": "The Right Stuff", "asin": "0312857043" },
-      { "name": "Failure Is Not an Option", "asin": "1439148813" }
+      {"name": "NASA Space Shuttle: 40th Anniversary", "asin": "0762499085"},
+      {"name": "The Right Stuff", "asin": "0312857043"},
+      {"name": "Failure Is Not an Option", "asin": "1439148813"},
+      {"name": "Apollo 13", "asin": "0618619582"},
+      {"name": "Hidden Figures", "asin": "0062363603"}
     ],
     "space-facts": [
-      { "name": "Astrophysics for People in a Hurry", "asin": "0393609391" },
-      { "name": "A Brief History of Time", "asin": "0553380168" },
-      { "name": "Cosmos", "asin": "0345539435" }
+      {"name": "Astrophysics for People in a Hurry", "asin": "0393609391"},
+      {"name": "A Brief History of Time", "asin": "0553380168"},
+      {"name": "Cosmos", "asin": "0345539435"},
+      {"name": "Death by Black Hole", "asin": "0393350381"},
+      {"name": "The Elegant Universe", "asin": "039333646X"}
     ],
     "satellite-tutorials": [
-      { "name": "Orbital Mechanics for Engineering Students", "asin": "0080977472" },
-      { "name": "Fundamentals of Spacecraft Attitude Determination and Control", "asin": "1493903149" },
-      { "name": "Spacecraft Systems Engineering", "asin": "1119974665" }
+      {"name": "Orbital Mechanics for Engineering Students", "asin": "0080977472"},
+      {"name": "Fundamentals of Spacecraft Attitude Determination and Control", "asin": "1493903149"},
+      {"name": "Spacecraft Systems Engineering", "asin": "1119974665"},
+      {"name": "Fundamentals of Astrodynamics", "asin": "0486600610"},
+      {"name": "Satellite Communications", "asin": "0073380716"}
     ],
     "astronomy-lessons": [
-      { "name": "Astrophysics for People in a Hurry", "asin": "0393609391" },
-      { "name": "The Elegant Universe", "asin": "039333646X" },
-      { "name": "Death by Black Hole", "asin": "0393350381" }
+      {"name": "Astrophysics for People in a Hurry", "asin": "0393609391"},
+      {"name": "The Elegant Universe", "asin": "039333646X"},
+      {"name": "Death by Black Hole", "asin": "0393350381"},
+      {"name": "Cosmos", "asin": "0345539435"},
+      {"name": "A Brief History of Time", "asin": "0553380168"}
     ],
     "aerodynamics": [
-      { "name": "Introduction to Flight", "asin": "1260226844" },
-      { "name": "Fundamentals of Aerodynamics", "asin": "1259129918" },
-      { "name": "Rocket Propulsion Elements", "asin": "1118753658" }
+      {"name": "Introduction to Flight", "asin": "1260226844"},
+      {"name": "Fundamentals of Aerodynamics", "asin": "1259129918"},
+      {"name": "Rocket Propulsion Elements", "asin": "1118753658"},
+      {"name": "Aircraft Performance and Design", "asin": "0070019711"},
+      {"name": "Gas Dynamics", "asin": "0131201250"}
     ],
     "quantum-physics": [
-      { "name": "Quantum Physics for Dummies", "asin": "1118460820" },
-      { "name": "The Quantum Universe", "asin": "0306822712" },
-      { "name": "Six Easy Pieces", "asin": "0465025277" }
+      {"name": "Quantum Physics for Dummies", "asin": "1118460820"},
+      {"name": "The Quantum Universe", "asin": "0306822712"},
+      {"name": "Six Easy Pieces", "asin": "0465025277"},
+      {"name": "Quantum Computation and Quantum Information", "asin": "1107002176"},
+      {"name": "Introduction to Quantum Mechanics", "asin": "1107189632"}
     ],
     "space-agi": [
-      { "name": "Artificial Intelligence: A Modern Approach", "asin": "0134610997" },
-      { "name": "Reinforcement Learning", "asin": "0262039249" },
-      { "name": "Deep Learning", "asin": "0262035619" }
+      {"name": "Artificial Intelligence: A Modern Approach", "asin": "0134610997"},
+      {"name": "Reinforcement Learning", "asin": "0262039249"},
+      {"name": "Deep Learning", "asin": "0262035619"},
+      {"name": "Probabilistic Robotics", "asin": "0262201623"},
+      {"name": "Planning Algorithms", "asin": "0521862051"},
+      {"name": "LEGO NASA Space Shuttle Discovery", "asin": "B08STQBXN5"}
     ],
     "space-engineering": [
-      { "name": "Orbital Mechanics for Engineering Students", "asin": "0080977472" },
-      { "name": "Fundamentals of Astrodynamics", "asin": "0486600610" },
-      { "name": "Spacecraft Systems Engineering", "asin": "1119974665" }
+      {"name": "Orbital Mechanics for Engineering Students", "asin": "0080977472"},
+      {"name": "Fundamentals of Astrodynamics", "asin": "0486600610"},
+      {"name": "Spacecraft Systems Engineering", "asin": "1119974665"},
+      {"name": "Rocket Propulsion Elements", "asin": "1118753658"},
+      {"name": "Introduction to Space Dynamics", "asin": "0486651134"},
+      {"name": "LEGO NASA Rocket Launch Building Set", "asin": "B09JHZY7JF"}
     ]
   },
   "fallback": [
-    { "name": "Astrophysics for People in a Hurry", "asin": "0393609391" },
-    { "name": "Orbital Mechanics for Engineering Students", "asin": "0080977472" }
+    {"name": "Astrophysics for People in a Hurry", "asin": "0393609391"},
+    {"name": "Orbital Mechanics for Engineering Students", "asin": "0080977472"},
+    {"name": "Artificial Intelligence: A Modern Approach", "asin": "0134610997"},
+    {"name": "LEGO NASA Space Shuttle Discovery", "asin": "B08STQBXN5"}
   ]
 }

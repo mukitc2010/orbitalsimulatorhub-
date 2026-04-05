@@ -118,13 +118,19 @@ export function Simulator() {
           <Link href="/simulator/swarm" className="text-sm font-medium px-3 py-1.5 rounded-lg transition" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
             🛰 Swarm Simulator
           </Link>
+          <Link href="/simulator/ai-astronaut-robot" className="text-sm font-medium px-3 py-1.5 rounded-lg transition border-2" style={{ borderColor: "#a78bfa", color: "#a78bfa" }}>
+            🤖 AI Robot Lab
+          </Link>
+          <Link href="/simulator/quantum-space-agi" className="text-sm font-medium px-3 py-1.5 rounded-lg transition border-2" style={{ borderColor: "#a78bfa", color: "#a78bfa" }}>
+            ⚛ Quantum Space AGI
+          </Link>
           <Link href="/guide" className="text-sm text-[var(--accent-cyan)] font-medium hover:underline">
             📖 Read the Guide
           </Link>
         </div>
       </div>
       <p className="subhead">
-        Orbit Simulator: add LEO, MEO, GEO satellites and watch real physics. <Link href="/simulator/swarm"><span className="text-[var(--accent-cyan)] font-medium hover:underline">Swarm Simulator</span></Link>: AI collision avoidance with 500+ satellites.
+        Orbit Simulator: add LEO, MEO, GEO satellites and watch real physics. <Link href="/simulator/swarm"><span className="text-[var(--accent-cyan)] font-medium hover:underline">Swarm Simulator</span></Link>: AI collision avoidance with 500+ satellites. <Link href="/simulator/ai-astronaut-robot"><span className="text-[#a78bfa] font-medium hover:underline">AI Astronaut Robot Simulator</span></Link>: build and train space robots. <Link href="/simulator/quantum-space-agi"><span className="text-[#a78bfa] font-medium hover:underline">Quantum Space AGI</span></Link>: black hole flybys with quantum-assisted optimization.
       </p>
 
       <section className="rounded-xl bg-slate-50 border border-slate-200 p-4" aria-label="How to use the simulator">

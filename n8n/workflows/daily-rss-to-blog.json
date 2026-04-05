@@ -1,0 +1,176 @@
+{
+  "name": "Daily RSS to Blog - NASA News",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ],
+          "hour": 9,
+          "minute": 0
+        }
+      },
+      "id": "cron-trigger",
+      "name": "Cron Trigger (Daily 9 AM)",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+        "options": {}
+      },
+      "id": "fetch-rss",
+      "name": "Fetch NASA RSS",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse RSS XML and extract latest articles\nconst xml2js = require('xml2js');\nconst parser = new xml2js.Parser();\n\nconst xmlData = $input.first().json.body;\nlet items = [];\n\nparser.parseString(xmlData, (err, result) => {\n  if (!err && result.rss && result.rss.channel && result.rss.channel[0].item) {\n    items = result.rss.channel[0].item.slice(0, 2).map(item => ({\n      title: item.title[0],\n      link: item.link[0],\n      description: item.description[0] || '',\n      pubDate: item.pubDate ? item.pubDate[0] : new Date().toISOString()\n    }));\n  }\n});\n\nreturn items.map(item => ({ json: item }));"
+      },
+      "id": "parse-rss",
+      "name": "Parse RSS & Select 2 Latest",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:11434/v1/chat/completions",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "model",
+              "value": "llama2"
+            },
+            {
+              "name": "messages",
+              "value": "=[{\"role\": \"user\", \"content\": \"Rewrite this NASA news article for a space education website. Make it educational (500-800 words), include internal links to /simulator, /learn/orbital-mechanics, /formulas-library, /satellites. Keep the original facts but make it beginner-friendly.\\n\\nOriginal title: {{ $json.title }}\\n\\nOriginal article: {{ $json.description }}\\n\\nReturn ONLY a JSON object with: {\\\"title\\\": \\\"SEO-friendly title (60-70 chars)\\\", \\\"excerpt\\\": \\\"1-2 sentence summary\\\", \\\"content\\\": \\\"Full markdown article with headers, bullets, and internal links like [link text](/simulator)\\\", \\\"tags\\\": [\\\"tag1\\\", \\\"tag2\\\", \\\"tag3\\\"], \\\"seoKeywords\\\": \\\"keyword1, keyword2, keyword3\\\"}\"}]"
+            },
+            {
+              "name": "temperature",
+              "value": "0.7"
+            },
+            {
+              "name": "max_tokens",
+              "value": "2500"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "ollama-rewrite",
+      "name": "Ollama Rewrite Article",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Transform Ollama response to blog post format\nconst ollamaResponse = JSON.parse($input.first().json.body);\nconst originalData = $('Parse RSS & Select 2 Latest').first().json;\n\nlet content = '';\nlet title = '';\nlet excerpt = '';\nlet tags = [];\nlet seoKeywords = '';\n\ntry {\n  // Try to parse JSON from response\n  const responseText = ollamaResponse.choices[0].message.content;\n  \n  // Extract JSON from response (handle markdown code blocks)\n  const jsonMatch = responseText.match(/\\{[\\s\\S]*\\}/);\n  if (jsonMatch) {\n    const parsed = JSON.parse(jsonMatch[0]);\n    title = parsed.title || originalData.title;\n    excerpt = parsed.excerpt || originalData.description.substring(0, 150) + '...';\n    content = parsed.content || responseText;\n    tags = parsed.tags || ['NASA', 'space news', 'space exploration'];\n    seoKeywords = parsed.seoKeywords || 'NASA news, space news, space exploration';\n  } else {\n    // Fallback if JSON parsing fails\n    title = originalData.title;\n    excerpt = originalData.description.substring(0, 150) + '...';\n    content = responseText;\n    tags = ['NASA', 'space news'];\n    seoKeywords = 'NASA news, space news';\n  }\n} catch (e) {\n  // Fallback on error\n  title = originalData.title;\n  excerpt = originalData.description.substring(0, 150) + '...';\n  content = ollamaResponse.choices[0]?.message?.content || originalData.description;\n  tags = ['NASA', 'space news'];\n  seoKeywords = 'NASA news, space news';\n}\n\n// Generate slug from title\nconst slug = title\n  .toLowerCase()\n  .replace(/[^a-z0-9]+/g, '-')\n  .replace(/^-+|-+$/g, '')\n  .substring(0, 60);\n\n// Get today's date\nconst today = new Date().toISOString().split('T')[0];\n\nreturn {\n  json: {\n    slug: slug,\n    title: title,\n    excerpt: excerpt,\n    content: content,\n    category: 'nasa-news',\n    date: today,\n    tags: tags,\n    seoKeywords: seoKeywords\n  }\n};"
+      },
+      "id": "format-blog-post",
+      "name": "Format Blog Post",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3003/api/blog/posts",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "slug",
+              "value": "={{ $json.slug }}"
+            },
+            {
+              "name": "title",
+              "value": "={{ $json.title }}"
+            },
+            {
+              "name": "excerpt",
+              "value": "={{ $json.excerpt }}"
+            },
+            {
+              "name": "content",
+              "value": "={{ $json.content }}"
+            },
+            {
+              "name": "category",
+              "value": "={{ $json.category }}"
+            },
+            {
+              "name": "date",
+              "value": "={{ $json.date }}"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.tags }}"
+            },
+            {
+              "name": "seoKeywords",
+              "value": "={{ $json.seoKeywords }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "post-to-api",
+      "name": "POST to Blog API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1250, 300]
+    },
+    {
+      "parameters": {
+        "command": "cd \"C:\\Users\\mukit\\OneDrive\\Desktop\\nasaArchitech\\satellite_simulator_web\" && npm run generate:rss && npm run build:client"
+      },
+      "id": "deploy",
+      "name": "Regenerate RSS & Build",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1450, 300]
+    }
+  ],
+  "connections": {
+    "Cron Trigger (Daily 9 AM)": {
+      "main": [[{"node": "Fetch NASA RSS", "type": "main", "index": 0}]]
+    },
+    "Fetch NASA RSS": {
+      "main": [[{"node": "Parse RSS & Select 2 Latest", "type": "main", "index": 0}]]
+    },
+    "Parse RSS & Select 2 Latest": {
+      "main": [[{"node": "Ollama Rewrite Article", "type": "main", "index": 0}]]
+    },
+    "Ollama Rewrite Article": {
+      "main": [[{"node": "Format Blog Post", "type": "main", "index": 0}]]
+    },
+    "Format Blog Post": {
+      "main": [[{"node": "POST to Blog API", "type": "main", "index": 0}]]
+    },
+    "POST to Blog API": {
+      "main": [[{"node": "Regenerate RSS & Build", "type": "main", "index": 0}]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2026-02-17T12:00:00.000Z",
+  "versionId": "1"
+}

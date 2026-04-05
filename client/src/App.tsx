@@ -63,6 +63,11 @@ import { SpaceAGIRoadmap } from "./pages/SpaceAGIRoadmap";
 import { SpaceAGIMathematics } from "./pages/SpaceAGIMathematics";
 import { SpaceAGIExplanation } from "./pages/SpaceAGIExplanation";
 import { SpaceAGISwarmSimulator } from "./pages/SpaceAGISwarmSimulator";
+import { AIAstronautRobotSimulator } from "./pages/AIAstronautRobotSimulator";
+import { QuantumSpaceAGISimulator } from "./pages/QuantumSpaceAGISimulator";
+import { QuantumSpaceAGILab } from "./pages/QuantumSpaceAGILab";
+import { QuantumSpaceAGIScenario } from "./pages/QuantumSpaceAGIScenario";
+import { QuantumSpaceAGICompare } from "./pages/QuantumSpaceAGICompare";
 import { FutureSpaceCivilization } from "./pages/FutureSpaceCivilization";
 import { Next100Years } from "./pages/Next100Years";
 import { Welcome } from "./pages/Welcome";
@@ -80,6 +85,12 @@ function App() {
           <Route path="/play" component={PlayLearn} />
           <Route path="/simulator" component={Simulator} />
           <Route path="/simulator/swarm" component={SpaceAGISwarmSimulator} />
+          <Route path="/simulator/ai-astronaut-robot" component={AIAstronautRobotSimulator} />
+          <Route path="/quantum-space-agi" component={QuantumSpaceAGILab} />
+          <Route path="/quantum-space-agi/scenario" component={QuantumSpaceAGIScenario} />
+          <Route path="/quantum-space-agi/sim" component={QuantumSpaceAGISimulator} />
+          <Route path="/quantum-space-agi/compare" component={QuantumSpaceAGICompare} />
+          <Route path="/simulator/quantum-space-agi" component={QuantumSpaceAGISimulator} />
           <Route path="/learn/newton" component={LearnNewton} />
           <Route path="/learn/formulas" component={NewtonFormulas} />
           <Route path="/guide" component={KidsGuide} />

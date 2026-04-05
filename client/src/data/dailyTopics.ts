@@ -17,6 +17,16 @@ export interface DailyTopic {
 
 export const DAILY_TOPICS: DailyTopic[] = [
   {
+    id: "ai-astronaut-robots-2026-03-05",
+    date: "2026-03-05",
+    title: "AI Astronaut Robots for Space Missions",
+    icon: "🤖",
+    category: "orbital-mechanics",
+    description: "How NASA & SpaceX will build AI-based astronaut robots. Humanoid, rover, vision AI. Multi-planet robotics for Moon, Mars, zero-G.",
+    learnMoreUrl: "/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions",
+    keywords: ["AI astronaut robots", "Space robotics", "AGI", "NASA", "computer vision", "humanoid robots"],
+  },
+  {
     id: "artemis-ii-launch-pad-2026-02-23",
     date: "2026-02-23",
     title: "Artemis II: Launch Pad Ops Begin",

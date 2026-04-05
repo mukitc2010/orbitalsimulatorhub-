@@ -1,0 +1,152 @@
+{
+  "name": "Daily Ollama Research Content",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ],
+          "hour": 14,
+          "minute": 0
+        }
+      },
+      "id": "cron-trigger",
+      "name": "Cron Trigger (Daily 2 PM)",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Select random research topic\nconst contentTypes = [\"paper-summary\",\"discovery\",\"methodology\",\"data-source\",\"tool\",\"case-study\",\"trend\",\"formula\",\"documentation\"];\nconst categories = [\"nasa\",\"orbital-mechanics\",\"astrophysics\",\"quantum-physics\",\"aerospace\",\"general\"];\nconst topics = [\"orbital debris mitigation\",\"precision orbit determination\",\"space weather effects\",\"satellite constellation design\",\"propulsion systems\",\"attitude control\",\"mission design\",\"data analysis techniques\",\"numerical methods\",\"recent NASA discoveries\",\"exoplanet research\",\"black hole physics\",\"quantum computing in space\",\"materials science for space\"];\n\nconst selectedType = contentTypes[Math.floor(Math.random() * contentTypes.length)];\nconst selectedCategory = categories[Math.floor(Math.random() * categories.length)];\nconst selectedTopic = topics[Math.floor(Math.random() * topics.length)];\n\n// Map to blog category\nconst categoryMap = {\n  \"nasa\": \"nasa-news\",\n  \"orbital-mechanics\": \"satellite-tutorials\",\n  \"astrophysics\": \"astronomy-lessons\",\n  \"quantum-physics\": \"space-facts\",\n  \"aerospace\": \"satellite-tutorials\",\n  \"general\": \"space-facts\"\n};\n\nconst blogCategory = categoryMap[selectedCategory] || \"space-facts\";\n\nconst prompt = `Generate a blog post about ${selectedTopic} in the ${selectedCategory} category.\n\nContent type: ${selectedType}\n\nRequirements:\n1. Write a compelling title (60-70 characters, SEO-friendly)\n2. Write a 1-2 sentence excerpt (appears in search results)\n3. Write full content (500-1000 words) in markdown format with:\n   - Introduction paragraph\n   - 3-5 main sections with headers\n   - Bullet points and examples\n   - Internal links to: /simulator, /learn/orbital-mechanics, /formulas-library, /satellites, /space-news\n   - Conclusion paragraph\n4. Include 5-8 relevant tags\n5. Include SEO keywords (comma-separated, 10-15 keywords)\n\nFormat as JSON:\n{\n  \"title\": \"Your SEO-Friendly Title Here\",\n  \"excerpt\": \"1-2 sentence description for search results\",\n  \"content\": \"Full markdown content with headers, bullets, and internal links like [link text](/simulator)\",\n  \"tags\": [\"tag1\", \"tag2\", \"tag3\", \"tag4\", \"tag5\"],\n  \"seoKeywords\": \"keyword1, keyword2, keyword3, keyword4, keyword5\"\n}`;\n\nconst openAIBody = JSON.stringify({\n  model: 'llama2',\n  messages: [{ role: 'user', content: prompt + '\\n\\nReturn ONLY valid JSON, no markdown, no explanations.' }],\n  temperature: 0.7,\n  max_tokens: 3000\n});\n\nreturn {\n  json: {\n    openAIBody,\n    blogCategory,\n    selectedTopic,\n    selectedCategory\n  }\n};"
+      },
+      "id": "select-topic",
+      "name": "Select Research Topic",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:11434/v1/chat/completions",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "body",
+              "value": "={{ $json.openAIBody }}"
+            }
+          ]
+        },
+        "options": {
+          "bodyContentType": "json"
+        }
+      },
+      "id": "ollama-generate",
+      "name": "Ollama Generate Content",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse Ollama response and format blog post\nconst ollamaResponse = JSON.parse($input.first().json.body);\nconst topicData = $('Select Research Topic').first().json;\n\nlet title = '';\nlet excerpt = '';\nlet content = '';\nlet tags = [];\nlet seoKeywords = '';\n\ntry {\n  const responseText = ollamaResponse.choices[0].message.content;\n  const jsonMatch = responseText.match(/\\{[\\s\\S]*\\}/);\n  if (jsonMatch) {\n    const parsed = JSON.parse(jsonMatch[0]);\n    title = parsed.title || `Research: ${topicData.selectedTopic}`;\n    excerpt = parsed.excerpt || 'Learn about ' + topicData.selectedTopic;\n    content = parsed.content || responseText;\n    tags = parsed.tags || [topicData.selectedCategory, 'research', 'space'];\n    seoKeywords = parsed.seoKeywords || `${topicData.selectedTopic}, space research, NASA`;\n  } else {\n    title = `Research: ${topicData.selectedTopic}`;\n    excerpt = 'Learn about ' + topicData.selectedTopic;\n    content = responseText;\n    tags = [topicData.selectedCategory, 'research'];\n    seoKeywords = topicData.selectedTopic + ', space research';\n  }\n} catch (e) {\n  title = `Research: ${topicData.selectedTopic}`;\n  excerpt = 'Learn about ' + topicData.selectedTopic;\n  content = ollamaResponse.choices[0]?.message?.content || 'Content generation failed';\n  tags = [topicData.selectedCategory, 'research'];\n  seoKeywords = topicData.selectedTopic;\n}\n\nconst slug = title\n  .toLowerCase()\n  .replace(/[^a-z0-9]+/g, '-')\n  .replace(/^-+|-+$/g, '')\n  .substring(0, 60);\n\nconst today = new Date().toISOString().split('T')[0];\n\nreturn {\n  json: {\n    slug: slug,\n    title: title,\n    excerpt: excerpt,\n    content: content,\n    category: topicData.blogCategory,\n    date: today,\n    tags: tags,\n    seoKeywords: seoKeywords\n  }\n};"
+      },
+      "id": "format-post",
+      "name": "Format Blog Post",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3003/api/blog/posts",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "slug",
+              "value": "={{ $json.slug }}"
+            },
+            {
+              "name": "title",
+              "value": "={{ $json.title }}"
+            },
+            {
+              "name": "excerpt",
+              "value": "={{ $json.excerpt }}"
+            },
+            {
+              "name": "content",
+              "value": "={{ $json.content }}"
+            },
+            {
+              "name": "category",
+              "value": "={{ $json.category }}"
+            },
+            {
+              "name": "date",
+              "value": "={{ $json.date }}"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.tags }}"
+            },
+            {
+              "name": "seoKeywords",
+              "value": "={{ $json.seoKeywords }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "post-to-api",
+      "name": "POST to Blog API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "command": "cd \"C:\\Users\\mukit\\OneDrive\\Desktop\\nasaArchitech\\satellite_simulator_web\" && npm run generate:rss && npm run build:client"
+      },
+      "id": "deploy",
+      "name": "Regenerate RSS & Build",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1250, 300]
+    }
+  ],
+  "connections": {
+    "Cron Trigger (Daily 2 PM)": {
+      "main": [[{"node": "Select Research Topic", "type": "main", "index": 0}]]
+    },
+    "Select Research Topic": {
+      "main": [[{"node": "Ollama Generate Content", "type": "main", "index": 0}]]
+    },
+    "Ollama Generate Content": {
+      "main": [[{"node": "Format Blog Post", "type": "main", "index": 0}]]
+    },
+    "Format Blog Post": {
+      "main": [[{"node": "POST to Blog API", "type": "main", "index": 0}]]
+    },
+    "POST to Blog API": {
+      "main": [[{"node": "Regenerate RSS & Build", "type": "main", "index": 0}]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2026-02-17T12:00:00.000Z",
+  "versionId": "1"
+}

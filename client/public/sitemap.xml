@@ -161,4 +161,13 @@
   <url><loc>https://www.orbitalsimulatorhub.com/blog/keplers-laws-explained-simply</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://www.orbitalsimulatorhub.com/blog/how-many-satellites-are-in-space-2026</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://www.orbitalsimulatorhub.com/blog/why-do-astronauts-float-in-space</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <!-- ═══ NEW AGI, ROBOTICS & ENGINEERING POSTS (April 2026) ═══ -->
+  <url><loc>https://www.orbitalsimulatorhub.com/blog/arc-agi-benchmark-2026-measuring-artificial-general-intelligence</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.orbitalsimulatorhub.com/blog/nasa-valkyrie-humanoid-robot-mars-mission-2026</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.orbitalsimulatorhub.com/blog/swarm-robotics-orbital-construction-2026</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.orbitalsimulatorhub.com/blog/neuro-symbolic-ai-path-to-agi-space-autonomy</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.orbitalsimulatorhub.com/blog/multi-agent-ai-orchestration-parallel-agi-tasks-2026</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.orbitalsimulatorhub.com/blog/nuclear-thermal-propulsion-draco-mars-transit-2026</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.orbitalsimulatorhub.com/blog/agi-safety-alignment-autonomous-spacecraft-2026</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 </urlset>

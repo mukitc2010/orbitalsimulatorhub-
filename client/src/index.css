@@ -694,3 +694,162 @@ button:focus-visible {
 [data-theme]:not([data-theme="light-clean"]) .shadow-md { box-shadow: 0 4px 12px rgba(0,0,0,0.35) !important; }
 [data-theme]:not([data-theme="light-clean"]) .shadow-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.4) !important; }
 
+/* =========================================================
+   ORBITALSIMULATORHUB — UI BEAUTY PACK (Navbar + Research + Blog + Footer)
+   NASA-style glass + neon + premium spacing
+   Uses theme variables for cross-theme support
+   ========================================================= */
+
+/* OS helpers (reusable) */
+.os-card {
+  background: linear-gradient(180deg, rgba(15,23,42,0.85), rgba(15,23,42,0.55));
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  backdrop-filter: blur(12px);
+}
+[data-theme="light-clean"] .os-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(248,250,252,0.9));
+  border-color: var(--border-color);
+}
+
+.os-glow {
+  position: relative;
+}
+.os-glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(0,217,255,0.35), rgba(167,139,250,0.22), rgba(0,217,255,0.25));
+  filter: blur(14px);
+  opacity: 0.35;
+  z-index: -1;
+}
+
+/* 1) NAVBAR — Glass header + neon hover */
+header, .header, .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(14px);
+}
+
+nav a, nav button, .navbar a {
+  transition: transform 160ms ease, background 160ms ease, opacity 160ms ease, box-shadow 160ms ease;
+}
+nav a:hover, nav button:hover, .navbar a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 1px rgba(0,217,255,0.14), 0 0 28px rgba(0,217,255,0.10);
+}
+nav a[aria-current="page"], nav a.active {
+  box-shadow: 0 0 0 1px rgba(0,217,255,0.22), 0 0 34px rgba(0,217,255,0.12);
+}
+
+/* 2) RESEARCH PAGE — Premium article layout */
+article, .research, .paper, .doc, .research-page {
+  background: linear-gradient(180deg, rgba(15,23,42,0.85), rgba(15,23,42,0.55));
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.55);
+  backdrop-filter: blur(12px);
+}
+[data-theme="light-clean"] article,
+[data-theme="light-clean"] .research,
+[data-theme="light-clean"] .paper,
+[data-theme="light-clean"] .doc {
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(248,250,252,0.95));
+  border-color: var(--border-color);
+}
+
+article h2, .research h2, .paper h2 {
+  color: var(--accent-primary);
+  letter-spacing: 0.01em;
+}
+article h2::before, .research h2::before, .paper h2::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--accent-primary);
+  margin-right: 0.55rem;
+  box-shadow: 0 0 18px rgba(0,217,255,0.55);
+}
+
+/* Research metadata badges */
+.os-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.8rem 0 1.25rem;
+}
+.os-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(0,217,255,0.08);
+  border: 1px solid rgba(0,217,255,0.20);
+  color: var(--text-primary);
+  font-size: 0.92rem;
+}
+[data-theme="light-clean"] .os-badge {
+  background: rgba(37,99,235,0.08);
+  border-color: rgba(37,99,235,0.25);
+}
+
+/* 3) BLOG CARDS — Modern grid + hover lift */
+.post-card, .blog-card, .card.os-card {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.post-card:hover, .blog-card:hover, .card.os-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0,217,255,0.22);
+  box-shadow: 0 0 0 1px rgba(0,217,255,0.12), 0 18px 60px rgba(0,0,0,0.55);
+}
+
+/* 4) FOOTER + SOCIAL ICONS — Clean + glowing icons */
+footer, .footer {
+  border-top: 1px solid rgba(148,163,184,0.14);
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-social a {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15,23,42,0.60);
+  border: 1px solid rgba(148,163,184,0.18);
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+.footer-social a:hover {
+  transform: translateY(-2px);
+  background: rgba(0,217,255,0.07);
+  box-shadow: 0 0 0 1px rgba(0,217,255,0.16), 0 0 26px rgba(0,217,255,0.12);
+}
+[data-theme="light-clean"] .footer-social a {
+  background: rgba(37,99,235,0.08);
+  border-color: rgba(37,99,235,0.2);
+}
+[data-theme="light-clean"] .footer-social a:hover {
+  background: rgba(37,99,235,0.12);
+  box-shadow: 0 0 0 1px rgba(37,99,235,0.25), 0 0 20px rgba(37,99,235,0.15);
+}
+
+/* Mobile padding */
+@media (max-width: 640px) {
+  article, .research, .paper, .doc {
+    padding: 1.35rem 1.1rem;
+  }
+}
+

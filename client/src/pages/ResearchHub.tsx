@@ -50,6 +50,7 @@ const CATEGORIES = [
     title: "Future & authority",
     desc: "Future of space civilization, next 100 years, neuro-space, Space-AGI Lab, interstellar.",
     links: [
+      { href: "/simulator/ai-astronaut-robot", label: "🤖 AI Astronaut Robot Lab", summary: "Build and train AI space robots. Humanoid, rover, vision AI. ISS, Moon, Mars environments." },
       { href: "/research/space-agi-lab", label: "🧠 Space-AGI Engineering Lab", summary: "5 pillars: autonomous spacecraft, decision intelligence, orbital math, future systems, live simulation lab." },
       { href: "/research/space-agi-roadmap", label: "Space-AGI Roadmap 2025–2060+", summary: "AI satellites to interstellar probes. Real engineering future." },
       { href: "/research/space-agi-explanation", label: "Space-AGI Explanation", summary: "Plain-language guides. Math Explained tab — ISS, Starlink, Mars rover examples for teens & college." },
@@ -81,7 +82,7 @@ export function ResearchHub() {
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto space-y-10">
+    <div className="research-page max-w-4xl mx-auto space-y-10">
       <div className="text-center mb-8">
         <h1 className="headline">Research & topics</h1>
         <p className="subhead max-w-2xl mx-auto">

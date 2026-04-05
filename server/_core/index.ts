@@ -13,6 +13,7 @@ import { createAstroBotRouter } from "../astrobot-api";
 import { createResearchContentRouter } from "../research-content-api";
 import { createGitDeployRouter } from "../git-deploy-api";
 import { createChatRouter } from "../chat-api";
+import { createQsagiRouter } from "../qsagi-api";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const isDev = process.env.NODE_ENV !== "production";
@@ -40,7 +41,7 @@ app.use("/api/research", createResearchContentRouter());
 // Git Deploy API endpoints for n8n automation
 app.use("/api/git", createGitDeployRouter());
 app.use("/api/chat", createChatRouter());
-
+app.use("/api/qsagi", createQsagiRouter());
 // tRPC endpoints
 app.use(
   "/api/trpc",

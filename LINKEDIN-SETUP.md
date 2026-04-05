@@ -8,12 +8,18 @@ When OpenClaw runs `npm run openclaw:update` with `POST_TO_SOCIAL=1`, it will po
 
 1. Go to [LinkedIn Developer Portal](https://www.linkedin.com/developers/apps)
 2. Click **Create app**
-3. Fill in:
-   - **App name:** OrbitalSimulatorHub (or your choice)
-   - **LinkedIn Page:** Select your profile or create one
-   - **Privacy policy URL:** `https://www.orbitalsimulatorhub.com/privacy-policy` (or any URL)
-   - **App logo:** Optional
-4. After creation, go to **Auth** tab and note:
+3. Fill in the form with these exact values:
+
+| Field | Value |
+|-------|-------|
+| **App name** | `OrbitalSimulatorHub` |
+| **LinkedIn Page** | For individual developers: click "here" in the form to see default Company pages, then select the one for your products. Or use **Create a new LinkedIn Page** to create a page for OrbitalSimulatorHub. |
+| **Privacy policy URL** | `https://www.orbitalsimulatorhub.com/privacy-policy` |
+| **App logo** | Optional — upload a square image (≥100px) if you have one |
+| **Legal agreement** | Check "I have read and agree to these terms" |
+
+4. Click **Create app**
+5. After creation, go to **Auth** tab and note:
    - **Client ID**
    - **Client Secret**
 

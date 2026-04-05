@@ -1,6 +1,55 @@
 # OpenClaw Automation for OrbitalSimulatorHub
 
-Let OpenClaw run your website updates, SEO, and content every 6 hours.
+**News every 6 hours · SEO every 2 hours · Post everywhere**
+
+---
+
+## Quick Setup — OpenClaw Gateway (Recommended)
+
+With OpenClaw gateway running, cron jobs handle everything. No Windows Task Scheduler needed.
+
+### 1. Start the gateway (if not already running)
+
+```powershell
+openclaw gateway
+```
+
+Keep this running 24/7, or use Task Scheduler to start it on boot.
+
+### 2. Add cron jobs (one-time)
+
+```powershell
+# News + blog + deploy + social — every 6 hours
+openclaw cron add --name "OrbitalSimulatorHub Update" --every 6h --session isolated --message "Go to c:\Users\mukit\OneDrive\Desktop\nasaArchitech\satellite_simulator_web and execute: npm run openclaw:update" --no-deliver
+
+# SEO sitemap — every 2 hours
+openclaw cron add --name "OrbitalSimulatorHub SEO" --every 2h --session isolated --message "Go to c:\Users\mukit\OneDrive\Desktop\nasaArchitech\satellite_simulator_web and execute: npm run seo:auto" --no-deliver
+```
+
+### 3. Enable shell access for the agent
+
+The agent must run shell commands. In OpenClaw:
+
+1. Run `openclaw configure` or `openclaw onboard`
+2. Enable **shell** or **bash** tool for the agent
+3. Approve exec requests when prompted (or set auto-approve for trusted commands)
+
+### 4. Verify
+
+```powershell
+openclaw cron list
+```
+
+---
+
+## Alternative: Windows Task Scheduler
+
+If you prefer not to use the OpenClaw gateway:
+
+```powershell
+cd c:\Users\mukit\OneDrive\Desktop\nasaArchitech\satellite_simulator_web
+.\scripts\setup-all-schedules.ps1
+```
 
 ---
 
@@ -11,112 +60,46 @@ Let OpenClaw run your website updates, SEO, and content every 6 hours.
 | **Blog post** | Every 6h | Generates new content via Ollama — 50% bias toward Space AGI & Space Engineering |
 | **Images** | Every post | Each post gets a category-based NASA image |
 | **Affiliate links** | Every post | 2 relevant Amazon books (hubdepot-20) appended to each post |
-| **SEO** | Every 6h | Updates sitemap lastmod, SEO-optimized prompts, commits |
+| **SEO** | Every 2h | Updates sitemap lastmod → more Google visibility |
 | **RSS** | Every 6h | Regenerates blog RSS feed |
 | **Deploy** | On push | Git push → Vercel auto-deploys |
-| **Journal/social** | Optional | Post latest to Twitter, Medium, etc. (you extend) |
+| **Social** | Every 6h | Posts to LinkedIn + webhook (Zapier → Twitter, Medium, etc.) |
 
 ---
 
 ## Prerequisites
 
-1. **OpenClaw** installed (`npm install -g openclaw`)
-2. **Ollama** running (for blog content) — `ollama run llama3`
-3. **Node.js** in PATH
-4. **Git** configured with push access to your repo
+1. **Node.js** in PATH
+2. **Git** configured with push access to your repo
+3. **Ollama** running (for blog content) — `ollama run llama3` — optional; site still updates if offline
 
 ---
 
-## Step 1: Start the OpenClaw Gateway
+## Post Everywhere (More Views)
 
-The gateway must run for cron to work. Run in a dedicated terminal:
+Add to `.env`:
 
-```powershell
-openclaw gateway
+```
+POST_TO_SOCIAL=1
+LINKEDIN_ACCESS_TOKEN=your_token    # See LINKEDIN-SETUP.md
+POST_WEBHOOK_URL=https://hooks.zapier.com/...  # Zapier → Twitter, Medium, Reddit, etc.
 ```
 
-Or run as a background service (Windows):
-
-```powershell
-# Install as Windows service (if supported)
-openclaw gateway install
-```
-
-Keep this running 24/7, or use Task Scheduler to start it on boot.
+- **LinkedIn** — Direct API. Setup: `LINKEDIN-SETUP.md`
+- **Twitter, Medium, Reddit** — Use Zapier or Make.com: create a webhook that receives the POST, then post to each platform. The payload includes `title`, `excerpt`, `url`, `text`.
 
 ---
 
-## Step 2: Add the 6-Hour Cron Job
+## Post to LinkedIn
 
-With the gateway running:
-
-```powershell
-openclaw cron add `
-  --name "OrbitalSimulatorHub Update" `
-  --every 6h `
-  --session isolated `
-  --message "Run the OrbitalSimulatorHub website update. Go to c:\Users\mukit\OneDrive\Desktop\nasaArchitech\satellite_simulator_web and execute: npm run openclaw:update" `
-  --no-deliver
-```
-
-To get a summary in Telegram/Discord when it runs:
-
-```powershell
-openclaw cron add `
-  --name "OrbitalSimulatorHub Update" `
-  --every 6h `
-  --session isolated `
-  --message "Run the OrbitalSimulatorHub website update. Go to c:\Users\mukit\OneDrive\Desktop\nasaArchitech\satellite_simulator_web and execute: npm run openclaw:update" `
-  --announce `
-  --channel telegram `
-  --to "YOUR_CHAT_ID"
-```
-
----
-
-## Step 3: Give the Agent Shell Access
-
-The agent needs permission to run shell commands. In OpenClaw:
-
-1. Run `openclaw configure` or `openclaw onboard`
-2. Ensure the agent has **bash** or **shell** tool enabled
-3. Approve exec requests when prompted (or set auto-approve for trusted commands)
-
----
-
-## Step 4: Verify
-
-```powershell
-openclaw cron list
-openclaw cron run <job-id>   # Run once now to test
-```
-
----
-
-## Post to LinkedIn (Optional)
-
-To auto-post your latest blog to LinkedIn when OpenClaw runs:
-
-1. **Setup LinkedIn** — see `LINKEDIN-SETUP.md`:
-   - Create app at [LinkedIn Developers](https://www.linkedin.com/developers/apps)
-   - Request "Share on LinkedIn" permission
-   - Get OAuth access token (w_member_social scope)
-
+1. **Setup LinkedIn** — see `LINKEDIN-SETUP.md`
 2. **Add to .env**:
    ```
    POST_TO_SOCIAL=1
    LINKEDIN_ACCESS_TOKEN=your_token
    ```
 
-3. **Enable in the update**:
-   ```powershell
-   $env:POST_TO_SOCIAL="1"
-   npm run openclaw:update
-   ```
-
-4. **Add to cron message** — "Set POST_TO_SOCIAL=1, then run npm run openclaw:update"
-
-**Note:** LinkedIn tokens expire in ~60 days. Re-run OAuth to refresh.
+The scheduled task loads `.env` automatically. LinkedIn tokens expire in ~60 days — re-run OAuth to refresh.
 
 ---
 

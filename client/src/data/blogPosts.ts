@@ -6224,6 +6224,684 @@ Explore more in our [Space Shop](/space-shop) — NASA t-shirts, LEGO sets, and 
     tags: ["Space AGI", "AI satellites", "autonomous spacecraft"],
     seoKeywords: "Space AGI, AI satellites, autonomous spacecraft",
   },
+  {
+    slug: "arc-agi-benchmark-2026-measuring-artificial-general-intelligence",
+    title: "ARC-AGI Benchmark 2026: How We Measure Progress Toward Artificial General Intelligence",
+    excerpt: "The ARC-AGI benchmark tests whether AI can solve novel visual puzzles it has never seen — the gold standard for measuring compositional reasoning and true general intelligence.",
+    content: `**Introduction**
+
+The Abstraction and Reasoning Corpus for Artificial General Intelligence (ARC-AGI), created by François Chollet in 2019, remains the definitive benchmark for measuring progress toward true artificial general intelligence. Unlike language benchmarks that can be gamed with memorization, ARC-AGI requires compositional reasoning — the ability to combine known concepts in completely new ways to solve visual puzzles never seen during training.
+
+As of April 2026, no AI system has achieved human-level performance on ARC-AGI. This matters enormously for space exploration, where autonomous spacecraft must solve novel problems they were never specifically trained for.
+
+---
+
+**What Is ARC-AGI?**
+
+ARC-AGI consists of visual grid-based puzzles. Each puzzle shows a few input-output examples demonstrating a transformation rule, then asks the AI to apply that rule to a new input. The catch: every puzzle uses a different rule, and the rules require abstract reasoning like symmetry, counting, color mapping, object manipulation, and spatial logic.
+
+**Why current AI struggles:**
+- Large Language Models (LLMs) excel at pattern matching from massive training data
+- ARC-AGI puzzles are specifically designed to be unsolvable by memorization
+- Each puzzle requires synthesizing a novel program from just 2-3 examples
+- This is closer to how a human engineer solves unprecedented problems in space
+
+---
+
+**The Compositional Reasoning Gap**
+
+Compositional reasoning means building complex solutions from simple building blocks. For example:
+
+- Recognizing that "rotate 90° + mirror + recolor" solves a puzzle
+- Applying spatial relationships never explicitly trained
+- Abstracting rules from minimal examples
+
+This is exactly what a Mars rover needs when it encounters terrain no one predicted — composing known capabilities (drive, turn, sample, photograph) into novel sequences.
+
+---
+
+**2026 Approaches and Results**
+
+**Test-Time Training (TTT):** Systems that continue learning during evaluation, adapting their weights to each puzzle. Current best: ~45% accuracy (humans: ~85%).
+
+**Program Synthesis:** AI generates small programs (DSLs) that transform inputs to outputs. Combined with neural search, this reaches ~40%.
+
+**Neuro-Symbolic Hybrids:** Combining neural perception with symbolic reasoning engines. Most promising direction, achieving ~50% on subsets.
+
+**Multi-Agent Architectures:** Multiple AI agents collaborating — one perceives, one hypothesizes, one validates. Early results suggest 10-15% improvement over single agents.
+
+---
+
+**Why ARC-AGI Matters for Space**
+
+Space missions face ARC-AGI-style problems constantly:
+- **Novel fault diagnosis:** A sensor fails in a way never tested on Earth
+- **Terrain navigation:** Mars geography doesn't match any training data
+- **Resource allocation:** Balancing power, communication, and science objectives under unprecedented constraints
+
+An AI that can pass ARC-AGI would be an AI ready to handle the unexpected in deep space.
+
+---
+
+**Conclusion**
+
+ARC-AGI exposes the gap between narrow AI (excellent at trained tasks) and general intelligence (excellent at novel tasks). Closing this gap is essential for autonomous space exploration. Every improvement on ARC-AGI brings us closer to AI that can truly think — not just recall.
+
+**Explore the intersection of AGI and space at our [Space-AGI Engineering Lab](/research/space-agi-lab).**
+
+**Recommended Reading:**
+- [Artificial Intelligence: A Modern Approach](https://www.amazon.com/dp/0134610997?tag=hubdepot-20)
+- [The Alignment Problem](https://www.amazon.com/dp/0393635821?tag=hubdepot-20)
+- [On Intelligence](https://www.amazon.com/dp/0805078533?tag=hubdepot-20)
+`,
+    category: "agi-research",
+    date: "2026-04-05",
+    tags: ["AGI", "ARC-AGI", "artificial general intelligence", "compositional reasoning", "benchmark", "AI research"],
+    seoKeywords: "ARC-AGI benchmark 2026, artificial general intelligence, compositional reasoning AI, AGI measurement, abstract reasoning AI, ARC-AGI results, François Chollet AGI, novel problem solving AI, test-time training AGI, neuro-symbolic AI",
+  },
+  {
+    slug: "nasa-valkyrie-humanoid-robot-mars-mission-2026",
+    title: "NASA's Valkyrie Humanoid Robot: A Decade of Engineering for Mars",
+    excerpt: "NASA's R5 Valkyrie is a 6-foot humanoid robot with 44 degrees of freedom, designed to build habitats and perform maintenance on Mars before humans arrive.",
+    content: `**Introduction**
+
+NASA's Valkyrie robot (officially designated R5) represents the most ambitious humanoid robotics program in space history. Built at Johnson Space Center, this 6-foot, 290-pound bipedal robot is designed for a mission that sounds like science fiction: travel to Mars ahead of human crews, build habitats, maintain life support systems, and prepare the surface for human arrival.
+
+After a decade of development, Valkyrie has become the proving ground for technologies that will define the future of space robotics.
+
+---
+
+**Technical Specifications**
+
+| Specification | Value |
+|---|---|
+| Height | 1.83 m (6 feet) |
+| Weight | 131 kg (290 lbs) |
+| Degrees of Freedom | 44 (7 per arm, 6 per leg, 3 in waist, 3 in neck, 6 per hand) |
+| Sensors | Stereo cameras, LIDAR, force-torque sensors, IMU |
+| Computing | Dual Intel i7 processors |
+| Power | 2 kWh battery (1.5 hours operation) |
+| Communication | WiFi + tethered Ethernet |
+
+---
+
+**Key Engineering Breakthroughs**
+
+**1. Walking Stability**
+The hardest problem in humanoid robotics: not falling down. Valkyrie uses a whole-body controller (WBC) that coordinates all 44 joints simultaneously. Recent breakthroughs achieved 81% improvement in push recovery — the robot can maintain balance when shoved from any direction.
+
+The math behind balance: the Zero Moment Point (ZMP) must stay within the support polygon (the footprint area). The controller solves a quadratic program (QP) at 1 kHz:
+
+minimize  ||τ - τ_desired||² + w·||f_contact||²
+subject to  M(q)q̈ + C(q,q̇) + g(q) = Sτ + Jᵀf
+
+Where M is the mass matrix, C is Coriolis/centrifugal forces, g is gravity, τ is joint torques, and f is contact forces.
+
+**2. Manipulation**
+Each hand has 12 degrees of freedom with tactile sensors on every fingertip. Valkyrie can turn valves, plug in cables, use power tools, and handle objects with 0.5mm positional accuracy.
+
+**3. Sensor Fusion**
+LIDAR + stereo cameras + IMU + force-torque sensors are fused using an Extended Kalman Filter (EKF) to build a real-time 3D map of the environment while simultaneously localizing the robot (SLAM).
+
+**4. Autonomy Stack**
+Valkyrie operates at three levels:
+- **Teleoperation:** Human controls every joint (high bandwidth, low latency)
+- **Supervised autonomy:** Human sets goals, robot plans and executes (medium latency)
+- **Full autonomy:** Robot perceives, plans, acts independently (zero communication needed)
+
+For Mars, full autonomy is essential due to the 4-24 minute communication delay.
+
+---
+
+**Mars Mission Profile**
+
+Phase 1 (Pre-crew): Valkyrie robots arrive on cargo landers. They unpack habitats, connect power systems, pressurize modules, and verify life support — all autonomously.
+
+Phase 2 (Crew support): Robots assist astronauts with EVA maintenance, heavy lifting, and routine inspections. They can enter environments too dangerous for humans (radiation zones, structural damage).
+
+Phase 3 (Base expansion): Robots construct additional habitat modules, install solar arrays, and build landing pads for future missions.
+
+---
+
+**Why Humanoid?**
+
+Why not a purpose-built robot? Because Mars habitats are designed for humans. Door handles, tools, corridors, stairs — everything is human-scale. A humanoid robot can use the same infrastructure without redesigning everything.
+
+---
+
+**Conclusion**
+
+Valkyrie represents the convergence of robotics, AI, and space engineering. Every walking algorithm, every grasp planner, every autonomy framework developed for Valkyrie advances the state of the art for all robots — on Earth and in space.
+
+**Build and train your own space robots in our [AI Astronaut Robot Simulator](/simulator/ai-astronaut-robot).**
+
+**Recommended Reading:**
+- [Probabilistic Robotics](https://www.amazon.com/dp/0262201623?tag=hubdepot-20)
+- [Introduction to Autonomous Robots](https://www.amazon.com/dp/0262047810?tag=hubdepot-20)
+- [Modern Robotics](https://www.amazon.com/dp/1107156300?tag=hubdepot-20)
+`,
+    category: "robot-engineering",
+    date: "2026-04-05",
+    tags: ["NASA Valkyrie", "humanoid robot", "Mars mission", "robot engineering", "bipedal locomotion", "space robotics"],
+    seoKeywords: "NASA Valkyrie robot 2026, humanoid robot Mars, R5 Valkyrie specifications, space robotics NASA, humanoid robot walking stability, Mars robot construction, bipedal robot space, 44 degrees of freedom robot, robot autonomy Mars, whole-body controller robot",
+  },
+  {
+    slug: "swarm-robotics-orbital-construction-2026",
+    title: "Swarm Robotics for Orbital Construction: How Hundreds of Small Robots Will Build Space Stations",
+    excerpt: "Swarm robotics uses hundreds of small, simple robots coordinating through local rules to build structures in orbit — no central controller needed.",
+    content: `**Introduction**
+
+The next generation of space stations and orbital platforms won't be launched in one piece from Earth. They'll be assembled in orbit by swarms of small robots — dozens to hundreds of autonomous units working in concert like a colony of ants building a nest.
+
+Swarm robotics is the engineering discipline that makes this possible: designing systems where many simple agents, following local interaction rules, produce complex global behavior without any central controller.
+
+---
+
+**Why Swarms Instead of One Big Robot?**
+
+Traditional approach: one large, expensive, complex robot. If it fails, the mission fails.
+
+Swarm approach: many small, cheap, replaceable robots. If some fail, the swarm adapts.
+
+| Property | Single Robot | Swarm |
+|---|---|---|
+| Failure tolerance | Low (single point) | High (graceful degradation) |
+| Scalability | Fixed | Add more agents |
+| Complexity | High per unit | Low per unit, high emergent |
+| Cost | Very expensive | Cheap per unit |
+| Flexibility | Task-specific | Reconfigurable |
+
+---
+
+**How Orbital Construction Swarms Work**
+
+**1. Task Allocation**
+Using auction-based algorithms, robots bid on construction tasks based on proximity, capability, and energy level. No central planner — tasks emerge from distributed negotiation.
+
+**2. Formation Control**
+Robots maintain precise relative positions using consensus algorithms:
+
+xᵢ(t+1) = xᵢ(t) + ε · Σⱼ∈Nᵢ (xⱼ(t) - xᵢ(t))
+
+Where xᵢ is robot i's position, Nᵢ is its neighbors, and ε is the convergence rate. This simple local rule produces global formation convergence.
+
+**3. Assembly Coordination**
+When attaching structural elements, robots use pheromone-inspired stigmergy — they leave virtual markers on completed sections that guide other robots where to build next.
+
+**4. Collision Avoidance**
+In the crowded construction zone, robots use artificial potential fields:
+
+F_total = F_goal + Σ F_repulsion(obstacle)
+
+Each robot is attracted to its goal and repelled from obstacles and other robots, creating smooth, collision-free trajectories.
+
+---
+
+**Real Applications in Development**
+
+**NASA's In-Space Assembled Telescope (iSAT):** A space telescope built from modular segments by autonomous robots in orbit. Each segment is launched separately, then assembled into a mirror 20+ meters across — far larger than anything a single rocket could carry.
+
+**Orbital Reef / Commercial LEO Stations:** Future commercial stations will grow over time, with robot swarms adding modules, solar arrays, and docking ports as demand increases.
+
+**Lunar Surface Construction:** Before humans arrive, robot swarms will grade landing pads, build berms for radiation shielding, and deploy solar panel fields.
+
+---
+
+**The AI Challenge**
+
+The hardest part isn't mechanical — it's the AI. Each robot must:
+- Perceive its local environment (sensors)
+- Communicate with neighbors (mesh networking)
+- Make decisions with partial information
+- Handle dynamic replanning when things go wrong
+- Operate in microgravity (no up, no down, no friction)
+
+This requires robust onboard AI that works without cloud connectivity or ground control. Every swarm robot is a miniature Space-AGI system.
+
+---
+
+**Conclusion**
+
+Swarm robotics transforms space construction from a one-shot, high-risk endeavor into an incremental, fault-tolerant process. The key insight: you don't need smart robots — you need simple robots with smart interactions.
+
+**Explore swarm satellite coordination in our [Swarm Simulator](/simulator/swarm) — add 500+ satellites with AI collision avoidance.**
+
+**Recommended Reading:**
+- [Swarm Intelligence](https://www.amazon.com/dp/0195131592?tag=hubdepot-20)
+- [Probabilistic Robotics](https://www.amazon.com/dp/0262201623?tag=hubdepot-20)
+- [Multi-Agent Systems](https://www.amazon.com/dp/1107180562?tag=hubdepot-20)
+`,
+    category: "robot-engineering",
+    date: "2026-04-05",
+    tags: ["swarm robotics", "orbital construction", "space assembly", "multi-agent systems", "robot coordination", "NASA iSAT"],
+    seoKeywords: "swarm robotics space 2026, orbital construction robots, space station assembly robots, swarm intelligence orbit, multi-agent robot coordination, NASA in-space assembly, robot swarm collision avoidance, consensus algorithm robots, autonomous space construction, lunar robot swarm",
+  },
+  {
+    slug: "neuro-symbolic-ai-path-to-agi-space-autonomy",
+    title: "Neuro-Symbolic AI: The Most Promising Path to AGI and Space Autonomy",
+    excerpt: "Neuro-symbolic AI combines neural network perception with symbolic logical reasoning — creating systems that can both see and think, essential for autonomous spacecraft.",
+    content: `**Introduction**
+
+The debate over how to achieve artificial general intelligence has converged on a compelling answer: neuro-symbolic AI. This hybrid approach combines the pattern recognition strengths of neural networks with the logical reasoning power of symbolic AI systems. For space applications, this combination is not optional — it's essential.
+
+A spacecraft approaching an asteroid needs neural networks to process camera imagery (perception) and symbolic reasoning to plan a safe landing sequence (logic). Neither alone is sufficient.
+
+---
+
+**What Is Neuro-Symbolic AI?**
+
+**Neural Networks** excel at:
+- Image recognition, speech processing, language understanding
+- Learning patterns from data
+- Handling noisy, uncertain inputs
+- Generalization across similar inputs
+
+**Symbolic AI** excels at:
+- Logical deduction and proof
+- Planning multi-step sequences
+- Explaining decisions (interpretability)
+- Handling rules, constraints, and domain knowledge
+
+**Neuro-Symbolic** combines both:
+- Neural perception feeds into symbolic reasoning
+- Symbolic rules constrain and guide neural learning
+- Explainable decisions grounded in perceptual evidence
+- Robust to novel situations through compositional reasoning
+
+---
+
+**Architecture Patterns**
+
+**Pattern 1: Neural → Symbolic**
+Neural network processes raw sensor data into structured representations. Symbolic engine reasons over these representations.
+
+Example: Camera sees terrain → Neural net classifies rocks, slopes, hazards → Symbolic planner generates safe path avoiding all hazards
+
+**Pattern 2: Symbolic → Neural**
+Symbolic system generates training data, constraints, or reward signals for neural learning.
+
+Example: Physics equations (symbolic) generate simulated trajectories → Neural controller learns optimal thruster commands from these trajectories
+
+**Pattern 3: Tight Integration**
+Neural and symbolic components operate in the same loop, with attention mechanisms selecting which symbolic rules apply to neural features.
+
+---
+
+**Why This Matters for AGI**
+
+Pure neural approaches (like LLMs) fail on ARC-AGI because they lack compositional reasoning. Pure symbolic approaches fail on real-world perception because they can't handle noise and ambiguity.
+
+The ARC-AGI benchmark essentially tests neuro-symbolic capability:
+1. **Perceive** the grid patterns (neural)
+2. **Abstract** the transformation rule (symbolic)
+3. **Apply** the rule to new input (compositional)
+
+Current neuro-symbolic systems achieve the best ARC-AGI scores (~50% on subsets), supporting the thesis that this path leads to AGI.
+
+---
+
+**Space Applications**
+
+**Autonomous Docking:** Neural vision identifies the docking port → Symbolic planner generates approach trajectory respecting safety constraints → Neural controller executes smooth thruster commands.
+
+**Fault Diagnosis:** Neural anomaly detection flags unusual sensor readings → Symbolic causal reasoning identifies the root cause → Decision engine selects recovery action.
+
+**Science Discovery:** Neural network finds patterns in telescope data → Symbolic system checks if patterns match known phenomena → Novel discoveries are flagged for human review.
+
+---
+
+**The Engineering Challenge**
+
+Building neuro-symbolic systems for space requires:
+- **Real-time performance:** Decisions in milliseconds, not minutes
+- **Radiation hardening:** Both neural and symbolic components must run on space-rated hardware
+- **Verification:** How do you prove a neural-symbolic system is safe? This is an open research problem
+- **Resource efficiency:** Limited compute, power, and memory on spacecraft
+
+---
+
+**Conclusion**
+
+Neuro-symbolic AI represents the most credible path toward both artificial general intelligence and autonomous space systems. By combining the best of both paradigms, we get systems that can perceive like a neural network and reason like a scientist.
+
+**Explore AI in space at our [AI in Aerospace](/ai-in-aerospace) hub and try the [Space-AGI Engineering Lab](/research/space-agi-lab).**
+
+**Recommended Reading:**
+- [Artificial Intelligence: A Modern Approach](https://www.amazon.com/dp/0134610997?tag=hubdepot-20)
+- [Deep Learning](https://www.amazon.com/dp/0262035619?tag=hubdepot-20)
+- [Knowledge Representation and Reasoning](https://www.amazon.com/dp/0128166495?tag=hubdepot-20)
+`,
+    category: "agi-research",
+    date: "2026-04-05",
+    tags: ["neuro-symbolic AI", "AGI", "artificial general intelligence", "symbolic reasoning", "neural networks", "space autonomy"],
+    seoKeywords: "neuro-symbolic AI AGI 2026, neural symbolic integration, path to artificial general intelligence, neuro-symbolic space autonomy, compositional reasoning AI, symbolic AI neural networks, AGI architecture, autonomous spacecraft AI, ARC-AGI neuro-symbolic, explainable AI space",
+  },
+  {
+    slug: "multi-agent-ai-orchestration-parallel-agi-tasks-2026",
+    title: "Multi-Agent AI Orchestration: How Parallel Agent Swarms Tackle AGI-Level Tasks",
+    excerpt: "Multi-agent AI orchestration distributes complex tasks across specialized AI agents working in parallel — the same architecture used for autonomous satellite constellations and AGI research.",
+    content: `**Introduction**
+
+Single AI models hit walls. They run out of context, lose focus on long tasks, and struggle with problems requiring diverse expertise. The solution emerging in 2026 is multi-agent orchestration: systems where a supervisor agent decomposes complex goals into subtasks, assigns them to specialized agents, and coordinates parallel execution.
+
+This architecture mirrors both biological intelligence (specialized brain regions coordinated by executive function) and space operations (mission control coordinating specialized teams).
+
+---
+
+**How Multi-Agent Orchestration Works**
+
+**The Supervisor Pattern:**
+
+\`\`\`
+REQUIREMENT → DECOMPOSE → ASSIGN → EXECUTE (parallel) → REVIEW → ITERATE → DELIVER
+\`\`\`
+
+1. **Supervisor Agent** receives a complex task
+2. Decomposes it into independent subtasks with clear acceptance criteria
+3. Assigns subtasks to specialist agents (in parallel when possible)
+4. Monitors progress, resolves conflicts, handles failures
+5. Iterates through review cycles until quality gates pass
+6. Delivers the integrated result
+
+**Specialist Agents** might include:
+- **Perception Agent:** Processes sensor data, images, telemetry
+- **Planning Agent:** Generates strategies and sequences
+- **Execution Agent:** Controls actuators and systems
+- **Validation Agent:** Tests outcomes against requirements
+- **Communication Agent:** Manages links to ground and other spacecraft
+
+---
+
+**Parallel Execution Waves**
+
+Not all subtasks are independent. The supervisor organizes them into waves:
+
+**Wave 1 (Design):** Architecture Agent + Requirements Agent run simultaneously
+**Wave 2 (Build):** Implementation Agent uses Wave 1 outputs (dependent)
+**Wave 3 (Validate):** Testing Agent + Deployment Agent run simultaneously
+
+This wave-based parallelism is identical to how satellite constellation operations work:
+- Wave 1: All satellites acquire GPS fix (parallel, independent)
+- Wave 2: Ground computes optimal constellation configuration (sequential, needs Wave 1)
+- Wave 3: All satellites execute maneuvers (parallel, independent)
+
+---
+
+**Coordination Protocols**
+
+**File-Based Communication:** Agents write outputs to shared storage. Other agents read when ready. Simple, robust, auditable.
+
+**Conflict Resolution:**
+- Technical decisions: Architecture agent has priority
+- Safety decisions: Validation agent has veto power
+- Resource conflicts: Supervisor arbitrates
+- Deadlocks: Timeout + escalation to human
+
+**Quality Gates:** No task ships without:
+- Architecture sign-off
+- Implementation complete with tests
+- Validation PASS verdict
+- Deployment verified
+
+---
+
+**Space Applications**
+
+**Autonomous Constellation Management:** A supervisor AI manages thousands of satellites. Specialist agents handle:
+- Orbit determination (each satellite independently)
+- Collision avoidance (pairs of close-approach satellites)
+- Ground coverage optimization (constellation-level)
+- Maintenance scheduling (individual satellite health)
+
+**Mars Base Operations:** A supervisor coordinates:
+- Power management agent (solar arrays, batteries)
+- Life support agent (O₂, CO₂, temperature)
+- Robotics agent (Valkyrie task scheduling)
+- Communication agent (relay satellite windows)
+- Science agent (experiment priorities)
+
+---
+
+**AGI Connection**
+
+Multi-agent orchestration is one of the leading architectural patterns for AGI because:
+1. **Modularity:** Each agent can be improved independently
+2. **Scalability:** Add more agents for more capability
+3. **Interpretability:** You can inspect what each agent decided
+4. **Robustness:** If one agent fails, others compensate
+5. **Specialization:** Agents develop deep expertise in narrow domains
+
+This decompose → specialize → coordinate pattern may be how biological general intelligence works (prefrontal cortex as supervisor, specialized cortical regions as agents).
+
+---
+
+**Conclusion**
+
+Multi-agent orchestration is the bridge between today's narrow AI and tomorrow's general intelligence. Whether coordinating satellite constellations or solving novel engineering problems, the pattern is the same: break it down, solve in parallel, integrate the results.
+
+**Try our [Swarm Simulator](/simulator/swarm) to see multi-agent coordination in action with 500+ AI satellites.**
+
+**Recommended Reading:**
+- [Multi-Agent Systems](https://www.amazon.com/dp/1107180562?tag=hubdepot-20)
+- [Reinforcement Learning](https://www.amazon.com/dp/0262039249?tag=hubdepot-20)
+- [Artificial Intelligence: A Modern Approach](https://www.amazon.com/dp/0134610997?tag=hubdepot-20)
+`,
+    category: "agi-research",
+    date: "2026-04-05",
+    tags: ["multi-agent AI", "AGI", "parallel orchestration", "agent swarm", "supervisor pattern", "autonomous systems"],
+    seoKeywords: "multi-agent AI orchestration 2026, parallel AI agents, supervisor agent pattern, AGI multi-agent architecture, agent swarm coordination, autonomous satellite constellation AI, multi-agent systems space, parallel task execution AI, AGI agent architecture, distributed AI systems",
+  },
+  {
+    slug: "nuclear-thermal-propulsion-draco-mars-transit-2026",
+    title: "Nuclear Thermal Propulsion: How NASA's DRACO Engine Cuts Mars Transit to 3 Months",
+    excerpt: "NASA's DRACO nuclear thermal rocket achieves 900+ seconds of specific impulse — twice chemical rockets — potentially reducing Earth-to-Mars transit from 7 months to 100 days.",
+    content: `**Introduction**
+
+Chemical rockets got us to the Moon, but they may not be enough for Mars. The transit time with conventional propulsion is 7-9 months each way — exposing crews to cosmic radiation, muscle atrophy, and psychological strain. Nuclear thermal propulsion (NTP) could cut that to 3-4 months by delivering roughly twice the efficiency of chemical engines.
+
+NASA's Demonstration Rocket for Agile Cislunar Operations (DRACO) program, in partnership with DARPA and Lockheed Martin, is building the first nuclear thermal rocket engine for space testing by 2027.
+
+---
+
+**How Nuclear Thermal Propulsion Works**
+
+A nuclear thermal rocket heats propellant (hydrogen) by passing it through a nuclear fission reactor core, then expels the superheated gas through a nozzle for thrust.
+
+**Key equations:**
+
+Thrust: F = ṁ · vₑ
+
+Where ṁ is mass flow rate and vₑ is exhaust velocity.
+
+Specific impulse: Isp = vₑ / g₀
+
+NTP achieves Isp ≈ 900 seconds vs chemical rockets at ~450 seconds.
+
+The Tsiolkovsky rocket equation shows why this matters:
+
+Δv = Isp · g₀ · ln(m₀ / mf)
+
+Doubling Isp means the same Δv with exponentially less propellant. For a Mars transfer requiring Δv ≈ 4 km/s, NTP cuts the required fuel mass by more than half.
+
+---
+
+**DRACO Engine Specifications**
+
+| Parameter | Value |
+|---|---|
+| Reactor type | High-assay low-enriched uranium (HALEU) |
+| Propellant | Liquid hydrogen (LH₂) |
+| Target Isp | 900+ seconds |
+| Thrust class | 25,000 lbf (111 kN) |
+| Reactor temperature | ~2,700 K |
+| Development partners | NASA, DARPA, Lockheed Martin, BWX Technologies |
+| First space test | Targeted 2027 |
+
+---
+
+**Mars Transit Comparison**
+
+| Propulsion | Transit Time | Δv Budget | Fuel Mass Fraction |
+|---|---|---|---|
+| Chemical (Hohmann) | 7-9 months | ~4 km/s | ~65% |
+| NTP (fast transfer) | 3-4 months | ~6 km/s | ~45% |
+| NTP (opposition class) | 100 days | ~8 km/s | ~55% |
+
+The shorter transit time also dramatically reduces crew radiation exposure:
+- 7-month transit: ~0.3 Sv (significant cancer risk)
+- 3-month transit: ~0.13 Sv (manageable with shielding)
+
+---
+
+**Engineering Challenges**
+
+**1. Reactor Startup in Space**
+The reactor must transition from cold shutdown to full power in minutes. Thermal stresses on fuel elements during this transient are extreme.
+
+**2. Hydrogen Storage**
+Liquid hydrogen boils at 20 K (-253°C). Keeping it liquid for months in space requires advanced cryocoolers and multi-layer insulation.
+
+**3. Radiation Shielding**
+The reactor emits neutrons and gamma rays. A shadow shield between the engine and crew module blocks direct radiation, but scattered radiation remains a concern.
+
+**4. Nuclear Safety**
+The reactor launches cold (non-critical). It only goes critical in space, far from Earth. If the launch fails, the uranium is in a subcritical geometry and does not create a nuclear hazard.
+
+---
+
+**Beyond Mars: The Nuclear Advantage**
+
+NTP doesn't just help with Mars. It enables:
+- **Rapid cislunar transport** between Earth orbit and lunar orbit
+- **Jupiter system exploration** with reasonable transit times
+- **Asteroid rendezvous missions** with flexible trajectory options
+- **Emergency abort** capability during Mars missions (enough Δv to return early)
+
+Combined with in-space refueling, NTP could make the solar system accessible the way jet engines made intercontinental travel routine.
+
+---
+
+**Conclusion**
+
+Nuclear thermal propulsion is not science fiction — it's engineering in progress. DRACO represents a paradigm shift: from the chemical rockets that defined the Space Age to nuclear engines that will define the Mars Age. The physics is clear, the technology is maturing, and the need is urgent.
+
+**Calculate orbital transfers and Δv budgets with our [Orbit Calculators](/calculators) and explore the [Formulas Library](/formulas-library).**
+
+**Recommended Reading:**
+- [Space Propulsion Analysis and Design](https://www.amazon.com/dp/0070606331?tag=hubdepot-20)
+- [Fundamentals of Astrodynamics](https://www.amazon.com/dp/0486600610?tag=hubdepot-20)
+- [Space Mission Analysis and Design](https://www.amazon.com/dp/1881883108?tag=hubdepot-20)
+`,
+    category: "space-engineering",
+    date: "2026-04-05",
+    tags: ["nuclear propulsion", "DRACO", "NTP", "Mars transit", "specific impulse", "Tsiolkovsky equation", "NASA DARPA"],
+    seoKeywords: "nuclear thermal propulsion 2026, DRACO engine NASA, NTP Mars transit, nuclear rocket Mars, specific impulse 900 seconds, Tsiolkovsky rocket equation, HALEU reactor space, NASA DARPA nuclear rocket, Mars transit time reduction, nuclear propulsion advantages space",
+  },
+  {
+    slug: "agi-safety-alignment-autonomous-spacecraft-2026",
+    title: "AGI Safety & Alignment: Ensuring Autonomous Spacecraft Make Safe Decisions",
+    excerpt: "As AI gains autonomy in space, alignment becomes critical — how do we ensure an autonomous spacecraft's goals stay aligned with human values when communication is impossible?",
+    content: `**Introduction**
+
+When an autonomous spacecraft operates beyond real-time communication range, it makes decisions entirely on its own. If its objectives are misaligned — even slightly — the consequences could range from wasted fuel to mission failure to collision with other assets. AGI safety and alignment research aims to solve this before we deploy fully autonomous systems in space.
+
+This isn't theoretical. Every Mars rover, every autonomous satellite, every deep space probe faces alignment challenges today.
+
+---
+
+**What Is AI Alignment?**
+
+Alignment means ensuring an AI system's behavior matches the intentions of its designers — not just the literal specification, but the spirit of the mission.
+
+**Classic alignment problems:**
+- **Reward hacking:** AI finds unintended ways to maximize its reward function (e.g., a satellite that dumps fuel to reduce weight and "improve" efficiency metrics)
+- **Goal misgeneralization:** AI learns the wrong objective from training data (e.g., navigate toward bright objects instead of the target star)
+- **Distributional shift:** AI trained on Earth conditions encounters unprecedented Mars conditions
+- **Mesa-optimization:** AI develops internal sub-goals that diverge from the designed objective
+
+---
+
+**Space-Specific Alignment Challenges**
+
+**1. Delayed Correction**
+On Earth, a misaligned AI can be stopped in seconds. On Mars, the correction signal takes 4-24 minutes. The AI must self-detect misalignment.
+
+**2. Irreversible Actions**
+Some spacecraft actions are irreversible: firing a thruster, deploying a solar array, entering an atmosphere. The AI must have high confidence before executing.
+
+**3. Resource Constraints**
+Spacecraft have limited fuel, power, and bandwidth. A misaligned fuel expenditure could strand the craft.
+
+**4. Multi-Objective Balancing**
+Space missions have competing objectives:
+- Science value vs. safety margin
+- Power conservation vs. communication uptime
+- Maneuver accuracy vs. fuel efficiency
+
+The AI must balance these without human real-time guidance.
+
+---
+
+**Safety Mechanisms for Space AI**
+
+**Constraint Satisfaction:** Hard safety constraints that the AI cannot violate, regardless of its objectives:
+- Never exceed structural load limits
+- Always maintain minimum fuel reserve
+- Never point sensors at the Sun
+- Always maintain communication window capability
+
+These are implemented as mathematical constraints in the optimization:
+
+maximize  J(mission_value)
+subject to  fuel ≥ fuel_min
+            temperature ≤ T_max
+            attitude_rate ≤ ω_max
+
+**Runtime Monitoring:** A separate, simpler system watches the main AI and can trigger safe mode if behavior deviates from expected bounds.
+
+**Formal Verification:** Mathematical proofs that certain safety properties always hold, regardless of AI decisions. Challenging for neural networks, more tractable for symbolic/hybrid systems.
+
+**Graceful Degradation:** When the AI encounters situations outside its training distribution, it should recognize this and switch to conservative behavior rather than improvising.
+
+---
+
+**Lessons from Current Missions**
+
+**Mars Perseverance AutoNav:** The rover's autonomous navigation system has a "safety corridor" — it plans paths that stay within pre-verified safe zones. If it can't find a safe path, it stops and waits for human guidance.
+
+**Starlink Collision Avoidance:** Autonomous maneuvers are bounded: maximum Δv per maneuver, minimum time between maneuvers, mandatory ground notification within 24 hours.
+
+**James Webb Space Telescope:** JWST has autonomous safe mode triggers for thermal, power, and pointing anomalies. The AI's authority is deliberately limited to "stop and call home."
+
+---
+
+**The Road Ahead**
+
+As spacecraft AI grows more capable, the alignment challenge intensifies. The research priorities are:
+
+1. **Interpretable AI:** Systems that can explain their decisions in human-understandable terms
+2. **Value learning:** AI that infers human values from examples, not just written specifications
+3. **Scalable oversight:** Methods for humans to efficiently verify AI decisions at scale
+4. **Corrigibility:** AI that actively supports human correction of its behavior
+
+---
+
+**Conclusion**
+
+AGI alignment isn't just a philosophical concern — it's an engineering requirement for autonomous space systems. Every autonomous spacecraft needs provably safe behavior boundaries, runtime monitoring, and graceful degradation. Getting alignment right is the difference between a successful Mars mission and a very expensive piece of space debris.
+
+**Explore AI safety in our [Space-AGI Engineering Lab](/research/space-agi-lab) and learn about [AI in Aerospace](/ai-in-aerospace).**
+
+**Recommended Reading:**
+- [The Alignment Problem](https://www.amazon.com/dp/0393635821?tag=hubdepot-20)
+- [Human Compatible](https://www.amazon.com/dp/0525558632?tag=hubdepot-20)
+- [Artificial Intelligence: A Modern Approach](https://www.amazon.com/dp/0134610997?tag=hubdepot-20)
+`,
+    category: "agi-research",
+    date: "2026-04-05",
+    tags: ["AGI safety", "AI alignment", "autonomous spacecraft", "space AI safety", "reward hacking", "constraint satisfaction"],
+    seoKeywords: "AGI safety alignment 2026, AI alignment autonomous spacecraft, space AI safety, reward hacking prevention, autonomous spacecraft safety, Mars AI alignment, AI constraint satisfaction, runtime monitoring AI, formal verification space AI, corrigible AI space",
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

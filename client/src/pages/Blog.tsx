@@ -33,7 +33,7 @@ export function Blog() {
       <section className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {byCategory.map((cat) => (
           <Link key={cat.id} href={`/blog/category/${cat.id}`}>
-            <a className="block p-4 rounded-xl border-2 transition hover:shadow-lg" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>
+            <a className="blog-card block p-4 rounded-xl border-2 transition hover:shadow-lg" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>
               <span className="text-2xl block mb-2">{cat.emoji}</span>
               <h2 className="font-bold mb-1" style={{ color: "var(--text-primary)" }}>{cat.label}</h2>
               <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{cat.posts.length} articles</p>
@@ -47,7 +47,7 @@ export function Blog() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {recent.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>
-              <a className="block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+              <a className="post-card block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
                 <div className="aspect-video w-full bg-slate-200">
                   <img
                     src={getBlogImage(post)}

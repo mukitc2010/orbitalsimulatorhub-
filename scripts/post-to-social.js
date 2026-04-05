@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 /**
- * Post latest blog to LinkedIn (and optionally Twitter, Medium).
+ * Post latest blog everywhere: LinkedIn, webhook (Zapier → Twitter/Medium/etc).
  *
- * Enable: POST_TO_SOCIAL=1 when running openclaw-full-update.js
- * Add to .env: LINKEDIN_ACCESS_TOKEN=your_token
+ * Enable: POST_TO_SOCIAL=1 in .env when running openclaw-full-update.js
+ *
+ * .env:
+ *   POST_TO_SOCIAL=1
+ *   LINKEDIN_ACCESS_TOKEN=...     → posts to LinkedIn
+ *   POST_WEBHOOK_URL=https://...  → POSTs JSON to Zapier/Make → Twitter, Medium, etc.
  *
  * Setup: See LINKEDIN-SETUP.md
  */
@@ -18,11 +22,46 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const BLOG_FILE = path.join(__dirname, "../client/src/data/blogPosts.ts");
 
+const HASHTAGS = "#SpaceEngineering #OrbitalMechanics #SpaceAGI #NASA #Aerospace #STEM #Satellite #SpaceTech";
+
 function getLatestPost() {
   const src = readFileSync(BLOG_FILE, "utf8");
   const match = src.match(/slug:\s*"([^"]+)",\s*title:\s*"([^"]+)",\s*excerpt:\s*"([^"]+)"/);
   if (!match) return null;
   return { slug: match[1], title: match[2], excerpt: match[3] };
+}
+
+function buildPostText(post, url) {
+  return `${post.title}\n\n${post.excerpt}\n\nRead more: ${url}\n\n${HASHTAGS}`;
+}
+
+async function postToWebhook(post, url) {
+  const webhookUrl = process.env.POST_WEBHOOK_URL;
+  if (!webhookUrl) return;
+
+  const payload = {
+    title: post.title,
+    excerpt: post.excerpt,
+    url,
+    slug: post.slug,
+    text: buildPostText(post, url),
+    platform: "orbitalsimulatorhub",
+  };
+
+  try {
+    const res = await fetch(webhookUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (res.ok) {
+      console.log("[post-to-social] ✓ Sent to webhook (Zapier/Make → Twitter, Medium, etc.)");
+    } else {
+      console.error("[post-to-social] Webhook failed:", res.status, await res.text());
+    }
+  } catch (e) {
+    console.error("[post-to-social] Webhook error:", e.message);
+  }
 }
 
 async function postToLinkedIn(post, url) {
@@ -32,7 +71,7 @@ async function postToLinkedIn(post, url) {
     return;
   }
 
-  const commentary = `${post.title}\n\n${post.excerpt}\n\nRead more: ${url}\n\n#SpaceEngineering #OrbitalMechanics #SpaceAGI #NASA`;
+  const commentary = buildPostText(post, url);
 
   try {
     // 1. Get person URN for author
@@ -101,6 +140,7 @@ async function main() {
   console.log("[post-to-social] URL:", url);
 
   await postToLinkedIn(post, url);
+  await postToWebhook(post, url);
 }
 
 main();

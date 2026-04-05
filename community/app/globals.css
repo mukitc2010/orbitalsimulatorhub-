@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== Theme: Space Aurora (default) ========== */
+:root,
+[data-theme="space-aurora"] {
+  --bg: #070B14;
+  --card: #0D1628;
+  --card-hover: #12213A;
+  --border: #1E3358;
+  --text: #EAF2FF;
+  --muted: #9FB2D6;
+  --primary: #4AA8FF;
+  --secondary: #8B5CFF;
+  --success: #33D6A6;
+  --warning: #FFC857;
+  --danger: #FF4D6D;
+  --hero-gradient: linear-gradient(90deg, #4AA8FF 0%, #8B5CFF 50%, #33D6A6 100%);
+}
+
+[data-theme="light-clean"] {
+  --bg: #F8FAFC;
+  --card: #FFFFFF;
+  --card-hover: #F1F5F9;
+  --border: #E2E8F0;
+  --text: #0F172A;
+  --muted: #64748B;
+  --primary: #0EA5E9;
+  --secondary: #8B5CF6;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --hero-gradient: linear-gradient(90deg, #0EA5E9 0%, #8B5CF6 50%, #10B981 100%);
+}
+
+[data-theme="nasa-blue"] {
+  --bg: #0A1628;
+  --card: #0F2744;
+  --card-hover: #143259;
+  --border: #1E4976;
+  --text: #E0EDFF;
+  --muted: #7B9BC7;
+  --primary: #2E7CF6;
+  --secondary: #5B8DEF;
+  --success: #22C55E;
+  --warning: #EAB308;
+  --danger: #DC2626;
+  --hero-gradient: linear-gradient(90deg, #2E7CF6 0%, #5B8DEF 50%, #0EA5E9 100%);
+}
+
+[data-theme="deep-purple"] {
+  --bg: #0D0A14;
+  --card: #16102A;
+  --card-hover: #1E1640;
+  --border: #2E2654;
+  --text: #EDE9FF;
+  --muted: #9F8FCF;
+  --primary: #8B5CFF;
+  --secondary: #A78BFA;
+  --success: #34D399;
+  --warning: #FBBF24;
+  --danger: #F87171;
+  --hero-gradient: linear-gradient(90deg, #8B5CFF 0%, #A78BFA 50%, #C084FC 100%);
+}
+
+[data-theme="mars-red"] {
+  --bg: #140A0A;
+  --card: #1E1212;
+  --card-hover: #2A1818;
+  --border: #4A2828;
+  --text: #FFEAEA;
+  --muted: #C9A0A0;
+  --primary: #E85D04;
+  --secondary: #DC2F02;
+  --success: #2D6A4F;
+  --warning: #FFBA08;
+  --danger: #FF4D6D;
+  --hero-gradient: linear-gradient(90deg, #E85D04 0%, #DC2F02 50%, #9D0208 100%);
+}
+
+[data-theme="earth-green"] {
+  --bg: #06140A;
+  --card: #0D1E14;
+  --card-hover: #122A1A;
+  --border: #1E3A2A;
+  --text: #E8FFF0;
+  --muted: #9FCFB4;
+  --primary: #22C55E;
+  --secondary: #33D6A6;
+  --success: #16A34A;
+  --warning: #EAB308;
+  --danger: #EF4444;
+  --hero-gradient: linear-gradient(90deg, #22C55E 0%, #33D6A6 50%, #0EA5E9 100%);
+}
+
+/* Custom theme: applied via inline styles in ThemeProvider */
+
+/* ========== Utility classes (theme-aware) ========== */
+.bg-app { background-color: var(--bg); }
+.bg-card { background-color: var(--card); }
+.bg-card-hover:hover { background-color: var(--card-hover); }
+.text-app { color: var(--text); }
+.text-muted { color: var(--muted); }
+.border-app { border-color: var(--border); }
+.bg-primary { background-color: var(--primary); }
+.text-primary { color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.text-success { color: var(--success); }
+.text-warning { color: var(--warning); }
+.text-danger { color: var(--danger); }
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--text);
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Density */
+[data-density="compact"] { --density-scale: 0.9; }
+[data-density="normal"] { --density-scale: 1; }
+[data-density="spacious"] { --density-scale: 1.1; }
+
+/* Base */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  @apply antialiased;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background-color: var(--card);
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 9999px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}

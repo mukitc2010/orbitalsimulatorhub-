@@ -6,8 +6,12 @@ export function SpaceAGIDoctrine() {
       <div>
         <p className="text-sm text-[var(--accent-cyan)] font-medium uppercase tracking-wider mb-2">Latest Research — February 2026</p>
         <h1 className="headline">Space-AGI Doctrine</h1>
-        <p className="text-xl font-bold text-slate-700 mt-2">OrbitalSimulatorHub Space-AGI: Reproducible Simulation + Paper Package</p>
-        <p className="text-sm text-slate-500 mt-1">Unified framework for orbital mechanics and autonomous space decision models</p>
+        <p className="text-xl font-bold mt-2" style={{ color: "var(--text-secondary)" }}>OrbitalSimulatorHub Space-AGI: Reproducible Simulation + Paper Package</p>
+        <p className="text-sm mt-1" style={{ color: "var(--text-muted)" }}>Unified framework for orbital mechanics and autonomous space decision models</p>
+        <div className="os-badges">
+          <span className="os-badge">February 2026</span>
+          <span className="os-badge">Research Framework</span>
+        </div>
       </div>
 
       <section className="rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-white p-6 shadow-sm">

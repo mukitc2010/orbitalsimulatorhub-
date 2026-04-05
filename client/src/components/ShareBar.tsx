@@ -41,7 +41,7 @@ export function ShareBar({
 
   if (compact) {
     return (
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 justify-center">
         <a href={urls.reddit} target="_blank" rel="noopener noreferrer" className={redditClass} title="Share on Reddit">
           Reddit
         </a>

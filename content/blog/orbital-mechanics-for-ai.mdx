@@ -1,0 +1,61 @@
+---
+title: "Orbital Mechanics for AI: The Physics Every Space AGI Engineer Must Know"
+description: "Kepler's laws, the vis-viva equation, and two-body dynamics—the orbital mechanics foundations that AI systems use for trajectory planning and control."
+date: "2026-03-02"
+author: "OrbitalSimulatorHub"
+tags: [space, ai, orbital-mechanics, aerospace]
+seo_keywords: "orbital mechanics AI, Kepler laws, vis-viva equation, trajectory planning"
+image: "/blog/orbital-mechanics-ai.jpg"
+---
+
+# Orbital Mechanics for AI: The Physics Every Space AGI Engineer Must Know
+
+AI systems that control spacecraft must understand orbital mechanics. Trajectory planning, collision avoidance, and fuel optimization all rest on the same physics that Kepler and Newton derived centuries ago. This article covers the essential concepts—Kepler's laws, the vis-viva equation, and the two-body problem—that every Space AGI engineer needs to master.
+
+## Kepler's Three Laws
+
+**First Law:** Orbits are ellipses with the central body at one focus. The semi-major axis \(a\) and eccentricity \(e\) define the shape. A circle is an ellipse with \(e = 0\).
+
+**Second Law:** A line from the central body to the spacecraft sweeps equal area in equal time. This implies that the spacecraft moves fastest at periapsis (closest approach) and slowest at apoapsis (farthest point).
+
+**Third Law:** The square of the orbital period is proportional to the cube of the semi-major axis: \(T^2 = (4\pi^2/\mu) a^3\). For Earth, \(\mu \approx 398{,}600\) km³/s². This law lets AI predict when a satellite will complete an orbit—critical for rendezvous and collision avoidance.
+
+## The Vis-Viva Equation
+
+The vis-viva equation gives orbital speed at any point:
+
+\[
+v^2 = \mu \left( \frac{2}{r} - \frac{1}{a} \right)
+\]
+
+where \(r\) is the current distance and \(a\) is the semi-major axis. At periapsis, \(r = a(1-e)\), so speed is maximum. At apoapsis, \(r = a(1+e)\), so speed is minimum. For a circular orbit, \(r = a\), giving \(v = \sqrt{\mu/r}\). AI trajectory planners use this to compute delta-V for maneuvers—the fuel required to change orbit.
+
+## The Two-Body Problem
+
+Newton's law of gravitation leads to the two-body equations:
+
+\[
+\ddot{\mathbf{r}} = -\frac{\mu}{r^3} \mathbf{r}
+\]
+
+This has closed-form solutions: conic sections (ellipse, parabola, hyperbola) depending on energy. The state at any time can be computed from the initial state using Kepler's equation—no numerical integration needed for unperturbed orbits. AI systems use this for fast trajectory propagation and for generating training data in simulation.
+
+## Perturbations: When Two Bodies Aren't Enough
+
+Real orbits are perturbed by J2 (Earth's oblateness), solar radiation pressure, lunar and solar gravity, and drag. The J2 term causes precession of the line of nodes and the argument of periapsis—critical for sun-synchronous orbits. AI must account for these in long-horizon planning. Often, a simplified model (e.g., J2 only) is used for fast planning, with high-fidelity models reserved for validation.
+
+## Key Concepts
+
+- **Semi-major axis** = Half the longest diameter of the ellipse
+- **Eccentricity** = Measure of how "stretched" the orbit is (0 = circle, 1 = parabola)
+- **Vis-viva** = Orbital speed formula from energy conservation
+- **Delta-V** = Change in velocity required for a maneuver
+- **Two-body problem** = Simplified dynamics with one central body
+
+## Why It Matters
+
+Orbital mechanics is the language of spaceflight. AI that plans trajectories, avoids collisions, or optimizes fuel consumption must speak this language. Without it, learned policies would be blind to the fundamental constraints of motion in space. With it, AI can leverage centuries of analytical results to make smarter, faster decisions.
+
+## OrbitalSimulatorHub Mission
+
+OrbitalSimulatorHub's orbit simulator lets you experiment with Kepler's laws and the vis-viva equation in real time. Change orbital elements, run maneuvers, and see the physics in action. Our Space-AGI Lab integrates these dynamics into AI training pipelines—so you can build systems that understand orbit as deeply as any human engineer.
