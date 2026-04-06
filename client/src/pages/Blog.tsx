@@ -1,9 +1,11 @@
 import { Link } from "wouter";
 import { BLOG_POSTS, getRecentPosts, type BlogPost } from "../data/blogPosts";
-import { getBlogImage } from "../data/blogImages";
+import { getBlogImage, handleImageError } from "../data/blogImages";
 
 const CATEGORIES: { id: BlogPost["category"]; label: string; emoji: string }[] = [
   { id: "space-agi", label: "Space AGI", emoji: "🧠" },
+  { id: "agi-research", label: "AGI Research", emoji: "🔬" },
+  { id: "robot-engineering", label: "Robot Engineering", emoji: "🤖" },
   { id: "space-engineering", label: "Space Engineering", emoji: "⚙️" },
   { id: "nasa-news", label: "NASA News", emoji: "🚀" },
   { id: "space-facts", label: "Space Facts", emoji: "⭐" },
@@ -48,12 +50,13 @@ export function Blog() {
           {recent.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>
               <a className="post-card block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
-                <div className="aspect-video w-full bg-slate-200">
+                <div className="aspect-video w-full" style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0ea5e9 100%)" }}>
                   <img
                     src={getBlogImage(post)}
-                    alt=""
+                    alt={post.title}
                     className="w-full h-full object-cover"
                     loading="lazy"
+                    onError={handleImageError}
                   />
                 </div>
                 <div className="p-5">

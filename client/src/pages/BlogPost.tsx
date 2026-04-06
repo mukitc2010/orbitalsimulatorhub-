@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link, useRoute } from "wouter";
 import { getPostBySlug, getRecentPosts } from "../data/blogPosts";
 import { BlogContent } from "../components/BlogContent";
-import { getBlogImage } from "../data/blogImages";
+import { getBlogImage, handleImageError } from "../data/blogImages";
 
 const SITE_NAME = "Orbital Simulator Hub";
 const SITE_URL = "https://www.orbitalsimulatorhub.com";
@@ -68,8 +68,8 @@ export function BlogPost() {
   return (
     <div className="max-w-4xl mx-auto space-y-8">
       <article className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
-        <div className="aspect-video w-full bg-slate-200">
-          <img src={imageUrl} alt="" className="w-full h-full object-cover" />
+        <div className="aspect-video w-full" style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0ea5e9 100%)" }}>
+          <img src={imageUrl} alt={post.title} className="w-full h-full object-cover" onError={handleImageError} />
         </div>
         <div className="p-8">
           <div className="mb-4">

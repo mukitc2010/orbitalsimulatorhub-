@@ -1,9 +1,11 @@
 import { Link, useRoute } from "wouter";
 import { getPostsByCategory, type BlogPost } from "../data/blogPosts";
-import { getBlogImage } from "../data/blogImages";
+import { getBlogImage, handleImageError } from "../data/blogImages";
 
-const CATEGORY_LABELS: Record<BlogPost["category"], { label: string; emoji: string }> = {
+const CATEGORY_LABELS: Record<string, { label: string; emoji: string }> = {
   "space-agi": { label: "Space AGI", emoji: "🧠" },
+  "agi-research": { label: "AGI Research", emoji: "🔬" },
+  "robot-engineering": { label: "Robot Engineering", emoji: "🤖" },
   "space-engineering": { label: "Space Engineering", emoji: "⚙️" },
   "nasa-news": { label: "NASA News", emoji: "🚀" },
   "space-facts": { label: "Space Facts", emoji: "⭐" },
@@ -44,8 +46,8 @@ export function BlogCategory() {
         {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`}>
             <a className="block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
-              <div className="aspect-video w-full bg-slate-200">
-                <img src={getBlogImage(post)} alt="" className="w-full h-full object-cover" loading="lazy" />
+              <div className="aspect-video w-full" style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0ea5e9 100%)" }}>
+                <img src={getBlogImage(post)} alt={post.title} className="w-full h-full object-cover" loading="lazy" onError={handleImageError} />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-lg mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
