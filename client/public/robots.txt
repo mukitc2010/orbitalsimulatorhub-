@@ -42,6 +42,23 @@ Allow: /welcome
 # Bing
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
 
 # ChatGPT / OpenAI
 User-agent: ChatGPT-User

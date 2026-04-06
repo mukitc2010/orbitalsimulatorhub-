@@ -3,7 +3,7 @@ import { useLocation } from "wouter";
 import { getSEOConfig } from "../data/seo-config";
 
 const DEFAULT_TITLE = "Orbital Mechanics Simulator — Free 3D Satellite Orbit Simulator | NASA & Space Study";
-const DEFAULT_DESCRIPTION = "Free orbital mechanics simulator. Add LEO, MEO, GEO satellites. Watch ISS at 7.66 km/s, Starlink, GPS in 3D. 500+ astronauts, nuclear rockets, Mars missions. No signup.";
+const DEFAULT_DESCRIPTION = "Free orbital mechanics simulator: 3D satellite orbits, AI swarm collision avoidance, 110+ space articles, 500+ astronaut profiles, planet explorer, NASA missions, Space AGI research. ISS 7.66 km/s, Starlink, Mars. No signup.";
 const SITE_URL = "https://www.orbitalsimulatorhub.com";
 const SITE_NAME = "Orbital Simulator Hub";
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
