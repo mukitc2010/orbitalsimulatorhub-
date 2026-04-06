@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-04-05T22:00:05.111Z",
+  "generated_at": "2026-04-06T00:04:40.447Z",
   "featured_article": {
-    "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
-    "excerpt": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260405"
+    "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
+    "excerpt": "Delayed MDP and Mars communication delay: why AI must act without Earth is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260406"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Self-repairing spacecraft: AI that fixes itself...",
-      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Robot manipulation and sensor fusion for space ...",
-      "blurb": "Robot manipulation and sensor fusion for space construction tasks is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "How Starlink creates global broadband internet ...",
+      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How satellite constellations maintain formation...",
-      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "N-body equations: when two-body mechanics is no...",
+      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260406",
+      "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
+      "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-04-06"
+    },
     {
       "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260405",
       "title": "How MPC and LQR control algorithms keep satellite swarms safe",
@@ -37,13 +44,6 @@
       "title": "ARC-AGI Benchmark 2026: How We Measure Progress Toward Artificial General Intelligence",
       "excerpt": "The ARC-AGI benchmark tests whether AI can solve novel visual puzzles it has never seen — the gold standard for measuring compositional reasoning and true general intelligence.",
       "category": "agi-research",
-      "date": "2026-04-05"
-    },
-    {
-      "slug": "nasa-valkyrie-humanoid-robot-mars-mission-2026",
-      "title": "NASA's Valkyrie Humanoid Robot: A Decade of Engineering for Mars",
-      "excerpt": "NASA's R5 Valkyrie is a 6-foot humanoid robot with 44 degrees of freedom, designed to build habitats and perform maintenance on Mars before humans arrive.",
-      "category": "robot-engineering",
       "date": "2026-04-05"
     }
   ],
