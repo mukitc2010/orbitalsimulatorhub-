@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-07T01:29:36.645Z",
+  "generated_at": "2026-04-07T06:14:52.565Z",
   "featured_article": {
-    "title": "Lambert's problem: how to plan an intercept between two orbits",
-    "excerpt": "Lambert's problem: how to plan an intercept between two orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260407"
+    "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
+    "excerpt": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260407"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Hubble constant and the expanding universe cont...",
-      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Quantum tunneling in nuclear fusion inside stars",
+      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The footprints on the Moon will last 100 millio...",
-      "blurb": "The footprints on the Moon will last 100 million years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Why spacecraft have specific shapes for differe...",
+      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How AI satellites make autonomous decisions in ...",
-      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
+      "title": "N-body equations: when two-body mechanics is no...",
+      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-07"
     },
     {
+      "slug": "walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260407",
+      "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
+      "excerpt": "Learn about walking stability breakthroughs: 81% recovery improvement in bipedal robots — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-04-07"
+    },
+    {
       "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260406",
       "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
       "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-04-06"
-    },
-    {
-      "slug": "structural-theory-of-general-artificial-intelligence-smgi-explained-20260406",
-      "title": "Structural theory of general artificial intelligence (SMGI) explained",
-      "excerpt": "Learn about structural theory of general artificial intelligence (smgi) explained — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-04-06"
     }
   ],
