@@ -3,6 +3,7 @@ import { Link, useRoute } from "wouter";
 import { getPostBySlug, getRecentPosts } from "../data/blogPosts";
 import { BlogContent } from "../components/BlogContent";
 import { getBlogImage, handleImageError } from "../data/blogImages";
+import { ShareBar } from "../components/ShareBar";
 
 const SITE_NAME = "Orbital Simulator Hub";
 const SITE_URL = "https://www.orbitalsimulatorhub.com";
@@ -96,6 +97,10 @@ export function BlogPost() {
             </div>
           </div>
         )}
+
+          <div className="mt-6 pt-6 border-t border-slate-200">
+            <ShareBar path={`/blog/${post.slug}`} title={`${post.title} | Orbital Simulator Hub`} showRedditSubs />
+          </div>
         </div>
       </article>
 

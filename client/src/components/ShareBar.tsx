@@ -1,7 +1,3 @@
-/**
- * ShareBar — Reddit, Twitter, etc. for link previews and Reddit search visibility.
- * When users share on Reddit, the link gets indexed; Reddit search finds posts linking here.
- */
 const SITE_URL = "https://www.orbitalsimulatorhub.com";
 const DEFAULT_TITLE = "Orbital Simulator Hub – Free 3D Satellite Orbit Simulator & Space Education";
 
@@ -18,6 +14,11 @@ function getShareUrls(path = "/", title = DEFAULT_TITLE) {
     twitter: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
     linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+    whatsapp: `https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`,
+    telegram: `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
+    hackernews: `https://news.ycombinator.com/submitlink?u=${encodedUrl}&t=${encodedTitle}`,
+    pinterest: `https://pinterest.com/pin/create/button/?url=${encodedUrl}&description=${encodedTitle}`,
+    email: `mailto:?subject=${encodedTitle}&body=Check%20this%20out:%20${encodedUrl}`,
   };
 }
 
@@ -34,53 +35,46 @@ export function ShareBar({
 }) {
   const urls = getShareUrls(path, title);
 
-  const baseClass = "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition hover:opacity-90";
-  const redditClass = `${baseClass} bg-[#FF4500]/15 text-[#FF4500] border border-[#FF4500]/40`;
-  const twitterClass = `${baseClass} bg-sky-500/15 text-sky-600 border border-sky-500/40`;
-  const linkedinClass = `${baseClass} bg-blue-600/15 text-blue-600 border border-blue-600/40`;
+  const base = "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition hover:scale-105 hover:shadow-md";
+  const reddit = `${base} bg-[#FF4500]/15 text-[#FF4500] border border-[#FF4500]/40`;
+  const twitter = `${base} bg-sky-500/15 text-sky-400 border border-sky-500/40`;
+  const linkedin = `${base} bg-blue-600/15 text-blue-400 border border-blue-600/40`;
+  const facebook = `${base} bg-blue-700/15 text-blue-500 border border-blue-700/40`;
+  const whatsapp = `${base} bg-green-600/15 text-green-400 border border-green-600/40`;
+  const telegram = `${base} bg-sky-600/15 text-sky-400 border border-sky-600/40`;
+  const hn = `${base} bg-orange-500/15 text-orange-400 border border-orange-500/40`;
+  const email = `${base} bg-slate-500/15 text-slate-300 border border-slate-500/40`;
 
   if (compact) {
     return (
       <div className="flex flex-wrap gap-2 justify-center">
-        <a href={urls.reddit} target="_blank" rel="noopener noreferrer" className={redditClass} title="Share on Reddit">
-          Reddit
-        </a>
-        <a href={urls.twitter} target="_blank" rel="noopener noreferrer" className={twitterClass} title="Share on X/Twitter">
-          X
-        </a>
+        <a href={urls.reddit} target="_blank" rel="noopener noreferrer" className={reddit}>Reddit</a>
+        <a href={urls.twitter} target="_blank" rel="noopener noreferrer" className={twitter}>X</a>
+        <a href={urls.whatsapp} target="_blank" rel="noopener noreferrer" className={whatsapp}>WhatsApp</a>
+        <a href={urls.linkedin} target="_blank" rel="noopener noreferrer" className={linkedin}>LinkedIn</a>
       </div>
     );
   }
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-slate-50/80 p-4">
-      <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Share on Reddit & social</p>
+    <div className="rounded-xl border-2 p-5" style={{ background: "linear-gradient(135deg, rgba(15,23,42,0.8) 0%, rgba(30,41,59,0.8) 100%)", borderColor: "var(--accent-cyan, #00d9ff)" }}>
+      <p className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-cyan, #00d9ff)" }}>Share this page</p>
       <div className="flex flex-wrap gap-2">
-        <a href={urls.reddit} target="_blank" rel="noopener noreferrer" className={redditClass} title="Share on Reddit">
-          Reddit
-        </a>
+        <a href={urls.reddit} target="_blank" rel="noopener noreferrer" className={reddit}>Reddit</a>
         {showRedditSubs && (
           <>
-            <a href={urls.redditSpace} target="_blank" rel="noopener noreferrer" className={`${redditClass} text-xs`} title="Share to r/space">
-              r/space
-            </a>
-            <a href={urls.redditAstronomy} target="_blank" rel="noopener noreferrer" className={`${redditClass} text-xs`} title="Share to r/astronomy">
-              r/astronomy
-            </a>
-            <a href={urls.redditNasa} target="_blank" rel="noopener noreferrer" className={`${redditClass} text-xs`} title="Share to r/nasa">
-              r/nasa
-            </a>
+            <a href={urls.redditSpace} target="_blank" rel="noopener noreferrer" className={`${reddit} text-xs`}>r/space</a>
+            <a href={urls.redditAstronomy} target="_blank" rel="noopener noreferrer" className={`${reddit} text-xs`}>r/astronomy</a>
+            <a href={urls.redditNasa} target="_blank" rel="noopener noreferrer" className={`${reddit} text-xs`}>r/nasa</a>
           </>
         )}
-        <a href={urls.twitter} target="_blank" rel="noopener noreferrer" className={twitterClass} title="Share on X/Twitter">
-          X
-        </a>
-        <a href={urls.linkedin} target="_blank" rel="noopener noreferrer" className={linkedinClass} title="Share on LinkedIn">
-          LinkedIn
-        </a>
-        <a href={urls.facebook} target="_blank" rel="noopener noreferrer" className={`${baseClass} bg-blue-700/15 text-blue-700 border border-blue-700/40`} title="Share on Facebook">
-          Facebook
-        </a>
+        <a href={urls.twitter} target="_blank" rel="noopener noreferrer" className={twitter}>X / Twitter</a>
+        <a href={urls.linkedin} target="_blank" rel="noopener noreferrer" className={linkedin}>LinkedIn</a>
+        <a href={urls.facebook} target="_blank" rel="noopener noreferrer" className={facebook}>Facebook</a>
+        <a href={urls.whatsapp} target="_blank" rel="noopener noreferrer" className={whatsapp}>WhatsApp</a>
+        <a href={urls.telegram} target="_blank" rel="noopener noreferrer" className={telegram}>Telegram</a>
+        <a href={urls.hackernews} target="_blank" rel="noopener noreferrer" className={hn}>Hacker News</a>
+        <a href={urls.email} className={email}>Email</a>
       </div>
     </div>
   );

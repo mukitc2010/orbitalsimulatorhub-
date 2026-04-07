@@ -9,6 +9,7 @@ import { ExplainBox } from "../components/ExplainBox";
 import { keplerianToCartesian, propagateOrbit } from "../orbitalClient";
 import { getOrbitTemplateClient } from "../orbitalUtils";
 import { SIM_SPEEDS } from "../const";
+import { ShareBar } from "../components/ShareBar";
 import type { OrbitalElements, CartesianState } from "../../../shared/types";
 
 const SCALE = 6371;
@@ -236,6 +237,8 @@ export function Simulator() {
       </div>
 
       <SimulatorGlossary />
+
+      <ShareBar path="/simulator" title="Free 3D Satellite Orbit Simulator — Add ISS, Starlink, GPS | Orbital Simulator Hub" showRedditSubs />
     </div>
   );
 }

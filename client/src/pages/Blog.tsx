@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { BLOG_POSTS, getRecentPosts, type BlogPost } from "../data/blogPosts";
 import { getBlogImage, handleImageError } from "../data/blogImages";
+import { ShareBar } from "../components/ShareBar";
 
 const CATEGORIES: { id: BlogPost["category"]; label: string; emoji: string }[] = [
   { id: "space-agi", label: "Space AGI", emoji: "🧠" },
@@ -80,6 +81,8 @@ export function Blog() {
           <Link href="/blog/rss.xml"><a className="text-[var(--accent-cyan)] hover:underline">RSS Feed</a></Link> available for automatic updates.
         </p>
       </section>
+
+      <ShareBar path="/blog" title="Space Blog — 110+ Articles on NASA, AGI, Orbital Mechanics | Orbital Simulator Hub" showRedditSubs />
     </div>
   );
 }
