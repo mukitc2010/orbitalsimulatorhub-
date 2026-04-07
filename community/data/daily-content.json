@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-04-07T18:07:18.619Z",
+  "generated_at": "2026-04-07T20:38:25.672Z",
   "featured_article": {
-    "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
-    "excerpt": "Why compositional reasoning remains the hardest unsolved AGI challenge is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260407"
+    "title": "Space is completely silent because sound needs a medium",
+    "excerpt": "Space is completely silent because sound needs a medium is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-facts",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-is-completely-silent-because-sound-needs-a-medium-20260407"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Vis-viva equation explained: the master formula...",
-      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Space AGI five pillars: perception, planning, c...",
+      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Quantum entanglement and future space communica...",
-      "blurb": "Quantum entanglement and future space communication is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How spy satellites achieve sub-meter imaging re...",
+      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Scramjet engines: air-breathing propulsion at h...",
-      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Satellite communication: how data travels from ...",
+      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
     {
-      "slug": "space-is-completely-silent-because-sound-needs-a-medium-20260407",
-      "title": "Space is completely silent because sound needs a medium",
-      "excerpt": "Learn about space is completely silent because sound needs a medium — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
+      "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260407",
+      "title": "Lambert's problem: how to plan an intercept between two orbits",
+      "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
       "date": "2026-04-07"
     },
     {
-      "slug": "why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260407",
-      "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
-      "excerpt": "Learn about why compositional reasoning remains the hardest unsolved agi challenge — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
+      "slug": "walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260407",
+      "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
+      "excerpt": "Learn about walking stability breakthroughs: 81% recovery improvement in bipedal robots — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
       "date": "2026-04-07"
     },
     {
-      "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260406",
-      "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
-      "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-04-06"
+      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260407",
+      "title": "J2 perturbation: why orbits drift and how to correct them",
+      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-04-07"
     }
   ],
   "learning_paths": {
