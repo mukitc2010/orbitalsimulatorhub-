@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-07T03:50:26.804Z",
+  "generated_at": "2026-04-07T18:07:18.619Z",
   "featured_article": {
-    "title": "Space is completely silent because sound needs a medium",
-    "excerpt": "Space is completely silent because sound needs a medium is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-facts",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-is-completely-silent-because-sound-needs-a-medium-20260407"
+    "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
+    "excerpt": "Why compositional reasoning remains the hardest unsolved AGI challenge is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260407"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Transformer-based abstract reasoning and test-t...",
-      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Vis-viva equation explained: the master formula...",
+      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The uncertainty principle and its real-world ap...",
-      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Quantum entanglement and future space communica...",
+      "blurb": "Quantum entanglement and future space communication is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Kepler's three laws with derivations and real s...",
-      "blurb": "Kepler's three laws with derivations and real satellite examples is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Scramjet engines: air-breathing propulsion at h...",
+      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-07"
     },
     {
+      "slug": "why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260407",
+      "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
+      "excerpt": "Learn about why compositional reasoning remains the hardest unsolved agi challenge — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-04-07"
+    },
+    {
       "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260406",
       "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
       "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-04-06"
-    },
-    {
-      "slug": "structural-theory-of-general-artificial-intelligence-smgi-explained-20260406",
-      "title": "Structural theory of general artificial intelligence (SMGI) explained",
-      "excerpt": "Learn about structural theory of general artificial intelligence (smgi) explained — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-04-06"
     }
   ],
