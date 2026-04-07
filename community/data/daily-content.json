@@ -1,49 +1,49 @@
 {
-  "generated_at": "2026-04-07T20:38:25.672Z",
+  "generated_at": "2026-04-07T23:49:35.377Z",
   "featured_article": {
-    "title": "Space is completely silent because sound needs a medium",
-    "excerpt": "Space is completely silent because sound needs a medium is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-facts",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-is-completely-silent-because-sound-needs-a-medium-20260407"
+    "title": "SpaceX Starship development and test flights",
+    "excerpt": "SpaceX Starship development and test flights is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "nasa-news",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/spacex-starship-development-and-test-flights-20260407"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Space AGI five pillars: perception, planning, c...",
-      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
+      "title": "AGI safety and alignment: ensuring beneficial a...",
+      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How spy satellites achieve sub-meter imaging re...",
-      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Computational fluid dynamics in spacecraft design",
+      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Satellite communication: how data travels from ...",
-      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How NASA tests aerodynamics in wind tunnels",
+      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
     {
-      "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260407",
-      "title": "Lambert's problem: how to plan an intercept between two orbits",
-      "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
+      "slug": "space-is-completely-silent-because-sound-needs-a-medium-20260407",
+      "title": "Space is completely silent because sound needs a medium",
+      "excerpt": "Learn about space is completely silent because sound needs a medium — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-facts",
       "date": "2026-04-07"
     },
     {
-      "slug": "walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260407",
-      "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
-      "excerpt": "Learn about walking stability breakthroughs: 81% recovery improvement in bipedal robots — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
+      "slug": "why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260407",
+      "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
+      "excerpt": "Learn about why compositional reasoning remains the hardest unsolved agi challenge — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
       "date": "2026-04-07"
     },
     {
-      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260407",
-      "title": "J2 perturbation: why orbits drift and how to correct them",
-      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
+      "slug": "spacex-starship-development-and-test-flights-20260407",
+      "title": "SpaceX Starship development and test flights",
+      "excerpt": "Learn about spacex starship development and test flights — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "nasa-news",
       "date": "2026-04-07"
     }
   ],
