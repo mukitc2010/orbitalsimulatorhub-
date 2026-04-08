@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-08T01:29:53.017Z",
+  "generated_at": "2026-04-08T06:17:00.455Z",
   "featured_article": {
-    "title": "LEO vs MEO vs GEO: choosing the right orbit for a mission",
-    "excerpt": "LEO vs MEO vs GEO: choosing the right orbit for a mission is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/leo-vs-meo-vs-geo-choosing-the-right-orbit-for-a-mission-20260408"
+    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260408"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Self-repairing spacecraft: AI that fixes itself...",
-      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
+      "title": "James Webb Space Telescope latest discoveries",
+      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The footprints on the Moon will last 100 millio...",
-      "blurb": "The footprints on the Moon will last 100 million years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Hubble constant and the expanding universe cont...",
+      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum entanglement and future space communica...",
-      "blurb": "Quantum entanglement and future space communication is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
+      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-08"
     },
     {
+      "slug": "ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260408",
+      "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+      "excerpt": "Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-04-08"
+    },
+    {
       "slug": "space-is-completely-silent-because-sound-needs-a-medium-20260407",
       "title": "Space is completely silent because sound needs a medium",
       "excerpt": "Learn about space is completely silent because sound needs a medium — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-facts",
-      "date": "2026-04-07"
-    },
-    {
-      "slug": "why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260407",
-      "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
-      "excerpt": "Learn about why compositional reasoning remains the hardest unsolved agi challenge — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-04-07"
     }
   ],
