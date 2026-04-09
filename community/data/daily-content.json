@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-09T10:53:40.102Z",
+  "generated_at": "2026-04-09T16:14:00.917Z",
   "featured_article": {
-    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-    "excerpt": "Soft robotics and compliant actuators for safe human-robot collaboration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
+    "excerpt": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260409"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260409"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Satellite communication: how data travels from ...",
-      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How Starlink creates global broadband internet ...",
+      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Quantum sensors for deep space navigation",
-      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How orbital debris tracking and avoidance works",
+      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Why spacecraft have specific shapes for differe...",
-      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "A teaspoon of neutron star weighs 6 billion tons",
+      "blurb": "A teaspoon of neutron star weighs 6 billion tons is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
