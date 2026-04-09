@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-09T01:22:32.020Z",
+  "generated_at": "2026-04-09T06:16:47.648Z",
   "featured_article": {
-    "title": "Mars Perseverance rover sample collection updates",
-    "excerpt": "Mars Perseverance rover sample collection updates is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/mars-perseverance-rover-sample-collection-updates-20260409"
+    "title": "Quantum entanglement and future space communication",
+    "excerpt": "Quantum entanglement and future space communication is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/quantum-entanglement-and-future-space-communication-20260409"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How neutron stars can spin 716 times per second",
-      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How AI satellites make autonomous decisions in ...",
+      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The Great Red Spot on Jupiter is shrinking",
-      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Vis-viva equation explained: the master formula...",
+      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How stars are born inside molecular gas clouds",
+      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-09"
     },
     {
+      "slug": "quantum-entanglement-and-future-space-communication-20260409",
+      "title": "Quantum entanglement and future space communication",
+      "excerpt": "Learn about quantum entanglement and future space communication — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "quantum-physics",
+      "date": "2026-04-09"
+    },
+    {
       "slug": "leo-vs-meo-vs-geo-choosing-the-right-orbit-for-a-mission-20260408",
       "title": "LEO vs MEO vs GEO: choosing the right orbit for a mission",
       "excerpt": "Learn about leo vs meo vs geo: choosing the right orbit for a mission — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "satellite-tutorials",
-      "date": "2026-04-08"
-    },
-    {
-      "slug": "ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260408",
-      "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
-      "excerpt": "Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-04-08"
     }
   ],
