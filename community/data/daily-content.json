@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-10T10:44:50.278Z",
+  "generated_at": "2026-04-10T15:42:36.422Z",
   "featured_article": {
-    "title": "Exoplanet detection methods: transit and radial velocity",
-    "excerpt": "Exoplanet detection methods: transit and radial velocity is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/exoplanet-detection-methods-transit-and-radial-velocity-20260410"
+    "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
+    "excerpt": "Google DeepMind cognitive framework: 10 abilities needed for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260410"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Walking stability breakthroughs: 81% recovery i...",
-      "blurb": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "The uncertainty principle and its real-world ap...",
+      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Quantum sensors for deep space navigation",
-      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "The physics of geostationary orbit and why it m...",
+      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum entanglement and future space communica...",
-      "blurb": "Quantum entanglement and future space communication is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Escape velocity derivation from conservation of...",
+      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
