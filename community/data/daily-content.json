@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-04-10T06:27:59.334Z",
+  "generated_at": "2026-04-10T10:44:50.278Z",
   "featured_article": {
-    "title": "Robot manipulation and sensor fusion for space construction tasks",
-    "excerpt": "Robot manipulation and sensor fusion for space construction tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260410"
+    "title": "Exoplanet detection methods: transit and radial velocity",
+    "excerpt": "Exoplanet detection methods: transit and radial velocity is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "astronomy-lessons",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/exoplanet-detection-methods-transit-and-radial-velocity-20260410"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How lift is generated: Bernoulli vs Newton expl...",
-      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Walking stability breakthroughs: 81% recovery i...",
+      "blurb": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Satellite communication: how data travels from ...",
-      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Quantum sensors for deep space navigation",
+      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
@@ -40,11 +40,11 @@
       "date": "2026-04-10"
     },
     {
-      "slug": "mars-perseverance-rover-sample-collection-updates-20260409",
-      "title": "Mars Perseverance rover sample collection updates",
-      "excerpt": "Learn about mars perseverance rover sample collection updates — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "nasa-news",
-      "date": "2026-04-09"
+      "slug": "exoplanet-detection-methods-transit-and-radial-velocity-20260410",
+      "title": "Exoplanet detection methods: transit and radial velocity",
+      "excerpt": "Learn about exoplanet detection methods: transit and radial velocity — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "astronomy-lessons",
+      "date": "2026-04-10"
     }
   ],
   "learning_paths": {
