@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-11T15:25:31.376Z",
+  "generated_at": "2026-04-11T20:23:23.566Z",
   "featured_article": {
-    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
-    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260411"
+    "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
+    "excerpt": "Scramjet engines: air-breathing propulsion at hypersonic speeds is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/scramjet-engines-air-breathing-propulsion-at-hypersonic-speeds-20260411"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The Great Red Spot on Jupiter is shrinking",
-      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Why a day on Venus is longer than its year",
+      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Hubble constant and the expanding universe cont...",
+      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "N-body equations: when two-body mechanics is no...",
-      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Robot engineering for lunar and Martian surface...",
+      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
