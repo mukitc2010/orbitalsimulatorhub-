@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Sat, 11 Apr 2026 10:26:28 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 15:25:31 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Orbital energy and specific orbital energy formula</title>
@@ -27,6 +27,13 @@
       <description>Learn about lunar gateway construction and deep space habitation — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 GMT</pubDate>
       <category>nasa-news</category>
+    </item>
+    <item>
+      <title>AI collision avoidance: how 500+ satellites avoid each other without human input</title>
+      <link>https://orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260411</link>
+      <description>Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
     </item>
     <item>
       <title>How heat shields protect spacecraft during re-entry</title>
