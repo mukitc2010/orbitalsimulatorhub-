@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-11T05:55:23.110Z",
+  "generated_at": "2026-04-11T10:26:27.888Z",
   "featured_article": {
-    "title": "SpaceX Starship development and test flights",
-    "excerpt": "SpaceX Starship development and test flights is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Lunar Gateway construction and deep space habitation",
+    "excerpt": "Lunar Gateway construction and deep space habitation is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/spacex-starship-development-and-test-flights-20260411"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lunar-gateway-construction-and-deep-space-habitation-20260411"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How weather satellites predict storms and track...",
-      "blurb": "How weather satellites predict storms and track hurricanes is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How orbital debris tracking and avoidance works",
+      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Saturn's rings are disappearing over millions o...",
-      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Google DeepMind cognitive framework: 10 abiliti...",
+      "blurb": "Google DeepMind cognitive framework: 10 abilities needed for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "From narrow AI to AGI: what engineering breakth...",
-      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Delayed MDP and Mars communication delay: why A...",
+      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-11"
     },
     {
-      "slug": "how-heat-shields-protect-spacecraft-during-re-entry-20260410",
-      "title": "How heat shields protect spacecraft during re-entry",
-      "excerpt": "Learn about how heat shields protect spacecraft during re-entry — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
-      "date": "2026-04-10"
+      "slug": "lunar-gateway-construction-and-deep-space-habitation-20260411",
+      "title": "Lunar Gateway construction and deep space habitation",
+      "excerpt": "Learn about lunar gateway construction and deep space habitation — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "nasa-news",
+      "date": "2026-04-11"
     }
   ],
   "learning_paths": {
