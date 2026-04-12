@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-04-11T20:23:23.566Z",
+  "generated_at": "2026-04-12T01:49:03.674Z",
   "featured_article": {
-    "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
-    "excerpt": "Scramjet engines: air-breathing propulsion at hypersonic speeds is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/scramjet-engines-air-breathing-propulsion-at-hypersonic-speeds-20260411"
+    "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
+    "excerpt": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260412"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Why a day on Venus is longer than its year",
-      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Saturn's rings are disappearing over millions o...",
+      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Hubble constant and the expanding universe cont...",
-      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How stars are born inside molecular gas clouds",
+      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Robot engineering for lunar and Martian surface...",
-      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260412",
+      "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
+      "excerpt": "Learn about arc-agi benchmark: measuring progress toward artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-04-12"
+    },
     {
       "slug": "orbital-energy-and-specific-orbital-energy-formula-20260411",
       "title": "Orbital energy and specific orbital energy formula",
@@ -36,13 +43,6 @@
       "slug": "spacex-starship-development-and-test-flights-20260411",
       "title": "SpaceX Starship development and test flights",
       "excerpt": "Learn about spacex starship development and test flights — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "nasa-news",
-      "date": "2026-04-11"
-    },
-    {
-      "slug": "lunar-gateway-construction-and-deep-space-habitation-20260411",
-      "title": "Lunar Gateway construction and deep space habitation",
-      "excerpt": "Learn about lunar gateway construction and deep space habitation — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "nasa-news",
       "date": "2026-04-11"
     }
