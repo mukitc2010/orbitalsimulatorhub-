@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-12T01:49:03.674Z",
+  "generated_at": "2026-04-12T06:20:16.991Z",
   "featured_article": {
-    "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
-    "excerpt": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260412"
+    "title": "Hubble constant and the expanding universe controversy",
+    "excerpt": "Hubble constant and the expanding universe controversy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "astronomy-lessons",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hubble-constant-and-the-expanding-universe-controversy-20260412"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Saturn's rings are disappearing over millions o...",
-      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Space AGI five pillars: perception, planning, c...",
+      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Computational fluid dynamics in spacecraft design",
+      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "There are more stars than grains of sand on Earth",
-      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How neutron stars can spin 716 times per second",
+      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-12"
     },
     {
+      "slug": "hubble-constant-and-the-expanding-universe-controversy-20260412",
+      "title": "Hubble constant and the expanding universe controversy",
+      "excerpt": "Learn about hubble constant and the expanding universe controversy — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "astronomy-lessons",
+      "date": "2026-04-12"
+    },
+    {
       "slug": "orbital-energy-and-specific-orbital-energy-formula-20260411",
       "title": "Orbital energy and specific orbital energy formula",
       "excerpt": "Learn about orbital energy and specific orbital energy formula — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-04-11"
-    },
-    {
-      "slug": "spacex-starship-development-and-test-flights-20260411",
-      "title": "SpaceX Starship development and test flights",
-      "excerpt": "Learn about spacex starship development and test flights — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "nasa-news",
       "date": "2026-04-11"
     }
   ],
