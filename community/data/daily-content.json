@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-13T07:10:57.955Z",
+  "generated_at": "2026-04-13T11:10:36.885Z",
   "featured_article": {
-    "title": "Vis-viva equation explained: the master formula for all orbits",
-    "excerpt": "Vis-viva equation explained: the master formula for all orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/vis-viva-equation-explained-the-master-formula-for-all-orbits-20260413"
+    "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+    "excerpt": "Robonaut 2: the first humanoid robot in space aboard the ISS is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260413"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Gravitational waves and what they tell us about...",
+      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Scramjet engines: air-breathing propulsion at h...",
-      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Saturn's rings are disappearing over millions o...",
+      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How orbital debris tracking and avoidance works",
-      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "The uncertainty principle and its real-world ap...",
+      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-13"
     },
     {
-      "slug": "arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260412",
-      "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
-      "excerpt": "Learn about arc-agi benchmark: measuring progress toward artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
-      "date": "2026-04-12"
+      "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260413",
+      "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+      "excerpt": "Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-04-13"
     }
   ],
   "learning_paths": {
