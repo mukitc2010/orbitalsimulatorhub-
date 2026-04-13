@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-04-12T20:27:06.537Z",
+  "generated_at": "2026-04-13T01:53:38.597Z",
   "featured_article": {
-    "title": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere",
-    "excerpt": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260412"
+    "title": "Robot manipulation and sensor fusion for space construction tasks",
+    "excerpt": "Robot manipulation and sensor fusion for space construction tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260413"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How galaxies collide and merge over billions of...",
-      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How orbital debris tracking and avoidance works",
+      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Artemis program progress and Moon landing plans",
-      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Vis-viva equation explained: the master formula...",
+      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "What is Space AGI and why it matters for future...",
-      "blurb": "What is Space AGI and why it matters for future space exploration is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Voyager spacecraft updates from interstellar space",
+      "blurb": "Voyager spacecraft updates from interstellar space is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260413",
+      "title": "Robot manipulation and sensor fusion for space construction tasks",
+      "excerpt": "Learn about robot manipulation and sensor fusion for space construction tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-04-13"
+    },
     {
       "slug": "arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260412",
       "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
@@ -37,13 +44,6 @@
       "title": "Hubble constant and the expanding universe controversy",
       "excerpt": "Learn about hubble constant and the expanding universe controversy — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "astronomy-lessons",
-      "date": "2026-04-12"
-    },
-    {
-      "slug": "why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260412",
-      "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
-      "excerpt": "Learn about why compositional reasoning remains the hardest unsolved agi challenge — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-04-12"
     }
   ],
