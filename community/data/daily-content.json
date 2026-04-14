@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-04-14T06:27:17.888Z",
+  "generated_at": "2026-04-14T10:57:15.941Z",
   "featured_article": {
-    "title": "Gravitational waves and what they tell us about spacetime",
-    "excerpt": "Gravitational waves and what they tell us about spacetime is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/gravitational-waves-and-what-they-tell-us-about-spacetime-20260414"
+    "title": "Swarm robotics for in-space assembly and orbital construction",
+    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260414"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "NASA Europa Clipper mission to Jupiter's moon",
-      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How weather satellites predict storms and track...",
+      "blurb": "How weather satellites predict storms and track hurricanes is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Orbital energy and specific orbital energy formula",
-      "blurb": "Orbital energy and specific orbital energy formula is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Wave-particle duality: the double-slit experime...",
+      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
@@ -40,11 +40,11 @@
       "date": "2026-04-14"
     },
     {
-      "slug": "robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260413",
-      "title": "Robot manipulation and sensor fusion for space construction tasks",
-      "excerpt": "Learn about robot manipulation and sensor fusion for space construction tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "slug": "swarm-robotics-for-in-space-assembly-and-orbital-construction-20260414",
+      "title": "Swarm robotics for in-space assembly and orbital construction",
+      "excerpt": "Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
-      "date": "2026-04-13"
+      "date": "2026-04-14"
     }
   ],
   "learning_paths": {
