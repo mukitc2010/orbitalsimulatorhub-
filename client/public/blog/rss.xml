@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Wed, 15 Apr 2026 16:01:02 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 20:40:09 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NASA Europa Clipper mission to Jupiter&apos;s moon</title>
@@ -34,6 +34,13 @@
       <description>Learn about transformer-based abstract reasoning and test-time training for agi — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
       <category>agi-research</category>
+    </item>
+    <item>
+      <title>Tsiolkovsky rocket equation: why we need staging to reach orbit</title>
+      <link>https://orbitalsimulatorhub.com/blog/tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260415</link>
+      <description>Learn about tsiolkovsky rocket equation: why we need staging to reach orbit — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
     </item>
     <item>
       <title>J2 perturbation: why orbits drift and how to correct them</title>

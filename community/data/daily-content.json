@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-15T16:01:02.585Z",
+  "generated_at": "2026-04-15T20:40:09.461Z",
   "featured_article": {
-    "title": "Transformer-based abstract reasoning and test-time training for AGI",
-    "excerpt": "Transformer-based abstract reasoning and test-time training for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260415"
+    "title": "Tsiolkovsky rocket equation: why we need staging to reach orbit",
+    "excerpt": "Tsiolkovsky rocket equation: why we need staging to reach orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260415"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Lunar Gateway construction and deep space habit...",
-      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Transformer-based abstract reasoning and test-t...",
+      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
-    },
-    {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
-      "icon": "atom"
     },
     {
       "title": "Dark matter: the invisible mass holding galaxie...",
       "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "icon": "atom"
+    },
+    {
+      "title": "Robot engineering for lunar and Martian surface...",
+      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
