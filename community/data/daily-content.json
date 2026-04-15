@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-04-14T20:44:08.998Z",
+  "generated_at": "2026-04-15T01:45:08.222Z",
   "featured_article": {
-    "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
-    "excerpt": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260414"
+    "title": "NASA Europa Clipper mission to Jupiter's moon",
+    "excerpt": "NASA Europa Clipper mission to Jupiter's moon is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "nasa-news",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-europa-clipper-mission-to-jupiters-moon-20260415"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "James Webb Space Telescope latest discoveries",
-      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Walking stability breakthroughs: 81% recovery i...",
+      "blurb": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Orbital energy and specific orbital energy formula",
-      "blurb": "Orbital energy and specific orbital energy formula is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "From narrow AI to AGI: what engineering breakth...",
+      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How heat shields protect spacecraft during re-e...",
-      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Robot manipulation and sensor fusion for space ...",
+      "blurb": "Robot manipulation and sensor fusion for space construction tasks is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "nasa-europa-clipper-mission-to-jupiters-moon-20260415",
+      "title": "NASA Europa Clipper mission to Jupiter's moon",
+      "excerpt": "Learn about nasa europa clipper mission to jupiter's moon — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "nasa-news",
+      "date": "2026-04-15"
+    },
     {
       "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260414",
       "title": "J2 perturbation: why orbits drift and how to correct them",
@@ -37,13 +44,6 @@
       "title": "Gravitational waves and what they tell us about spacetime",
       "excerpt": "Learn about gravitational waves and what they tell us about spacetime — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "astronomy-lessons",
-      "date": "2026-04-14"
-    },
-    {
-      "slug": "swarm-robotics-for-in-space-assembly-and-orbital-construction-20260414",
-      "title": "Swarm robotics for in-space assembly and orbital construction",
-      "excerpt": "Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-04-14"
     }
   ],
