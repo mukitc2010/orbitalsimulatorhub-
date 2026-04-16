@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-16T16:17:13.777Z",
+  "generated_at": "2026-04-16T20:40:25.762Z",
   "featured_article": {
-    "title": "Wave-particle duality: the double-slit experiment explained",
-    "excerpt": "Wave-particle duality: the double-slit experiment explained is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/wave-particle-duality-the-double-slit-experiment-explained-20260416"
+    "title": "How spy satellites achieve sub-meter imaging resolution",
+    "excerpt": "How spy satellites achieve sub-meter imaging resolution is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-spy-satellites-achieve-sub-meter-imaging-resolution-20260416"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Robot engineering for lunar and Martian surface...",
-      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "How AI satellites make autonomous decisions in ...",
+      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "SpaceX Starship development and test flights",
-      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Rocket aerodynamics: designing nose cones and f...",
+      "blurb": "Rocket aerodynamics: designing nose cones and fairings is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Robot manipulation and sensor fusion for space ...",
-      "blurb": "Robot manipulation and sensor fusion for space construction tasks is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Space-AGI convergence: how orbital autonomy acc...",
+      "blurb": "Space-AGI convergence: how orbital autonomy accelerates AGI research is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
