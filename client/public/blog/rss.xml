@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Thu, 16 Apr 2026 01:53:19 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 06:30:14 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>There are more stars than grains of sand on Earth</title>
@@ -13,6 +13,13 @@
       <description>Learn about there are more stars than grains of sand on earth — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Thu, 16 Apr 2026 00:00:00 GMT</pubDate>
       <category>space-facts</category>
+    </item>
+    <item>
+      <title>Delayed MDP and Mars communication delay: why AI must act without Earth</title>
+      <link>https://orbitalsimulatorhub.com/blog/delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260416</link>
+      <description>Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
     </item>
     <item>
       <title>NASA Europa Clipper mission to Jupiter&apos;s moon</title>
