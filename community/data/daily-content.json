@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-16T06:30:13.827Z",
+  "generated_at": "2026-04-16T10:56:27.868Z",
   "featured_article": {
-    "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
-    "excerpt": "Delayed MDP and Mars communication delay: why AI must act without Earth is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260416"
+    "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
+    "excerpt": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260416"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Voyager spacecraft updates from interstellar space",
-      "blurb": "Voyager spacecraft updates from interstellar space is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy ...",
+      "blurb": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "N-body equations: when two-body mechanics is no...",
-      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Escape velocity derivation from conservation of...",
+      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The cosmic microwave background and the Big Bang",
-      "blurb": "The cosmic microwave background and the Big Bang is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How spy satellites achieve sub-meter imaging re...",
+      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-16"
     },
     {
-      "slug": "nasa-europa-clipper-mission-to-jupiters-moon-20260415",
-      "title": "NASA Europa Clipper mission to Jupiter's moon",
-      "excerpt": "Learn about nasa europa clipper mission to jupiter's moon — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "nasa-news",
-      "date": "2026-04-15"
+      "slug": "ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260416",
+      "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
+      "excerpt": "Learn about ai-driven robot autonomy: from teleoperation to full self-directed behavior — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-04-16"
     }
   ],
   "learning_paths": {
