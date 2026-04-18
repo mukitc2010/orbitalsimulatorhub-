@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-18T06:08:41.149Z",
+  "generated_at": "2026-04-18T10:33:10.378Z",
   "featured_article": {
-    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-    "excerpt": "Soft robotics and compliant actuators for safe human-robot collaboration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260418"
+    "title": "J2 perturbation: why orbits drift and how to correct them",
+    "excerpt": "J2 perturbation: why orbits drift and how to correct them is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260418"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Voyager spacecraft updates from interstellar space",
-      "blurb": "Voyager spacecraft updates from interstellar space is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "ARC-AGI benchmark: measuring progress toward ar...",
+      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Gravitational waves and what they tell us about...",
-      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "A teaspoon of neutron star weighs 6 billion tons",
+      "blurb": "A teaspoon of neutron star weighs 6 billion tons is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Rocket aerodynamics: designing nose cones and f...",
-      "blurb": "Rocket aerodynamics: designing nose cones and fairings is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Neuro-symbolic AI: combining neural networks wi...",
+      "blurb": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-18"
     },
     {
-      "slug": "soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260417",
-      "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-      "excerpt": "Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
-      "date": "2026-04-17"
+      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260418",
+      "title": "J2 perturbation: why orbits drift and how to correct them",
+      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-04-18"
     }
   ],
   "learning_paths": {
