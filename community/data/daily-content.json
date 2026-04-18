@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-18T15:30:53.821Z",
+  "generated_at": "2026-04-18T20:27:44.209Z",
   "featured_article": {
-    "title": "Lambert's problem: how to plan an intercept between two orbits",
-    "excerpt": "Lambert's problem: how to plan an intercept between two orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260418"
+    "title": "Space-AGI convergence: how orbital autonomy accelerates AGI research",
+    "excerpt": "Space-AGI convergence: how orbital autonomy accelerates AGI research is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-convergence-how-orbital-autonomy-accelerates-agi-research-20260418"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Computational fluid dynamics in spacecraft design",
-      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "NASA Europa Clipper mission to Jupiter's moon",
+      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "From narrow AI to AGI: what engineering breakth...",
-      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Gravitational waves and what they tell us about...",
+      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How quantum computing could optimize mission pl...",
-      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Pontryagin maximum principle explained for orbi...",
+      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
