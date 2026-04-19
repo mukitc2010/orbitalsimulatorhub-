@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-19T01:52:59.928Z",
+  "generated_at": "2026-04-19T06:25:42.052Z",
   "featured_article": {
-    "title": "Lunar Gateway construction and deep space habitation",
-    "excerpt": "Lunar Gateway construction and deep space habitation is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lunar-gateway-construction-and-deep-space-habitation-20260419"
+    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260419"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
@@ -14,13 +14,13 @@
       "icon": "rocket"
     },
     {
-      "title": "N-body equations: when two-body mechanics is no...",
-      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "NASA Valkyrie humanoid robot: a decade of resea...",
+      "blurb": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Rocket aerodynamics: designing nose cones and f...",
-      "blurb": "Rocket aerodynamics: designing nose cones and fairings is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "ARC-AGI benchmark: measuring progress toward ar...",
+      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-19"
     },
     {
+      "slug": "ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260419",
+      "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+      "excerpt": "Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-04-19"
+    },
+    {
       "slug": "how-heat-shields-protect-spacecraft-during-re-entry-20260418",
       "title": "How heat shields protect spacecraft during re-entry",
       "excerpt": "Learn about how heat shields protect spacecraft during re-entry — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "aerodynamics",
-      "date": "2026-04-18"
-    },
-    {
-      "slug": "soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260418",
-      "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-      "excerpt": "Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-04-18"
     }
   ],
