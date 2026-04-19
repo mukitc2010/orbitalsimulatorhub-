@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-19T06:25:42.052Z",
+  "generated_at": "2026-04-19T10:32:21.057Z",
   "featured_article": {
-    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
-    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260419"
+    "title": "Kepler's three laws with derivations and real satellite examples",
+    "excerpt": "Kepler's three laws with derivations and real satellite examples is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/keplers-three-laws-with-derivations-and-real-satellite-examples-20260419"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Quantum tunneling in nuclear fusion inside stars",
-      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "CubeSats and nanosatellites: space access for u...",
+      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "NASA Valkyrie humanoid robot: a decade of resea...",
-      "blurb": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Rocket aerodynamics: designing nose cones and f...",
+      "blurb": "Rocket aerodynamics: designing nose cones and fairings is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "ARC-AGI benchmark: measuring progress toward ar...",
-      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "James Webb Space Telescope latest discoveries",
+      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-19"
     },
     {
-      "slug": "how-heat-shields-protect-spacecraft-during-re-entry-20260418",
-      "title": "How heat shields protect spacecraft during re-entry",
-      "excerpt": "Learn about how heat shields protect spacecraft during re-entry — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
-      "date": "2026-04-18"
+      "slug": "keplers-three-laws-with-derivations-and-real-satellite-examples-20260419",
+      "title": "Kepler's three laws with derivations and real satellite examples",
+      "excerpt": "Learn about kepler's three laws with derivations and real satellite examples — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-04-19"
     }
   ],
   "learning_paths": {
