@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-21T01:50:17.138Z",
+  "generated_at": "2026-04-21T06:53:52.204Z",
   "featured_article": {
-    "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
-    "excerpt": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260421"
+    "title": "Schrodinger equation: the foundation of quantum mechanics",
+    "excerpt": "Schrodinger equation: the foundation of quantum mechanics is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/schrodinger-equation-the-foundation-of-quantum-mechanics-20260421"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "CubeSats and nanosatellites: space access for u...",
-      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Lunar Gateway construction and deep space habit...",
+      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Lambert's problem: how to plan an intercept bet...",
+      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Delayed MDP and Mars communication delay: why A...",
-      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
+      "title": "The Great Red Spot on Jupiter is shrinking",
+      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-21"
     },
     {
+      "slug": "schrodinger-equation-the-foundation-of-quantum-mechanics-20260421",
+      "title": "Schrodinger equation: the foundation of quantum mechanics",
+      "excerpt": "Learn about schrodinger equation: the foundation of quantum mechanics — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "quantum-physics",
+      "date": "2026-04-21"
+    },
+    {
       "slug": "how-spy-satellites-achieve-sub-meter-imaging-resolution-20260420",
       "title": "How spy satellites achieve sub-meter imaging resolution",
       "excerpt": "Learn about how spy satellites achieve sub-meter imaging resolution — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "satellite-tutorials",
-      "date": "2026-04-20"
-    },
-    {
-      "slug": "tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260420",
-      "title": "Tsiolkovsky rocket equation: why we need staging to reach orbit",
-      "excerpt": "Learn about tsiolkovsky rocket equation: why we need staging to reach orbit — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-04-20"
     }
   ],
