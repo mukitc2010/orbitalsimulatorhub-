@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-21T16:05:56.156Z",
+  "generated_at": "2026-04-21T20:41:14.708Z",
   "featured_article": {
-    "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
-    "excerpt": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260421"
+    "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
+    "excerpt": "AGI safety and alignment: ensuring beneficial artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260421"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Lunar Gateway construction and deep space habit...",
-      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Artemis program progress and Moon landing plans",
+      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Exoskeletons and wearable robots for astronaut ...",
-      "blurb": "Exoskeletons and wearable robots for astronaut EVA assistance is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Lunar Gateway construction and deep space habit...",
+      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum tunneling in nuclear fusion inside stars",
-      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How GPS satellites calculate your exact positio...",
+      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
