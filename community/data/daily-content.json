@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-21T06:53:52.204Z",
+  "generated_at": "2026-04-21T11:00:01.961Z",
   "featured_article": {
-    "title": "Schrodinger equation: the foundation of quantum mechanics",
-    "excerpt": "Schrodinger equation: the foundation of quantum mechanics is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/schrodinger-equation-the-foundation-of-quantum-mechanics-20260421"
+    "title": "Robot manipulation and sensor fusion for space construction tasks",
+    "excerpt": "Robot manipulation and sensor fusion for space construction tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260421"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Lunar Gateway construction and deep space habit...",
-      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "AGI safety and alignment: ensuring beneficial a...",
+      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy ...",
+      "blurb": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The Great Red Spot on Jupiter is shrinking",
-      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Tsiolkovsky rocket equation: why we need stagin...",
+      "blurb": "Tsiolkovsky rocket equation: why we need staging to reach orbit is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-21"
     },
     {
-      "slug": "how-spy-satellites-achieve-sub-meter-imaging-resolution-20260420",
-      "title": "How spy satellites achieve sub-meter imaging resolution",
-      "excerpt": "Learn about how spy satellites achieve sub-meter imaging resolution — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "satellite-tutorials",
-      "date": "2026-04-20"
+      "slug": "robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260421",
+      "title": "Robot manipulation and sensor fusion for space construction tasks",
+      "excerpt": "Learn about robot manipulation and sensor fusion for space construction tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-04-21"
     }
   ],
   "learning_paths": {
