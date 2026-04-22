@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-04-21T20:41:14.708Z",
+  "generated_at": "2026-04-22T01:49:05.808Z",
   "featured_article": {
-    "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
-    "excerpt": "AGI safety and alignment: ensuring beneficial artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260421"
+    "title": "Quantum entanglement and future space communication",
+    "excerpt": "Quantum entanglement and future space communication is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/quantum-entanglement-and-future-space-communication-20260422"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Artemis program progress and Moon landing plans",
-      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "NASA DART asteroid deflection mission results",
+      "blurb": "NASA DART asteroid deflection mission results is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Lunar Gateway construction and deep space habit...",
-      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Tsiolkovsky rocket equation: why we need stagin...",
+      "blurb": "Tsiolkovsky rocket equation: why we need staging to reach orbit is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How GPS satellites calculate your exact positio...",
-      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Delayed MDP and Mars communication delay: why A...",
+      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "quantum-entanglement-and-future-space-communication-20260422",
+      "title": "Quantum entanglement and future space communication",
+      "excerpt": "Learn about quantum entanglement and future space communication — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "quantum-physics",
+      "date": "2026-04-22"
+    },
     {
       "slug": "walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260421",
       "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
@@ -37,13 +44,6 @@
       "title": "Schrodinger equation: the foundation of quantum mechanics",
       "excerpt": "Learn about schrodinger equation: the foundation of quantum mechanics — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "quantum-physics",
-      "date": "2026-04-21"
-    },
-    {
-      "slug": "robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260421",
-      "title": "Robot manipulation and sensor fusion for space construction tasks",
-      "excerpt": "Learn about robot manipulation and sensor fusion for space construction tasks — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-04-21"
     }
   ],
