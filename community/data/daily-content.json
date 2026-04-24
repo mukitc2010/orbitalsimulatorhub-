@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-24T15:59:49.664Z",
+  "generated_at": "2026-04-24T20:38:06.718Z",
   "featured_article": {
-    "title": "Orbital energy and specific orbital energy formula",
-    "excerpt": "Orbital energy and specific orbital energy formula is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/orbital-energy-and-specific-orbital-energy-formula-20260424"
+    "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
+    "excerpt": "Why compositional reasoning remains the hardest unsolved AGI challenge is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260424"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How quantum computing could optimize mission pl...",
-      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "What happens when a massive star dies: supernov...",
+      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
-    },
-    {
-      "title": "Robot engineering for lunar and Martian surface...",
-      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
-      "icon": "atom"
     },
     {
       "title": "Hypersonic flight: challenges above Mach 5",
       "blurb": "Hypersonic flight: challenges above Mach 5 is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "icon": "atom"
+    },
+    {
+      "title": "Robonaut 2: the first humanoid robot in space a...",
+      "blurb": "Robonaut 2: the first humanoid robot in space aboard the ISS is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
