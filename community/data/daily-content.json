@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-24T01:52:52.717Z",
+  "generated_at": "2026-04-24T07:01:16.632Z",
   "featured_article": {
-    "title": "Robot manipulation and sensor fusion for space construction tasks",
-    "excerpt": "Robot manipulation and sensor fusion for space construction tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Robot engineering for lunar and Martian surface operations",
+    "excerpt": "Robot engineering for lunar and Martian surface operations is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260424"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-engineering-for-lunar-and-martian-surface-operations-20260424"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How satellite constellations maintain formation...",
-      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "What happens when a massive star dies: supernov...",
+      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The life cycle of Sun-like stars from birth to ...",
-      "blurb": "The life cycle of Sun-like stars from birth to white dwarf is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Neuro-symbolic AI: combining neural networks wi...",
+      "blurb": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum sensors for deep space navigation",
-      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How AI satellites make autonomous decisions in ...",
+      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-24"
     },
     {
+      "slug": "robot-engineering-for-lunar-and-martian-surface-operations-20260424",
+      "title": "Robot engineering for lunar and Martian surface operations",
+      "excerpt": "Learn about robot engineering for lunar and martian surface operations — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-04-24"
+    },
+    {
       "slug": "why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260423",
       "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
       "excerpt": "Learn about why compositional reasoning remains the hardest unsolved agi challenge — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-04-23"
-    },
-    {
-      "slug": "re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260423",
-      "title": "Re-entry physics: surviving 28000 km/h atmospheric entry",
-      "excerpt": "Learn about re-entry physics: surviving 28000 km/h atmospheric entry — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
       "date": "2026-04-23"
     }
   ],
