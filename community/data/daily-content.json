@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-04-23T20:44:11.280Z",
+  "generated_at": "2026-04-24T01:52:52.717Z",
   "featured_article": {
-    "title": "Humanoid robot locomotion on uneven terrain and moving platforms",
-    "excerpt": "Humanoid robot locomotion on uneven terrain and moving platforms is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Robot manipulation and sensor fusion for space construction tasks",
+    "excerpt": "Robot manipulation and sensor fusion for space construction tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/humanoid-robot-locomotion-on-uneven-terrain-and-moving-platforms-20260423"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260424"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "What is Space AGI and why it matters for future...",
-      "blurb": "What is Space AGI and why it matters for future space exploration is a key area in space agi that impacts how we understand and explore space.",
+      "title": "How satellite constellations maintain formation...",
+      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Computational fluid dynamics in spacecraft design",
-      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "The life cycle of Sun-like stars from birth to ...",
+      "blurb": "The life cycle of Sun-like stars from birth to white dwarf is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "There are more stars than grains of sand on Earth",
-      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Quantum sensors for deep space navigation",
+      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260424",
+      "title": "Robot manipulation and sensor fusion for space construction tasks",
+      "excerpt": "Learn about robot manipulation and sensor fusion for space construction tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-04-24"
+    },
     {
       "slug": "why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260423",
       "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
@@ -37,13 +44,6 @@
       "title": "Re-entry physics: surviving 28000 km/h atmospheric entry",
       "excerpt": "Learn about re-entry physics: surviving 28000 km/h atmospheric entry — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "aerodynamics",
-      "date": "2026-04-23"
-    },
-    {
-      "slug": "exoskeletons-and-wearable-robots-for-astronaut-eva-assistance-20260423",
-      "title": "Exoskeletons and wearable robots for astronaut EVA assistance",
-      "excerpt": "Learn about exoskeletons and wearable robots for astronaut eva assistance — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-04-23"
     }
   ],
