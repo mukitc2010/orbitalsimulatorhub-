@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-25T06:16:51.758Z",
+  "generated_at": "2026-04-25T10:36:32.590Z",
   "featured_article": {
-    "title": "Swarm robotics for in-space assembly and orbital construction",
-    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260425"
+    "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
+    "excerpt": "Google DeepMind cognitive framework: 10 abilities needed for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260425"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "J2 perturbation: why orbits drift and how to co...",
-      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Robonaut 2: the first humanoid robot in space a...",
+      "blurb": "Robonaut 2: the first humanoid robot in space aboard the ISS is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
-    },
-    {
-      "title": "Hubble constant and the expanding universe cont...",
-      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
-      "icon": "atom"
     },
     {
       "title": "Escape velocity derivation from conservation of...",
       "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
+      "icon": "atom"
+    },
+    {
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-25"
     },
     {
-      "slug": "robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260424",
-      "title": "Robot manipulation and sensor fusion for space construction tasks",
-      "excerpt": "Learn about robot manipulation and sensor fusion for space construction tasks — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
-      "date": "2026-04-24"
+      "slug": "google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260425",
+      "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
+      "excerpt": "Learn about google deepmind cognitive framework: 10 abilities needed for agi — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-04-25"
     }
   ],
   "learning_paths": {
