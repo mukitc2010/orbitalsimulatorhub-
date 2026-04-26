@@ -5,8 +5,15 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Sat, 25 Apr 2026 20:30:23 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2026 01:55:49 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The physics of geostationary orbit and why it matters</title>
+      <link>https://orbitalsimulatorhub.com/blog/the-physics-of-geostationary-orbit-and-why-it-matters-20260426</link>
+      <description>Learn about the physics of geostationary orbit and why it matters — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 GMT</pubDate>
+      <category>satellite-tutorials</category>
+    </item>
     <item>
       <title>From narrow AI to AGI: what engineering breakthroughs are still needed</title>
       <link>https://orbitalsimulatorhub.com/blog/from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260425</link>

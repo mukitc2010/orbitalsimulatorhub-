@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-04-25T20:30:23.486Z",
+  "generated_at": "2026-04-26T01:55:48.832Z",
   "featured_article": {
-    "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
-    "excerpt": "Robonaut 2: the first humanoid robot in space aboard the ISS is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260425"
+    "title": "The physics of geostationary orbit and why it matters",
+    "excerpt": "The physics of geostationary orbit and why it matters is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-physics-of-geostationary-orbit-and-why-it-matters-20260426"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Self-repairing spacecraft: AI that fixes itself...",
-      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Voyager spacecraft updates from interstellar space",
+      "blurb": "Voyager spacecraft updates from interstellar space is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Computational fluid dynamics in spacecraft design",
-      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Orbital energy and specific orbital energy formula",
+      "blurb": "Orbital energy and specific orbital energy formula is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Pontryagin maximum principle explained for orbi...",
-      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Patched conic approximation for interplanetary ...",
+      "blurb": "Patched conic approximation for interplanetary trajectories is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "the-physics-of-geostationary-orbit-and-why-it-matters-20260426",
+      "title": "The physics of geostationary orbit and why it matters",
+      "excerpt": "Learn about the physics of geostationary orbit and why it matters — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "satellite-tutorials",
+      "date": "2026-04-26"
+    },
     {
       "slug": "from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260425",
       "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
@@ -37,13 +44,6 @@
       "title": "Swarm robotics for in-space assembly and orbital construction",
       "excerpt": "Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
-      "date": "2026-04-25"
-    },
-    {
-      "slug": "google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260425",
-      "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
-      "excerpt": "Learn about google deepmind cognitive framework: 10 abilities needed for agi — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-04-25"
     }
   ],
