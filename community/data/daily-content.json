@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-26T06:56:03.236Z",
+  "generated_at": "2026-04-26T10:38:17.638Z",
   "featured_article": {
-    "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
-    "excerpt": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260426"
+    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
+    "excerpt": "Soft robotics and compliant actuators for safe human-robot collaboration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260426"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Voyager spacecraft updates from interstellar space",
-      "blurb": "Voyager spacecraft updates from interstellar space is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "SpaceX Starship development and test flights",
+      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "AI-driven robot autonomy: from teleoperation to...",
-      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "How heat shields protect spacecraft during re-e...",
+      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Gravitational waves and what they tell us about...",
-      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
+      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-26"
     },
     {
-      "slug": "from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260425",
-      "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
-      "excerpt": "Learn about from narrow ai to agi: what engineering breakthroughs are still needed — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
-      "date": "2026-04-25"
+      "slug": "soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260426",
+      "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
+      "excerpt": "Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-04-26"
     }
   ],
   "learning_paths": {
