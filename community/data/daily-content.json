@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-26T10:38:17.638Z",
+  "generated_at": "2026-04-26T15:35:33.606Z",
   "featured_article": {
-    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-    "excerpt": "Soft robotics and compliant actuators for safe human-robot collaboration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260426"
+    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260426"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "SpaceX Starship development and test flights",
-      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Satellite communication: how data travels from ...",
+      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How heat shields protect spacecraft during re-e...",
-      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
+      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
