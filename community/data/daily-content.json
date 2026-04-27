@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-04-26T20:30:17.948Z",
+  "generated_at": "2026-04-27T01:59:26.081Z",
   "featured_article": {
-    "title": "Pulsars: the cosmic lighthouses of neutron stars",
-    "excerpt": "Pulsars: the cosmic lighthouses of neutron stars is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pulsars-the-cosmic-lighthouses-of-neutron-stars-20260426"
+    "title": "J2 perturbation: why orbits drift and how to correct them",
+    "excerpt": "J2 perturbation: why orbits drift and how to correct them is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260427"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Hohmann transfer formula: the most fuel-efficie...",
-      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "NASA Europa Clipper mission to Jupiter's moon",
+      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Hohmann transfer formula: the most fuel-efficie...",
-      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Pontryagin maximum principle explained for orbi...",
+      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Why a day on Venus is longer than its year",
-      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How weather satellites predict storms and track...",
+      "blurb": "How weather satellites predict storms and track hurricanes is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260427",
+      "title": "J2 perturbation: why orbits drift and how to correct them",
+      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-04-27"
+    },
     {
       "slug": "the-physics-of-geostationary-orbit-and-why-it-matters-20260426",
       "title": "The physics of geostationary orbit and why it matters",
@@ -37,13 +44,6 @@
       "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
       "excerpt": "Learn about neuro-symbolic ai: combining neural networks with logical reasoning for agi — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-04-26"
-    },
-    {
-      "slug": "soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260426",
-      "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-      "excerpt": "Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-04-26"
     }
   ],
