@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-27T07:30:51.958Z",
+  "generated_at": "2026-04-27T11:40:43.430Z",
   "featured_article": {
-    "title": "How MPC and LQR control algorithms keep satellite swarms safe",
-    "excerpt": "How MPC and LQR control algorithms keep satellite swarms safe is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Pontryagin maximum principle explained for orbital maneuvers",
+    "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260427"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260427"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Scramjet engines: air-breathing propulsion at h...",
-      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "What happens when a massive star dies: supernov...",
+      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "NASA Europa Clipper mission to Jupiter's moon",
-      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How satellite constellations maintain formation...",
+      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How lift is generated: Bernoulli vs Newton expl...",
-      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How quantum computing could optimize mission pl...",
+      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-27"
     },
     {
-      "slug": "the-physics-of-geostationary-orbit-and-why-it-matters-20260426",
-      "title": "The physics of geostationary orbit and why it matters",
-      "excerpt": "Learn about the physics of geostationary orbit and why it matters — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "satellite-tutorials",
-      "date": "2026-04-26"
+      "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260427",
+      "title": "Pontryagin maximum principle explained for orbital maneuvers",
+      "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-04-27"
     }
   ],
   "learning_paths": {
