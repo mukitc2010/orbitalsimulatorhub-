@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-27T16:20:55.087Z",
+  "generated_at": "2026-04-27T20:54:03.017Z",
   "featured_article": {
-    "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
-    "excerpt": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260427"
+    "title": "How Starlink creates global broadband internet from space",
+    "excerpt": "How Starlink creates global broadband internet from space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-starlink-creates-global-broadband-internet-from-space-20260427"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Gravitational waves and what they tell us about...",
-      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Kepler's three laws with derivations and real s...",
+      "blurb": "Kepler's three laws with derivations and real satellite examples is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Quantum tunneling in nuclear fusion inside stars",
-      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Structural theory of general artificial intelli...",
+      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How galaxies collide and merge over billions of...",
-      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "From narrow AI to AGI: what engineering breakth...",
+      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
