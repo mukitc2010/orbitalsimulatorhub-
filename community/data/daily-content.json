@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-27T11:40:43.430Z",
+  "generated_at": "2026-04-27T16:20:55.087Z",
   "featured_article": {
-    "title": "Pontryagin maximum principle explained for orbital maneuvers",
-    "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260427"
+    "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
+    "excerpt": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260427"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "What happens when a massive star dies: supernov...",
-      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Gravitational waves and what they tell us about...",
+      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How satellite constellations maintain formation...",
-      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Quantum tunneling in nuclear fusion inside stars",
+      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How quantum computing could optimize mission pl...",
-      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How galaxies collide and merge over billions of...",
+      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
