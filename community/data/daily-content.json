@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-28T07:27:25.386Z",
+  "generated_at": "2026-04-28T11:41:44.203Z",
   "featured_article": {
-    "title": "Computational fluid dynamics in spacecraft design",
-    "excerpt": "Computational fluid dynamics in spacecraft design is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/computational-fluid-dynamics-in-spacecraft-design-20260428"
+    "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
+    "excerpt": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260428"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The cosmic microwave background and the Big Bang",
-      "blurb": "The cosmic microwave background and the Big Bang is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
+      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Quantum entanglement and future space communica...",
-      "blurb": "Quantum entanglement and future space communication is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Lunar Gateway construction and deep space habit...",
+      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How galaxies collide and merge over billions of...",
-      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How MPC and LQR control algorithms keep satelli...",
+      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-28"
     },
     {
-      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260427",
-      "title": "J2 perturbation: why orbits drift and how to correct them",
-      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
-      "date": "2026-04-27"
+      "slug": "walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260428",
+      "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
+      "excerpt": "Learn about walking stability breakthroughs: 81% recovery improvement in bipedal robots — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-04-28"
     }
   ],
   "learning_paths": {
