@@ -5,8 +5,15 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 27 Apr 2026 20:54:03 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 02:05:35 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LEO vs MEO vs GEO: choosing the right orbit for a mission</title>
+      <link>https://orbitalsimulatorhub.com/blog/leo-vs-meo-vs-geo-choosing-the-right-orbit-for-a-mission-20260428</link>
+      <description>Learn about leo vs meo vs geo: choosing the right orbit for a mission — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 GMT</pubDate>
+      <category>satellite-tutorials</category>
+    </item>
     <item>
       <title>J2 perturbation: why orbits drift and how to correct them</title>
       <link>https://orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260427</link>
