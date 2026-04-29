@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-29T02:07:41.988Z",
+  "generated_at": "2026-04-29T07:17:10.034Z",
   "featured_article": {
-    "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
-    "excerpt": "Why compositional reasoning remains the hardest unsolved AGI challenge is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260429"
+    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260429"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Orbital energy and specific orbital energy formula",
-      "blurb": "Orbital energy and specific orbital energy formula is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Computational fluid dynamics in spacecraft design",
+      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "AI-driven robot autonomy: from teleoperation to...",
+      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "CubeSats and nanosatellites: space access for u...",
-      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How spy satellites achieve sub-meter imaging re...",
+      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-04-29"
     },
     {
+      "slug": "ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260429",
+      "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+      "excerpt": "Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-04-29"
+    },
+    {
       "slug": "leo-vs-meo-vs-geo-choosing-the-right-orbit-for-a-mission-20260428",
       "title": "LEO vs MEO vs GEO: choosing the right orbit for a mission",
       "excerpt": "Learn about leo vs meo vs geo: choosing the right orbit for a mission — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "satellite-tutorials",
-      "date": "2026-04-28"
-    },
-    {
-      "slug": "computational-fluid-dynamics-in-spacecraft-design-20260428",
-      "title": "Computational fluid dynamics in spacecraft design",
-      "excerpt": "Learn about computational fluid dynamics in spacecraft design — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
       "date": "2026-04-28"
     }
   ],
