@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-30T07:24:40.706Z",
+  "generated_at": "2026-04-30T11:24:00.384Z",
   "featured_article": {
-    "title": "What happens when a massive star dies: supernovae and black holes",
-    "excerpt": "What happens when a massive star dies: supernovae and black holes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260430"
+    "title": "Satellite communication: how data travels from space to your phone",
+    "excerpt": "Satellite communication: how data travels from space to your phone is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/satellite-communication-how-data-travels-from-space-to-your-phone-20260430"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Saturn's rings are disappearing over millions o...",
-      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
+      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How orbital debris tracking and avoidance works",
-      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Soft robotics and compliant actuators for safe ...",
+      "blurb": "Soft robotics and compliant actuators for safe human-robot collaboration is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
-      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Artemis program progress and Moon landing plans",
+      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-04-30"
     },
     {
-      "slug": "why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260429",
-      "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
-      "excerpt": "Learn about why compositional reasoning remains the hardest unsolved agi challenge — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
-      "date": "2026-04-29"
+      "slug": "satellite-communication-how-data-travels-from-space-to-your-phone-20260430",
+      "title": "Satellite communication: how data travels from space to your phone",
+      "excerpt": "Learn about satellite communication: how data travels from space to your phone — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "satellite-tutorials",
+      "date": "2026-04-30"
     }
   ],
   "learning_paths": {
