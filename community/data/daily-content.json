@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-30T11:24:00.384Z",
+  "generated_at": "2026-04-30T16:13:56.891Z",
   "featured_article": {
-    "title": "Satellite communication: how data travels from space to your phone",
-    "excerpt": "Satellite communication: how data travels from space to your phone is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/satellite-communication-how-data-travels-from-space-to-your-phone-20260430"
+    "title": "Exoskeletons and wearable robots for astronaut EVA assistance",
+    "excerpt": "Exoskeletons and wearable robots for astronaut EVA assistance is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/exoskeletons-and-wearable-robots-for-astronaut-eva-assistance-20260430"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
-      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Soft robotics and compliant actuators for safe ...",
-      "blurb": "Soft robotics and compliant actuators for safe human-robot collaboration is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "The uncertainty principle and its real-world ap...",
+      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Artemis program progress and Moon landing plans",
-      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Space-AGI convergence: how orbital autonomy acc...",
+      "blurb": "Space-AGI convergence: how orbital autonomy accelerates AGI research is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
