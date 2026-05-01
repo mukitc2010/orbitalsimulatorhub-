@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-01T15:48:58.451Z",
+  "generated_at": "2026-05-01T20:42:10.640Z",
   "featured_article": {
-    "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
-    "excerpt": "AGI safety and alignment: ensuring beneficial artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260501"
+    "title": "Gravitational waves and what they tell us about spacetime",
+    "excerpt": "Gravitational waves and what they tell us about spacetime is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "astronomy-lessons",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/gravitational-waves-and-what-they-tell-us-about-spacetime-20260501"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How GPS satellites calculate your exact positio...",
-      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How satellite constellations maintain formation...",
+      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
-      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Space is completely silent because sound needs ...",
+      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Space AGI five pillars: perception, planning, c...",
-      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
+      "title": "How relativistic quantum effects correct GPS ac...",
+      "blurb": "How relativistic quantum effects correct GPS accuracy is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
