@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-04-30T20:52:10.195Z",
+  "generated_at": "2026-05-01T02:11:06.733Z",
   "featured_article": {
-    "title": "How quantum computing could optimize mission planning",
-    "excerpt": "How quantum computing could optimize mission planning is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-quantum-computing-could-optimize-mission-planning-20260430"
+    "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
+    "excerpt": "Hohmann transfer formula: the most fuel-efficient way to change orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260501"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "What happens when a massive star dies: supernov...",
-      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Pulsars: the cosmic lighthouses of neutron stars",
+      "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "N-body equations: when two-body mechanics is no...",
-      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Why compositional reasoning remains the hardest...",
+      "blurb": "Why compositional reasoning remains the hardest unsolved AGI challenge is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Saturn's rings are disappearing over millions o...",
-      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "The observable universe is 93 billion light-yea...",
+      "blurb": "The observable universe is 93 billion light-years across is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260501",
+      "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
+      "excerpt": "Learn about hohmann transfer formula: the most fuel-efficient way to change orbits — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-05-01"
+    },
     {
       "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260430",
       "title": "Pontryagin maximum principle explained for orbital maneuvers",
@@ -37,13 +44,6 @@
       "title": "What happens when a massive star dies: supernovae and black holes",
       "excerpt": "Learn about what happens when a massive star dies: supernovae and black holes — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "astronomy-lessons",
-      "date": "2026-04-30"
-    },
-    {
-      "slug": "satellite-communication-how-data-travels-from-space-to-your-phone-20260430",
-      "title": "Satellite communication: how data travels from space to your phone",
-      "excerpt": "Learn about satellite communication: how data travels from space to your phone — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "satellite-tutorials",
       "date": "2026-04-30"
     }
   ],
