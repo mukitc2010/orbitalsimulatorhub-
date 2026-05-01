@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-01T02:11:06.733Z",
+  "generated_at": "2026-05-01T07:22:48.582Z",
   "featured_article": {
-    "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
-    "excerpt": "Hohmann transfer formula: the most fuel-efficient way to change orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260501"
+    "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+    "excerpt": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260501"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Pulsars: the cosmic lighthouses of neutron stars",
-      "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "NASA Valkyrie humanoid robot: a decade of resea...",
+      "blurb": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Why compositional reasoning remains the hardest...",
-      "blurb": "Why compositional reasoning remains the hardest unsolved AGI challenge is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Agent swarm architectures: parallel multi-agent...",
+      "blurb": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The observable universe is 93 billion light-yea...",
-      "blurb": "The observable universe is 93 billion light-years across is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Robot manipulation and sensor fusion for space ...",
+      "blurb": "Robot manipulation and sensor fusion for space construction tasks is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-05-01"
     },
     {
+      "slug": "space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260501",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+      "excerpt": "Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-05-01"
+    },
+    {
       "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260430",
       "title": "Pontryagin maximum principle explained for orbital maneuvers",
       "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-04-30"
-    },
-    {
-      "slug": "what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260430",
-      "title": "What happens when a massive star dies: supernovae and black holes",
-      "excerpt": "Learn about what happens when a massive star dies: supernovae and black holes — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "astronomy-lessons",
       "date": "2026-04-30"
     }
   ],
