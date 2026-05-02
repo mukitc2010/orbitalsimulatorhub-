@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-02T15:38:57.058Z",
+  "generated_at": "2026-05-02T20:33:34.925Z",
   "featured_article": {
-    "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
-    "excerpt": "Google DeepMind cognitive framework: 10 abilities needed for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260502"
+    "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
+    "excerpt": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260502"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Quantum key distribution for secure satellite c...",
-      "blurb": "Quantum key distribution for secure satellite communications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Why spacecraft have specific shapes for differe...",
+      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Schrodinger equation: the foundation of quantum...",
-      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Transformer-based abstract reasoning and test-t...",
+      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "J2 perturbation: why orbits drift and how to co...",
-      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Space AGI five pillars: perception, planning, c...",
+      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
