@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-07T02:04:46.049Z",
+  "generated_at": "2026-05-07T07:38:07.660Z",
   "featured_article": {
-    "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
-    "excerpt": "Why compositional reasoning remains the hardest unsolved AGI challenge is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260507"
+    "title": "Orbital energy and specific orbital energy formula",
+    "excerpt": "Orbital energy and specific orbital energy formula is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/orbital-energy-and-specific-orbital-energy-formula-20260507"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The physics of geostationary orbit and why it m...",
-      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "James Webb Space Telescope latest discoveries",
+      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Quantum key distribution for secure satellite c...",
-      "blurb": "Quantum key distribution for secure satellite communications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Space is completely silent because sound needs ...",
+      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How AI satellites make autonomous decisions in ...",
-      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
+      "title": "SpaceX Starship development and test flights",
+      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-05-07"
     },
     {
+      "slug": "orbital-energy-and-specific-orbital-energy-formula-20260507",
+      "title": "Orbital energy and specific orbital energy formula",
+      "excerpt": "Learn about orbital energy and specific orbital energy formula — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-05-07"
+    },
+    {
       "slug": "what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260506",
       "title": "What is Space AGI and why it matters for future space exploration",
       "excerpt": "Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-05-06"
-    },
-    {
-      "slug": "hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260506",
-      "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
-      "excerpt": "Learn about hohmann transfer formula: the most fuel-efficient way to change orbits — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-05-06"
     }
   ],
