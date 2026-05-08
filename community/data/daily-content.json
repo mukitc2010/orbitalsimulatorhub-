@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-08T06:28:19.350Z",
+  "generated_at": "2026-05-08T11:04:28.315Z",
   "featured_article": {
-    "title": "Lambert's problem: how to plan an intercept between two orbits",
-    "excerpt": "Lambert's problem: how to plan an intercept between two orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260508"
+    "title": "Transformer-based abstract reasoning and test-time training for AGI",
+    "excerpt": "Transformer-based abstract reasoning and test-time training for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260508"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How weather satellites predict storms and track...",
-      "blurb": "How weather satellites predict storms and track hurricanes is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How quantum computing could optimize mission pl...",
+      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
@@ -19,8 +19,8 @@
       "icon": "atom"
     },
     {
-      "title": "Why a day on Venus is longer than its year",
-      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How Starlink creates global broadband internet ...",
+      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-05-08"
     },
     {
-      "slug": "why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260507",
-      "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
-      "excerpt": "Learn about why compositional reasoning remains the hardest unsolved agi challenge — covering the science, real-world applications, and how it connects to space exploration.",
+      "slug": "transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260508",
+      "title": "Transformer-based abstract reasoning and test-time training for AGI",
+      "excerpt": "Learn about transformer-based abstract reasoning and test-time training for agi — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-05-07"
+      "date": "2026-05-08"
     }
   ],
   "learning_paths": {
