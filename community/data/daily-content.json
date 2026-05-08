@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-08T16:09:42.349Z",
+  "generated_at": "2026-05-08T20:50:04.330Z",
   "featured_article": {
-    "title": "How lift is generated: Bernoulli vs Newton explanations",
-    "excerpt": "How lift is generated: Bernoulli vs Newton explanations is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-lift-is-generated-bernoulli-vs-newton-explanations-20260508"
+    "title": "NASA DART asteroid deflection mission results",
+    "excerpt": "NASA DART asteroid deflection mission results is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "nasa-news",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-dart-asteroid-deflection-mission-results-20260508"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Google DeepMind cognitive framework: 10 abiliti...",
-      "blurb": "Google DeepMind cognitive framework: 10 abilities needed for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Gravitational waves and what they tell us about...",
+      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The uncertainty principle and its real-world ap...",
-      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How stars are born inside molecular gas clouds",
+      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Agent swarm architectures: parallel multi-agent...",
-      "blurb": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Walking stability breakthroughs: 81% recovery i...",
+      "blurb": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
