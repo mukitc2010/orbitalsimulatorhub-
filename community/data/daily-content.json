@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-09T10:49:42.530Z",
+  "generated_at": "2026-05-09T15:42:28.125Z",
   "featured_article": {
-    "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
-    "excerpt": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260509"
+    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
+    "excerpt": "Soft robotics and compliant actuators for safe human-robot collaboration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260509"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Swarm robotics for in-space assembly and orbita...",
-      "blurb": "Swarm robotics for in-space assembly and orbital construction is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "The observable universe is 93 billion light-yea...",
+      "blurb": "The observable universe is 93 billion light-years across is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Satellite communication: how data travels from ...",
-      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Google DeepMind cognitive framework: 10 abiliti...",
+      "blurb": "Google DeepMind cognitive framework: 10 abilities needed for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
-      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Pontryagin maximum principle explained for orbi...",
+      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
