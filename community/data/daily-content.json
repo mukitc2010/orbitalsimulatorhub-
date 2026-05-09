@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-09T15:42:28.125Z",
+  "generated_at": "2026-05-09T20:36:11.907Z",
   "featured_article": {
-    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-    "excerpt": "Soft robotics and compliant actuators for safe human-robot collaboration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260509"
+    "title": "Pontryagin maximum principle explained for orbital maneuvers",
+    "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260509"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The observable universe is 93 billion light-yea...",
-      "blurb": "The observable universe is 93 billion light-years across is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Soft robotics and compliant actuators for safe ...",
+      "blurb": "Soft robotics and compliant actuators for safe human-robot collaboration is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Google DeepMind cognitive framework: 10 abiliti...",
-      "blurb": "Google DeepMind cognitive framework: 10 abilities needed for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How neutron stars can spin 716 times per second",
+      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Pontryagin maximum principle explained for orbi...",
-      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Why spacecraft have specific shapes for differe...",
+      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
