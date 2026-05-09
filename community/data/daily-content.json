@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-09T02:04:58.740Z",
+  "generated_at": "2026-05-09T07:02:47.899Z",
   "featured_article": {
-    "title": "How stars are born inside molecular gas clouds",
-    "excerpt": "How stars are born inside molecular gas clouds is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "What happens when a massive star dies: supernovae and black holes",
+    "excerpt": "What happens when a massive star dies: supernovae and black holes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-stars-are-born-inside-molecular-gas-clouds-20260509"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260509"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The physics of geostationary orbit and why it m...",
-      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Computational fluid dynamics in spacecraft design",
+      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Why compositional reasoning remains the hardest...",
-      "blurb": "Why compositional reasoning remains the hardest unsolved AGI challenge is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How weather satellites predict storms and track...",
+      "blurb": "How weather satellites predict storms and track hurricanes is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The Great Red Spot on Jupiter is shrinking",
-      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Lunar Gateway construction and deep space habit...",
+      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-05-09"
     },
     {
+      "slug": "what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260509",
+      "title": "What happens when a massive star dies: supernovae and black holes",
+      "excerpt": "Learn about what happens when a massive star dies: supernovae and black holes — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "astronomy-lessons",
+      "date": "2026-05-09"
+    },
+    {
       "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260508",
       "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
       "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-05-08"
-    },
-    {
-      "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260508",
-      "title": "Lambert's problem: how to plan an intercept between two orbits",
-      "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-05-08"
     }
   ],
