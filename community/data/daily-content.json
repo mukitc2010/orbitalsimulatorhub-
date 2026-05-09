@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-08T20:50:04.330Z",
+  "generated_at": "2026-05-09T02:04:58.740Z",
   "featured_article": {
-    "title": "NASA DART asteroid deflection mission results",
-    "excerpt": "NASA DART asteroid deflection mission results is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-dart-asteroid-deflection-mission-results-20260508"
+    "title": "How stars are born inside molecular gas clouds",
+    "excerpt": "How stars are born inside molecular gas clouds is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "astronomy-lessons",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-stars-are-born-inside-molecular-gas-clouds-20260509"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Gravitational waves and what they tell us about...",
-      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "The physics of geostationary orbit and why it m...",
+      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Why compositional reasoning remains the hardest...",
+      "blurb": "Why compositional reasoning remains the hardest unsolved AGI challenge is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Walking stability breakthroughs: 81% recovery i...",
-      "blurb": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "The Great Red Spot on Jupiter is shrinking",
+      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "how-stars-are-born-inside-molecular-gas-clouds-20260509",
+      "title": "How stars are born inside molecular gas clouds",
+      "excerpt": "Learn about how stars are born inside molecular gas clouds — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "astronomy-lessons",
+      "date": "2026-05-09"
+    },
     {
       "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260508",
       "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
@@ -37,13 +44,6 @@
       "title": "Lambert's problem: how to plan an intercept between two orbits",
       "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-05-08"
-    },
-    {
-      "slug": "transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260508",
-      "title": "Transformer-based abstract reasoning and test-time training for AGI",
-      "excerpt": "Learn about transformer-based abstract reasoning and test-time training for agi — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-05-08"
     }
   ],
