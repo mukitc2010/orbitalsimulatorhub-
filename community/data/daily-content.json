@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-10T07:22:16.552Z",
+  "generated_at": "2026-05-10T10:55:41.670Z",
   "featured_article": {
-    "title": "Computational fluid dynamics in spacecraft design",
-    "excerpt": "Computational fluid dynamics in spacecraft design is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/computational-fluid-dynamics-in-spacecraft-design-20260510"
+    "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
+    "excerpt": "AGI safety and alignment: ensuring beneficial artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260510"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "From narrow AI to AGI: what engineering breakth...",
-      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Escape velocity derivation from conservation of...",
+      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Structural theory of general artificial intelli...",
-      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Lunar Gateway construction and deep space habit...",
+      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Neuro-symbolic AI: combining neural networks wi...",
-      "blurb": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How MPC and LQR control algorithms keep satelli...",
+      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-05-10"
     },
     {
-      "slug": "how-stars-are-born-inside-molecular-gas-clouds-20260509",
-      "title": "How stars are born inside molecular gas clouds",
-      "excerpt": "Learn about how stars are born inside molecular gas clouds — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "astronomy-lessons",
-      "date": "2026-05-09"
+      "slug": "agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260510",
+      "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
+      "excerpt": "Learn about agi safety and alignment: ensuring beneficial artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-05-10"
     }
   ],
   "learning_paths": {
