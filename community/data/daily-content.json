@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-10T15:43:52.351Z",
+  "generated_at": "2026-05-10T20:39:07.117Z",
   "featured_article": {
-    "title": "NASA Europa Clipper mission to Jupiter's moon",
-    "excerpt": "NASA Europa Clipper mission to Jupiter's moon is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-europa-clipper-mission-to-jupiters-moon-20260510"
+    "title": "Lambert's problem: how to plan an intercept between two orbits",
+    "excerpt": "Lambert's problem: how to plan an intercept between two orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260510"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How heat shields protect spacecraft during re-e...",
+      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Agent swarm architectures: parallel multi-agent...",
-      "blurb": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Structural theory of general artificial intelli...",
+      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
-      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Dark matter: the invisible mass holding galaxie...",
+      "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
