@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-09T20:36:11.907Z",
+  "generated_at": "2026-05-10T02:05:37.100Z",
   "featured_article": {
-    "title": "Pontryagin maximum principle explained for orbital maneuvers",
-    "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260509"
+    "title": "The footprints on the Moon will last 100 million years",
+    "excerpt": "The footprints on the Moon will last 100 million years is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-facts",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-footprints-on-the-moon-will-last-100-million-years-20260510"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Soft robotics and compliant actuators for safe ...",
-      "blurb": "Soft robotics and compliant actuators for safe human-robot collaboration is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Vis-viva equation explained: the master formula...",
+      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How neutron stars can spin 716 times per second",
-      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Kepler's three laws with derivations and real s...",
+      "blurb": "Kepler's three laws with derivations and real satellite examples is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Why spacecraft have specific shapes for differe...",
-      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Dark matter: the invisible mass holding galaxie...",
+      "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "the-footprints-on-the-moon-will-last-100-million-years-20260510",
+      "title": "The footprints on the Moon will last 100 million years",
+      "excerpt": "Learn about the footprints on the moon will last 100 million years — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-facts",
+      "date": "2026-05-10"
+    },
     {
       "slug": "how-stars-are-born-inside-molecular-gas-clouds-20260509",
       "title": "How stars are born inside molecular gas clouds",
@@ -37,13 +44,6 @@
       "title": "What happens when a massive star dies: supernovae and black holes",
       "excerpt": "Learn about what happens when a massive star dies: supernovae and black holes — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "astronomy-lessons",
-      "date": "2026-05-09"
-    },
-    {
-      "slug": "neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260509",
-      "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
-      "excerpt": "Learn about neuro-symbolic ai: combining neural networks with logical reasoning for agi — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-05-09"
     }
   ],
