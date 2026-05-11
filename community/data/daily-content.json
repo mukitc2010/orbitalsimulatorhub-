@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-11T08:20:52.975Z",
+  "generated_at": "2026-05-11T12:35:11.301Z",
   "featured_article": {
-    "title": "Rocket aerodynamics: designing nose cones and fairings",
-    "excerpt": "Rocket aerodynamics: designing nose cones and fairings is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/rocket-aerodynamics-designing-nose-cones-and-fairings-20260511"
+    "title": "The Great Red Spot on Jupiter is shrinking",
+    "excerpt": "The Great Red Spot on Jupiter is shrinking is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-facts",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-great-red-spot-on-jupiter-is-shrinking-20260511"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Transformer-based abstract reasoning and test-t...",
-      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How AI satellites make autonomous decisions in ...",
+      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Artemis program progress and Moon landing plans",
-      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Space AGI five pillars: perception, planning, c...",
+      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Why a day on Venus is longer than its year",
-      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Gravitational waves and what they tell us about...",
+      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-05-11"
     },
     {
-      "slug": "the-footprints-on-the-moon-will-last-100-million-years-20260510",
-      "title": "The footprints on the Moon will last 100 million years",
-      "excerpt": "Learn about the footprints on the moon will last 100 million years — covering the science, real-world applications, and how it connects to space exploration.",
+      "slug": "the-great-red-spot-on-jupiter-is-shrinking-20260511",
+      "title": "The Great Red Spot on Jupiter is shrinking",
+      "excerpt": "Learn about the great red spot on jupiter is shrinking — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-facts",
-      "date": "2026-05-10"
+      "date": "2026-05-11"
     }
   ],
   "learning_paths": {
