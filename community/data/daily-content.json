@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-11T02:14:49.081Z",
+  "generated_at": "2026-05-11T08:20:52.975Z",
   "featured_article": {
-    "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
-    "excerpt": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260511"
+    "title": "Rocket aerodynamics: designing nose cones and fairings",
+    "excerpt": "Rocket aerodynamics: designing nose cones and fairings is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/rocket-aerodynamics-designing-nose-cones-and-fairings-20260511"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How Starlink creates global broadband internet ...",
-      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Transformer-based abstract reasoning and test-t...",
+      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How quantum computing could optimize mission pl...",
-      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Artemis program progress and Moon landing plans",
+      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Google DeepMind cognitive framework: 10 abiliti...",
-      "blurb": "Google DeepMind cognitive framework: 10 abilities needed for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Why a day on Venus is longer than its year",
+      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-05-11"
     },
     {
+      "slug": "rocket-aerodynamics-designing-nose-cones-and-fairings-20260511",
+      "title": "Rocket aerodynamics: designing nose cones and fairings",
+      "excerpt": "Learn about rocket aerodynamics: designing nose cones and fairings — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "aerodynamics",
+      "date": "2026-05-11"
+    },
+    {
       "slug": "the-footprints-on-the-moon-will-last-100-million-years-20260510",
       "title": "The footprints on the Moon will last 100 million years",
       "excerpt": "Learn about the footprints on the moon will last 100 million years — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-facts",
-      "date": "2026-05-10"
-    },
-    {
-      "slug": "computational-fluid-dynamics-in-spacecraft-design-20260510",
-      "title": "Computational fluid dynamics in spacecraft design",
-      "excerpt": "Learn about computational fluid dynamics in spacecraft design — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
       "date": "2026-05-10"
     }
   ],
