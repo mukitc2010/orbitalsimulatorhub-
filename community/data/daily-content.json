@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-10T20:39:07.117Z",
+  "generated_at": "2026-05-11T02:14:49.081Z",
   "featured_article": {
-    "title": "Lambert's problem: how to plan an intercept between two orbits",
-    "excerpt": "Lambert's problem: how to plan an intercept between two orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260510"
+    "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
+    "excerpt": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260511"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How heat shields protect spacecraft during re-e...",
-      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How Starlink creates global broadband internet ...",
+      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Structural theory of general artificial intelli...",
-      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How quantum computing could optimize mission pl...",
+      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Dark matter: the invisible mass holding galaxie...",
-      "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Google DeepMind cognitive framework: 10 abiliti...",
+      "blurb": "Google DeepMind cognitive framework: 10 abilities needed for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260511",
+      "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
+      "excerpt": "Learn about nasa valkyrie humanoid robot: a decade of research for mars missions — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-05-11"
+    },
     {
       "slug": "the-footprints-on-the-moon-will-last-100-million-years-20260510",
       "title": "The footprints on the Moon will last 100 million years",
@@ -37,13 +44,6 @@
       "title": "Computational fluid dynamics in spacecraft design",
       "excerpt": "Learn about computational fluid dynamics in spacecraft design — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "aerodynamics",
-      "date": "2026-05-10"
-    },
-    {
-      "slug": "agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260510",
-      "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
-      "excerpt": "Learn about agi safety and alignment: ensuring beneficial artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-05-10"
     }
   ],
