@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-11T21:11:13.116Z",
+  "generated_at": "2026-05-12T02:10:20.415Z",
   "featured_article": {
-    "title": "Swarm robotics for in-space assembly and orbital construction",
-    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260511"
+    "title": "The physics of geostationary orbit and why it matters",
+    "excerpt": "The physics of geostationary orbit and why it matters is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-physics-of-geostationary-orbit-and-why-it-matters-20260512"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How atomic clocks on GPS satellites use quantum...",
-      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Commercial crew program and private astronaut m...",
+      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "J2 perturbation: why orbits drift and how to co...",
-      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Voyager spacecraft updates from interstellar space",
+      "blurb": "Voyager spacecraft updates from interstellar space is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Hohmann transfer formula: the most fuel-efficie...",
-      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Mars Perseverance rover sample collection updates",
+      "blurb": "Mars Perseverance rover sample collection updates is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "the-physics-of-geostationary-orbit-and-why-it-matters-20260512",
+      "title": "The physics of geostationary orbit and why it matters",
+      "excerpt": "Learn about the physics of geostationary orbit and why it matters — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "satellite-tutorials",
+      "date": "2026-05-12"
+    },
     {
       "slug": "nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260511",
       "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
@@ -37,13 +44,6 @@
       "title": "Rocket aerodynamics: designing nose cones and fairings",
       "excerpt": "Learn about rocket aerodynamics: designing nose cones and fairings — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "aerodynamics",
-      "date": "2026-05-11"
-    },
-    {
-      "slug": "the-great-red-spot-on-jupiter-is-shrinking-20260511",
-      "title": "The Great Red Spot on Jupiter is shrinking",
-      "excerpt": "Learn about the great red spot on jupiter is shrinking — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
       "date": "2026-05-11"
     }
   ],
