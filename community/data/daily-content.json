@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-12T02:10:20.415Z",
+  "generated_at": "2026-05-12T07:38:33.323Z",
   "featured_article": {
-    "title": "The physics of geostationary orbit and why it matters",
-    "excerpt": "The physics of geostationary orbit and why it matters is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-physics-of-geostationary-orbit-and-why-it-matters-20260512"
+    "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
+    "excerpt": "From narrow AI to AGI: what engineering breakthroughs are still needed is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260512"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
@@ -14,13 +14,13 @@
       "icon": "rocket"
     },
     {
-      "title": "Voyager spacecraft updates from interstellar space",
-      "blurb": "Voyager spacecraft updates from interstellar space is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "The cosmic microwave background and the Big Bang",
+      "blurb": "The cosmic microwave background and the Big Bang is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Mars Perseverance rover sample collection updates",
-      "blurb": "Mars Perseverance rover sample collection updates is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "The life cycle of Sun-like stars from birth to ...",
+      "blurb": "The life cycle of Sun-like stars from birth to white dwarf is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-05-12"
     },
     {
+      "slug": "from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260512",
+      "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
+      "excerpt": "Learn about from narrow ai to agi: what engineering breakthroughs are still needed — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-05-12"
+    },
+    {
       "slug": "nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260511",
       "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
       "excerpt": "Learn about nasa valkyrie humanoid robot: a decade of research for mars missions — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
-      "date": "2026-05-11"
-    },
-    {
-      "slug": "rocket-aerodynamics-designing-nose-cones-and-fairings-20260511",
-      "title": "Rocket aerodynamics: designing nose cones and fairings",
-      "excerpt": "Learn about rocket aerodynamics: designing nose cones and fairings — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
       "date": "2026-05-11"
     }
   ],
