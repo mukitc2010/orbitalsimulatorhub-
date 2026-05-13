@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-13T17:09:52.462Z",
+  "generated_at": "2026-05-13T21:19:02.929Z",
   "featured_article": {
-    "title": "How Starlink creates global broadband internet from space",
-    "excerpt": "How Starlink creates global broadband internet from space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-starlink-creates-global-broadband-internet-from-space-20260513"
+    "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+    "excerpt": "Robonaut 2: the first humanoid robot in space aboard the ISS is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260513"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Saturn's rings are disappearing over millions o...",
-      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How neutron stars can spin 716 times per second",
+      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Lunar Gateway construction and deep space habit...",
-      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How lift is generated: Bernoulli vs Newton expl...",
+      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Why spacecraft have specific shapes for differe...",
-      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Quantum entanglement and future space communica...",
+      "blurb": "Quantum entanglement and future space communication is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
