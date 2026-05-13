@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-13T11:56:41.281Z",
+  "generated_at": "2026-05-13T17:09:52.462Z",
   "featured_article": {
-    "title": "Escape velocity derivation from conservation of energy",
-    "excerpt": "Escape velocity derivation from conservation of energy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/escape-velocity-derivation-from-conservation-of-energy-20260513"
+    "title": "How Starlink creates global broadband internet from space",
+    "excerpt": "How Starlink creates global broadband internet from space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-starlink-creates-global-broadband-internet-from-space-20260513"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "SpaceX Starship development and test flights",
-      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Saturn's rings are disappearing over millions o...",
+      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "SpaceX Starship development and test flights",
-      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Lunar Gateway construction and deep space habit...",
+      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Soft robotics and compliant actuators for safe ...",
-      "blurb": "Soft robotics and compliant actuators for safe human-robot collaboration is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Why spacecraft have specific shapes for differe...",
+      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
