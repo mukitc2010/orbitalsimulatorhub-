@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-13T07:45:34.361Z",
+  "generated_at": "2026-05-13T11:56:41.281Z",
   "featured_article": {
-    "title": "How AI satellites make autonomous decisions in orbit",
-    "excerpt": "How AI satellites make autonomous decisions in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-ai-satellites-make-autonomous-decisions-in-orbit-20260513"
+    "title": "Escape velocity derivation from conservation of energy",
+    "excerpt": "Escape velocity derivation from conservation of energy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/escape-velocity-derivation-from-conservation-of-energy-20260513"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "AI-driven robot autonomy: from teleoperation to...",
-      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "SpaceX Starship development and test flights",
+      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "ARC-AGI benchmark: measuring progress toward ar...",
-      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "SpaceX Starship development and test flights",
+      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Walking stability breakthroughs: 81% recovery i...",
-      "blurb": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Soft robotics and compliant actuators for safe ...",
+      "blurb": "Soft robotics and compliant actuators for safe human-robot collaboration is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-05-13"
     },
     {
-      "slug": "the-physics-of-geostationary-orbit-and-why-it-matters-20260512",
-      "title": "The physics of geostationary orbit and why it matters",
-      "excerpt": "Learn about the physics of geostationary orbit and why it matters — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "satellite-tutorials",
-      "date": "2026-05-12"
+      "slug": "escape-velocity-derivation-from-conservation-of-energy-20260513",
+      "title": "Escape velocity derivation from conservation of energy",
+      "excerpt": "Learn about escape velocity derivation from conservation of energy — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-05-13"
     }
   ],
   "learning_paths": {
