@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-13T21:19:02.929Z",
+  "generated_at": "2026-05-14T02:27:20.434Z",
   "featured_article": {
-    "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
-    "excerpt": "Robonaut 2: the first humanoid robot in space aboard the ISS is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260513"
+    "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
+    "excerpt": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260514"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How neutron stars can spin 716 times per second",
-      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Why a day on Venus is longer than its year",
+      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How lift is generated: Bernoulli vs Newton expl...",
-      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "The footprints on the Moon will last 100 millio...",
+      "blurb": "The footprints on the Moon will last 100 million years is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum entanglement and future space communica...",
-      "blurb": "Quantum entanglement and future space communication is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Scramjet engines: air-breathing propulsion at h...",
+      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260514",
+      "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
+      "excerpt": "Learn about arc-agi benchmark: measuring progress toward artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-05-14"
+    },
     {
       "slug": "ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260513",
       "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
@@ -37,13 +44,6 @@
       "title": "How AI satellites make autonomous decisions in orbit",
       "excerpt": "Learn about how ai satellites make autonomous decisions in orbit — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-05-13"
-    },
-    {
-      "slug": "escape-velocity-derivation-from-conservation-of-energy-20260513",
-      "title": "Escape velocity derivation from conservation of energy",
-      "excerpt": "Learn about escape velocity derivation from conservation of energy — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-05-13"
     }
   ],
