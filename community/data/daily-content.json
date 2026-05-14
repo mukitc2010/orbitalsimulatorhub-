@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-14T02:27:20.434Z",
+  "generated_at": "2026-05-14T07:37:53.175Z",
   "featured_article": {
-    "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
-    "excerpt": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260514"
+    "title": "Swarm robotics for in-space assembly and orbital construction",
+    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260514"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Why a day on Venus is longer than its year",
-      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Exoplanet detection methods: transit and radial...",
+      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The footprints on the Moon will last 100 millio...",
-      "blurb": "The footprints on the Moon will last 100 million years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How atomic clocks on GPS satellites use quantum...",
+      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Scramjet engines: air-breathing propulsion at h...",
-      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
+      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-05-14"
     },
     {
+      "slug": "swarm-robotics-for-in-space-assembly-and-orbital-construction-20260514",
+      "title": "Swarm robotics for in-space assembly and orbital construction",
+      "excerpt": "Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-05-14"
+    },
+    {
       "slug": "ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260513",
       "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
       "excerpt": "Learn about ai-driven robot autonomy: from teleoperation to full self-directed behavior — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
-      "date": "2026-05-13"
-    },
-    {
-      "slug": "how-ai-satellites-make-autonomous-decisions-in-orbit-20260513",
-      "title": "How AI satellites make autonomous decisions in orbit",
-      "excerpt": "Learn about how ai satellites make autonomous decisions in orbit — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-05-13"
     }
   ],
