@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-14T21:03:32.002Z",
+  "generated_at": "2026-05-15T02:25:32.995Z",
   "featured_article": {
-    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
-    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260514"
+    "title": "Why a day on Venus is longer than its year",
+    "excerpt": "Why a day on Venus is longer than its year is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-facts",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/why-a-day-on-venus-is-longer-than-its-year-20260515"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The Great Red Spot on Jupiter is shrinking",
-      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
+      "title": "From narrow AI to AGI: what engineering breakth...",
+      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
+    },
+    {
+      "title": "Escape velocity derivation from conservation of...",
+      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
+      "icon": "atom"
     },
     {
       "title": "Pulsars: the cosmic lighthouses of neutron stars",
       "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
-      "icon": "atom"
-    },
-    {
-      "title": "Quantum sensors for deep space navigation",
-      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "why-a-day-on-venus-is-longer-than-its-year-20260515",
+      "title": "Why a day on Venus is longer than its year",
+      "excerpt": "Learn about why a day on venus is longer than its year — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-facts",
+      "date": "2026-05-15"
+    },
     {
       "slug": "arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260514",
       "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
@@ -37,13 +44,6 @@
       "title": "Swarm robotics for in-space assembly and orbital construction",
       "excerpt": "Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
-      "date": "2026-05-14"
-    },
-    {
-      "slug": "what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260514",
-      "title": "What is Space AGI and why it matters for future space exploration",
-      "excerpt": "Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-05-14"
     }
   ],
