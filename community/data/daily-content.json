@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-15T07:49:17.657Z",
+  "generated_at": "2026-05-15T11:48:58.087Z",
   "featured_article": {
-    "title": "Robot engineering for lunar and Martian surface operations",
-    "excerpt": "Robot engineering for lunar and Martian surface operations is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-engineering-for-lunar-and-martian-surface-operations-20260515"
+    "title": "Transformer-based abstract reasoning and test-time training for AGI",
+    "excerpt": "Transformer-based abstract reasoning and test-time training for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260515"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The uncertainty principle and its real-world ap...",
-      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How atomic clocks on GPS satellites use quantum...",
+      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "What happens when a massive star dies: supernov...",
-      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Exoskeletons and wearable robots for astronaut ...",
+      "blurb": "Exoskeletons and wearable robots for astronaut EVA assistance is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Voyager spacecraft updates from interstellar space",
-      "blurb": "Voyager spacecraft updates from interstellar space is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Pontryagin maximum principle explained for orbi...",
+      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-05-15"
     },
     {
-      "slug": "arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260514",
-      "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
-      "excerpt": "Learn about arc-agi benchmark: measuring progress toward artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
+      "slug": "transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260515",
+      "title": "Transformer-based abstract reasoning and test-time training for AGI",
+      "excerpt": "Learn about transformer-based abstract reasoning and test-time training for agi — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-05-14"
+      "date": "2026-05-15"
     }
   ],
   "learning_paths": {
