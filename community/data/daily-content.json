@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-16T15:50:25.432Z",
+  "generated_at": "2026-05-16T20:39:07.799Z",
   "featured_article": {
-    "title": "Swarm robotics for in-space assembly and orbital construction",
-    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260516"
+    "title": "Space-AGI convergence: how orbital autonomy accelerates AGI research",
+    "excerpt": "Space-AGI convergence: how orbital autonomy accelerates AGI research is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-convergence-how-orbital-autonomy-accelerates-agi-research-20260516"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "AI collision avoidance: how 500+ satellites avo...",
-      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
+      "title": "How stars are born inside molecular gas clouds",
+      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Structural theory of general artificial intelli...",
-      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "The cosmic microwave background and the Big Bang",
+      "blurb": "The cosmic microwave background and the Big Bang is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
+      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
