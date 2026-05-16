@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-16T02:07:52.921Z",
+  "generated_at": "2026-05-16T07:10:51.038Z",
   "featured_article": {
-    "title": "How MPC and LQR control algorithms keep satellite swarms safe",
-    "excerpt": "How MPC and LQR control algorithms keep satellite swarms safe is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260516"
+    "title": "Why spacecraft have specific shapes for different missions",
+    "excerpt": "Why spacecraft have specific shapes for different missions is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/why-spacecraft-have-specific-shapes-for-different-missions-20260516"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Escape velocity derivation from conservation of...",
-      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "The observable universe is 93 billion light-yea...",
+      "blurb": "The observable universe is 93 billion light-years across is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Walking stability breakthroughs: 81% recovery i...",
-      "blurb": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
+      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Walking stability breakthroughs: 81% recovery i...",
-      "blurb": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "How quantum computing could optimize mission pl...",
+      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-05-16"
     },
     {
+      "slug": "why-spacecraft-have-specific-shapes-for-different-missions-20260516",
+      "title": "Why spacecraft have specific shapes for different missions",
+      "excerpt": "Learn about why spacecraft have specific shapes for different missions — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "aerodynamics",
+      "date": "2026-05-16"
+    },
+    {
       "slug": "why-a-day-on-venus-is-longer-than-its-year-20260515",
       "title": "Why a day on Venus is longer than its year",
       "excerpt": "Learn about why a day on venus is longer than its year — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-facts",
-      "date": "2026-05-15"
-    },
-    {
-      "slug": "robot-engineering-for-lunar-and-martian-surface-operations-20260515",
-      "title": "Robot engineering for lunar and Martian surface operations",
-      "excerpt": "Learn about robot engineering for lunar and martian surface operations — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-05-15"
     }
   ],
