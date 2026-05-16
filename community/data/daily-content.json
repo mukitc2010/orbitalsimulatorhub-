@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-16T07:10:51.038Z",
+  "generated_at": "2026-05-16T10:56:07.253Z",
   "featured_article": {
-    "title": "Why spacecraft have specific shapes for different missions",
-    "excerpt": "Why spacecraft have specific shapes for different missions is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/why-spacecraft-have-specific-shapes-for-different-missions-20260516"
+    "title": "Swarm robotics for in-space assembly and orbital construction",
+    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260516"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The observable universe is 93 billion light-yea...",
-      "blurb": "The observable universe is 93 billion light-years across is a key area in space facts that impacts how we understand and explore space.",
+      "title": "NASA Europa Clipper mission to Jupiter's moon",
+      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "The uncertainty principle and its real-world ap...",
+      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How quantum computing could optimize mission pl...",
-      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "CubeSats and nanosatellites: space access for u...",
+      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-05-16"
     },
     {
-      "slug": "why-a-day-on-venus-is-longer-than-its-year-20260515",
-      "title": "Why a day on Venus is longer than its year",
-      "excerpt": "Learn about why a day on venus is longer than its year — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
-      "date": "2026-05-15"
+      "slug": "swarm-robotics-for-in-space-assembly-and-orbital-construction-20260516",
+      "title": "Swarm robotics for in-space assembly and orbital construction",
+      "excerpt": "Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-05-16"
     }
   ],
   "learning_paths": {
