@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-17T15:52:14.826Z",
+  "generated_at": "2026-05-17T20:40:18.293Z",
   "featured_article": {
-    "title": "Hypersonic flight: challenges above Mach 5",
-    "excerpt": "Hypersonic flight: challenges above Mach 5 is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hypersonic-flight-challenges-above-mach-5-20260517"
+    "title": "Transformer-based abstract reasoning and test-time training for AGI",
+    "excerpt": "Transformer-based abstract reasoning and test-time training for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260517"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "AI collision avoidance: how 500+ satellites avo...",
+      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How quantum computing could optimize mission pl...",
+      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "AGI safety and alignment: ensuring beneficial a...",
-      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Vis-viva equation explained: the master formula...",
+      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
