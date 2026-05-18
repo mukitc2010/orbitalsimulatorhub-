@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 18 May 2026 13:38:07 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 17:26:45 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes</title>
@@ -27,6 +27,13 @@
       <description>Learn about from narrow ai to agi: what engineering breakthroughs are still needed — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
       <category>agi-research</category>
+    </item>
+    <item>
+      <title>What is Space AGI and why it matters for future space exploration</title>
+      <link>https://orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260518</link>
+      <description>Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
     </item>
     <item>
       <title>Vis-viva equation explained: the master formula for all orbits</title>
