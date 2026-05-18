@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-17T20:40:18.293Z",
+  "generated_at": "2026-05-18T02:33:02.823Z",
   "featured_article": {
-    "title": "Transformer-based abstract reasoning and test-time training for AGI",
-    "excerpt": "Transformer-based abstract reasoning and test-time training for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260517"
+    "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+    "excerpt": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260518"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "AI collision avoidance: how 500+ satellites avo...",
-      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
+      "title": "How galaxies collide and merge over billions of...",
+      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How quantum computing could optimize mission pl...",
-      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Robot manipulation and sensor fusion for space ...",
+      "blurb": "Robot manipulation and sensor fusion for space construction tasks is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Vis-viva equation explained: the master formula...",
-      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "The physics of geostationary orbit and why it m...",
+      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260518",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+      "excerpt": "Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-05-18"
+    },
     {
       "slug": "vis-viva-equation-explained-the-master-formula-for-all-orbits-20260517",
       "title": "Vis-viva equation explained: the master formula for all orbits",
@@ -36,13 +43,6 @@
       "slug": "self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260517",
       "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
       "excerpt": "Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-05-17"
-    },
-    {
-      "slug": "how-ai-satellites-make-autonomous-decisions-in-orbit-20260517",
-      "title": "How AI satellites make autonomous decisions in orbit",
-      "excerpt": "Learn about how ai satellites make autonomous decisions in orbit — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
       "date": "2026-05-17"
     }
