@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-19T17:34:34.801Z",
+  "generated_at": "2026-05-19T21:12:44.757Z",
   "featured_article": {
-    "title": "Robot manipulation and sensor fusion for space construction tasks",
-    "excerpt": "Robot manipulation and sensor fusion for space construction tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260519"
+    "title": "Computational fluid dynamics in spacecraft design",
+    "excerpt": "Computational fluid dynamics in spacecraft design is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/computational-fluid-dynamics-in-spacecraft-design-20260519"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Artemis program progress and Moon landing plans",
-      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Space is completely silent because sound needs ...",
+      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "CubeSats and nanosatellites: space access for u...",
-      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "The footprints on the Moon will last 100 millio...",
+      "blurb": "The footprints on the Moon will last 100 million years is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How MPC and LQR control algorithms keep satelli...",
+      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
