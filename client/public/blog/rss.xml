@@ -5,8 +5,15 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 18 May 2026 21:03:18 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 02:31:50 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How quantum computing could optimize mission planning</title>
+      <link>https://orbitalsimulatorhub.com/blog/how-quantum-computing-could-optimize-mission-planning-20260519</link>
+      <description>Learn about how quantum computing could optimize mission planning — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
+      <category>quantum-physics</category>
+    </item>
     <item>
       <title>Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes</title>
       <link>https://orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260518</link>

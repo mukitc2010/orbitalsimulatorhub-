@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-18T21:03:18.261Z",
+  "generated_at": "2026-05-19T02:31:50.119Z",
   "featured_article": {
-    "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
-    "excerpt": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260518"
+    "title": "How quantum computing could optimize mission planning",
+    "excerpt": "How quantum computing could optimize mission planning is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-quantum-computing-could-optimize-mission-planning-20260519"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "A teaspoon of neutron star weighs 6 billion tons",
-      "blurb": "A teaspoon of neutron star weighs 6 billion tons is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How satellite constellations maintain formation...",
+      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Hohmann transfer formula: the most fuel-efficie...",
-      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How AI satellites make autonomous decisions in ...",
+      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Schrodinger equation: the foundation of quantum...",
-      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Exoplanet detection methods: transit and radial...",
+      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "how-quantum-computing-could-optimize-mission-planning-20260519",
+      "title": "How quantum computing could optimize mission planning",
+      "excerpt": "Learn about how quantum computing could optimize mission planning — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "quantum-physics",
+      "date": "2026-05-19"
+    },
     {
       "slug": "space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260518",
       "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
@@ -37,13 +44,6 @@
       "title": "J2 perturbation: why orbits drift and how to correct them",
       "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-05-18"
-    },
-    {
-      "slug": "from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260518",
-      "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
-      "excerpt": "Learn about from narrow ai to agi: what engineering breakthroughs are still needed — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-05-18"
     }
   ],
