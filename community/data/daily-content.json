@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-19T21:12:44.757Z",
+  "generated_at": "2026-05-20T02:32:14.876Z",
   "featured_article": {
-    "title": "Computational fluid dynamics in spacecraft design",
-    "excerpt": "Computational fluid dynamics in spacecraft design is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/computational-fluid-dynamics-in-spacecraft-design-20260519"
+    "title": "CubeSats and nanosatellites: space access for universities",
+    "excerpt": "CubeSats and nanosatellites: space access for universities is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/cubesats-and-nanosatellites-space-access-for-universities-20260520"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Space is completely silent because sound needs ...",
-      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How heat shields protect spacecraft during re-e...",
+      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The footprints on the Moon will last 100 millio...",
-      "blurb": "The footprints on the Moon will last 100 million years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "AI collision avoidance: how 500+ satellites avo...",
+      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How MPC and LQR control algorithms keep satelli...",
-      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
+      "title": "How galaxies collide and merge over billions of...",
+      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "cubesats-and-nanosatellites-space-access-for-universities-20260520",
+      "title": "CubeSats and nanosatellites: space access for universities",
+      "excerpt": "Learn about cubesats and nanosatellites: space access for universities — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "satellite-tutorials",
+      "date": "2026-05-20"
+    },
     {
       "slug": "how-quantum-computing-could-optimize-mission-planning-20260519",
       "title": "How quantum computing could optimize mission planning",
@@ -37,13 +44,6 @@
       "title": "Orbital energy and specific orbital energy formula",
       "excerpt": "Learn about orbital energy and specific orbital energy formula — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-05-19"
-    },
-    {
-      "slug": "arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260519",
-      "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
-      "excerpt": "Learn about arc-agi benchmark: measuring progress toward artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-05-19"
     }
   ],
