@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-20T02:32:14.876Z",
+  "generated_at": "2026-05-20T08:20:46.625Z",
   "featured_article": {
-    "title": "CubeSats and nanosatellites: space access for universities",
-    "excerpt": "CubeSats and nanosatellites: space access for universities is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/cubesats-and-nanosatellites-space-access-for-universities-20260520"
+    "title": "Patched conic approximation for interplanetary trajectories",
+    "excerpt": "Patched conic approximation for interplanetary trajectories is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/patched-conic-approximation-for-interplanetary-trajectories-20260520"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How heat shields protect spacecraft during re-e...",
-      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Quantum sensors for deep space navigation",
+      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "AI collision avoidance: how 500+ satellites avo...",
-      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy ...",
+      "blurb": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How galaxies collide and merge over billions of...",
-      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "From narrow AI to AGI: what engineering breakth...",
+      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-05-20"
     },
     {
+      "slug": "patched-conic-approximation-for-interplanetary-trajectories-20260520",
+      "title": "Patched conic approximation for interplanetary trajectories",
+      "excerpt": "Learn about patched conic approximation for interplanetary trajectories — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-05-20"
+    },
+    {
       "slug": "how-quantum-computing-could-optimize-mission-planning-20260519",
       "title": "How quantum computing could optimize mission planning",
       "excerpt": "Learn about how quantum computing could optimize mission planning — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "quantum-physics",
-      "date": "2026-05-19"
-    },
-    {
-      "slug": "orbital-energy-and-specific-orbital-energy-formula-20260519",
-      "title": "Orbital energy and specific orbital energy formula",
-      "excerpt": "Learn about orbital energy and specific orbital energy formula — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-05-19"
     }
   ],
