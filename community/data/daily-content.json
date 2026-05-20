@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-20T17:49:56.162Z",
+  "generated_at": "2026-05-20T21:44:16.600Z",
   "featured_article": {
-    "title": "The physics of geostationary orbit and why it matters",
-    "excerpt": "The physics of geostationary orbit and why it matters is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-physics-of-geostationary-orbit-and-why-it-matters-20260520"
+    "title": "Vis-viva equation explained: the master formula for all orbits",
+    "excerpt": "Vis-viva equation explained: the master formula for all orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/vis-viva-equation-explained-the-master-formula-for-all-orbits-20260520"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Space AGI five pillars: perception, planning, c...",
-      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Robot manipulation and sensor fusion for space ...",
+      "blurb": "Robot manipulation and sensor fusion for space construction tasks is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "AGI safety and alignment: ensuring beneficial a...",
-      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "ARC-AGI benchmark: measuring progress toward ar...",
+      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Escape velocity derivation from conservation of...",
-      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "NASA Europa Clipper mission to Jupiter's moon",
+      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
