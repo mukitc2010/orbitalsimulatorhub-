@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-21T17:27:22.220Z",
+  "generated_at": "2026-05-21T21:22:12.110Z",
   "featured_article": {
-    "title": "The Great Red Spot on Jupiter is shrinking",
-    "excerpt": "The Great Red Spot on Jupiter is shrinking is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-facts",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-great-red-spot-on-jupiter-is-shrinking-20260521"
+    "title": "What is Space AGI and why it matters for future space exploration",
+    "excerpt": "What is Space AGI and why it matters for future space exploration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260521"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Humanoid robot locomotion on uneven terrain and...",
-      "blurb": "Humanoid robot locomotion on uneven terrain and moving platforms is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "How NASA tests aerodynamics in wind tunnels",
+      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Neuro-symbolic AI: combining neural networks wi...",
-      "blurb": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Agent swarm architectures: parallel multi-agent...",
+      "blurb": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Commercial crew program and private astronaut m...",
-      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "International Space Station science experiments",
+      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
