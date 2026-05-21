@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-21T08:27:36.497Z",
+  "generated_at": "2026-05-21T12:39:46.961Z",
   "featured_article": {
-    "title": "N-body equations: when two-body mechanics is not enough",
-    "excerpt": "N-body equations: when two-body mechanics is not enough is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "J2 perturbation: why orbits drift and how to correct them",
+    "excerpt": "J2 perturbation: why orbits drift and how to correct them is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/n-body-equations-when-two-body-mechanics-is-not-enough-20260521"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260521"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "SpaceX Starship development and test flights",
-      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How neutron stars can spin 716 times per second",
+      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Robonaut 2: the first humanoid robot in space a...",
-      "blurb": "Robonaut 2: the first humanoid robot in space aboard the ISS is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "NASA Europa Clipper mission to Jupiter's moon",
+      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How quantum computing could optimize mission pl...",
-      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "The footprints on the Moon will last 100 millio...",
+      "blurb": "The footprints on the Moon will last 100 million years is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-05-21"
     },
     {
-      "slug": "cubesats-and-nanosatellites-space-access-for-universities-20260520",
-      "title": "CubeSats and nanosatellites: space access for universities",
-      "excerpt": "Learn about cubesats and nanosatellites: space access for universities — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "satellite-tutorials",
-      "date": "2026-05-20"
+      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260521",
+      "title": "J2 perturbation: why orbits drift and how to correct them",
+      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-05-21"
     }
   ],
   "learning_paths": {
