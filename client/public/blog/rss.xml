@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Fri, 22 May 2026 02:34:25 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 08:17:52 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Patched conic approximation for interplanetary trajectories</title>
@@ -13,6 +13,13 @@
       <description>Learn about patched conic approximation for interplanetary trajectories — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Fri, 22 May 2026 00:00:00 GMT</pubDate>
       <category>space-engineering</category>
+    </item>
+    <item>
+      <title>How MPC and LQR control algorithms keep satellite swarms safe</title>
+      <link>https://orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260522</link>
+      <description>Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 22 May 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
     </item>
     <item>
       <title>Self-repairing spacecraft: AI that fixes itself in deep space</title>
