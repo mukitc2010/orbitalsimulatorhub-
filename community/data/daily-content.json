@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-21T21:22:12.110Z",
+  "generated_at": "2026-05-22T02:34:25.139Z",
   "featured_article": {
-    "title": "What is Space AGI and why it matters for future space exploration",
-    "excerpt": "What is Space AGI and why it matters for future space exploration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260521"
+    "title": "Patched conic approximation for interplanetary trajectories",
+    "excerpt": "Patched conic approximation for interplanetary trajectories is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/patched-conic-approximation-for-interplanetary-trajectories-20260522"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How NASA tests aerodynamics in wind tunnels",
-      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How orbital debris tracking and avoidance works",
+      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Agent swarm architectures: parallel multi-agent...",
-      "blurb": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "AGI safety and alignment: ensuring beneficial a...",
+      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "International Space Station science experiments",
-      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Swarm robotics for in-space assembly and orbita...",
+      "blurb": "Swarm robotics for in-space assembly and orbital construction is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "patched-conic-approximation-for-interplanetary-trajectories-20260522",
+      "title": "Patched conic approximation for interplanetary trajectories",
+      "excerpt": "Learn about patched conic approximation for interplanetary trajectories — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-05-22"
+    },
     {
       "slug": "self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260521",
       "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
@@ -36,13 +43,6 @@
       "slug": "n-body-equations-when-two-body-mechanics-is-not-enough-20260521",
       "title": "N-body equations: when two-body mechanics is not enough",
       "excerpt": "Learn about n-body equations: when two-body mechanics is not enough — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
-      "date": "2026-05-21"
-    },
-    {
-      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260521",
-      "title": "J2 perturbation: why orbits drift and how to correct them",
-      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
       "date": "2026-05-21"
     }
