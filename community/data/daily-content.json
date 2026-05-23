@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-22T21:03:38.710Z",
+  "generated_at": "2026-05-23T02:11:18.697Z",
   "featured_article": {
-    "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
-    "excerpt": "From narrow AI to AGI: what engineering breakthroughs are still needed is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Transformer-based abstract reasoning and test-time training for AGI",
+    "excerpt": "Transformer-based abstract reasoning and test-time training for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260522"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260523"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Computational fluid dynamics in spacecraft design",
-      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "International Space Station science experiments",
+      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Commercial crew program and private astronaut m...",
+      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Dark matter: the invisible mass holding galaxie...",
-      "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Schrodinger equation: the foundation of quantum...",
+      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260523",
+      "title": "Transformer-based abstract reasoning and test-time training for AGI",
+      "excerpt": "Learn about transformer-based abstract reasoning and test-time training for agi — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-05-23"
+    },
     {
       "slug": "patched-conic-approximation-for-interplanetary-trajectories-20260522",
       "title": "Patched conic approximation for interplanetary trajectories",
@@ -37,13 +44,6 @@
       "title": "How MPC and LQR control algorithms keep satellite swarms safe",
       "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-05-22"
-    },
-    {
-      "slug": "how-satellite-constellations-maintain-formation-in-orbit-20260522",
-      "title": "How satellite constellations maintain formation in orbit",
-      "excerpt": "Learn about how satellite constellations maintain formation in orbit — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "satellite-tutorials",
       "date": "2026-05-22"
     }
   ],
