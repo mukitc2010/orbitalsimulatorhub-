@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-23T02:11:18.697Z",
+  "generated_at": "2026-05-23T07:26:21.897Z",
   "featured_article": {
-    "title": "Transformer-based abstract reasoning and test-time training for AGI",
-    "excerpt": "Transformer-based abstract reasoning and test-time training for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260523"
+    "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
+    "excerpt": "Hohmann transfer formula: the most fuel-efficient way to change orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260523"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "International Space Station science experiments",
-      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "The cosmic microwave background and the Big Bang",
+      "blurb": "The cosmic microwave background and the Big Bang is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Commercial crew program and private astronaut m...",
-      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How Starlink creates global broadband internet ...",
+      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Schrodinger equation: the foundation of quantum...",
-      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Why compositional reasoning remains the hardest...",
+      "blurb": "Why compositional reasoning remains the hardest unsolved AGI challenge is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-05-23"
     },
     {
+      "slug": "hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260523",
+      "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
+      "excerpt": "Learn about hohmann transfer formula: the most fuel-efficient way to change orbits — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-05-23"
+    },
+    {
       "slug": "patched-conic-approximation-for-interplanetary-trajectories-20260522",
       "title": "Patched conic approximation for interplanetary trajectories",
       "excerpt": "Learn about patched conic approximation for interplanetary trajectories — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-05-22"
-    },
-    {
-      "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260522",
-      "title": "How MPC and LQR control algorithms keep satellite swarms safe",
-      "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-05-22"
     }
   ],
