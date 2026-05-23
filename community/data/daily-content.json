@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-23T07:26:21.897Z",
+  "generated_at": "2026-05-23T11:04:54.671Z",
   "featured_article": {
-    "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
-    "excerpt": "Hohmann transfer formula: the most fuel-efficient way to change orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260523"
+    "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+    "excerpt": "Robonaut 2: the first humanoid robot in space aboard the ISS is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260523"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The cosmic microwave background and the Big Bang",
-      "blurb": "The cosmic microwave background and the Big Bang is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How atomic clocks on GPS satellites use quantum...",
+      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How Starlink creates global broadband internet ...",
-      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How spy satellites achieve sub-meter imaging re...",
+      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Why compositional reasoning remains the hardest...",
-      "blurb": "Why compositional reasoning remains the hardest unsolved AGI challenge is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How NASA tests aerodynamics in wind tunnels",
+      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-05-23"
     },
     {
-      "slug": "patched-conic-approximation-for-interplanetary-trajectories-20260522",
-      "title": "Patched conic approximation for interplanetary trajectories",
-      "excerpt": "Learn about patched conic approximation for interplanetary trajectories — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
-      "date": "2026-05-22"
+      "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260523",
+      "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+      "excerpt": "Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-05-23"
     }
   ],
   "learning_paths": {
