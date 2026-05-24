@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-24T11:08:24.974Z",
+  "generated_at": "2026-05-24T15:56:09.558Z",
   "featured_article": {
-    "title": "Hohmann transfer formula: the most fuel-efficient way to change orbits",
-    "excerpt": "Hohmann transfer formula: the most fuel-efficient way to change orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260524"
+    "title": "Dark matter: the invisible mass holding galaxies together",
+    "excerpt": "Dark matter: the invisible mass holding galaxies together is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "astronomy-lessons",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/dark-matter-the-invisible-mass-holding-galaxies-together-20260524"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
-      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Walking stability breakthroughs: 81% recovery i...",
+      "blurb": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "AI collision avoidance: how 500+ satellites avo...",
+      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Neuro-symbolic AI: combining neural networks wi...",
+      "blurb": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
