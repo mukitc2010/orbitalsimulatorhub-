@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-25T02:38:31.345Z",
+  "generated_at": "2026-05-25T08:51:31.233Z",
   "featured_article": {
-    "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
-    "excerpt": "Google DeepMind cognitive framework: 10 abilities needed for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260525"
+    "title": "Robot manipulation and sensor fusion for space construction tasks",
+    "excerpt": "Robot manipulation and sensor fusion for space construction tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260525"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Mars Perseverance rover sample collection updates",
-      "blurb": "Mars Perseverance rover sample collection updates is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Commercial crew program and private astronaut m...",
+      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Space AGI roadmap 2025-2060: from LEO autonomy ...",
-      "blurb": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Neuro-symbolic AI: combining neural networks wi...",
+      "blurb": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "NASA Valkyrie humanoid robot: a decade of resea...",
-      "blurb": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Vis-viva equation explained: the master formula...",
+      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-05-25"
     },
     {
+      "slug": "robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260525",
+      "title": "Robot manipulation and sensor fusion for space construction tasks",
+      "excerpt": "Learn about robot manipulation and sensor fusion for space construction tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-05-25"
+    },
+    {
       "slug": "patched-conic-approximation-for-interplanetary-trajectories-20260524",
       "title": "Patched conic approximation for interplanetary trajectories",
       "excerpt": "Learn about patched conic approximation for interplanetary trajectories — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-05-24"
-    },
-    {
-      "slug": "the-footprints-on-the-moon-will-last-100-million-years-20260524",
-      "title": "The footprints on the Moon will last 100 million years",
-      "excerpt": "Learn about the footprints on the moon will last 100 million years — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
       "date": "2026-05-24"
     }
   ],
