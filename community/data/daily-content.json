@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-26T08:27:18.076Z",
+  "generated_at": "2026-05-26T17:51:51.272Z",
   "featured_article": {
-    "title": "Pontryagin maximum principle explained for orbital maneuvers",
-    "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260526"
+    "title": "Hubble constant and the expanding universe controversy",
+    "excerpt": "Hubble constant and the expanding universe controversy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "astronomy-lessons",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hubble-constant-and-the-expanding-universe-controversy-20260526"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Why a day on Venus is longer than its year",
-      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How orbital debris tracking and avoidance works",
+      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "There are more stars than grains of sand on Earth",
-      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
+      "title": "The physics of geostationary orbit and why it m...",
+      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "James Webb Space Telescope latest discoveries",
-      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Google DeepMind cognitive framework: 10 abiliti...",
+      "blurb": "Google DeepMind cognitive framework: 10 abilities needed for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-05-26"
     },
     {
-      "slug": "google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260525",
-      "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
-      "excerpt": "Learn about google deepmind cognitive framework: 10 abilities needed for agi — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
-      "date": "2026-05-25"
+      "slug": "hubble-constant-and-the-expanding-universe-controversy-20260526",
+      "title": "Hubble constant and the expanding universe controversy",
+      "excerpt": "Learn about hubble constant and the expanding universe controversy — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "astronomy-lessons",
+      "date": "2026-05-26"
     }
   ],
   "learning_paths": {
