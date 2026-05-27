@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-26T21:29:29.510Z",
+  "generated_at": "2026-05-27T02:37:44.876Z",
   "featured_article": {
-    "title": "Re-entry physics: surviving 28000 km/h atmospheric entry",
-    "excerpt": "Re-entry physics: surviving 28000 km/h atmospheric entry is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260526"
+    "title": "Lambert's problem: how to plan an intercept between two orbits",
+    "excerpt": "Lambert's problem: how to plan an intercept between two orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260527"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "J2 perturbation: why orbits drift and how to co...",
-      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Schrodinger equation: the foundation of quantum...",
+      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "J2 perturbation: why orbits drift and how to co...",
-      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "The Great Red Spot on Jupiter is shrinking",
+      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How AI satellites make autonomous decisions in ...",
-      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Pontryagin maximum principle explained for orbi...",
+      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260527",
+      "title": "Lambert's problem: how to plan an intercept between two orbits",
+      "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-05-27"
+    },
     {
       "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260526",
       "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
@@ -37,13 +44,6 @@
       "title": "Pontryagin maximum principle explained for orbital maneuvers",
       "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-05-26"
-    },
-    {
-      "slug": "hubble-constant-and-the-expanding-universe-controversy-20260526",
-      "title": "Hubble constant and the expanding universe controversy",
-      "excerpt": "Learn about hubble constant and the expanding universe controversy — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "astronomy-lessons",
       "date": "2026-05-26"
     }
   ],
