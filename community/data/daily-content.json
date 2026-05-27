@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-27T17:53:02.767Z",
+  "generated_at": "2026-05-27T21:50:19.863Z",
   "featured_article": {
-    "title": "Space AGI five pillars: perception, planning, control, learning, communication",
-    "excerpt": "Space AGI five pillars: perception, planning, control, learning, communication is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-five-pillars-perception-planning-control-learning-communication-20260527"
+    "title": "Escape velocity derivation from conservation of energy",
+    "excerpt": "Escape velocity derivation from conservation of energy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/escape-velocity-derivation-from-conservation-of-energy-20260527"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "AI-driven robot autonomy: from teleoperation to...",
-      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Quantum key distribution for secure satellite c...",
+      "blurb": "Quantum key distribution for secure satellite communications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How lift is generated: Bernoulli vs Newton expl...",
-      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "AGI safety and alignment: ensuring beneficial a...",
+      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The Great Red Spot on Jupiter is shrinking",
-      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How Starlink creates global broadband internet ...",
+      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
