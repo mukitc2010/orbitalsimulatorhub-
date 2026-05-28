@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-28T02:14:22.764Z",
+  "generated_at": "2026-05-28T08:38:43.554Z",
   "featured_article": {
-    "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
-    "excerpt": "From narrow AI to AGI: what engineering breakthroughs are still needed is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260528"
+    "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
+    "excerpt": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260528"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Scramjet engines: air-breathing propulsion at h...",
-      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Structural theory of general artificial intelli...",
+      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Artemis program progress and Moon landing plans",
-      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Space is completely silent because sound needs ...",
+      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The footprints on the Moon will last 100 millio...",
-      "blurb": "The footprints on the Moon will last 100 million years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "NASA Europa Clipper mission to Jupiter's moon",
+      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-05-28"
     },
     {
+      "slug": "ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260528",
+      "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
+      "excerpt": "Learn about ai-driven robot autonomy: from teleoperation to full self-directed behavior — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-05-28"
+    },
+    {
       "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260527",
       "title": "Lambert's problem: how to plan an intercept between two orbits",
       "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-05-27"
-    },
-    {
-      "slug": "google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260527",
-      "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
-      "excerpt": "Learn about google deepmind cognitive framework: 10 abilities needed for agi — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-05-27"
     }
   ],
