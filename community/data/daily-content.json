@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-29T12:42:22.767Z",
+  "generated_at": "2026-05-29T18:07:55.007Z",
   "featured_article": {
-    "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
-    "excerpt": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260529"
+    "title": "How NASA tests aerodynamics in wind tunnels",
+    "excerpt": "How NASA tests aerodynamics in wind tunnels is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-nasa-tests-aerodynamics-in-wind-tunnels-20260529"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "CubeSats and nanosatellites: space access for u...",
-      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Quantum tunneling in nuclear fusion inside stars",
+      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
+    },
+    {
+      "title": "Hohmann transfer formula: the most fuel-efficie...",
+      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "icon": "atom"
     },
     {
       "title": "Kepler's three laws with derivations and real s...",
       "blurb": "Kepler's three laws with derivations and real satellite examples is a key area in space engineering that impacts how we understand and explore space.",
-      "icon": "atom"
-    },
-    {
-      "title": "How MPC and LQR control algorithms keep satelli...",
-      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
