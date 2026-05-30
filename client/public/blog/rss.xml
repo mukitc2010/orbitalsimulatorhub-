@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Sat, 30 May 2026 02:13:26 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 07:36:00 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Commercial crew program and private astronaut missions</title>
@@ -13,6 +13,13 @@
       <description>Learn about commercial crew program and private astronaut missions — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Sat, 30 May 2026 00:00:00 GMT</pubDate>
       <category>nasa-news</category>
+    </item>
+    <item>
+      <title>Hohmann transfer formula: the most fuel-efficient way to change orbits</title>
+      <link>https://orbitalsimulatorhub.com/blog/hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260530</link>
+      <description>Learn about hohmann transfer formula: the most fuel-efficient way to change orbits — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 30 May 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
     </item>
     <item>
       <title>Google DeepMind cognitive framework: 10 abilities needed for AGI</title>
