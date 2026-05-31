@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-31T11:28:48.821Z",
+  "generated_at": "2026-05-31T16:00:08.411Z",
   "featured_article": {
-    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-    "excerpt": "Soft robotics and compliant actuators for safe human-robot collaboration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260531"
+    "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
+    "excerpt": "From narrow AI to AGI: what engineering breakthroughs are still needed is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260531"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Space-AGI convergence: how orbital autonomy acc...",
-      "blurb": "Space-AGI convergence: how orbital autonomy accelerates AGI research is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Soft robotics and compliant actuators for safe ...",
+      "blurb": "Soft robotics and compliant actuators for safe human-robot collaboration is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "James Webb Space Telescope latest discoveries",
-      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
+      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "N-body equations: when two-body mechanics is no...",
-      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How stars are born inside molecular gas clouds",
+      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
