@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-31T08:09:44.472Z",
+  "generated_at": "2026-05-31T11:28:48.821Z",
   "featured_article": {
-    "title": "Dark matter: the invisible mass holding galaxies together",
-    "excerpt": "Dark matter: the invisible mass holding galaxies together is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/dark-matter-the-invisible-mass-holding-galaxies-together-20260531"
+    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
+    "excerpt": "Soft robotics and compliant actuators for safe human-robot collaboration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260531"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "From narrow AI to AGI: what engineering breakth...",
-      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Space-AGI convergence: how orbital autonomy acc...",
+      "blurb": "Space-AGI convergence: how orbital autonomy accelerates AGI research is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "AI collision avoidance: how 500+ satellites avo...",
-      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
+      "title": "James Webb Space Telescope latest discoveries",
+      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Space-AGI convergence: how orbital autonomy acc...",
-      "blurb": "Space-AGI convergence: how orbital autonomy accelerates AGI research is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "N-body equations: when two-body mechanics is no...",
+      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-05-31"
     },
     {
-      "slug": "commercial-crew-program-and-private-astronaut-missions-20260530",
-      "title": "Commercial crew program and private astronaut missions",
-      "excerpt": "Learn about commercial crew program and private astronaut missions — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "nasa-news",
-      "date": "2026-05-30"
+      "slug": "soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260531",
+      "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
+      "excerpt": "Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-05-31"
     }
   ],
   "learning_paths": {
