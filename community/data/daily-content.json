@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-01T02:48:48.297Z",
+  "generated_at": "2026-06-01T10:12:04.870Z",
   "featured_article": {
-    "title": "The observable universe is 93 billion light-years across",
-    "excerpt": "The observable universe is 93 billion light-years across is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-facts",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-observable-universe-is-93-billion-light-years-across-20260601"
+    "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
+    "excerpt": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260601"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How GPS satellites calculate your exact positio...",
-      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Why a day on Venus is longer than its year",
+      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How satellite constellations maintain formation...",
-      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Patched conic approximation for interplanetary ...",
+      "blurb": "Patched conic approximation for interplanetary trajectories is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How heat shields protect spacecraft during re-e...",
-      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Delayed MDP and Mars communication delay: why A...",
+      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-01"
     },
     {
+      "slug": "neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260601",
+      "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
+      "excerpt": "Learn about neuro-symbolic ai: combining neural networks with logical reasoning for agi — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-06-01"
+    },
+    {
       "slug": "how-spy-satellites-achieve-sub-meter-imaging-resolution-20260531",
       "title": "How spy satellites achieve sub-meter imaging resolution",
       "excerpt": "Learn about how spy satellites achieve sub-meter imaging resolution — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "satellite-tutorials",
-      "date": "2026-05-31"
-    },
-    {
-      "slug": "dark-matter-the-invisible-mass-holding-galaxies-together-20260531",
-      "title": "Dark matter: the invisible mass holding galaxies together",
-      "excerpt": "Learn about dark matter: the invisible mass holding galaxies together — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "astronomy-lessons",
       "date": "2026-05-31"
     }
   ],
