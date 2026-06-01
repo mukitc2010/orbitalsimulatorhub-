@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-05-31T20:50:41.225Z",
+  "generated_at": "2026-06-01T02:48:48.297Z",
   "featured_article": {
-    "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
-    "excerpt": "AGI safety and alignment: ensuring beneficial artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260531"
+    "title": "The observable universe is 93 billion light-years across",
+    "excerpt": "The observable universe is 93 billion light-years across is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-facts",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-observable-universe-is-93-billion-light-years-across-20260601"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Delayed MDP and Mars communication delay: why A...",
-      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
+      "title": "How GPS satellites calculate your exact positio...",
+      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Schrodinger equation: the foundation of quantum...",
-      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How satellite constellations maintain formation...",
+      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How neutron stars can spin 716 times per second",
-      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How heat shields protect spacecraft during re-e...",
+      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "the-observable-universe-is-93-billion-light-years-across-20260601",
+      "title": "The observable universe is 93 billion light-years across",
+      "excerpt": "Learn about the observable universe is 93 billion light-years across — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-facts",
+      "date": "2026-06-01"
+    },
     {
       "slug": "how-spy-satellites-achieve-sub-meter-imaging-resolution-20260531",
       "title": "How spy satellites achieve sub-meter imaging resolution",
@@ -37,13 +44,6 @@
       "title": "Dark matter: the invisible mass holding galaxies together",
       "excerpt": "Learn about dark matter: the invisible mass holding galaxies together — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "astronomy-lessons",
-      "date": "2026-05-31"
-    },
-    {
-      "slug": "soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260531",
-      "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-      "excerpt": "Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-05-31"
     }
   ],
