@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-02T09:01:55.509Z",
+  "generated_at": "2026-06-02T13:53:04.517Z",
   "featured_article": {
-    "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
-    "excerpt": "AGI safety and alignment: ensuring beneficial artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260602"
+    "title": "Vis-viva equation explained: the master formula for all orbits",
+    "excerpt": "Vis-viva equation explained: the master formula for all orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/vis-viva-equation-explained-the-master-formula-for-all-orbits-20260602"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "NASA Europa Clipper mission to Jupiter's moon",
-      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Humanoid robot locomotion on uneven terrain and...",
+      "blurb": "Humanoid robot locomotion on uneven terrain and moving platforms is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Gravitational waves and what they tell us about...",
-      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Lunar Gateway construction and deep space habit...",
+      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Mars Perseverance rover sample collection updates",
-      "blurb": "Mars Perseverance rover sample collection updates is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Space-AGI convergence: how orbital autonomy acc...",
+      "blurb": "Space-AGI convergence: how orbital autonomy accelerates AGI research is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-06-02"
     },
     {
-      "slug": "the-observable-universe-is-93-billion-light-years-across-20260601",
-      "title": "The observable universe is 93 billion light-years across",
-      "excerpt": "Learn about the observable universe is 93 billion light-years across — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
-      "date": "2026-06-01"
+      "slug": "vis-viva-equation-explained-the-master-formula-for-all-orbits-20260602",
+      "title": "Vis-viva equation explained: the master formula for all orbits",
+      "excerpt": "Learn about vis-viva equation explained: the master formula for all orbits — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-06-02"
     }
   ],
   "learning_paths": {
