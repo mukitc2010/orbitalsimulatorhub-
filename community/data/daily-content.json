@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-02T02:45:50.981Z",
+  "generated_at": "2026-06-02T09:01:55.509Z",
   "featured_article": {
-    "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
-    "excerpt": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260602"
+    "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
+    "excerpt": "AGI safety and alignment: ensuring beneficial artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260602"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "NASA Europa Clipper mission to Jupiter's moon",
+      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Quantum sensors for deep space navigation",
-      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Gravitational waves and what they tell us about...",
+      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Computational fluid dynamics in spacecraft design",
-      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Mars Perseverance rover sample collection updates",
+      "blurb": "Mars Perseverance rover sample collection updates is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-02"
     },
     {
+      "slug": "agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260602",
+      "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
+      "excerpt": "Learn about agi safety and alignment: ensuring beneficial artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-06-02"
+    },
+    {
       "slug": "the-observable-universe-is-93-billion-light-years-across-20260601",
       "title": "The observable universe is 93 billion light-years across",
       "excerpt": "Learn about the observable universe is 93 billion light-years across — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-facts",
-      "date": "2026-06-01"
-    },
-    {
-      "slug": "neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260601",
-      "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
-      "excerpt": "Learn about neuro-symbolic ai: combining neural networks with logical reasoning for agi — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-06-01"
     }
   ],
