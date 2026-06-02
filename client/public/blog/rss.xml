@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Tue, 02 Jun 2026 13:53:04 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 18:33:30 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI-driven robot autonomy: from teleoperation to full self-directed behavior</title>
@@ -27,6 +27,13 @@
       <description>Learn about vis-viva equation explained: the master formula for all orbits — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
       <category>space-engineering</category>
+    </item>
+    <item>
+      <title>How GPS satellites calculate your exact position using trilateration</title>
+      <link>https://orbitalsimulatorhub.com/blog/how-gps-satellites-calculate-your-exact-position-using-trilateration-20260602</link>
+      <description>Learn about how gps satellites calculate your exact position using trilateration — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
+      <category>satellite-tutorials</category>
     </item>
     <item>
       <title>The observable universe is 93 billion light-years across</title>
