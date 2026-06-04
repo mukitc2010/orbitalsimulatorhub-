@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-06-03T22:24:17.703Z",
+  "generated_at": "2026-06-04T02:49:44.248Z",
   "featured_article": {
-    "title": "How MPC and LQR control algorithms keep satellite swarms safe",
-    "excerpt": "How MPC and LQR control algorithms keep satellite swarms safe is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260603"
+    "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
+    "excerpt": "From narrow AI to AGI: what engineering breakthroughs are still needed is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260604"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Quantum tunneling in nuclear fusion inside stars",
+      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How quantum computing could optimize mission pl...",
-      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Hohmann transfer formula: the most fuel-efficie...",
+      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Rocket aerodynamics: designing nose cones and f...",
-      "blurb": "Rocket aerodynamics: designing nose cones and fairings is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How satellite constellations maintain formation...",
+      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260604",
+      "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
+      "excerpt": "Learn about from narrow ai to agi: what engineering breakthroughs are still needed — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-06-04"
+    },
     {
       "slug": "walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260603",
       "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
@@ -37,13 +44,6 @@
       "title": "Kepler's three laws with derivations and real satellite examples",
       "excerpt": "Learn about kepler's three laws with derivations and real satellite examples — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-06-03"
-    },
-    {
-      "slug": "how-nasa-tests-aerodynamics-in-wind-tunnels-20260603",
-      "title": "How NASA tests aerodynamics in wind tunnels",
-      "excerpt": "Learn about how nasa tests aerodynamics in wind tunnels — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
       "date": "2026-06-03"
     }
   ],
