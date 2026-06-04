@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-04T08:43:28.096Z",
+  "generated_at": "2026-06-04T12:38:34.318Z",
   "featured_article": {
-    "title": "Pontryagin maximum principle explained for orbital maneuvers",
-    "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260604"
+    "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
+    "excerpt": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260604"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Vis-viva equation explained: the master formula...",
-      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How orbital debris tracking and avoidance works",
+      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Exoskeletons and wearable robots for astronaut ...",
-      "blurb": "Exoskeletons and wearable robots for astronaut EVA assistance is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "How MPC and LQR control algorithms keep satelli...",
+      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum tunneling in nuclear fusion inside stars",
-      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "The life cycle of Sun-like stars from birth to ...",
+      "blurb": "The life cycle of Sun-like stars from birth to white dwarf is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-06-04"
     },
     {
-      "slug": "walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260603",
-      "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
-      "excerpt": "Learn about walking stability breakthroughs: 81% recovery improvement in bipedal robots — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
-      "date": "2026-06-03"
+      "slug": "agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260604",
+      "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
+      "excerpt": "Learn about agent swarm architectures: parallel multi-agent orchestration for agi tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-06-04"
     }
   ],
   "learning_paths": {
