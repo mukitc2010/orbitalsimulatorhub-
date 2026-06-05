@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-04T21:25:37.781Z",
+  "generated_at": "2026-06-05T02:36:41.008Z",
   "featured_article": {
-    "title": "Artemis program progress and Moon landing plans",
-    "excerpt": "Artemis program progress and Moon landing plans is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/artemis-program-progress-and-moon-landing-plans-20260604"
+    "title": "Hypersonic flight: challenges above Mach 5",
+    "excerpt": "Hypersonic flight: challenges above Mach 5 is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hypersonic-flight-challenges-above-mach-5-20260605"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Space-AGI convergence: how orbital autonomy acc...",
-      "blurb": "Space-AGI convergence: how orbital autonomy accelerates AGI research is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Quantum tunneling in nuclear fusion inside stars",
+      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
@@ -19,12 +19,19 @@
       "icon": "atom"
     },
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy ...",
+      "blurb": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "hypersonic-flight-challenges-above-mach-5-20260605",
+      "title": "Hypersonic flight: challenges above Mach 5",
+      "excerpt": "Learn about hypersonic flight: challenges above mach 5 — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "aerodynamics",
+      "date": "2026-06-05"
+    },
     {
       "slug": "from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260604",
       "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
@@ -37,13 +44,6 @@
       "title": "Pontryagin maximum principle explained for orbital maneuvers",
       "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-06-04"
-    },
-    {
-      "slug": "agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260604",
-      "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
-      "excerpt": "Learn about agent swarm architectures: parallel multi-agent orchestration for agi tasks — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-06-04"
     }
   ],
