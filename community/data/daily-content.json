@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-05T02:36:41.008Z",
+  "generated_at": "2026-06-05T08:38:59.244Z",
   "featured_article": {
-    "title": "Hypersonic flight: challenges above Mach 5",
-    "excerpt": "Hypersonic flight: challenges above Mach 5 is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hypersonic-flight-challenges-above-mach-5-20260605"
+    "title": "How AI satellites make autonomous decisions in orbit",
+    "excerpt": "How AI satellites make autonomous decisions in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-ai-satellites-make-autonomous-decisions-in-orbit-20260605"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Quantum tunneling in nuclear fusion inside stars",
-      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How neutron stars can spin 716 times per second",
+      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Lambert's problem: how to plan an intercept bet...",
+      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Space AGI roadmap 2025-2060: from LEO autonomy ...",
-      "blurb": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is a key area in space agi that impacts how we understand and explore space.",
+      "title": "SpaceX Starship development and test flights",
+      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-05"
     },
     {
+      "slug": "how-ai-satellites-make-autonomous-decisions-in-orbit-20260605",
+      "title": "How AI satellites make autonomous decisions in orbit",
+      "excerpt": "Learn about how ai satellites make autonomous decisions in orbit — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-06-05"
+    },
+    {
       "slug": "from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260604",
       "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
       "excerpt": "Learn about from narrow ai to agi: what engineering breakthroughs are still needed — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-06-04"
-    },
-    {
-      "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260604",
-      "title": "Pontryagin maximum principle explained for orbital maneuvers",
-      "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-06-04"
     }
   ],
