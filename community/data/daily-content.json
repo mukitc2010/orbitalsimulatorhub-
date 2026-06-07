@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-07T08:18:44.307Z",
+  "generated_at": "2026-06-07T11:43:04.768Z",
   "featured_article": {
-    "title": "Humanoid robot locomotion on uneven terrain and moving platforms",
-    "excerpt": "Humanoid robot locomotion on uneven terrain and moving platforms is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Swarm robotics for in-space assembly and orbital construction",
+    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/humanoid-robot-locomotion-on-uneven-terrain-and-moving-platforms-20260607"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260607"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "J2 perturbation: why orbits drift and how to co...",
-      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Why spacecraft have specific shapes for differe...",
+      "blurb": "Why spacecraft have specific shapes for different missions is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Neuro-symbolic AI: combining neural networks wi...",
-      "blurb": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "A teaspoon of neutron star weighs 6 billion tons",
+      "blurb": "A teaspoon of neutron star weighs 6 billion tons is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How lift is generated: Bernoulli vs Newton expl...",
-      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How stars are born inside molecular gas clouds",
+      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-06-07"
     },
     {
-      "slug": "mars-perseverance-rover-sample-collection-updates-20260606",
-      "title": "Mars Perseverance rover sample collection updates",
-      "excerpt": "Learn about mars perseverance rover sample collection updates — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "nasa-news",
-      "date": "2026-06-06"
+      "slug": "swarm-robotics-for-in-space-assembly-and-orbital-construction-20260607",
+      "title": "Swarm robotics for in-space assembly and orbital construction",
+      "excerpt": "Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-06-07"
     }
   ],
   "learning_paths": {
