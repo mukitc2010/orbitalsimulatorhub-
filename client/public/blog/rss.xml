@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Sun, 07 Jun 2026 11:43:04 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 16:07:34 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Artemis program progress and Moon landing plans</title>
@@ -27,6 +27,13 @@
       <description>Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
       <category>robot-engineering</category>
+    </item>
+    <item>
+      <title>Orbital energy and specific orbital energy formula</title>
+      <link>https://orbitalsimulatorhub.com/blog/orbital-energy-and-specific-orbital-energy-formula-20260607</link>
+      <description>Learn about orbital energy and specific orbital energy formula — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
     </item>
     <item>
       <title>Mars Perseverance rover sample collection updates</title>
