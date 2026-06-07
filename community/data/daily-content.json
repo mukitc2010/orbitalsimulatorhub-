@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-07T02:42:49.017Z",
+  "generated_at": "2026-06-07T08:18:44.307Z",
   "featured_article": {
-    "title": "Artemis program progress and Moon landing plans",
-    "excerpt": "Artemis program progress and Moon landing plans is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/artemis-program-progress-and-moon-landing-plans-20260607"
+    "title": "Humanoid robot locomotion on uneven terrain and moving platforms",
+    "excerpt": "Humanoid robot locomotion on uneven terrain and moving platforms is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/humanoid-robot-locomotion-on-uneven-terrain-and-moving-platforms-20260607"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Schrodinger equation: the foundation of quantum...",
-      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "J2 perturbation: why orbits drift and how to co...",
+      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Hohmann transfer formula: the most fuel-efficie...",
-      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Neuro-symbolic AI: combining neural networks wi...",
+      "blurb": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Swarm robotics for in-space assembly and orbita...",
-      "blurb": "Swarm robotics for in-space assembly and orbital construction is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "How lift is generated: Bernoulli vs Newton expl...",
+      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-07"
     },
     {
+      "slug": "humanoid-robot-locomotion-on-uneven-terrain-and-moving-platforms-20260607",
+      "title": "Humanoid robot locomotion on uneven terrain and moving platforms",
+      "excerpt": "Learn about humanoid robot locomotion on uneven terrain and moving platforms — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-06-07"
+    },
+    {
       "slug": "mars-perseverance-rover-sample-collection-updates-20260606",
       "title": "Mars Perseverance rover sample collection updates",
       "excerpt": "Learn about mars perseverance rover sample collection updates — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "nasa-news",
-      "date": "2026-06-06"
-    },
-    {
-      "slug": "keplers-three-laws-with-derivations-and-real-satellite-examples-20260606",
-      "title": "Kepler's three laws with derivations and real satellite examples",
-      "excerpt": "Learn about kepler's three laws with derivations and real satellite examples — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-06-06"
     }
   ],

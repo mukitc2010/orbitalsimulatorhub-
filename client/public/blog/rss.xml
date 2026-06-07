@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Sun, 07 Jun 2026 02:42:49 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 08:18:44 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Artemis program progress and Moon landing plans</title>
@@ -13,6 +13,13 @@
       <description>Learn about artemis program progress and moon landing plans — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
       <category>nasa-news</category>
+    </item>
+    <item>
+      <title>Humanoid robot locomotion on uneven terrain and moving platforms</title>
+      <link>https://orbitalsimulatorhub.com/blog/humanoid-robot-locomotion-on-uneven-terrain-and-moving-platforms-20260607</link>
+      <description>Learn about humanoid robot locomotion on uneven terrain and moving platforms — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
     </item>
     <item>
       <title>Mars Perseverance rover sample collection updates</title>
