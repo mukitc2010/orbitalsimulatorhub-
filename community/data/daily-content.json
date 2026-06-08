@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-08T14:00:32.980Z",
+  "generated_at": "2026-06-08T17:44:22.319Z",
   "featured_article": {
-    "title": "What is Space AGI and why it matters for future space exploration",
-    "excerpt": "What is Space AGI and why it matters for future space exploration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260608"
+    "title": "Lambert's problem: how to plan an intercept between two orbits",
+    "excerpt": "Lambert's problem: how to plan an intercept between two orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260608"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The Great Red Spot on Jupiter is shrinking",
-      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Space AGI five pillars: perception, planning, c...",
+      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Kepler's three laws with derivations and real s...",
-      "blurb": "Kepler's three laws with derivations and real satellite examples is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How galaxies collide and merge over billions of...",
+      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Pulsars: the cosmic lighthouses of neutron stars",
-      "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Wave-particle duality: the double-slit experime...",
+      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],

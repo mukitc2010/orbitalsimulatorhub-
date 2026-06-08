@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 08 Jun 2026 14:00:33 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 17:44:22 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ARC-AGI benchmark: measuring progress toward artificial general intelligence</title>
@@ -27,6 +27,13 @@
       <description>Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
       <category>space-agi</category>
+    </item>
+    <item>
+      <title>Lambert&apos;s problem: how to plan an intercept between two orbits</title>
+      <link>https://orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260608</link>
+      <description>Learn about lambert&apos;s problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
     </item>
     <item>
       <title>Artemis program progress and Moon landing plans</title>
