@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-09T17:19:00.163Z",
+  "generated_at": "2026-06-09T21:42:13.276Z",
   "featured_article": {
-    "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
-    "excerpt": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260609"
+    "title": "How quantum computing could optimize mission planning",
+    "excerpt": "How quantum computing could optimize mission planning is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-quantum-computing-could-optimize-mission-planning-20260609"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How AI satellites make autonomous decisions in ...",
-      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
+      "title": "AI-driven robot autonomy: from teleoperation to...",
+      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The life cycle of Sun-like stars from birth to ...",
-      "blurb": "The life cycle of Sun-like stars from birth to white dwarf is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "AI collision avoidance: how 500+ satellites avo...",
+      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Self-repairing spacecraft: AI that fixes itself...",
-      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
+      "title": "NASA Valkyrie humanoid robot: a decade of resea...",
+      "blurb": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
