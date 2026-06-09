@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-09T12:31:04.009Z",
+  "generated_at": "2026-06-09T17:19:00.163Z",
   "featured_article": {
-    "title": "How relativistic quantum effects correct GPS accuracy",
-    "excerpt": "How relativistic quantum effects correct GPS accuracy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-relativistic-quantum-effects-correct-gps-accuracy-20260609"
+    "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
+    "excerpt": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260609"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Hohmann transfer formula: the most fuel-efficie...",
-      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How AI satellites make autonomous decisions in ...",
+      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Why compositional reasoning remains the hardest...",
-      "blurb": "Why compositional reasoning remains the hardest unsolved AGI challenge is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "The life cycle of Sun-like stars from birth to ...",
+      "blurb": "The life cycle of Sun-like stars from birth to white dwarf is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "CubeSats and nanosatellites: space access for u...",
-      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Self-repairing spacecraft: AI that fixes itself...",
+      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
