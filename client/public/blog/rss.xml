@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Wed, 10 Jun 2026 17:52:53 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 21:51:25 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How AI satellites make autonomous decisions in orbit</title>
@@ -32,6 +32,13 @@
       <title>Soft robotics and compliant actuators for safe human-robot collaboration</title>
       <link>https://orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260610</link>
       <description>Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
+    </item>
+    <item>
+      <title>Robonaut 2: the first humanoid robot in space aboard the ISS</title>
+      <link>https://orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260610</link>
+      <description>Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
       <category>robot-engineering</category>
     </item>
