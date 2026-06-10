@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-10T02:37:01.720Z",
+  "generated_at": "2026-06-10T08:43:27.447Z",
   "featured_article": {
-    "title": "How AI satellites make autonomous decisions in orbit",
-    "excerpt": "How AI satellites make autonomous decisions in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-ai-satellites-make-autonomous-decisions-in-orbit-20260610"
+    "title": "Exoskeletons and wearable robots for astronaut EVA assistance",
+    "excerpt": "Exoskeletons and wearable robots for astronaut EVA assistance is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/exoskeletons-and-wearable-robots-for-astronaut-eva-assistance-20260610"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Wave-particle duality: the double-slit experime...",
-      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Hubble constant and the expanding universe cont...",
+      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Transformer-based abstract reasoning and test-t...",
-      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How MPC and LQR control algorithms keep satelli...",
+      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Google DeepMind cognitive framework: 10 abiliti...",
-      "blurb": "Google DeepMind cognitive framework: 10 abilities needed for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "The uncertainty principle and its real-world ap...",
+      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-10"
     },
     {
+      "slug": "exoskeletons-and-wearable-robots-for-astronaut-eva-assistance-20260610",
+      "title": "Exoskeletons and wearable robots for astronaut EVA assistance",
+      "excerpt": "Learn about exoskeletons and wearable robots for astronaut eva assistance — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-06-10"
+    },
+    {
       "slug": "scramjet-engines-air-breathing-propulsion-at-hypersonic-speeds-20260609",
       "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
       "excerpt": "Learn about scramjet engines: air-breathing propulsion at hypersonic speeds — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "aerodynamics",
-      "date": "2026-06-09"
-    },
-    {
-      "slug": "space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260609",
-      "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
-      "excerpt": "Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-06-09"
     }
   ],
