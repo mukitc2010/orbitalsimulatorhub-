@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-10T08:43:27.447Z",
+  "generated_at": "2026-06-10T12:49:29.101Z",
   "featured_article": {
-    "title": "Exoskeletons and wearable robots for astronaut EVA assistance",
-    "excerpt": "Exoskeletons and wearable robots for astronaut EVA assistance is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/exoskeletons-and-wearable-robots-for-astronaut-eva-assistance-20260610"
+    "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
+    "excerpt": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260610"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Hubble constant and the expanding universe cont...",
-      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "AI-driven robot autonomy: from teleoperation to...",
+      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How MPC and LQR control algorithms keep satelli...",
-      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Computational fluid dynamics in spacecraft design",
+      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The uncertainty principle and its real-world ap...",
-      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Exoskeletons and wearable robots for astronaut ...",
+      "blurb": "Exoskeletons and wearable robots for astronaut EVA assistance is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-06-10"
     },
     {
-      "slug": "scramjet-engines-air-breathing-propulsion-at-hypersonic-speeds-20260609",
-      "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
-      "excerpt": "Learn about scramjet engines: air-breathing propulsion at hypersonic speeds — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
-      "date": "2026-06-09"
+      "slug": "agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260610",
+      "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
+      "excerpt": "Learn about agent swarm architectures: parallel multi-agent orchestration for agi tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-06-10"
     }
   ],
   "learning_paths": {
