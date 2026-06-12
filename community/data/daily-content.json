@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-12T02:43:14.982Z",
+  "generated_at": "2026-06-12T08:53:53.851Z",
   "featured_article": {
-    "title": "Hypersonic flight: challenges above Mach 5",
-    "excerpt": "Hypersonic flight: challenges above Mach 5 is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
+    "excerpt": "Scramjet engines: air-breathing propulsion at hypersonic speeds is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hypersonic-flight-challenges-above-mach-5-20260612"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/scramjet-engines-air-breathing-propulsion-at-hypersonic-speeds-20260612"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How spy satellites achieve sub-meter imaging re...",
-      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Transformer-based abstract reasoning and test-t...",
+      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Space AGI roadmap 2025-2060: from LEO autonomy ...",
-      "blurb": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is a key area in space agi that impacts how we understand and explore space.",
+      "title": "AGI safety and alignment: ensuring beneficial a...",
+      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The uncertainty principle and its real-world ap...",
-      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "The Great Red Spot on Jupiter is shrinking",
+      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-12"
     },
     {
+      "slug": "scramjet-engines-air-breathing-propulsion-at-hypersonic-speeds-20260612",
+      "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
+      "excerpt": "Learn about scramjet engines: air-breathing propulsion at hypersonic speeds — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "aerodynamics",
+      "date": "2026-06-12"
+    },
+    {
       "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260611",
       "title": "How MPC and LQR control algorithms keep satellite swarms safe",
       "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-06-11"
-    },
-    {
-      "slug": "quantum-key-distribution-for-secure-satellite-communications-20260611",
-      "title": "Quantum key distribution for secure satellite communications",
-      "excerpt": "Learn about quantum key distribution for secure satellite communications — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "quantum-physics",
       "date": "2026-06-11"
     }
   ],
