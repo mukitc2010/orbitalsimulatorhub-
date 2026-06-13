@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-06-12T21:25:38.964Z",
+  "generated_at": "2026-06-13T02:35:47.190Z",
   "featured_article": {
-    "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
-    "excerpt": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260612"
+    "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
+    "excerpt": "Self-repairing spacecraft: AI that fixes itself in deep space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260613"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "NASA Europa Clipper mission to Jupiter's moon",
-      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "From narrow AI to AGI: what engineering breakth...",
+      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
+      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How NASA tests aerodynamics in wind tunnels",
-      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How stars are born inside molecular gas clouds",
+      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260613",
+      "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
+      "excerpt": "Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-06-13"
+    },
     {
       "slug": "hypersonic-flight-challenges-above-mach-5-20260612",
       "title": "Hypersonic flight: challenges above Mach 5",
@@ -37,13 +44,6 @@
       "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
       "excerpt": "Learn about scramjet engines: air-breathing propulsion at hypersonic speeds — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "aerodynamics",
-      "date": "2026-06-12"
-    },
-    {
-      "slug": "ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260612",
-      "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
-      "excerpt": "Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-06-12"
     }
   ],
