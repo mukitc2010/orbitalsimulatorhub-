@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-13T02:35:47.190Z",
+  "generated_at": "2026-06-13T08:16:39.786Z",
   "featured_article": {
-    "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
-    "excerpt": "Self-repairing spacecraft: AI that fixes itself in deep space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260613"
+    "title": "International Space Station science experiments",
+    "excerpt": "International Space Station science experiments is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "nasa-news",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/international-space-station-science-experiments-20260613"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "From narrow AI to AGI: what engineering breakth...",
-      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Scramjet engines: air-breathing propulsion at h...",
+      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
-      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Transformer-based abstract reasoning and test-t...",
+      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Exoplanet detection methods: transit and radial...",
+      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,16 +33,16 @@
       "date": "2026-06-13"
     },
     {
+      "slug": "international-space-station-science-experiments-20260613",
+      "title": "International Space Station science experiments",
+      "excerpt": "Learn about international space station science experiments — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "nasa-news",
+      "date": "2026-06-13"
+    },
+    {
       "slug": "hypersonic-flight-challenges-above-mach-5-20260612",
       "title": "Hypersonic flight: challenges above Mach 5",
       "excerpt": "Learn about hypersonic flight: challenges above mach 5 — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
-      "date": "2026-06-12"
-    },
-    {
-      "slug": "scramjet-engines-air-breathing-propulsion-at-hypersonic-speeds-20260612",
-      "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
-      "excerpt": "Learn about scramjet engines: air-breathing propulsion at hypersonic speeds — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "aerodynamics",
       "date": "2026-06-12"
     }
