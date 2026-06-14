@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-14T11:49:26.461Z",
+  "generated_at": "2026-06-14T16:16:36.095Z",
   "featured_article": {
-    "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
-    "excerpt": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260614"
+    "title": "Mars Perseverance rover sample collection updates",
+    "excerpt": "Mars Perseverance rover sample collection updates is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "nasa-news",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/mars-perseverance-rover-sample-collection-updates-20260614"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How NASA tests aerodynamics in wind tunnels",
-      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "N-body equations: when two-body mechanics is no...",
+      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How spy satellites achieve sub-meter imaging re...",
-      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
+      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Transformer-based abstract reasoning and test-t...",
-      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Soft robotics and compliant actuators for safe ...",
+      "blurb": "Soft robotics and compliant actuators for safe human-robot collaboration is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
