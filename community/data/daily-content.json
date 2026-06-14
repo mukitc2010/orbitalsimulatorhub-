@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-14T08:37:09.769Z",
+  "generated_at": "2026-06-14T11:49:26.461Z",
   "featured_article": {
-    "title": "Tsiolkovsky rocket equation: why we need staging to reach orbit",
-    "excerpt": "Tsiolkovsky rocket equation: why we need staging to reach orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260614"
+    "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+    "excerpt": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260614"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "SpaceX Starship development and test flights",
-      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How NASA tests aerodynamics in wind tunnels",
+      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Saturn's rings are disappearing over millions o...",
-      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How spy satellites achieve sub-meter imaging re...",
+      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Schrodinger equation: the foundation of quantum...",
-      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Transformer-based abstract reasoning and test-t...",
+      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-06-14"
     },
     {
-      "slug": "self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260613",
-      "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
-      "excerpt": "Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.",
+      "slug": "space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260614",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+      "excerpt": "Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-06-13"
+      "date": "2026-06-14"
     }
   ],
   "learning_paths": {
