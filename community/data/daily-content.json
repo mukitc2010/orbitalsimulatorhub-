@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-06-13T21:04:05.053Z",
+  "generated_at": "2026-06-14T02:47:18.922Z",
   "featured_article": {
-    "title": "How heat shields protect spacecraft during re-entry",
-    "excerpt": "How heat shields protect spacecraft during re-entry is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-heat-shields-protect-spacecraft-during-re-entry-20260613"
+    "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
+    "excerpt": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260614"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "AI-driven robot autonomy: from teleoperation to...",
-      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Quantum key distribution for secure satellite c...",
+      "blurb": "Quantum key distribution for secure satellite communications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How galaxies collide and merge over billions of...",
+      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Robot engineering for lunar and Martian surface...",
-      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Patched conic approximation for interplanetary ...",
+      "blurb": "Patched conic approximation for interplanetary trajectories is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260614",
+      "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
+      "excerpt": "Learn about neuro-symbolic ai: combining neural networks with logical reasoning for agi — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-06-14"
+    },
     {
       "slug": "self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260613",
       "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
@@ -37,13 +44,6 @@
       "title": "International Space Station science experiments",
       "excerpt": "Learn about international space station science experiments — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "nasa-news",
-      "date": "2026-06-13"
-    },
-    {
-      "slug": "patched-conic-approximation-for-interplanetary-trajectories-20260613",
-      "title": "Patched conic approximation for interplanetary trajectories",
-      "excerpt": "Learn about patched conic approximation for interplanetary trajectories — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-06-13"
     }
   ],
