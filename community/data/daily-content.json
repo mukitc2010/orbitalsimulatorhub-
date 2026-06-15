@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-06-14T21:01:11.782Z",
+  "generated_at": "2026-06-15T02:52:01.023Z",
   "featured_article": {
-    "title": "Space AGI five pillars: perception, planning, control, learning, communication",
-    "excerpt": "Space AGI five pillars: perception, planning, control, learning, communication is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-five-pillars-perception-planning-control-learning-communication-20260614"
+    "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+    "excerpt": "Robonaut 2: the first humanoid robot in space aboard the ISS is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260615"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "International Space Station science experiments",
-      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Schrodinger equation: the foundation of quantum...",
+      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Schrodinger equation: the foundation of quantum...",
+      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "NASA Europa Clipper mission to Jupiter's moon",
-      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Delayed MDP and Mars communication delay: why A...",
+      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260615",
+      "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+      "excerpt": "Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-06-15"
+    },
     {
       "slug": "neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260614",
       "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
@@ -37,13 +44,6 @@
       "title": "Tsiolkovsky rocket equation: why we need staging to reach orbit",
       "excerpt": "Learn about tsiolkovsky rocket equation: why we need staging to reach orbit — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-06-14"
-    },
-    {
-      "slug": "space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260614",
-      "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
-      "excerpt": "Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-06-14"
     }
   ],
