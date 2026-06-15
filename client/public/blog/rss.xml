@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 15 Jun 2026 10:50:42 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 19:00:25 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Robonaut 2: the first humanoid robot in space aboard the ISS</title>
@@ -20,6 +20,13 @@
       <description>Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
       <category>space-agi</category>
+    </item>
+    <item>
+      <title>J2 perturbation: why orbits drift and how to correct them</title>
+      <link>https://orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260615</link>
+      <description>Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
     </item>
     <item>
       <title>Neuro-symbolic AI: combining neural networks with logical reasoning for AGI</title>
