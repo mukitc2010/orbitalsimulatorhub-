@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-06-15T22:10:40.671Z",
+  "generated_at": "2026-06-16T02:53:45.276Z",
   "featured_article": {
-    "title": "Robot manipulation and sensor fusion for space construction tasks",
-    "excerpt": "Robot manipulation and sensor fusion for space construction tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260615"
+    "title": "Rocket aerodynamics: designing nose cones and fairings",
+    "excerpt": "Rocket aerodynamics: designing nose cones and fairings is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/rocket-aerodynamics-designing-nose-cones-and-fairings-20260616"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How lift is generated: Bernoulli vs Newton expl...",
-      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Commercial crew program and private astronaut m...",
+      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Structural theory of general artificial intelli...",
-      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How GPS satellites calculate your exact positio...",
+      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "AGI safety and alignment: ensuring beneficial a...",
+      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "rocket-aerodynamics-designing-nose-cones-and-fairings-20260616",
+      "title": "Rocket aerodynamics: designing nose cones and fairings",
+      "excerpt": "Learn about rocket aerodynamics: designing nose cones and fairings — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "aerodynamics",
+      "date": "2026-06-16"
+    },
     {
       "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260615",
       "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
@@ -37,13 +44,6 @@
       "title": "Pontryagin maximum principle explained for orbital maneuvers",
       "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-06-15"
-    },
-    {
-      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260615",
-      "title": "J2 perturbation: why orbits drift and how to correct them",
-      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-06-15"
     }
   ],
