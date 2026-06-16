@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Tue, 16 Jun 2026 02:53:46 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 10:02:22 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rocket aerodynamics: designing nose cones and fairings</title>
@@ -13,6 +13,13 @@
       <description>Learn about rocket aerodynamics: designing nose cones and fairings — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
       <category>aerodynamics</category>
+    </item>
+    <item>
+      <title>James Webb Space Telescope latest discoveries</title>
+      <link>https://orbitalsimulatorhub.com/blog/james-webb-space-telescope-latest-discoveries-20260616</link>
+      <description>Learn about james webb space telescope latest discoveries — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+      <category>nasa-news</category>
     </item>
     <item>
       <title>Robonaut 2: the first humanoid robot in space aboard the ISS</title>

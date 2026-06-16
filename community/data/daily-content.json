@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-16T02:53:45.276Z",
+  "generated_at": "2026-06-16T10:02:22.030Z",
   "featured_article": {
-    "title": "Rocket aerodynamics: designing nose cones and fairings",
-    "excerpt": "Rocket aerodynamics: designing nose cones and fairings is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/rocket-aerodynamics-designing-nose-cones-and-fairings-20260616"
+    "title": "James Webb Space Telescope latest discoveries",
+    "excerpt": "James Webb Space Telescope latest discoveries is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "nasa-news",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/james-webb-space-telescope-latest-discoveries-20260616"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Commercial crew program and private astronaut m...",
-      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Schrodinger equation: the foundation of quantum...",
+      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How GPS satellites calculate your exact positio...",
-      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "N-body equations: when two-body mechanics is no...",
+      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "AGI safety and alignment: ensuring beneficial a...",
-      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How NASA tests aerodynamics in wind tunnels",
+      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-16"
     },
     {
+      "slug": "james-webb-space-telescope-latest-discoveries-20260616",
+      "title": "James Webb Space Telescope latest discoveries",
+      "excerpt": "Learn about james webb space telescope latest discoveries — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "nasa-news",
+      "date": "2026-06-16"
+    },
+    {
       "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260615",
       "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
       "excerpt": "Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
-      "date": "2026-06-15"
-    },
-    {
-      "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260615",
-      "title": "Pontryagin maximum principle explained for orbital maneuvers",
-      "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-06-15"
     }
   ],
