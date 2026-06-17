@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-06-16T22:05:58.878Z",
+  "generated_at": "2026-06-17T02:50:20.065Z",
   "featured_article": {
-    "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
-    "excerpt": "Robonaut 2: the first humanoid robot in space aboard the ISS is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260616"
+    "title": "How neutron stars can spin 716 times per second",
+    "excerpt": "How neutron stars can spin 716 times per second is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-facts",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-neutron-stars-can-spin-716-times-per-second-20260617"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Space is completely silent because sound needs ...",
-      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Escape velocity derivation from conservation of...",
+      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Exoplanet detection methods: transit and radial...",
-      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How heat shields protect spacecraft during re-e...",
+      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How AI satellites make autonomous decisions in ...",
-      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Gravitational waves and what they tell us about...",
+      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "how-neutron-stars-can-spin-716-times-per-second-20260617",
+      "title": "How neutron stars can spin 716 times per second",
+      "excerpt": "Learn about how neutron stars can spin 716 times per second — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-facts",
+      "date": "2026-06-17"
+    },
     {
       "slug": "rocket-aerodynamics-designing-nose-cones-and-fairings-20260616",
       "title": "Rocket aerodynamics: designing nose cones and fairings",
@@ -37,13 +44,6 @@
       "title": "James Webb Space Telescope latest discoveries",
       "excerpt": "Learn about james webb space telescope latest discoveries — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "nasa-news",
-      "date": "2026-06-16"
-    },
-    {
-      "slug": "transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260616",
-      "title": "Transformer-based abstract reasoning and test-time training for AGI",
-      "excerpt": "Learn about transformer-based abstract reasoning and test-time training for agi — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-06-16"
     }
   ],
