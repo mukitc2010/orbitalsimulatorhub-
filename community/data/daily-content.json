@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-18T09:09:55.385Z",
+  "generated_at": "2026-06-18T12:46:16.227Z",
   "featured_article": {
-    "title": "Swarm robotics for in-space assembly and orbital construction",
-    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260618"
+    "title": "Lambert's problem: how to plan an intercept between two orbits",
+    "excerpt": "Lambert's problem: how to plan an intercept between two orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260618"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "What is Space AGI and why it matters for future...",
-      "blurb": "What is Space AGI and why it matters for future space exploration is a key area in space agi that impacts how we understand and explore space.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Space AGI five pillars: perception, planning, c...",
+      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Gravitational waves and what they tell us about...",
-      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Commercial crew program and private astronaut m...",
+      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-06-18"
     },
     {
-      "slug": "how-neutron-stars-can-spin-716-times-per-second-20260617",
-      "title": "How neutron stars can spin 716 times per second",
-      "excerpt": "Learn about how neutron stars can spin 716 times per second — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
-      "date": "2026-06-17"
+      "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260618",
+      "title": "Lambert's problem: how to plan an intercept between two orbits",
+      "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-06-18"
     }
   ],
   "learning_paths": {
