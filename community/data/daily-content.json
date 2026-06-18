@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-18T02:45:42.374Z",
+  "generated_at": "2026-06-18T09:09:55.385Z",
   "featured_article": {
-    "title": "Structural theory of general artificial intelligence (SMGI) explained",
-    "excerpt": "Structural theory of general artificial intelligence (SMGI) explained is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/structural-theory-of-general-artificial-intelligence-smgi-explained-20260618"
+    "title": "Swarm robotics for in-space assembly and orbital construction",
+    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260618"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How neutron stars can spin 716 times per second",
-      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
+      "title": "What is Space AGI and why it matters for future...",
+      "blurb": "What is Space AGI and why it matters for future space exploration is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
-    },
-    {
-      "title": "Vis-viva equation explained: the master formula...",
-      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
-      "icon": "atom"
     },
     {
       "title": "Lambert's problem: how to plan an intercept bet...",
       "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "icon": "atom"
+    },
+    {
+      "title": "Gravitational waves and what they tell us about...",
+      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-18"
     },
     {
+      "slug": "swarm-robotics-for-in-space-assembly-and-orbital-construction-20260618",
+      "title": "Swarm robotics for in-space assembly and orbital construction",
+      "excerpt": "Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-06-18"
+    },
+    {
       "slug": "how-neutron-stars-can-spin-716-times-per-second-20260617",
       "title": "How neutron stars can spin 716 times per second",
       "excerpt": "Learn about how neutron stars can spin 716 times per second — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-facts",
-      "date": "2026-06-17"
-    },
-    {
-      "slug": "re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260617",
-      "title": "Re-entry physics: surviving 28000 km/h atmospheric entry",
-      "excerpt": "Learn about re-entry physics: surviving 28000 km/h atmospheric entry — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
       "date": "2026-06-17"
     }
   ],
