@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Fri, 19 Jun 2026 03:29:44 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 09:24:38 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google DeepMind cognitive framework: 10 abilities needed for AGI</title>
@@ -13,6 +13,13 @@
       <description>Learn about google deepmind cognitive framework: 10 abilities needed for agi — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
       <category>agi-research</category>
+    </item>
+    <item>
+      <title>Robonaut 2: the first humanoid robot in space aboard the ISS</title>
+      <link>https://orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260619</link>
+      <description>Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
     </item>
     <item>
       <title>Structural theory of general artificial intelligence (SMGI) explained</title>

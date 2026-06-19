@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-19T03:29:44.009Z",
+  "generated_at": "2026-06-19T09:24:38.503Z",
   "featured_article": {
-    "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
-    "excerpt": "Google DeepMind cognitive framework: 10 abilities needed for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260619"
+    "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+    "excerpt": "Robonaut 2: the first humanoid robot in space aboard the ISS is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260619"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The physics of geostationary orbit and why it m...",
-      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "ARC-AGI benchmark: measuring progress toward ar...",
+      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Pulsars: the cosmic lighthouses of neutron stars",
-      "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "What is Space AGI and why it matters for future...",
+      "blurb": "What is Space AGI and why it matters for future space exploration is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Escape velocity derivation from conservation of...",
-      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Quantum entanglement and future space communica...",
+      "blurb": "Quantum entanglement and future space communication is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-19"
     },
     {
+      "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260619",
+      "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+      "excerpt": "Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-06-19"
+    },
+    {
       "slug": "structural-theory-of-general-artificial-intelligence-smgi-explained-20260618",
       "title": "Structural theory of general artificial intelligence (SMGI) explained",
       "excerpt": "Learn about structural theory of general artificial intelligence (smgi) explained — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-06-18"
-    },
-    {
-      "slug": "swarm-robotics-for-in-space-assembly-and-orbital-construction-20260618",
-      "title": "Swarm robotics for in-space assembly and orbital construction",
-      "excerpt": "Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-06-18"
     }
   ],
