@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-06-18T21:58:34.953Z",
+  "generated_at": "2026-06-19T03:29:44.009Z",
   "featured_article": {
-    "title": "Space-AGI convergence: how orbital autonomy accelerates AGI research",
-    "excerpt": "Space-AGI convergence: how orbital autonomy accelerates AGI research is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
+    "excerpt": "Google DeepMind cognitive framework: 10 abilities needed for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-convergence-how-orbital-autonomy-accelerates-agi-research-20260618"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260619"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Dark matter: the invisible mass holding galaxie...",
-      "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "The physics of geostationary orbit and why it m...",
+      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Delayed MDP and Mars communication delay: why A...",
-      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Pulsars: the cosmic lighthouses of neutron stars",
+      "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "What happens when a massive star dies: supernov...",
-      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Escape velocity derivation from conservation of...",
+      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260619",
+      "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
+      "excerpt": "Learn about google deepmind cognitive framework: 10 abilities needed for agi — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-06-19"
+    },
     {
       "slug": "structural-theory-of-general-artificial-intelligence-smgi-explained-20260618",
       "title": "Structural theory of general artificial intelligence (SMGI) explained",
@@ -37,13 +44,6 @@
       "title": "Swarm robotics for in-space assembly and orbital construction",
       "excerpt": "Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
-      "date": "2026-06-18"
-    },
-    {
-      "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260618",
-      "title": "Lambert's problem: how to plan an intercept between two orbits",
-      "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-06-18"
     }
   ],
