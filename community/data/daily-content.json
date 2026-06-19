@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-19T17:12:02.024Z",
+  "generated_at": "2026-06-19T21:01:58.976Z",
   "featured_article": {
-    "title": "Quantum sensors for deep space navigation",
-    "excerpt": "Quantum sensors for deep space navigation is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/quantum-sensors-for-deep-space-navigation-20260619"
+    "title": "ARC-AGI benchmark: measuring progress toward artificial general intelligence",
+    "excerpt": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260619"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How AI satellites make autonomous decisions in ...",
-      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Schrodinger equation: the foundation of quantum...",
+      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "ARC-AGI benchmark: measuring progress toward ar...",
-      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy ...",
+      "blurb": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Gravitational waves and what they tell us about...",
-      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Satellite communication: how data travels from ...",
+      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
