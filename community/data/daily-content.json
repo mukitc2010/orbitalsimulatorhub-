@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-20T08:17:27.332Z",
+  "generated_at": "2026-06-20T11:51:22.313Z",
   "featured_article": {
-    "title": "Schrodinger equation: the foundation of quantum mechanics",
-    "excerpt": "Schrodinger equation: the foundation of quantum mechanics is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/schrodinger-equation-the-foundation-of-quantum-mechanics-20260620"
+    "title": "James Webb Space Telescope latest discoveries",
+    "excerpt": "James Webb Space Telescope latest discoveries is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "nasa-news",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/james-webb-space-telescope-latest-discoveries-20260620"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "James Webb Space Telescope latest discoveries",
-      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Quantum key distribution for secure satellite c...",
+      "blurb": "Quantum key distribution for secure satellite communications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Why compositional reasoning remains the hardest...",
-      "blurb": "Why compositional reasoning remains the hardest unsolved AGI challenge is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Schrodinger equation: the foundation of quantum...",
+      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The physics of geostationary orbit and why it m...",
-      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Neuro-symbolic AI: combining neural networks wi...",
+      "blurb": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-06-20"
     },
     {
-      "slug": "google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260619",
-      "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
-      "excerpt": "Learn about google deepmind cognitive framework: 10 abilities needed for agi — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
-      "date": "2026-06-19"
+      "slug": "james-webb-space-telescope-latest-discoveries-20260620",
+      "title": "James Webb Space Telescope latest discoveries",
+      "excerpt": "Learn about james webb space telescope latest discoveries — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "nasa-news",
+      "date": "2026-06-20"
     }
   ],
   "learning_paths": {
