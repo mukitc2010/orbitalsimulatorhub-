@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-21T08:54:15.121Z",
+  "generated_at": "2026-06-21T12:06:29.219Z",
   "featured_article": {
-    "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
-    "excerpt": "Delayed MDP and Mars communication delay: why AI must act without Earth is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "How AI satellites make autonomous decisions in orbit",
+    "excerpt": "How AI satellites make autonomous decisions in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260621"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-ai-satellites-make-autonomous-decisions-in-orbit-20260621"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Robonaut 2: the first humanoid robot in space a...",
-      "blurb": "Robonaut 2: the first humanoid robot in space aboard the ISS is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Neuro-symbolic AI: combining neural networks wi...",
+      "blurb": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Wave-particle duality: the double-slit experime...",
-      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "ARC-AGI benchmark: measuring progress toward ar...",
+      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Transformer-based abstract reasoning and test-t...",
-      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How Starlink creates global broadband internet ...",
+      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,16 +33,16 @@
       "date": "2026-06-21"
     },
     {
+      "slug": "how-ai-satellites-make-autonomous-decisions-in-orbit-20260621",
+      "title": "How AI satellites make autonomous decisions in orbit",
+      "excerpt": "Learn about how ai satellites make autonomous decisions in orbit — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-06-21"
+    },
+    {
       "slug": "how-quantum-computing-could-optimize-mission-planning-20260620",
       "title": "How quantum computing could optimize mission planning",
       "excerpt": "Learn about how quantum computing could optimize mission planning — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "quantum-physics",
-      "date": "2026-06-20"
-    },
-    {
-      "slug": "schrodinger-equation-the-foundation-of-quantum-mechanics-20260620",
-      "title": "Schrodinger equation: the foundation of quantum mechanics",
-      "excerpt": "Learn about schrodinger equation: the foundation of quantum mechanics — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "quantum-physics",
       "date": "2026-06-20"
     }
