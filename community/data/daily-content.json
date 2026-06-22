@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-22T10:32:58.045Z",
+  "generated_at": "2026-06-22T18:41:26.069Z",
   "featured_article": {
-    "title": "Saturn's rings are disappearing over millions of years",
-    "excerpt": "Saturn's rings are disappearing over millions of years is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-facts",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/saturns-rings-are-disappearing-over-millions-of-years-20260622"
+    "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
+    "excerpt": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260622"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Transformer-based abstract reasoning and test-t...",
-      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Computational fluid dynamics in spacecraft design",
+      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Dark matter: the invisible mass holding galaxie...",
-      "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How spy satellites achieve sub-meter imaging re...",
+      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Exoskeletons and wearable robots for astronaut ...",
-      "blurb": "Exoskeletons and wearable robots for astronaut EVA assistance is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Patched conic approximation for interplanetary ...",
+      "blurb": "Patched conic approximation for interplanetary trajectories is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-06-22"
     },
     {
-      "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260621",
-      "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
-      "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-06-21"
+      "slug": "ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260622",
+      "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
+      "excerpt": "Learn about ai-driven robot autonomy: from teleoperation to full self-directed behavior — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-06-22"
     }
   ],
   "learning_paths": {
