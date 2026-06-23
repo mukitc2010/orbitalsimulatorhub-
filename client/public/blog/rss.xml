@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Tue, 23 Jun 2026 02:28:38 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 08:24:00 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>J2 perturbation: why orbits drift and how to correct them</title>
@@ -13,6 +13,13 @@
       <description>Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
       <category>space-engineering</category>
+    </item>
+    <item>
+      <title>Robonaut 2: the first humanoid robot in space aboard the ISS</title>
+      <link>https://orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260623</link>
+      <description>Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
     </item>
     <item>
       <title>Space-AGI convergence: how orbital autonomy accelerates AGI research</title>

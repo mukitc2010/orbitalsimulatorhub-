@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-23T02:28:38.059Z",
+  "generated_at": "2026-06-23T08:23:59.815Z",
   "featured_article": {
-    "title": "J2 perturbation: why orbits drift and how to correct them",
-    "excerpt": "J2 perturbation: why orbits drift and how to correct them is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260623"
+    "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+    "excerpt": "Robonaut 2: the first humanoid robot in space aboard the ISS is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260623"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "The footprints on the Moon will last 100 millio...",
+      "blurb": "The footprints on the Moon will last 100 million years is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "A teaspoon of neutron star weighs 6 billion tons",
-      "blurb": "A teaspoon of neutron star weighs 6 billion tons is a key area in space facts that impacts how we understand and explore space.",
+      "title": "J2 perturbation: why orbits drift and how to co...",
+      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How neutron stars can spin 716 times per second",
-      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
+      "title": "ARC-AGI benchmark: measuring progress toward ar...",
+      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-23"
     },
     {
+      "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260623",
+      "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+      "excerpt": "Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-06-23"
+    },
+    {
       "slug": "space-agi-convergence-how-orbital-autonomy-accelerates-agi-research-20260622",
       "title": "Space-AGI convergence: how orbital autonomy accelerates AGI research",
       "excerpt": "Learn about space-agi convergence: how orbital autonomy accelerates agi research — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-06-22"
-    },
-    {
-      "slug": "saturns-rings-are-disappearing-over-millions-of-years-20260622",
-      "title": "Saturn's rings are disappearing over millions of years",
-      "excerpt": "Learn about saturn's rings are disappearing over millions of years — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
       "date": "2026-06-22"
     }
   ],
