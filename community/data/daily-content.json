@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-25T02:31:45.720Z",
+  "generated_at": "2026-06-25T08:17:45.818Z",
   "featured_article": {
-    "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
-    "excerpt": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260625"
+    "title": "Olympus Mons on Mars is 3 times taller than Everest",
+    "excerpt": "Olympus Mons on Mars is 3 times taller than Everest is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-facts",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/olympus-mons-on-mars-is-3-times-taller-than-everest-20260625"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How relativistic quantum effects correct GPS ac...",
-      "blurb": "How relativistic quantum effects correct GPS accuracy is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Space AGI five pillars: perception, planning, c...",
+      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Delayed MDP and Mars communication delay: why A...",
+      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum sensors for deep space navigation",
-      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Robot engineering for lunar and Martian surface...",
+      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-25"
     },
     {
+      "slug": "olympus-mons-on-mars-is-3-times-taller-than-everest-20260625",
+      "title": "Olympus Mons on Mars is 3 times taller than Everest",
+      "excerpt": "Learn about olympus mons on mars is 3 times taller than everest — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-facts",
+      "date": "2026-06-25"
+    },
+    {
       "slug": "satellite-communication-how-data-travels-from-space-to-your-phone-20260624",
       "title": "Satellite communication: how data travels from space to your phone",
       "excerpt": "Learn about satellite communication: how data travels from space to your phone — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "satellite-tutorials",
-      "date": "2026-06-24"
-    },
-    {
-      "slug": "walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260624",
-      "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
-      "excerpt": "Learn about walking stability breakthroughs: 81% recovery improvement in bipedal robots — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-06-24"
     }
   ],
