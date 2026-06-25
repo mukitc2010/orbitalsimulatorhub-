@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-25T12:12:09.162Z",
+  "generated_at": "2026-06-25T17:04:28.291Z",
   "featured_article": {
-    "title": "Re-entry physics: surviving 28000 km/h atmospheric entry",
-    "excerpt": "Re-entry physics: surviving 28000 km/h atmospheric entry is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere",
+    "excerpt": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260625"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260625"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Why compositional reasoning remains the hardest...",
-      "blurb": "Why compositional reasoning remains the hardest unsolved AGI challenge is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Transformer-based abstract reasoning and test-t...",
+      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Patched conic approximation for interplanetary ...",
-      "blurb": "Patched conic approximation for interplanetary trajectories is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How quantum computing could optimize mission pl...",
+      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "AI collision avoidance: how 500+ satellites avo...",
-      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Walking stability breakthroughs: 81% recovery i...",
+      "blurb": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
