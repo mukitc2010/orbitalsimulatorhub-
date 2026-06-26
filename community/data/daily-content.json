@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-26T08:25:55.968Z",
+  "generated_at": "2026-06-26T12:06:45.166Z",
   "featured_article": {
-    "title": "How AI satellites make autonomous decisions in orbit",
-    "excerpt": "How AI satellites make autonomous decisions in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-ai-satellites-make-autonomous-decisions-in-orbit-20260626"
+    "title": "Lunar Gateway construction and deep space habitation",
+    "excerpt": "Lunar Gateway construction and deep space habitation is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "nasa-news",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lunar-gateway-construction-and-deep-space-habitation-20260626"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Kepler's three laws with derivations and real s...",
-      "blurb": "Kepler's three laws with derivations and real satellite examples is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "The uncertainty principle and its real-world ap...",
+      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How orbital debris tracking and avoidance works",
-      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Lambert's problem: how to plan an intercept bet...",
+      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Robot engineering for lunar and Martian surface...",
-      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Structural theory of general artificial intelli...",
+      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-06-26"
     },
     {
-      "slug": "agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260625",
-      "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
-      "excerpt": "Learn about agent swarm architectures: parallel multi-agent orchestration for agi tasks — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
-      "date": "2026-06-25"
+      "slug": "lunar-gateway-construction-and-deep-space-habitation-20260626",
+      "title": "Lunar Gateway construction and deep space habitation",
+      "excerpt": "Learn about lunar gateway construction and deep space habitation — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "nasa-news",
+      "date": "2026-06-26"
     }
   ],
   "learning_paths": {
