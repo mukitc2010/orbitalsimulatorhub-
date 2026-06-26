@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-26T12:06:45.166Z",
+  "generated_at": "2026-06-26T16:55:48.337Z",
   "featured_article": {
-    "title": "Lunar Gateway construction and deep space habitation",
-    "excerpt": "Lunar Gateway construction and deep space habitation is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lunar-gateway-construction-and-deep-space-habitation-20260626"
+    "title": "What is Space AGI and why it matters for future space exploration",
+    "excerpt": "What is Space AGI and why it matters for future space exploration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260626"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The uncertainty principle and its real-world ap...",
-      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "NASA Valkyrie humanoid robot: a decade of resea...",
+      "blurb": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How satellite constellations maintain formation...",
+      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Structural theory of general artificial intelli...",
-      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Humanoid robot locomotion on uneven terrain and...",
+      "blurb": "Humanoid robot locomotion on uneven terrain and moving platforms is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
