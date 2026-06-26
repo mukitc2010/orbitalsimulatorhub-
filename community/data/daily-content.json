@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-26T02:33:40.895Z",
+  "generated_at": "2026-06-26T08:25:55.968Z",
   "featured_article": {
-    "title": "Robot manipulation and sensor fusion for space construction tasks",
-    "excerpt": "Robot manipulation and sensor fusion for space construction tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260626"
+    "title": "How AI satellites make autonomous decisions in orbit",
+    "excerpt": "How AI satellites make autonomous decisions in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-ai-satellites-make-autonomous-decisions-in-orbit-20260626"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How heat shields protect spacecraft during re-e...",
-      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Kepler's three laws with derivations and real s...",
+      "blurb": "Kepler's three laws with derivations and real satellite examples is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Orbital energy and specific orbital energy formula",
-      "blurb": "Orbital energy and specific orbital energy formula is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How orbital debris tracking and avoidance works",
+      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Robot engineering for lunar and Martian surface...",
+      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-26"
     },
     {
+      "slug": "how-ai-satellites-make-autonomous-decisions-in-orbit-20260626",
+      "title": "How AI satellites make autonomous decisions in orbit",
+      "excerpt": "Learn about how ai satellites make autonomous decisions in orbit — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-06-26"
+    },
+    {
       "slug": "agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260625",
       "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
       "excerpt": "Learn about agent swarm architectures: parallel multi-agent orchestration for agi tasks — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-06-25"
-    },
-    {
-      "slug": "olympus-mons-on-mars-is-3-times-taller-than-everest-20260625",
-      "title": "Olympus Mons on Mars is 3 times taller than Everest",
-      "excerpt": "Learn about olympus mons on mars is 3 times taller than everest — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
       "date": "2026-06-25"
     }
   ],
