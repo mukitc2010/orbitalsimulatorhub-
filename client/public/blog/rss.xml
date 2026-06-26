@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Fri, 26 Jun 2026 16:55:48 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 21:13:17 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Robot manipulation and sensor fusion for space construction tasks</title>
@@ -34,6 +34,13 @@
       <description>Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate>
       <category>space-agi</category>
+    </item>
+    <item>
+      <title>ARC-AGI benchmark: measuring progress toward artificial general intelligence</title>
+      <link>https://orbitalsimulatorhub.com/blog/arc-agi-benchmark-measuring-progress-toward-artificial-general-intelligence-20260626</link>
+      <description>Learn about arc-agi benchmark: measuring progress toward artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate>
+      <category>agi-research</category>
     </item>
     <item>
       <title>Agent swarm architectures: parallel multi-agent orchestration for AGI tasks</title>
