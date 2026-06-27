@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Sat, 27 Jun 2026 02:27:11 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 07:43:54 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Saturn&apos;s rings are disappearing over millions of years</title>
@@ -13,6 +13,13 @@
       <description>Learn about saturn&apos;s rings are disappearing over millions of years — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
       <category>space-facts</category>
+    </item>
+    <item>
+      <title>AGI safety and alignment: ensuring beneficial artificial general intelligence</title>
+      <link>https://orbitalsimulatorhub.com/blog/agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260627</link>
+      <description>Learn about agi safety and alignment: ensuring beneficial artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
+      <category>agi-research</category>
     </item>
     <item>
       <title>Robot manipulation and sensor fusion for space construction tasks</title>
