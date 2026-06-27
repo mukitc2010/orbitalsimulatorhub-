@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-27T07:43:54.305Z",
+  "generated_at": "2026-06-27T11:21:41.104Z",
   "featured_article": {
-    "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
-    "excerpt": "AGI safety and alignment: ensuring beneficial artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260627"
+    "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
+    "excerpt": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260627"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Escape velocity derivation from conservation of...",
-      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "J2 perturbation: why orbits drift and how to co...",
+      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Gravitational waves and what they tell us about...",
+      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "AI collision avoidance: how 500+ satellites avo...",
+      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-06-27"
     },
     {
-      "slug": "robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260626",
-      "title": "Robot manipulation and sensor fusion for space construction tasks",
-      "excerpt": "Learn about robot manipulation and sensor fusion for space construction tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "slug": "walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260627",
+      "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
+      "excerpt": "Learn about walking stability breakthroughs: 81% recovery improvement in bipedal robots — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
-      "date": "2026-06-26"
+      "date": "2026-06-27"
     }
   ],
   "learning_paths": {
