@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-28T02:39:26.454Z",
+  "generated_at": "2026-06-28T08:16:27.815Z",
   "featured_article": {
-    "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
-    "excerpt": "AGI safety and alignment: ensuring beneficial artificial general intelligence is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260628"
+    "title": "Computational fluid dynamics in spacecraft design",
+    "excerpt": "Computational fluid dynamics in spacecraft design is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/computational-fluid-dynamics-in-spacecraft-design-20260628"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How heat shields protect spacecraft during re-e...",
-      "blurb": "How heat shields protect spacecraft during re-entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Robot manipulation and sensor fusion for space ...",
+      "blurb": "Robot manipulation and sensor fusion for space construction tasks is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Patched conic approximation for interplanetary ...",
-      "blurb": "Patched conic approximation for interplanetary trajectories is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Orbital energy and specific orbital energy formula",
+      "blurb": "Orbital energy and specific orbital energy formula is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Satellite communication: how data travels from ...",
-      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Quantum tunneling in nuclear fusion inside stars",
+      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-28"
     },
     {
+      "slug": "computational-fluid-dynamics-in-spacecraft-design-20260628",
+      "title": "Computational fluid dynamics in spacecraft design",
+      "excerpt": "Learn about computational fluid dynamics in spacecraft design — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "aerodynamics",
+      "date": "2026-06-28"
+    },
+    {
       "slug": "saturns-rings-are-disappearing-over-millions-of-years-20260627",
       "title": "Saturn's rings are disappearing over millions of years",
       "excerpt": "Learn about saturn's rings are disappearing over millions of years — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-facts",
-      "date": "2026-06-27"
-    },
-    {
-      "slug": "agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260627",
-      "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
-      "excerpt": "Learn about agi safety and alignment: ensuring beneficial artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-06-27"
     }
   ],
