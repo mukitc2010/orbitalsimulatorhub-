@@ -26992,6 +26992,55 @@ Explore more in our [Space Shop](/space-shop) — NASA t-shirts, LEGO sets, and 
     tags: ["AGI", "artificial general intelligence", "AI research", "machine learning", "reasoning"],
     seoKeywords: "AGI, artificial general intelligence, AI research, machine learning, reasoning",
   },
+  {
+    slug: "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260629",
+    title: "Delayed MDP and Mars communication delay: why AI must act without Earth",
+    excerpt: "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
+    content: `**Introduction**
+
+Delayed MDP and Mars communication delay: why AI must act without Earth is a fascinating topic in space science and physics that connects to how we explore and understand the universe.
+
+**Key Points**
+
+- This topic demonstrates fundamental principles of space agi
+- Real-world applications range from satellite technology to deep space missions
+- Understanding this helps explain phenomena that shape our understanding of the cosmos
+
+**How It Works**
+
+The science behind delayed mdp and mars communication delay: why ai must act without earth involves principles that aerospace engineers, physicists, and NASA scientists use daily. From orbital mechanics to quantum effects, these concepts are the building blocks of modern space exploration.
+
+Key principles include:
+- The mathematical relationships governing motion and energy in space
+- How measurements and observations lead to testable predictions
+- Engineering applications that put theory into practice
+
+**Real-World Applications**
+
+- NASA missions rely on these principles for trajectory planning and mission design
+- Satellite operators use related physics for constellation management
+- Research institutions advance our understanding through experiments and observation
+
+**Conclusion**
+
+Delayed MDP and Mars communication delay: why AI must act without Earth illustrates the beauty and complexity of physics at work in the cosmos. Whether you are a student, researcher, or enthusiast, understanding these concepts opens the door to appreciating the engineering and science that make space exploration possible.
+
+Explore more on our [orbit simulator](/simulator), [Space Shop](/space-shop) (NASA t-shirts, books, toys), and [orbital mechanics guide](/learn/orbital-mechanics).
+
+**Recommended Reading & Products**
+
+- [Artificial Intelligence: A Modern Approach](https://www.amazon.com/dp/0134610997?tag=hubdepot-20)
+- [Reinforcement Learning](https://www.amazon.com/dp/0262039249?tag=hubdepot-20)
+- [Deep Learning](https://www.amazon.com/dp/0262035619?tag=hubdepot-20)
+- [Probabilistic Robotics](https://www.amazon.com/dp/0262201623?tag=hubdepot-20)
+
+Explore more in our [Space Shop](/space-shop) — NASA t-shirts, LEGO sets, and verified Amazon products.
+`,
+    category: "space-agi",
+    date: "2026-06-29",
+    tags: ["Space AGI", "AI satellites", "autonomous spacecraft"],
+    seoKeywords: "Space AGI, AI satellites, autonomous spacecraft",
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
