@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 29 Jun 2026 17:28:40 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 21:17:50 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Delayed MDP and Mars communication delay: why AI must act without Earth</title>
@@ -34,6 +34,13 @@
       <description>Learn about commercial crew program and private astronaut missions — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
       <category>nasa-news</category>
+    </item>
+    <item>
+      <title>The cosmic microwave background and the Big Bang</title>
+      <link>https://orbitalsimulatorhub.com/blog/the-cosmic-microwave-background-and-the-big-bang-20260629</link>
+      <description>Learn about the cosmic microwave background and the big bang — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+      <category>astronomy-lessons</category>
     </item>
     <item>
       <title>AGI safety and alignment: ensuring beneficial artificial general intelligence</title>
