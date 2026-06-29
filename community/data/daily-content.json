@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-29T02:39:54.577Z",
+  "generated_at": "2026-06-29T09:22:28.846Z",
   "featured_article": {
-    "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
-    "excerpt": "Delayed MDP and Mars communication delay: why AI must act without Earth is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260629"
+    "title": "N-body equations: when two-body mechanics is not enough",
+    "excerpt": "N-body equations: when two-body mechanics is not enough is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/n-body-equations-when-two-body-mechanics-is-not-enough-20260629"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "There are more stars than grains of sand on Earth",
-      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Structural theory of general artificial intelli...",
+      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Agent swarm architectures: parallel multi-agent...",
-      "blurb": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Swarm robotics for in-space assembly and orbita...",
+      "blurb": "Swarm robotics for in-space assembly and orbital construction is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "ARC-AGI benchmark: measuring progress toward ar...",
-      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How galaxies collide and merge over billions of...",
+      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-06-29"
     },
     {
+      "slug": "n-body-equations-when-two-body-mechanics-is-not-enough-20260629",
+      "title": "N-body equations: when two-body mechanics is not enough",
+      "excerpt": "Learn about n-body equations: when two-body mechanics is not enough — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-06-29"
+    },
+    {
       "slug": "agi-safety-and-alignment-ensuring-beneficial-artificial-general-intelligence-20260628",
       "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
       "excerpt": "Learn about agi safety and alignment: ensuring beneficial artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-06-28"
-    },
-    {
-      "slug": "computational-fluid-dynamics-in-spacecraft-design-20260628",
-      "title": "Computational fluid dynamics in spacecraft design",
-      "excerpt": "Learn about computational fluid dynamics in spacecraft design — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
       "date": "2026-06-28"
     }
   ],
