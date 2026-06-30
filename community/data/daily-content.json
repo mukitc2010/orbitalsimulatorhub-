@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-30T08:25:03.509Z",
+  "generated_at": "2026-06-30T12:04:38.668Z",
   "featured_article": {
-    "title": "Escape velocity derivation from conservation of energy",
-    "excerpt": "Escape velocity derivation from conservation of energy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/escape-velocity-derivation-from-conservation-of-energy-20260630"
+    "title": "Lunar Gateway construction and deep space habitation",
+    "excerpt": "Lunar Gateway construction and deep space habitation is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "nasa-news",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lunar-gateway-construction-and-deep-space-habitation-20260630"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The physics of geostationary orbit and why it m...",
-      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Vis-viva equation explained: the master formula...",
+      "blurb": "Vis-viva equation explained: the master formula for all orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "NASA Valkyrie humanoid robot: a decade of resea...",
-      "blurb": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Hubble constant and the expanding universe cont...",
+      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "NASA DART asteroid deflection mission results",
-      "blurb": "NASA DART asteroid deflection mission results is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Quantum sensors for deep space navigation",
+      "blurb": "Quantum sensors for deep space navigation is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-06-30"
     },
     {
-      "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260629",
-      "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
-      "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-06-29"
+      "slug": "lunar-gateway-construction-and-deep-space-habitation-20260630",
+      "title": "Lunar Gateway construction and deep space habitation",
+      "excerpt": "Learn about lunar gateway construction and deep space habitation — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "nasa-news",
+      "date": "2026-06-30"
     }
   ],
   "learning_paths": {
