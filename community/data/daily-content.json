@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-06-29T21:17:50.699Z",
+  "generated_at": "2026-06-30T02:34:25.227Z",
   "featured_article": {
-    "title": "The cosmic microwave background and the Big Bang",
-    "excerpt": "The cosmic microwave background and the Big Bang is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-cosmic-microwave-background-and-the-big-bang-20260629"
+    "title": "Patched conic approximation for interplanetary trajectories",
+    "excerpt": "Patched conic approximation for interplanetary trajectories is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/patched-conic-approximation-for-interplanetary-trajectories-20260630"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Wave-particle duality: the double-slit experime...",
-      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Satellite communication: how data travels from ...",
+      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Quantum entanglement and future space communica...",
-      "blurb": "Quantum entanglement and future space communication is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How stars are born inside molecular gas clouds",
+      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum tunneling in nuclear fusion inside stars",
-      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Artemis program progress and Moon landing plans",
+      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "patched-conic-approximation-for-interplanetary-trajectories-20260630",
+      "title": "Patched conic approximation for interplanetary trajectories",
+      "excerpt": "Learn about patched conic approximation for interplanetary trajectories — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-06-30"
+    },
     {
       "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260629",
       "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
@@ -36,13 +43,6 @@
       "slug": "n-body-equations-when-two-body-mechanics-is-not-enough-20260629",
       "title": "N-body equations: when two-body mechanics is not enough",
       "excerpt": "Learn about n-body equations: when two-body mechanics is not enough — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
-      "date": "2026-06-29"
-    },
-    {
-      "slug": "escape-velocity-derivation-from-conservation-of-energy-20260629",
-      "title": "Escape velocity derivation from conservation of energy",
-      "excerpt": "Learn about escape velocity derivation from conservation of energy — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
       "date": "2026-06-29"
     }
