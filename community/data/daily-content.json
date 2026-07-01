@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-01T12:27:49.015Z",
+  "generated_at": "2026-07-01T17:07:53.290Z",
   "featured_article": {
-    "title": "Humanoid robot locomotion on uneven terrain and moving platforms",
-    "excerpt": "Humanoid robot locomotion on uneven terrain and moving platforms is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/humanoid-robot-locomotion-on-uneven-terrain-and-moving-platforms-20260701"
+    "title": "Quantum entanglement and future space communication",
+    "excerpt": "Quantum entanglement and future space communication is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/quantum-entanglement-and-future-space-communication-20260701"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "A teaspoon of neutron star weighs 6 billion tons",
-      "blurb": "A teaspoon of neutron star weighs 6 billion tons is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Swarm robotics for in-space assembly and orbita...",
+      "blurb": "Swarm robotics for in-space assembly and orbital construction is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Commercial crew program and private astronaut m...",
-      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Dark matter: the invisible mass holding galaxie...",
+      "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Wave-particle duality: the double-slit experime...",
-      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Computational fluid dynamics in spacecraft design",
+      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
