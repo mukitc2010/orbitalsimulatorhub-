@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-02T02:29:58.354Z",
+  "generated_at": "2026-07-02T08:08:23.673Z",
   "featured_article": {
-    "title": "Quantum tunneling in nuclear fusion inside stars",
-    "excerpt": "Quantum tunneling in nuclear fusion inside stars is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/quantum-tunneling-in-nuclear-fusion-inside-stars-20260702"
+    "title": "J2 perturbation: why orbits drift and how to correct them",
+    "excerpt": "J2 perturbation: why orbits drift and how to correct them is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260702"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "There are more stars than grains of sand on Earth",
-      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Hubble constant and the expanding universe cont...",
+      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Space AGI five pillars: perception, planning, c...",
-      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
+      "title": "How AI satellites make autonomous decisions in ...",
+      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How lift is generated: Bernoulli vs Newton expl...",
-      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How neutron stars can spin 716 times per second",
+      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-07-02"
     },
     {
+      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260702",
+      "title": "J2 perturbation: why orbits drift and how to correct them",
+      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-07-02"
+    },
+    {
       "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260701",
       "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
       "excerpt": "Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
-      "date": "2026-07-01"
-    },
-    {
-      "slug": "google-deepmind-cognitive-framework-10-abilities-needed-for-agi-20260701",
-      "title": "Google DeepMind cognitive framework: 10 abilities needed for AGI",
-      "excerpt": "Learn about google deepmind cognitive framework: 10 abilities needed for agi — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-07-01"
     }
   ],
