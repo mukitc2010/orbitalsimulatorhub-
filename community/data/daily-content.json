@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-02T12:03:42.317Z",
+  "generated_at": "2026-07-02T16:44:58.969Z",
   "featured_article": {
-    "title": "How GPS satellites calculate your exact position using trilateration",
-    "excerpt": "How GPS satellites calculate your exact position using trilateration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-gps-satellites-calculate-your-exact-position-using-trilateration-20260702"
+    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
+    "excerpt": "Soft robotics and compliant actuators for safe human-robot collaboration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260702"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How stars are born inside molecular gas clouds",
-      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How NASA tests aerodynamics in wind tunnels",
+      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Hubble constant and the expanding universe cont...",
-      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Self-repairing spacecraft: AI that fixes itself...",
+      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Kepler's three laws with derivations and real s...",
-      "blurb": "Kepler's three laws with derivations and real satellite examples is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "International Space Station science experiments",
+      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
