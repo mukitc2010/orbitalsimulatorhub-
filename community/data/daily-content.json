@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-02T08:08:23.673Z",
+  "generated_at": "2026-07-02T12:03:42.317Z",
   "featured_article": {
-    "title": "J2 perturbation: why orbits drift and how to correct them",
-    "excerpt": "J2 perturbation: why orbits drift and how to correct them is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260702"
+    "title": "How GPS satellites calculate your exact position using trilateration",
+    "excerpt": "How GPS satellites calculate your exact position using trilateration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-gps-satellites-calculate-your-exact-position-using-trilateration-20260702"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Hubble constant and the expanding universe cont...",
-      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How stars are born inside molecular gas clouds",
+      "blurb": "How stars are born inside molecular gas clouds is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How AI satellites make autonomous decisions in ...",
-      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Hubble constant and the expanding universe cont...",
+      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How neutron stars can spin 716 times per second",
-      "blurb": "How neutron stars can spin 716 times per second is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Kepler's three laws with derivations and real s...",
+      "blurb": "Kepler's three laws with derivations and real satellite examples is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-02"
     },
     {
-      "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260701",
-      "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
-      "excerpt": "Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
-      "date": "2026-07-01"
+      "slug": "how-gps-satellites-calculate-your-exact-position-using-trilateration-20260702",
+      "title": "How GPS satellites calculate your exact position using trilateration",
+      "excerpt": "Learn about how gps satellites calculate your exact position using trilateration — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "satellite-tutorials",
+      "date": "2026-07-02"
     }
   ],
   "learning_paths": {
