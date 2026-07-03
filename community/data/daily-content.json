@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-03T02:05:25.502Z",
+  "generated_at": "2026-07-03T07:55:52.733Z",
   "featured_article": {
-    "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
-    "excerpt": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260703"
+    "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
+    "excerpt": "Self-repairing spacecraft: AI that fixes itself in deep space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260703"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How satellite constellations maintain formation...",
-      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Escape velocity derivation from conservation of...",
+      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How satellite constellations maintain formation...",
-      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "AI-driven robot autonomy: from teleoperation to...",
+      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "James Webb Space Telescope latest discoveries",
-      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "J2 perturbation: why orbits drift and how to co...",
+      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-07-03"
     },
     {
+      "slug": "self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260703",
+      "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
+      "excerpt": "Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-07-03"
+    },
+    {
       "slug": "quantum-tunneling-in-nuclear-fusion-inside-stars-20260702",
       "title": "Quantum tunneling in nuclear fusion inside stars",
       "excerpt": "Learn about quantum tunneling in nuclear fusion inside stars — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "quantum-physics",
-      "date": "2026-07-02"
-    },
-    {
-      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260702",
-      "title": "J2 perturbation: why orbits drift and how to correct them",
-      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-07-02"
     }
   ],
