@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-04T07:38:22.301Z",
+  "generated_at": "2026-07-04T11:18:43.474Z",
   "featured_article": {
-    "title": "Re-entry physics: surviving 28000 km/h atmospheric entry",
-    "excerpt": "Re-entry physics: surviving 28000 km/h atmospheric entry is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260704"
+    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260704"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "CubeSats and nanosatellites: space access for u...",
-      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How GPS satellites calculate your exact positio...",
+      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Self-repairing spacecraft: AI that fixes itself...",
-      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
+      "title": "CubeSats and nanosatellites: space access for u...",
+      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Pulsars: the cosmic lighthouses of neutron stars",
-      "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Hubble constant and the expanding universe cont...",
+      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-04"
     },
     {
-      "slug": "walking-stability-breakthroughs-81-recovery-improvement-in-bipedal-robots-20260703",
-      "title": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots",
-      "excerpt": "Learn about walking stability breakthroughs: 81% recovery improvement in bipedal robots — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
-      "date": "2026-07-03"
+      "slug": "ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260704",
+      "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
+      "excerpt": "Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-07-04"
     }
   ],
   "learning_paths": {
