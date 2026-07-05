@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-05T02:11:24.644Z",
+  "generated_at": "2026-07-05T07:52:10.749Z",
   "featured_article": {
-    "title": "Patched conic approximation for interplanetary trajectories",
-    "excerpt": "Patched conic approximation for interplanetary trajectories is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/patched-conic-approximation-for-interplanetary-trajectories-20260705"
+    "title": "How MPC and LQR control algorithms keep satellite swarms safe",
+    "excerpt": "How MPC and LQR control algorithms keep satellite swarms safe is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260705"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Lunar Gateway construction and deep space habit...",
-      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Satellite communication: how data travels from ...",
+      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Robot engineering for lunar and Martian surface...",
-      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Lunar Gateway construction and deep space habit...",
+      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Robonaut 2: the first humanoid robot in space a...",
-      "blurb": "Robonaut 2: the first humanoid robot in space aboard the ISS is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Saturn's rings are disappearing over millions o...",
+      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,16 +33,16 @@
       "date": "2026-07-05"
     },
     {
+      "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260705",
+      "title": "How MPC and LQR control algorithms keep satellite swarms safe",
+      "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-07-05"
+    },
+    {
       "slug": "hypersonic-flight-challenges-above-mach-5-20260704",
       "title": "Hypersonic flight: challenges above Mach 5",
       "excerpt": "Learn about hypersonic flight: challenges above mach 5 — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
-      "date": "2026-07-04"
-    },
-    {
-      "slug": "re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260704",
-      "title": "Re-entry physics: surviving 28000 km/h atmospheric entry",
-      "excerpt": "Learn about re-entry physics: surviving 28000 km/h atmospheric entry — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "aerodynamics",
       "date": "2026-07-04"
     }
