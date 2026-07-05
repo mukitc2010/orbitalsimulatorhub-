@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-05T11:24:04.457Z",
+  "generated_at": "2026-07-05T16:01:01.909Z",
   "featured_article": {
-    "title": "Space-AGI convergence: how orbital autonomy accelerates AGI research",
-    "excerpt": "Space-AGI convergence: how orbital autonomy accelerates AGI research is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-convergence-how-orbital-autonomy-accelerates-agi-research-20260705"
+    "title": "How lift is generated: Bernoulli vs Newton explanations",
+    "excerpt": "How lift is generated: Bernoulli vs Newton explanations is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-lift-is-generated-bernoulli-vs-newton-explanations-20260705"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Walking stability breakthroughs: 81% recovery i...",
-      "blurb": "Walking stability breakthroughs: 81% recovery improvement in bipedal robots is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "How MPC and LQR control algorithms keep satelli...",
+      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "LEO vs MEO vs GEO: choosing the right orbit for...",
-      "blurb": "LEO vs MEO vs GEO: choosing the right orbit for a mission is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Humanoid robot locomotion on uneven terrain and...",
+      "blurb": "Humanoid robot locomotion on uneven terrain and moving platforms is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Exoplanet detection methods: transit and radial...",
-      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Swarm robotics for in-space assembly and orbita...",
+      "blurb": "Swarm robotics for in-space assembly and orbital construction is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
