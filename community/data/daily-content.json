@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-06T17:35:38.430Z",
+  "generated_at": "2026-07-06T21:22:20.799Z",
   "featured_article": {
-    "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
-    "excerpt": "Scramjet engines: air-breathing propulsion at hypersonic speeds is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/scramjet-engines-air-breathing-propulsion-at-hypersonic-speeds-20260706"
+    "title": "How satellite constellations maintain formation in orbit",
+    "excerpt": "How satellite constellations maintain formation in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-satellite-constellations-maintain-formation-in-orbit-20260706"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Dark matter: the invisible mass holding galaxie...",
-      "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Rocket aerodynamics: designing nose cones and f...",
+      "blurb": "Rocket aerodynamics: designing nose cones and fairings is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Commercial crew program and private astronaut m...",
-      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Agent swarm architectures: parallel multi-agent...",
+      "blurb": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "AGI safety and alignment: ensuring beneficial a...",
-      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "From narrow AI to AGI: what engineering breakth...",
+      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
