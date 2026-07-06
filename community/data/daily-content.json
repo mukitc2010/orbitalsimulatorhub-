@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-05T20:48:53.879Z",
+  "generated_at": "2026-07-06T02:23:19.300Z",
   "featured_article": {
-    "title": "How NASA tests aerodynamics in wind tunnels",
-    "excerpt": "How NASA tests aerodynamics in wind tunnels is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-nasa-tests-aerodynamics-in-wind-tunnels-20260705"
+    "title": "Robot manipulation and sensor fusion for space construction tasks",
+    "excerpt": "Robot manipulation and sensor fusion for space construction tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260706"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Pontryagin maximum principle explained for orbi...",
-      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
+      "title": "AGI safety and alignment: ensuring beneficial a...",
+      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
@@ -19,12 +19,19 @@
       "icon": "atom"
     },
     {
-      "title": "Structural theory of general artificial intelli...",
-      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Self-repairing spacecraft: AI that fixes itself...",
+      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260706",
+      "title": "Robot manipulation and sensor fusion for space construction tasks",
+      "excerpt": "Learn about robot manipulation and sensor fusion for space construction tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-07-06"
+    },
     {
       "slug": "patched-conic-approximation-for-interplanetary-trajectories-20260705",
       "title": "Patched conic approximation for interplanetary trajectories",
@@ -37,13 +44,6 @@
       "title": "How MPC and LQR control algorithms keep satellite swarms safe",
       "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-07-05"
-    },
-    {
-      "slug": "space-agi-convergence-how-orbital-autonomy-accelerates-agi-research-20260705",
-      "title": "Space-AGI convergence: how orbital autonomy accelerates AGI research",
-      "excerpt": "Learn about space-agi convergence: how orbital autonomy accelerates agi research — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-07-05"
     }
   ],
