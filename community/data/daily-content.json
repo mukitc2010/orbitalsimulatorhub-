@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-07-08T20:57:52.689Z",
+  "generated_at": "2026-07-09T02:05:37.119Z",
   "featured_article": {
-    "title": "What happens when a massive star dies: supernovae and black holes",
-    "excerpt": "What happens when a massive star dies: supernovae and black holes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260708"
+    "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
+    "excerpt": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260709"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Space AGI five pillars: perception, planning, c...",
-      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
+      "title": "How atomic clocks on GPS satellites use quantum...",
+      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
-      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "The cosmic microwave background and the Big Bang",
+      "blurb": "The cosmic microwave background and the Big Bang is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Quantum tunneling in nuclear fusion inside stars",
-      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Exoplanet detection methods: transit and radial...",
+      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260709",
+      "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
+      "excerpt": "Learn about nasa valkyrie humanoid robot: a decade of research for mars missions — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-07-09"
+    },
     {
       "slug": "nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260708",
       "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
@@ -37,13 +44,6 @@
       "title": "AGI safety and alignment: ensuring beneficial artificial general intelligence",
       "excerpt": "Learn about agi safety and alignment: ensuring beneficial artificial general intelligence — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-07-08"
-    },
-    {
-      "slug": "what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260708",
-      "title": "What is Space AGI and why it matters for future space exploration",
-      "excerpt": "Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-07-08"
     }
   ],
