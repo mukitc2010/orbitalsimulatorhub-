@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-09T08:20:05.530Z",
+  "generated_at": "2026-07-09T17:13:11.614Z",
   "featured_article": {
-    "title": "Computational fluid dynamics in spacecraft design",
-    "excerpt": "Computational fluid dynamics in spacecraft design is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/computational-fluid-dynamics-in-spacecraft-design-20260709"
+    "title": "Space is completely silent because sound needs a medium",
+    "excerpt": "Space is completely silent because sound needs a medium is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-facts",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-is-completely-silent-because-sound-needs-a-medium-20260709"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Saturn's rings are disappearing over millions o...",
-      "blurb": "Saturn's rings are disappearing over millions of years is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Escape velocity derivation from conservation of...",
+      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Delayed MDP and Mars communication delay: why A...",
-      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Space-AGI convergence: how orbital autonomy acc...",
+      "blurb": "Space-AGI convergence: how orbital autonomy accelerates AGI research is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Exoskeletons and wearable robots for astronaut ...",
-      "blurb": "Exoskeletons and wearable robots for astronaut EVA assistance is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "How galaxies collide and merge over billions of...",
+      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-09"
     },
     {
-      "slug": "nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260708",
-      "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
-      "excerpt": "Learn about nasa valkyrie humanoid robot: a decade of research for mars missions — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
-      "date": "2026-07-08"
+      "slug": "space-is-completely-silent-because-sound-needs-a-medium-20260709",
+      "title": "Space is completely silent because sound needs a medium",
+      "excerpt": "Learn about space is completely silent because sound needs a medium — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-facts",
+      "date": "2026-07-09"
     }
   ],
   "learning_paths": {
