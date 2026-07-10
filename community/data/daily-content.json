@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-10T08:15:59.121Z",
+  "generated_at": "2026-07-10T12:20:17.874Z",
   "featured_article": {
-    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-    "excerpt": "Soft robotics and compliant actuators for safe human-robot collaboration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260710"
+    "title": "How atomic clocks on GPS satellites use quantum mechanics",
+    "excerpt": "How atomic clocks on GPS satellites use quantum mechanics is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-atomic-clocks-on-gps-satellites-use-quantum-mechanics-20260710"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "James Webb Space Telescope latest discoveries",
-      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Robot manipulation and sensor fusion for space ...",
+      "blurb": "Robot manipulation and sensor fusion for space construction tasks is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
-      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
+      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How Starlink creates global broadband internet ...",
-      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Scramjet engines: air-breathing propulsion at h...",
+      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-10"
     },
     {
-      "slug": "nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260709",
-      "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
-      "excerpt": "Learn about nasa valkyrie humanoid robot: a decade of research for mars missions — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
-      "date": "2026-07-09"
+      "slug": "how-atomic-clocks-on-gps-satellites-use-quantum-mechanics-20260710",
+      "title": "How atomic clocks on GPS satellites use quantum mechanics",
+      "excerpt": "Learn about how atomic clocks on gps satellites use quantum mechanics — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "quantum-physics",
+      "date": "2026-07-10"
     }
   ],
   "learning_paths": {
