@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-10T16:50:18.406Z",
+  "generated_at": "2026-07-10T21:00:14.754Z",
   "featured_article": {
-    "title": "How atomic clocks on GPS satellites use quantum mechanics",
-    "excerpt": "How atomic clocks on GPS satellites use quantum mechanics is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-atomic-clocks-on-gps-satellites-use-quantum-mechanics-20260710"
+    "title": "Space-AGI convergence: how orbital autonomy accelerates AGI research",
+    "excerpt": "Space-AGI convergence: how orbital autonomy accelerates AGI research is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-convergence-how-orbital-autonomy-accelerates-agi-research-20260710"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The physics of geostationary orbit and why it m...",
-      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Hubble constant and the expanding universe cont...",
+      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How lift is generated: Bernoulli vs Newton expl...",
-      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "What is Space AGI and why it matters for future...",
+      "blurb": "What is Space AGI and why it matters for future space exploration is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Hohmann transfer formula: the most fuel-efficie...",
-      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How GPS satellites calculate your exact positio...",
+      "blurb": "How GPS satellites calculate your exact position using trilateration is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
