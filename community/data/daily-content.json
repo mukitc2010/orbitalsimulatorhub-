@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T12:20:17.874Z",
+  "generated_at": "2026-07-10T16:50:18.406Z",
   "featured_article": {
     "title": "How atomic clocks on GPS satellites use quantum mechanics",
     "excerpt": "How atomic clocks on GPS satellites use quantum mechanics is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
@@ -9,18 +9,18 @@
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Robot manipulation and sensor fusion for space ...",
-      "blurb": "Robot manipulation and sensor fusion for space construction tasks is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "The physics of geostationary orbit and why it m...",
+      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
-      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How lift is generated: Bernoulli vs Newton expl...",
+      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Scramjet engines: air-breathing propulsion at h...",
-      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Hohmann transfer formula: the most fuel-efficie...",
+      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
