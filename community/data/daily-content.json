@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-11T01:50:59.793Z",
+  "generated_at": "2026-07-11T07:06:52.577Z",
   "featured_article": {
-    "title": "Commercial crew program and private astronaut missions",
-    "excerpt": "Commercial crew program and private astronaut missions is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/commercial-crew-program-and-private-astronaut-missions-20260711"
+    "title": "Quantum tunneling in nuclear fusion inside stars",
+    "excerpt": "Quantum tunneling in nuclear fusion inside stars is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/quantum-tunneling-in-nuclear-fusion-inside-stars-20260711"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Tsiolkovsky rocket equation: why we need stagin...",
-      "blurb": "Tsiolkovsky rocket equation: why we need staging to reach orbit is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Lambert's problem: how to plan an intercept bet...",
+      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Delayed MDP and Mars communication delay: why A...",
-      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
+      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How atomic clocks on GPS satellites use quantum...",
-      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "What happens when a massive star dies: supernov...",
+      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-07-11"
     },
     {
+      "slug": "quantum-tunneling-in-nuclear-fusion-inside-stars-20260711",
+      "title": "Quantum tunneling in nuclear fusion inside stars",
+      "excerpt": "Learn about quantum tunneling in nuclear fusion inside stars — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "quantum-physics",
+      "date": "2026-07-11"
+    },
+    {
       "slug": "a-teaspoon-of-neutron-star-weighs-6-billion-tons-20260710",
       "title": "A teaspoon of neutron star weighs 6 billion tons",
       "excerpt": "Learn about a teaspoon of neutron star weighs 6 billion tons — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-facts",
-      "date": "2026-07-10"
-    },
-    {
-      "slug": "soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260710",
-      "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
-      "excerpt": "Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-07-10"
     }
   ],
