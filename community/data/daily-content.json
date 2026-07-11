@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-11T07:06:52.577Z",
+  "generated_at": "2026-07-11T10:55:38.927Z",
   "featured_article": {
-    "title": "Quantum tunneling in nuclear fusion inside stars",
-    "excerpt": "Quantum tunneling in nuclear fusion inside stars is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/quantum-tunneling-in-nuclear-fusion-inside-stars-20260711"
+    "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
+    "excerpt": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260711"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "How orbital debris tracking and avoidance works",
+      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
-      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Exoplanet detection methods: transit and radial...",
+      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "What happens when a massive star dies: supernov...",
-      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-11"
     },
     {
-      "slug": "a-teaspoon-of-neutron-star-weighs-6-billion-tons-20260710",
-      "title": "A teaspoon of neutron star weighs 6 billion tons",
-      "excerpt": "Learn about a teaspoon of neutron star weighs 6 billion tons — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
-      "date": "2026-07-10"
+      "slug": "neuro-symbolic-ai-combining-neural-networks-with-logical-reasoning-for-agi-20260711",
+      "title": "Neuro-symbolic AI: combining neural networks with logical reasoning for AGI",
+      "excerpt": "Learn about neuro-symbolic ai: combining neural networks with logical reasoning for agi — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-07-11"
     }
   ],
   "learning_paths": {
