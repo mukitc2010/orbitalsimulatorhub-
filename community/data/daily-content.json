@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-12T01:53:28.317Z",
+  "generated_at": "2026-07-12T07:24:44.571Z",
   "featured_article": {
-    "title": "Pontryagin maximum principle explained for orbital maneuvers",
-    "excerpt": "Pontryagin maximum principle explained for orbital maneuvers is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+    "excerpt": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260712"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260712"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Hubble constant and the expanding universe cont...",
-      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
+      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Space-AGI convergence: how orbital autonomy acc...",
-      "blurb": "Space-AGI convergence: how orbital autonomy accelerates AGI research is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "International Space Station science experiments",
+      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Hohmann transfer formula: the most fuel-efficie...",
-      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Lunar Gateway construction and deep space habit...",
+      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-07-12"
     },
     {
+      "slug": "space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260712",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+      "excerpt": "Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-07-12"
+    },
+    {
       "slug": "commercial-crew-program-and-private-astronaut-missions-20260711",
       "title": "Commercial crew program and private astronaut missions",
       "excerpt": "Learn about commercial crew program and private astronaut missions — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "nasa-news",
-      "date": "2026-07-11"
-    },
-    {
-      "slug": "quantum-tunneling-in-nuclear-fusion-inside-stars-20260711",
-      "title": "Quantum tunneling in nuclear fusion inside stars",
-      "excerpt": "Learn about quantum tunneling in nuclear fusion inside stars — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "quantum-physics",
       "date": "2026-07-11"
     }
   ],
