@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-12T07:24:44.571Z",
+  "generated_at": "2026-07-12T11:05:42.907Z",
   "featured_article": {
-    "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
-    "excerpt": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260712"
+    "title": "Olympus Mons on Mars is 3 times taller than Everest",
+    "excerpt": "Olympus Mons on Mars is 3 times taller than Everest is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-facts",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/olympus-mons-on-mars-is-3-times-taller-than-everest-20260712"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
-      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "NASA DART asteroid deflection mission results",
+      "blurb": "NASA DART asteroid deflection mission results is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "International Space Station science experiments",
-      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Transformer-based abstract reasoning and test-t...",
+      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Lunar Gateway construction and deep space habit...",
-      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "From narrow AI to AGI: what engineering breakth...",
+      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-12"
     },
     {
-      "slug": "commercial-crew-program-and-private-astronaut-missions-20260711",
-      "title": "Commercial crew program and private astronaut missions",
-      "excerpt": "Learn about commercial crew program and private astronaut missions — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "nasa-news",
-      "date": "2026-07-11"
+      "slug": "olympus-mons-on-mars-is-3-times-taller-than-everest-20260712",
+      "title": "Olympus Mons on Mars is 3 times taller than Everest",
+      "excerpt": "Learn about olympus mons on mars is 3 times taller than everest — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-facts",
+      "date": "2026-07-12"
     }
   ],
   "learning_paths": {
