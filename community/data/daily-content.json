@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-13T08:10:18.344Z",
+  "generated_at": "2026-07-13T12:26:17.604Z",
   "featured_article": {
-    "title": "Dark matter: the invisible mass holding galaxies together",
-    "excerpt": "Dark matter: the invisible mass holding galaxies together is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "The life cycle of Sun-like stars from birth to white dwarf",
+    "excerpt": "The life cycle of Sun-like stars from birth to white dwarf is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "astronomy-lessons",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/dark-matter-the-invisible-mass-holding-galaxies-together-20260713"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-life-cycle-of-sun-like-stars-from-birth-to-white-dwarf-20260713"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "AI collision avoidance: how 500+ satellites avo...",
-      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Computational fluid dynamics in spacecraft design",
+      "blurb": "Computational fluid dynamics in spacecraft design is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Robonaut 2: the first humanoid robot in space a...",
-      "blurb": "Robonaut 2: the first humanoid robot in space aboard the ISS is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Tsiolkovsky rocket equation: why we need stagin...",
+      "blurb": "Tsiolkovsky rocket equation: why we need staging to reach orbit is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-13"
     },
     {
-      "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260712",
-      "title": "Pontryagin maximum principle explained for orbital maneuvers",
-      "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-07-12"
+      "slug": "the-life-cycle-of-sun-like-stars-from-birth-to-white-dwarf-20260713",
+      "title": "The life cycle of Sun-like stars from birth to white dwarf",
+      "excerpt": "Learn about the life cycle of sun-like stars from birth to white dwarf — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "astronomy-lessons",
+      "date": "2026-07-13"
     }
   ],
   "learning_paths": {
