@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-13T01:55:56.292Z",
+  "generated_at": "2026-07-13T08:10:18.344Z",
   "featured_article": {
-    "title": "Tsiolkovsky rocket equation: why we need staging to reach orbit",
-    "excerpt": "Tsiolkovsky rocket equation: why we need staging to reach orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260713"
+    "title": "Dark matter: the invisible mass holding galaxies together",
+    "excerpt": "Dark matter: the invisible mass holding galaxies together is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "astronomy-lessons",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/dark-matter-the-invisible-mass-holding-galaxies-together-20260713"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
+      "title": "AI collision avoidance: how 500+ satellites avo...",
+      "blurb": "AI collision avoidance: how 500+ satellites avoid each other without human input is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Gravitational waves and what they tell us about...",
-      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Robonaut 2: the first humanoid robot in space a...",
+      "blurb": "Robonaut 2: the first humanoid robot in space aboard the ISS is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How spy satellites achieve sub-meter imaging re...",
-      "blurb": "How spy satellites achieve sub-meter imaging resolution is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Lambert's problem: how to plan an intercept bet...",
+      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,16 +33,16 @@
       "date": "2026-07-13"
     },
     {
+      "slug": "dark-matter-the-invisible-mass-holding-galaxies-together-20260713",
+      "title": "Dark matter: the invisible mass holding galaxies together",
+      "excerpt": "Learn about dark matter: the invisible mass holding galaxies together — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "astronomy-lessons",
+      "date": "2026-07-13"
+    },
+    {
       "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260712",
       "title": "Pontryagin maximum principle explained for orbital maneuvers",
       "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-07-12"
-    },
-    {
-      "slug": "space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260712",
-      "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
-      "excerpt": "Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
       "date": "2026-07-12"
     }

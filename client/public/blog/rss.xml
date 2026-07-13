@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 13 Jul 2026 01:55:56 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 08:10:18 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tsiolkovsky rocket equation: why we need staging to reach orbit</title>
@@ -13,6 +13,13 @@
       <description>Learn about tsiolkovsky rocket equation: why we need staging to reach orbit — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
       <category>space-engineering</category>
+    </item>
+    <item>
+      <title>Dark matter: the invisible mass holding galaxies together</title>
+      <link>https://orbitalsimulatorhub.com/blog/dark-matter-the-invisible-mass-holding-galaxies-together-20260713</link>
+      <description>Learn about dark matter: the invisible mass holding galaxies together — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+      <category>astronomy-lessons</category>
     </item>
     <item>
       <title>Pontryagin maximum principle explained for orbital maneuvers</title>
