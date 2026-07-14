@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-07-13T20:50:59.540Z",
+  "generated_at": "2026-07-14T01:43:21.993Z",
   "featured_article": {
-    "title": "Lunar Gateway construction and deep space habitation",
-    "excerpt": "Lunar Gateway construction and deep space habitation is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lunar-gateway-construction-and-deep-space-habitation-20260713"
+    "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
+    "excerpt": "From narrow AI to AGI: what engineering breakthroughs are still needed is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260714"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Pulsars: the cosmic lighthouses of neutron stars",
-      "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Robot engineering for lunar and Martian surface...",
+      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Robot manipulation and sensor fusion for space ...",
-      "blurb": "Robot manipulation and sensor fusion for space construction tasks is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Escape velocity derivation from conservation of...",
+      "blurb": "Escape velocity derivation from conservation of energy is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Lambert's problem: how to plan an intercept bet...",
-      "blurb": "Lambert's problem: how to plan an intercept between two orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "CubeSats and nanosatellites: space access for u...",
+      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260714",
+      "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
+      "excerpt": "Learn about from narrow ai to agi: what engineering breakthroughs are still needed — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-07-14"
+    },
     {
       "slug": "tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260713",
       "title": "Tsiolkovsky rocket equation: why we need staging to reach orbit",
@@ -36,13 +43,6 @@
       "slug": "dark-matter-the-invisible-mass-holding-galaxies-together-20260713",
       "title": "Dark matter: the invisible mass holding galaxies together",
       "excerpt": "Learn about dark matter: the invisible mass holding galaxies together — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "astronomy-lessons",
-      "date": "2026-07-13"
-    },
-    {
-      "slug": "the-life-cycle-of-sun-like-stars-from-birth-to-white-dwarf-20260713",
-      "title": "The life cycle of Sun-like stars from birth to white dwarf",
-      "excerpt": "Learn about the life cycle of sun-like stars from birth to white dwarf — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "astronomy-lessons",
       "date": "2026-07-13"
     }
