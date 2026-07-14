@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-14T16:08:28.984Z",
+  "generated_at": "2026-07-14T20:51:10.086Z",
   "featured_article": {
-    "title": "Escape velocity derivation from conservation of energy",
-    "excerpt": "Escape velocity derivation from conservation of energy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/escape-velocity-derivation-from-conservation-of-energy-20260714"
+    "title": "SpaceX Starship development and test flights",
+    "excerpt": "SpaceX Starship development and test flights is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "nasa-news",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/spacex-starship-development-and-test-flights-20260714"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Quantum tunneling in nuclear fusion inside stars",
-      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Robot engineering for lunar and Martian surface...",
+      "blurb": "Robot engineering for lunar and Martian surface operations is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
-      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "The aerodynamics of Mars helicopter Ingenuity i...",
+      "blurb": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How relativistic quantum effects correct GPS ac...",
-      "blurb": "How relativistic quantum effects correct GPS accuracy is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How Starlink creates global broadband internet ...",
+      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
