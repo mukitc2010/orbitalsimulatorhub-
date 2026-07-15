@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-15T07:07:28.319Z",
+  "generated_at": "2026-07-15T11:22:53.762Z",
   "featured_article": {
-    "title": "How spy satellites achieve sub-meter imaging resolution",
-    "excerpt": "How spy satellites achieve sub-meter imaging resolution is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-spy-satellites-achieve-sub-meter-imaging-resolution-20260715"
+    "title": "Transformer-based abstract reasoning and test-time training for AGI",
+    "excerpt": "Transformer-based abstract reasoning and test-time training for AGI is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260715"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Pulsars: the cosmic lighthouses of neutron stars",
-      "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Pontryagin maximum principle explained for orbi...",
+      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Why compositional reasoning remains the hardest...",
-      "blurb": "Why compositional reasoning remains the hardest unsolved AGI challenge is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Hubble constant and the expanding universe cont...",
+      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How MPC and LQR control algorithms keep satelli...",
-      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
+      "title": "SpaceX Starship development and test flights",
+      "blurb": "SpaceX Starship development and test flights is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-15"
     },
     {
-      "slug": "from-narrow-ai-to-agi-what-engineering-breakthroughs-are-still-needed-20260714",
-      "title": "From narrow AI to AGI: what engineering breakthroughs are still needed",
-      "excerpt": "Learn about from narrow ai to agi: what engineering breakthroughs are still needed — covering the science, real-world applications, and how it connects to space exploration.",
+      "slug": "transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260715",
+      "title": "Transformer-based abstract reasoning and test-time training for AGI",
+      "excerpt": "Learn about transformer-based abstract reasoning and test-time training for agi — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-07-14"
+      "date": "2026-07-15"
     }
   ],
   "learning_paths": {
