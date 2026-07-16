@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-16T01:49:29.830Z",
+  "generated_at": "2026-07-16T07:16:49.311Z",
   "featured_article": {
-    "title": "How AI satellites make autonomous decisions in orbit",
-    "excerpt": "How AI satellites make autonomous decisions in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-ai-satellites-make-autonomous-decisions-in-orbit-20260716"
+    "title": "How satellite constellations maintain formation in orbit",
+    "excerpt": "How satellite constellations maintain formation in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-satellite-constellations-maintain-formation-in-orbit-20260716"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
+      "title": "The uncertainty principle and its real-world ap...",
+      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Swarm robotics for in-space assembly and orbita...",
-      "blurb": "Swarm robotics for in-space assembly and orbital construction is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "What is Space AGI and why it matters for future...",
+      "blurb": "What is Space AGI and why it matters for future space exploration is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
+      "title": "AI-driven robot autonomy: from teleoperation to...",
+      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-07-16"
     },
     {
+      "slug": "how-satellite-constellations-maintain-formation-in-orbit-20260716",
+      "title": "How satellite constellations maintain formation in orbit",
+      "excerpt": "Learn about how satellite constellations maintain formation in orbit — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "satellite-tutorials",
+      "date": "2026-07-16"
+    },
+    {
       "slug": "why-a-day-on-venus-is-longer-than-its-year-20260715",
       "title": "Why a day on Venus is longer than its year",
       "excerpt": "Learn about why a day on venus is longer than its year — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-facts",
-      "date": "2026-07-15"
-    },
-    {
-      "slug": "how-spy-satellites-achieve-sub-meter-imaging-resolution-20260715",
-      "title": "How spy satellites achieve sub-meter imaging resolution",
-      "excerpt": "Learn about how spy satellites achieve sub-meter imaging resolution — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "satellite-tutorials",
       "date": "2026-07-15"
     }
   ],
