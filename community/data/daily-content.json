@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-16T07:16:49.311Z",
+  "generated_at": "2026-07-16T11:27:14.053Z",
   "featured_article": {
-    "title": "How satellite constellations maintain formation in orbit",
-    "excerpt": "How satellite constellations maintain formation in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-satellite-constellations-maintain-formation-in-orbit-20260716"
+    "title": "NASA DART asteroid deflection mission results",
+    "excerpt": "NASA DART asteroid deflection mission results is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "nasa-news",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-dart-asteroid-deflection-mission-results-20260716"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The uncertainty principle and its real-world ap...",
-      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "CubeSats and nanosatellites: space access for u...",
+      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "What is Space AGI and why it matters for future...",
-      "blurb": "What is Space AGI and why it matters for future space exploration is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Exoplanet detection methods: transit and radial...",
+      "blurb": "Exoplanet detection methods: transit and radial velocity is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "AI-driven robot autonomy: from teleoperation to...",
-      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "NASA Valkyrie humanoid robot: a decade of resea...",
+      "blurb": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-16"
     },
     {
-      "slug": "why-a-day-on-venus-is-longer-than-its-year-20260715",
-      "title": "Why a day on Venus is longer than its year",
-      "excerpt": "Learn about why a day on venus is longer than its year — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-facts",
-      "date": "2026-07-15"
+      "slug": "nasa-dart-asteroid-deflection-mission-results-20260716",
+      "title": "NASA DART asteroid deflection mission results",
+      "excerpt": "Learn about nasa dart asteroid deflection mission results — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "nasa-news",
+      "date": "2026-07-16"
     }
   ],
   "learning_paths": {
