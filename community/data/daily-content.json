@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-07-15T20:50:57.377Z",
+  "generated_at": "2026-07-16T01:49:29.830Z",
   "featured_article": {
-    "title": "How atomic clocks on GPS satellites use quantum mechanics",
-    "excerpt": "How atomic clocks on GPS satellites use quantum mechanics is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-atomic-clocks-on-gps-satellites-use-quantum-mechanics-20260715"
+    "title": "How AI satellites make autonomous decisions in orbit",
+    "excerpt": "How AI satellites make autonomous decisions in orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-ai-satellites-make-autonomous-decisions-in-orbit-20260716"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Pontryagin maximum principle explained for orbi...",
-      "blurb": "Pontryagin maximum principle explained for orbital maneuvers is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
+      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Space AGI five pillars: perception, planning, c...",
-      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Swarm robotics for in-space assembly and orbita...",
+      "blurb": "Swarm robotics for in-space assembly and orbital construction is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Tsiolkovsky rocket equation: why we need stagin...",
-      "blurb": "Tsiolkovsky rocket equation: why we need staging to reach orbit is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
+      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "how-ai-satellites-make-autonomous-decisions-in-orbit-20260716",
+      "title": "How AI satellites make autonomous decisions in orbit",
+      "excerpt": "Learn about how ai satellites make autonomous decisions in orbit — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-07-16"
+    },
     {
       "slug": "why-a-day-on-venus-is-longer-than-its-year-20260715",
       "title": "Why a day on Venus is longer than its year",
@@ -37,13 +44,6 @@
       "title": "How spy satellites achieve sub-meter imaging resolution",
       "excerpt": "Learn about how spy satellites achieve sub-meter imaging resolution — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "satellite-tutorials",
-      "date": "2026-07-15"
-    },
-    {
-      "slug": "transformer-based-abstract-reasoning-and-test-time-training-for-agi-20260715",
-      "title": "Transformer-based abstract reasoning and test-time training for AGI",
-      "excerpt": "Learn about transformer-based abstract reasoning and test-time training for agi — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "agi-research",
       "date": "2026-07-15"
     }
   ],
