@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-17T16:08:12.863Z",
+  "generated_at": "2026-07-17T20:43:42.837Z",
   "featured_article": {
-    "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
-    "excerpt": "Scramjet engines: air-breathing propulsion at hypersonic speeds is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/scramjet-engines-air-breathing-propulsion-at-hypersonic-speeds-20260717"
+    "title": "Swarm robotics for in-space assembly and orbital construction",
+    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260717"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Wave-particle duality: the double-slit experime...",
-      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "The Great Red Spot on Jupiter is shrinking",
+      "blurb": "The Great Red Spot on Jupiter is shrinking is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Commercial crew program and private astronaut m...",
-      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How AI satellites make autonomous decisions in ...",
+      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Self-repairing spacecraft: AI that fixes itself...",
-      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Space AGI five pillars: perception, planning, c...",
+      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
