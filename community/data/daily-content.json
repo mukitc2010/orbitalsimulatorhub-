@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-18T06:54:29.281Z",
+  "generated_at": "2026-07-18T10:56:14.821Z",
   "featured_article": {
-    "title": "Tsiolkovsky rocket equation: why we need staging to reach orbit",
-    "excerpt": "Tsiolkovsky rocket equation: why we need staging to reach orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260718"
+    "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
+    "excerpt": "Delayed MDP and Mars communication delay: why AI must act without Earth is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260718"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Hubble constant and the expanding universe cont...",
-      "blurb": "Hubble constant and the expanding universe controversy is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Tsiolkovsky rocket equation: why we need stagin...",
+      "blurb": "Tsiolkovsky rocket equation: why we need staging to reach orbit is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "NASA Europa Clipper mission to Jupiter's moon",
-      "blurb": "NASA Europa Clipper mission to Jupiter's moon is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "The uncertainty principle and its real-world ap...",
+      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "How quantum computing could optimize mission pl...",
-      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "James Webb Space Telescope latest discoveries",
+      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-18"
     },
     {
-      "slug": "pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260717",
-      "title": "Pontryagin maximum principle explained for orbital maneuvers",
-      "excerpt": "Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.",
+      "slug": "delayed-mdp-and-mars-communication-delay-why-ai-must-act-without-earth-20260718",
+      "title": "Delayed MDP and Mars communication delay: why AI must act without Earth",
+      "excerpt": "Learn about delayed mdp and mars communication delay: why ai must act without earth — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-07-17"
+      "date": "2026-07-18"
     }
   ],
   "learning_paths": {
