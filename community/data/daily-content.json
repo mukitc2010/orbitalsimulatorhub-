@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-19T07:22:46.033Z",
+  "generated_at": "2026-07-19T11:05:17.971Z",
   "featured_article": {
-    "title": "Tsiolkovsky rocket equation: why we need staging to reach orbit",
-    "excerpt": "Tsiolkovsky rocket equation: why we need staging to reach orbit is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260719"
+    "title": "Humanoid robot locomotion on uneven terrain and moving platforms",
+    "excerpt": "Humanoid robot locomotion on uneven terrain and moving platforms is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/humanoid-robot-locomotion-on-uneven-terrain-and-moving-platforms-20260719"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "What happens when a massive star dies: supernov...",
-      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Self-repairing spacecraft: AI that fixes itself...",
+      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "CubeSats and nanosatellites: space access for u...",
-      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How lift is generated: Bernoulli vs Newton expl...",
+      "blurb": "How lift is generated: Bernoulli vs Newton explanations is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Agent swarm architectures: parallel multi-agent...",
-      "blurb": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy ...",
+      "blurb": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-19"
     },
     {
-      "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260718",
-      "title": "Lambert's problem: how to plan an intercept between two orbits",
-      "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
-      "date": "2026-07-18"
+      "slug": "humanoid-robot-locomotion-on-uneven-terrain-and-moving-platforms-20260719",
+      "title": "Humanoid robot locomotion on uneven terrain and moving platforms",
+      "excerpt": "Learn about humanoid robot locomotion on uneven terrain and moving platforms — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-07-19"
     }
   ],
   "learning_paths": {
