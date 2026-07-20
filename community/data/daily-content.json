@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-19T20:38:13.585Z",
+  "generated_at": "2026-07-20T02:09:35.260Z",
   "featured_article": {
-    "title": "Computational fluid dynamics in spacecraft design",
-    "excerpt": "Computational fluid dynamics in spacecraft design is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
+    "excerpt": "Scramjet engines: air-breathing propulsion at hypersonic speeds is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/computational-fluid-dynamics-in-spacecraft-design-20260719"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/scramjet-engines-air-breathing-propulsion-at-hypersonic-speeds-20260720"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
@@ -14,17 +14,24 @@
       "icon": "rocket"
     },
     {
-      "title": "Wave-particle duality: the double-slit experime...",
-      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "From narrow AI to AGI: what engineering breakth...",
+      "blurb": "From narrow AI to AGI: what engineering breakthroughs are still needed is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The uncertainty principle and its real-world ap...",
-      "blurb": "The uncertainty principle and its real-world applications is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Structural theory of general artificial intelli...",
+      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "scramjet-engines-air-breathing-propulsion-at-hypersonic-speeds-20260720",
+      "title": "Scramjet engines: air-breathing propulsion at hypersonic speeds",
+      "excerpt": "Learn about scramjet engines: air-breathing propulsion at hypersonic speeds — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "aerodynamics",
+      "date": "2026-07-20"
+    },
     {
       "slug": "what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260719",
       "title": "What happens when a massive star dies: supernovae and black holes",
@@ -37,13 +44,6 @@
       "title": "Tsiolkovsky rocket equation: why we need staging to reach orbit",
       "excerpt": "Learn about tsiolkovsky rocket equation: why we need staging to reach orbit — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-07-19"
-    },
-    {
-      "slug": "humanoid-robot-locomotion-on-uneven-terrain-and-moving-platforms-20260719",
-      "title": "Humanoid robot locomotion on uneven terrain and moving platforms",
-      "excerpt": "Learn about humanoid robot locomotion on uneven terrain and moving platforms — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-07-19"
     }
   ],
