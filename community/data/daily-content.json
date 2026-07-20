@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-20T07:52:31.386Z",
+  "generated_at": "2026-07-20T12:09:45.664Z",
   "featured_article": {
-    "title": "Why spacecraft have specific shapes for different missions",
-    "excerpt": "Why spacecraft have specific shapes for different missions is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/why-spacecraft-have-specific-shapes-for-different-missions-20260720"
+    "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+    "excerpt": "Robonaut 2: the first humanoid robot in space aboard the ISS is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260720"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Lunar Gateway construction and deep space habit...",
-      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Why compositional reasoning remains the hardest...",
+      "blurb": "Why compositional reasoning remains the hardest unsolved AGI challenge is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Gravitational waves and what they tell us about...",
-      "blurb": "Gravitational waves and what they tell us about spacetime is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Space is completely silent because sound needs ...",
+      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Delayed MDP and Mars communication delay: why A...",
-      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
+      "title": "How NASA tests aerodynamics in wind tunnels",
+      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-20"
     },
     {
-      "slug": "what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260719",
-      "title": "What happens when a massive star dies: supernovae and black holes",
-      "excerpt": "Learn about what happens when a massive star dies: supernovae and black holes — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "astronomy-lessons",
-      "date": "2026-07-19"
+      "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260720",
+      "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
+      "excerpt": "Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-07-20"
     }
   ],
   "learning_paths": {
