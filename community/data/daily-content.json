@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-22T07:30:13.807Z",
+  "generated_at": "2026-07-22T11:42:21.944Z",
   "featured_article": {
-    "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
-    "excerpt": "AI collision avoidance: how 500+ satellites avoid each other without human input is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260722"
+    "title": "LEO vs MEO vs GEO: choosing the right orbit for a mission",
+    "excerpt": "LEO vs MEO vs GEO: choosing the right orbit for a mission is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/leo-vs-meo-vs-geo-choosing-the-right-orbit-for-a-mission-20260722"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Artemis program progress and Moon landing plans",
-      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How AI satellites make autonomous decisions in ...",
+      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Commercial crew program and private astronaut m...",
-      "blurb": "Commercial crew program and private astronaut missions is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How MPC and LQR control algorithms keep satelli...",
+      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Rocket aerodynamics: designing nose cones and f...",
-      "blurb": "Rocket aerodynamics: designing nose cones and fairings is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "Scramjet engines: air-breathing propulsion at h...",
+      "blurb": "Scramjet engines: air-breathing propulsion at hypersonic speeds is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-22"
     },
     {
-      "slug": "orbital-energy-and-specific-orbital-energy-formula-20260721",
-      "title": "Orbital energy and specific orbital energy formula",
-      "excerpt": "Learn about orbital energy and specific orbital energy formula — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
-      "date": "2026-07-21"
+      "slug": "leo-vs-meo-vs-geo-choosing-the-right-orbit-for-a-mission-20260722",
+      "title": "LEO vs MEO vs GEO: choosing the right orbit for a mission",
+      "excerpt": "Learn about leo vs meo vs geo: choosing the right orbit for a mission — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "satellite-tutorials",
+      "date": "2026-07-22"
     }
   ],
   "learning_paths": {
