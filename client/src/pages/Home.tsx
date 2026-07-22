@@ -76,6 +76,7 @@ export function Home() {
   const [showExplore, setShowExplore] = useState(false);
   const updates = getTodaysUpdates();
   const latestPost = LATEST_POSTS[0];
+  const latestResearch = LATEST_POSTS.slice(0, 3);
 
   return (
     <div className="home-page-wrapper -mx-4 px-4 py-2 rounded-2xl">
@@ -168,6 +169,30 @@ export function Home() {
                 Open full Mathematics →
               </a>
             </Link>
+          </div>
+        </section>
+
+        <section className="rounded-2xl p-5 md:p-6 mb-8 border" style={{ background: "rgba(15,23,42,0.28)", borderColor: "rgba(0,217,255,0.16)" }}>
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-xl">📰</span>
+            <h2 className="text-base md:text-lg font-bold" style={{ color: "var(--text-primary)" }}>Latest Research You Added</h2>
+          </div>
+          <p className="text-sm mb-4 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+            These newest posts are now surfaced on the home page so visitors can preview the content here and open the full article for details.
+          </p>
+          <div className="grid gap-3 md:grid-cols-3">
+            {latestResearch.map((post) => (
+              <Link key={post.slug} href={`/blog/${post.slug}`}>
+                <a className="block rounded-xl p-4 transition hover:opacity-95" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
+                  <div className="text-[11px] font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>
+                    {new Date(post.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                  </div>
+                  <h3 className="font-bold mb-2 line-clamp-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
+                  <p className="text-sm line-clamp-3 mb-3" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
+                  <span className="text-sm font-medium" style={{ color: "var(--accent-cyan)" }}>Read full article →</span>
+                </a>
+              </Link>
+            ))}
           </div>
         </section>
 
