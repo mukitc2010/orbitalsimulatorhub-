@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Auto Sync to GitHub (main)",
+      "type": "shell",
+      "command": "npm run sync:auto",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Sync to GitHub Once (main)",
+      "type": "shell",
+      "command": "npm run sync:once",
+      "problemMatcher": []
+    }
+  ]
+}

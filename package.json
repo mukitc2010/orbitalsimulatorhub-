@@ -33,7 +33,9 @@
     "content:dry-run": "node scripts/content-agent.js --dry-run",
     "content:schedule": "node scripts/content-scheduler.js",
     "seo:auto": "node scripts/auto-seo-update.js",
-    "openclaw:update": "node scripts/openclaw-full-update.js"
+    "openclaw:update": "node scripts/openclaw-full-update.js",
+    "sync:auto": "node scripts/auto-sync-github.mjs",
+    "sync:once": "node scripts/auto-sync-github.mjs --once"
   },
   "dependencies": {
     "@react-three/drei": "^9.122.0",
