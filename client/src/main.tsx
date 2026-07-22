@@ -1,5 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { ThemeProvider } from "./lib/ThemeContext";
 import App from "./App";
@@ -24,6 +26,8 @@ if (!rootEl) {
         <ErrorBoundary>
           <ThemeProvider>
             <App />
+            <Analytics />
+            <SpeedInsights />
           </ThemeProvider>
         </ErrorBoundary>
       </StrictMode>
