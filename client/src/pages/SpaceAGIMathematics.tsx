@@ -1,135 +1,169 @@
 import { Link } from "wouter";
 
+const sections = [
+  {
+    title: "1. Pontryagin Maximum Principle (PMP)",
+    subtitle:
+      "The foundation of optimal spacecraft trajectory optimization, fuel-optimal landing, Mars missions, Apollo guidance, and autonomous spacecraft.",
+    formulaTitle: "Key equations",
+    formulas: [
+      "x˙ = f(x, u, t)",
+      "J = ϕ(x(t_f)) + ∫[t_0→t_f] L(x, u, t) dt",
+      "H(x, λ, u, t) = L(x, u, t) + λ^T f(x, u, t)",
+      "λ˙ = −∂H/∂x",
+      "u* = argmin_u H(x, λ, u)",
+      "λ(t_f) = ∂ϕ/∂x",
+    ],
+    notes: ["State vector x", "Control input u", "Hamiltonian H", "Costate λ"],
+  },
+  {
+    title: "2. Euler–Lagrange Equation",
+    subtitle: "The basis of optimal control, mechanics, robotics, and physics.",
+    formulaTitle: "Equation",
+    formulas: ["d/dt(∂L/∂q˙) − ∂L/∂q = 0"],
+  },
+  {
+    title: "3. Hamilton's Equations",
+    subtitle: "Core equations in analytical mechanics and trajectory analysis.",
+    formulaTitle: "Equations",
+    formulas: ["q˙ = ∂H/∂p", "p˙ = −∂H/∂q"],
+  },
+  {
+    title: "4. State Space Model",
+    subtitle: "Used everywhere in aerospace.",
+    formulaTitle: "Equations",
+    formulas: ["x˙ = Ax + Bu", "y = Cx + Du"],
+  },
+  {
+    title: "5. Linear Quadratic Regulator (LQR)",
+    subtitle: "A standard optimal controller for linear systems.",
+    formulaTitle: "Performance index and control law",
+    formulas: ["J = ∫[0→∞] (x^TQx + u^TRu) dt", "u = −Kx"],
+  },
+  {
+    title: "6. Riccati Equation",
+    subtitle: "One of the most important equations in optimal control.",
+    formulaTitle: "Equation",
+    formulas: ["A^TP + PA − PBR^−1B^TP + Q = 0"],
+  },
+  {
+    title: "7. Model Predictive Control (MPC)",
+    subtitle: "Optimization-based control for constrained systems.",
+    formulaTitle: "Optimization problem",
+    formulas: ["min ∑[k=0→N] x_k^TQx_k + u_k^TRu_k", "x[k+1] = Ax[k] + Bu[k]"],
+  },
+  {
+    title: "8. Kalman Filter",
+    subtitle: "Recursive estimation for navigation, sensing, and guidance.",
+    formulaTitle: "Prediction, covariance, and update",
+    formulas: [
+      "x[k|k−1] = Ax[k−1] + Bu",
+      "P = APA^T + Q",
+      "K = PH^T(HPH^T + R)^−1",
+      "x = x + K(z − Hx)",
+    ],
+  },
+  {
+    title: "9. Orbital Dynamics (Two-Body Problem)",
+    subtitle: "The fundamental equation governing satellite and planetary motion.",
+    formulaTitle: "Equation",
+    formulas: ["r¨ = −μ/r^3 · r", "μ = GM"],
+  },
+  {
+    title: "10. Vis-Viva Equation",
+    subtitle: "Determines spacecraft velocity at any point in an orbit.",
+    formulaTitle: "Equation",
+    formulas: ["v = √[μ(2/r − 1/a)]"],
+  },
+  {
+    title: "11. Tsiolkovsky Rocket Equation",
+    subtitle: "The cornerstone of rocket propulsion and mission planning.",
+    formulaTitle: "Equation",
+    formulas: ["Δv = v_e ln(m_0/m_f)"],
+  },
+  {
+    title: "12. Clohessy–Wiltshire (Hill's) Equations",
+    subtitle: "Used for satellite rendezvous and formation flying.",
+    formulaTitle: "Equations",
+    formulas: [
+      "x¨ − 2n y˙ − 3n^2 x = u_x",
+      "y¨ + 2n x˙ = u_y",
+      "z¨ + n^2 z = u_z",
+    ],
+  },
+  {
+    title: "13. Quaternion Attitude Dynamics",
+    subtitle: "Used for spacecraft orientation and attitude control.",
+    formulaTitle: "Kinematics",
+    formulas: ["q˙ = 1/2 Ω(ω) q"],
+  },
+  {
+    title: "14. Extended Kalman Filter (EKF)",
+    subtitle: "A nonlinear extension of the Kalman filter.",
+    formulaTitle: "Prediction, measurement, and linearization",
+    formulas: ["x[k+1] = f(x[k], u[k])", "z = h(x) + v", "F = ∂f/∂x"],
+  },
+  {
+    title: "15. Bellman Equation (Dynamic Programming)",
+    subtitle: "The foundation of reinforcement learning and optimal decision-making.",
+    formulaTitle: "Equation",
+    formulas: ["V(x) = min_u [L(x, u) + V(f(x, u))]"],
+  },
+  {
+    title: "16. Hamilton–Jacobi–Bellman (HJB) Equation",
+    subtitle: "The continuous-time optimal control equation.",
+    formulaTitle: "Equation",
+    formulas: ["−∂V/∂t = min_u [L + ∇V^T f]"],
+  },
+  {
+    title: "17. Lyapunov Stability",
+    subtitle: "A key criterion for proving stability of control systems.",
+    formulaTitle: "Conditions",
+    formulas: ["V(x) > 0", "V˙(x) < 0"],
+  },
+  {
+    title: "18. Eigenvalue Problem",
+    subtitle: "Used extensively in vibration analysis, control system stability, orbital dynamics, and structural mechanics.",
+    formulaTitle: "Equation",
+    formulas: ["A v = λ v", "Example eigenvalues: λ1 = 3, λ2 = 1"],
+  },
+];
+
 export function SpaceAGIMathematics() {
   return (
-    <div className="max-w-4xl mx-auto space-y-12">
+    <div className="max-w-5xl mx-auto space-y-10">
       <div>
         <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">Graduate-Level Credible</p>
         <h1 className="headline">Space-AGI Mathematics</h1>
         <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>
           New to this? <Link href="/research/space-agi-explanation"><a className="text-[var(--accent-gold)] hover:underline">Read the easy version</a></Link> — same concepts, plain English, examples.
         </p>
-        <p className="subhead max-w-2xl">
-          The first open platform teaching Orbital Mechanics + Advanced Control Theory + Space-AGI Engineering. Elite aerospace control math.
+        <p className="subhead max-w-3xl">
+          A compact reference for control theory, orbital mechanics, estimation, and Space-AGI optimization.
         </p>
       </div>
 
-      {/* PART 1 — Optimal Control Theory */}
-      <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>
-        <h2 className="text-xl font-bold mb-6" style={{ color: "var(--text-primary)" }}>🚀 Part 1 — Optimal Control Theory</h2>
-
-        {/* 1️⃣ Optimal Control Problem */}
-        <div className="mb-8">
-          <h3 className="text-base font-bold mb-3" style={{ color: "var(--accent-cyan)" }}>1️⃣ Optimal Control Problem (Continuous Time)</h3>
-          <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
-            <p className="font-bold mb-1">Spacecraft dynamics:</p>
-            <p className="mb-3">ẋ(t) = f(x(t), u(t), t)</p>
-            <p className="font-bold mb-1">Mission objective:</p>
-            <p>min<sub>u(t)</sub> J = ∫<sub>0</sub><sup>T</sup> L(x(t), u(t), t) dt + Φ(x(T))</p>
-            <p className="text-xs mt-2" style={{ color: "var(--text-secondary)" }}>
-              Where: L = running cost (fuel, risk, energy), Φ = terminal cost, u(t) = thrust control
-            </p>
-          </div>
-        </div>
-
-        {/* 2️⃣ Pontryagin's Maximum Principle */}
-        <div className="mb-8">
-          <h3 className="text-base font-bold mb-3" style={{ color: "var(--accent-cyan)" }}>2️⃣ Pontryagin&apos;s Maximum Principle (Real Engineering Math)</h3>
-          <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
-            <p className="font-bold mb-1">Define Hamiltonian:</p>
-            <p className="mb-2">H = L(x, u, t) + λ<sup>T</sup>f(x, u, t)</p>
-            <p className="font-bold mb-1">Costate dynamics:</p>
-            <p className="mb-2">λ̇ = −∂H/∂x</p>
-            <p className="font-bold mb-1">Optimal control condition:</p>
-            <p>u* = argmin<sub>u</sub> H(x, u, λ, t)</p>
-          </div>
-          <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-            Used in: fuel-optimal transfers, low-thrust trajectory design, interplanetary mission planning. This makes your site graduate-level credible.
-          </p>
-        </div>
-
-        {/* 3️⃣ MPC */}
-        <div className="mb-8">
-          <h3 className="text-base font-bold mb-3" style={{ color: "var(--accent-cyan)" }}>3️⃣ Model Predictive Control (MPC for Autonomous Satellites)</h3>
-          <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
-            <p className="font-bold mb-1">Discrete form:</p>
-            <p className="mb-2">x<sub>k+1</sub> = Ax<sub>k</sub> + Bu<sub>k</sub></p>
-            <p className="font-bold mb-1">Optimization at each time step:</p>
-            <p>min<sub>u<sub>0:N</sub></sub> ∑<sub>k=0</sub><sup>N</sup> (x<sub>k</sub> − x<sub>ref</sub>)<sup>T</sup>Q(x<sub>k</sub> − x<sub>ref</sub>) + u<sub>k</sub><sup>T</sup>Ru<sub>k</sub></p>
-          </div>
-          <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-            Used for: orbit correction, docking, formation flying, AI-controlled satellite swarms.
-          </p>
-        </div>
-
-        {/* 4️⃣ LQR */}
-        <div>
-          <h3 className="text-base font-bold mb-3" style={{ color: "var(--accent-cyan)" }}>4️⃣ LQR (Linear Quadratic Regulator)</h3>
-          <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
-            <p className="font-bold mb-1">Cost:</p>
-            <p className="mb-2">J = ∫<sub>0</sub><sup>∞</sup> (x<sup>T</sup>Qx + u<sup>T</sup>Ru) dt</p>
-            <p className="font-bold mb-1">Optimal solution:</p>
-            <p className="mb-2">u = −Kx</p>
-            <p className="font-bold mb-1">Where K solves Riccati equation:</p>
-            <p>A<sup>T</sup>P + PA − PBR<sup>−1</sup>B<sup>T</sup>P + Q = 0</p>
-          </div>
-          <p className="text-sm" style={{ color: "var(--text-secondary)" }}>This is elite aerospace control math.</p>
-        </div>
-      </section>
-
-      {/* PART 3 — Space-AGI Mathematical Framework */}
-      <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-pink)" }}>
-        <h2 className="text-xl font-bold mb-6" style={{ color: "var(--text-primary)" }}>🧠 Part 3 — Space-AGI Mathematical Framework</h2>
-        <p className="text-sm mb-6" style={{ color: "var(--text-secondary)" }}>
-          This is where you differentiate from NASA. No one explains this publicly.
-        </p>
-
-        {/* 1️⃣ Knowledge–Energy Optimization */}
-        <div className="mb-8">
-          <h3 className="text-base font-bold mb-3" style={{ color: "var(--accent-pink)" }}>1️⃣ Knowledge–Energy Optimization Law</h3>
-          <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
-            <p className="font-bold mb-1">Define mission intelligence:</p>
-            <p className="mb-2">D = (dK/dt) / P<sub>use</sub></p>
-            <p className="font-bold mb-1">Maximize:</p>
-            <p>max ∫<sub>0</sub><sup>T</sup> (dK/dt) / P<sub>use</sub> dt</p>
-          </div>
-          <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-            Interpretation: Future spacecraft maximize knowledge per energy unit.
-          </p>
-        </div>
-
-        {/* 2️⃣ Autonomous Intelligence Growth */}
-        <div className="mb-8">
-          <h3 className="text-base font-bold mb-3" style={{ color: "var(--accent-pink)" }}>2️⃣ Autonomous Intelligence Growth Model</h3>
-          <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
-            <p>dI/dt = αI + βK + γE</p>
-            <p className="text-xs mt-2" style={{ color: "var(--text-secondary)" }}>
-              Where: I = onboard intelligence, K = knowledge, E = energy access. Shows recursive improvement.
-            </p>
-          </div>
-        </div>
-
-        {/* 3️⃣ Reaction–Diffusion */}
-        <div className="mb-8">
-          <h3 className="text-base font-bold mb-3" style={{ color: "var(--accent-pink)" }}>3️⃣ Reaction–Diffusion Interplanetary AI Network</h3>
-          <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
-            <p>∂I/∂t = D∇²I + αI</p>
-          </div>
-          <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-            Models: Intelligence spreading across lunar + Mars nodes. This is very futuristic but mathematically clean.
-          </p>
-        </div>
-
-        {/* 4️⃣ Safety-Constrained */}
-        <div>
-          <h3 className="text-base font-bold mb-3" style={{ color: "var(--accent-pink)" }}>4️⃣ Safety-Constrained Cosmic Optimization</h3>
-          <div className="rounded-lg p-4 font-mono text-sm mb-2" style={{ background: "var(--bg-surface)" }}>
-            <p className="font-bold mb-1">Define safety functional:</p>
-            <p>J<sub>safe</sub> = ∫<sub>0</sub><sup>T</sup> (U(x, u) − κ/Φ(x, u)) dt</p>
-            <p className="text-xs mt-2" style={{ color: "var(--text-secondary)" }}>Barrier prevents unsafe state. Brings alignment math into space engineering.</p>
-          </div>
-        </div>
-      </section>
+      <div className="grid gap-6">
+        {sections.map((section) => (
+          <section key={section.title} className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>
+            <h2 className="text-xl font-bold mb-2" style={{ color: "var(--text-primary)" }}>{section.title}</h2>
+            <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>{section.subtitle}</p>
+            <div className="rounded-lg p-4 font-mono text-sm space-y-2" style={{ background: "var(--bg-surface)" }}>
+              <p className="font-semibold text-[var(--accent-cyan)]">{section.formulaTitle}</p>
+              {section.formulas.map((formula) => (
+                <p key={formula} className="whitespace-pre-wrap leading-7">{formula}</p>
+              ))}
+              {section.notes ? (
+                <div className="pt-2 text-xs space-y-1" style={{ color: "var(--text-secondary)" }}>
+                  {section.notes.map((note) => (
+                    <p key={note}>• {note}</p>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          </section>
+        ))}
+      </div>
 
       <div className="flex flex-wrap gap-3">
         <Link href="/research/space-agi-lab">
