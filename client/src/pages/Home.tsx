@@ -141,10 +141,31 @@ export function Home() {
           <p className="text-sm leading-7 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
             Explore Pontryagin Maximum Principle, LQR, MPC, Kalman filtering, and orbital mechanics in one place. The math page now explains how spacecraft control is optimized in real missions.
           </p>
+          <div className="grid gap-3 md:grid-cols-2 mt-4">
+            <div className="rounded-xl p-4" style={{ background: "rgba(15,23,42,0.35)", border: "1px solid rgba(0,217,255,0.16)" }}>
+              <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>Pontryagin Maximum Principle</p>
+              <p className="text-sm leading-7" style={{ color: "var(--text-secondary)" }}>
+                PMP answers a simple spacecraft question: what engine command should I choose now so the whole mission cost stays as low as possible?
+              </p>
+              <p className="mt-3 font-mono text-xs leading-6" style={{ color: "var(--text-primary)" }}>
+                x˙ = f(x, u, t)<br />
+                H = L + λ^T f<br />
+                u* = argmin H
+              </p>
+            </div>
+            <div className="rounded-xl p-4" style={{ background: "rgba(15,23,42,0.35)", border: "1px solid rgba(0,217,255,0.16)" }}>
+              <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>Why it matters</p>
+              <ul className="space-y-2 text-sm leading-6" style={{ color: "var(--text-secondary)" }}>
+                <li>• saves fuel on orbit transfers and landings</li>
+                <li>• improves docking, descent, and formation flying</li>
+                <li>• helps autonomous spacecraft choose optimal actions</li>
+              </ul>
+            </div>
+          </div>
           <div className="mt-3">
             <Link href="/research/space-agi-math">
               <a className="inline-flex px-4 py-2 rounded-xl font-semibold text-sm" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
-                Open Mathematics →
+                Open full Mathematics →
               </a>
             </Link>
           </div>
