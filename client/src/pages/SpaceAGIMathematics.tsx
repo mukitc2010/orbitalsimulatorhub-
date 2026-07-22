@@ -1,4 +1,6 @@
 import { Link } from "wouter";
+import katex from "katex";
+import "katex/dist/katex.min.css";
 
 const sections = [
   {
@@ -7,12 +9,12 @@ const sections = [
       "The foundation of optimal spacecraft trajectory optimization, fuel-optimal landing, Mars missions, Apollo guidance, and autonomous spacecraft.",
     formulaTitle: "Key equations",
     formulas: [
-      "x˙ = f(x, u, t)",
-      "J = ϕ(x(t_f)) + ∫[t_0→t_f] L(x, u, t) dt",
-      "H(x, λ, u, t) = L(x, u, t) + λ^T f(x, u, t)",
-      "λ˙ = −∂H/∂x",
-      "u* = argmin_u H(x, λ, u)",
-      "λ(t_f) = ∂ϕ/∂x",
+      String.raw`\dot{x}(t)=f(x(t),u(t),t)`,
+      String.raw`J=\phi(x(t_f))+\int_{t_0}^{t_f} L(x(t),u(t),t)\,dt`,
+      String.raw`H(x,\lambda,u,t)=L(x,u,t)+\lambda^T f(x,u,t)`,
+      String.raw`\dot{\lambda}=-\frac{\partial H}{\partial x}`,
+      String.raw`u^*(t)=\arg\min_u H(x,\lambda,u,t)`,
+      String.raw`\lambda(t_f)=\frac{\partial \phi}{\partial x}`,
     ],
     notes: ["State vector x", "Control input u", "Hamiltonian H", "Costate λ"],
   },
@@ -20,114 +22,123 @@ const sections = [
     title: "2. Euler–Lagrange Equation",
     subtitle: "The basis of optimal control, mechanics, robotics, and physics.",
     formulaTitle: "Equation",
-    formulas: ["d/dt(∂L/∂q˙) − ∂L/∂q = 0"],
+    formulas: [String.raw`\frac{d}{dt}\left(\frac{\partial L}{\partial \dot q}\right)-\frac{\partial L}{\partial q}=0`],
   },
   {
     title: "3. Hamilton's Equations",
     subtitle: "Core equations in analytical mechanics and trajectory analysis.",
     formulaTitle: "Equations",
-    formulas: ["q˙ = ∂H/∂p", "p˙ = −∂H/∂q"],
+    formulas: [String.raw`\dot q=\frac{\partial H}{\partial p}`, String.raw`\dot p=-\frac{\partial H}{\partial q}`],
   },
   {
     title: "4. State Space Model",
     subtitle: "Used everywhere in aerospace.",
     formulaTitle: "Equations",
-    formulas: ["x˙ = Ax + Bu", "y = Cx + Du"],
+    formulas: [String.raw`\dot x=Ax+Bu`, String.raw`y=Cx+Du`],
   },
   {
     title: "5. Linear Quadratic Regulator (LQR)",
     subtitle: "A standard optimal controller for linear systems.",
     formulaTitle: "Performance index and control law",
-    formulas: ["J = ∫[0→∞] (x^TQx + u^TRu) dt", "u = −Kx"],
+    formulas: [String.raw`J=\int_0^{\infty}(x^TQx+u^TRu)\,dt`, String.raw`u=-Kx`],
   },
   {
     title: "6. Riccati Equation",
     subtitle: "One of the most important equations in optimal control.",
     formulaTitle: "Equation",
-    formulas: ["A^TP + PA − PBR^−1B^TP + Q = 0"],
+    formulas: [String.raw`A^TP+PA-PBR^{-1}B^TP+Q=0`],
   },
   {
     title: "7. Model Predictive Control (MPC)",
     subtitle: "Optimization-based control for constrained systems.",
     formulaTitle: "Optimization problem",
-    formulas: ["min ∑[k=0→N] x_k^TQx_k + u_k^TRu_k", "x[k+1] = Ax[k] + Bu[k]"],
+    formulas: [String.raw`\min \sum_{k=0}^{N}\left(x_k^TQx_k+u_k^TRu_k\right)`, String.raw`x_{k+1}=Ax_k+Bu_k`],
   },
   {
     title: "8. Kalman Filter",
     subtitle: "Recursive estimation for navigation, sensing, and guidance.",
     formulaTitle: "Prediction, covariance, and update",
     formulas: [
-      "x[k|k−1] = Ax[k−1] + Bu",
-      "P = APA^T + Q",
-      "K = PH^T(HPH^T + R)^−1",
-      "x = x + K(z − Hx)",
+      String.raw`x_{k|k-1}=Ax_{k-1}+Bu`,
+      String.raw`P=APA^T+Q`,
+      String.raw`K=PH^T\left(HPH^T+R\right)^{-1}`,
+      String.raw`x=x+K\left(z-Hx\right)`,
     ],
   },
   {
     title: "9. Orbital Dynamics (Two-Body Problem)",
     subtitle: "The fundamental equation governing satellite and planetary motion.",
     formulaTitle: "Equation",
-    formulas: ["r¨ = −μ/r^3 · r", "μ = GM"],
+    formulas: [String.raw`\ddot r=-\frac{\mu}{r^3}r`, String.raw`\mu=GM`],
   },
   {
     title: "10. Vis-Viva Equation",
     subtitle: "Determines spacecraft velocity at any point in an orbit.",
     formulaTitle: "Equation",
-    formulas: ["v = √[μ(2/r − 1/a)]"],
+    formulas: [String.raw`v=\sqrt{\mu\left(\frac{2}{r}-\frac{1}{a}\right)}`],
   },
   {
     title: "11. Tsiolkovsky Rocket Equation",
     subtitle: "The cornerstone of rocket propulsion and mission planning.",
     formulaTitle: "Equation",
-    formulas: ["Δv = v_e ln(m_0/m_f)"],
+    formulas: [String.raw`\Delta v=v_e\ln\left(\frac{m_0}{m_f}\right)`],
   },
   {
     title: "12. Clohessy–Wiltshire (Hill's) Equations",
     subtitle: "Used for satellite rendezvous and formation flying.",
     formulaTitle: "Equations",
     formulas: [
-      "x¨ − 2n y˙ − 3n^2 x = u_x",
-      "y¨ + 2n x˙ = u_y",
-      "z¨ + n^2 z = u_z",
+      String.raw`\ddot x-2n\dot y-3n^2x=u_x`,
+      String.raw`\ddot y+2n\dot x=u_y`,
+      String.raw`\ddot z+n^2z=u_z`,
     ],
   },
   {
     title: "13. Quaternion Attitude Dynamics",
     subtitle: "Used for spacecraft orientation and attitude control.",
     formulaTitle: "Kinematics",
-    formulas: ["q˙ = 1/2 Ω(ω) q"],
+    formulas: [String.raw`\dot q=\frac{1}{2}\Omega(\omega)q`],
   },
   {
     title: "14. Extended Kalman Filter (EKF)",
     subtitle: "A nonlinear extension of the Kalman filter.",
     formulaTitle: "Prediction, measurement, and linearization",
-    formulas: ["x[k+1] = f(x[k], u[k])", "z = h(x) + v", "F = ∂f/∂x"],
+    formulas: [String.raw`x_{k+1}=f(x_k,u_k)`, String.raw`z=h(x)+v`, String.raw`F=\frac{\partial f}{\partial x}`],
   },
   {
     title: "15. Bellman Equation (Dynamic Programming)",
     subtitle: "The foundation of reinforcement learning and optimal decision-making.",
     formulaTitle: "Equation",
-    formulas: ["V(x) = min_u [L(x, u) + V(f(x, u))]"],
+    formulas: [String.raw`V(x)=\min_u\left[L(x,u)+V\left(f(x,u)\right)\right]`],
   },
   {
     title: "16. Hamilton–Jacobi–Bellman (HJB) Equation",
     subtitle: "The continuous-time optimal control equation.",
     formulaTitle: "Equation",
-    formulas: ["−∂V/∂t = min_u [L + ∇V^T f]"],
+    formulas: [String.raw`-\frac{\partial V}{\partial t}=\min_u\left[L+\nabla V^Tf\right]`],
   },
   {
     title: "17. Lyapunov Stability",
     subtitle: "A key criterion for proving stability of control systems.",
     formulaTitle: "Conditions",
-    formulas: ["V(x) > 0", "V˙(x) < 0"],
+    formulas: [String.raw`V(x)>0`, String.raw`\dot V(x)<0`],
   },
   {
     title: "18. Eigenvalue Problem",
     subtitle: "Used extensively in vibration analysis, control system stability, orbital dynamics, and structural mechanics.",
     formulaTitle: "Equation",
-    formulas: ["A v = λ v", "Example eigenvalues: λ1 = 3, λ2 = 1"],
+    formulas: [String.raw`A\mathbf{v}=\lambda\mathbf{v}`, String.raw`\lambda_1=3,\quad \lambda_2=1`],
   },
 ];
+
+function renderKatex(formula: string) {
+  return katex.renderToString(formula, {
+    displayMode: false,
+    throwOnError: false,
+    strict: "ignore",
+    output: "html",
+  });
+}
 
 export function SpaceAGIMathematics() {
   return (
@@ -208,7 +219,7 @@ export function SpaceAGIMathematics() {
             <div className="rounded-lg p-4 font-mono text-sm space-y-2" style={{ background: "var(--bg-surface)" }}>
               <p className="font-semibold text-[var(--accent-cyan)]">{section.formulaTitle}</p>
               {section.formulas.map((formula) => (
-                <p key={formula} className="whitespace-pre-wrap leading-7">{formula}</p>
+                <div key={formula} className="overflow-x-auto py-1 leading-7" dangerouslySetInnerHTML={{ __html: renderKatex(formula) }} />
               ))}
               {section.notes ? (
                 <div className="pt-2 text-xs space-y-1" style={{ color: "var(--text-secondary)" }}>
