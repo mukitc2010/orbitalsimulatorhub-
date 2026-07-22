@@ -143,6 +143,63 @@ export function SpaceAGIMathematics() {
         </p>
       </div>
 
+      <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "rgba(0,217,255,0.5)" }}>
+        <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">PMP in Spaceflight</p>
+        <h2 className="text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>Pontryagin Maximum Principle (PMP)</h2>
+        <p className="text-sm mb-4 max-w-4xl" style={{ color: "var(--text-secondary)" }}>
+          PMP is one of the core tools of optimal control. In spacecraft problems, it turns the question “what should the engines do next?” into a precise math problem that minimizes fuel, time, energy, or trajectory error while still obeying the vehicle&apos;s dynamics.
+        </p>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="rounded-lg p-4" style={{ background: "var(--bg-surface)" }}>
+            <h3 className="font-semibold mb-2" style={{ color: "var(--accent-cyan)" }}>Core formulation</h3>
+            <div className="space-y-2 font-mono text-sm leading-7" style={{ color: "var(--text-primary)" }}>
+              <p>x˙(t) = f(x(t), u(t), t)</p>
+              <p>J = ϕ(x(t_f)) + ∫[t_0→t_f] L(x(t), u(t), t) dt</p>
+              <p>H(x, λ, u, t) = L(x, u, t) + λ^T f(x, u, t)</p>
+              <p>λ˙ = −∂H/∂x</p>
+              <p>u*(t) = argmin_u H(x, λ, u, t)</p>
+              <p>λ(t_f) = ∂ϕ/∂x</p>
+            </div>
+          </div>
+
+          <div className="rounded-lg p-4" style={{ background: "var(--bg-surface)" }}>
+            <h3 className="font-semibold mb-2" style={{ color: "var(--accent-cyan)" }}>What the symbols mean</h3>
+            <ul className="space-y-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+              <li><strong style={{ color: "var(--text-primary)" }}>x(t)</strong> is the spacecraft state: position, velocity, attitude, fuel, and more.</li>
+              <li><strong style={{ color: "var(--text-primary)" }}>u(t)</strong> is the control input: thrust, steering, reaction wheels, or guidance commands.</li>
+              <li><strong style={{ color: "var(--text-primary)" }}>H</strong> is the Hamiltonian, which combines immediate cost with future mission impact.</li>
+              <li><strong style={{ color: "var(--text-primary)" }}>λ</strong> is the costate, which measures how valuable each state variable is to the mission.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2 mt-4">
+          <div className="rounded-lg p-4" style={{ background: "var(--bg-surface)" }}>
+            <h3 className="font-semibold mb-2" style={{ color: "var(--accent-cyan)" }}>How engineers use it</h3>
+            <p className="text-sm leading-7" style={{ color: "var(--text-secondary)" }}>
+              Engineers use PMP to choose the best burn schedule, thrust direction, coast periods, and final braking strategy. Instead of guessing, the spacecraft predicts the future consequences of each action and selects the one with the lowest total mission cost.
+            </p>
+          </div>
+          <div className="rounded-lg p-4" style={{ background: "var(--bg-surface)" }}>
+            <h3 className="font-semibold mb-2" style={{ color: "var(--accent-cyan)" }}>Real aerospace applications</h3>
+            <ul className="space-y-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+              <li>• Launch vehicle pitch programs and gravity turns</li>
+              <li>• LEO-to-GEO orbit transfers and interplanetary injection</li>
+              <li>• Mars landing and lunar powered descent</li>
+              <li>• Satellite formation flying and autonomous docking</li>
+              <li>• Deep-space low-thrust optimization and gravity assists</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="rounded-lg p-4 mt-4" style={{ background: "rgba(0,217,255,0.08)", border: "1px solid rgba(0,217,255,0.25)" }}>
+          <p className="text-sm leading-7" style={{ color: "var(--text-secondary)" }}>
+            Why it matters: without optimal control, spacecraft waste propellant, miss targets, and need more launch mass. PMP makes the engine commands mathematically optimal instead of approximate.
+          </p>
+        </div>
+      </section>
+
       <div className="grid gap-6">
         {sections.map((section) => (
           <section key={section.title} className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>

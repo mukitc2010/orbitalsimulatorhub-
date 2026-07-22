@@ -133,6 +133,23 @@ export function Home() {
           </div>
         </section>
 
+        <section className="rounded-2xl p-5 md:p-6 mb-8 border" style={{ background: "rgba(0,217,255,0.08)", borderColor: "rgba(0,217,255,0.22)" }}>
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-xl">🧮</span>
+            <h2 className="text-base md:text-lg font-bold" style={{ color: "var(--text-primary)" }}>New: Space-AGI Mathematics</h2>
+          </div>
+          <p className="text-sm leading-7 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+            Explore Pontryagin Maximum Principle, LQR, MPC, Kalman filtering, and orbital mechanics in one place. The math page now explains how spacecraft control is optimized in real missions.
+          </p>
+          <div className="mt-3">
+            <Link href="/research/space-agi-math">
+              <a className="inline-flex px-4 py-2 rounded-xl font-semibold text-sm" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
+                Open Mathematics →
+              </a>
+            </Link>
+          </div>
+        </section>
+
           {/* Hero — Intelligence for the Space Age */}
         <section className="rounded-2xl px-6 py-8 sm:py-10 text-center mb-8 hero-gradient" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.2)" }}>
         <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">Space Engineering • AI • Quantum • Daily News • Futuristic</p>
