@@ -211,6 +211,81 @@ export function SpaceAGIMathematics() {
         </div>
       </section>
 
+      <section className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "rgba(0,217,255,0.5)" }}>
+        <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">Euler-Lagrange in Spaceflight</p>
+        <h2 className="text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>The Equation That Helps the Universe Choose Its Path</h2>
+        <p className="text-sm mb-4 max-w-4xl" style={{ color: "var(--text-secondary)" }}>
+          A ball, a pendulum, a robotic arm, or a spacecraft can move in many possible ways. The Euler–Lagrange equation gives the rule for which path is physically consistent with energy and constraints.
+        </p>
+        <div className="overflow-x-auto rounded-lg p-4 mb-4" style={{ background: "var(--bg-surface)" }} dangerouslySetInnerHTML={{ __html: renderKatex(String.raw`\frac{d}{dt}\left(\frac{\partial L}{\partial \dot q}\right)-\frac{\partial L}{\partial q}=0`) }} />
+        <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>
+          Core idea: nature follows a path that makes the action stationary, balancing motion and stored energy.
+        </p>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="rounded-lg p-4" style={{ background: "var(--bg-surface)" }}>
+            <h3 className="font-semibold mb-2" style={{ color: "var(--accent-cyan)" }}>Meet the Lagrangian</h3>
+            <div className="overflow-x-auto mb-3" dangerouslySetInnerHTML={{ __html: renderKatex(String.raw`L=T-V`) }} />
+            <ul className="space-y-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+              <li>• <strong style={{ color: "var(--text-primary)" }}>T</strong>: kinetic energy (motion)</li>
+              <li>• <strong style={{ color: "var(--text-primary)" }}>V</strong>: potential energy (stored energy)</li>
+              <li>• <strong style={{ color: "var(--text-primary)" }}>q</strong>: configuration (position, angle, orbit radius, etc.)</li>
+              <li>• <strong style={{ color: "var(--text-primary)" }}>q˙</strong>: velocity</li>
+            </ul>
+          </div>
+
+          <div className="rounded-lg p-4" style={{ background: "var(--bg-surface)" }}>
+            <h3 className="font-semibold mb-2" style={{ color: "var(--accent-cyan)" }}>How to read the symbols</h3>
+            <ul className="space-y-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+              <li>• <strong style={{ color: "var(--text-primary)" }}>q</strong>: where am I?</li>
+              <li>• <strong style={{ color: "var(--text-primary)" }}>q˙</strong>: how fast am I moving?</li>
+              <li>• <strong style={{ color: "var(--text-primary)" }}>L</strong>: what is the energy balance?</li>
+              <li>• The equation checks how <strong style={{ color: "var(--text-primary)" }}>L</strong> changes with both position and velocity.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="rounded-lg p-4 mt-4" style={{ background: "var(--bg-surface)" }}>
+          <h3 className="font-semibold mb-3" style={{ color: "var(--accent-cyan)" }}>Simple example: a falling ball</h3>
+          <div className="space-y-3 overflow-x-auto">
+            <div dangerouslySetInnerHTML={{ __html: renderKatex(String.raw`T=\frac{1}{2}m\dot q^2`) }} />
+            <div dangerouslySetInnerHTML={{ __html: renderKatex(String.raw`V=mgq`) }} />
+            <div dangerouslySetInnerHTML={{ __html: renderKatex(String.raw`L=\frac{1}{2}m\dot q^2-mgq`) }} />
+            <div dangerouslySetInnerHTML={{ __html: renderKatex(String.raw`\frac{\partial L}{\partial \dot q}=m\dot q,\quad \frac{d}{dt}(m\dot q)=m\ddot q,\quad \frac{\partial L}{\partial q}=-mg`) }} />
+            <div dangerouslySetInnerHTML={{ __html: renderKatex(String.raw`m\ddot q+mg=0\Rightarrow \ddot q=-g`) }} />
+          </div>
+          <p className="text-sm mt-3" style={{ color: "var(--text-secondary)" }}>
+            Same physics as Newton, but derived from energy instead of force-by-force bookkeeping.
+          </p>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2 mt-4">
+          <div className="rounded-lg p-4" style={{ background: "var(--bg-surface)" }}>
+            <h3 className="font-semibold mb-2" style={{ color: "var(--accent-cyan)" }}>Why engineers love it</h3>
+            <ul className="space-y-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+              <li>• cleaner modeling for multi-joint robots and coupled systems</li>
+              <li>• scalable equations for translation + rotation + constraints</li>
+              <li>• strong basis for simulation and controller design</li>
+            </ul>
+          </div>
+          <div className="rounded-lg p-4" style={{ background: "var(--bg-surface)" }}>
+            <h3 className="font-semibold mb-2" style={{ color: "var(--accent-cyan)" }}>Space applications</h3>
+            <ul className="space-y-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+              <li>• rocket ascent, atmospheric entry, powered descent</li>
+              <li>• orbital trajectory modeling and perturbation studies</li>
+              <li>• space robotics dynamics and torque computation</li>
+              <li>• spacecraft attitude dynamics before control synthesis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="rounded-lg p-4 mt-4" style={{ background: "rgba(0,217,255,0.08)", border: "1px solid rgba(0,217,255,0.25)" }}>
+          <p className="text-sm leading-7" style={{ color: "var(--text-secondary)" }}>
+            In a modern stack, Euler–Lagrange models the natural system motion, then optimal control (PMP/LQR/MPC) chooses best actions, and filtering (e.g. Kalman) estimates current state. That combination is the backbone of autonomous spacecraft.
+          </p>
+        </div>
+      </section>
+
       <div className="grid gap-6">
         {sections.map((section) => (
           <section key={section.title} className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>
