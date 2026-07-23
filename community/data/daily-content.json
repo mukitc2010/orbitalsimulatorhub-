@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-23T01:57:20.943Z",
+  "generated_at": "2026-07-23T07:27:37.802Z",
   "featured_article": {
-    "title": "Space AGI five pillars: perception, planning, control, learning, communication",
-    "excerpt": "Space AGI five pillars: perception, planning, control, learning, communication is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-five-pillars-perception-planning-control-learning-communication-20260723"
+    "title": "Robot manipulation and sensor fusion for space construction tasks",
+    "excerpt": "Robot manipulation and sensor fusion for space construction tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260723"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How NASA tests aerodynamics in wind tunnels",
-      "blurb": "How NASA tests aerodynamics in wind tunnels is a key area in aerodynamics & flight that impacts how we understand and explore space.",
+      "title": "How quantum computing could optimize mission pl...",
+      "blurb": "How quantum computing could optimize mission planning is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Lunar Gateway construction and deep space habit...",
-      "blurb": "Lunar Gateway construction and deep space habitation is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Schrodinger equation: the foundation of quantum...",
+      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Mars Perseverance rover sample collection updates",
-      "blurb": "Mars Perseverance rover sample collection updates is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "How galaxies collide and merge over billions of...",
+      "blurb": "How galaxies collide and merge over billions of years is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,16 +33,16 @@
       "date": "2026-07-23"
     },
     {
+      "slug": "robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260723",
+      "title": "Robot manipulation and sensor fusion for space construction tasks",
+      "excerpt": "Learn about robot manipulation and sensor fusion for space construction tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-07-23"
+    },
+    {
       "slug": "how-ai-satellites-make-autonomous-decisions-in-orbit-20260722",
       "title": "How AI satellites make autonomous decisions in orbit",
       "excerpt": "Learn about how ai satellites make autonomous decisions in orbit — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-07-22"
-    },
-    {
-      "slug": "ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260722",
-      "title": "AI collision avoidance: how 500+ satellites avoid each other without human input",
-      "excerpt": "Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
       "date": "2026-07-22"
     }
