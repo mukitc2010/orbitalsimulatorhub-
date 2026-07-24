@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-24T11:36:49.544Z",
+  "generated_at": "2026-07-24T20:55:28.506Z",
   "featured_article": {
-    "title": "How Starlink creates global broadband internet from space",
-    "excerpt": "How Starlink creates global broadband internet from space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-starlink-creates-global-broadband-internet-from-space-20260724"
+    "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
+    "excerpt": "Self-repairing spacecraft: AI that fixes itself in deep space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260724"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Kepler's three laws with derivations and real s...",
-      "blurb": "Kepler's three laws with derivations and real satellite examples is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "The physics of geostationary orbit and why it m...",
+      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Transformer-based abstract reasoning and test-t...",
-      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "How Starlink creates global broadband internet ...",
+      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "What happens when a massive star dies: supernov...",
-      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "N-body equations: when two-body mechanics is no...",
+      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
