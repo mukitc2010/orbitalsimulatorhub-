@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-25T15:57:40.401Z",
+  "generated_at": "2026-07-25T20:41:01.287Z",
   "featured_article": {
-    "title": "AI-driven robot autonomy: from teleoperation to full self-directed behavior",
-    "excerpt": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260725"
+    "title": "Schrodinger equation: the foundation of quantum mechanics",
+    "excerpt": "Schrodinger equation: the foundation of quantum mechanics is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/schrodinger-equation-the-foundation-of-quantum-mechanics-20260725"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Pulsars: the cosmic lighthouses of neutron stars",
-      "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Re-entry physics: surviving 28000 km/h atmosphe...",
+      "blurb": "Re-entry physics: surviving 28000 km/h atmospheric entry is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "J2 perturbation: why orbits drift and how to co...",
-      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Hohmann transfer formula: the most fuel-efficie...",
+      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Tsiolkovsky rocket equation: why we need stagin...",
-      "blurb": "Tsiolkovsky rocket equation: why we need staging to reach orbit is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Exoskeletons and wearable robots for astronaut ...",
+      "blurb": "Exoskeletons and wearable robots for astronaut EVA assistance is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
