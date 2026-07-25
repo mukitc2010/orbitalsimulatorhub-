@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-25T01:52:48.540Z",
+  "generated_at": "2026-07-25T07:10:22.183Z",
   "featured_article": {
-    "title": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere",
-    "excerpt": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260725"
+    "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
+    "excerpt": "Why compositional reasoning remains the hardest unsolved AGI challenge is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260725"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
-      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Quantum key distribution for secure satellite c...",
+      "blurb": "Quantum key distribution for secure satellite communications is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "N-body equations: when two-body mechanics is no...",
-      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Quantum tunneling in nuclear fusion inside stars",
+      "blurb": "Quantum tunneling in nuclear fusion inside stars is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "What happens when a massive star dies: supernov...",
-      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "Satellite communication: how data travels from ...",
+      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-07-25"
     },
     {
+      "slug": "why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260725",
+      "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
+      "excerpt": "Learn about why compositional reasoning remains the hardest unsolved agi challenge — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-07-25"
+    },
+    {
       "slug": "space-is-completely-silent-because-sound-needs-a-medium-20260724",
       "title": "Space is completely silent because sound needs a medium",
       "excerpt": "Learn about space is completely silent because sound needs a medium — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-facts",
-      "date": "2026-07-24"
-    },
-    {
-      "slug": "tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260724",
-      "title": "Tsiolkovsky rocket equation: why we need staging to reach orbit",
-      "excerpt": "Learn about tsiolkovsky rocket equation: why we need staging to reach orbit — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-07-24"
     }
   ],
