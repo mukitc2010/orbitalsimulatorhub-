@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-07-24T20:55:28.506Z",
+  "generated_at": "2026-07-25T01:52:48.540Z",
   "featured_article": {
-    "title": "Self-repairing spacecraft: AI that fixes itself in deep space",
-    "excerpt": "Self-repairing spacecraft: AI that fixes itself in deep space is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260724"
+    "title": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere",
+    "excerpt": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260725"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The physics of geostationary orbit and why it m...",
-      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Olympus Mons on Mars is 3 times taller than Eve...",
+      "blurb": "Olympus Mons on Mars is 3 times taller than Everest is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
-    },
-    {
-      "title": "How Starlink creates global broadband internet ...",
-      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
-      "icon": "atom"
     },
     {
       "title": "N-body equations: when two-body mechanics is no...",
       "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
+      "icon": "atom"
+    },
+    {
+      "title": "What happens when a massive star dies: supernov...",
+      "blurb": "What happens when a massive star dies: supernovae and black holes is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260725",
+      "title": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere",
+      "excerpt": "Learn about the aerodynamics of mars helicopter ingenuity in thin atmosphere — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "aerodynamics",
+      "date": "2026-07-25"
+    },
     {
       "slug": "space-is-completely-silent-because-sound-needs-a-medium-20260724",
       "title": "Space is completely silent because sound needs a medium",
@@ -37,13 +44,6 @@
       "title": "Tsiolkovsky rocket equation: why we need staging to reach orbit",
       "excerpt": "Learn about tsiolkovsky rocket equation: why we need staging to reach orbit — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-07-24"
-    },
-    {
-      "slug": "how-starlink-creates-global-broadband-internet-from-space-20260724",
-      "title": "How Starlink creates global broadband internet from space",
-      "excerpt": "Learn about how starlink creates global broadband internet from space — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "satellite-tutorials",
       "date": "2026-07-24"
     }
   ],
