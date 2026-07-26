@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-25T20:41:01.287Z",
+  "generated_at": "2026-07-26T01:56:27.917Z",
   "featured_article": {
-    "title": "Schrodinger equation: the foundation of quantum mechanics",
-    "excerpt": "Schrodinger equation: the foundation of quantum mechanics is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/schrodinger-equation-the-foundation-of-quantum-mechanics-20260725"
+    "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+    "excerpt": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260726"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
@@ -14,17 +14,24 @@
       "icon": "rocket"
     },
     {
-      "title": "Hohmann transfer formula: the most fuel-efficie...",
-      "blurb": "Hohmann transfer formula: the most fuel-efficient way to change orbits is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Pulsars: the cosmic lighthouses of neutron stars",
+      "blurb": "Pulsars: the cosmic lighthouses of neutron stars is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Exoskeletons and wearable robots for astronaut ...",
-      "blurb": "Exoskeletons and wearable robots for astronaut EVA assistance is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260726",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+      "excerpt": "Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-07-26"
+    },
     {
       "slug": "the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260725",
       "title": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere",
@@ -37,13 +44,6 @@
       "title": "Why compositional reasoning remains the hardest unsolved AGI challenge",
       "excerpt": "Learn about why compositional reasoning remains the hardest unsolved agi challenge — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "agi-research",
-      "date": "2026-07-25"
-    },
-    {
-      "slug": "how-atomic-clocks-on-gps-satellites-use-quantum-mechanics-20260725",
-      "title": "How atomic clocks on GPS satellites use quantum mechanics",
-      "excerpt": "Learn about how atomic clocks on gps satellites use quantum mechanics — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "quantum-physics",
       "date": "2026-07-25"
     }
   ],
