@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-26T07:30:53.990Z",
+  "generated_at": "2026-07-26T11:13:54.718Z",
   "featured_article": {
-    "title": "NASA Europa Clipper mission to Jupiter's moon",
-    "excerpt": "NASA Europa Clipper mission to Jupiter's moon is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-europa-clipper-mission-to-jupiters-moon-20260726"
+    "title": "A teaspoon of neutron star weighs 6 billion tons",
+    "excerpt": "A teaspoon of neutron star weighs 6 billion tons is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-facts",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/a-teaspoon-of-neutron-star-weighs-6-billion-tons-20260726"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Structural theory of general artificial intelli...",
-      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "N-body equations: when two-body mechanics is no...",
+      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "Schrodinger equation: the foundation of quantum...",
-      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "How atomic clocks on GPS satellites use quantum...",
+      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Transformer-based abstract reasoning and test-t...",
-      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Wave-particle duality: the double-slit experime...",
+      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-26"
     },
     {
-      "slug": "the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260725",
-      "title": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere",
-      "excerpt": "Learn about the aerodynamics of mars helicopter ingenuity in thin atmosphere — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "aerodynamics",
-      "date": "2026-07-25"
+      "slug": "a-teaspoon-of-neutron-star-weighs-6-billion-tons-20260726",
+      "title": "A teaspoon of neutron star weighs 6 billion tons",
+      "excerpt": "Learn about a teaspoon of neutron star weighs 6 billion tons — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-facts",
+      "date": "2026-07-26"
     }
   ],
   "learning_paths": {
