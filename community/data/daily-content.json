@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-26T15:56:01.147Z",
+  "generated_at": "2026-07-26T20:47:03.819Z",
   "featured_article": {
-    "title": "Hypersonic flight: challenges above Mach 5",
-    "excerpt": "Hypersonic flight: challenges above Mach 5 is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hypersonic-flight-challenges-above-mach-5-20260726"
+    "title": "NASA Valkyrie humanoid robot: a decade of research for Mars missions",
+    "excerpt": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "robot-engineering",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260726"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
@@ -14,13 +14,13 @@
       "icon": "rocket"
     },
     {
-      "title": "CubeSats and nanosatellites: space access for u...",
-      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How Starlink creates global broadband internet ...",
+      "blurb": "How Starlink creates global broadband internet from space is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Space AGI five pillars: perception, planning, c...",
-      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
+      "title": "There are more stars than grains of sand on Earth",
+      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
