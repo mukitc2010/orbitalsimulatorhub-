@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-26T11:13:54.718Z",
+  "generated_at": "2026-07-26T15:56:01.147Z",
   "featured_article": {
-    "title": "A teaspoon of neutron star weighs 6 billion tons",
-    "excerpt": "A teaspoon of neutron star weighs 6 billion tons is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-facts",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/a-teaspoon-of-neutron-star-weighs-6-billion-tons-20260726"
+    "title": "Hypersonic flight: challenges above Mach 5",
+    "excerpt": "Hypersonic flight: challenges above Mach 5 is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "aerodynamics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/hypersonic-flight-challenges-above-mach-5-20260726"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "N-body equations: when two-body mechanics is no...",
-      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Satellite communication: how data travels from ...",
+      "blurb": "Satellite communication: how data travels from space to your phone is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How atomic clocks on GPS satellites use quantum...",
-      "blurb": "How atomic clocks on GPS satellites use quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "CubeSats and nanosatellites: space access for u...",
+      "blurb": "CubeSats and nanosatellites: space access for universities is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Wave-particle duality: the double-slit experime...",
-      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Space AGI five pillars: perception, planning, c...",
+      "blurb": "Space AGI five pillars: perception, planning, control, learning, communication is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
