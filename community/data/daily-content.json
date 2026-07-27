@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-27T08:22:13.530Z",
+  "generated_at": "2026-07-27T12:51:28.748Z",
   "featured_article": {
-    "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
-    "excerpt": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "space-agi",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260727"
+    "title": "What happens when a massive star dies: supernovae and black holes",
+    "excerpt": "What happens when a massive star dies: supernovae and black holes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "astronomy-lessons",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260727"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How weather satellites predict storms and track...",
-      "blurb": "How weather satellites predict storms and track hurricanes is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Self-repairing spacecraft: AI that fixes itself...",
+      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "AGI safety and alignment: ensuring beneficial a...",
-      "blurb": "AGI safety and alignment: ensuring beneficial artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Structural theory of general artificial intelli...",
+      "blurb": "Structural theory of general artificial intelligence (SMGI) explained is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "The life cycle of Sun-like stars from birth to ...",
-      "blurb": "The life cycle of Sun-like stars from birth to white dwarf is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "J2 perturbation: why orbits drift and how to co...",
+      "blurb": "J2 perturbation: why orbits drift and how to correct them is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-27"
     },
     {
-      "slug": "space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260726",
-      "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
-      "excerpt": "Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
-      "date": "2026-07-26"
+      "slug": "what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260727",
+      "title": "What happens when a massive star dies: supernovae and black holes",
+      "excerpt": "Learn about what happens when a massive star dies: supernovae and black holes — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "astronomy-lessons",
+      "date": "2026-07-27"
     }
   ],
   "learning_paths": {

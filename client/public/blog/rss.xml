@@ -5,7 +5,7 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 27 Jul 2026 08:22:13 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 12:51:29 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lambert&apos;s problem: how to plan an intercept between two orbits</title>
@@ -20,6 +20,13 @@
       <description>Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
       <category>space-agi</category>
+    </item>
+    <item>
+      <title>What happens when a massive star dies: supernovae and black holes</title>
+      <link>https://orbitalsimulatorhub.com/blog/what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260727</link>
+      <description>Learn about what happens when a massive star dies: supernovae and black holes — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>astronomy-lessons</category>
     </item>
     <item>
       <title>Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes</title>
