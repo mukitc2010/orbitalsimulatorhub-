@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-28T01:46:12.544Z",
+  "generated_at": "2026-07-28T07:33:32.828Z",
   "featured_article": {
-    "title": "NASA DART asteroid deflection mission results",
-    "excerpt": "NASA DART asteroid deflection mission results is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "nasa-news",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/nasa-dart-asteroid-deflection-mission-results-20260728"
+    "title": "How orbital debris tracking and avoidance works",
+    "excerpt": "How orbital debris tracking and avoidance works is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "satellite-tutorials",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-orbital-debris-tracking-and-avoidance-works-20260728"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How AI satellites make autonomous decisions in ...",
-      "blurb": "How AI satellites make autonomous decisions in orbit is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Artemis program progress and Moon landing plans",
+      "blurb": "Artemis program progress and Moon landing plans is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How MPC and LQR control algorithms keep satelli...",
-      "blurb": "How MPC and LQR control algorithms keep satellite swarms safe is a key area in space agi that impacts how we understand and explore space.",
+      "title": "ARC-AGI benchmark: measuring progress toward ar...",
+      "blurb": "ARC-AGI benchmark: measuring progress toward artificial general intelligence is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Wave-particle duality: the double-slit experime...",
-      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "Self-repairing spacecraft: AI that fixes itself...",
+      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-07-28"
     },
     {
+      "slug": "how-orbital-debris-tracking-and-avoidance-works-20260728",
+      "title": "How orbital debris tracking and avoidance works",
+      "excerpt": "Learn about how orbital debris tracking and avoidance works — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "satellite-tutorials",
+      "date": "2026-07-28"
+    },
+    {
       "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260727",
       "title": "Lambert's problem: how to plan an intercept between two orbits",
       "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-07-27"
-    },
-    {
-      "slug": "space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260727",
-      "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
-      "excerpt": "Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-agi",
       "date": "2026-07-27"
     }
   ],
