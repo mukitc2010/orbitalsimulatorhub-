@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-30T07:28:34.652Z",
+  "generated_at": "2026-07-30T11:46:08.453Z",
   "featured_article": {
-    "title": "How orbital debris tracking and avoidance works",
-    "excerpt": "How orbital debris tracking and avoidance works is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "satellite-tutorials",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-orbital-debris-tracking-and-avoidance-works-20260730"
+    "title": "How MPC and LQR control algorithms keep satellite swarms safe",
+    "excerpt": "How MPC and LQR control algorithms keep satellite swarms safe is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260730"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Orbital energy and specific orbital energy formula",
-      "blurb": "Orbital energy and specific orbital energy formula is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Hypersonic flight: challenges above Mach 5",
+      "blurb": "Hypersonic flight: challenges above Mach 5 is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "There are more stars than grains of sand on Earth",
-      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How satellite constellations maintain formation...",
+      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Wave-particle duality: the double-slit experime...",
-      "blurb": "Wave-particle duality: the double-slit experiment explained is a key area in quantum physics & space that impacts how we understand and explore space.",
+      "title": "James Webb Space Telescope latest discoveries",
+      "blurb": "James Webb Space Telescope latest discoveries is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-30"
     },
     {
-      "slug": "how-weather-satellites-predict-storms-and-track-hurricanes-20260729",
-      "title": "How weather satellites predict storms and track hurricanes",
-      "excerpt": "Learn about how weather satellites predict storms and track hurricanes — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "satellite-tutorials",
-      "date": "2026-07-29"
+      "slug": "how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260730",
+      "title": "How MPC and LQR control algorithms keep satellite swarms safe",
+      "excerpt": "Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-agi",
+      "date": "2026-07-30"
     }
   ],
   "learning_paths": {
