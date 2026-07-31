@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-31T11:52:49.145Z",
+  "generated_at": "2026-07-31T16:30:05.923Z",
   "featured_article": {
-    "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
-    "excerpt": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "agi-research",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260731"
+    "title": "Wave-particle duality: the double-slit experiment explained",
+    "excerpt": "Wave-particle duality: the double-slit experiment explained is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "quantum-physics",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/wave-particle-duality-the-double-slit-experiment-explained-20260731"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "How satellite constellations maintain formation...",
-      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Why a day on Venus is longer than its year",
+      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How orbital debris tracking and avoidance works",
-      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "AI-driven robot autonomy: from teleoperation to...",
+      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "N-body equations: when two-body mechanics is no...",
-      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Delayed MDP and Mars communication delay: why A...",
+      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
