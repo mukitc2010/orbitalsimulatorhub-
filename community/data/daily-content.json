@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-31T16:30:05.923Z",
+  "generated_at": "2026-07-31T20:55:03.873Z",
   "featured_article": {
-    "title": "Wave-particle duality: the double-slit experiment explained",
-    "excerpt": "Wave-particle duality: the double-slit experiment explained is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "quantum-physics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/wave-particle-duality-the-double-slit-experiment-explained-20260731"
+    "title": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes",
+    "excerpt": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "space-agi",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260731"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Why a day on Venus is longer than its year",
-      "blurb": "Why a day on Venus is longer than its year is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How weather satellites predict storms and track...",
+      "blurb": "How weather satellites predict storms and track hurricanes is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "AI-driven robot autonomy: from teleoperation to...",
-      "blurb": "AI-driven robot autonomy: from teleoperation to full self-directed behavior is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "How satellite constellations maintain formation...",
+      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Delayed MDP and Mars communication delay: why A...",
-      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
+      "title": "Kepler's three laws with derivations and real s...",
+      "blurb": "Kepler's three laws with derivations and real satellite examples is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
