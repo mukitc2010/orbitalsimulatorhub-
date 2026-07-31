@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-31T07:45:18.043Z",
+  "generated_at": "2026-07-31T11:52:49.145Z",
   "featured_article": {
-    "title": "Swarm robotics for in-space assembly and orbital construction",
-    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
-    "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260731"
+    "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
+    "excerpt": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "category": "agi-research",
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260731"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "There are more stars than grains of sand on Earth",
-      "blurb": "There are more stars than grains of sand on Earth is a key area in space facts that impacts how we understand and explore space.",
+      "title": "How satellite constellations maintain formation...",
+      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The cosmic microwave background and the Big Bang",
-      "blurb": "The cosmic microwave background and the Big Bang is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "How orbital debris tracking and avoidance works",
+      "blurb": "How orbital debris tracking and avoidance works is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "International Space Station science experiments",
-      "blurb": "International Space Station science experiments is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "N-body equations: when two-body mechanics is no...",
+      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -40,11 +40,11 @@
       "date": "2026-07-31"
     },
     {
-      "slug": "robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260730",
-      "title": "Robonaut 2: the first humanoid robot in space aboard the ISS",
-      "excerpt": "Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
-      "date": "2026-07-30"
+      "slug": "agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260731",
+      "title": "Agent swarm architectures: parallel multi-agent orchestration for AGI tasks",
+      "excerpt": "Learn about agent swarm architectures: parallel multi-agent orchestration for agi tasks — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "agi-research",
+      "date": "2026-07-31"
     }
   ],
   "learning_paths": {
