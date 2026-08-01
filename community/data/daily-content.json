@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-01T01:59:32.068Z",
+  "generated_at": "2026-08-01T07:23:13.032Z",
   "featured_article": {
-    "title": "Swarm robotics for in-space assembly and orbital construction",
-    "excerpt": "Swarm robotics for in-space assembly and orbital construction is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
+    "excerpt": "Soft robotics and compliant actuators for safe human-robot collaboration is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "robot-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260801"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260801"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Transformer-based abstract reasoning and test-t...",
-      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
+      "title": "Space AGI roadmap 2025-2060: from LEO autonomy ...",
+      "blurb": "Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes is a key area in space agi that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "N-body equations: when two-body mechanics is no...",
-      "blurb": "N-body equations: when two-body mechanics is not enough is a key area in space engineering that impacts how we understand and explore space.",
+      "title": "Transformer-based abstract reasoning and test-t...",
+      "blurb": "Transformer-based abstract reasoning and test-time training for AGI is a key area in agi research & artificial general intelligence that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "Space is completely silent because sound needs ...",
-      "blurb": "Space is completely silent because sound needs a medium is a key area in space facts that impacts how we understand and explore space.",
+      "title": "Hypersonic flight: challenges above Mach 5",
+      "blurb": "Hypersonic flight: challenges above Mach 5 is a key area in aerodynamics & flight that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-08-01"
     },
     {
+      "slug": "soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260801",
+      "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
+      "excerpt": "Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "robot-engineering",
+      "date": "2026-08-01"
+    },
+    {
       "slug": "what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260731",
       "title": "What is Space AGI and why it matters for future space exploration",
       "excerpt": "Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-agi",
-      "date": "2026-07-31"
-    },
-    {
-      "slug": "swarm-robotics-for-in-space-assembly-and-orbital-construction-20260731",
-      "title": "Swarm robotics for in-space assembly and orbital construction",
-      "excerpt": "Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "robot-engineering",
       "date": "2026-07-31"
     }
   ],
