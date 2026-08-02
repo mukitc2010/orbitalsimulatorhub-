@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-08-01T20:40:59.140Z",
+  "generated_at": "2026-08-02T01:55:36.136Z",
   "featured_article": {
-    "title": "Escape velocity derivation from conservation of energy",
-    "excerpt": "Escape velocity derivation from conservation of energy is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "Lambert's problem: how to plan an intercept between two orbits",
+    "excerpt": "Lambert's problem: how to plan an intercept between two orbits is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "space-engineering",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/escape-velocity-derivation-from-conservation-of-energy-20260801"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260802"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "The physics of geostationary orbit and why it m...",
-      "blurb": "The physics of geostationary orbit and why it matters is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "How weather satellites predict storms and track...",
+      "blurb": "How weather satellites predict storms and track hurricanes is a key area in satellite tutorials that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "How satellite constellations maintain formation...",
-      "blurb": "How satellite constellations maintain formation in orbit is a key area in satellite tutorials that impacts how we understand and explore space.",
+      "title": "Schrodinger equation: the foundation of quantum...",
+      "blurb": "Schrodinger equation: the foundation of quantum mechanics is a key area in quantum physics & space that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "NASA DART asteroid deflection mission results",
-      "blurb": "NASA DART asteroid deflection mission results is a key area in nasa news that impacts how we understand and explore space.",
+      "title": "Dark matter: the invisible mass holding galaxie...",
+      "blurb": "Dark matter: the invisible mass holding galaxies together is a key area in astronomy lessons that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
   "latest_posts": [
+    {
+      "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260802",
+      "title": "Lambert's problem: how to plan an intercept between two orbits",
+      "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "space-engineering",
+      "date": "2026-08-02"
+    },
     {
       "slug": "swarm-robotics-for-in-space-assembly-and-orbital-construction-20260801",
       "title": "Swarm robotics for in-space assembly and orbital construction",
@@ -37,13 +44,6 @@
       "title": "Soft robotics and compliant actuators for safe human-robot collaboration",
       "excerpt": "Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "robot-engineering",
-      "date": "2026-08-01"
-    },
-    {
-      "slug": "j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260801",
-      "title": "J2 perturbation: why orbits drift and how to correct them",
-      "excerpt": "Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "space-engineering",
       "date": "2026-08-01"
     }
   ],
