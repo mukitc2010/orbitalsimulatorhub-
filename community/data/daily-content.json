@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-03T01:58:24.276Z",
+  "generated_at": "2026-08-03T08:21:35.553Z",
   "featured_article": {
-    "title": "How heat shields protect spacecraft during re-entry",
-    "excerpt": "How heat shields protect spacecraft during re-entry is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
+    "title": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere",
+    "excerpt": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.",
     "category": "aerodynamics",
-    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/how-heat-shields-protect-spacecraft-during-re-entry-20260803"
+    "read_more_url": "https://www.orbitalsimulatorhub.com/blog/the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260803"
   },
   "did_you_know": "The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.",
   "topic_highlights": [
     {
-      "title": "Self-repairing spacecraft: AI that fixes itself...",
-      "blurb": "Self-repairing spacecraft: AI that fixes itself in deep space is a key area in space agi that impacts how we understand and explore space.",
+      "title": "The footprints on the Moon will last 100 millio...",
+      "blurb": "The footprints on the Moon will last 100 million years is a key area in space facts that impacts how we understand and explore space.",
       "icon": "rocket"
     },
     {
-      "title": "The cosmic microwave background and the Big Bang",
-      "blurb": "The cosmic microwave background and the Big Bang is a key area in astronomy lessons that impacts how we understand and explore space.",
+      "title": "NASA DART asteroid deflection mission results",
+      "blurb": "NASA DART asteroid deflection mission results is a key area in nasa news that impacts how we understand and explore space.",
       "icon": "atom"
     },
     {
-      "title": "NASA Valkyrie humanoid robot: a decade of resea...",
-      "blurb": "NASA Valkyrie humanoid robot: a decade of research for Mars missions is a key area in robot engineering & humanoid robotics that impacts how we understand and explore space.",
+      "title": "Delayed MDP and Mars communication delay: why A...",
+      "blurb": "Delayed MDP and Mars communication delay: why AI must act without Earth is a key area in space agi that impacts how we understand and explore space.",
       "icon": "plane"
     }
   ],
@@ -33,17 +33,17 @@
       "date": "2026-08-03"
     },
     {
+      "slug": "the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260803",
+      "title": "The aerodynamics of Mars helicopter Ingenuity in thin atmosphere",
+      "excerpt": "Learn about the aerodynamics of mars helicopter ingenuity in thin atmosphere — covering the science, real-world applications, and how it connects to space exploration.",
+      "category": "aerodynamics",
+      "date": "2026-08-03"
+    },
+    {
       "slug": "lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260802",
       "title": "Lambert's problem: how to plan an intercept between two orbits",
       "excerpt": "Learn about lambert's problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.",
       "category": "space-engineering",
-      "date": "2026-08-02"
-    },
-    {
-      "slug": "quantum-sensors-for-deep-space-navigation-20260802",
-      "title": "Quantum sensors for deep space navigation",
-      "excerpt": "Learn about quantum sensors for deep space navigation — covering the science, real-world applications, and how it connects to space exploration.",
-      "category": "quantum-physics",
       "date": "2026-08-02"
     }
   ],
