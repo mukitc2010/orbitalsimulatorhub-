@@ -5,8 +5,15 @@
     <link>https://orbitalsimulatorhub.com/blog</link>
     <description>Daily NASA news, space facts, satellite tutorials, and astronomy lessons. Learn orbital mechanics, space physics, and how satellites work.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 03 Aug 2026 20:56:02 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 01:44:44 GMT</lastBuildDate>
     <atom:link href="https://orbitalsimulatorhub.com/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Space-AGI convergence: how orbital autonomy accelerates AGI research</title>
+      <link>https://orbitalsimulatorhub.com/blog/space-agi-convergence-how-orbital-autonomy-accelerates-agi-research-20260804</link>
+      <description>Learn about space-agi convergence: how orbital autonomy accelerates agi research — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <category>agi-research</category>
+    </item>
     <item>
       <title>How heat shields protect spacecraft during re-entry</title>
       <link>https://orbitalsimulatorhub.com/blog/how-heat-shields-protect-spacecraft-during-re-entry-20260803</link>
