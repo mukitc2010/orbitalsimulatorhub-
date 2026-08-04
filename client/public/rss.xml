@@ -5,7 +5,7 @@
     <link>https://www.orbitalsimulatorhub.com/blog</link>
     <description>Space technology, orbital mechanics, spacecraft simulation, robotics, artificial intelligence, and Space-AGI research.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Aug 2026 18:57:48 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 21:02:37 GMT</lastBuildDate>
     <generator>OrbitalSimulatorHub RSS Generator</generator>
     <atom:link href="https://www.orbitalsimulatorhub.com/rss.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,537 @@
       <title>OrbitalSimulatorHub</title>
       <link>https://www.orbitalsimulatorhub.com</link>
     </image>
+    <item>
+      <title>Space-AGI convergence: how orbital autonomy accelerates AGI research</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/space-agi-convergence-how-orbital-autonomy-accelerates-agi-research-20260804</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/space-agi-convergence-how-orbital-autonomy-accelerates-agi-research-20260804</guid>
+      <description>Learn about space-agi convergence: how orbital autonomy accelerates agi research — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <category>agi-research</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>J2 perturbation: why orbits drift and how to correct them</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260804</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260804</guid>
+      <description>Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>What is Space AGI and why it matters for future space exploration</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260804</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260804</guid>
+      <description>Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Pontryagin maximum principle explained for orbital maneuvers</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260804</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260804</guid>
+      <description>Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Self-repairing spacecraft: AI that fixes itself in deep space</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260804</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260804</guid>
+      <description>Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>How heat shields protect spacecraft during re-entry</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/how-heat-shields-protect-spacecraft-during-re-entry-20260803</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/how-heat-shields-protect-spacecraft-during-re-entry-20260803</guid>
+      <description>Learn about how heat shields protect spacecraft during re-entry — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
+      <category>aerodynamics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>The aerodynamics of Mars helicopter Ingenuity in thin atmosphere</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260803</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260803</guid>
+      <description>Learn about the aerodynamics of mars helicopter ingenuity in thin atmosphere — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
+      <category>aerodynamics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Robot manipulation and sensor fusion for space construction tasks</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260803</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/robot-manipulation-and-sensor-fusion-for-space-construction-tasks-20260803</guid>
+      <description>Learn about robot manipulation and sensor fusion for space construction tasks — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Quantum sensors for deep space navigation</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/quantum-sensors-for-deep-space-navigation-20260803</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/quantum-sensors-for-deep-space-navigation-20260803</guid>
+      <description>Learn about quantum sensors for deep space navigation — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
+      <category>quantum-physics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Quantum entanglement and future space communication</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/quantum-entanglement-and-future-space-communication-20260803</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/quantum-entanglement-and-future-space-communication-20260803</guid>
+      <description>Learn about quantum entanglement and future space communication — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
+      <category>quantum-physics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Lambert&apos;s problem: how to plan an intercept between two orbits</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260802</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260802</guid>
+      <description>Learn about lambert&apos;s problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Quantum sensors for deep space navigation</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/quantum-sensors-for-deep-space-navigation-20260802</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/quantum-sensors-for-deep-space-navigation-20260802</guid>
+      <description>Learn about quantum sensors for deep space navigation — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+      <category>quantum-physics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>What is Space AGI and why it matters for future space exploration</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260802</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260802</guid>
+      <description>Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Swarm robotics for in-space assembly and orbital construction</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260802</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260802</guid>
+      <description>Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>What is Space AGI and why it matters for future space exploration</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260802</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260802</guid>
+      <description>Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Swarm robotics for in-space assembly and orbital construction</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260801</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260801</guid>
+      <description>Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Soft robotics and compliant actuators for safe human-robot collaboration</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260801</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260801</guid>
+      <description>Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>J2 perturbation: why orbits drift and how to correct them</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260801</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260801</guid>
+      <description>Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>J2 perturbation: why orbits drift and how to correct them</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260801</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/j2-perturbation-why-orbits-drift-and-how-to-correct-them-20260801</guid>
+      <description>Learn about j2 perturbation: why orbits drift and how to correct them — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Escape velocity derivation from conservation of energy</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/escape-velocity-derivation-from-conservation-of-energy-20260801</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/escape-velocity-derivation-from-conservation-of-energy-20260801</guid>
+      <description>Learn about escape velocity derivation from conservation of energy — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>What is Space AGI and why it matters for future space exploration</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260731</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260731</guid>
+      <description>Learn about what is space agi and why it matters for future space exploration — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Swarm robotics for in-space assembly and orbital construction</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260731</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/swarm-robotics-for-in-space-assembly-and-orbital-construction-20260731</guid>
+      <description>Learn about swarm robotics for in-space assembly and orbital construction — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Agent swarm architectures: parallel multi-agent orchestration for AGI tasks</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260731</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/agent-swarm-architectures-parallel-multi-agent-orchestration-for-agi-tasks-20260731</guid>
+      <description>Learn about agent swarm architectures: parallel multi-agent orchestration for agi tasks — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
+      <category>agi-research</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Wave-particle duality: the double-slit experiment explained</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/wave-particle-duality-the-double-slit-experiment-explained-20260731</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/wave-particle-duality-the-double-slit-experiment-explained-20260731</guid>
+      <description>Learn about wave-particle duality: the double-slit experiment explained — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
+      <category>quantum-physics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260731</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260731</guid>
+      <description>Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Robonaut 2: the first humanoid robot in space aboard the ISS</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260730</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/robonaut-2-the-first-humanoid-robot-in-space-aboard-the-iss-20260730</guid>
+      <description>Learn about robonaut 2: the first humanoid robot in space aboard the iss — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>How orbital debris tracking and avoidance works</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/how-orbital-debris-tracking-and-avoidance-works-20260730</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/how-orbital-debris-tracking-and-avoidance-works-20260730</guid>
+      <description>Learn about how orbital debris tracking and avoidance works — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <category>satellite-tutorials</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>How MPC and LQR control algorithms keep satellite swarms safe</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260730</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/how-mpc-and-lqr-control-algorithms-keep-satellite-swarms-safe-20260730</guid>
+      <description>Learn about how mpc and lqr control algorithms keep satellite swarms safe — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Tsiolkovsky rocket equation: why we need staging to reach orbit</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260730</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260730</guid>
+      <description>Learn about tsiolkovsky rocket equation: why we need staging to reach orbit — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>AI collision avoidance: how 500+ satellites avoid each other without human input</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260730</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260730</guid>
+      <description>Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>How weather satellites predict storms and track hurricanes</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/how-weather-satellites-predict-storms-and-track-hurricanes-20260729</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/how-weather-satellites-predict-storms-and-track-hurricanes-20260729</guid>
+      <description>Learn about how weather satellites predict storms and track hurricanes — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <category>satellite-tutorials</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Kepler&apos;s three laws with derivations and real satellite examples</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/keplers-three-laws-with-derivations-and-real-satellite-examples-20260729</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/keplers-three-laws-with-derivations-and-real-satellite-examples-20260729</guid>
+      <description>Learn about kepler&apos;s three laws with derivations and real satellite examples — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>There are more stars than grains of sand on Earth</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/there-are-more-stars-than-grains-of-sand-on-earth-20260729</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/there-are-more-stars-than-grains-of-sand-on-earth-20260729</guid>
+      <description>Learn about there are more stars than grains of sand on earth — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-facts</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>N-body equations: when two-body mechanics is not enough</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/n-body-equations-when-two-body-mechanics-is-not-enough-20260729</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/n-body-equations-when-two-body-mechanics-is-not-enough-20260729</guid>
+      <description>Learn about n-body equations: when two-body mechanics is not enough — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Soft robotics and compliant actuators for safe human-robot collaboration</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260729</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/soft-robotics-and-compliant-actuators-for-safe-human-robot-collaboration-20260729</guid>
+      <description>Learn about soft robotics and compliant actuators for safe human-robot collaboration — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>NASA DART asteroid deflection mission results</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/nasa-dart-asteroid-deflection-mission-results-20260728</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/nasa-dart-asteroid-deflection-mission-results-20260728</guid>
+      <description>Learn about nasa dart asteroid deflection mission results — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <category>nasa-news</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>How orbital debris tracking and avoidance works</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/how-orbital-debris-tracking-and-avoidance-works-20260728</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/how-orbital-debris-tracking-and-avoidance-works-20260728</guid>
+      <description>Learn about how orbital debris tracking and avoidance works — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <category>satellite-tutorials</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Hohmann transfer formula: the most fuel-efficient way to change orbits</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260728</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/hohmann-transfer-formula-the-most-fuel-efficient-way-to-change-orbits-20260728</guid>
+      <description>Learn about hohmann transfer formula: the most fuel-efficient way to change orbits — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Orbital energy and specific orbital energy formula</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/orbital-energy-and-specific-orbital-energy-formula-20260728</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/orbital-energy-and-specific-orbital-energy-formula-20260728</guid>
+      <description>Learn about orbital energy and specific orbital energy formula — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Computational fluid dynamics in spacecraft design</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/computational-fluid-dynamics-in-spacecraft-design-20260728</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/computational-fluid-dynamics-in-spacecraft-design-20260728</guid>
+      <description>Learn about computational fluid dynamics in spacecraft design — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <category>aerodynamics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Lambert&apos;s problem: how to plan an intercept between two orbits</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260727</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260727</guid>
+      <description>Learn about lambert&apos;s problem: how to plan an intercept between two orbits — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260727</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260727</guid>
+      <description>Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>What happens when a massive star dies: supernovae and black holes</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260727</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/what-happens-when-a-massive-star-dies-supernovae-and-black-holes-20260727</guid>
+      <description>Learn about what happens when a massive star dies: supernovae and black holes — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>astronomy-lessons</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Re-entry physics: surviving 28000 km/h atmospheric entry</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260727</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260727</guid>
+      <description>Learn about re-entry physics: surviving 28000 km/h atmospheric entry — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>aerodynamics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Re-entry physics: surviving 28000 km/h atmospheric entry</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260727</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/re-entry-physics-surviving-28000-kmh-atmospheric-entry-20260727</guid>
+      <description>Learn about re-entry physics: surviving 28000 km/h atmospheric entry — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>aerodynamics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Space AGI roadmap 2025-2060: from LEO autonomy to interstellar probes</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260726</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/space-agi-roadmap-2025-2060-from-leo-autonomy-to-interstellar-probes-20260726</guid>
+      <description>Learn about space agi roadmap 2025-2060: from leo autonomy to interstellar probes — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>NASA Europa Clipper mission to Jupiter&apos;s moon</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/nasa-europa-clipper-mission-to-jupiters-moon-20260726</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/nasa-europa-clipper-mission-to-jupiters-moon-20260726</guid>
+      <description>Learn about nasa europa clipper mission to jupiter&apos;s moon — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+      <category>nasa-news</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>A teaspoon of neutron star weighs 6 billion tons</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/a-teaspoon-of-neutron-star-weighs-6-billion-tons-20260726</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/a-teaspoon-of-neutron-star-weighs-6-billion-tons-20260726</guid>
+      <description>Learn about a teaspoon of neutron star weighs 6 billion tons — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-facts</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Hypersonic flight: challenges above Mach 5</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/hypersonic-flight-challenges-above-mach-5-20260726</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/hypersonic-flight-challenges-above-mach-5-20260726</guid>
+      <description>Learn about hypersonic flight: challenges above mach 5 — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+      <category>aerodynamics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>NASA Valkyrie humanoid robot: a decade of research for Mars missions</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260726</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/nasa-valkyrie-humanoid-robot-a-decade-of-research-for-mars-missions-20260726</guid>
+      <description>Learn about nasa valkyrie humanoid robot: a decade of research for mars missions — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>The aerodynamics of Mars helicopter Ingenuity in thin atmosphere</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260725</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/the-aerodynamics-of-mars-helicopter-ingenuity-in-thin-atmosphere-20260725</guid>
+      <description>Learn about the aerodynamics of mars helicopter ingenuity in thin atmosphere — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <category>aerodynamics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Why compositional reasoning remains the hardest unsolved AGI challenge</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260725</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/why-compositional-reasoning-remains-the-hardest-unsolved-agi-challenge-20260725</guid>
+      <description>Learn about why compositional reasoning remains the hardest unsolved agi challenge — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <category>agi-research</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>How atomic clocks on GPS satellites use quantum mechanics</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/how-atomic-clocks-on-gps-satellites-use-quantum-mechanics-20260725</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/how-atomic-clocks-on-gps-satellites-use-quantum-mechanics-20260725</guid>
+      <description>Learn about how atomic clocks on gps satellites use quantum mechanics — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <category>quantum-physics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>AI-driven robot autonomy: from teleoperation to full self-directed behavior</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260725</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/ai-driven-robot-autonomy-from-teleoperation-to-full-self-directed-behavior-20260725</guid>
+      <description>Learn about ai-driven robot autonomy: from teleoperation to full self-directed behavior — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <category>robot-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Schrodinger equation: the foundation of quantum mechanics</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/schrodinger-equation-the-foundation-of-quantum-mechanics-20260725</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/schrodinger-equation-the-foundation-of-quantum-mechanics-20260725</guid>
+      <description>Learn about schrodinger equation: the foundation of quantum mechanics — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <category>quantum-physics</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Space is completely silent because sound needs a medium</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/space-is-completely-silent-because-sound-needs-a-medium-20260724</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/space-is-completely-silent-because-sound-needs-a-medium-20260724</guid>
+      <description>Learn about space is completely silent because sound needs a medium — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-facts</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Tsiolkovsky rocket equation: why we need staging to reach orbit</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260724</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/tsiolkovsky-rocket-equation-why-we-need-staging-to-reach-orbit-20260724</guid>
+      <description>Learn about tsiolkovsky rocket equation: why we need staging to reach orbit — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-engineering</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>How Starlink creates global broadband internet from space</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/how-starlink-creates-global-broadband-internet-from-space-20260724</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/how-starlink-creates-global-broadband-internet-from-space-20260724</guid>
+      <description>Learn about how starlink creates global broadband internet from space — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <category>satellite-tutorials</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>Self-repairing spacecraft: AI that fixes itself in deep space</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260724</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/self-repairing-spacecraft-ai-that-fixes-itself-in-deep-space-20260724</guid>
+      <description>Learn about self-repairing spacecraft: ai that fixes itself in deep space — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
     <item>
       <title>Space AGI five pillars: perception, planning, control, learning, communication</title>
       <link>https://www.orbitalsimulatorhub.com/blog/space-agi-five-pillars-perception-planning-control-learning-communication-20260723</link>
@@ -45,6 +576,15 @@
       <link>https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260723</link>
       <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/pontryagin-maximum-principle-explained-for-orbital-maneuvers-20260723</guid>
       <description>Learn about pontryagin maximum principle explained for orbital maneuvers — covering the science, real-world applications, and how it connects to space exploration.</description>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+      <category>space-agi</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
+      <title>AI collision avoidance: how 500+ satellites avoid each other without human input</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260723</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260723</guid>
+      <description>Learn about ai collision avoidance: how 500+ satellites avoid each other without human input — covering the science, real-world applications, and how it connects to space exploration.</description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
       <category>space-agi</category>
       <author>OrbitalSimulatorHub</author>
