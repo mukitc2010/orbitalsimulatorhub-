@@ -1,6 +1,9 @@
+import { lazy, Suspense } from "react";
 import { Link } from "wouter";
 import katex from "katex";
 import "katex/dist/katex.min.css";
+
+const ASIMissionScene = lazy(() => import("../components/ASIMissionScene").then((module) => ({ default: module.ASIMissionScene })));
 
 type MathLevel = {
   level: string;
@@ -132,22 +135,25 @@ function renderMath(formula: string) {
 export function ASIAstronautMathematics() {
   return (
     <div className="max-w-6xl mx-auto space-y-8">
-      <section className="glass-panel rounded-3xl p-6 md:p-8">
-        <p className="text-xs uppercase tracking-[0.24em] mb-2" style={{ color: "var(--accent-cyan)" }}>
-          Research Module
-        </p>
-        <h1 className="headline">ASI Mathematics for Autonomous Mars Missions</h1>
-        <p className="subhead max-w-4xl mt-3">
-          A dedicated framework that combines AI mathematics, optimal control, estimation, and multi-agent coordination for a conceptual
-          AI astronaut architecture.
-        </p>
-        <p className="text-sm mt-3" style={{ color: "var(--text-secondary)" }}>
-          This is a conceptual research synthesis, not an official single-equation standard from NASA or any agency.
-        </p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <Link href="/research/space-agi-math"><a className="orbit-chip">Space-AGI Mathematics</a></Link>
-          <Link href="/research/agi-asi-framework"><a className="orbit-chip">AGI/ASI Framework</a></Link>
-          <Link href="/research/pmp-nmpc-autonomous-control"><a className="orbit-chip">PMP + NMPC Control</a></Link>
+      <section className="glass-panel relative isolate overflow-hidden rounded-3xl p-6 md:p-8">
+        <Suspense fallback={null}><ASIMissionScene /></Suspense>
+        <div className="relative z-10">
+          <p className="text-xs uppercase tracking-[0.24em] mb-2" style={{ color: "var(--accent-cyan)" }}>
+            Research Module
+          </p>
+          <h1 className="headline max-w-3xl">ASI Mathematics for Autonomous Mars Missions</h1>
+          <p className="subhead max-w-3xl mt-3">
+            A dedicated framework that combines AI mathematics, optimal control, estimation, and multi-agent coordination for a conceptual
+            AI astronaut architecture.
+          </p>
+          <p className="text-sm max-w-3xl mt-3" style={{ color: "var(--text-secondary)" }}>
+            This is a conceptual research synthesis, not an official single-equation standard from NASA or any agency.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Link href="/research/space-agi-math"><a className="orbit-chip">Space-AGI Mathematics</a></Link>
+            <Link href="/research/agi-asi-framework"><a className="orbit-chip">AGI/ASI Framework</a></Link>
+            <Link href="/research/pmp-nmpc-autonomous-control"><a className="orbit-chip">PMP + NMPC Control</a></Link>
+          </div>
         </div>
       </section>
 
