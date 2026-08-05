@@ -1,0 +1,35 @@
+# ASI Framework
+
+A 29-chapter conceptual research framework for studying autonomous scientific systems in space. It is explicitly speculative and emphasizes validation, safety, uncertainty, and human governance.
+
+## Chapters
+
+- [Introduction](01_Introduction.md)
+- [Vision of ASI](02_Vision_of_ASI.md)
+- [Mathematical Foundations](03_Mathematical_Foundations.md)
+- [Unified Intelligence Functional](04_Unified_Intelligence_Functional.md)
+- [Bayesian Reasoning](05_Bayesian_Reasoning.md)
+- [World Models](06_World_Models.md)
+- [Causal Reasoning](07_Causal_Reasoning.md)
+- [Hypothesis Generation](08_Hypothesis_Generation.md)
+- [Information Theory](09_Information_Theory.md)
+- [Optimal Control](10_Optimal_Control.md)
+- [Reinforcement Learning](11_Reinforcement_Learning.md)
+- [Meta-Learning](12_Meta_Learning.md)
+- [Self-Modifying AI](13_Self_Modifying_AI.md)
+- [Digital Twins](14_Digital_Twins.md)
+- [Scientific Discovery](15_Scientific_Discovery.md)
+- [Experiment Planning](16_Experiment_Planning.md)
+- [Multi-Agent Intelligence](17_Multi_Agent_Intelligence.md)
+- [Collective Space Intelligence](18_Collective_Space_Intelligence.md)
+- [Cognitive Architecture](19_Cognitive_Architecture.md)
+- [Space Resource Optimization](20_Space_Resource_Optimization.md)
+- [Formal Verification](21_Formal_Verification.md)
+- [Computational Epistemology](22_Computational_Epistemology.md)
+- [Free Energy Principle](23_Free_Energy_Principle.md)
+- [Knowledge Graphs](24_Knowledge_Graphs.md)
+- [Mission Planning](25_Mission_Planning.md)
+- [Long-Horizon Reasoning](26_Long_Horizon_Reasoning.md)
+- [ASI Agent Architecture](27_ASI_Agent_Architecture.md)
+- [Future Research Directions](28_Future_Research_Directions.md)
+- [References](29_References.md)
