@@ -318,6 +318,54 @@ button:focus-visible {
 .hero-gradient .headline,
 .hero-gradient h1 { color: var(--text-primary); }
 .hero-gradient .subhead { color: var(--text-secondary); }
+
+.home-space-hero {
+  min-height: 430px;
+  display: grid;
+  place-items: center;
+  background: #020617;
+  isolation: isolate;
+}
+
+.home-space-vignette {
+  background:
+    radial-gradient(circle at 50% 44%, transparent 0 15%, rgba(2, 6, 23, 0.08) 38%, rgba(2, 6, 23, 0.88) 100%),
+    linear-gradient(90deg, rgba(2, 6, 23, 0.65), transparent 35%, transparent 65%, rgba(2, 6, 23, 0.65));
+}
+
+.home-hero-primary {
+  background: linear-gradient(135deg, #22d3ee, #38bdf8);
+  color: #082f49;
+  box-shadow: 0 8px 24px rgba(34, 211, 238, 0.26);
+}
+
+.home-hero-secondary {
+  border-color: rgba(207, 250, 254, 0.52);
+  color: #ecfeff;
+  background: rgba(15, 23, 42, 0.36);
+  backdrop-filter: blur(10px);
+}
+
+@media (hover: hover) {
+  .home-hero-primary:hover,
+  .home-hero-secondary:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+  }
+}
+
+@media (max-width: 640px) {
+  .home-space-hero {
+    min-height: 390px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero-primary,
+  .home-hero-secondary {
+    transition: none;
+  }
+}
 .hero-gradient a:not(.btn-ghost) { color: var(--text-on-accent); }
 
 /* Subtle animations for interest */
@@ -951,4 +999,3 @@ footer, .footer {
     padding: 1.35rem 1.1rem;
   }
 }
-
