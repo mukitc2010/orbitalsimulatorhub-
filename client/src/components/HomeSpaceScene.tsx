@@ -40,6 +40,49 @@ function Starfield({ count = 520 }: { count?: number }) {
   );
 }
 
+function ConstellationNetwork({ reducedMotion }: { reducedMotion: boolean }) {
+  const network = useRef<THREE.Group>(null);
+  const nodes = useMemo(
+    () => [
+      new THREE.Vector3(-3.8, 1.55, -1.5),
+      new THREE.Vector3(-2.3, 0.55, -1.9),
+      new THREE.Vector3(-1.1, 1.25, -1.4),
+      new THREE.Vector3(1.15, 1.4, -1.8),
+      new THREE.Vector3(2.6, 0.4, -1.6),
+      new THREE.Vector3(3.75, 1.45, -1.45),
+    ],
+    [],
+  );
+  const links = useMemo(() => {
+    const points: THREE.Vector3[] = [];
+    for (let index = 0; index < nodes.length - 1; index += 1) {
+      points.push(nodes[index], nodes[index + 1]);
+    }
+    return new THREE.BufferGeometry().setFromPoints(points);
+  }, [nodes]);
+
+  useFrame(({ clock }) => {
+    if (!reducedMotion && network.current) {
+      network.current.rotation.z = Math.sin(clock.elapsedTime * 0.12) * 0.035;
+      network.current.position.y = Math.sin(clock.elapsedTime * 0.22) * 0.08;
+    }
+  });
+
+  return (
+    <group ref={network}>
+      <lineSegments geometry={links}>
+        <lineBasicMaterial color="#56dcff" transparent opacity={0.27} />
+      </lineSegments>
+      {nodes.map((node, index) => (
+        <mesh key={index} position={node}>
+          <sphereGeometry args={[0.045, 12, 12]} />
+          <meshBasicMaterial color={index % 2 === 0 ? "#8deeff" : "#a78bfa"} transparent opacity={0.9} />
+        </mesh>
+      ))}
+    </group>
+  );
+}
+
 function Orbit({ radius, tilt, speed, color, reducedMotion }: {
   radius: number;
   tilt: number;
@@ -119,15 +162,26 @@ function EarthSystem({ reducedMotion }: { reducedMotion: boolean }) {
 }
 
 function Scene({ reducedMotion }: { reducedMotion: boolean }) {
+  const cameraGroup = useRef<THREE.Group>(null);
+
+  useFrame(({ clock, pointer }) => {
+    if (reducedMotion || !cameraGroup.current) return;
+    const elapsed = clock.elapsedTime;
+    cameraGroup.current.rotation.x = THREE.MathUtils.lerp(cameraGroup.current.rotation.x, -pointer.y * 0.03, 0.04);
+    cameraGroup.current.rotation.y = THREE.MathUtils.lerp(cameraGroup.current.rotation.y, pointer.x * 0.04, 0.04);
+    cameraGroup.current.position.y = Math.sin(elapsed * 0.18) * 0.12;
+  });
+
   return (
-    <>
+    <group ref={cameraGroup}>
       <color attach="background" args={["#020617"]} />
       <ambientLight intensity={0.35} />
       <directionalLight position={[5, 3, 5]} intensity={2.1} color="#dff8ff" />
       <pointLight position={[-4, -2, -3]} intensity={0.7} color="#2dd4bf" />
       <Starfield />
+      <ConstellationNetwork reducedMotion={reducedMotion} />
       <EarthSystem reducedMotion={reducedMotion} />
-    </>
+    </group>
   );
 }
 
