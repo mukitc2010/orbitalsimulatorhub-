@@ -113,8 +113,14 @@ export function Simulator() {
   return (
     <div className="space-y-6">
       <FAQSchema items={SIMULATOR_FAQS} />
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <h1 className="headline">Simulator</h1>
+      <section className="mission-control-banner rounded-3xl p-6 md:p-8 border overflow-hidden relative">
+        <div className="mission-control-grid" aria-hidden="true" />
+        <div className="relative z-10 flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <p className="text-xs uppercase tracking-[0.22em] font-semibold mb-2" style={{ color: "var(--accent-cyan)" }}>Orbital mission control</p>
+            <h1 className="headline">3D Orbit Simulator</h1>
+            <p className="subhead mt-2 max-w-3xl">Add LEO, MEO, and GEO satellites, then inspect their trajectories, period, and velocity using transparent two-body estimates.</p>
+          </div>
         <div className="flex items-center gap-3">
           <Link href="/simulator/swarm" className="text-sm font-medium px-3 py-1.5 rounded-lg transition" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
             🛰 Swarm Simulator
@@ -129,7 +135,8 @@ export function Simulator() {
             📖 Read the Guide
           </Link>
         </div>
-      </div>
+        </div>
+      </section>
       <p className="subhead">
         Orbit Simulator: add LEO, MEO, GEO satellites and watch real physics. <Link href="/simulator/swarm"><span className="text-[var(--accent-cyan)] font-medium hover:underline">Swarm Simulator</span></Link>: AI collision avoidance with 500+ satellites. <Link href="/simulator/ai-astronaut-robot"><span className="text-[#a78bfa] font-medium hover:underline">AI Astronaut Robot Simulator</span></Link>: build and train space robots. <Link href="/simulator/quantum-space-agi"><span className="text-[#a78bfa] font-medium hover:underline">Quantum Space AGI</span></Link>: black hole flybys with quantum-assisted optimization.
       </p>
