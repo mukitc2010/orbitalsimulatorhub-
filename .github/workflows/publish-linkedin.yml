@@ -1,0 +1,51 @@
+name: Publish Validated Content to LinkedIn
+
+on:
+  pull_request:
+    types:
+      - closed
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    if: >-
+      github.event.pull_request.merged == true &&
+      startsWith(github.event.pull_request.head.ref, 'automation/') &&
+      contains(github.event.pull_request.labels.*.name, 'automated')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --legacy-peer-deps
+      - name: Resolve the article added by the merged pull request
+        id: article
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          files="$(gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" --paginate --jq '.[].filename')"
+          if ! grep -qx "client/src/data/blogPosts.ts" <<< "$files"; then
+            echo "No blog post changed; skipping LinkedIn publication."
+            exit 0
+          fi
+          slug="$(git diff "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.merge_commit_sha }}" -- client/src/data/blogPosts.ts | sed -n 's/^+ *slug: "\([^"]*\)",/\1/p' | tail -1)"
+          if [ -z "$slug" ]; then
+            echo "No added blog slug found; skipping LinkedIn publication."
+            exit 0
+          fi
+          echo "slug=$slug" >> "$GITHUB_OUTPUT"
+      - name: Publish to LinkedIn organization page
+        if: steps.article.outputs.slug != ''
+        env:
+          BLOG_SLUG: ${{ steps.article.outputs.slug }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_ORGANIZATION_URN: ${{ secrets.LINKEDIN_ORGANIZATION_URN }}
+        run: node scripts/post-to-social.js
