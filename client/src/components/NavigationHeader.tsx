@@ -43,7 +43,6 @@ const NAV = [
   { path: "/research/asi-astronaut-mathematics", label: "ASI", title: "ASI Astronaut Mathematics — autonomy, optimal control, and Mars mission systems" },
   { path: "/blog", label: "Blog", title: "Daily space news, aerospace, AI in space, research", subnav: BLOG_SUBNAV },
   { path: "/astrobot", label: "AstroBot", title: "Ask AstroBot anything about space, orbits, and satellites" },
-  { path: "/marketing-ai-agent", label: "Marketing AI", title: "Launch campaigns, growth strategies, and brand messaging for your space-tech brand" },
   { path: "/research", label: "Research", title: "NASA, Newton, orbital mechanics — for students and PhD researchers" },
 ];
 
