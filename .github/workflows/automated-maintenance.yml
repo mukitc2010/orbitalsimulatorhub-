@@ -32,6 +32,7 @@ jobs:
         run: npm run content:generate
         env:
           AI_PROVIDER: anthropic
+          PRODUCTION_RESEARCH: "true"
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: claude-sonnet-4-20250514
       - run: npm run seo:auto

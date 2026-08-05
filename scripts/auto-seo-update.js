@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 /**
  * Auto SEO Update — runs every 2 hours (via n8n or Task Scheduler)
- * Updates sitemap lastmod to today, commits and pushes if changes detected.
+ * Updates sitemap lastmod to today. GitHub Actions handles commits and PRs.
  */
 
 import { readFileSync, writeFileSync } from "fs";
-import { execSync } from "child_process";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
@@ -34,29 +33,9 @@ function updateSitemapLastmod() {
   return true;
 }
 
-function gitCommitAndPush() {
-  const today = getToday();
-  try {
-    execSync("git add client/public/sitemap.xml", { cwd: projectRoot, stdio: "pipe" });
-    const status = execSync("git status --porcelain", { cwd: projectRoot, encoding: "utf8" });
-    if (!status.trim()) {
-      console.log("[auto-seo] No changes to commit");
-      return;
-    }
-    execSync(`git commit -m "SEO: auto-update sitemap lastmod ${today}"`, { cwd: projectRoot, stdio: "pipe" });
-    execSync("git push origin main", { cwd: projectRoot, stdio: "pipe" });
-    console.log("[auto-seo] Pushed to GitHub");
-  } catch (err) {
-    console.error("[auto-seo] Git error:", err.message);
-  }
-}
-
 function main() {
   console.log(`[auto-seo] Running at ${new Date().toISOString()}`);
-  const changed = updateSitemapLastmod();
-  if (changed) {
-    gitCommitAndPush();
-  }
+  updateSitemapLastmod();
 }
 
 main();
