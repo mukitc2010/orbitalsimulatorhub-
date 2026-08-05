@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Content Agent — Ollama-powered daily content generator
+ * Research Content Agent — NASA-style scientific content generator
  *
  * Generates:
  *   1. One blog post → appended to client/src/data/blogPosts.ts
@@ -12,8 +12,8 @@
  *   node scripts/content-agent.js --category satellite-tutorials
  *   node scripts/content-agent.js --dry-run    (print without writing)
  *
- * Requires Ollama running at localhost:11434 with a model installed.
- * Falls back to template content if Ollama is unavailable.
+ * Requires an AI provider. Production automation requires Anthropic and fails
+ * closed when the provider is unavailable, preventing uncited content updates.
  */
 
 import fs from 'fs';
@@ -33,6 +33,7 @@ const OLLAMA_URL = process.env.OLLAMA_URL || 'http://localhost:11434';
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || 'llama3';
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || '';
 const ANTHROPIC_MODEL = process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514';
+const PRODUCTION_RESEARCH = process.env.PRODUCTION_RESEARCH === 'true';
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
@@ -52,10 +53,9 @@ function pickRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-async function claudeGenerate(prompt, fallback) {
+async function claudeGenerate(prompt) {
   if (!ANTHROPIC_API_KEY) {
-    console.warn('⚠ ANTHROPIC_API_KEY not set, falling back to Ollama...');
-    return ollamaGenerate(prompt, fallback);
+    throw new Error('ANTHROPIC_API_KEY is required for NASA-style research generation');
   }
   try {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
@@ -74,14 +74,17 @@ async function claudeGenerate(prompt, fallback) {
     if (!res.ok) throw new Error(`Anthropic ${res.status}`);
     const data = await res.json();
     const text = data.content?.[0]?.text || '';
-    return text.trim() || fallback;
+    if (!text.trim()) throw new Error('Anthropic returned no content');
+    return text.trim();
   } catch (e) {
-    console.warn(`⚠ Claude unavailable (${e.message}), falling back to Ollama...`);
-    return ollamaGenerate(prompt, fallback);
+    throw new Error(`Anthropic generation failed: ${e.message}`);
   }
 }
 
-async function ollamaGenerate(prompt, fallback) {
+async function ollamaGenerate(prompt) {
+  if (PRODUCTION_RESEARCH) {
+    throw new Error('Production research generation requires Anthropic');
+  }
   try {
     const res = await fetch(`${OLLAMA_URL}/api/generate`, {
       method: 'POST',
@@ -90,16 +93,16 @@ async function ollamaGenerate(prompt, fallback) {
     });
     if (!res.ok) throw new Error(`Ollama ${res.status}`);
     const data = await res.json();
-    return (data.response || '').trim() || fallback;
+    if (!data.response?.trim()) throw new Error('Ollama returned no content');
+    return data.response.trim();
   } catch (e) {
-    console.warn(`⚠ Ollama unavailable (${e.message}), using template fallback.`);
-    return fallback;
+    throw new Error(`Ollama generation failed: ${e.message}`);
   }
 }
 
-async function aiGenerate(prompt, fallback) {
-  if (AI_PROVIDER === 'anthropic') return claudeGenerate(prompt, fallback);
-  return ollamaGenerate(prompt, fallback);
+async function aiGenerate(prompt) {
+  if (AI_PROVIDER === 'anthropic') return claudeGenerate(prompt);
+  return ollamaGenerate(prompt);
 }
 
 // ─── Load topics ───────────────────────────────────────
@@ -128,37 +131,15 @@ function pickCategory() {
 
 // ─── Generate blog post ────────────────────────────────
 
-function templateBlogContent(title, category) {
-  return `**Introduction**
-
-${title} is a fascinating topic in space science and physics that connects to how we explore and understand the universe.
-
-**Key Points**
-
-- This topic demonstrates fundamental principles of ${category.name.toLowerCase()}
-- Real-world applications range from satellite technology to deep space missions
-- Understanding this helps explain phenomena that shape our understanding of the cosmos
-
-**How It Works**
-
-The science behind ${title.toLowerCase()} involves principles that aerospace engineers, physicists, and NASA scientists use daily. From orbital mechanics to quantum effects, these concepts are the building blocks of modern space exploration.
-
-Key principles include:
-- The mathematical relationships governing motion and energy in space
-- How measurements and observations lead to testable predictions
-- Engineering applications that put theory into practice
-
-**Real-World Applications**
-
-- NASA missions rely on these principles for trajectory planning and mission design
-- Satellite operators use related physics for constellation management
-- Research institutions advance our understanding through experiments and observation
-
-**Conclusion**
-
-${title} illustrates the beauty and complexity of physics at work in the cosmos. Whether you are a student, researcher, or enthusiast, understanding these concepts opens the door to appreciating the engineering and science that make space exploration possible.
-
-Explore more on our [orbit simulator](/simulator), [Space Shop](/space-shop) (NASA t-shirts, books, toys), and [orbital mechanics guide](/learn/orbital-mechanics).`;
+function hasRequiredScientificSections(content) {
+  const requiredHeadings = [
+    "## Scope and evidence",
+    "## Technical analysis",
+    "## Limitations and uncertainty",
+    "## Sources",
+  ];
+  const primarySource = /https?:\/\/(?:www\.)?(?:nasa\.gov|science\.nasa\.gov|ntrs\.nasa\.gov|jpl\.nasa\.gov|esa\.int|arxiv\.org|doi\.org)\//i;
+  return requiredHeadings.every((heading) => content.includes(heading)) && primarySource.test(content);
 }
 
 function getAffiliateBooksForCategory(categoryId) {
@@ -182,8 +163,10 @@ async function generateBlogPost(cat) {
   const title = topic;
   const slug = slugify(title) + '-' + today().replace(/-/g, '');
   const prompt = topicsData.blog_prompt.replace('{topic}', topic);
-  const fallback = templateBlogContent(title, cat);
-  let content = await aiGenerate(prompt, fallback);
+  let content = await aiGenerate(prompt);
+  if (!hasRequiredScientificSections(content)) {
+    throw new Error('Generated article did not meet required NASA-style evidence and citation standards');
+  }
   content = appendAffiliateSection(content, cat.id);
   const excerpt = `Learn about ${title.toLowerCase()} — covering the science, real-world applications, and how it connects to space exploration.`;
 
@@ -227,18 +210,15 @@ async function generateDailyContent(blogPost) {
     const hCat = pickRandom(highlightCats);
     const hTopic = pickRandom(hCat.topics);
     const hPrompt = topicsData.highlight_prompt.replace('{topic}', hTopic);
-    const hFallback = `${hTopic} is a key area in ${hCat.name.toLowerCase()} that impacts how we understand and explore space.`;
-    const blurb = await aiGenerate(hPrompt, hFallback);
+    const blurb = await aiGenerate(hPrompt);
     const icons = ['rocket', 'atom', 'plane', 'satellite', 'star', 'telescope'];
     pickedHighlights.push({ title: hTopic.length > 50 ? hTopic.slice(0, 47) + '...' : hTopic, blurb, icon: icons[i % icons.length] });
   }
 
   const featuredPrompt = topicsData.featured_prompt.replace('{topic}', blogPost.title);
-  const featuredFallback = `${blogPost.title} is one of the most important concepts in modern space science. Understanding it helps explain everything from satellite orbits to deep space missions.`;
-  const featuredExcerpt = await aiGenerate(featuredPrompt, featuredFallback);
+  const featuredExcerpt = await aiGenerate(featuredPrompt);
 
-  const factFallback = 'The Sun loses about 4 million tons of mass every second through nuclear fusion, converting hydrogen into helium and releasing the energy that lights our solar system.';
-  const didYouKnow = await aiGenerate(topicsData.fact_prompt, factFallback);
+  const didYouKnow = await aiGenerate(topicsData.fact_prompt);
 
   // Read existing blog posts for latest_posts
   const blogSrc = fs.readFileSync(BLOG_FILE, 'utf8');
@@ -285,6 +265,7 @@ async function main() {
   console.log('🤖 Content Agent starting...');
   console.log(`   Provider: ${AI_PROVIDER}`);
   console.log(`   Model: ${AI_PROVIDER === 'anthropic' ? ANTHROPIC_MODEL : OLLAMA_MODEL}`);
+  console.log(`   Production research standards: ${PRODUCTION_RESEARCH}`);
   console.log(`   Dry run: ${DRY_RUN}`);
   console.log('');
 

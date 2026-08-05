@@ -7,12 +7,7 @@ import cors from "cors";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import { appRouter } from "./routers";
 import { createContext } from "./_core/context";
-import { createBlogRouter } from "./blog-api";
-import { createSEORouter } from "./seo-api";
-import { createDailyTopicsRouter } from "./daily-topics-api";
 import { createAstroBotRouter } from "./astrobot-api";
-import { createResearchContentRouter } from "./research-content-api";
-import { createGitDeployRouter } from "./git-deploy-api";
 import { createChatRouter } from "./chat-api";
 import { createQsagiRouter } from "./qsagi-api";
 
@@ -21,12 +16,7 @@ export function createApp() {
   app.use(cors({ origin: true }));
   app.use(express.json());
 
-  app.use("/api/blog", createBlogRouter());
-  app.use("/api/seo", createSEORouter());
-  app.use("/api/daily-topics", createDailyTopicsRouter());
   app.use("/api/astrobot", createAstroBotRouter());
-  app.use("/api/research", createResearchContentRouter());
-  app.use("/api/git", createGitDeployRouter());
   app.use("/api/chat", createChatRouter());
   app.use("/api/qsagi", createQsagiRouter());
   app.use(

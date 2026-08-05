@@ -1,0 +1,46 @@
+name: Automated Maintenance
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: automated-maintenance
+  cancel-in-progress: false
+
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --legacy-peer-deps
+      - run: npm run seo:auto
+      - run: npm run generate:rss
+      - run: npm run test:run -- --passWithNoTests
+      - run: npm run build
+      - name: Create automated pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/maintenance
+          delete-branch: true
+          title: "chore: automated SEO maintenance"
+          commit-message: "chore: automated SEO maintenance"
+          body: |
+            Automated SEO maintenance run.
+
+            Updated sitemap and RSS changes passed the repository validation workflow.
+          labels: automated

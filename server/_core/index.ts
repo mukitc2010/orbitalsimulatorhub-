@@ -6,12 +6,7 @@ import { fileURLToPath } from "url";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
-import { createBlogRouter } from "../blog-api";
-import { createSEORouter } from "../seo-api";
-import { createDailyTopicsRouter } from "../daily-topics-api";
 import { createAstroBotRouter } from "../astrobot-api";
-import { createResearchContentRouter } from "../research-content-api";
-import { createGitDeployRouter } from "../git-deploy-api";
 import { createChatRouter } from "../chat-api";
 import { createQsagiRouter } from "../qsagi-api";
 
@@ -23,23 +18,7 @@ const app = express();
 app.use(cors({ origin: true }));
 app.use(express.json());
 
-// Blog API endpoints for n8n automation
-app.use("/api/blog", createBlogRouter());
-
-// SEO API endpoints for n8n automation
-app.use("/api/seo", createSEORouter());
-
-// Daily Topics API endpoints for n8n automation
-app.use("/api/daily-topics", createDailyTopicsRouter());
-
-// AstroBot Knowledge API endpoints for n8n automation
 app.use("/api/astrobot", createAstroBotRouter());
-
-// Research Content API endpoints for n8n automation
-app.use("/api/research", createResearchContentRouter());
-
-// Git Deploy API endpoints for n8n automation
-app.use("/api/git", createGitDeployRouter());
 app.use("/api/chat", createChatRouter());
 app.use("/api/qsagi", createQsagiRouter());
 // tRPC endpoints

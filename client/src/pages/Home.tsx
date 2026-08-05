@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { Link } from "wouter";
 import { DailyTopicIcon } from "../components/DailyTopicIcon";
 import { ShareBar } from "../components/ShareBar";
 import { BLOG_POSTS } from "../data/blogPosts";
 import { getBlogImage } from "../data/blogImages";
+
+const HomeSpaceScene = lazy(() => import("../components/HomeSpaceScene").then((module) => ({ default: module.HomeSpaceScene })));
 
 const FEATURES = [
   { href: "/simulator", icon: "🛸", title: "3D Simulator", desc: "Add LEO, MEO, GEO satellites. Watch orbits in real time.", color: "cyan" },
@@ -216,39 +218,44 @@ export function Home() {
           </div>
         </section>
 
-          {/* Hero — Intelligence for the Space Age */}
-        <section className="rounded-2xl px-6 py-8 sm:py-10 text-center mb-8 hero-gradient" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.2)" }}>
-        <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">Space Engineering • AI • Quantum • Daily News • Futuristic</p>
-        <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2 leading-tight">
-          OrbitalSimulatorHub — Intelligence for the Space Age
-        </h1>
-        <p className="text-base sm:text-lg text-white/90 max-w-xl mx-auto mb-5">
-          Space AGI, orbital mechanics, quantum computing in space, aerospace formulas. New posts daily. Everything futuristic and helpful.
-        </p>
-        <div className="flex flex-wrap justify-center gap-2 mb-4">
-          <Link href="/simulator">
-            <a className="px-5 py-2.5 rounded-xl font-semibold text-sm transition hover:opacity-95" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>
-              🛰 Open Orbital Simulator
-            </a>
-          </Link>
-          <Link href="/astrobot">
-            <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-on-accent)" }}>
-              🤖 Ask AstroBot
-            </a>
-          </Link>
-          <Link href="/research/space-agi-lab">
-            <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-on-accent)" }}>
-              🔬 Space-AGI Lab
-            </a>
-          </Link>
-          <Link href="/ai-in-aerospace">
-            <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-pink)", color: "var(--text-on-accent)" }}>
-              🚀 AI in Space
-            </a>
-          </Link>
-        </div>
-          <p className="text-xs text-slate-400">Trusted by students, engineers, researchers worldwide</p>
-          <ShareBar path="/" showRedditSubs />
+        {/* Hero — Intelligence for the Space Age */}
+        <section className="home-space-hero rounded-3xl px-6 py-12 sm:py-16 text-center mb-8 overflow-hidden relative" style={{ boxShadow: "0 18px 56px rgba(0,0,0,0.32)" }}>
+          <Suspense fallback={<div className="absolute inset-0 hero-gradient" aria-hidden="true" />}>
+            <HomeSpaceScene />
+          </Suspense>
+          <div className="relative z-10 max-w-2xl mx-auto">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-cyan-100 mb-3">Space Engineering • AI • Quantum • Daily News • Futuristic</p>
+            <h1 className="text-3xl sm:text-5xl font-bold text-white mb-3 leading-tight">
+              OrbitalSimulatorHub — Intelligence for the Space Age
+            </h1>
+            <p className="text-base sm:text-lg text-slate-100 max-w-xl mx-auto mb-6">
+              Space AGI, orbital mechanics, quantum computing in space, aerospace formulas, and interactive mission learning.
+            </p>
+            <div className="flex flex-wrap justify-center gap-2 mb-5">
+              <Link href="/simulator">
+                <a className="px-5 py-2.5 rounded-xl font-semibold text-sm transition home-hero-primary">
+                  🛰 Open Orbital Simulator
+                </a>
+              </Link>
+              <Link href="/astrobot">
+                <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border transition home-hero-secondary">
+                  🤖 Ask AstroBot
+                </a>
+              </Link>
+              <Link href="/research/space-agi-lab">
+                <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border transition home-hero-secondary">
+                  🔬 Space-AGI Lab
+                </a>
+              </Link>
+              <Link href="/ai-in-aerospace">
+                <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border transition home-hero-secondary">
+                  🚀 AI in Space
+                </a>
+              </Link>
+            </div>
+            <p className="text-xs text-slate-300">Trusted by students, engineers, and researchers worldwide</p>
+            <ShareBar path="/" showRedditSubs />
+          </div>
         </section>
 
         <section className="glass-panel rounded-2xl p-5 md:p-6 mb-8">
