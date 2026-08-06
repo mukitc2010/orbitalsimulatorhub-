@@ -1,0 +1,27 @@
+name: Promote pre-production to main
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: Type PROMOTE to merge the tested pre-production branch into main
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    if: inputs.confirm == 'PROMOTE'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Fast-forward main from pre-production
+        run: |
+          git fetch origin main pre-production
+          git merge --ff-only origin/pre-production
+          git push origin HEAD:main
