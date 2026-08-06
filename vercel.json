@@ -128,15 +128,5 @@
         }
       ]
     }
-  ],
-  "experimentalServices": {
-    "frontend": {
-      "routePrefix": "/",
-      "framework": "vite"
-    },
-    "qiskit": {
-      "entrypoint": "services/qiskit",
-      "routePrefix": "/_/qiskit"
-    }
-  }
+  ]
 }

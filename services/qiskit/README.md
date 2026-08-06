@@ -2,6 +2,13 @@
 
 Placeholder service for quantum-assisted trajectory optimization. Replace with real Qiskit (QAOA, VQE, etc.) later.
 
+## Deployment boundary
+
+This service is intentionally not deployed with the Vercel static frontend. Qiskit and its scientific
+Python dependencies substantially increase a serverless deployment bundle. Deploy this directory as a
+separate Docker or Python service and configure `QASSIST_URL` in the application environment to its
+public base URL.
+
 ## Endpoints
 
 - `GET /health` — Health check
