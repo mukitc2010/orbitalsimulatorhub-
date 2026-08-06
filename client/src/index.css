@@ -346,6 +346,65 @@ body {
     animation: none;
   }
 }
+
+.simulator-visualization {
+  position: relative;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(0, 129, 196, 0.18), transparent 38%),
+    linear-gradient(145deg, #020617, #07172d);
+  border-color: rgba(0, 217, 255, 0.35);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.32), inset 0 0 60px rgba(0, 217, 255, 0.05);
+}
+
+.simulator-visualization::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 26%, transparent 72%, rgba(0, 217, 255, 0.08));
+}
+
+.simulator-hud {
+  position: absolute;
+  z-index: 2;
+  border: 1px solid rgba(0, 217, 255, 0.28);
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  color: #b9f5ff;
+  background: rgba(2, 12, 28, 0.7);
+  backdrop-filter: blur(10px);
+  font-family: "Space Mono", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+}
+
+.simulator-hud-top-left { top: 1rem; left: 1rem; }
+.simulator-hud-bottom-right { right: 1rem; bottom: 1rem; color: rgba(217, 248, 255, 0.72); }
+
+.simulator-hud-dot {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  background: #50f2a6;
+  box-shadow: 0 0 10px #50f2a6;
+  animation: simulator-live-pulse 2s ease-in-out infinite;
+}
+
+@keyframes simulator-live-pulse {
+  0%, 100% { opacity: 0.5; transform: scale(0.86); }
+  50% { opacity: 1; transform: scale(1.12); }
+}
+
+@media (max-width: 640px) {
+  .simulator-visualization { height: 420px; }
+  .simulator-hud-bottom-right { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .simulator-hud-dot { animation: none; }
+}
 [data-theme="light-clean"] .home-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;

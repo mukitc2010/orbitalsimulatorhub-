@@ -1,4 +1,4 @@
-import { useRef, useMemo } from "react";
+import { useMemo, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere, Line } from "@react-three/drei";
 import * as THREE from "three";
@@ -6,15 +6,50 @@ import * as THREE from "three";
 const EARTH_RADIUS = 1;
 const GRID_SIZE = 32;
 
-function EarthSphere() {
+function Starfield() {
+  const positions = useMemo(() => {
+    const values = new Float32Array(260 * 3);
+    for (let index = 0; index < 260; index += 1) {
+      const radius = 7 + Math.random() * 15;
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos(2 * Math.random() - 1);
+      values[index * 3] = radius * Math.sin(phi) * Math.cos(theta);
+      values[index * 3 + 1] = radius * Math.cos(phi);
+      values[index * 3 + 2] = radius * Math.sin(phi) * Math.sin(theta);
+    }
+    return values;
+  }, []);
+
   return (
-    <Sphere args={[EARTH_RADIUS, 64, 64]}>
-      <meshStandardMaterial
-        color="#1e3a5f"
-        wireframe={false}
-        emissive="#0a1628"
-      />
-    </Sphere>
+    <points>
+      <bufferGeometry>
+        <bufferAttribute attach="attributes-position" args={[positions, 3]} />
+      </bufferGeometry>
+      <pointsMaterial color="#dff8ff" size={0.025} sizeAttenuation transparent opacity={0.82} depthWrite={false} />
+    </points>
+  );
+}
+
+function EarthSphere() {
+  const earth = useRef<THREE.Group>(null);
+
+  useFrame((_, delta) => {
+    if (earth.current) earth.current.rotation.y += delta * 0.04;
+  });
+
+  return (
+    <group ref={earth}>
+      <Sphere args={[EARTH_RADIUS, 64, 64]}>
+        <meshStandardMaterial color="#0b5fa5" emissive="#041b38" emissiveIntensity={0.9} roughness={0.72} metalness={0.12} />
+      </Sphere>
+      <Sphere args={[EARTH_RADIUS * 1.028, 48, 48]}>
+        <meshBasicMaterial color="#38d9ff" transparent opacity={0.11} side={THREE.BackSide} />
+      </Sphere>
+      <mesh rotation={[0.25, 0, 0]}>
+        <torusGeometry args={[EARTH_RADIUS * 1.23, 0.008, 8, 96]} />
+        <meshBasicMaterial color="#28d7ff" transparent opacity={0.3} />
+      </mesh>
+    </group>
   );
 }
 
@@ -57,11 +92,11 @@ function SatelliteMesh({
   const threeColor = useMemo(() => new THREE.Color(color), [color]);
   return (
     <mesh position={position}>
-      <boxGeometry args={[scale * 2, scale, scale]} />
+      <boxGeometry args={[scale * 3, scale, scale * 1.4]} />
       <meshStandardMaterial 
         color={threeColor} 
         emissive={threeColor} 
-        emissiveIntensity={0.5}
+        emissiveIntensity={1.5}
       />
     </mesh>
   );
@@ -73,12 +108,12 @@ function TrailLine({ points, color }: { points: [number, number, number][]; colo
   const vecs = useMemo(() => points.map((p) => new THREE.Vector3(...p)), [points]);
   // Use color string directly - drei Line accepts both string and THREE.Color
   return (
-    <Line 
+    <Line
       points={vecs} 
       color={color} 
-      lineWidth={2} 
+      lineWidth={2.5}
       transparent 
-      opacity={0.7}
+      opacity={0.82}
     />
   );
 }
@@ -100,20 +135,25 @@ export function EarthVisualization({
   satellites: SatelliteState[];
   scale?: number;
 }) {
-  const norm = (x: number, y: number, z: number): [number, number, number] => [
-    x / scale,
-    y / scale,
-    z / scale,
-  ];
-
   return (
-    <div className="w-full h-[480px] rounded-lg overflow-hidden border-2 border-[var(--accent-cyan)] bg-black">
+    <div className="simulator-visualization w-full h-[520px] rounded-2xl overflow-hidden border" aria-label="Interactive 3D Earth orbit visualization">
+      <div className="simulator-hud simulator-hud-top-left">
+        <span className="simulator-hud-dot" />
+        LIVE ORBITAL VIEW
+      </div>
+      <div className="simulator-hud simulator-hud-bottom-right">
+        DRAG TO ROTATE · SCROLL TO ZOOM
+      </div>
       <Canvas
-        camera={{ position: [3, 2, 3], fov: 50 }}
-        gl={{ antialias: true }}
+        camera={{ position: [3.4, 2.1, 3.8], fov: 46 }}
+        dpr={[1, 1.5]}
+        gl={{ antialias: true, powerPreference: "high-performance" }}
       >
-        <ambientLight intensity={0.4} />
-        <pointLight position={[10, 10, 10]} intensity={1} />
+        <color attach="background" args={["#020617"]} />
+        <ambientLight intensity={0.32} />
+        <pointLight position={[5, 4, 5]} intensity={2.4} color="#dff8ff" />
+        <pointLight position={[-4, -2, -3]} intensity={0.8} color="#1ec8ff" />
+        <Starfield />
         <EarthSphere />
         <EarthGrid />
         <OrbitControls
