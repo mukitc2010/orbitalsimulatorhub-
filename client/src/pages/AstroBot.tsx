@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { getAstroBotReplyLocal, ASTROBOT_FALLBACK } from "../astrobotKnowledge";
 import { generateAstroBotResponse } from "../lib/astrobotEngine";
 import { AstroBotChat } from "../components/astrobot/AstroBotChat";
+import { AstroBotHologram } from "../components/astrobot/AstroBotHologram";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -959,15 +960,9 @@ export function AstroBot() {
 
   return (
     <div className="max-w-4xl mx-auto space-y-6">
-      {/* Header */}
-      <section className="hero-gradient rounded-2xl px-6 py-10 text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: "var(--accent-primary)" }}>
-          Official AI Instructor · Orbital Simulator Hub
-        </p>
-        <h1 className="headline mb-2">🛰️ AstroBot</h1>
-        <p className="subhead max-w-xl mx-auto">
-          Your space & orbital mechanics instructor. Ask anything about orbits, missions, planets, math, or how to use the simulator.
-        </p>
+      <AstroBotHologram />
+
+      <section className="rounded-2xl px-6 py-5 text-center border" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
         <button
           onClick={() => setAgiMode(!agiMode)}
           className="mt-4 px-4 py-2 rounded-xl font-bold text-sm"

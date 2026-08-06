@@ -264,6 +264,88 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+.astrobot-hologram {
+  background:
+    radial-gradient(circle at 20% 50%, rgba(0, 217, 255, 0.2), transparent 36%),
+    radial-gradient(circle at 78% 20%, rgba(139, 92, 246, 0.15), transparent 35%),
+    linear-gradient(135deg, rgba(2, 12, 28, 0.94), rgba(8, 27, 52, 0.82));
+  border-color: rgba(0, 217, 255, 0.3);
+  box-shadow: 0 18px 56px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.astrobot-hologram-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 217, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: linear-gradient(90deg, transparent, black 22%, black 78%, transparent);
+  opacity: 0.55;
+}
+
+.astrobot-orb {
+  width: 154px;
+  height: 154px;
+  position: relative;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  filter: drop-shadow(0 0 28px rgba(0, 217, 255, 0.38));
+}
+
+.astrobot-orb-core {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 30%, #e7fbff 0 6%, #72e8ff 18%, #0a9cd5 48%, #12355e 72%, transparent 73%);
+  box-shadow: 0 0 22px rgba(98, 231, 255, 0.9), inset -8px -8px 16px rgba(2, 12, 32, 0.52);
+  animation: astrobot-core-pulse 3.6s ease-in-out infinite;
+}
+
+.astrobot-orbit {
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  border: 1px solid rgba(111, 231, 255, 0.62);
+  border-radius: 50%;
+  animation: astrobot-orbit-spin 9s linear infinite;
+}
+
+.astrobot-orbit-one { transform: rotate(18deg); }
+.astrobot-orbit-two { transform: rotate(78deg) scale(0.86); animation-direction: reverse; animation-duration: 12s; }
+.astrobot-orbit-three { transform: rotate(138deg) scale(0.72); animation-duration: 7s; }
+
+.astrobot-node {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d7fbff;
+  box-shadow: 0 0 13px #2ee9ff;
+}
+
+.astrobot-node-one { top: 20px; right: 25px; }
+.astrobot-node-two { bottom: 20px; left: 26px; background: #c4b5fd; box-shadow: 0 0 13px #a78bfa; }
+.astrobot-node-three { left: 10px; top: 70px; }
+
+@keyframes astrobot-core-pulse {
+  0%, 100% { transform: scale(0.96); opacity: 0.88; }
+  50% { transform: scale(1.08); opacity: 1; }
+}
+
+@keyframes astrobot-orbit-spin {
+  to { rotate: 360deg; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .astrobot-orb-core,
+  .astrobot-orbit {
+    animation: none;
+  }
+}
 [data-theme="light-clean"] .home-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;
