@@ -13,6 +13,7 @@ import {
 import { GlassCard } from "../components/GlassCard";
 import { NeonButton } from "../components/NeonButton";
 import {
+  EARTH_RADIUS_KM,
   getOrbitalPeriodMinutes,
   getOrbitTemplate,
   getRealWorldLike,
@@ -49,6 +50,9 @@ export function SimulatorScreen() {
   useEffect(() => () => sceneRef.current?.dispose(), []);
 
   const onContextCreate = useCallback((gl: ExpoWebGLRenderingContext) => {
+    // Android recreates the GL context when the app returns from background;
+    // dispose the previous scene so its frame loop and GPU resources are freed.
+    sceneRef.current?.dispose();
     const scene = new OrbitalScene(gl);
     scene.speedMultiplier = SPEED_STEPS[2];
     scene.onTelemetry = (t) => {
@@ -232,7 +236,7 @@ export function SimulatorScreen() {
         {selected && (
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginTop: spacing.sm }}>
             <Text style={styles.orbitNote}>
-              {getRealWorldLike(selected.elements.semiMajorAxisKm - 6371)} · i=
+              {getRealWorldLike(selected.elements.semiMajorAxisKm - EARTH_RADIUS_KM)} · i=
               {selected.elements.inclinationDeg.toFixed(1)}° · e=
               {selected.elements.eccentricity.toFixed(4)}
             </Text>

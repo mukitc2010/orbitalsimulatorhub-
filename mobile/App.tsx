@@ -27,7 +27,8 @@ export default function App() {
         <StatusBar style="light" />
         <View style={styles.content}>
           {tab === "home" && <HomeScreen onLaunch={() => setTab("simulator")} />}
-          {/* Keep the simulator mounted once visited so the GL context survives tab switches */}
+          {/* Simulator unmounts on tab switch: the GL context is released and
+              deployed satellites reset — an ISS-like one is redeployed on return */}
           {tab === "simulator" && <SimulatorScreen />}
           {tab === "learn" && <LearnScreen />}
           {tab === "quiz" && <QuizScreen />}
