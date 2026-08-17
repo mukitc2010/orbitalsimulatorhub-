@@ -52,11 +52,27 @@ pnpm build
 NODE_ENV=production pnpm start
 ```
 
+## Mobile app (iOS + Android)
+
+A futuristic 3D-animated mobile companion app lives in **[mobile/](./mobile/)** —
+an Expo (React Native) + Three.js app with a holographic shader-rendered Earth,
+Kepler-propagated satellites, orbit trails, a Newton's-laws learning deck and a space
+quiz. It ships to both the Apple App Store and Google Play from one codebase; see
+[mobile/APP-STORE-PUBLISHING.md](./mobile/APP-STORE-PUBLISHING.md) for the
+step-by-step store submission guide.
+
+```bash
+cd mobile
+npm install
+npm start   # scan the QR code with Expo Go on your phone
+```
+
 ## Project structure
 
 - **client/** — React 19 + Tailwind + Three.js frontend
 - **server/** — Express + tRPC backend, orbital logic (TypeScript + optional Python)
 - **shared/** — Shared types and constants
+- **mobile/** — Expo (React Native) iOS/Android app with 3D simulator
 - **drizzle/** — Schema and migrations
 
 ## Features
