@@ -96,8 +96,8 @@ export function HomeScreen({ onLaunch }: Props) {
         <GlassCard style={styles.featureCard} accent={colors.violet}>
           <Text style={[styles.featureTitle, { color: colors.violet }]}>◇ LEARN AS YOU FLY</Text>
           <Text style={styles.featureText}>
-            Newton's laws, orbital formulas with built-in calculators, space fun facts and a quiz to
-            test your astronaut knowledge.
+            A library of 15 mission topics — from Kepler's laws to Mars rovers, the Webb telescope
+            and reentry physics — plus a live orbit calculator, fun facts and an astronaut quiz.
           </Text>
         </GlassCard>
         <GlassCard style={styles.featureCard} accent={colors.magenta}>

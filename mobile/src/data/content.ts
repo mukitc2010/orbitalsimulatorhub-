@@ -94,6 +94,44 @@ export const QUIZ: QuizQuestion[] = [
       "GPS uses Medium Earth Orbit at ~20,200 km, circling Earth about twice per day.",
   },
   {
+    question: "Where does most of the heat of reentry come from?",
+    options: [
+      "Friction rubbing against the air",
+      "The engines firing backwards",
+      "Air compressed by the spacecraft's shockwave",
+      "Sunlight focused by the atmosphere",
+    ],
+    answerIndex: 2,
+    explanation:
+      "A returning craft rams into air faster than it can move aside, compressing it into a glowing shock layer thousands of degrees hot — compression, not friction, does the heating.",
+  },
+  {
+    question: "Why does the James Webb Space Telescope observe in infrared?",
+    options: [
+      "Infrared cameras are cheaper",
+      "Expansion of the universe stretches ancient light into infrared",
+      "Infrared passes through Earth's clouds",
+      "Stars only emit infrared light",
+    ],
+    answerIndex: 1,
+    explanation:
+      "Light from the earliest galaxies has been stretched (redshifted) out of the visible range by the expanding universe — to see the first stars, you must look in infrared.",
+  },
+  {
+    question: "Without the 38 μs/day relativity correction, GPS positions would drift by about…",
+    options: ["A few centimeters a day", "10 meters a day", "10 km a day", "Nothing — GPS ignores relativity"],
+    answerIndex: 2,
+    explanation:
+      "Satellite clocks run 38 microseconds per day fast due to relativity. At the speed of light that's roughly 10 km of position error per day if uncorrected.",
+  },
+  {
+    question: "How much of a typical rocket's launch mass is propellant?",
+    options: ["About 10%", "About 50%", "About 90%", "About 99.9%"],
+    answerIndex: 2,
+    explanation:
+      "The rocket equation is brutal: reaching orbital speed requires roughly 90% of liftoff mass to be propellant, which is why rockets shed empty stages as they climb.",
+  },
+  {
     question: "What does an orbit's eccentricity describe?",
     options: [
       "How tilted the orbit is",

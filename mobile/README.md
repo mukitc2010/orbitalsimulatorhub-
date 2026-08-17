@@ -12,9 +12,11 @@ One codebase ships to both the Apple App Store and Google Play.
   orbit trails, pause and time-warp up to 3600×, drag to orbit the camera, pinch to zoom.
 - 🌌 **Futuristic UI** — deep-space neon theme, animated twinkling starfields,
   glassmorphism panels, glowing orbit emblem on the home screen.
-- ∑ **Learn** — Newton's three laws plus a live orbit calculator
-  (v = √(μ/r), T = 2π√(a³/μ), escape velocity) using the same constants as the web simulator.
-- ★ **Quiz Deck** — rotating space fun facts and an 8-question astronaut quiz with ranks.
+- ∑ **Learn** — a library of 15 mission topics across four categories (Orbits & Physics,
+  Spacecraft & Missions, The Solar System, Space Engineering), each with readable sections,
+  key stats and a fun fact — plus a live orbit calculator (v = √(μ/r), T = 2π√(a³/μ),
+  escape velocity) using the same constants as the web simulator.
+- ★ **Quiz Deck** — rotating space fun facts and a 12-question astronaut quiz with ranks.
 - 📴 **Fully offline** — the Earth and all effects are GPU shaders; no textures, no network.
 
 ## Physics

@@ -1,33 +1,17 @@
 import React, { useState } from "react";
-import { ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
 
 import { GlassCard } from "../components/GlassCard";
 import { ScreenShell } from "../components/ScreenShell";
+import { TopicDetail } from "../components/TopicDetail";
+import { Topic, TOPIC_CATEGORIES, TOPIC_COUNT } from "../data/topics";
 import {
   EARTH_RADIUS_KM,
   getEscapeVelocityKmS,
   getOrbitalPeriodMinutes,
   getOrbitalSpeedKmS,
 } from "../physics/orbital";
-import { colors, spacing } from "../theme";
-
-const NEWTON_LAWS = [
-  {
-    title: "1st Law — Inertia",
-    color: colors.cyan,
-    text: "An object keeps moving in a straight line at constant speed unless a force acts on it. A satellite would fly off into deep space if gravity didn't constantly bend its path into an orbit.",
-  },
-  {
-    title: "2nd Law — F = ma",
-    color: colors.violet,
-    text: "Force equals mass times acceleration. The same thruster burn accelerates a small CubeSat far more than a massive space station.",
-  },
-  {
-    title: "3rd Law — Action & Reaction",
-    color: colors.magenta,
-    text: "For every action there is an equal and opposite reaction. Rockets throw hot exhaust backwards; the exhaust pushes the rocket forwards — no air needed.",
-  },
-];
+import { colors, radius, spacing } from "../theme";
 
 /** Live calculator: type an altitude, get speed / period / escape velocity. */
 function OrbitCalculator() {
@@ -71,26 +55,61 @@ function OrbitCalculator() {
   );
 }
 
-export function LearnScreen() {
+function TopicCard({ topic, onPress }: { topic: Topic; onPress: () => void }) {
   return (
-    <ScreenShell title="Learn" subtitle="Newton's laws & the math of orbits">
-      <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
-        <OrbitCalculator />
-        {NEWTON_LAWS.map((law) => (
-          <GlassCard key={law.title} accent={law.color} style={styles.card}>
-            <Text style={[styles.cardTitle, { color: law.color }]}>{law.title}</Text>
-            <Text style={styles.cardText}>{law.text}</Text>
-          </GlassCard>
-        ))}
-        <GlassCard style={styles.card}>
-          <Text style={styles.cardTitle}>WHY DON'T SATELLITES FALL?</Text>
-          <Text style={styles.cardText}>
-            They do — constantly! A satellite in orbit is in free-fall toward Earth, but it moves
-            sideways so fast (7.66 km/s for the ISS) that the ground curves away beneath it at the
-            same rate it falls. Falling forever, missing forever: that's an orbit.
-          </Text>
-        </GlassCard>
-      </ScrollView>
+    <Pressable onPress={onPress}>
+      {({ pressed }) => (
+        <View
+          style={[
+            styles.topicCard,
+            { borderColor: topic.color + "44", opacity: pressed ? 0.7 : 1 },
+          ]}
+        >
+          <View style={[styles.topicSymbolWrap, { backgroundColor: topic.color + "1c" }]}>
+            <Text style={[styles.topicSymbol, { color: topic.color }]}>{topic.symbol}</Text>
+          </View>
+          <View style={styles.topicMeta}>
+            <Text style={styles.topicTitle}>{topic.title}</Text>
+            <Text style={styles.topicTagline} numberOfLines={1}>
+              {topic.tagline}
+            </Text>
+          </View>
+          <Text style={[styles.topicChevron, { color: topic.color }]}>›</Text>
+        </View>
+      )}
+    </Pressable>
+  );
+}
+
+export function LearnScreen() {
+  const [openTopic, setOpenTopic] = useState<Topic | null>(null);
+
+  return (
+    <ScreenShell
+      title="Learn"
+      subtitle={
+        openTopic
+          ? openTopic.tagline
+          : `${TOPIC_COUNT} mission topics · formulas · live calculator`
+      }
+    >
+      {openTopic ? (
+        <TopicDetail topic={openTopic} onBack={() => setOpenTopic(null)} />
+      ) : (
+        <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+          <OrbitCalculator />
+          {TOPIC_CATEGORIES.map((category) => (
+            <View key={category.id} style={styles.category}>
+              <Text style={styles.categoryName}>{category.name.toUpperCase()}</Text>
+              <View style={styles.topicList}>
+                {category.topics.map((topic) => (
+                  <TopicCard key={topic.id} topic={topic} onPress={() => setOpenTopic(topic)} />
+                ))}
+              </View>
+            </View>
+          ))}
+        </ScrollView>
+      )}
     </ScreenShell>
   );
 }
@@ -105,7 +124,6 @@ const styles = StyleSheet.create({
     letterSpacing: 2,
     marginBottom: spacing.sm,
   },
-  cardText: { color: colors.textDim, fontSize: 13, lineHeight: 20 },
   calcLabel: { color: colors.textDim, fontSize: 12, marginBottom: spacing.xs },
   input: {
     borderWidth: 1,
@@ -129,4 +147,35 @@ const styles = StyleSheet.create({
     textAlign: "center",
     letterSpacing: 1,
   },
+  category: { marginTop: spacing.md },
+  categoryName: {
+    color: colors.textDim,
+    fontSize: 11,
+    fontWeight: "800",
+    letterSpacing: 2.5,
+    marginBottom: spacing.sm,
+  },
+  topicList: { gap: spacing.sm },
+  topicCard: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.md,
+    borderWidth: 1,
+    borderRadius: radius.md,
+    backgroundColor: colors.panel,
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.md,
+  },
+  topicSymbolWrap: {
+    width: 42,
+    height: 42,
+    borderRadius: 12,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  topicSymbol: { fontSize: 20 },
+  topicMeta: { flex: 1 },
+  topicTitle: { color: colors.text, fontSize: 15, fontWeight: "700" },
+  topicTagline: { color: colors.textFaint, fontSize: 11, marginTop: 2 },
+  topicChevron: { fontSize: 22, fontWeight: "800" },
 });
