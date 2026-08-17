@@ -8,6 +8,7 @@ import { GravityLearnPanel } from "../components/GravityLearnPanel";
 import { ExplainBox } from "../components/ExplainBox";
 import { keplerianToCartesian, propagateOrbit } from "../orbitalClient";
 import { getOrbitTemplateClient } from "../orbitalUtils";
+import { OracleDock } from "../components/OracleDock";
 import { SIM_SPEEDS } from "../const";
 import { ShareBar } from "../components/ShareBar";
 import type { OrbitalElements, CartesianState } from "../../../shared/types";
@@ -265,6 +266,15 @@ export function Simulator() {
       <SimulatorGlossary />
 
       <ShareBar path="/simulator" title="Free 3D Satellite Orbit Simulator — Add ISS, Starlink, GPS | Orbital Simulator Hub" showRedditSubs />
+
+      <OracleDock
+        onDeploy={loadPreset}
+        onSimulate={({ play, speed }) => {
+          const idx = (SIM_SPEEDS as readonly number[]).indexOf(Number(speed));
+          if (idx >= 0) setSpeedIdx(idx);
+          if (typeof play === "boolean") setPlaying(play);
+        }}
+      />
     </div>
   );
 }

@@ -5,15 +5,17 @@ import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 import { HomeScreen } from "./src/screens/HomeScreen";
 import { LearnScreen } from "./src/screens/LearnScreen";
+import { OracleScreen } from "./src/screens/OracleScreen";
 import { QuizScreen } from "./src/screens/QuizScreen";
 import { SimulatorScreen } from "./src/screens/SimulatorScreen";
 import { colors, spacing } from "./src/theme";
 
-type Tab = "home" | "simulator" | "learn" | "quiz";
+type Tab = "home" | "simulator" | "oracle" | "learn" | "quiz";
 
 const TABS: Array<{ key: Tab; icon: string; label: string }> = [
   { key: "home", icon: "◉", label: "Hub" },
   { key: "simulator", icon: "🛰", label: "Simulator" },
+  { key: "oracle", icon: "⬡", label: "Oracle" },
   { key: "learn", icon: "∑", label: "Learn" },
   { key: "quiz", icon: "★", label: "Quiz" },
 ];
@@ -30,6 +32,7 @@ export default function App() {
           {/* Simulator unmounts on tab switch: the GL context is released and
               deployed satellites reset — an ISS-like one is redeployed on return */}
           {tab === "simulator" && <SimulatorScreen />}
+          {tab === "oracle" && <OracleScreen onOpenSimulator={() => setTab("simulator")} />}
           {tab === "learn" && <LearnScreen />}
           {tab === "quiz" && <QuizScreen />}
         </View>

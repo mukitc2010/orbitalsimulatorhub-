@@ -20,6 +20,7 @@ import {
   OrbitalElements,
   OrbitPreset,
 } from "../physics/orbital";
+import { consumeMissionOrders } from "../state/missionOrders";
 import { OrbitalScene, SatelliteTelemetry } from "../three/OrbitalScene";
 import { colors, orbitColors, spacing } from "../theme";
 
@@ -67,8 +68,14 @@ export function SimulatorScreen() {
     for (const sat of satellitesRef.current) {
       scene.addSatellite(sat.id, sat.elements, sat.color);
     }
-    // Start with an ISS-like satellite so the scene is alive immediately
-    if (satellitesRef.current.length === 0) {
+    // Execute any deployments queued by the ORACLE agent screen;
+    // otherwise start with an ISS-like satellite so the scene is alive.
+    const orders = consumeMissionOrders();
+    if (orders && orders.deployments.length > 0) {
+      for (const preset of orders.deployments) {
+        addSatellite(preset, scene);
+      }
+    } else if (satellitesRef.current.length === 0) {
       addSatellite("LEO", scene);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

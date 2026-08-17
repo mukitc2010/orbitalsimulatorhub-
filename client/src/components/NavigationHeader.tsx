@@ -10,6 +10,7 @@ const MISSION_SUBNAV = [
 
 const SIMULATOR_SUBNAV = [
   { path: "/simulator", label: "Orbit Simulator", title: "3D satellite orbit simulator — LEO, MEO, GEO" },
+  { path: "/asi-mission-control", label: "🛰 ORACLE Agent", title: "ASI Mission Control — AI agent that runs real physics and deploys satellites" },
   { path: "/simulator/swarm", label: "Swarm Simulator", title: "AI swarm collision avoidance — J2, Pc, OSQP" },
   { path: "/simulator/ai-astronaut-robot", label: "AI Robot Lab", title: "Build and train AI space robots — humanoid, rover, vision AI" },
   { path: "/quantum-space-agi", label: "Quantum Space AGI Lab", title: "Quantum Space AGI Lab — curvature-aware navigation" },
