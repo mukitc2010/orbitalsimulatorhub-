@@ -120,6 +120,13 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     keywords: "orbital mechanics guide, space guide for beginners, how to use orbit simulator, space for kids guide, learn space free, satellite guide, LEO MEO GEO guide",
     lastUpdated: "2026-02-17T00:00:00Z",
   },
+  "/asi-mission-control": {
+    path: "/asi-mission-control",
+    title: "ASI Mission Control — ORACLE AI Agent | Orbital Simulator Hub",
+    description: "Talk to ORACLE, an AI mission-control agent with real tools: it runs live orbital mechanics and deploys satellites into the 3D simulator on your command. Free.",
+    keywords: "space AI agent, orbital mechanics AI, AI mission control, satellite deployment simulator, ASI agent, space chatbot with tools, orbital calculator AI, Claude space agent",
+    lastUpdated: "2026-08-17T00:00:00Z",
+  },
   "/astrobot": {
     path: "/astrobot",
     title: "Ask AstroBot — Free Space Q&A | Orbits, Satellites, ISS",

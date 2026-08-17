@@ -32,7 +32,7 @@ export function Simulator() {
   const addSatellite = useCallback(
     (data: { name: string; color: string; orbitalElements: OrbitalElements }) => {
       const state = keplerianToCartesian(data.orbitalElements);
-      const id = `sat-${Date.now()}`;
+      const id = `sat-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
       const posNorm: [number, number, number] = [
         state.x / SCALE,
         state.y / SCALE,
@@ -61,6 +61,25 @@ export function Simulator() {
       orbitalElements: el,
     });
   }, [addSatellite]);
+
+  // Execute ASI Mission Control orders arriving as a deep link,
+  // e.g. /simulator?deploy=LEO,MEO,GEO&play=1&speed=4 (see /asi-mission-control)
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const deploy = params.get("deploy");
+    if (!deploy) return;
+    const presets = deploy
+      .split(",")
+      .filter((p): p is "LEO" | "MEO" | "GEO" => p === "LEO" || p === "MEO" || p === "GEO")
+      .slice(0, 10);
+    presets.forEach((preset, i) => setTimeout(() => loadPreset(preset), i * 40));
+    const speedIdxFromParam = (SIM_SPEEDS as readonly number[]).indexOf(Number(params.get("speed")));
+    if (speedIdxFromParam >= 0) setSpeedIdx(speedIdxFromParam);
+    if (params.get("play") === "1" && presets.length > 0) {
+      setTimeout(() => setPlaying(true), presets.length * 40 + 60);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     if (!playing || satellites.length === 0) return;

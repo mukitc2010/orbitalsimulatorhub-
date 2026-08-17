@@ -5,6 +5,7 @@ import { SEOHead } from "./components/SEOHead";
 import { Home } from "./pages/Home";
 import { PlayLearn } from "./pages/PlayLearn";
 import { Simulator } from "./pages/Simulator";
+import { ASIMissionControl } from "./pages/ASIMissionControl";
 import { LearnNewton } from "./pages/LearnNewton";
 import { NewtonFormulas } from "./pages/NewtonFormulas";
 import { KidsGuide } from "./pages/KidsGuide";
@@ -91,6 +92,7 @@ function App() {
           <Route path="/" component={Home} />
           <Route path="/play" component={PlayLearn} />
           <Route path="/simulator" component={Simulator} />
+          <Route path="/asi-mission-control" component={ASIMissionControl} />
           <Route path="/simulator/swarm" component={SpaceAGISwarmSimulator} />
           <Route path="/simulator/ai-astronaut-robot" component={AIAstronautRobotSimulator} />
           <Route path="/quantum-space-agi" component={QuantumSpaceAGILab} />
