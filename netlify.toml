@@ -1,4 +1,4 @@
-﻿[build]
+[build]
   command = "npm run build:client"
   publish = "dist"
   functions = "netlify/functions"
