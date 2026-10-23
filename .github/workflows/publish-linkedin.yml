@@ -20,14 +20,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
       - run: npm ci --legacy-peer-deps
+      - name: Resolve daily news from exact merged content
+        id: news
+        if: github.event.pull_request.head.ref == 'automation/space-news'
+        env:
+          NEWS_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          NEWS_MERGE_SHA: ${{ github.event.pull_request.merge_commit_sha }}
+        run: node scripts/space-news/resolve-slug.mjs
       - name: Resolve the article added by the merged pull request
         id: article
+        if: github.event.pull_request.head.ref != 'automation/space-news'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -43,9 +52,10 @@ jobs:
           fi
           echo "slug=$slug" >> "$GITHUB_OUTPUT"
       - name: Publish to LinkedIn organization page
-        if: steps.article.outputs.slug != ''
+        if: steps.article.outputs.slug != '' || steps.news.outputs.slug != ''
         env:
-          BLOG_SLUG: ${{ steps.article.outputs.slug }}
+          BLOG_SLUG: ${{ steps.news.outputs.slug || steps.article.outputs.slug }}
+          LINKEDIN_API_VERSION: ${{ vars.LINKEDIN_API_VERSION || '202606' }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
           LINKEDIN_ORGANIZATION_URN: ${{ secrets.LINKEDIN_ORGANIZATION_URN }}
         run: node scripts/post-to-social.js

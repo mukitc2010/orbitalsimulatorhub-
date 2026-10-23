@@ -3,6 +3,7 @@
  */
 
 import { routeIntent } from "./router";
+import { planOracleMission } from "./oracleAgent";
 import { getUserMemory, updateMemory, type UserMemory } from "./memory/memoryStore";
 import { runOrbitMath } from "./tools/orbitMath";
 import { runAstronautQuery } from "./tools/astronautDB";
@@ -10,6 +11,7 @@ import { runPlanetQuery } from "./tools/planetDB";
 import { suggestSimActions, type SimAction } from "./tools/simActions";
 import { checkAltitude, checkHohmannRadii, extractAltitude, extractHohmannRadii } from "./verify/sanityChecks";
 import { SYSTEM_PROMPT } from "./prompts/system";
+import { generateLoopedAstroBotReply, type AstroBotChatMessage } from "./loopEngineering";
 
 export interface AstroBotResponse {
   reply: string;
@@ -88,8 +90,48 @@ function buildContext(memory: UserMemory | null, pageContext?: string, toolResul
   return parts.join("\n");
 }
 
+async function completeAstroBotMessage(
+  messages: AstroBotChatMessage[],
+  maxTokens: number,
+  provider: "openai" | "ollama",
+  openaiKey: string,
+): Promise<string> {
+  const isOpenAI = provider === "openai";
+  const response = await fetch(
+    isOpenAI ? "https://api.openai.com/v1/chat/completions" : `${(process.env.OLLAMA_URL || "http://localhost:11434").replace(/\/$/, "")}/api/chat`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        ...(isOpenAI ? { Authorization: `Bearer ${openaiKey}` } : {}),
+      },
+      body: JSON.stringify(isOpenAI
+        ? { model: "gpt-4o-mini", messages, max_tokens: maxTokens, temperature: 0.4 }
+        : {
+            model: process.env.OLLAMA_MODEL || "qwen2.5:7b",
+            messages,
+            stream: false,
+            options: { num_predict: maxTokens, temperature: 0.4 },
+          }),
+      signal: AbortSignal.timeout(180_000),
+    },
+  );
+
+  if (!response.ok) throw new Error(`${provider} returned ${response.status}`);
+  const data = await response.json() as {
+    choices?: Array<{ message?: { content?: string } }>;
+    message?: { content?: string };
+  };
+  const text = isOpenAI ? data.choices?.[0]?.message?.content : data.message?.content;
+  if (!text?.trim()) throw new Error(`${provider} returned an empty response`);
+  return text.trim();
+}
+
 export async function processAstroBot(input: AstroBotInput): Promise<AstroBotResponse> {
   const { message, userId = "anonymous", pageContext, history = [] } = input;
+
+  const mission = planOracleMission(message);
+  if (mission) return mission;
 
   const memory = await getUserMemory(userId);
   const routerResult = routeIntent(message);
@@ -115,12 +157,21 @@ export async function processAstroBot(input: AstroBotInput): Promise<AstroBotRes
     };
   }
 
-  const { toolResults, actions } = await executeTools(routerResult, message);
+  const { toolResults } = await executeTools(routerResult, message);
+  // Simulator mutations are owned exclusively by the validated ORACLE mission agent.
+  const actions: SimAction[] = [];
   const context = buildContext(memory, pageContext, toolResults);
 
-  const openaiKey = process.env.OPENAI_API_KEY;
-  if (openaiKey && openaiKey.length >= 10) {
-    const messages: Array<{ role: "system" | "user" | "assistant"; content: string }> = [
+  const openaiKey = process.env.OPENAI_API_KEY || "";
+  const configuredProvider = process.env.ASTROBOT_PROVIDER;
+  const provider = configuredProvider === "openai" || (!configuredProvider && openaiKey.length >= 10)
+    ? "openai"
+    : configuredProvider === "fallback"
+      ? "fallback"
+      : "ollama";
+
+  if (provider !== "fallback" && (provider !== "openai" || openaiKey.length >= 10)) {
+    const messages: AstroBotChatMessage[] = [
       { role: "system", content: `${SYSTEM_PROMPT}\n\n${context}` },
       ...history.slice(-6).map((m) => ({
         role: (m.role === "user" ? "user" : "assistant") as "user" | "assistant",
@@ -130,42 +181,22 @@ export async function processAstroBot(input: AstroBotInput): Promise<AstroBotRes
     ];
 
     try {
-      const res = await fetch("https://api.openai.com/v1/chat/completions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${openaiKey}`,
-        },
-        body: JSON.stringify({
-          model: "gpt-4o-mini",
-          messages,
-          max_tokens: 800,
-          temperature: 0.7,
-        }),
-      });
+      const reply = await generateLoopedAstroBotReply(
+        messages,
+        (chatMessages, maxTokens) => completeAstroBotMessage(chatMessages, maxTokens, provider, openaiKey),
+      );
+      const memoryPatch = {
+        lastTopic: routerResult.intent === "TEACH" ? message.slice(0, 50) : memory?.lastTopic,
+        skillLevel: memory?.skillLevel,
+      };
 
-      if (res.ok) {
-        const data = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
-        const content = data.choices?.[0]?.message?.content;
-        const reply = typeof content === "string" ? content.trim() : "";
-
-        const memoryPatch = {
-          lastTopic: routerResult.intent === "TEACH" ? message.slice(0, 50) : memory?.lastTopic,
-          skillLevel: memory?.skillLevel,
-        };
-
-        if (userId !== "anonymous") {
-          await updateMemory(userId, memoryPatch);
-        }
-
-        return {
-          reply: reply || "I'm here to help with orbital mechanics and space! Try asking about orbits, the ISS, or the simulator.",
-          actions,
-          memoryPatch,
-        };
+      if (userId !== "anonymous") {
+        await updateMemory(userId, memoryPatch);
       }
+
+      return { reply, actions, memoryPatch };
     } catch (err) {
-      console.error("AstroBot OpenAI error:", err);
+      console.error(`AstroBot ${provider} loop error:`, err);
     }
   }
 
@@ -207,7 +238,7 @@ function generateFallbackResponse(
   if (lower.includes("iss") || lower.includes("space station")) {
     return {
       reply: "**ISS:** ~408 km altitude, 7.66 km/s, 92 min period. See it in the [simulator](/simulator) at 408 km!",
-      actions: suggestSimActions("iss"),
+      actions: [],
     };
   }
 

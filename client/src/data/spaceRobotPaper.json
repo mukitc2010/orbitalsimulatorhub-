@@ -1,0 +1,610 @@
+{
+  "title": "Autonomous Humanoid Robotics for Space Exploration",
+  "subtitle": "A mathematical mission architecture for safe autonomous exploration beyond Earth",
+  "date": "2026-10-23",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Abstract"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Human crews face radiation, life-support demands, long communication delays, and high rescue costs. This paper proposes a practical route to robotic exploration: send a team of specialized machines ahead of astronauts, using a humanoid only for tasks where two-arm manipulation and compatibility with human equipment provide a measurable advantage. We formulate mission planning as a constrained, risk-sensitive optimization problem that allocates tasks, energy, communication windows, and uncertainty budgets across robots. We connect this planner to robust control, Bayesian mapping, decision theory, reliability engineering, and staged verification. The paper gives a worked example for a pre-crew lunar outpost preparation mission, including equations, a task allocation model, and measurable readiness gates. AGI is treated as a possible future improvement in adaptation; ASI remains speculative and is not required. The proposed path is achievable without either: begin with bounded autonomy on Earth, validate it in remote analog environments, demonstrate it on the Moon, and expand responsibilities only when evidence supports safe operation. Robots will reduce exposure and prepare sites; astronauts remain essential for high-consequence judgment and tasks that cannot yet be specified reliably."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Keywords"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "planetary robotics; humanoid robots; AGI; advanced AI; autonomy; Mars; lunar exploration; human-robot teaming; space mission safety"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "1. Introduction"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Sending people to the Moon, Mars, or another planetary body requires transporting a complete life-support system as well as the crew. Astronauts need pressure vessels, oxygen, water, food, thermal control, medical support, radiation protection, and a credible plan for emergencies. These requirements raise mass, cost, and mission risk. Robots avoid many human life-support needs and can be sent ahead, remain in hazardous locations, and work during periods when a crew is absent. Their current limits include brittle behavior outside expected conditions, difficult manipulation, dependence on communications, and restricted ability to interpret unfamiliar situations."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "A humanoid robot is a mobile machine with a body plan that approximates a person, often with a torso, arms, hands, and a head-like sensor assembly. Its potential value comes from functional compatibility: it may reach controls, operate tools, open doors, carry equipment, or work in spaces designed for people. The same design introduces tradeoffs. Legs and articulated hands add actuators, failure points, energy demand, control complexity, and thermal-management needs. The research question is therefore not whether a humanoid can replace an astronaut, but under what mission conditions an AI-enabled humanoid can safely perform useful work that simpler robots cannot perform as well."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "This paper advances a testable concept: use a heterogeneous robotic team, with a humanoid as a dexterous maintenance and field-work unit, and assign routine traversal and sensing to specialized platforms. Progress toward general intelligence should be introduced through measurable autonomy capabilities, not by assuming that AGI or ASI will arrive on schedule."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "2. Scope and terminology"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "AGI is used here to mean a hypothetical system that can learn and perform a broad range of cognitive tasks across domains at a level comparable to people. There is no universally accepted operational test for AGI. ASI refers to a hypothetical system that substantially exceeds human intellectual performance across many domains. Neither term describes a certified spaceflight capability today. “Advanced AI” in the proposed early missions means present and near-term machine-learning, planning, perception, and language technologies operating inside bounded, tested interfaces."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The paper focuses on surface missions to the Moon and Mars because they offer relevant examples of vacuum, dust, low gravity, radiation, communication delay, and difficult terrain. The architecture could also support orbital servicing, asteroid operations, or icy-moon exploration, but those environments require distinct thermal, radiation, planetary-protection, and communications designs. The proposal is a research framework rather than a flight-ready engineering design or a claim that a specific launch date is feasible."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "3. Mission problem and design requirements"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "A planetary robot must perceive an environment with uncertain lighting, dust, shadows, occlusion, and sensor degradation; make plans with incomplete maps; manipulate objects despite uncertain contact forces; conserve limited energy; and recover safely from faults. On Mars, one-way communication delay varies with planetary positions and can range from several minutes to over twenty minutes. A remote operator therefore cannot guide every motion as if using a local joystick. On the Moon, delays are shorter but line-of-sight, terrain, and polar shadow conditions can interrupt contact. A crewed mission may provide nearby supervision, but the robot must still handle communication outages and protect itself."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The mission should meet these system-level requirements:"
+    },
+    {
+      "type": "bullet",
+      "level": 1,
+      "text": "Operate within environmental limits for vacuum or thin atmosphere, radiation, temperature cycling, dust intrusion, and reduced gravity."
+    },
+    {
+      "type": "bullet",
+      "level": 1,
+      "text": "Continue a safe minimum mission during communication loss, with explicit limits on movement, manipulation, and resource consumption."
+    },
+    {
+      "type": "bullet",
+      "level": 1,
+      "text": "Provide traceable state estimates, confidence levels, event logs, and interpretable reasons for actions to operators."
+    },
+    {
+      "type": "bullet",
+      "level": 1,
+      "text": "Use redundant sensing and fault containment so that one sensor, actuator, or software failure does not create an uncontrolled hazard."
+    },
+    {
+      "type": "bullet",
+      "level": 1,
+      "text": "Prioritize reversible actions and request human authorization for high-consequence or poorly understood actions."
+    },
+    {
+      "type": "bullet",
+      "level": 1,
+      "text": "Demonstrate a clear advantage over a rover or fixed instrument for each task assigned to the humanoid."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "A Mission Optimization Model"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The central engineering problem is to complete valuable work while respecting power, time, communication, reliability, and safety limits. Let each candidate task i have value vᵢ, duration tᵢⱼ and energy demand eᵢⱼ when performed by robot j, risk rᵢⱼ, and required skills. Let binary variable xᵢⱼ equal 1 when task i is assigned to robot j. A baseline objective is:"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "maximize  J = ΣᵢΣⱼ (vᵢⱼ − λrᵢⱼ − μeᵢⱼ)xᵢⱼ"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "subject to  ΣᵢΣⱼ tᵢⱼxᵢⱼ ≤ T,  ΣᵢΣⱼ eᵢⱼxᵢⱼ ≤ E,  xᵢⱼ ∈ {0,1},  Σⱼxᵢⱼ ≤ 1,  xᵢⱼ ≤ aᵢⱼ. Task precedence requires Σⱼxₖⱼ ≤ Σⱼxᵢⱼ when task k depends on task i. T is available mission time, E is usable energy after reserve, and λ and μ are the risk and energy penalties."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "A realistic planner also reserves recovery resources. If task i has energy demand eᵢⱼ when assigned to robot j, and E_res is the minimum energy required to return to shelter or enter a safe state, the constraint is ΣᵢΣⱼ eᵢⱼxᵢⱼ + E_res ≤ E_total. This prevents a valuable plan from consuming the energy needed to survive a fault or communication outage."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Uncertainty is handled with a risk-sensitive objective. If task outcome has random utility U, one option is to maximize expected utility while penalizing downside risk:"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "maximize  E[U] − ρ CVaRₐ(−U)"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "CVaRₐ measures the average loss in the worst (1−α) fraction of outcomes; ρ controls risk aversion. This is useful when a small probability of losing a robot, damaging a habitat, or contaminating a sample matters more than a modest increase in average science return."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Robustness to model error can be stated as a chance constraint:"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "P(gₖ(x, ξ) ≤ 0 for all safety constraints k) ≥ 1 − ε"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "ξ represents uncertain terrain, sensor error, or task duration; ε is the maximum accepted probability of violating a constraint. For life-critical boundaries, ε must be set by the mission safety case and validated evidence, not selected merely to improve performance."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "State Estimation and Safe Motion"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The robot maintains a belief over its state rather than assuming its location and condition are known exactly. For state xₜ, action uₜ, observation yₜ, and disturbance wₜ, a basic model is:"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "xₜ₊₁ = f(xₜ, uₜ) + wₜ;    yₜ = h(xₜ) + vₜ"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "A Bayesian filter updates the belief after each observation:  bₜ(x) ∝ P(yₜ | x) ∫ P(x | x′,uₜ₋₁)bₜ₋₁(x′)dx′. The mission planner should slow down, request another sensor view, or stop when uncertainty becomes too large for the planned action."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "For legged motion or manipulation, a simplified feedback controller is uₜ = u_ref − K(xₜ − x_ref). In practice, the verified low-level controller also enforces joint, torque, contact-force, and stability limits. A safety filter can reject an AI-proposed action if it would leave the safe set S:"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "u_safe = arg minᵤ ||u − u_AI||²  subject to  f(xₜ,u) ∈ S"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "This architecture allows a capable planner to suggest actions while an independent control layer limits what can physically execute. The safe set should include conservative boundaries for balance, collision avoidance, tool force, thermal limits, power reserve, and protected areas."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Communication-Aware Autonomy"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The mission should not require continuous Earth guidance. Let τ be one-way communication delay and Δt the control-loop interval. If τ is much larger than Δt, remote joystick control is unsuitable. The robot instead executes short, pre-authorized action segments and reports state summaries. A simple communication budget is:"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Σₖ bₖ ≤ B_window;    τ ≥ d/c"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "bₖ is the number of bits sent in message k, B_window is the available data budget, d is Earth-robot distance, and c is the speed of light. Compression should preserve safety-critical telemetry and uncertainty, not only attractive imagery. During outages, the policy π must remain inside a verified contingency set: uₜ = π(bₜ) ∈ U_safe."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Worked Example for a Lunar Precursor Mission"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Consider a hypothetical 12-hour work shift with 8 kWh of usable energy and a protected 2 kWh recovery reserve. Tasks include route mapping, checking a power connector, installing a communications relay, collecting a sample, and inspecting a habitat seal. The following illustrative values are planning assumptions, not measured robot performance."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Task",
+          "Value",
+          "Hours",
+          "Energy kWh",
+          "Risk score",
+          "Preferred platform"
+        ],
+        [
+          "Route mapping",
+          "8",
+          "2.0",
+          "1.0",
+          "1",
+          "Scout rover"
+        ],
+        [
+          "Connector inspection",
+          "9",
+          "1.5",
+          "1.2",
+          "2",
+          "Humanoid"
+        ],
+        [
+          "Relay installation",
+          "10",
+          "2.5",
+          "2.0",
+          "3",
+          "Humanoid + scout"
+        ],
+        [
+          "Sample collection",
+          "7",
+          "2.0",
+          "1.4",
+          "4",
+          "Human-approved team"
+        ],
+        [
+          "Habitat seal inspection",
+          "10",
+          "1.5",
+          "1.0",
+          "2",
+          "Humanoid"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The planner first excludes combinations exceeding 10 kWh of task energy or 12 hours, because the 2 kWh reserve is protected. It then ranks feasible combinations by value while penalizing risk. Connector inspection, relay installation, and seal inspection are strong humanoid candidates because they need tool use or access to human-designed interfaces. Route mapping is delegated to the rover because a humanoid wastes power on repetitive traversal. Sample handling requires additional contamination safeguards and human approval. The example demonstrates the method: choose a robot per task, retain recovery margins, and require stronger authorization as consequence increases."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Solution Strategy and Readiness Gates"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The goal is achievable only through a sequence of independently verifiable steps. Each phase should have a go/no-go gate; a failure returns the program to testing rather than being hidden by a more capable AI model."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Phase",
+          "Engineering work",
+          "Evidence required to advance"
+        ],
+        [
+          "1. Bench prototype",
+          "Build manipulator, sensing, thermal and fault-monitoring stack.",
+          "Repeatable tool tasks; force limits; safe stop and recovery demonstrated."
+        ],
+        [
+          "2. Earth analog",
+          "Operate in dust, darkness, rough terrain, and communication delay.",
+          "Task success and recovery rates meet predeclared targets; no unsafe action escapes the safety layer."
+        ],
+        [
+          "3. Lunar demo",
+          "Test mobility, power, autonomy, and remote operations on the Moon.",
+          "Survive environmental exposure; complete limited tasks; maintain auditable logs and safe contingency behavior."
+        ],
+        [
+          "4. Precursor infrastructure",
+          "Map sites, deploy relays, test habitat interfaces, and prepare work areas.",
+          "Independent inspection confirms infrastructure is functional and scientifically compliant."
+        ],
+        [
+          "5. Crew integration",
+          "Use robots for inspection, cargo, and selected maintenance with crew oversight.",
+          "Crew workload decreases without increasing mission risk; manual override and safe retreat work reliably."
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "At every phase, report completion rate C = N_success/N_attempts, recovery rate R = N_faults_recovered/N_faults, energy efficiency η = V_science/E_used, and safety violation rate H = N_unsafe_events/N_operating_hours. These measures should be reported with confidence intervals and broken down by environment and task. A mission advances only when performance is repeatable across independent trials and failure cases are understood."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Research Hypotheses"
+    },
+    {
+      "type": "bullet",
+      "level": 1,
+      "text": "H1: For tool-dependent tasks in human-designed workspaces, a humanoid or mobile manipulator will complete more task classes without infrastructure redesign than a rover with a fixed arm."
+    },
+    {
+      "type": "bullet",
+      "level": 1,
+      "text": "H2: A heterogeneous team will achieve higher science and maintenance value per unit energy than a humanoid-only team on mixed traversal and manipulation missions."
+    },
+    {
+      "type": "bullet",
+      "level": 1,
+      "text": "H3: A safety filter that checks AI-proposed actions against explicit state and resource limits will reduce unsafe action execution under sensor faults compared with an unfiltered planner."
+    },
+    {
+      "type": "bullet",
+      "level": 1,
+      "text": "H4: Local autonomy with concise, uncertainty-aware reports will reduce operator workload under long communication delays without reducing mission visibility."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "4. Proposed mission architecture"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.1 Heterogeneous robotic team"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The concept uses three robotic layers. Small scouts map routes, inspect hazards, and collect local measurements. A humanoid unit performs dexterous work such as turning valves, connecting standardized tools, moving containers, inspecting habitat surfaces, and assembling pre-designed components. A stationary lander, habitat, or service node provides power, communications, thermal shelter, charging, data storage, and a protected location for maintenance. This arrangement limits the humanoid’s travel burden and allows less complex machines to handle repetitive surveying."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.2 Autonomy stack"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The autonomy stack separates safety-critical control from higher-level reasoning. At the lowest level, deterministic controllers stabilize motion, enforce joint and force limits, and stop when sensor health falls below thresholds. The perception and mapping layer fuses cameras, depth sensors, inertial measurements, force sensors, and environmental instruments. A task planner turns an approved goal into small actions with preconditions, resource estimates, and abort conditions. A learning-based assistant can suggest plans, summarize observations, and recognize unfamiliar objects, but its outputs are checked by the safety supervisor before execution. A mission manager allocates tasks among robots and communicates progress to Earth or a nearby crew."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The design avoids giving a language model direct authority over motors, life-support equipment, or vehicle navigation. Instead, the model proposes structured actions from a restricted command set. Verified software checks the proposal against the map, robot state, energy reserve, hazard rules, and mission authorization. The robot executes a short action segment, checks the result, and replans if observations differ from predictions. This observe-plan-act-check cycle makes failures easier to detect and contain."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.3 Human supervision and communication"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Operators define mission goals, no-go zones, permitted tools, resource budgets, and escalation criteria before the robot leaves a communications window. During contact, the robot sends compressed imagery, maps, health telemetry, and concise explanations of decisions. During outages, it follows only approved contingency behaviors, such as returning to a safe waypoint, entering a low-power state, or waiting. Human approval is required for actions that could damage a habitat, contaminate a scientifically sensitive site, consume critical supplies, or permanently alter the environment."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "5. Roles for AGI and ASI"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "A future AGI could improve mission flexibility if it can transfer skills learned in simulation or on Earth to new equipment and terrain, understand multi-step instructions, combine scientific observations with engineering constraints, and ask for help when uncertainty is high. For example, a crew member might ask the system to inspect a power connector, compare the observed damage with maintenance procedures, identify compatible replacement parts, and propose a repair sequence. The robot would still need validated force limits, mechanical safeguards, and human approval for risky steps. Broad reasoning does not guarantee correct physical action."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "ASI could, in principle, help design more efficient trajectories, coordinate large robot teams, discover materials or habitats, and search enormous scientific datasets. These benefits are speculative and bring serious control and governance concerns. A mission must not depend on ASI being available, benevolent, or infallible. Any future system with much greater capability would need limited permissions, independent verification, secure update procedures, monitoring, fail-safe modes, and clear human authority. For practical planning, the mission should be designed to work with narrow, testable autonomy; stronger AI is an optional enhancement."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Thus the useful progression is capability-based. First improve robust perception and fault handling. Next demonstrate reliable manipulation and task planning in representative environments. Later test learning across changing tasks under strict boundaries. Only after extensive evidence should broader autonomous authority be considered. The words AGI and ASI should not substitute for measurable performance and safety evidence."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "6. Potential achievements"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "A successful program could produce scientific, operational, and societal benefits. The robot could survey sites too dangerous or inconvenient for people, monitor geological changes over long periods, deploy instruments, collect and cache samples, inspect spacecraft and habitats, and prepare landing or work areas. A dexterous unit could connect cables, install panels, move cargo, clean dust from protected surfaces, replace modules, and test equipment before crew arrival. Multiple robots could map routes and establish communications relays while the humanoid focuses on tool-dependent work."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Before a crewed mission, robots could verify landing zones, assess local resources, assemble power and communications infrastructure, and check habitat systems. These tasks could reduce uncertainty and help crews spend more time on scientific judgment and exploration. Robots could also extend mission duration because they do not require a return trip for human safety, although hardware lifetime, radiation damage, consumables, and energy still impose limits."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Possible longer-term outcomes include construction of standardized surface infrastructure, robotic maintenance of orbital or lunar assets, and remote exploration of locations that are inaccessible to people. These remain conditional outcomes. In-situ resource use, for example, depends on finding usable materials, extracting them reliably, and processing them at acceptable energy and maintenance cost. A robot should not be described as having “colonized” a world merely because it has built equipment there."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "7. Risks, limitations, and safeguards"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Physical risks include falls, joint damage, dust abrasion, thermal stress, radiation-induced faults, power loss, and entrapment. Operational risks include incorrect object identification, a plan based on an incomplete map, unsafe contact forces, tool incompatibility, and loss of communications. AI-specific risks include confident but false explanations, behavior that changes after software updates, distribution shift between training and the real environment, and adversarial or corrupted data. Autonomy can reduce dependence on Earth operators, but it can also allow an error to propagate faster if the system is poorly bounded."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Safeguards should include independent safety controllers, mechanically enforced force and speed limits, redundant critical sensors, health monitoring, diverse software checks, secure and reviewable updates, and the ability to stop or retreat. The robot should preserve a tamper-evident log of sensor inputs, plans, overrides, and outcomes. Testing should include dust, low light, communication blackouts, sensor faults, unexpected obstacles, and deliberate misleading inputs. Scientific samples and environments should be protected by contamination-control procedures and human-reviewed rules for sample handling."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Mission planning must also account for legal and ethical obligations, including applicable space treaties, national authorization and supervision, planetary-protection requirements, spectrum coordination, and responsible handling of shared environments. A robot cannot remove the responsibility of the organizations and states that deploy it. Human operators and mission authorities remain accountable for mission objectives and consequences."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "8. Research method and evaluation"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The proposal can be evaluated through a staged research program. First, construct digital and physical test environments representing lunar and Martian terrain, reduced gravity effects where feasible, dust, lighting variation, and communication delay. Second, compare a humanoid platform with a rover and a stationary manipulator on matched tasks. Third, test the autonomy stack under nominal and fault conditions, including loss of sensors and network links. Finally, conduct an uncrewed analog demonstration in a remote, hazardous terrestrial environment before committing to a planetary mission."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Evaluation should report task completion rate, time and energy per task, tool-use accuracy, unplanned contact events, recovery success, science-data quality, hardware wear, communication demand, and operator workload. Results should be reported by task and condition rather than as one overall “intelligence” score. The humanoid should be selected for a mission only when its performance benefit justifies its extra mass, power, and maintenance burden."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Table 1. Platform selection by task"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Task",
+          "Likely best platform",
+          "Reason"
+        ],
+        [
+          "Wide-area mapping",
+          "Wheeled or legged scout",
+          "Lower mass and energy per distance; can be specialized for terrain."
+        ],
+        [
+          "Tool use in a habitat",
+          "Humanoid or mobile manipulator",
+          "Arms and hands can reach human-designed controls and fittings."
+        ],
+        [
+          "Long-duration environmental monitoring",
+          "Fixed instrument",
+          "Few moving parts and low continuous power demand."
+        ],
+        [
+          "Cargo movement near a base",
+          "Humanoid, rover, or gantry",
+          "Choice depends on load, distance, terrain, and standardized interfaces."
+        ],
+        [
+          "High-risk scientific judgment",
+          "Human-directed team",
+          "AI can organize evidence; scientists and mission leads retain authority."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "9. Phased roadmap"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Phase 1: Earth-based capability tests. Demonstrate safe manipulation, self-diagnostics, and recovery in controlled laboratories. Establish task benchmarks and compare the humanoid with simpler platforms."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Phase 2: Remote analog missions. Operate with realistic delays, communication outages, dust, darkness, and remote supervision in terrestrial analog sites. Validate procedures and human-robot interfaces."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Phase 3: Lunar technology demonstration. Send a limited-scope robotic team to test mobility, tool interfaces, autonomy, power management, and maintenance in the lunar environment. Keep mission goals achievable without AGI."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Phase 4: Robotic site preparation. Use multiple missions to map candidate sites, deploy instruments, verify infrastructure, and demonstrate repair or assembly tasks before crew arrival."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "Phase 5: Human-robot expedition. Integrate robots as crew assistants, inspectors, and field workers. Crew members supervise complex science and intervene when judgment or dexterity exceeds robot capability."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "10. Discussion"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The strongest argument for humanoid robots is compatibility with environments and tools built for people, not a general claim that a human-shaped machine is superior. A modular arm on a rover may perform many tasks with less mass. A wheeled platform usually travels farther per unit of energy than a biped. A fixed instrument may monitor a site for years with minimal complexity. Mission designers should compare alternatives for each task and reserve the humanoid for work where its reach, two-handed manipulation, or ability to use existing interfaces provides measurable value."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "AI changes the economics of remote work by allowing robots to handle more local decision-making when Earth is far away. It does not eliminate the need for reliable hardware, validated procedures, communications, operators, or mission governance. The more capable the reasoning system becomes, the more important it is to control what it can command and to know when it is uncertain. Human exploration and robotic exploration should therefore be planned as complementary strategies. Robots can prepare, inspect, and extend human activity; people can provide flexible judgment, repair improvisation, and scientific interpretation that remain difficult to specify in advance."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "11. Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "AI-enabled humanoid robots could help explore space by performing hazardous, repetitive, and tool-dependent work before or alongside astronaut crews. AGI, if achieved and validated, may allow broader task adaptation and better coordination. ASI could offer powerful planning and scientific capabilities, but it remains speculative and must not be a mission prerequisite. A responsible path begins with specialized, bounded autonomy and advances only when real-world tests demonstrate reliability."
+    },
+    {
+      "type": "paragraph",
+      "level": 1,
+      "text": "The proposed future mission is a coordinated system: scouts gather information, a dexterous robot performs selected maintenance and field tasks, infrastructure supports power and communication, and humans retain authority over consequential choices. Planned carefully, this approach could reduce crew exposure, improve preparation, increase the amount of science returned, and make exploration of distant or hostile locations more feasible. Its success should be measured in safe, verified work completed and knowledge gained, not in how human-like the machine appears."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Selected references"
+    },
+    {
+      "type": "reference",
+      "level": 1,
+      "text": "National Aeronautics and Space Administration. Moon to Mars Architecture. NASA, architecture and objectives publications. https://www.nasa.gov/moontomarsarchitecture/"
+    },
+    {
+      "type": "reference",
+      "level": 1,
+      "text": "National Aeronautics and Space Administration. Mars Exploration Program: Mars Science Laboratory (Curiosity) and Mars 2020 (Perseverance) mission resources. https://science.nasa.gov/mars/"
+    },
+    {
+      "type": "reference",
+      "level": 1,
+      "text": "National Aeronautics and Space Administration. Robonaut 2. NASA Human Exploration and Operations Mission Directorate. https://www.nasa.gov/robotics/"
+    },
+    {
+      "type": "reference",
+      "level": 1,
+      "text": "European Space Agency. Space robotics and planetary exploration resources. https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Automation_and_Robotics"
+    },
+    {
+      "type": "reference",
+      "level": 1,
+      "text": "International Committee on Global Navigation Satellite Systems / United Nations Office for Outer Space Affairs. United Nations treaties and principles on outer space. https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties.html"
+    },
+    {
+      "type": "reference",
+      "level": 1,
+      "text": "National Aeronautics and Space Administration. Planetary Protection. NASA Science. https://science.nasa.gov/planetary-science/programs/planetary-protection/"
+    }
+  ]
+}

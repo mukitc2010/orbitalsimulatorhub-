@@ -1,3 +1,4 @@
+import { planOracleMission } from "../lib/astrobot/oracleAgent";
 /**
  * ORACLE — ASI Mission Control agent for Orbital Simulator Hub.
  *
@@ -152,6 +153,19 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method === "OPTIONS") return res.status(200).end();
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
 
+  const body = req.body as { message?: string; history?: Array<{ role: string; content: string }> };
+  const message = typeof body?.message === "string" ? body.message.trim() : "";
+  if (!message) return res.status(400).json({ error: "Message is required" });
+  const plan = planOracleMission(message);
+  if (plan) {
+    const custom = plan.actions.some(a => a.type === "SIM_ADD_SATELLITE" && String(a.payload.name).startsWith("Satellite "));
+    const actions = custom ? [] : plan.actions.map(action => action.type === "SIM_SET_PLAYBACK"
+      ? { type: "simulate", play: action.payload.playing, speed: action.payload.speed }
+      : { type: "deploy", preset: String(action.payload.name).includes("GEO") ? "GEO" : String(action.payload.name).includes("GPS") ? "MEO" : "LEO", count: 1 });
+    return res.status(200).json({ reply: custom ? "Use /simulator/mission-control to request a custom altitude. No preset was substituted." : plan.reply,
+      actions, toolTrace: [{ tool: "oracle-loop-engineer", summary: "Plan, calculate, validate; simulator actions require client application." }] });
+  }
+
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey || apiKey.length < 10) {
     return res.status(500).json({
@@ -159,9 +173,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
   }
 
-  const body = req.body as { message?: string; history?: Array<{ role: string; content: string }> };
-  const message = typeof body?.message === "string" ? body.message.trim() : "";
-  if (!message) return res.status(400).json({ error: "Message is required" });
+
 
   const history = (Array.isArray(body?.history) ? body.history : [])
     .filter((m) => (m.role === "user" || m.role === "assistant") && typeof m.content === "string" && m.content.trim())

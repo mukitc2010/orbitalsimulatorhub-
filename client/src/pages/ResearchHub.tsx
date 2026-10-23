@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import { getLatestResearchContent, type ResearchContent } from "../data/researchContent";
 
 const CATEGORIES = [
+  { title: "Featured research paper", desc: "A proposed mission architecture with an interactive mathematical companion.", links: [
+    { href: "/research/autonomous-space-robots", label: "Autonomous Humanoid Robotics for Space Exploration", summary: "Full paper, lunar task-budget explorer, readiness gates and original document." },
+  ] },
   {
     title: "Space missions & reference",
     desc: "Missions, astronauts, ISS, rovers, Moon, solar system. Real mission data and calculations for researchers.",

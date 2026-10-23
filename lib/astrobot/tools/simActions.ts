@@ -3,6 +3,7 @@
  */
 
 export type SimActionType =
+  | "SIM_SET_PLAYBACK"
   | "SIM_SET_ORBIT"
   | "SIM_ZOOM"
   | "SIM_SHOW_TRANSFER"

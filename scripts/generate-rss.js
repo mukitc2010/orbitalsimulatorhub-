@@ -36,7 +36,7 @@ const blogPostsContent = fs.readFileSync(blogPostsPath, "utf8");
 
 const postRegex = /{\s*slug:\s*"([^"]+)",\s*title:\s*"([^"]+)",\s*excerpt:\s*"([^"]+)",[\s\S]*?category:\s*"([^"]+)",\s*date:\s*"([^"]+)",[\s\S]*?tags:\s*\[([^\]]+)\],/g;
 
-const posts = [];
+const posts = JSON.parse(fs.readFileSync(path.join(__dirname, "../client/src/data/spaceNews.json"), "utf8").replace(/^\uFEFF/, ""));
 let match;
 while ((match = postRegex.exec(blogPostsContent)) !== null) {
   const [, slug, title, excerpt, category, date, tagsStr] = match;

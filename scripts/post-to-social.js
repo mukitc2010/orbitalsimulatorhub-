@@ -23,6 +23,9 @@ const HASHTAGS = "#SpaceScience #OrbitalMechanics #AerospaceEngineering #STEM #S
 const SITE_URL = "https://www.orbitalsimulatorhub.com";
 
 function getPost(slug) {
+  const news = JSON.parse(readFileSync(path.join(__dirname, "../client/src/data/spaceNews.json"), "utf8").replace(/^\uFEFF/, ""));
+  const daily = news.find(post => post.slug === slug);
+  if (daily) return daily;
   const src = readFileSync(BLOG_FILE, "utf8");
   const escapedSlug = slug.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const match = src.match(new RegExp(`slug:\\s*"(${escapedSlug})",\\s*title:\\s*"([^"]+)",\\s*excerpt:\\s*"([^"]+)"`));
@@ -48,9 +51,10 @@ async function postToLinkedIn(post, url) {
 
   const postRes = await fetch("https://api.linkedin.com/rest/posts", {
     method: "POST",
+    signal: AbortSignal.timeout(30_000),
     headers: {
       "Content-Type": "application/json",
-      "LinkedIn-Version": "202402",
+      "LinkedIn-Version": process.env.LINKEDIN_API_VERSION || "202606",
       "X-Restli-Protocol-Version": "2.0.0",
       Authorization: `Bearer ${token}`,
     },
@@ -69,7 +73,7 @@ async function postToLinkedIn(post, url) {
   });
 
   if (!postRes.ok) {
-    throw new Error(`LinkedIn post failed: ${postRes.status} ${await postRes.text()}`);
+    throw new Error(`LinkedIn post failed: ${postRes.status}`);
   }
   console.log("[post-to-social] Posted to LinkedIn organization:", postRes.headers.get("x-restli-id") || "success");
 }

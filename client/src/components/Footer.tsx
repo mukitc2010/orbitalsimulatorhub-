@@ -1,6 +1,5 @@
 import { Link } from "wouter";
 import { ShareBar } from "./ShareBar";
-import { SupportSection } from "./SupportSection";
 
 const footerLinks = [
   { href: "/", label: "Home" },
@@ -39,7 +38,6 @@ export function Footer() {
             Built for the future of autonomous space intelligence
           </p>
         </div>
-        <SupportSection />
         <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
           {footerLinks.map(({ href, label }) => (
             <Link
