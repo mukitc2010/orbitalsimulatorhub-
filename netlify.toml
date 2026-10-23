@@ -1,6 +1,22 @@
-[build]
+﻿[build]
   command = "npm run build:client"
   publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/asi-agent"
+  to = "/.netlify/functions/asi-agent"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/astrobot/chat"
+  to = "/.netlify/functions/astrobot-chat"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/*"
