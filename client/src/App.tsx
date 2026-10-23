@@ -1,3 +1,6 @@
+import { OrbitMissionControl } from "./pages/OrbitMissionControl";
+import { ASIMissionControl } from "./pages/ASIMissionControl";
+import { SpaceRobotResearch } from "./pages/SpaceRobotResearch";
 import { Route, Switch } from "wouter";
 import { NavigationHeader } from "./components/NavigationHeader";
 import { Footer } from "./components/Footer";
@@ -5,7 +8,6 @@ import { SEOHead } from "./components/SEOHead";
 import { Home } from "./pages/Home";
 import { PlayLearn } from "./pages/PlayLearn";
 import { Simulator } from "./pages/Simulator";
-import { ASIMissionControl } from "./pages/ASIMissionControl";
 import { LearnNewton } from "./pages/LearnNewton";
 import { NewtonFormulas } from "./pages/NewtonFormulas";
 import { KidsGuide } from "./pages/KidsGuide";
@@ -52,6 +54,7 @@ import { SpaceNews } from "./pages/SpaceNews";
 import { NASAForKids } from "./pages/NASAForKids";
 import { SatelliteTutorial } from "./pages/SatelliteTutorial";
 import { SpaceQuiz } from "./pages/SpaceQuiz";
+import { PlatformBlueprint } from "./pages/PlatformBlueprint";
 import { AstronautExplorer } from "./pages/AstronautExplorer";
 import { AstronautProfile } from "./pages/AstronautProfile";
 import { PlanetHub } from "./pages/PlanetHub";
@@ -92,6 +95,7 @@ function App() {
           <Route path="/" component={Home} />
           <Route path="/play" component={PlayLearn} />
           <Route path="/simulator" component={Simulator} />
+          <Route path="/simulator/mission-control" component={OrbitMissionControl} />
           <Route path="/asi-mission-control" component={ASIMissionControl} />
           <Route path="/simulator/swarm" component={SpaceAGISwarmSimulator} />
           <Route path="/simulator/ai-astronaut-robot" component={AIAstronautRobotSimulator} />
@@ -105,6 +109,7 @@ function App() {
           <Route path="/guide" component={KidsGuide} />
           <Route path="/astrobot" component={AstroBot} />
           <Route path="/research" component={ResearchHub} />
+          <Route path="/research/autonomous-space-robots" component={SpaceRobotResearch} />
           <Route path="/research/neuro-space" component={NeuroSpaceResearch} />
           <Route path="/research/future-civilization" component={FutureSpaceCivilization} />
           <Route path="/research/next-100-years" component={Next100Years} />
@@ -162,6 +167,7 @@ function App() {
           <Route path="/learn/nasa-for-kids" component={NASAForKids} />
           <Route path="/learn/satellite-tutorial" component={SatelliteTutorial} />
           <Route path="/space-quiz" component={SpaceQuiz} />
+          <Route path="/platform-blueprint" component={PlatformBlueprint} />
           <Route path="/astronauts" component={AstronautExplorer} />
           <Route path="/astronauts/:slug" component={AstronautProfile} />
           <Route path="/planets" component={PlanetHub} />

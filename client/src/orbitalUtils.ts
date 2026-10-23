@@ -11,12 +11,12 @@ const MU = 398600.4418; // km³/s²
 export function getOrbitTemplateClient(preset: "LEO" | "MEO" | "GEO"): OrbitalElements {
   const R = EARTH_RADIUS_KM;
   if (preset === "LEO") {
-    return { semiMajorAxisKm: R + 400, eccentricity: 0.0001, inclinationDeg: 51.6, raanDeg: 0, argPerigeeDeg: 0, trueAnomalyDeg: 0 };
+    return { semiMajorAxisKm: R + 400, eccentricity: 0, inclinationDeg: 51.6, raanDeg: 0, argPerigeeDeg: 0, trueAnomalyDeg: 0 };
   }
   if (preset === "MEO") {
-    return { semiMajorAxisKm: R + 20200, eccentricity: 0.01, inclinationDeg: 55, raanDeg: 0, argPerigeeDeg: 0, trueAnomalyDeg: 0 };
+    return { semiMajorAxisKm: R + 20200, eccentricity: 0, inclinationDeg: 55, raanDeg: 0, argPerigeeDeg: 0, trueAnomalyDeg: 0 };
   }
-  return { semiMajorAxisKm: R + 35786, eccentricity: 0.0001, inclinationDeg: 0, raanDeg: 0, argPerigeeDeg: 0, trueAnomalyDeg: 0 };
+  return { semiMajorAxisKm: Math.cbrt(398600.4418 * (86164.0905 / (2 * Math.PI)) ** 2), eccentricity: 0, inclinationDeg: 0, raanDeg: 0, argPerigeeDeg: 0, trueAnomalyDeg: 0 };
 }
 
 /** Orbital period in minutes (accurate for elliptic orbits). */

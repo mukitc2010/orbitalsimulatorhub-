@@ -1,6 +1,7 @@
 import { lazy, Suspense, useState } from "react";
 import { Link } from "wouter";
 import { DailyTopicIcon } from "../components/DailyTopicIcon";
+import { PremiumOrbitalHero } from "../components/PremiumOrbitalHero";
 import { ShareBar } from "../components/ShareBar";
 import { BLOG_POSTS } from "../data/blogPosts";
 import { getBlogImage } from "../data/blogImages";
@@ -85,8 +86,20 @@ export function Home() {
 
   return (
     <div className="home-page-wrapper -mx-4 px-4 py-2 rounded-2xl">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
+        <div className="mb-8">
+          <PremiumOrbitalHero />
+        </div>
         {/* ═══ NEWEST BLOG POST — Prominent at top ═══ */}
+        <section aria-labelledby="featured-robot-paper" className="mb-8 rounded-2xl border border-cyan-400/40 bg-gradient-to-br from-cyan-950/80 to-indigo-950/60 p-6 sm:p-8">
+          <p className="font-mono text-xs uppercase tracking-[0.18em] text-cyan-300">Featured research / New concept paper</p>
+          <h2 id="featured-robot-paper" className="mt-3 max-w-3xl text-2xl font-semibold text-white sm:text-3xl">Autonomous Humanoid Robotics for Space Exploration</h2>
+          <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-300">A mission architecture for scouts, dexterous robots and human supervision. Read the full paper, explore its lunar task-budget model, and examine the safety gates before crew arrival.</p>
+          <div className="mt-5 flex flex-wrap items-center gap-4">
+            <Link href="/research/autonomous-space-robots"><a className="rounded-lg bg-cyan-300 px-5 py-3 text-sm font-semibold text-slate-950">Read the paper and explore the model</a></Link>
+            <span className="text-xs text-slate-400">Research concept ? Full text ? Original download</span>
+          </div>
+        </section>
         {latestPost && (
           <section className="mb-6 animate-fade-in-up">
             <Link href={`/blog/${latestPost.slug}`}>

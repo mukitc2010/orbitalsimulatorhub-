@@ -1,0 +1,60 @@
+name: Daily planetary news agent
+on:
+  schedule:
+    - cron: '15 13 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: daily-space-news
+  cancel-in-progress: false
+jobs:
+  roundup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci --legacy-peer-deps
+      - run: python -m unittest discover -s scripts/space-news -p 'test_*.py'
+      - name: Collect fresh headlines
+        id: collect
+        run: |
+          python scripts/space-news/agent.py --write
+          if ! git diff --quiet -- client/src/data/spaceNews.json; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.collect.outputs.changed == 'true'
+        run: npm run generate:rss
+      - if: steps.collect.outputs.changed == 'true'
+        run: npm run test:run -- --passWithNoTests
+      - if: steps.collect.outputs.changed == 'true'
+        run: npm run build
+      - if: steps.collect.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.NEWS_AUTOMATION_TOKEN || github.token }}
+          branch: automation/space-news
+          delete-branch: true
+          add-paths: |
+            client/src/data/spaceNews.json
+            client/public/rss.xml
+            client/public/blog/rss.xml
+          title: 'news: daily planetary roundup'
+          commit-message: 'news: daily planetary roundup'
+          body: |
+            Source-attributed headlines from official NASA/JPL/ESA feeds.
+            Checks: publication age, source allowlist, deduplication, unit tests and build.
+            Planet sections without eligible headlines are explicitly marked.
+            Website publication follows the normal merge/deployment process.
+            LinkedIn promotion runs after merge using the configured organization credentials.
+          labels: automated

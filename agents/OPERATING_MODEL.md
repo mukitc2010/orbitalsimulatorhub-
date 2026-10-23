@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This registry defines 137 specialized roles for a governed engineering program. It is a planning and ownership model, not permission for autonomous agents to change production.
+This registry defines 139 specialized roles for a governed engineering program. It is a planning and ownership model, not permission for autonomous agents to change production.
 
 ## Delivery flow
 
@@ -39,3 +39,5 @@ The machine-readable source of truth is [`registry.json`](registry.json). It con
 - Vercel preview status
 - Review of UI, accessibility, security, and source claims where relevant
 - A concise release note and rollback target
+
+The ORACLE mission agent role is documented in [ORACLE_LOOP_ENGINEER.md](ORACLE_LOOP_ENGINEER.md).

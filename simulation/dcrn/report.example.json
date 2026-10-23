@@ -1,0 +1,217 @@
+{
+  "seed": 42,
+  "model": "synthetic encounter-plane v1",
+  "results": [
+    {
+      "scenario": "link-loss",
+      "architecture": "distributed",
+      "status": "operator-review",
+      "reasons": [
+        "communication-gap"
+      ],
+      "recommendation": null,
+      "candidates": [
+        {
+          "dv": 0,
+          "worstRisk": 0.04729850783815491,
+          "secondaryRisk": 0,
+          "rejected": [
+            "target-risk"
+          ]
+        },
+        {
+          "dv": -0.2,
+          "worstRisk": 0.000002549804000685268,
+          "secondaryRisk": 0,
+          "rejected": []
+        },
+        {
+          "dv": 0.2,
+          "worstRisk": 0.00023270186400097215,
+          "secondaryRisk": 0,
+          "rejected": []
+        },
+        {
+          "dv": -0.5,
+          "worstRisk": 1.710823762219041e-25,
+          "secondaryRisk": 0,
+          "rejected": []
+        },
+        {
+          "dv": 0.5,
+          "worstRisk": 1.6281281737413473e-20,
+          "secondaryRisk": 0,
+          "rejected": []
+        }
+      ],
+      "estimates": [
+        16.361880880780518,
+        16.361880880780518,
+        19.618249585852027
+      ],
+      "evidence": [
+        {
+          "source": "tracker-0",
+          "node": 0,
+          "producedAt": 990,
+          "arrivesAt": 995,
+          "missM": 17.018761398270726,
+          "sigmaM": 30,
+          "tcaS": 600,
+          "object": "debris-a"
+        },
+        {
+          "source": "tracker-1",
+          "node": 1,
+          "producedAt": 990,
+          "arrivesAt": 995,
+          "missM": 15.70500036329031,
+          "sigmaM": 30,
+          "tcaS": 600,
+          "object": "debris-a"
+        },
+        {
+          "source": "tracker-2",
+          "node": 2,
+          "producedAt": 990,
+          "arrivesAt": 995,
+          "missM": 19.618249585852027,
+          "sigmaM": 30,
+          "tcaS": 600,
+          "object": "debris-a"
+        }
+      ],
+      "audit": [
+        "observation: accepted tracker-0/debris-a sigma=30",
+        "observation: accepted tracker-1/debris-a sigma=30",
+        "observation: accepted tracker-2/debris-a sigma=30",
+        "coordination: round 1, coverage 2/2/1",
+        "coordination: round 2, coverage 2/2/1",
+        "coordination: round 3, coverage 2/2/1",
+        "orbit: retained 3 source estimates; spread=3.913249222561717m",
+        "safety: dv=0, risk=0.04729850783815491, secondary=0, target-risk",
+        "safety: dv=-0.2, risk=0.000002549804000685268, secondary=0, passed",
+        "safety: dv=0.2, risk=0.00023270186400097215, secondary=0, passed",
+        "safety: dv=-0.5, risk=1.710823762219041e-25, secondary=0, passed",
+        "safety: dv=0.5, risk=1.6281281737413473e-20, secondary=0, passed",
+        "coordination: escalated to operator; no command issued"
+      ],
+      "commandsIssued": 0,
+      "metrics": {
+        "simulatedLatencyS": 6,
+        "messages": 6,
+        "bytes": 1351,
+        "stale": 0,
+        "unavailable": 0,
+        "disagreementM": 3.913249222561717,
+        "recommendedDv": null
+      }
+    },
+    {
+      "scenario": "link-loss",
+      "architecture": "centralized",
+      "status": "recommendation",
+      "reasons": [],
+      "recommendation": {
+        "dv": -0.2,
+        "worstRisk": 0.000002549804000685268,
+        "secondaryRisk": 0,
+        "rejected": []
+      },
+      "candidates": [
+        {
+          "dv": 0,
+          "worstRisk": 0.04729850783815491,
+          "secondaryRisk": 0,
+          "rejected": [
+            "target-risk"
+          ]
+        },
+        {
+          "dv": -0.2,
+          "worstRisk": 0.000002549804000685268,
+          "secondaryRisk": 0,
+          "rejected": []
+        },
+        {
+          "dv": 0.2,
+          "worstRisk": 0.00023270186400097215,
+          "secondaryRisk": 0,
+          "rejected": []
+        },
+        {
+          "dv": -0.5,
+          "worstRisk": 1.710823762219041e-25,
+          "secondaryRisk": 0,
+          "rejected": []
+        },
+        {
+          "dv": 0.5,
+          "worstRisk": 1.6281281737413473e-20,
+          "secondaryRisk": 0,
+          "rejected": []
+        }
+      ],
+      "estimates": [
+        17.447337115804356,
+        17.447337115804356,
+        17.447337115804356
+      ],
+      "evidence": [
+        {
+          "source": "tracker-0",
+          "node": 0,
+          "producedAt": 990,
+          "arrivesAt": 995,
+          "missM": 17.018761398270726,
+          "sigmaM": 30,
+          "tcaS": 600,
+          "object": "debris-a"
+        },
+        {
+          "source": "tracker-1",
+          "node": 1,
+          "producedAt": 990,
+          "arrivesAt": 995,
+          "missM": 15.70500036329031,
+          "sigmaM": 30,
+          "tcaS": 600,
+          "object": "debris-a"
+        },
+        {
+          "source": "tracker-2",
+          "node": 2,
+          "producedAt": 990,
+          "arrivesAt": 995,
+          "missM": 19.618249585852027,
+          "sigmaM": 30,
+          "tcaS": 600,
+          "object": "debris-a"
+        }
+      ],
+      "audit": [
+        "observation: accepted tracker-0/debris-a sigma=30",
+        "observation: accepted tracker-1/debris-a sigma=30",
+        "observation: accepted tracker-2/debris-a sigma=30",
+        "coordination: centralized collector received identical available inputs",
+        "orbit: retained 3 source estimates; spread=3.913249222561717m",
+        "safety: dv=0, risk=0.04729850783815491, secondary=0, target-risk",
+        "safety: dv=-0.2, risk=0.000002549804000685268, secondary=0, passed",
+        "safety: dv=0.2, risk=0.00023270186400097215, secondary=0, passed",
+        "safety: dv=-0.5, risk=1.710823762219041e-25, secondary=0, passed",
+        "safety: dv=0.5, risk=1.6281281737413473e-20, secondary=0, passed",
+        "coordination: recommendation prepared for operator; no command issued"
+      ],
+      "commandsIssued": 0,
+      "metrics": {
+        "simulatedLatencyS": 4,
+        "messages": 3,
+        "bytes": 405,
+        "stale": 0,
+        "unavailable": 0,
+        "disagreementM": 3.913249222561717,
+        "recommendedDv": -0.2
+      }
+    }
+  ]
+}

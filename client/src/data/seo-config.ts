@@ -17,6 +17,21 @@ export interface SEOConfig {
 }
 
 export const SEO_CONFIGS: Record<string, SEOConfig> = {
+  "/asi-mission-control": {
+    path: "/asi-mission-control",
+    title: "ASI Mission Control — ORACLE AI Agent | Orbital Simulator Hub",
+    description: "Talk to ORACLE, an AI mission-control agent with real tools: it runs live orbital mechanics and deploys satellites into the 3D simulator on your command. Free.",
+    keywords: "space AI agent, orbital mechanics AI, AI mission control, satellite deployment simulator, ASI agent, space chatbot with tools, orbital calculator AI, Claude space agent",
+    lastUpdated: "2026-08-17T00:00:00Z",
+  },
+
+  "/research/autonomous-space-robots": {
+    path: "/research/autonomous-space-robots",
+    title: "Autonomous Humanoid Robotics for Space Exploration | Research Paper",
+    description: "Read the research concept on heterogeneous space robots, bounded autonomy, mission optimization and readiness gates. Explore an interactive lunar task-budget model.",
+    keywords: "space robotics research, humanoid robots, lunar mission planning, bounded autonomy, robot task allocation",
+    lastUpdated: "2026-10-23T00:00:00Z",
+  },
   "/": {
     path: "/",
     title: "Orbital Mechanics Simulator — Free 3D Orbit & Swarm Simulator | NASA & Space Study",
@@ -119,13 +134,6 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     description: "Beginner guide to space and orbital mechanics. Learn how satellites orbit, what is LEO, and explore the simulator step by step.",
     keywords: "orbital mechanics guide, space guide for beginners, how to use orbit simulator, space for kids guide, learn space free, satellite guide, LEO MEO GEO guide",
     lastUpdated: "2026-02-17T00:00:00Z",
-  },
-  "/asi-mission-control": {
-    path: "/asi-mission-control",
-    title: "ASI Mission Control — ORACLE AI Agent | Orbital Simulator Hub",
-    description: "Talk to ORACLE, an AI mission-control agent with real tools: it runs live orbital mechanics and deploys satellites into the 3D simulator on your command. Free.",
-    keywords: "space AI agent, orbital mechanics AI, AI mission control, satellite deployment simulator, ASI agent, space chatbot with tools, orbital calculator AI, Claude space agent",
-    lastUpdated: "2026-08-17T00:00:00Z",
   },
   "/astrobot": {
     path: "/astrobot",

@@ -1,3 +1,5 @@
+import spaceNews from "./spaceNews.json";
+
 export type BlogCategory =
   | "nasa-news"
   | "space-facts"
@@ -23,6 +25,7 @@ export interface BlogPost {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...(spaceNews as BlogPost[]),
   {
     slug: "what-is-space-agi-why-it-matters",
     title: "What Is Space AGI? Why Artificial General Intelligence in Space Matters",

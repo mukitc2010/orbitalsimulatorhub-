@@ -648,6 +648,144 @@ button:focus-visible {
     }
   }
 }
+
+.orbit-mission-shell {
+  --mission-cyan: #58ddff;
+  background-color: #05090f;
+  background-image:
+    radial-gradient(1px 1px at 11% 13%, rgba(226, 246, 255, 0.42), transparent 2px),
+    radial-gradient(1px 1px at 76% 22%, rgba(190, 222, 255, 0.28), transparent 2px),
+    radial-gradient(1px 1px at 42% 68%, rgba(255, 255, 255, 0.22), transparent 2px),
+    radial-gradient(1px 1px at 91% 83%, rgba(190, 222, 255, 0.24), transparent 2px),
+    radial-gradient(ellipse at 50% -20%, rgba(10, 71, 91, 0.35), transparent 58%),
+    linear-gradient(145deg, #060c13, #08121b 58%, #090e13);
+}
+
+.orbit-panel {
+  border: 1px solid rgba(148, 190, 205, 0.2);
+  border-radius: 6px;
+  background: linear-gradient(145deg, rgba(15, 24, 31, 0.96), rgba(8, 14, 20, 0.96));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.mission-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(88, 221, 255, 0.32), rgba(255, 255, 255, 0.06));
+}
+
+.mission-range {
+  width: 100%;
+  height: 1.25rem;
+  margin: 0;
+  accent-color: var(--mission-cyan);
+  cursor: pointer;
+}
+
+.mission-range:focus-visible {
+  border-radius: 999px;
+  outline: 2px solid var(--mission-cyan);
+  outline-offset: 3px;
+}
+
+.mission-primary-button,
+.mission-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.mission-primary-button {
+  border: 1px solid var(--mission-cyan);
+  background: var(--mission-cyan);
+  color: #061117;
+}
+
+.mission-primary-button:hover:not(:disabled) { background: #9cecff; }
+.mission-primary-button:disabled { cursor: not-allowed; opacity: 0.45; }
+
+.mission-secondary-button {
+  border: 1px solid rgba(175, 205, 216, 0.24);
+  background: rgba(255, 255, 255, 0.035);
+  color: #d9e6ea;
+}
+
+.mission-secondary-button:hover:not(:disabled) {
+  border-color: rgba(88, 221, 255, 0.6);
+  background: rgba(88, 221, 255, 0.08);
+}
+
+.mission-primary-button:focus-visible,
+.mission-secondary-button:focus-visible,
+.orbit-panel button:focus-visible,
+.orbit-panel input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--mission-cyan);
+  outline-offset: 3px;
+}
+
+.mission-legend-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+}
+
+.mission-metric-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+  padding: 0.72rem 0;
+}
+
+.mission-metric-row dt { color: #9aabb2; font-size: 0.72rem; }
+.mission-metric-row dd { color: #ecf8fb; font-family: "Space Mono", monospace; font-size: 0.8rem; text-align: right; }
+.mission-metric-row dd small { color: #8799a1; font-size: 0.62rem; }
+
+.orbit-mission-shell .simulator-visualization {
+  height: clamp(420px, 64vh, 680px);
+  border-radius: 6px;
+}
+
+.orbit-astrobot-chat {
+  --bg-card: #0d151c;
+  --bg-surface: #121f28;
+  --text-primary: #e9f5f8;
+  --text-secondary: #a7bac2;
+  --text-muted: #82959d;
+  --border-color: rgba(157, 190, 201, 0.2);
+  --accent-cyan: #58ddff;
+  min-height: 300px;
+  border-width: 1px;
+  border-radius: 6px;
+  border-color: rgba(157, 190, 201, 0.2);
+}
+
+.orbit-astrobot-chat > div:last-child input {
+  min-width: 0;
+}
+
+.orbit-astrobot-chat > div:last-child button:focus-visible,
+.orbit-astrobot-chat > div:last-child input:focus-visible {
+  outline: 2px solid #58ddff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .orbit-mission-shell { margin-left: -1rem; margin-right: -1rem; padding-left: 1rem; padding-right: 1rem; }
+  .orbit-mission-shell .simulator-visualization { height: 420px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mission-primary-button,
+  .mission-secondary-button { transition: none; }
+}
 .hero-gradient a:not(.btn-ghost) { color: var(--text-on-accent); }
 
 /* Subtle animations for interest */

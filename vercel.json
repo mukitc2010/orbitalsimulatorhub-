@@ -5,6 +5,10 @@
   "framework": null,
   "rewrites": [
     {
+      "source": "/research/space_robot_research_paper.docx",
+      "destination": "/research/space_robot_research_paper.docx"
+    },
+    {
       "source": "/docs/:path*",
       "destination": "/docs/:path*"
     },
