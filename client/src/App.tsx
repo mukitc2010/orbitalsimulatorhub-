@@ -1,3 +1,4 @@
+import { SpaceMathGame } from "./pages/SpaceMathGame";
 import { OrbitMissionControl } from "./pages/OrbitMissionControl";
 import { ASIMissionControl } from "./pages/ASIMissionControl";
 import { SpaceRobotResearch } from "./pages/SpaceRobotResearch";
@@ -93,6 +94,7 @@ function App() {
       <main className="container mx-auto px-4 py-6 max-w-7xl flex-1 relative">
         <Switch>
           <Route path="/" component={Home} />
+          <Route path="/games/space-math" component={SpaceMathGame} />
           <Route path="/play" component={PlayLearn} />
           <Route path="/simulator" component={Simulator} />
           <Route path="/simulator/mission-control" component={OrbitMissionControl} />

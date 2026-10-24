@@ -91,6 +91,13 @@ export function Home() {
           <PremiumOrbitalHero />
         </div>
         {/* ═══ NEWEST BLOG POST — Prominent at top ═══ */}
+        <section className="mb-8 overflow-hidden rounded-2xl border border-emerald-300/35 bg-gradient-to-br from-slate-950 via-teal-950 to-slate-950 p-6 sm:p-8" aria-labelledby="space-game-feature">
+          <p className="font-mono text-xs uppercase tracking-[0.18em] text-emerald-200">New / Play with your crew</p>
+          <h2 id="space-game-feature" className="mt-3 text-3xl font-bold text-white sm:text-4xl">Orbital Gauntlet</h2>
+          <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-300">Six space-math missions. Calculate orbital speeds, transfer burns and propellant loads before your window closes. Challenge friends to the same daily flight.</p>
+          <Link href="/games/space-math"><a className="mt-5 inline-flex rounded-lg bg-emerald-200 px-5 py-3 text-sm font-bold text-slate-950">Play the space math challenge</a></Link>
+          <p className="mt-3 text-xs text-slate-400">Daily challenges / Expert & practice modes / No sign-up</p>
+        </section>
         <section aria-labelledby="featured-robot-paper" className="mb-8 rounded-2xl border border-cyan-400/40 bg-gradient-to-br from-cyan-950/80 to-indigo-950/60 p-6 sm:p-8">
           <p className="font-mono text-xs uppercase tracking-[0.18em] text-cyan-300">Featured research / New concept paper</p>
           <h2 id="featured-robot-paper" className="mt-3 max-w-3xl text-2xl font-semibold text-white sm:text-3xl">Autonomous Humanoid Robotics for Space Exploration</h2>
