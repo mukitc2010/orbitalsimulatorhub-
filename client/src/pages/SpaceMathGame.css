@@ -1,0 +1,552 @@
+.math-game {
+  --game-cyan: #80f3df;
+  --game-muted: #94adbf;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px clamp(14px, 3vw, 32px) 12px;
+  border-radius: 22px;
+  background:
+    radial-gradient(ellipse at 85% 10%, #0c394447, transparent 40%), #060f1d;
+  color: #e6f0f5;
+  font-family: Inter, system-ui, sans-serif;
+}
+.math-game * {
+  box-sizing: border-box;
+}
+.math-game-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0 25px;
+  border-bottom: 1px solid #214153;
+  font: 11px monospace;
+  letter-spacing: 1.5px;
+}
+.math-game-back {
+  color: #a3bac8;
+}
+.math-game-live {
+  color: var(--game-cyan);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.math-game-live i {
+  width: 6px;
+  height: 6px;
+  background: var(--game-cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 12px #80f3df;
+}
+.math-game-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 55px 0 35px;
+}
+.math-game-eyebrow {
+  font: 11px monospace;
+  letter-spacing: 2px;
+  color: var(--game-cyan);
+  margin: 0 0 16px;
+}
+.math-game h1 {
+  font-size: clamp(32px, 6vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  font-weight: 800;
+  margin: 0 0 24px;
+  color: #f1f8ff;
+}
+.math-game-hero h1 {
+  font-size: clamp(48px, 7.5vw, 96px);
+}
+.math-game-hero h1 span {
+  color: var(--game-cyan);
+}
+.math-game-lead {
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.6;
+  color: #cfdee8;
+  max-width: 680px;
+}
+.math-game-muted {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--game-muted);
+}
+.math-game-small {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--game-muted);
+  margin: 14px 0;
+}
+.math-game-orbit {
+  width: 100%;
+  max-width: 460px;
+  justify-self: center;
+  filter: drop-shadow(0 0 40px #0c5f672e);
+}
+.math-game-setup-grid,
+.math-game-community {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0 32px;
+}
+.math-game-panel {
+  min-width: 0;
+  padding: 30px;
+  border: 1px solid #244251;
+  border-radius: 18px;
+  background: linear-gradient(130deg, #0c1b2be8, #0a1421ee);
+  box-shadow: 0 15px 45px #0002;
+}
+.math-game h2 {
+  font-size: 24px;
+  letter-spacing: -0.6px;
+  font-weight: 650;
+  color: #eef7ff;
+  margin: 0 0 20px;
+}
+.math-game-label {
+  font-size: 13px;
+  display: block;
+  margin: 20px 0 14px;
+  color: #d0e1eb;
+}
+.math-game-label > span {
+  display: block;
+  color: var(--game-muted);
+  font-size: 11px;
+  margin-top: 5px;
+}
+.math-game input:not([type="radio"]) {
+  width: 100%;
+  min-width: 0;
+  margin-top: 10px;
+  border: 1px solid #385368;
+  border-radius: 9px;
+  background: #050f1c;
+  padding: 13px 14px;
+  font: 16px monospace;
+  color: #effbff;
+}
+.math-game input:focus-visible,
+.math-game button:focus-visible,
+.math-game a:focus-visible,
+.math-game summary:focus-visible {
+  outline: 2px solid var(--game-cyan);
+  outline-offset: 4px;
+}
+.math-game-modes {
+  border: 0;
+  padding: 0;
+  margin: 25px 0;
+}
+.math-game-modes legend {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.math-game-modes label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #284454;
+  padding: 13px 15px;
+  border-radius: 10px;
+  margin-bottom: 9px;
+  cursor: pointer;
+}
+.math-game-modes label.selected {
+  border-color: var(--game-cyan);
+  background: #80f3df0c;
+}
+.math-game-modes input {
+  accent-color: #80f3df;
+}
+.math-game-modes strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+.math-game-modes small {
+  display: block;
+  font-size: 12px;
+  color: var(--game-muted);
+  margin-top: 4px;
+}
+.math-game button {
+  cursor: pointer;
+}
+.math-game-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: var(--game-cyan);
+  border: 1px solid var(--game-cyan);
+  color: #072827;
+  border-radius: 9px;
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 750;
+  transition:
+    filter 0.2s,
+    transform 0.2s;
+}
+.math-game-primary:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+.math-game-secondary {
+  background: #162939;
+  color: #d4ebf2;
+  border: 1px solid #405967;
+  border-radius: 9px;
+  padding: 13px 18px;
+  font-size: 13px;
+}
+.math-game button:disabled {
+  opacity: 0.5;
+  cursor: default;
+  transform: none;
+}
+.math-game-text-button {
+  border: 0;
+  background: transparent;
+  color: #a9beca;
+  font-size: 13px;
+  text-decoration: underline;
+  padding: 12px;
+}
+.math-game-code {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+.math-game-code span {
+  color: var(--game-muted);
+  font: 10px monospace;
+  letter-spacing: 1px;
+}
+.math-game-code strong {
+  width: 100%;
+  font: 14px monospace;
+  overflow-wrap: anywhere;
+}
+.math-game-code button {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: var(--game-cyan);
+  font-size: 12px;
+  text-decoration: underline;
+}
+.math-game-brief ol {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0;
+}
+.math-game-brief li {
+  display: flex;
+  gap: 18px;
+  border-bottom: 1px solid #203b4c;
+  padding: 13px 0;
+}
+.math-game-brief li b {
+  font: 13px monospace;
+  color: var(--game-cyan);
+  padding-top: 2px;
+}
+.math-game-brief li span {
+  font-size: 14px;
+}
+.math-game-brief li small {
+  display: block;
+  color: #7995aa;
+  letter-spacing: 1px;
+  font: 9px monospace;
+  margin-top: 6px;
+}
+.math-game-telemetry {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 30px 0;
+  padding: 22px 25px;
+  background: #0b1a29;
+  border: 1px solid #244251;
+  border-radius: 12px;
+}
+.math-game-telemetry span {
+  display: block;
+  color: #92aabc;
+  font: 9px monospace;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+.math-game-telemetry strong {
+  font: clamp(15px, 2vw, 23px) monospace;
+  color: #e2fff7;
+  overflow-wrap: anywhere;
+}
+.math-game-telemetry .math-game-urgent strong {
+  color: #ffbc9a;
+}
+.math-game-progress {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+  overflow-x: auto;
+  margin: 25px 0;
+}
+.math-game-progress li {
+  flex: 1;
+  min-width: 100px;
+  max-width: 200px;
+  padding: 12px 10px;
+  border-top: 2px solid #233d4f;
+  font-size: 11px;
+  color: #7890a3;
+}
+.math-game-progress li span {
+  display: block;
+  font: 12px monospace;
+  margin-bottom: 7px;
+}
+.math-game-progress li.current {
+  color: var(--game-cyan);
+  border-color: var(--game-cyan);
+}
+.math-game-progress li.completed {
+  color: #bedbd7;
+  border-color: #4d8580;
+}
+.math-game-play-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(230px, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+.math-game-play-grid h1 {
+  font-size: clamp(28px, 4vw, 46px);
+  letter-spacing: -1.3px;
+}
+.math-game-play-grid .math-game-lead {
+  font-size: 16px;
+}
+.math-game-givens {
+  list-style: none;
+  padding: 20px;
+  background: #060f1a;
+  border: 1px solid #253e4f;
+  border-radius: 9px;
+  font: 13px/2 monospace;
+  color: #afcbdb;
+  margin: 25px 0;
+}
+.math-game .math-game-question {
+  font-size: 19px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-top: 25px;
+}
+.math-game-answer-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.math-game-answer-row > span {
+  padding-top: 10px;
+  font: 15px monospace;
+  color: var(--game-cyan);
+  min-width: 42px;
+}
+.math-game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.math-game-feedback {
+  font-size: 13px;
+  color: #f2c98c;
+  line-height: 1.8;
+  min-height: 24px;
+}
+.math-game-hint {
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #cda95e55;
+  background: #cda95e09;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #edd5a5;
+}
+.math-game-reference p,
+.math-game-reference ul {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--game-muted);
+}
+.math-game-reference ul {
+  padding-left: 18px;
+}
+.math-game-reference li {
+  margin-top: 18px;
+}
+.math-game-solution {
+  background: #80f3df0a;
+  padding: 22px;
+  border: 1px solid #80f3df44;
+  border-radius: 12px;
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.math-game-solution h2 {
+  color: var(--game-cyan);
+}
+.math-game-solution ol {
+  padding-left: 20px;
+  overflow-wrap: anywhere;
+}
+.math-game-results {
+  text-align: center;
+  margin: 40px 0;
+}
+.math-game-results h1 {
+  font-size: clamp(30px, 5vw, 55px);
+}
+.math-game-results .math-game-lead {
+  margin-left: auto;
+  margin-right: auto;
+}
+.math-game-big-score {
+  font: clamp(64px, 12vw, 120px)/1 monospace;
+  color: var(--game-cyan);
+  margin: 30px 0;
+}
+.math-game-big-score > span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #8baebf;
+  margin-top: 14px;
+}
+.math-game-debrief-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 30px 0;
+  text-align: left;
+}
+.math-game-debrief-grid details {
+  border: 1px solid #244556;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #a8c7d6;
+  line-height: 1.9;
+}
+.math-game-debrief-grid summary {
+  cursor: pointer;
+  color: #e1eef2;
+  font-size: 12px;
+}
+.math-game-debrief-grid ol {
+  padding-left: 17px;
+  overflow-wrap: anywhere;
+}
+.math-game-results .math-game-actions {
+  justify-content: center;
+}
+.math-game-records {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+.math-game-records li {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 13px 0;
+  border-bottom: 1px solid #203847;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.math-game-records small {
+  display: block;
+  color: #8da9ba;
+  font-size: 11px;
+  margin-top: 5px;
+}
+.math-game-records strong {
+  color: var(--game-cyan);
+  font-family: monospace;
+}
+.math-game-footer {
+  border-top: 1px solid #203b4c;
+  padding: 20px 0 10px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #7f9aac;
+}
+.math-game-community .math-game-label input {
+  font-size: 11px;
+}
+@media (max-width: 760px) {
+  .math-game-hero {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-top: 35px;
+  }
+  .math-game-orbit {
+    max-width: 280px;
+    margin: 5px auto;
+  }
+  .math-game-setup-grid,
+  .math-game-community,
+  .math-game-play-grid {
+    grid-template-columns: 1fr;
+  }
+  .math-game-panel {
+    padding: 22px;
+  }
+  .math-game-telemetry {
+    grid-template-columns: 1fr 1fr;
+    padding: 18px;
+  }
+  .math-game-debrief-grid {
+    grid-template-columns: 1fr;
+  }
+  .math-game-header {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+  .math-game-hero h1 {
+    font-size: clamp(45px, 12vw, 76px);
+  }
+  .math-game-primary {
+    min-height: 46px;
+  }
+  .math-game-progress li {
+    min-width: 100px;
+  }
+  .math-game-community {
+    margin-top: 30px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .math-game * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

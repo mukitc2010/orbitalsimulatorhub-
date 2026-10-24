@@ -38,6 +38,7 @@ const BLOG_SUBNAV = [
 
 const NAV = [
   { path: "/", label: "Home", title: "OrbitalSimulatorHub — Orbital Mechanics • AI in Space • Future Space Intelligence" },
+  { path: "/games/space-math", label: "Math Game", title: "Orbital Gauntlet: advanced space-math challenges" },
   { path: "/planets", label: "Planets", title: "Planet Study Hub — explore every planet in our solar system" },
   { path: "/simulator", label: "Simulator", title: "Orbit & Swarm simulators — LEO, MEO, GEO, AI collision avoidance", subnav: SIMULATOR_SUBNAV },
   { path: "/research/space-agi-lab", label: "🧠 Space-AGI Lab", title: "Space-AGI Engineering Lab — autonomous spacecraft, decision intelligence, orbital math", subnav: SPACE_AGI_SUBNAV },
