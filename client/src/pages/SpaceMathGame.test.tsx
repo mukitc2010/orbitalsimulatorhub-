@@ -30,6 +30,9 @@ describe("Orbital Gauntlet player flow", () => {
     });
     fireEvent.click(screen.getByRole("button", { name: "Commit answer" }));
     expect(screen.getByText("Mission cleared.")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Mission cleared." }),
+    ).toHaveFocus();
     expect(screen.getByText("750 points earned.")).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: "Next mission" }));
     expect(

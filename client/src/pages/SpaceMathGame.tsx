@@ -146,6 +146,10 @@ export function SpaceMathGame() {
   }, [remaining, run]);
   useEffect(() => {
     if (run?.phase === "playing") inputRef.current?.focus();
+    if (run?.phase === "review")
+      document.getElementById("solution-title")?.focus();
+    if (run?.phase === "finished")
+      document.getElementById("results-title")?.focus();
   }, [run?.index, run?.phase]);
   function finish(current: Run, timedOut = false) {
     if (finishLock.current || current.phase === "finished") return;
@@ -442,7 +446,7 @@ export function SpaceMathGame() {
           aria-labelledby="results-title"
         >
           <p className="math-game-eyebrow">FLIGHT DEBRIEF / {run.name}</p>
-          <h1 id="results-title">
+          <h1 id="results-title" tabIndex={-1}>
             {run.timedOut
               ? "Window closed."
               : run.records.filter((r) => r.correct).length === 6
@@ -629,7 +633,7 @@ export function SpaceMathGame() {
                 </form>
               ) : (
                 <div className="math-game-solution" role="status">
-                  <h2>
+                  <h2 id="solution-title" tabIndex={-1}>
                     {run.records.at(-1)?.correct
                       ? "Mission cleared."
                       : "Solution unlocked."}
