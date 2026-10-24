@@ -1,8 +1,11 @@
-﻿/** Adapt the existing request handler to Netlify without duplicating mission logic. */
+import { meetsNodeSecurityBaseline } from "../scripts/check-node-runtime.mjs";
+/** Adapt the existing request handler to Netlify without duplicating mission logic. */
 export async function runApi(api: (req: any, res: any) => unknown, event: { httpMethod: string; body: string | null }) {
   let statusCode = 200;
   let body = '';
-  const headers: Record<string, string> = {};
+  const headers: Record<string, string> = {
+    "X-Node-Security-Baseline": meetsNodeSecurityBaseline(process.versions.node) ? "met" : "below-minimum",
+  };
   const response = {
     setHeader(name: string, value: string) { headers[name] = value; return response; },
     status(code: number) { statusCode = code; return response; },
