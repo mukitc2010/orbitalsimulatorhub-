@@ -7,6 +7,11 @@ import { ThemeProvider } from "./lib/ThemeContext";
 import App from "./App";
 import "./index.css";
 
+// These endpoints exist on Vercel, but Netlify rewrites them to the SPA HTML.
+// Custom Vercel domains can explicitly opt in with the build variable below.
+const enableVercelTelemetry = window.location.hostname.endsWith(".vercel.app") ||
+  import.meta.env.VITE_ENABLE_VERCEL_TELEMETRY === "true";
+
 // Apply saved theme before React renders to prevent flash
 (function () {
   try {
@@ -26,8 +31,8 @@ if (!rootEl) {
         <ErrorBoundary>
           <ThemeProvider>
             <App />
-            <Analytics />
-            <SpeedInsights />
+            {enableVercelTelemetry && <Analytics />}
+            {enableVercelTelemetry && <SpeedInsights />}
           </ThemeProvider>
         </ErrorBoundary>
       </StrictMode>
