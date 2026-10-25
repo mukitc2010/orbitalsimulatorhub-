@@ -154,6 +154,7 @@ export function SpaceMathGame() {
   function finish(current: Run, timedOut = false) {
     if (finishLock.current || current.phase === "finished") return;
     finishLock.current = true;
+    timedOut = timedOut || (current.deadline !== null && Date.now() >= current.deadline);
     const complete =
       current.records.length === missions.length &&
       current.records.every((r) => r.correct);
@@ -210,6 +211,10 @@ export function SpaceMathGame() {
   }
   function resolve(correct: boolean) {
     if (!run || run.phase !== "playing") return;
+    if (run.deadline !== null && Date.now() >= run.deadline) {
+      finish(run, true);
+      return;
+    }
     const streak = [...run.records].reverse().findIndex((r) => !r.correct);
     const priorStreak = streak === -1 ? run.records.length : streak;
     setRun({
@@ -255,7 +260,11 @@ export function SpaceMathGame() {
     );
   }
   function next() {
-    if (!run) return;
+    if (!run || run.phase !== "review") return;
+    if (run.deadline !== null && Date.now() >= run.deadline) {
+      finish(run, true);
+      return;
+    }
     if (run.index === missions.length - 1) {
       finish(run);
       return;

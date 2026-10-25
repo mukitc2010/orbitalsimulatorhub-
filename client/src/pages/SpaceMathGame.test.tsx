@@ -168,3 +168,36 @@ describe("Orbital Gauntlet player flow", () => {
     ).toBeInTheDocument();
   });
 });
+
+describe("deadline action regression", () => {
+  it("does not advance a reviewed mission after the deadline before the timer ticks", () => {
+    vi.useFakeTimers();
+    window.history.replaceState({}, "", "/games/space-math?challenge=test-flight&level=expert");
+    render(<SpaceMathGame />);
+    fireEvent.click(screen.getByRole("button", { name: /Launch challenge/ }));
+    fireEvent.click(screen.getByRole("button", { name: "Skip & learn" }));
+    vi.setSystemTime(Date.now() + 721000);
+    fireEvent.click(screen.getByRole("button", { name: "Next mission" }));
+    expect(screen.getByRole("heading", { name: "Window closed." })).toBeInTheDocument();
+  });
+  it("does not resolve a skipped mission after the deadline before the timer ticks", () => {
+    vi.useFakeTimers();
+    window.history.replaceState({}, "", "/games/space-math?challenge=test-flight&level=expert");
+    render(<SpaceMathGame />);
+    fireEvent.click(screen.getByRole("button", { name: /Launch challenge/ }));
+    vi.setSystemTime(Date.now() + 721000);
+    fireEvent.click(screen.getByRole("button", { name: "Skip & learn" }));
+    expect(screen.getByRole("heading", { name: "Window closed." })).toBeInTheDocument();
+    expect(JSON.parse(localStorage.getItem("osh-space-math-run-v1")!).records).toHaveLength(0);
+  });
+  it("marks an expired flight as timed out when ended manually between ticks", () => {
+    vi.useFakeTimers();
+    window.history.replaceState({}, "", "/games/space-math?challenge=test-flight&level=expert");
+    render(<SpaceMathGame />);
+    fireEvent.click(screen.getByRole("button", { name: /Launch challenge/ }));
+    vi.setSystemTime(Date.now() + 721000);
+    fireEvent.click(screen.getByRole("button", { name: "End flight & debrief" }));
+    expect(screen.getByRole("heading", { name: "Window closed." })).toBeInTheDocument();
+  });
+
+});

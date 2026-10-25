@@ -98,6 +98,13 @@ export function Home() {
           <Link href="/games/space-math"><a className="mt-5 inline-flex rounded-lg bg-emerald-200 px-5 py-3 text-sm font-bold text-slate-950">Play the space math challenge</a></Link>
           <p className="mt-3 text-xs text-slate-400">Daily challenges / Expert & practice modes / No sign-up</p>
         </section>
+        <section aria-labelledby="conjecture-vault-feature" className="mb-8 rounded-2xl border border-amber-200/30 bg-slate-950 p-6 sm:p-8">
+          <p className="font-mono text-xs uppercase tracking-widest text-amber-200">New / Advanced mathematics</p>
+          <h2 id="conjecture-vault-feature" className="mt-3 text-3xl font-bold text-white">The Conjecture Vault</h2>
+          <p className="mt-3 text-sm leading-7 text-slate-300">Seven locks across topology, algebra, analysis and more. Wager your confidence, use a lemma, and discover the reasoning behind every answer.</p>
+          <a href="/conjecture-vault.html" className="mt-5 inline-flex rounded-lg bg-amber-200 px-5 py-3 text-sm font-bold text-slate-950">Enter the math vault</a>
+          <p className="mt-3 text-xs text-slate-400">75 seconds per lock / Keyboard & touch / Works offline</p>
+        </section>
         <section aria-labelledby="featured-robot-paper" className="mb-8 rounded-2xl border border-cyan-400/40 bg-gradient-to-br from-cyan-950/80 to-indigo-950/60 p-6 sm:p-8">
           <p className="font-mono text-xs uppercase tracking-[0.18em] text-cyan-300">Featured research / New concept paper</p>
           <h2 id="featured-robot-paper" className="mt-3 max-w-3xl text-2xl font-semibold text-white sm:text-3xl">Autonomous Humanoid Robotics for Space Exploration</h2>

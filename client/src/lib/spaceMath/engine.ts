@@ -49,7 +49,11 @@ export function hohmannDeltaV(r1: number, r2: number) {
   );
 }
 export function parseNumericAnswer(text: string): number | null {
-  const value = text.trim().replaceAll(",", "");
+  const trimmed = text.trim();
+  if (trimmed.includes(",") &&
+      !/^[+-]?\d{1,3}(?:,\d{3})+(?:\.\d*)?(?:e[+-]?\d+)?$/i.test(trimmed))
+    return null;
+  const value = trimmed.replaceAll(",", "");
   if (!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?$/i.test(value)) return null;
   const number = Number(value);
   return Number.isFinite(number) ? number : null;
