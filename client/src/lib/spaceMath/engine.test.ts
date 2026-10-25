@@ -66,3 +66,11 @@ describe("Orbital Gauntlet physics and rules", () => {
     expect(validChallenge("a".repeat(49))).toBe(false);
   });
 });
+
+describe("numeric input regression", () => {
+  it("rejects malformed comma grouping instead of changing the number", () => {
+    for (const text of ["7,67", ",123", "123,", "1,,234", "12,34,567"])
+      expect(parseNumericAnswer(text)).toBeNull();
+    expect(parseNumericAnswer("1,234,567.5e-2")).toBe(12345.675);
+  });
+});

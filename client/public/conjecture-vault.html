@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Seven advanced mathematics locks. Wager your confidence, use lemmas, and unlock worked solutions."><title>The Conjecture Vault | Orbital Simulator Hub</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;color:#ece9df;background:#101512}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#35473566,transparent 60%);min-height:100vh}main{max-width:1000px;margin:auto;padding:24px}header,.stats,.actions{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}header{border-bottom:1px solid #465245;padding-bottom:20px;font:12px monospace;letter-spacing:2px}a{color:#d7bd7e}.eyebrow{font:12px monospace;letter-spacing:3px;color:#c9b379;margin-top:36px}h1{font:clamp(44px,9vw,90px)/1 Georgia,serif;letter-spacing:-2px;margin:24px 0}h2{font:30px Georgia,serif}p,li{line-height:1.8;color:#c0c9bc}section{margin:30px 0;padding:clamp(20px,4vw,40px);border:1px solid #4b5745;border-radius:16px;background:#172019d9}button{font:inherit;border:1px solid #68755d;border-radius:8px;padding:14px 20px;background:#283528;color:#edece1;cursor:pointer;min-height:48px}button.primary{background:#d5bd82;color:#1c241b;border-color:#d5bd82;font-weight:700}button:hover:not(:disabled){filter:brightness(1.15)}button:disabled{opacity:.45;cursor:default}:focus-visible{outline:3px solid #f7d99a;outline-offset:5px}.stats{padding:18px 0;border-bottom:1px solid #465245}.stats span{font:12px monospace;color:#a6b59e}.stats strong{display:block;font:25px monospace;color:#e6d7ad;margin-top:8px}fieldset{border:0;padding:0;margin:24px 0}legend{margin-bottom:14px}label{display:inline-flex;align-items:center;gap:8px;margin:0 12px 12px 0;border:1px solid #68755d;padding:12px;border-radius:8px}input{accent-color:#d5bd82}.choices{display:grid;grid-template-columns:1fr 1fr;gap:12px}.choices button{text-align:left;overflow-wrap:anywhere}.choices button.correct{border:2px solid #a5d399;background:#324a32}.choices button.wrong{border:2px solid #e7a08b}#solution{white-space:pre-line;line-height:1.9}#feedback{color:#e5d09f;font-size:20px}small,footer{color:#a5b39d;line-height:1.8}footer{font-size:12px;padding:20px 0}#timer.urgent{color:#ffb395}.seal{font:100px Georgia,serif;color:#d5bd82;float:right;margin:15px 25px;opacity:.7}summary{cursor:pointer}details{border-top:1px solid #465245;padding:16px 0} [hidden]{display:none!important}@media(max-width:600px){main{padding:16px}.choices{grid-template-columns:1fr}.seal{float:none;font-size:64px;margin:0}.stats{gap:20px}header{letter-spacing:1px}label{display:flex;margin-right:0}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+<main><header><a href="/">OSH / MATHEMATICS LAB</a><span>REASON IS THE KEY</span></header>
+<div id="intro"><p class="eyebrow">AN ADVANCED MATHEMATICS CHALLENGE</p><div class="seal" role="img" aria-label="A mathematical vault seal">&#8857;</div><h1>The Conjecture<br>Vault.</h1><p>Seven locks. Three rigor shields. One curious mind.</p><p>Explore topology, analysis, algebra and more. Commit an answer, wager your confidence, and learn the reasoning behind every lock. These are established results, not unsolved conjectures.</p><section><h2>Your briefing</h2><ul><li>Seven random problems from nine areas. Each has a 75-second clock.</li><li>Correct: 100 x wager x (1 + 0.25 x min(prior streak, 4)), rounded, plus floor(seconds left / 3).</li><li>A miss or timeout costs 50 x wager points (never below zero), one shield, and your streak.</li><li>Two lemmas per run: each removes two wrong choices. One lemma per lock.</li><li>Wagers: Hunch x1, Confident x2, Certain x3. No money or prizes.</li></ul><button id="start" class="primary">Enter the vault</button><p id="best"></p><small>Keyboard: 1-3 wager / A-D answer / L lemma / Enter activates a focused button.</small></section></div>
+<div id="game" hidden><div class="stats"><div><span>LOCK</span><strong id="progress"></strong></div><div><span>SCORE</span><strong id="score"></strong></div><div><span>SHIELDS</span><strong id="shields"></strong></div><div><span>SECONDS</span><strong id="timer" role="timer" aria-label="Seconds remaining" aria-live="off"></strong></div></div><section><p class="eyebrow" id="area"></p><h2 id="question" tabindex="-1"></h2><fieldset id="wagers"><legend>Confidence wager</legend><label><input type="radio" name="wager" value="1" checked>Hunch x1</label><label><input type="radio" name="wager" value="2">Confident x2</label><label><input type="radio" name="wager" value="3">Certain x3</label></fieldset><div class="choices" id="choices"></div><div class="actions" style="margin-top:20px"><button id="lemma" aria-keyshortcuts="L">Use a lemma (2 left)</button><button id="next" class="primary" hidden>Next lock</button></div><div role="status" aria-live="polite"><h3 id="feedback"></h3></div><p id="solution"></p></section></div>
+<section id="result" hidden><p class="eyebrow">VAULT DEBRIEF</p><h2 id="result-title" tabindex="-1"></h2><p id="result-score"></p><div id="debrief"></div><button id="restart" class="primary">Try another vault</button></section>
+<details><summary>Ranks, records & mathematical references</summary><p>0: Reading seminar / 500: Qualifying exam / 1200: Postdoc / 2200: Full professor / 3400: Fields Medal. These are playful game ranks, not credentials.</p><p>Your best score stays in this browser only; it is editable and unverified. Runs are not saved. Refreshing starts over. All gameplay works offline; reference links require internet.</p><p>For deeper reading: Hatcher, Algebraic Topology (integral Kunneth theorem); Hardy, Littlewood & Polya, Inequalities (Hilbert inequality); Humphreys, Introduction to Lie Algebras and Representation Theory (root systems).</p><p><a href="https://www2.math.ethz.ch/EMIS/journals/EJC/Surveys/ds1.pdf">Radziszowski: Small Ramsey Numbers</a> / <a href="https://mathworld.wolfram.com/PolyasRandomWalkConstants.html">Polya return constants</a></p></details><footer>Orbital Simulator Hub / Independent learning through difficult questions. Some solutions use named theorems; explanations identify when a full proof is beyond a lock.</footer></main>
+<script>
+'use strict';
+const N=7, TL=75, KEY='conj-vault-best-v1';
+const P=[
+  {
+    "a": "Algebraic topology",
+    "q": "What is H_2(RP^2 x RP^2; Z), with integral coefficients?",
+    "c": [
+      "0",
+      "Z/2",
+      "Z",
+      "(Z/2) direct-sum (Z/2)"
+    ],
+    "k": 1,
+    "s": "For the real projective plane RP^2, H_0 = Z, H_1 = Z/2 and H_2 = 0. In degree 2 the tensor part of the integral Kunneth theorem is H_1 tensor H_1 = Z/2. The Tor terms have total degree 1 and involve the free group H_0 = Z, so vanish. Thus H_2 of the product is Z/2."
+  },
+  {
+    "a": "Group theory",
+    "q": "What is the order of the automorphism group Aut(S_6)?",
+    "c": [
+      "720",
+      "1440",
+      "360",
+      "2880"
+    ],
+    "k": 1,
+    "s": "S_6 has trivial center, so Inn(S_6) is isomorphic to S_6 and has order 6! = 720. The exceptional outer automorphism theorem says Out(S_6) has order 2. Therefore |Aut(S_6)| = 720 x 2 = 1440. Existence and uniqueness up to inner automorphisms of the exceptional outer class is the nontrivial theorem used here."
+  },
+  {
+    "a": "Analysis",
+    "q": "Let H_n = 1 + 1/2 + ... + 1/n. What is the sum of H_n/n^2 over n = 1, 2, ...?",
+    "c": [
+      "zeta(3)",
+      "2 zeta(3)",
+      "pi^3/6",
+      "pi^2/3"
+    ],
+    "k": 1,
+    "s": "Write H_n = H_(n-1) + 1/n. The sum is zeta(2,1) + zeta(3), where zeta(2,1) = sum over n > m >= 1 of 1/(n^2 m). Euler's identity zeta(2,1) = zeta(3) gives 2 zeta(3). Here zeta(s) is the Riemann zeta function. This explanation uses Euler's identity as a known theorem."
+  },
+  {
+    "a": "Probability",
+    "q": "A simple symmetric random walk starts at 0 in Z^3, taking each of the six nearest-neighbor steps with probability 1/6. What is its probability of ever returning to 0 at a strictly positive time?",
+    "c": [
+      "1",
+      "0.5000",
+      "Approximately 0.3405",
+      "0"
+    ],
+    "k": 2,
+    "s": "Let G be the sum of P(S_n = 0) over n >= 0, the expected total number of visits including time 0. Renewal at the first return gives G = 1 + fG, hence f = 1 - 1/G. The cubic-lattice Green integral evaluates numerically to G approximately 1.516386, so f approximately 0.340537. Transience alone proves only f < 1; the numerical value uses the Green integral."
+  },
+  {
+    "a": "Algebraic number theory",
+    "q": "What is the ideal class number of Q(sqrt(-23))?",
+    "c": [
+      "1",
+      "2",
+      "3",
+      "23"
+    ],
+    "k": 2,
+    "s": "The field has fundamental discriminant -23. Reduced primitive positive definite binary quadratic forms satisfy |b| <= a <= c and a <= sqrt(23/3) < 3. For a = 1 the reduced form is (1,1,6). For a = 2 we get (2,1,3) and (2,-1,3). These are the three classes, so the ideal class number is 3."
+  },
+  {
+    "a": "Ramsey theory",
+    "q": "What is R(3,3,3), the smallest n such that every 3-coloring of the edges of K_n contains a monochromatic triangle?",
+    "c": [
+      "16",
+      "17",
+      "18",
+      "27"
+    ],
+    "k": 1,
+    "s": "Upper bound: at any vertex of K_17, at least 6 incident edges have the same color. Among their endpoints, an edge of that color closes a triangle; otherwise the K_6 uses only two colors and R(3,3) = 6 forces a triangle. Lower bound: a triangle-free 3-coloring of K_16 exists (the classical construction). Thus the threshold is 17. This explanation uses that construction as a known result rather than reproducing it."
+  },
+  {
+    "a": "Algebraic geometry",
+    "q": "What is the genus of a smooth projective plane quintic over C?",
+    "c": [
+      "4",
+      "5",
+      "6",
+      "10"
+    ],
+    "k": 2,
+    "s": "For a smooth projective plane curve of degree d, adjunction gives K_C = O_C(d-3), so deg K_C = d(d-3) = 2g-2. With d = 5 this yields 2g-2 = 10, hence g = 6. Equivalently g = (d-1)(d-2)/2."
+  },
+  {
+    "a": "Functional analysis",
+    "q": "For the infinite Hilbert matrix H_ij = 1/(i+j+1), i,j >= 0, what is its operator norm on l^2 (square-summable sequences)?",
+    "c": [
+      "1",
+      "pi/2",
+      "pi",
+      "Unbounded"
+    ],
+    "k": 2,
+    "s": "Hilbert's inequality gives |sum a_i b_j/(i+j+1)| <= pi ||a||_2 ||b||_2, so the norm is at most pi. Sharpness can be approached by truncating sequences proportional to 1/sqrt(n+1): their squared norms grow like log N, and the bilinear form grows like pi log N. The limiting ratio is pi. This is a proof outline; justifying the asymptotics establishes the lower bound."
+  },
+  {
+    "a": "Lie theory",
+    "q": "How many positive roots does the root system E_8 have?",
+    "c": [
+      "112",
+      "120",
+      "128",
+      "240"
+    ],
+    "k": 1,
+    "s": "E_8 has 112 roots of the form (+/-1, +/-1, 0,...,0), choosing two coordinates, and 128 roots of the form (+/-1/2,...,+/-1/2) with an even number of minus signs. Total: 240. Roots occur in opposite pairs, and a positive system chooses one from every pair. Thus there are 120 positive roots."
+  }
+];
+const $=id=>document.getElementById(id);
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+let deck=[], index=0, score=0, shields=3, streak=0, lemmas=2, used=false, answered=true, deadline=0, ticker=null, history=[], best=0;
+try{const v=Number(localStorage.getItem(KEY));if(Number.isFinite(v)&&v>=0)best=Math.floor(v)}catch{}
+function showBest(){$('best').textContent='Personal best on this device: '+best.toLocaleString()+' points'}showBest();
+const seconds=()=>Math.max(0,Math.ceil((deadline-Date.now())/1000));
+function stats(){$('progress').textContent=(index+1)+' / '+N;$('score').textContent=score;$('shields').textContent=shields+' / 3';$('timer').textContent=seconds();$('timer').classList.toggle('urgent',seconds()<=15)}
+function start(){clearInterval(ticker);deck=shuffle(P).slice(0,N).map(p=>({...p,choices:shuffle(p.c.map((text,i)=>({text,right:i===p.k})))}));index=score=streak=0;shields=3;lemmas=2;history=[];$('intro').hidden=true;$('result').hidden=true;$('game').hidden=false;lock()}
+function lock(){answered=false;used=false;deadline=Date.now()+TL*1000;const p=deck[index];$('area').textContent=p.a;$('question').textContent=p.q;$('feedback').textContent='';$('solution').textContent='';$('next').hidden=true;$('wagers').disabled=false;document.querySelector('input[value="1"]').checked=true;$('choices').replaceChildren();p.choices.forEach((c,i)=>{const b=document.createElement('button');b.textContent=String.fromCharCode(65+i)+' / '+c.text;b.setAttribute('aria-keyshortcuts',String.fromCharCode(65+i));b.onclick=()=>answer(i);$('choices').append(b)});lemmaState();stats();$('question').focus();clearInterval(ticker);ticker=setInterval(()=>{stats();if(!answered&&seconds()===0)answer(null)},200)}
+function lemmaState(){$('lemma').textContent='Use a lemma ('+lemmas+' left)';$('lemma').disabled=answered||used||lemmas===0}
+function answer(choice){if(answered)return;if(seconds()===0)choice=null;const buttons=[...$('choices').children];if(choice!==null&&buttons[choice].disabled)return;answered=true;clearInterval(ticker);const p=deck[index],w=Number(document.querySelector('input[name="wager"]:checked').value),correct=choice!==null&&p.choices[choice].right;let delta;if(correct){delta=Math.round(100*w*(1+.25*Math.min(streak,4)))+Math.floor(seconds()/3);score+=delta;streak++}else{delta=-Math.min(score,50*w);score+=delta;shields--;streak=0}history.push({p,correct,delta});buttons.forEach((b,i)=>{b.disabled=true;if(p.choices[i].right)b.classList.add('correct');else if(i===choice)b.classList.add('wrong')});$('wagers').disabled=true;lemmaState();stats();$('feedback').textContent=(correct?'Lock opened.':choice===null?'Time expired.':'Lock held.')+' '+(delta>=0?'+':'')+delta+' points.';$('solution').textContent=p.s;$('next').textContent=shields===0||index===N-1?'View debrief':'Next lock';$('next').hidden=false;$('next').focus()}
+function lemma(){if(answered||used||!lemmas)return;if(seconds()===0){answer(null);return}used=true;lemmas--;shuffle(deck[index].choices.map((c,i)=>({c,i})).filter(x=>!x.c.right)).slice(0,2).forEach(x=>{const b=$('choices').children[x.i];b.disabled=true;b.textContent+=' / eliminated'});lemmaState();$('feedback').textContent='Lemma applied: two incorrect options eliminated.'}
+function finish(){$('game').hidden=true;$('result').hidden=false;const ranks=[[3400,'Fields Medal'],[2200,'Full professor'],[1200,'Postdoc'],[500,'Qualifying exam'],[0,'Reading seminar']];$('result-title').textContent=ranks.find(([n])=>score>=n)[1];$('result-score').textContent=score.toLocaleString()+' points / '+history.filter(x=>x.correct).length+' / '+N+' locks opened / '+(shields===0?'No shields remaining.':'Vault run complete.');$('debrief').replaceChildren();history.forEach(({p,correct,delta})=>{const d=document.createElement('details'),s=document.createElement('summary'),t=document.createElement('p');s.textContent=(correct?'OPENED':'REVIEW')+' / '+p.a+' / '+delta+' points';t.textContent=p.q+' '+p.s;d.append(s,t);$('debrief').append(d)});if(score>best){best=score;try{localStorage.setItem(KEY,String(best))}catch{}showBest()}$('result-title').focus()}
+$('start').onclick=start;$('restart').onclick=start;$('lemma').onclick=lemma;$('next').onclick=()=>{if(shields===0||index===N-1)finish();else{index++;lock()}};
+document.addEventListener('visibilitychange',()=>{if(!answered&&!$('game').hidden){stats();if(seconds()===0)answer(null)}});
+document.addEventListener('keydown',e=>{if(e.repeat||e.ctrlKey||e.altKey||e.metaKey||answered||$('game').hidden)return;const k=e.key.toLowerCase();if('123'.includes(k)&&k.length===1){if(seconds()===0){answer(null);return}document.querySelector('input[value="'+k+'"]').checked=true;e.preventDefault()}else if('abcd'.includes(k)&&k.length===1){answer(k.charCodeAt(0)-97);e.preventDefault()}else if(k==='l'){lemma();e.preventDefault()}});
+</script></html>
