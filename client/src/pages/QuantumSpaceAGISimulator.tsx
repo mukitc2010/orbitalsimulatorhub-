@@ -7,8 +7,9 @@ import { SpacetimeLens3D } from "../components/qsagi/SpacetimeLens3D";
 import { SafetyDashboard } from "../components/qsagi/SafetyDashboard";
 import { RunLog } from "../components/qsagi/RunLog";
 import { ComparePanel } from "../components/qsagi/ComparePanel";
-import { Leaderboard } from "@/components/qsagi/Leaderboard";
 import type { CompareResult, SimParams, SimRun } from "../lib/qsagi/types";
+
+import { buildRun, quantumAssistOptimize } from "../lib/qsagi/quantumAssist";
 
 const defaultParams: SimParams = {
   scenario: "SCHWARZSCHILD_FLYBY",
@@ -26,22 +27,23 @@ const defaultParams: SimParams = {
 export function QuantumSpaceAGISimulator() {
   const [params, setParams] = useState<SimParams>(defaultParams);
   const [loading, setLoading] = useState(false);
-  const [run, setRun] = useState<SimRun | null>(null);
+  const [run, setRun] = useState<SimRun | null>(() => buildRun(defaultParams, "browser-preview"));
+  const [notice, setNotice] = useState("Animated preview / educational browser simulation");
   const [compare, setCompare] = useState<CompareResult | null>(null);
 
   const postRun = useCallback(async (mode: "classical" | "assisted"): Promise<SimRun> => {
-    const res = await fetch("/api/qsagi/runs", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ params, mode }),
-    });
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || "Simulation failed");
-    return data.run as SimRun;
+    const values = [params.M,params.r0,params.v0,params.steps,params.dt,params.tidalLimit,params.horizonMargin,params.fuelBudget];
+    if (!values.every(Number.isFinite) || params.M <= 0 || params.r0 <= 0 || params.v0 < 0 || params.dt <= 0 || params.dt > 1 || !Number.isInteger(params.steps) || params.steps < 2 || params.steps > 10000 || params.tidalLimit <= 0 || params.horizonMargin < 1 || params.fuelBudget < 0)
+      throw new Error("Use positive finite parameters, dt up to 1, 2-10,000 whole steps, horizon margin at least 1, and nonnegative speed/fuel.");
+    // The same educational model is available locally; no backend is needed for playback.
+    const chosen = mode === "assisted" ? quantumAssistOptimize(params) : {...params, quantumAssist:false};
+    setNotice("Browser simulation / simulated assist searches seven candidate speeds; no quantum hardware or shared leaderboard submission.");
+    return buildRun(chosen, crypto.randomUUID());
   }, [params]);
 
   const onRun = useCallback(async (mode: "classical" | "assisted") => {
     setLoading(true);
+    setNotice("Calculating trajectory...");
     try {
       if (mode === "classical") {
         const r = await postRun("classical");
@@ -54,7 +56,7 @@ export function QuantumSpaceAGISimulator() {
         setRun(assisted);
       }
     } catch (err) {
-      console.error("Run failed:", err);
+      setNotice(err instanceof Error ? err.message : "Simulation failed");
     } finally {
       setLoading(false);
     }
@@ -67,19 +69,20 @@ export function QuantumSpaceAGISimulator() {
         Curvature-aware navigation sandbox with Safety Shield + simulated Quantum Assist.
       </div>
 
+      <p role="status" className="mt-3 text-sm text-cyan-200">{notice}</p>
       <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-12">
-        <div className="lg:col-span-4">
+        <div className="order-2 lg:order-1 lg:col-span-4">
           <ScenarioControls params={params} setParams={setParams} onRun={onRun} loading={loading} />
           <div className="mt-4 grid gap-4">
             <SafetyDashboard run={run} />
             <RunLog run={run} />
-            <Leaderboard scenario={params.scenario} />
+            <p className="p-3 text-xs opacity-70">Browser runs are educational previews and are not submitted to a shared leaderboard.</p>
           </div>
         </div>
 
-        <div className="lg:col-span-8 grid gap-4">
-          <SimulatorCanvas run={compare?.assisted ?? run} />
+        <div className="order-1 lg:order-2 lg:col-span-8 grid gap-4">
           <SpacetimeLens3D run={compare?.assisted ?? run} />
+          <details><summary className="cursor-pointer p-3 text-sm">Show 2D trajectory overview</summary><SimulatorCanvas run={compare?.assisted ?? run} /></details>
           <ComparePanel compare={compare} />
         </div>
       </div>
