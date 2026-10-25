@@ -79,10 +79,10 @@ function Nebula({ animated }: { animated: boolean }) {
         void main(){vec3 d=normalize(vDirection);float t=time*0.018;
           float ribbon=sin(d.x*3.8+d.y*2.5+sin(d.z*5.0+t)*0.7+t);
           float mist=0.5+0.5*sin(d.x*9.0-d.z*7.0+sin(d.y*8.0-t));
-          float glow=pow(max(0.0,1.0-abs(ribbon)),2.2);
-          vec3 violet=vec3(0.12,0.035,0.27),teal=vec3(0.015,0.22,0.25);
+          float glow=pow(max(0.0,1.0-abs(ribbon)),1.4);
+          vec3 violet=vec3(0.30,0.075,0.48),teal=vec3(0.015,0.36,0.40);
           vec3 cloud=mix(violet,teal,0.5+0.5*sin(d.z*3.0+d.x*2.0+t));
-          gl_FragColor=vec4(vec3(0.006,0.012,0.04)+cloud*glow*(0.35+mist*0.65),1.0);
+          gl_FragColor=vec4(vec3(0.012,0.02,0.065)+cloud*(0.12+glow*(0.45+mist*0.7)),1.0);
         }`} />
   </mesh>;
 }
