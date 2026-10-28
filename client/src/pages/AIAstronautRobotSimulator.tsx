@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { RobotSimulationScene } from "../components/RobotSimulationScene";
 
@@ -40,49 +40,33 @@ const AI_MODULES = [
 ];
 
 const SIM_STEPS = [
-  "Initializing AI brain...",
+  "Preparing scripted mission...",
   "Loading environment...",
   "Deploying robot...",
-  "Calibrating sensors...",
-  "Executing task...",
+  "Showing selected sensor overlays...",
+  "Playing task animation...",
   "Task complete ✓",
 ];
 
 export function AIAstronautRobotSimulator() {
   const [robotType, setRobotType] = useState<string>("humanoid");
   const [environment, setEnvironment] = useState<string>("iss");
-  const [selectedTask, setSelectedTask] = useState<string | null>(null);
+  const [selectedTask, setSelectedTask] = useState<string | null>("inspect");
   const [sensors, setSensors] = useState<Set<string>>(new Set(["camera"]));
   const [isRunning, setIsRunning] = useState(false);
-  const [simStep, setSimStep] = useState(0);
-  const [simProgress, setSimProgress] = useState(0);
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-
-  useEffect(() => {
-    if (!isRunning) return;
-    const stepDuration = 1200;
-    intervalRef.current = setInterval(() => {
-      setSimStep((s) => {
-        const next = s + 1;
-        if (next >= SIM_STEPS.length) {
-          setIsRunning(false);
-          if (intervalRef.current) clearInterval(intervalRef.current);
-          return SIM_STEPS.length - 1;
-        }
-        return next;
-      });
-      setSimProgress((p) => Math.min(100, p + 100 / SIM_STEPS.length));
-    }, stepDuration);
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-    };
-  }, [isRunning]);
-
-  const runSimulation = () => {
-    setIsRunning(true);
-    setSimStep(0);
-    setSimProgress(0);
-  };
+  const [elapsed,setElapsed] = useState(0);
+  const [playbackSpeed,setPlaybackSpeed] = useState(1);
+  const simProgress = Math.min(100,elapsed/20*100);
+  const simStep = Math.min(SIM_STEPS.length-1,Math.floor(simProgress/100*SIM_STEPS.length));
+  useEffect(()=>{setIsRunning(false);setElapsed(0)},[robotType,environment,selectedTask,sensors]);
+  useEffect(()=>{
+    if(!isRunning)return;
+    let last=performance.now();
+    const timer=setInterval(()=>{const now=performance.now();const dt=Math.min(.25,(now-last)/1000);last=now;setElapsed(t=>Math.min(20,t+dt*playbackSpeed))},50);
+    return()=>clearInterval(timer);
+  },[isRunning,playbackSpeed]);
+  useEffect(()=>{if(elapsed>=20)setIsRunning(false)},[elapsed]);
+  const runSimulation=()=>{if(elapsed>=20)setElapsed(0);setIsRunning(true)};
 
   const toggleSensor = (id: string) => {
     setSensors((prev) => {
@@ -109,7 +93,7 @@ export function AIAstronautRobotSimulator() {
               className="text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
               style={{ background: "rgba(0,217,255,0.3)", color: "#0f172a" }}
             >
-              World First Space-AGI Robot Simulator
+              Interactive 3D Space Robot Lab
             </span>
             <span
               className="text-xs font-bold px-3 py-1 rounded-full"
@@ -122,7 +106,7 @@ export function AIAstronautRobotSimulator() {
             AI Astronaut Robot Simulator
           </h1>
           <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: "var(--text-secondary)" }}>
-            Build and train AI space robots. Design humanoid, rover, or drone robots. Train vision AI. Simulate ISS, Moon, Mars, and deep space missions.
+            Build a humanoid, rover, or free-flying robot. Explore scripted 3D tasks in ISS, Moon, Mars, and deep-space settings. Sensor overlays illustrate concepts; no AI model is trained.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mt-4">
             <Link href="/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions">
@@ -138,7 +122,7 @@ export function AIAstronautRobotSimulator() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
           {/* Robot Builder Panel */}
           <div
-            className="rounded-2xl p-5 border"
+            className="order-2 lg:order-1 rounded-2xl p-5 border"
             style={{
               background: "linear-gradient(180deg, rgba(15,23,42,0.9), rgba(15,23,42,0.6))",
               borderColor: "rgba(0,217,255,0.3)",
@@ -154,6 +138,7 @@ export function AIAstronautRobotSimulator() {
               {ROBOT_TYPES.map((r) => (
                 <button
                   key={r.id}
+                  aria-pressed={robotType === r.id}
                   onClick={() => setRobotType(r.id)}
                   className="flex-1 min-w-[80px] p-3 rounded-xl text-left transition"
                   style={{
@@ -173,6 +158,7 @@ export function AIAstronautRobotSimulator() {
               {SENSORS.map((s) => (
                 <button
                   key={s.id}
+                  aria-pressed={sensors.has(s.id)}
                   onClick={() => toggleSensor(s.id)}
                   className="px-3 py-2 rounded-lg text-sm flex items-center gap-1.5 transition"
                   style={{
@@ -204,7 +190,7 @@ export function AIAstronautRobotSimulator() {
 
           {/* 3D Viewport / Simulator area */}
           <div
-            className="lg:col-span-2 rounded-2xl overflow-hidden border flex flex-col"
+            className="order-1 lg:order-2 lg:col-span-2 rounded-2xl overflow-hidden border flex flex-col"
             style={{
               background: "linear-gradient(180deg, rgba(2,6,23,0.95), rgba(10,14,26,0.9))",
               borderColor: "rgba(0,217,255,0.25)",
@@ -252,12 +238,22 @@ export function AIAstronautRobotSimulator() {
                   environment={environment as "iss" | "moon" | "mars" | "deep"}
                   isRunning={isRunning}
                   simStep={simStep}
+                  progress={simProgress}
+                  task={selectedTask}
+                  sensors={Array.from(sensors)}
                 />
                 <p className="text-xs mt-2 text-center" style={{ color: "var(--text-muted)" }}>
                   Drag to rotate • Scroll to zoom • {ENVIRONMENTS.find((e) => e.id === environment)?.label}
                 </p>
               </div>
 
+              <div className="robot-playback" aria-label="Robot playback controls">
+                <button onClick={()=>isRunning?setIsRunning(false):runSimulation()}>{isRunning?"Pause robot":"Play robot"}</button>
+                <button onClick={()=>{setElapsed(0);setIsRunning(false)}}>Restart mission</button>
+                <label>Mission speed<select value={playbackSpeed} onChange={e=>setPlaybackSpeed(Number(e.target.value))}>{[.5,1,2,4].map(v=><option key={v} value={v}>{v}x</option>)}</select></label>
+              </div>
+              <label className="robot-timeline">Mission timeline: {elapsed.toFixed(1)} / 20 s<input aria-label="Mission timeline" type="range" min="0" max="20" step=".1" value={elapsed} onChange={e=>{setIsRunning(false);setElapsed(Number(e.target.value))}}/></label>
+              <p className="text-xs mb-4 text-slate-400">Scripted task visualization, not a learned policy or physical validation. Floating robots use a thruster metaphor; rotors cannot produce lift in vacuum. Gravity and sensor readings are not simulated.</p>
               {/* Running: progress */}
               {isRunning && (
                 <div className="p-4 rounded-xl mb-4" style={{ background: "rgba(0,217,255,0.1)", border: "1px solid rgba(0,217,255,0.3)" }}>
@@ -269,7 +265,7 @@ export function AIAstronautRobotSimulator() {
               )}
 
               {/* Complete: Mission Report */}
-              {!isRunning && simStep === SIM_STEPS.length - 1 && (
+              {!isRunning && elapsed >= 20 && (
                 <div className="p-5 rounded-xl" style={{ background: "rgba(34,197,94,0.1)", border: "2px solid rgba(34,197,94,0.4)" }}>
                   <h3 className="text-lg font-bold mb-3 flex items-center gap-2" style={{ color: "#22c55e" }}>
                     ✓ Mission Report — What You Built
@@ -281,15 +277,15 @@ export function AIAstronautRobotSimulator() {
                     <li><strong>Task:</strong> {selectedTask ? TASKS.find((t) => t.id === selectedTask)?.label : "None selected"}</li>
                   </ul>
                   <p className="text-sm mt-3" style={{ color: "var(--text-secondary)" }}>
-                    Your {ROBOT_TYPES.find((r) => r.id === robotType)?.label} successfully completed the mission in {ENVIRONMENTS.find((e) => e.id === environment)?.label}.
+                    Your {ROBOT_TYPES.find((r) => r.id === robotType)?.label} completed the scripted animation in {ENVIRONMENTS.find((e) => e.id === environment)?.label}.
                   </p>
                 </div>
               )}
 
-              {!isRunning && simStep < SIM_STEPS.length - 1 && (
+              {!isRunning && elapsed < 20 && (
                 <p className="text-xs" style={{ color: "var(--text-muted)" }}>
                   <span className="inline-block w-2 h-2 rounded-full animate-pulse mr-1.5 align-middle" style={{ background: "var(--accent-cyan)" }} />
-                  Ready — click Run Simulation below
+                  {elapsed > 0 ? "Paused - resume with Play robot" : "Ready - click Run Simulation below"}
                 </p>
               )}
 
@@ -326,6 +322,7 @@ export function AIAstronautRobotSimulator() {
             {ENVIRONMENTS.map((e) => (
               <button
                 key={e.id}
+                aria-pressed={environment === e.id}
                 onClick={() => setEnvironment(e.id)}
                 className="p-4 rounded-xl text-left transition"
                 style={{
@@ -341,10 +338,10 @@ export function AIAstronautRobotSimulator() {
           </div>
         </section>
 
-        {/* Visual AI Training Mode */}
+        {/* Visual AI Concepts */}
         <section id="training" className="mb-10">
           <h2 className="text-xl font-bold mb-4" style={{ color: "#a78bfa" }}>
-            👁 Visual AI Training Mode
+            👁 Visual AI Concepts
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {["Object detection", "Navigation", "Obstacle avoidance", "Docking simulation"].map((mode, i) => (
@@ -372,12 +369,13 @@ export function AIAstronautRobotSimulator() {
         {/* Live Tasks */}
         <section className="mb-10">
           <h2 className="text-xl font-bold mb-4" style={{ color: "var(--accent-cyan)" }}>
-            ⚡ Live Tasks Robot Can Perform
+            ⚡ Scripted Tasks to Explore
           </h2>
           <div className="flex flex-wrap gap-3">
             {TASKS.map((t) => (
               <button
                 key={t.id}
+                aria-pressed={selectedTask === t.id}
                 onClick={() => setSelectedTask(selectedTask === t.id ? null : t.id)}
                 className="p-4 rounded-xl flex items-center gap-3 transition"
                 style={{
@@ -398,7 +396,7 @@ export function AIAstronautRobotSimulator() {
             🧠 Robot Brain — AI Engine
           </h2>
           <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>
-            The robot brain uses state-of-the-art AI modules for perception, planning, and control:
+            Concepts for a future robotics stack. These modules are educational descriptions; this demo does not run CNN training, reinforcement learning, or a Space-AGI decision engine:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {AI_MODULES.map((m, i) => (
