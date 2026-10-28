@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
 import { RobotSimulationScene } from "../components/RobotSimulationScene";
 
@@ -49,6 +49,9 @@ const SIM_STEPS = [
 ];
 
 export function AIAstronautRobotSimulator() {
+  const [picker,setPicker] = useState<"robot"|"environment"|"sensors"|"task"|null>(null);
+  const pickerRef=useRef<HTMLDialogElement>(null);
+  useEffect(()=>{const dialog=pickerRef.current;if(!dialog)return;if(picker&&!dialog.open)dialog.showModal();else if(!picker&&dialog.open)dialog.close()},[picker]);
   const [robotType, setRobotType] = useState<string>("humanoid");
   const [environment, setEnvironment] = useState<string>("iss");
   const [selectedTask, setSelectedTask] = useState<string | null>("inspect");
@@ -86,6 +89,19 @@ export function AIAstronautRobotSimulator() {
       }}
     >
       <div className="max-w-6xl mx-auto">
+        <dialog ref={pickerRef} className="robot-image-picker" aria-labelledby="robot-picker-title" onCancel={()=>setPicker(null)} onClose={()=>setPicker(null)} onClick={e=>{if(e.target===e.currentTarget)setPicker(null)}}>
+          <div className="robot-picker-heading"><h2 id="robot-picker-title">{picker==="robot"?"Choose your robot":picker==="environment"?"Choose an environment":picker==="sensors"?"Choose sensors":"Choose a task"}</h2><button type="button" autoFocus onClick={()=>setPicker(null)} aria-label="Close image chooser">Close</button></div>
+          <p>Rendered previews from this simulator. Select an image to update your build. {picker==="sensors"?"Multiple sensors can be selected.":""}</p>
+          <div className="robot-picker-grid">
+          {(picker==="robot"?ROBOT_TYPES:picker==="environment"?ENVIRONMENTS:picker==="sensors"?SENSORS:picker==="task"?TASKS:[]).map(option=>{
+            const chosen=picker==="robot"?robotType===option.id:picker==="environment"?environment===option.id:picker==="sensors"?sensors.has(option.id):selectedTask===option.id;
+            return <button type="button" key={option.id} aria-pressed={chosen} onClick={()=>{if(picker==="robot")setRobotType(option.id);if(picker==="environment")setEnvironment(option.id);if(picker==="task")setSelectedTask(option.id);if(picker==="sensors")toggleSensor(option.id);else setPicker(null)}}>
+              <img src={`/robot-previews/${picker}-${option.id}.png`} alt={`${option.label} simulator preview`}/><strong>{option.label}</strong><small>{chosen?"Selected":"Select"}</small>
+            </button>;
+          })}
+          </div>
+        </dialog>
+
         {/* Header + Badges */}
         <div className="text-center mb-8">
           <div className="flex flex-wrap justify-center gap-2 mb-4">
@@ -146,7 +162,7 @@ export function AIAstronautRobotSimulator() {
                     border: `1px solid ${robotType === r.id ? "rgba(0,217,255,0.5)" : "rgba(148,163,184,0.2)"}`,
                   }}
                 >
-                  <span className="text-xl block mb-1">{r.icon}</span>
+                  <img className="robot-option-image" src={`/robot-previews/robot-${r.id}.png`} alt="" loading="lazy"/>
                   <span className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{r.label}</span>
                   <span className="text-xs block mt-0.5" style={{ color: "var(--text-muted)" }}>{r.desc}</span>
                 </button>
@@ -166,7 +182,7 @@ export function AIAstronautRobotSimulator() {
                     border: `1px solid ${sensors.has(s.id) ? "rgba(0,217,255,0.4)" : "rgba(148,163,184,0.2)"}`,
                   }}
                 >
-                  <span>{s.icon}</span>
+                  <img className="robot-sensor-image" src={`/robot-previews/sensors-${s.id}.png`} alt="" loading="lazy"/>
                   <span style={{ color: "var(--text-primary)" }}>{s.label}</span>
                 </button>
               ))}
@@ -204,30 +220,12 @@ export function AIAstronautRobotSimulator() {
                 <h3 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-cyan)" }}>
                   🤖 Your Robot Build
                 </h3>
-                <div className="flex flex-wrap gap-3">
-                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg" style={{ background: "rgba(0,217,255,0.15)", border: "1px solid rgba(0,217,255,0.3)" }}>
-                    <span className="text-2xl">{ROBOT_TYPES.find((r) => r.id === robotType)?.icon}</span>
-                    <span className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{ROBOT_TYPES.find((r) => r.id === robotType)?.label}</span>
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg" style={{ background: "rgba(167,139,250,0.15)", border: "1px solid rgba(167,139,250,0.3)" }}>
-                    <span className="text-xl">{ENVIRONMENTS.find((e) => e.id === environment)?.icon}</span>
-                    <span className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{ENVIRONMENTS.find((e) => e.id === environment)?.label}</span>
-                  </div>
-                  {Array.from(sensors).map((id) => {
-                    const s = SENSORS.find((x) => x.id === id);
-                    return s ? (
-                      <div key={id} className="flex items-center gap-1.5 px-2 py-1.5 rounded-lg" style={{ background: "rgba(0,217,255,0.1)", border: "1px solid rgba(0,217,255,0.2)" }}>
-                        <span>{s.icon}</span>
-                        <span className="text-xs" style={{ color: "var(--text-secondary)" }}>{s.label}</span>
-                      </div>
-                    ) : null;
-                  })}
-                  {selectedTask && (
-                    <div className="flex items-center gap-2 px-3 py-2 rounded-lg" style={{ background: "rgba(34,197,94,0.15)", border: "1px solid rgba(34,197,94,0.3)" }}>
-                      <span className="text-xl">{TASKS.find((t) => t.id === selectedTask)?.icon}</span>
-                      <span className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{TASKS.find((t) => t.id === selectedTask)?.label}</span>
-                    </div>
-                  )}
+                <div className="robot-build-badges" role="group" aria-label="Your robot build choices">
+                  <button type="button" aria-label={`Change robot: ${ROBOT_TYPES.find(r=>r.id===robotType)?.label}`} onClick={()=>setPicker("robot")}><img src={`/robot-previews/robot-${robotType}.png`} alt=""/><span><small>ROBOT / CHANGE</small>{ROBOT_TYPES.find(r=>r.id===robotType)?.label}</span></button>
+                  <button type="button" aria-label={`Change environment: ${ENVIRONMENTS.find(e=>e.id===environment)?.label}`} onClick={()=>setPicker("environment")}><img src={`/robot-previews/environment-${environment}.png`} alt=""/><span><small>ENVIRONMENT / CHANGE</small>{ENVIRONMENTS.find(e=>e.id===environment)?.label}</span></button>
+                  {Array.from(sensors).map(id=><button type="button" key={id} aria-label={`Change sensors: ${SENSORS.find(x=>x.id===id)?.label}`} onClick={()=>setPicker("sensors")}><img src={`/robot-previews/sensors-${id}.png`} alt=""/><span><small>SENSOR / EDIT</small>{SENSORS.find(x=>x.id===id)?.label}</span></button>)}
+                  <button type="button" className="robot-add-sensor" onClick={()=>setPicker("sensors")}>Edit sensors</button>
+                  <button type="button" aria-label={`Change task: ${TASKS.find(t=>t.id===selectedTask)?.label||"Choose a task"}`} onClick={()=>setPicker("task")}><img src={`/robot-previews/task-${selectedTask||"inspect"}.png`} alt=""/><span><small>TASK / CHANGE</small>{TASKS.find(t=>t.id===selectedTask)?.label||"Choose a task"}</span></button>
                 </div>
               </div>
 
@@ -330,7 +328,7 @@ export function AIAstronautRobotSimulator() {
                   border: `1px solid ${environment === e.id ? "rgba(0,217,255,0.5)" : "rgba(148,163,184,0.2)"}`,
                 }}
               >
-                <span className="text-2xl block mb-2">{e.icon}</span>
+                <img className="robot-option-image" src={`/robot-previews/environment-${e.id}.png`} alt="" loading="lazy"/>
                 <span className="font-semibold text-sm" style={{ color: "var(--text-primary)" }}>{e.label}</span>
                 <span className="text-xs block mt-0.5" style={{ color: "var(--text-muted)" }}>{e.desc}</span>
               </button>
@@ -383,7 +381,7 @@ export function AIAstronautRobotSimulator() {
                   border: `1px solid ${selectedTask === t.id ? "rgba(0,217,255,0.5)" : "rgba(148,163,184,0.2)"}`,
                 }}
               >
-                <span className="text-2xl">{t.icon}</span>
+                <img className="robot-sensor-image" src={`/robot-previews/task-${t.id}.png`} alt="" loading="lazy"/>
                 <span className="font-semibold" style={{ color: "var(--text-primary)" }}>{t.label}</span>
               </button>
             ))}
