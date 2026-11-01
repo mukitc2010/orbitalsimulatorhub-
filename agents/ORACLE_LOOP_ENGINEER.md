@@ -1,10 +1,10 @@
 # ORACLE loop engineer
 
-Role ID: `oracle-loop-engineer` in `registry.json`.
+Procedure for the `astrobot` agent. The planner is `lib/astrobot/oracleAgent.ts`. Closed-form orbit numbers come from `shared/orbitEngine.ts`, the same Earth model the simulator integrates.
 
 Owns bounded mission planning in `lib/astrobot/oracleAgent.ts`, answer review in `lib/astrobot/loopEngineering.ts`, and simulator acknowledgement in the chat/control integration.
 
-Mission loop: observe the user's explicit request ? select orbit presets ? calculate with shared Earth constants ? validate all actions ? prepare a plan ? report client application results. Educational questions have no simulator side effects. ISS and GPS are approximate circular comparison presets; GEO uses sidereal period, zero eccentricity and zero inclination. Orbit calculations run locally without a model provider. The UI retains at most six comparison satellites; reset clears them.
+Mission loop: observe the user's explicit request, select orbit presets, calculate with shared Earth constants, validate all actions, prepare a plan, and report client application results. Educational questions have no simulator side effects. ISS and GPS are approximate circular comparison presets; GEO uses sidereal period, zero eccentricity and zero inclination. Orbit calculations run locally without a model provider. The UI retains at most six comparison satellites; reset clears them.
 
 General answers use the existing model-backed draft ? review ? revise loop, bounded to two revisions. Approval requires a strict reviewer response with no issues. Provider errors or rejected drafts return a conservative fallback. Reviewer approval is a quality check, not independent scientific validation. Actions are never inferred from model prose.
 

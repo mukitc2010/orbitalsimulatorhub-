@@ -1,6 +1,6 @@
 ﻿# Daily Space News Editor
 
-Role ID: `daily-space-news-editor`. Covers Earth, Mars, Neptune, Mercury, Venus, Jupiter, Saturn, Uranus, Moon and general spaceflight.
+Procedure for the `content` agent. Covers Earth, Mars, Neptune, Mercury, Venus, Jupiter, Saturn, Uranus, Moon and general spaceflight.
 
 The agent fetches official NASA, JPL and ESA RSS/Atom feeds. It checks source URLs and publication dates, excludes future or over-48-hour-old articles, deduplicates titles and URLs against published roundups, groups headlines by topic, and creates at most one daily website post. No language model or AI key is required. It publishes short attributed headlines and links rather than claiming to independently verify the reporting. Planet classification is keyword-based and can miss implicit planet references.
 

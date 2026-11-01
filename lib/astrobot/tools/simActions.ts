@@ -1,6 +1,10 @@
 /**
- * Simulator Action Tool — Generate actions for the 3D orbit simulator
+ * Simulator Action Tool — Generate actions for the 3D orbit simulator.
+ * Applied missions go through the ORACLE validator, which only accepts e = 0.
  */
+
+import { EARTH_RADIUS_KM } from "../../../shared/const";
+import { geostationaryAltitudeKm } from "../../../shared/orbitEngine";
 
 export type SimActionType =
   | "SIM_SET_PLAYBACK"
@@ -51,11 +55,11 @@ export function createHighlightTrajectoryAction(): SimAction {
   };
 }
 
-export function createAddSatelliteAction(altitudeKm: number, name?: string): SimAction {
-  const a = 6371 + altitudeKm;
+export function createAddSatelliteAction(altitudeKm: number, name?: string, inclinationDeg = 51.6): SimAction {
+  const a = EARTH_RADIUS_KM + altitudeKm;
   return {
     type: "SIM_ADD_SATELLITE",
-    payload: { a, e: 0.01, i: 51.6, name: name || `Satellite ${altitudeKm} km` },
+    payload: { a, e: 0, i: inclinationDeg, name: name || `Satellite ${altitudeKm} km` },
   };
 }
 
@@ -67,7 +71,7 @@ export function suggestSimActions(intent: string, params?: Record<string, number
     actions.push(createAddSatelliteAction(400, "LEO / ISS"));
   }
   if (lower.includes("geo") || lower.includes("35786") || lower.includes("geostationary")) {
-    actions.push(createAddSatelliteAction(35786, "GEO"));
+    actions.push(createAddSatelliteAction(geostationaryAltitudeKm(), "GEO", 0));
   }
   if (lower.includes("gps") || lower.includes("20200")) {
     actions.push(createAddSatelliteAction(20200, "GPS"));

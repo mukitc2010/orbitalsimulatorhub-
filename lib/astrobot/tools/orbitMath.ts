@@ -1,9 +1,15 @@
 /**
- * Orbit Math Tool — Orbital mechanics calculations for AstroBot AGI
+ * Orbit math for AstroBot. Closed-form values come from shared/orbitEngine
+ * so they match the simulator's Earth constants.
  */
 
-const MU_EARTH = 398600.4418; // km³/s²
-const R_EARTH_KM = 6371;
+import { MU_EARTH_KM3_S2 } from "../../../shared/const";
+import {
+  circularPeriodMinutes,
+  circularSpeedKmS,
+  escapeSpeedKmS,
+  radiusFromAltitudeKm,
+} from "../../../shared/orbitEngine";
 
 export interface OrbitMathResult {
   type: string;
@@ -14,9 +20,7 @@ export interface OrbitMathResult {
 }
 
 export function orbitalPeriod(altitudeKm: number): OrbitMathResult {
-  const r = R_EARTH_KM + altitudeKm;
-  const T = 2 * Math.PI * Math.sqrt((r ** 3) / MU_EARTH);
-  const Tmin = T / 60;
+  const Tmin = circularPeriodMinutes(radiusFromAltitudeKm(altitudeKm));
   return {
     type: "orbital_period",
     value: Tmin >= 60 ? Tmin / 60 : Tmin,
@@ -27,10 +31,7 @@ export function orbitalPeriod(altitudeKm: number): OrbitMathResult {
 }
 
 export function escapeVelocity(altitudeKm: number): OrbitMathResult {
-  const r = (R_EARTH_KM + altitudeKm) * 1000; // m
-  const G = 6.674e-11;
-  const M = 5.972e24;
-  const v = Math.sqrt((2 * G * M) / r) / 1000; // km/s
+  const v = escapeSpeedKmS(radiusFromAltitudeKm(altitudeKm));
   return {
     type: "escape_velocity",
     value: v,
@@ -41,8 +42,7 @@ export function escapeVelocity(altitudeKm: number): OrbitMathResult {
 }
 
 export function orbitalVelocity(altitudeKm: number): OrbitMathResult {
-  const r = R_EARTH_KM + altitudeKm;
-  const v = Math.sqrt(MU_EARTH / r);
+  const v = circularSpeedKmS(radiusFromAltitudeKm(altitudeKm));
   return {
     type: "orbital_velocity",
     value: v,
@@ -56,8 +56,8 @@ export function hohmannTransfer(r1Km: number, r2Km: number): OrbitMathResult {
   const r1 = r1Km;
   const r2 = r2Km;
   const a = (r1 + r2) / 2;
-  const dv1 = Math.sqrt(MU_EARTH / r1) * (Math.sqrt(2 * r2 / (r1 + r2)) - 1);
-  const dv2 = Math.sqrt(MU_EARTH / r2) * (1 - Math.sqrt(2 * r1 / (r1 + r2)));
+  const dv1 = Math.sqrt(MU_EARTH_KM3_S2 / r1) * (Math.sqrt(2 * r2 / (r1 + r2)) - 1);
+  const dv2 = Math.sqrt(MU_EARTH_KM3_S2 / r2) * (1 - Math.sqrt(2 * r1 / (r1 + r2)));
   const total = dv1 + dv2;
   return {
     type: "hohmann_delta_v",
@@ -69,7 +69,7 @@ export function hohmannTransfer(r1Km: number, r2Km: number): OrbitMathResult {
 }
 
 export function visViva(rKm: number, aKm: number): OrbitMathResult {
-  const v = Math.sqrt(MU_EARTH * (2 / rKm - 1 / aKm));
+  const v = Math.sqrt(MU_EARTH_KM3_S2 * (2 / rKm - 1 / aKm));
   return {
     type: "vis_viva_velocity",
     value: v,

@@ -1,4 +1,6 @@
 import { Link } from "wouter";
+import { AnimatedSolarSystem3D } from "../components/AnimatedSolarSystem3D";
+import { SolarSystemLesson } from "../components/SolarSystemLesson";
 
 export function HowSolarSystemWorks() {
   return (
@@ -16,6 +18,10 @@ export function HowSolarSystemWorks() {
           Our solar system consists of the Sun, 8 planets, moons, asteroids, comets, and other objects, all governed by the same physics that controls satellite orbits around Earth. Understanding these principles helps NASA plan missions to Mars, Jupiter, and beyond!
         </p>
       </div>
+
+      <AnimatedSolarSystem3D />
+
+      <SolarSystemLesson />
 
       <section className="space-y-8">
         {/* Kepler's Laws */}

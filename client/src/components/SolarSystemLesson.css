@@ -1,0 +1,20 @@
+.solar-map { display: flex; align-items: center; gap: 1rem; }
+.solar-sun { width: 110px; flex-shrink: 0; }
+.solar-planets { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); flex: 1; min-width: 0; }
+.solar-planets svg { width: 100%; }
+.solar-planet { display: block; width: 100%; padding: 0; border: 2px solid transparent; border-radius: .75rem; background: transparent; cursor: pointer; }
+.solar-planet[aria-pressed="true"] { border-color: #38bdf8; background: rgba(56, 189, 248, .12); }
+.solar-orbit { display: block; width: 100%; max-width: 600px; margin-inline: auto; }
+.solar-concept { background: #f0f9ff; border-radius: .5rem; margin-bottom: 1rem; }
+.solar-lesson .solar-control { min-height: 44px; padding: .65rem 1rem; border: 1px solid #1d4ed8; border-radius: .6rem; background: #1d4ed8; color: white; font-weight: 600; }
+.solar-lesson .solar-control:hover:not(:disabled) { background: #1e40af; }
+.solar-lesson .solar-control:disabled { background: #e2e8f0; color: #475569; border-color: #94a3b8; cursor: default; }
+.solar-lesson :is(button, select, input):focus-visible { outline: 3px solid #7c3aed; outline-offset: 3px; }
+@media (max-width: 480px) {
+  .solar-map { flex-direction: column; }
+  .solar-planets { width: 100%; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .solar-sun { width: 130px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .solar-lesson *, .solar-lesson *::before, .solar-lesson *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

@@ -1,10 +1,18 @@
-import { EARTH_RADIUS_KM, MU_EARTH_KM3_S2 } from '../../shared/const';
+import { EARTH_RADIUS_KM } from '../../shared/const';
+import {
+  altitudeInRange,
+  circularPeriodMinutes,
+  circularSpeedKmS,
+  geostationaryAltitudeKm,
+  radiusFromAltitudeKm,
+} from '../../shared/orbitEngine';
 import type { SimAction } from './tools/simActions';
 
-/** Bounded local agent: observe → plan → calculate → validate → prepare.
+/** Mission procedure for the astrobot agent.
  * Produces simulator requests, never claims they have been applied. */
 export const ORACLE_AGENT = {
-  id: 'oracle-loop-engineer',
+  id: 'astrobot',
+  procedure: 'oracle-mission',
   role: 'Mission planning, deterministic orbit calculations, action validation and result review',
   maxSatellitesPerRequest: 6,
 } as const;
@@ -29,9 +37,9 @@ export function planOracleMission(message: string): OraclePlan | null {
       return { actions: [], reply: 'A geostationary satellite follows a circular, prograde orbit above the equator, with a period matching Earth’s sidereal rotation (about 23 h 56 min). It therefore stays above the same longitude and appears fixed to a ground observer. A tilted or eccentric geosynchronous orbit moves in the sky. The simulator uses an ideal two-body model.' };
     }
     if (altitude !== undefined && /how fast|speed|velocity|period|how long/.test(q)) {
-      if (!Number.isFinite(altitude) || altitude < 160 || altitude > 100000) return { actions: [], reply: 'Use an Earth-orbit altitude between 160 and 100,000 km for this calculation.' };
-      const r = EARTH_RADIUS_KM + altitude;
-      return { actions: [], reply: `For a circular Earth orbit at ${altitude.toLocaleString('en-US')} km altitude, speed is **${Math.sqrt(MU_EARTH_KM3_S2 / r).toFixed(3)} km/s** and period is **${(2 * Math.PI * Math.sqrt(r ** 3 / MU_EARTH_KM3_S2) / 60).toFixed(1)} minutes**. Using v = √(μ/r), T = 2π√(r³/μ), r = ${r} km. Ideal two-body model.` };
+      if (!altitudeInRange(altitude)) return { actions: [], reply: 'Use an Earth-orbit altitude between 160 and 100,000 km for this calculation.' };
+      const r = radiusFromAltitudeKm(altitude);
+      return { actions: [], reply: `For a circular Earth orbit at ${altitude.toLocaleString('en-US')} km altitude, speed is **${circularSpeedKmS(r).toFixed(3)} km/s** and period is **${circularPeriodMinutes(r).toFixed(1)} minutes**. Using v = √(μ/r), T = 2π√(r³/μ), r = ${r} km. Ideal two-body model.` };
     }
     // Educational questions never produce simulator side effects.
     return null;
@@ -39,7 +47,7 @@ export function planOracleMission(message: string): OraclePlan | null {
   const presets = [
     { pattern: /\b(leo|iss)\b/, altitude: 400, i: 51.6, name: 'ISS-like LEO' },
     { pattern: /\b(meo|gps)\b/, altitude: 20200, i: 55, name: 'GPS-like MEO' },
-    { pattern: /\b(geo|geostationary)\b/, altitude: Math.cbrt(MU_EARTH_KM3_S2 * (86164.0905 / (2 * Math.PI)) ** 2) - EARTH_RADIUS_KM, i: 0, name: 'Geostationary GEO' },
+    { pattern: /\b(geo|geostationary)\b/, altitude: geostationaryAltitudeKm(), i: 0, name: 'Geostationary GEO' },
   ].filter(p => p.pattern.test(q));
   if (altitude !== undefined && presets.length > 1) return { actions: [], reply: 'Please give each orbit its own altitude, or use the LEO, MEO and GEO presets without a shared altitude.' };
   const selected = presets.length ? presets.map(p => ({ ...p, altitude: altitude ?? p.altitude }))
@@ -52,8 +60,8 @@ export function planOracleMission(message: string): OraclePlan | null {
   if (speed !== undefined) actions.push({ type: 'SIM_SET_PLAYBACK', payload: { speed, playing: true } });
   if (!actions.every(validOracleAction)) return { actions: [], reply: 'The requested orbit failed validation. Use an altitude between 160 and 100,000 km.' };
   const summary = selected.map(p => {
-    const r = EARTH_RADIUS_KM + p.altitude;
-    return `- **${p.name}**: ${p.altitude.toFixed(0)} km, inclination ${p.i}°, speed ${Math.sqrt(MU_EARTH_KM3_S2 / r).toFixed(3)} km/s, period ${(2 * Math.PI * Math.sqrt(r ** 3 / MU_EARTH_KM3_S2) / 60).toFixed(1)} min.`;
+    const r = radiusFromAltitudeKm(p.altitude);
+    return `- **${p.name}**: ${p.altitude.toFixed(0)} km, inclination ${p.i}°, speed ${circularSpeedKmS(r).toFixed(3)} km/s, period ${circularPeriodMinutes(r).toFixed(1)} min.`;
   }).join('\n');
   return { actions, reply: `Prepared ${selected.length} circular orbit(s) for the simulator:\n\n${summary}${speed === undefined ? '' : `\n\nRequested playback: ${speed}×.`}\n\nThe simulator reports whether these requests were applied. These are idealized comparison orbits, not live tracking.` };
 }

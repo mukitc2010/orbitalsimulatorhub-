@@ -1,35 +1,90 @@
 {
-  "version": 1,
-  "totalAgents": 139,
+  "version": 2,
+  "totalAgents": 10,
+  "why": "Ten owners cover the apps that ship. The previous 139-role list had two written charters, and its group totals did not add up to 139.",
   "operatingRules": {
     "productionBranch": "main",
     "stagingBranch": "pre-production",
     "directProductionWrites": false,
-    "requiredChecks": ["npm run test:run -- --passWithNoTests", "npm run build"],
-    "promotion": "Only a release owner may fast-forward tested pre-production into main."
+    "oneImplementationOwner": true,
+    "requiredChecks": ["npm run agents:check", "npm run test:run", "npm run build"],
+    "promotion": "Only the release agent may fast-forward a tested pre-production commit into main."
   },
-  "domains": [
-    { "id": "orchestration", "count": 1, "roles": ["chief-orchestrator"] },
-    { "id": "domain-leads", "count": 12, "roles": ["frontend-lead", "threejs-lead", "physics-lead", "astrobot-lead", "research-lead", "data-lead", "ux-lead", "seo-lead", "performance-lead", "qa-lead", "security-lead", "devops-lead"] },
-    { "id": "frontend", "count": 12, "roles": ["design-system", "react-components", "routing", "forms", "state-management", "responsive-ui", "interaction-design", "accessibility-ui", "typography", "visual-polish", "error-states", "client-integration"] },
-    { "id": "threejs-graphics", "count": 12, "roles": ["r3f-scenes", "earth-rendering", "planet-rendering", "spacecraft-models", "orbit-visualization", "shader-effects", "camera-motion", "post-processing", "particle-systems", "lod-optimization", "webgl-accessibility", "model-pipeline"] },
-    { "id": "space-simulation", "count": 12, "roles": ["orbital-mechanics", "propagation", "maneuvers", "trajectory-planning", "attitude-dynamics", "spacecraft-health", "collision-analysis", "constellation-modeling", "navigation-estimation", "mission-physics", "simulation-validation", "units-and-constants"] },
-    { "id": "astrobot-ai", "count": 13, "roles": ["conversation-ux", "deterministic-calculations", "retrieval", "citations", "prompt-safety", "response-rendering", "agent-actions", "knowledge-graph", "voice-interface", "multimodal-planning", "evaluation", "human-handoff", "oracle-loop-engineer"] },
-    { "id": "research-content", "count": 13, "roles": ["source-validation", "orbital-research", "robotics-research", "mars-research", "satellite-research", "ai-research", "control-research", "quantum-research", "math-editor", "reference-manager", "content-review", "research-visualization", "daily-space-news-editor"] },
-    { "id": "seo-growth", "count": 12, "roles": ["metadata", "structured-data", "sitemap", "robots", "open-graph", "performance-seo", "content-discovery", "analytics", "linkedin-editor", "growth-experiments", "search-quality", "conversion-ux"] },
-    { "id": "platform-data", "count": 12, "roles": ["api-contracts", "database-schema", "data-ingestion", "tle-data-integration", "telemetry-pipelines", "cache-strategy", "background-jobs", "event-modeling", "api-observability", "integration-testing", "privacy-engineering", "data-governance"] },
-    { "id": "quality-security", "count": 20, "roles": ["unit-tests", "integration-tests", "e2e-tests", "visual-regression", "cross-browser", "mobile-qa", "keyboard-accessibility", "screen-reader", "performance-audit", "web-vitals", "dependency-audit", "secret-scanning", "api-security", "xss-review", "auth-review", "data-privacy", "threat-modeling", "code-review", "release-validation", "incident-response"] },
-    { "id": "release-governance", "count": 8, "roles": ["ci-maintainer", "preview-deployments", "production-promoter", "rollback-manager", "release-notes", "observability", "environment-manager", "repository-governance"] },
-    { "id": "documentation", "count": 12, "roles": ["architecture-docs", "api-docs", "simulator-docs", "research-docs", "contributor-guide", "runbooks", "deployment-docs", "security-docs", "testing-docs", "design-docs", "agent-docs", "changelog"] }
+  "groups": [
+    { "id": "orchestration", "count": 1 },
+    { "id": "product", "count": 7 },
+    { "id": "control", "count": 2 }
   ],
-  "pathOwnership": {
-    "frontend": ["client/src/components/**", "client/src/pages/**", "client/src/index.css"],
-    "threejs-graphics": ["client/src/components/**/*Scene*.tsx", "client/src/components/EarthVisualization.tsx"],
-    "space-simulation": ["client/src/orbitalUtils.ts", "client/src/orbitalClient.ts", "shared/**"],
-    "astrobot-ai": ["client/src/pages/AstroBot.tsx", "client/src/components/astrobot/**", "server/astrobot*", "lib/astrobot/**", "client/src/lib/oracleAgent.test.ts"],
-    "research-content": ["docs/**", "client/src/pages/AGIASIFramework.tsx", "client/src/pages/ASIAstronautMathematics.tsx"],
-    "seo-growth": ["client/src/data/seo-config.ts", "client/public/**", "scripts/generate-rss.js"],
-    "quality-security": ["tests/**", ".github/workflows/**"],
-    "release-governance": [".github/workflows/**", "vercel.json"]
-  }
+  "agents": [
+    {
+      "id": "chief-orchestrator",
+      "group": "orchestration",
+      "charter": "agents/roles/chief-orchestrator.md",
+      "owns": ["agents/registry.json", "agents/OPERATING_MODEL.md", "agents/roles/**"],
+      "checks": ["npm run agents:check"]
+    },
+    {
+      "id": "public-site",
+      "group": "product",
+      "charter": "agents/roles/public-site.md",
+      "owns": ["client/src/pages/**", "client/src/components/**", "client/src/data/**", "client/src/index.css", "client/index.html", "client/public/**"],
+      "checks": ["npm run test:run", "npm run build"]
+    },
+    {
+      "id": "orbit-simulator",
+      "group": "product",
+      "charter": "agents/roles/orbit-simulator.md",
+      "owns": ["client/src/orbitPhysics.ts", "client/src/orbitPhysics.test.ts", "client/src/orbitalUtils.ts", "client/src/orbitalClient.ts", "client/src/components/EarthVisualization.tsx", "client/src/components/HomeSpaceScene.tsx", "client/src/components/qsagi/**", "client/src/pages/OrbitMissionControl.tsx", "client/src/pages/Simulator.tsx", "server/orbital.ts", "server/orbital_mechanics.py", "server/qsagi/**", "shared/**", "simulation/**"],
+      "checks": ["npm run test:run", "npm run build"]
+    },
+    {
+      "id": "astrobot",
+      "group": "product",
+      "charter": "agents/roles/astrobot.md",
+      "owns": ["lib/astrobot/**", "server/astrobot.ts", "server/astrobot-api.ts", "api/astrobot/**", "api/chat.ts", "client/src/astrobotKnowledge.ts", "client/src/components/astrobot/**", "client/src/pages/AstroBot.tsx", "client/src/lib/oracleAgent.test.ts"],
+      "checks": ["npm run test:run -- client/src/lib/oracleAgent.test.ts", "npm run build"]
+    },
+    {
+      "id": "content",
+      "group": "product",
+      "charter": "agents/roles/content.md",
+      "owns": ["content/**", "docs/**", "scripts/space-news/**", "scripts/content-agent.js", "scripts/content-rewrite-agent.js", "scripts/content-scheduler.js", "scripts/generate-blog-post.js", "scripts/generate-rss.js", "client/src/data/spaceNews.json", "agents/DAILY_SPACE_NEWS_EDITOR.md"],
+      "checks": ["npm run news:test", "npm run build"]
+    },
+    {
+      "id": "platform",
+      "group": "product",
+      "charter": "agents/roles/platform.md",
+      "owns": ["server/**", "api/**", "drizzle/**", "space-agi-swarm-backend/**", "n8n/**"],
+      "checks": ["npm run test:run", "npm run build"]
+    },
+    {
+      "id": "community",
+      "group": "product",
+      "charter": "agents/roles/community.md",
+      "owns": ["community/app/**", "community/components/**", "community/lib/**", "community/supabase/**", "community/middleware.ts"],
+      "checks": ["npm run build --prefix community"]
+    },
+    {
+      "id": "astronaut-robot",
+      "group": "product",
+      "charter": "agents/roles/astronaut-robot.md",
+      "owns": ["ai-astronaut-simulator/**", "client/src/components/RobotSimulationScene.tsx", "client/src/components/RobotSimulationScene.css", "client/src/pages/AIAstronautRobotSimulator.tsx"],
+      "checks": ["npm run build", "npm run build --prefix ai-astronaut-simulator"]
+    },
+    {
+      "id": "quality-security",
+      "group": "control",
+      "charter": "agents/roles/quality-security.md",
+      "owns": ["client/src/**/*.test.ts", "client/src/**/*.test.tsx", "scripts/space-news/test_*.py"],
+      "checks": ["npm run test:run", "npm run build"]
+    },
+    {
+      "id": "release",
+      "group": "control",
+      "charter": "agents/roles/release.md",
+      "owns": [".github/workflows/**", "vercel.json", "netlify.toml"],
+      "checks": ["npm run test:run", "npm run build"]
+    }
+  ]
 }

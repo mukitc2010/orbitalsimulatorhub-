@@ -12,6 +12,7 @@ import { suggestSimActions, type SimAction } from "./tools/simActions";
 import { checkAltitude, checkHohmannRadii, extractAltitude, extractHohmannRadii } from "./verify/sanityChecks";
 import { SYSTEM_PROMPT } from "./prompts/system";
 import { generateLoopedAstroBotReply, type AstroBotChatMessage } from "./loopEngineering";
+import { reasonAboutSpace } from "./reasoner";
 
 export interface AstroBotResponse {
   reply: string;
@@ -93,20 +94,29 @@ function buildContext(memory: UserMemory | null, pageContext?: string, toolResul
 async function completeAstroBotMessage(
   messages: AstroBotChatMessage[],
   maxTokens: number,
-  provider: "openai" | "ollama",
-  openaiKey: string,
+  provider: "xai" | "openai" | "ollama",
+  apiKey: string,
 ): Promise<string> {
-  const isOpenAI = provider === "openai";
+  const isChatCompletions = provider === "openai" || provider === "xai";
   const response = await fetch(
-    isOpenAI ? "https://api.openai.com/v1/chat/completions" : `${(process.env.OLLAMA_URL || "http://localhost:11434").replace(/\/$/, "")}/api/chat`,
+    provider === "xai"
+      ? "https://api.x.ai/v1/chat/completions"
+      : provider === "openai"
+        ? "https://api.openai.com/v1/chat/completions"
+        : `${(process.env.OLLAMA_URL || "http://localhost:11434").replace(/\/$/, "")}/api/chat`,
     {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        ...(isOpenAI ? { Authorization: `Bearer ${openaiKey}` } : {}),
+        ...(isChatCompletions ? { Authorization: `Bearer ${apiKey}` } : {}),
       },
-      body: JSON.stringify(isOpenAI
-        ? { model: "gpt-4o-mini", messages, max_tokens: maxTokens, temperature: 0.4 }
+      body: JSON.stringify(isChatCompletions
+        ? {
+            model: provider === "xai" ? (process.env.XAI_MODEL || "grok-4.7") : "gpt-4o-mini",
+            messages,
+            max_tokens: maxTokens,
+            temperature: 0.4,
+          }
         : {
             model: process.env.OLLAMA_MODEL || "qwen2.5:7b",
             messages,
@@ -122,7 +132,7 @@ async function completeAstroBotMessage(
     choices?: Array<{ message?: { content?: string } }>;
     message?: { content?: string };
   };
-  const text = isOpenAI ? data.choices?.[0]?.message?.content : data.message?.content;
+  const text = isChatCompletions ? data.choices?.[0]?.message?.content : data.message?.content;
   if (!text?.trim()) throw new Error(`${provider} returned an empty response`);
   return text.trim();
 }
@@ -162,15 +172,21 @@ export async function processAstroBot(input: AstroBotInput): Promise<AstroBotRes
   const actions: SimAction[] = [];
   const context = buildContext(memory, pageContext, toolResults);
 
+  const xaiKey = process.env.XAI_API_KEY || "";
   const openaiKey = process.env.OPENAI_API_KEY || "";
   const configuredProvider = process.env.ASTROBOT_PROVIDER;
-  const provider = configuredProvider === "openai" || (!configuredProvider && openaiKey.length >= 10)
-    ? "openai"
-    : configuredProvider === "fallback"
-      ? "fallback"
-      : "ollama";
+  const provider = configuredProvider === "fallback" || configuredProvider === "local"
+    ? "local"
+    : configuredProvider === "ollama"
+      ? "ollama"
+      : configuredProvider === "openai" || (!xaiKey && openaiKey.length >= 10)
+        ? "openai"
+        : xaiKey.length >= 10
+          ? "xai"
+          : "local";
+  const apiKey = provider === "xai" ? xaiKey : openaiKey;
 
-  if (provider !== "fallback" && (provider !== "openai" || openaiKey.length >= 10)) {
+  if (provider === "xai" || provider === "openai" || provider === "ollama") {
     const messages: AstroBotChatMessage[] = [
       { role: "system", content: `${SYSTEM_PROMPT}\n\n${context}` },
       ...history.slice(-6).map((m) => ({
@@ -183,7 +199,7 @@ export async function processAstroBot(input: AstroBotInput): Promise<AstroBotRes
     try {
       const reply = await generateLoopedAstroBotReply(
         messages,
-        (chatMessages, maxTokens) => completeAstroBotMessage(chatMessages, maxTokens, provider, openaiKey),
+        (chatMessages, maxTokens) => completeAstroBotMessage(chatMessages, maxTokens, provider, apiKey),
       );
       const memoryPatch = {
         lastTopic: routerResult.intent === "TEACH" ? message.slice(0, 50) : memory?.lastTopic,
@@ -205,45 +221,30 @@ export async function processAstroBot(input: AstroBotInput): Promise<AstroBotRes
 
 function generateFallbackResponse(
   message: string,
-  routerResult: ReturnType<typeof routeIntent>,
+  _routerResult: ReturnType<typeof routeIntent>,
   toolResults: string,
   actions: SimAction[],
-  memory: UserMemory | null
+  _memory: UserMemory | null
 ): AstroBotResponse {
-  const lower = message.toLowerCase();
-
-  if (toolResults) {
+  const reasoned = reasonAboutSpace(message);
+  if (reasoned) {
     return {
-      reply: `**AstroBot Analysis**\n\n${toolResults}\n\n${memory?.preferredStyle === "detailed" ? "Want me to explain the formulas? Try the [Calculators](/calculators) or [Space-AGI Mathematics](/research/space-agi-math)." : "Explore the [3D Simulator](/simulator) or [Calculators](/calculators) to try this yourself!"}`,
+      reply: toolResults ? `${reasoned}\n\nChecked with tools:\n${toolResults}` : reasoned,
       actions,
       memoryPatch: { lastTopic: message.slice(0, 50) },
     };
   }
 
-  if (routerResult.intent === "QUIZ") {
+  if (toolResults) {
     return {
-      reply: "**Quiz Time!**\n\n**Q1)** What is the approximate orbital velocity of the ISS?\nA) 3 km/s  B) 5 km/s  C) **7.66 km/s**  D) 11 km/s\n\n**Q2)** How many astronauts have walked on the Moon?\nA) 6  B) 10  C) **12**  D) 24\n\n*Score yourself! Want more? Ask \"Quiz me on Kepler\" or \"Apollo quiz\".*",
-      actions: [],
-      memoryPatch: { lastTopic: "quiz" },
-    };
-  }
-
-  if (lower.includes("kepler")) {
-    return {
-      reply: "**Kepler's Three Laws**\n\n1. **Ellipse:** Planets orbit in ellipses with the Sun at one focus.\n2. **Equal Areas:** A line sweeps equal areas in equal time — faster when closer.\n3. **T² ∝ a³:** Period squared ∝ semi-major axis cubed.\n\nFormula: T = 2π√(a³/μ). Try the [simulator](/simulator) to see it!",
-      actions: [],
-    };
-  }
-
-  if (lower.includes("iss") || lower.includes("space station")) {
-    return {
-      reply: "**ISS:** ~408 km altitude, 7.66 km/s, 92 min period. See it in the [simulator](/simulator) at 408 km!",
-      actions: [],
+      reply: toolResults,
+      actions,
+      memoryPatch: { lastTopic: message.slice(0, 50) },
     };
   }
 
   return {
-    reply: "I'm AstroBot, your space intelligence! I can teach orbital mechanics, calculate orbits, quiz you, and control the simulator. Try: *\"Calculate orbital velocity at 400 km\"* or *\"Quiz me on Kepler\"* or *\"Add a LEO satellite\"*. Add OPENAI_API_KEY for full AGI mode!",
+    reply: "I can calculate circular orbits, escape speed, Hohmann transfers, weight on another world, and the Apollo moonwalkers. Try: \"How fast is a circular orbit at 1,000 km?\", \"Why don't satellites fall?\", or \"Who walked on the Moon?\" Set XAI_API_KEY on the server for open-ended questions. Orbit numbers still come from the local engine.",
     actions: [],
   };
 }
