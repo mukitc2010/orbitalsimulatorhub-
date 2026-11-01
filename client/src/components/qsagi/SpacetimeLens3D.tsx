@@ -3,6 +3,7 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls, Line, Stars } from "@react-three/drei";
 import * as THREE from "three";
 import { advancePlayback } from "../../lib/qsagi/playback";
+import { flightPosition, warpHeight } from "../../lib/qsagi/spacetimeView";
 import type { SimRun } from "../../lib/qsagi/types";
 import "./SpacetimeLens3D.css";
 class LensBoundary extends Component<{children:ReactNode},{failed:boolean}> {
@@ -15,8 +16,8 @@ function LensScene({run,index,cameraKey,playing,orbitCamera}:{run:SimRun;index:n
  const extent=useMemo(()=>Math.max(run.params.r0,...run.points.map(p=>p.r),2*run.params.M*run.params.horizonMargin)*1.3,[run]);
  const scale=5/extent;
  useEffect(()=>{camera.position.set(7,6,8);camera.lookAt(0,0,0)},[camera,cameraKey]);
- const grid=useMemo(()=>{const lines:[number,number,number][][]=[];for(let n=-12;n<=12;n++){const a:[number,number,number][]=[],b:[number,number,number][]=[];for(let j=0;j<=70;j++){const u=-6+j*12/70,v=n/2;const y=(x:number,z:number)=>-Math.min(2.6,run.params.M*scale/Math.sqrt(x*x+z*z+0.16));a.push([u,y(u,v),v]);b.push([v,y(v,u),u]);}lines.push(a,b);}return lines},[run.params.M,scale]);
- const points=useMemo(()=>run.points.map(p=>[p.pos.x*scale,0.16,p.pos.y*scale] as [number,number,number]),[run,scale]);
+ const grid=useMemo(()=>{const lines:[number,number,number][][]=[];for(let n=-12;n<=12;n++){const a:[number,number,number][]=[],b:[number,number,number][]=[];for(let j=0;j<=70;j++){const u=-6+j*12/70,v=n/2;a.push([u,warpHeight(u,v,run.params.M,scale),v]);b.push([v,warpHeight(v,u,run.params.M,scale),u]);}lines.push(a,b);}return lines},[run.params.M,scale]);
+ const points=useMemo(()=>run.points.map((p,i)=>flightPosition(p.pos,run.params.scenario,run.params.M,scale,run.points.length<=1?0:i/(run.points.length-1))),[run,scale]);
  const current=run.points[index];
  const target=useMemo(()=>new THREE.Vector3(...points[index]),[points,index]);
  useEffect(()=>{if(!playing&&craft.current)craft.current.position.copy(target)},[target,playing]);
@@ -26,6 +27,7 @@ function LensScene({run,index,cameraKey,playing,orbitCamera}:{run:SimRun;index:n
  return <><color attach="background" args={["#030814"]}/><ambientLight intensity={0.8}/><directionalLight position={[5,8,5]} intensity={2}/><Stars radius={40} depth={30} count={900} factor={2} speed={playing?1:0}/>
  {grid.map((p,i)=><Line key={i} points={p} color={i%3===0?"#536bbc":i%3===1?"#2bafbb":"#785da8"} transparent opacity={0.5} lineWidth={0.7}/>)}
  <mesh position={[0,-0.5,0]}><sphereGeometry args={[Math.max(0.16,2*run.params.M*scale),32,24]}/><meshStandardMaterial color="#03040b" roughness={0.5}/></mesh>
+ {run.params.scenario==="WORMHOLE_TOY"&&<mesh position={[3.2,1.1,0]} rotation={[Math.PI/2,0,0]}><torusGeometry args={[0.55,0.1,16,40]}/><meshBasicMaterial color="#9ad7ff"/></mesh>}
  <group ref={disk} position={[0,-.35,0]}>
  {[1.08,1.25,1.5].map((r,i)=><mesh key={r} rotation={[-Math.PI/2,0,i*.2]}><torusGeometry args={[Math.max(.16,2*run.params.M*scale)*r,.025+i*.008,8,80,Math.PI*1.8]}/><meshBasicMaterial color={i===0?"#ffb560":i===1?"#ee819d":"#8b85ff"} transparent opacity={.7-i*.15}/></mesh>)}
  </group>
@@ -45,7 +47,7 @@ export function SpacetimeLens3D({run}:{run:SimRun|null}) {
  useEffect(()=>{if(!repeat&&duration&&elapsed>=duration)setPlaying(false)},[elapsed,duration,repeat]);
  const index=run?Math.max(0,run.points.findIndex(p=>p.t>=first+elapsed)):0;
  const current=run?.points[index];
- return <section className="spacetime-lens" aria-label="Animated spacetime simulation"><div className="lens-heading"><div><p>SPACETIME / FLIGHT PLAYBACK</p><h2>Spacetime Lens (3D animated)</h2></div><span>{playing?"PLAYING":"PAUSED"}</span></div>
+ return <section className="spacetime-lens" aria-label="Animated spacetime simulation"><div className="lens-heading"><div><p>SPACETIME / FLIGHT PLAYBACK</p><h2>3D animated spacetime flyby</h2></div><span>{playing?"PLAYING":"PAUSED"}</span></div>
  <div className="lens-viewport"><LensBoundary><Canvas camera={{position:[7,6,8],fov:48}} dpr={[1,1.5]} fallback={<p className="lens-fallback">WebGL unavailable. Timeline telemetry is available below.</p>}>{run&&current&&<LensScene run={run} index={index} cameraKey={cameraKey} playing={playing} orbitCamera={orbitCamera}/>}</Canvas></LensBoundary><div className="lens-overlay">{current?`T + ${current.t.toFixed(2)} / ${last.toFixed(2)} s`:"Run a scenario to begin"}<br/>Drag to orbit / Pinch or scroll to zoom</div></div>
  <div className="lens-buttons"><button disabled={!current} onClick={()=>{if(elapsed>=duration)setElapsed(0);setPlaying(p=>!p)}}>{playing?"Pause flight":"Play flight"}</button><button disabled={!current} onClick={()=>{setElapsed(0);setPlaying(false)}}>Restart flight</button><label>Playback speed<select value={speed} onChange={e=>setSpeed(Number(e.target.value))}>{[0.25,1,2,4].map(x=><option key={x} value={x}>{x}x</option>)}</select></label><button onClick={()=>setCameraKey(k=>k+1)}>Reset 3D camera</button><label><input type="checkbox" checked={repeat} onChange={e=>setRepeat(e.target.checked)}/>Auto replay</label><label><input type="checkbox" checked={orbitCamera} onChange={e=>setOrbitCamera(e.target.checked)}/>Orbit camera</label></div>
  <p className="lens-note">{repeat?"Auto replay is on: the recorded flight repeats after its final sample.":"Single playback: the flight stops at its final sample."} Pause freezes the spacecraft, camera and decorative rings. Scrub the timeline to inspect any sample.</p>

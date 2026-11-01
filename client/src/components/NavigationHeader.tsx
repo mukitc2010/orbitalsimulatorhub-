@@ -10,7 +10,6 @@ const MISSION_SUBNAV = [
 
 const SIMULATOR_SUBNAV = [
   { path: "/simulator", label: "Orbit Simulator", title: "3D satellite orbit simulator — LEO, MEO, GEO" },
-  { path: "/asi-mission-control", label: "🛰 ORACLE Agent", title: "ASI Mission Control — AI agent that runs real physics and deploys satellites" },
   { path: "/simulator/swarm", label: "Swarm Simulator", title: "AI swarm collision avoidance — J2, Pc, OSQP" },
   { path: "/simulator/ai-astronaut-robot", label: "AI Robot Lab", title: "Build and train AI space robots — humanoid, rover, vision AI" },
   { path: "/quantum-space-agi", label: "Quantum Space AGI Lab", title: "Quantum Space AGI Lab — curvature-aware navigation" },
@@ -38,7 +37,7 @@ const BLOG_SUBNAV = [
 
 const NAV = [
   { path: "/", label: "Home", title: "OrbitalSimulatorHub — Orbital Mechanics • AI in Space • Future Space Intelligence" },
-  { path: "/games/space-math", label: "Math Game", title: "Orbital Gauntlet: advanced space-math challenges" },
+  { path: "/games/space-math", label: "Orbit Score", title: "Orbit Score Lab — space-math challenges and scores" },
   { path: "/planets", label: "Planets", title: "Planet Study Hub — explore every planet in our solar system" },
   { path: "/simulator", label: "Simulator", title: "Orbit & Swarm simulators — LEO, MEO, GEO, AI collision avoidance", subnav: SIMULATOR_SUBNAV },
   { path: "/research/space-agi-lab", label: "🧠 Space-AGI Lab", title: "Space-AGI Engineering Lab — autonomous spacecraft, decision intelligence, orbital math", subnav: SPACE_AGI_SUBNAV },
@@ -73,39 +72,52 @@ function isBlogActive(location: string) {
     || location === "/ai-in-aerospace" || location === "/ai-in-space" || location === "/research" || location.startsWith("/research/");
 }
 
+type SubnavItem = { path: string; label: string; title: string };
+
+function isBlogItemActive(location: string, path: string) {
+  if (path === "/blog") return location === "/blog" || location.startsWith("/blog/");
+  if (path === "/learn/aerospace") return location.startsWith("/learn/aerospace");
+  if (path === "/ai-in-aerospace") return location === "/ai-in-aerospace" || location === "/ai-in-space";
+  if (path === "/research") return location === "/research" || (location.startsWith("/research/") && !isSpaceAgiActive(location));
+  return location === path;
+}
+
 export function NavigationHeader() {
   const [location] = useLocation();
   const [missionsOpen, setMissionsOpen] = useState(false);
   const [simulatorOpen, setSimulatorOpen] = useState(false);
   const [spaceAgiOpen, setSpaceAgiOpen] = useState(false);
   const [blogOpen, setBlogOpen] = useState(false);
-  const missionsRef = useRef<HTMLDivElement>(null);
-  const simulatorRef = useRef<HTMLDivElement>(null);
-  const spaceAgiRef = useRef<HTMLDivElement>(null);
-  const blogRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
+
+  function closeMenus() {
+    setMissionsOpen(false);
+    setSimulatorOpen(false);
+    setSpaceAgiOpen(false);
+    setBlogOpen(false);
+  }
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
-      if (missionsRef.current && !missionsRef.current.contains(e.target as Node)) {
-        setMissionsOpen(false);
-      }
-      if (simulatorRef.current && !simulatorRef.current.contains(e.target as Node)) {
-        setSimulatorOpen(false);
-      }
-      if (spaceAgiRef.current && !spaceAgiRef.current.contains(e.target as Node)) {
-        setSpaceAgiOpen(false);
-      }
-      if (blogRef.current && !blogRef.current.contains(e.target as Node)) {
-        setBlogOpen(false);
-      }
+      if (headerRef.current && !headerRef.current.contains(e.target as Node)) closeMenus();
     }
-    if (missionsOpen || simulatorOpen || spaceAgiOpen || blogOpen) document.addEventListener("mousedown", handleClick);
-    return () => document.removeEventListener("mousedown", handleClick);
-  }, [missionsOpen, simulatorOpen, spaceAgiOpen, blogOpen]);
+    function handleKey(e: KeyboardEvent) {
+      if (e.key === "Escape") closeMenus();
+    }
+    document.addEventListener("mousedown", handleClick);
+    document.addEventListener("keydown", handleKey);
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
+      document.removeEventListener("keydown", handleKey);
+    };
+  }, []);
+
+  const directLinks = NAV.filter((item) => item.path === "/research/asi-astronaut-mathematics" || item.path === "/astrobot");
 
   return (
     <header
-      className="border-b-2 backdrop-blur-sm sticky top-0 z-50 shadow-sm"
+      ref={headerRef}
+      className="site-header border-b-2 backdrop-blur-sm sticky top-0 z-50 shadow-sm"
       style={{
         borderColor: "var(--border-accent)",
         background: "var(--bg-header)",
@@ -125,169 +137,132 @@ export function NavigationHeader() {
           </Link>
         </div>
 
-        <nav className="flex flex-wrap gap-1 items-center">
-          {NAV.slice(0, 3).map(({ path, label, title, subnav }) => (
-            subnav ? null : <NavLink key={path} path={path} label={label} title={title} location={location} />
-          ))}
-          <div ref={simulatorRef} className="relative">
-            <button
-              onClick={() => setSimulatorOpen((v) => !v)}
-              onMouseEnter={() => setSimulatorOpen(true)}
-              className="px-3 py-2 rounded-lg font-medium transition text-sm flex items-center gap-1"
-              style={
-                isSimulatorActive(location)
-                  ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
-                  : { color: "var(--text-secondary)" }
-              }
-            >
-              Simulator
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ opacity: simulatorOpen ? 1 : 0.7 }}>
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </button>
-            {simulatorOpen && (
-              <div
-                className="absolute top-full left-0 mt-1 py-1 rounded-lg shadow-lg min-w-[180px]"
-                style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}
-                onMouseLeave={() => setSimulatorOpen(false)}
-              >
-                {SIMULATOR_SUBNAV.map(({ path, label, title }) => (
-                  <Link key={path} href={path} onClick={() => setSimulatorOpen(false)}>
-                    <a
-                      className="block px-4 py-2 text-sm font-medium transition"
-                      style={{
-                        color: location === path || (path === "/simulator" && location === "/simulator") ? "var(--accent-cyan)" : "var(--text-primary)",
-                      }}
-                    >
-                      {label}
-                    </a>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-          <div ref={missionsRef} className="relative">
-            <button
-              onClick={() => setMissionsOpen((v) => !v)}
-              onMouseEnter={() => setMissionsOpen(true)}
-              className="px-3 py-2 rounded-lg font-medium transition text-sm flex items-center gap-1"
-              style={
-                isMissionsActive(location)
-                  ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
-                  : { color: "var(--text-secondary)" }
-              }
-            >
-              Missions
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ opacity: missionsOpen ? 1 : 0.7 }}>
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </button>
-            {missionsOpen && (
-              <div
-                className="absolute top-full left-0 mt-1 py-1 rounded-lg shadow-lg min-w-[160px]"
-                style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}
-                onMouseLeave={() => setMissionsOpen(false)}
-              >
-                {MISSION_SUBNAV.map(({ path, label, title }) => (
-                  <Link key={path} href={path} onClick={() => setMissionsOpen(false)}>
-                    <a
-                      className="block px-4 py-2 text-sm font-medium transition"
-                      style={{
-                        color: location === path || (path === "/missions" && location.startsWith("/missions")) ? "var(--accent-cyan)" : "var(--text-primary)",
-                      }}
-                    >
-                      {label}
-                    </a>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-          <div ref={spaceAgiRef} className="relative">
-            <button
-              onClick={() => setSpaceAgiOpen((v) => !v)}
-              onMouseEnter={() => setSpaceAgiOpen(true)}
-              className="px-3 py-2 rounded-lg font-medium transition text-sm flex items-center gap-1"
-              style={
-                isSpaceAgiActive(location)
-                  ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
-                  : { color: "var(--text-secondary)" }
-              }
-            >
-              🧠 Space-AGI Lab
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ opacity: spaceAgiOpen ? 1 : 0.7 }}>
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </button>
-            {spaceAgiOpen && (
-              <div
-                className="absolute top-full left-0 mt-1 py-1 rounded-lg shadow-lg min-w-[180px]"
-                style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}
-                onMouseLeave={() => setSpaceAgiOpen(false)}
-              >
-                {SPACE_AGI_SUBNAV.map(({ path, label, title }) => (
-                  <Link key={path} href={path} onClick={() => setSpaceAgiOpen(false)}>
-                    <a
-                      className="block px-4 py-2 text-sm font-medium transition"
-                      style={{
-                        color: location === path ? "var(--accent-cyan)" : "var(--text-primary)",
-                      }}
-                    >
-                      {label}
-                    </a>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-          <div ref={blogRef} className="relative">
-            <button
-              onClick={() => setBlogOpen((v) => !v)}
-              onMouseEnter={() => setBlogOpen(true)}
-              className="px-3 py-2 rounded-lg font-medium transition text-sm flex items-center gap-1"
-              style={
-                isBlogActive(location)
-                  ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
-                  : { color: "var(--text-secondary)" }
-              }
-            >
-              Blog
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ opacity: blogOpen ? 1 : 0.7 }}>
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </button>
-            {blogOpen && (
-              <div
-                className="absolute top-full left-0 mt-1 py-1 rounded-lg shadow-lg min-w-[160px]"
-                style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}
-                onMouseLeave={() => setBlogOpen(false)}
-              >
-                {BLOG_SUBNAV.map(({ path, label, title }) => {
-                  const isActive =
-                    (path === "/blog" && (location === "/blog" || location.startsWith("/blog/")))
-                    || (path === "/learn/aerospace" && location.startsWith("/learn/aerospace"))
-                    || (path === "/ai-in-aerospace" && (location === "/ai-in-aerospace" || location === "/ai-in-space"))
-                    || (path === "/research" && (location === "/research" || location.startsWith("/research/")));
-                  return (
-                    <Link key={path} href={path} onClick={() => setBlogOpen(false)}>
-                      <a
-                        className="block px-4 py-2 text-sm font-medium transition"
-                        style={{ color: isActive ? "var(--accent-cyan)" : "var(--text-primary)" }}
-                      >
-                        {label}
-                      </a>
-                    </Link>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-          {NAV.slice(2).filter((n) => n.path !== "/research/space-agi-lab" && n.path !== "/simulator" && n.path !== "/blog" && n.path !== "/ai-in-aerospace" && n.path !== "/research").map(({ path, label, title }) => (
+        <nav className="flex flex-wrap gap-1 items-center" aria-label="Primary">
+          <NavLink path="/" label="Home" title={NAV[0].title} location={location} />
+          <NavLink path="/games/space-math" label="Orbit Score" title={NAV[1].title} location={location} />
+          <NavLink path="/planets" label="Planets" title={NAV[2].title} location={location} />
+          <NavMenu
+            label="Simulator"
+            open={simulatorOpen}
+            active={isSimulatorActive(location)}
+            items={SIMULATOR_SUBNAV}
+            onToggle={() => { setSimulatorOpen((v) => !v); setMissionsOpen(false); setSpaceAgiOpen(false); setBlogOpen(false); }}
+            onOpen={() => { setSimulatorOpen(true); setMissionsOpen(false); setSpaceAgiOpen(false); setBlogOpen(false); }}
+            onClose={() => setSimulatorOpen(false)}
+            isItemActive={(path) => location === path}
+          />
+          <NavMenu
+            label="Missions"
+            open={missionsOpen}
+            active={isMissionsActive(location)}
+            items={MISSION_SUBNAV}
+            onToggle={() => { setMissionsOpen((v) => !v); setSimulatorOpen(false); setSpaceAgiOpen(false); setBlogOpen(false); }}
+            onOpen={() => { setMissionsOpen(true); setSimulatorOpen(false); setSpaceAgiOpen(false); setBlogOpen(false); }}
+            onClose={() => setMissionsOpen(false)}
+            isItemActive={(path) => location === path || (path === "/missions" && location.startsWith("/missions"))}
+          />
+          <NavMenu
+            label="🧠 Space-AGI Lab"
+            open={spaceAgiOpen}
+            active={isSpaceAgiActive(location)}
+            items={SPACE_AGI_SUBNAV}
+            onToggle={() => { setSpaceAgiOpen((v) => !v); setSimulatorOpen(false); setMissionsOpen(false); setBlogOpen(false); }}
+            onOpen={() => { setSpaceAgiOpen(true); setSimulatorOpen(false); setMissionsOpen(false); setBlogOpen(false); }}
+            onClose={() => setSpaceAgiOpen(false)}
+            isItemActive={(path) => location === path}
+          />
+          <NavMenu
+            label="Blog"
+            open={blogOpen}
+            active={isBlogActive(location) && !isSpaceAgiActive(location)}
+            items={BLOG_SUBNAV}
+            onToggle={() => { setBlogOpen((v) => !v); setSimulatorOpen(false); setMissionsOpen(false); setSpaceAgiOpen(false); }}
+            onOpen={() => { setBlogOpen(true); setSimulatorOpen(false); setMissionsOpen(false); setSpaceAgiOpen(false); }}
+            onClose={() => setBlogOpen(false)}
+            isItemActive={(path) => isBlogItemActive(location, path)}
+          />
+          {directLinks.map(({ path, label, title }) => (
             <NavLink key={path} path={path} label={label} title={title} location={location} />
           ))}
         </nav>
       </div>
+      {isSimulatorActive(location) && (
+        <nav aria-label="Choose a simulator" className="border-t" style={{ borderColor: "var(--border-color)" }}>
+          <div className="container mx-auto px-4 py-2 max-w-7xl flex flex-wrap gap-2">
+            {SIMULATOR_SUBNAV.map(({ path, label, title }) => (
+              <Link
+                key={path}
+                href={path}
+                title={title}
+                aria-current={location === path ? "page" : undefined}
+                className="px-3 py-1.5 rounded-lg text-sm font-medium"
+                style={
+                  location === path
+                    ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
+                    : { color: "var(--text-secondary)", background: "transparent" }
+                }
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+        </nav>
+      )}
     </header>
+  );
+}
+
+function NavMenu({
+  label, open, active, items, onToggle, onOpen, onClose, isItemActive,
+}: {
+  label: string;
+  open: boolean;
+  active: boolean;
+  items: SubnavItem[];
+  onToggle: () => void;
+  onOpen: () => void;
+  onClose: () => void;
+  isItemActive: (path: string) => boolean;
+}) {
+  return (
+    <div className="relative" onMouseEnter={onOpen} onMouseLeave={onClose}>
+      <button
+        type="button"
+        aria-expanded={open}
+        aria-haspopup="true"
+        onClick={onToggle}
+        className="px-3 py-2 rounded-lg font-medium transition text-sm flex items-center gap-1"
+        style={
+          active
+            ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
+            : { color: "var(--text-secondary)" }
+        }
+      >
+        {label}
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ opacity: open ? 1 : 0.7 }} aria-hidden="true">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </button>
+      {open && (
+        <div className="absolute top-full left-0 z-[80] min-w-[200px] pt-1">
+          <div className="py-1 rounded-lg shadow-lg" style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }} role="menu">
+            {items.map(({ path, label: itemLabel, title }) => (
+              <Link
+                key={path}
+                href={path}
+                title={title}
+                role="menuitem"
+                onClick={onClose}
+                className="block px-4 py-2 text-sm font-medium transition"
+                style={{ color: isItemActive(path) ? "var(--accent-cyan)" : "var(--text-primary)" }}
+              >
+                {itemLabel}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 

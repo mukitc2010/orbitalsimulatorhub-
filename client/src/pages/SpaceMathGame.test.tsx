@@ -20,7 +20,7 @@ describe("Orbital Gauntlet player flow", () => {
   it("lets visitors launch, use a hint, solve a problem and advance", () => {
     render(<SpaceMathGame />);
     expect(
-      screen.getByRole("heading", { name: /ORBITAL GAUNTLET/ }),
+      screen.getByRole("heading", { name: /ORBIT SCORE LAB/ }),
     ).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: /Launch challenge/ }));
     fireEvent.click(screen.getByRole("button", { name: /Reveal hint/ }));

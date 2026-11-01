@@ -19,7 +19,7 @@ export interface SEOConfig {
 export const SEO_CONFIGS: Record<string, SEOConfig> = {
   "/games/space-math": {
     path: "/games/space-math",
-    title: "Orbital Gauntlet - Space Math Challenge Game | Orbital Simulator Hub",
+    title: "Orbit Score Lab | Orbital Simulator Hub",
     description: "Play six advanced space-math missions: orbits, Hohmann transfers, plane changes and rocket propulsion. Timed daily challenges, hints and worked solutions. Free to participate.",
     keywords: "space math game, orbital mechanics challenge, Hohmann transfer game, rocket equation game, daily science challenge",
     lastUpdated: "2026-10-24T00:00:00Z",

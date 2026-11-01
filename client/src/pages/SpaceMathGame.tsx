@@ -304,10 +304,10 @@ export function SpaceMathGame() {
         <>
           <section className="math-game-hero">
             <div>
-              <p className="math-game-eyebrow">A SPACE MATH CHALLENGE</p>
+              <p className="math-game-eyebrow">SPACE MATH CHALLENGES AND SCORES</p>
               <h1>
-                ORBITAL <br />
-                <span>GAUNTLET</span>
+                ORBIT SCORE <br />
+                <span>LAB</span>
               </h1>
               <p className="math-game-lead">
                 Six maneuvers. One mission.

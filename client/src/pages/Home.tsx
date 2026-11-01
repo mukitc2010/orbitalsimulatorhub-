@@ -93,9 +93,9 @@ export function Home() {
         {/* ═══ NEWEST BLOG POST — Prominent at top ═══ */}
         <section className="mb-8 overflow-hidden rounded-2xl border border-emerald-300/35 bg-gradient-to-br from-slate-950 via-teal-950 to-slate-950 p-6 sm:p-8" aria-labelledby="space-game-feature">
           <p className="font-mono text-xs uppercase tracking-[0.18em] text-emerald-200">New / Play with your crew</p>
-          <h2 id="space-game-feature" className="mt-3 text-3xl font-bold text-white sm:text-4xl">Orbital Gauntlet</h2>
+          <h2 id="space-game-feature" className="mt-3 text-3xl font-bold text-white sm:text-4xl">Orbit Score Lab</h2>
           <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-300">Six space-math missions. Calculate orbital speeds, transfer burns and propellant loads before your window closes. Challenge friends to the same daily flight.</p>
-          <Link href="/games/space-math"><a className="mt-5 inline-flex rounded-lg bg-emerald-200 px-5 py-3 text-sm font-bold text-slate-950">Play the space math challenge</a></Link>
+          <Link href="/games/space-math"><a className="mt-5 inline-flex rounded-lg bg-emerald-200 px-5 py-3 text-sm font-bold text-slate-950">Open Orbit Score Lab</a></Link>
           <p className="mt-3 text-xs text-slate-400">Daily challenges / Expert & practice modes / No sign-up</p>
         </section>
         <section aria-labelledby="conjecture-vault-feature" className="mb-8 rounded-2xl border border-amber-200/30 bg-slate-950 p-6 sm:p-8">

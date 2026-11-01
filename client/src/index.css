@@ -1295,10 +1295,11 @@ button:focus-visible {
 }
 
 /* 1) NAVBAR — Glass header + neon hover */
-header, .header, .topbar {
+.site-header {
   position: sticky;
   top: 0;
   z-index: 50;
+  overflow: visible;
   backdrop-filter: blur(14px);
 }
 
