@@ -12,6 +12,7 @@ const SIMULATOR_SUBNAV = [
   { path: "/simulator", label: "Orbit Simulator", title: "3D satellite orbit simulator — LEO, MEO, GEO" },
   { path: "/simulator/swarm", label: "Swarm Simulator", title: "AI swarm collision avoidance — J2, Pc, OSQP" },
   { path: "/simulator/ai-astronaut-robot", label: "AI Robot Lab", title: "Build and train AI space robots — humanoid, rover, vision AI" },
+  { path: "/simulator/spacecraft", label: "Spacecraft Ops", title: "3D spacecraft systems, signal delay, and repair modes" },
   { path: "/quantum-space-agi", label: "Quantum Space AGI Lab", title: "Quantum Space AGI Lab — curvature-aware navigation" },
   { path: "/simulator/quantum-space-agi", label: "Quantum Simulator", title: "Quantum-assisted black hole flyby — Schwarzschild, Kerr, wormhole" },
 ];
@@ -52,7 +53,7 @@ function isMissionsActive(location: string) {
 }
 
 function isSimulatorActive(location: string) {
-  return location === "/simulator" || location === "/simulator/swarm" || location === "/simulator/ai-astronaut-robot" || location === "/simulator/quantum-space-agi"
+  return location === "/simulator" || location === "/simulator/swarm" || location === "/simulator/ai-astronaut-robot" || location === "/simulator/spacecraft" || location === "/simulator/quantum-space-agi"
     || location === "/quantum-space-agi" || location.startsWith("/quantum-space-agi/");
 }
 
