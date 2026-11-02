@@ -18,9 +18,10 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / 'client/src/data/spaceNews.json'
 FEEDS = {
-    'NASA': 'https://www.nasa.gov/news-release/feed/',
+    'NASA': 'https://www.nasa.gov/feed/',
     'NASA JPL': 'https://www.jpl.nasa.gov/feeds/news/',
     'ESA': 'https://www.esa.int/rssfeed/Our_Activities/Space_Science',
+    'ESA exploration': 'https://www.esa.int/rssfeed/Our_Activities/Human_and_Robotic_Exploration',
 }
 TOPICS = ['Earth', 'Mars', 'Neptune', 'Mercury', 'Venus', 'Jupiter', 'Saturn', 'Uranus', 'Moon', 'Space']
 
@@ -43,7 +44,7 @@ def clean_title(raw):
     text = ' '.join(text.split()[:20])
     return re.sub(r'[\[\]<>`*_\\]', '', text)
 
-def parse_feed(xml, source, now):
+def parse_feed(xml, source, now, hours=48):
     if b'<!DOCTYPE' in xml.upper() or b'<!ENTITY' in xml.upper():
         raise ValueError('XML entities are not permitted')
     tree = ET.fromstring(xml)
@@ -67,7 +68,7 @@ def parse_feed(xml, source, now):
                 continue
         except (ValueError, TypeError, AttributeError):
             continue
-        if not title or not link or not now - timedelta(hours=48) <= published <= now:
+        if not title or not link or not now - timedelta(hours=hours) <= published <= now:
             continue
         topic = next((t for t in TOPICS[:-1] if re.search(r'\b' + t + r'\b', title + ' ' + link.replace('/', ' '), re.I)), 'Space')
         stories.append({'title': title, 'url': link, 'source': source, 'published': published.astimezone(timezone.utc).isoformat(), 'topic': topic})
@@ -85,10 +86,11 @@ def select_stories(stories, previous):
             groups[story['topic']].append(story)
     return [story for topic in TOPICS for story in groups[topic]][:12]
 
-def build_post(stories, now, warnings):
+def build_post(stories, now, warnings, widened=False):
     day = now.astimezone(ZoneInfo('America/New_York')).date().isoformat()
+    window = 'the last 7 days, because fewer than four headlines fell inside 48 hours' if widened else 'the last 48 hours'
     content = [f'Daily space news desk for {day} (America/New_York).',
-               'Attributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.']
+               f'Attributed headlines published within {window}. Follow each source for the full reporting; publication dates are not necessarily event dates.']
     for topic in TOPICS:
         content.append(f'## {topic}')
         matches = [s for s in stories if s['topic'] == topic]
@@ -121,20 +123,29 @@ def main():
     day = now.astimezone(ZoneInfo('America/New_York')).date().isoformat()
     if any(p['slug'] == f'space-news-{day}' for p in previous):
         print('Already prepared today; no duplicate created.'); return
-    stories, warnings = [], []
-    successes = 0
-    for source, url in FEEDS.items():
-        try:
-            stories.extend(parse_feed(fetch_feed(url), source, now)); successes += 1
-        except Exception as exc:
-            warnings.append(source)
-            print(f'{source}: feed unavailable ({type(exc).__name__})', file=sys.stderr)
+    def collect(hours):
+        found, problems, ok = [], [], 0
+        for source, url in FEEDS.items():
+            try:
+                found.extend(parse_feed(fetch_feed(url), source, now, hours)); ok += 1
+            except Exception as exc:
+                problems.append(source)
+                print(f'{source}: feed unavailable ({type(exc).__name__})', file=sys.stderr)
+        return found, problems, ok
+    stories, warnings, successes = collect(48)
     if not successes:
         raise RuntimeError('All feeds failed; no content written')
     selected = select_stories(stories, previous)
+    widened = False
+    if len(selected) < 4:
+        stories, warnings, successes = collect(24 * 7)
+        if not successes:
+            raise RuntimeError('All feeds failed; no content written')
+        selected = select_stories(stories, previous)
+        widened = True
     if not selected:
         print('No fresh, unseen headlines; no post created.'); return
-    post = build_post(selected, now, warnings)
+    post = build_post(selected, now, warnings, widened)
     if args.write:
         temporary = OUTPUT.with_suffix('.tmp')
         temporary.write_text(json.dumps([post, *previous], ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

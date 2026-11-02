@@ -16,7 +16,7 @@ npm run news:test
 npm run news:generate
 ```
 
-Preview is read-only. Generate writes `client/src/data/spaceNews.json`, which is included in the existing blog pages and RSS generator. Roundup headlines are sourced from the preceding 48 hours; published items are not repeated. The archive is retained without truncation to preserve links and deduplication history.
+Preview is read-only. Generate writes `client/src/data/spaceNews.json`, which is included in the existing blog pages and RSS generator. Roundup headlines are sourced from the preceding 48 hours. If fewer than four qualify, the desk fills the roundup with the latest official headlines from the preceding 7 days and says so. Published items are not repeated. The archive is retained without truncation to preserve links and deduplication history.
 
 ## Daily automation and LinkedIn
 
