@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { BLOG_POSTS, getRecentPosts, type BlogPost } from "../data/blogPosts";
+import { BLOG_POSTS, type BlogPost } from "../data/blogPosts";
+import { isCurrentNews, newsDateInNewYork } from "../data/freshNews";
 import { getBlogImage, handleImageError } from "../data/blogImages";
 import { ShareBar } from "../components/ShareBar";
 
@@ -17,7 +18,8 @@ const CATEGORIES: { id: BlogPost["category"]; label: string; emoji: string }[] =
 ];
 
 export function Blog() {
-  const recent = getRecentPosts(12);
+  const today = newsDateInNewYork();
+  const recent = BLOG_POSTS.filter((post) => post.slug.startsWith("space-news-") && isCurrentNews(post.date, today));
   const byCategory = CATEGORIES.map((cat) => ({
     ...cat,
     posts: BLOG_POSTS.filter((p) => p.category === cat.id),

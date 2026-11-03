@@ -1,12 +1,14 @@
 import { Link } from "wouter";
-import { getRecentPosts } from "../data/blogPosts";
+import { BLOG_POSTS } from "../data/blogPosts";
+import { isCurrentNews, newsDateInNewYork } from "../data/freshNews";
 
 /**
  * Space news landing page — targets "space news" keyword.
  * Daily content from blog; Google loves fresh pages.
  */
 export function SpaceNews() {
-  const recent = getRecentPosts(15);
+  const today = newsDateInNewYork();
+  const recent = BLOG_POSTS.filter((post) => post.slug.startsWith("space-news-") && isCurrentNews(post.date, today));
 
   return (
     <div className="max-w-6xl mx-auto space-y-8">
@@ -24,7 +26,8 @@ export function SpaceNews() {
       </div>
 
       <section>
-        <h2 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>Latest space news &amp; articles</h2>
+        <h2 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>Latest space news</h2>
+        {recent.length === 0 && <p style={{ color: "var(--text-secondary)" }}>No planet headlines from the last two days yet. The morning desk adds a new roundup and removes anything two days old.</p>}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {recent.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>

@@ -8,12 +8,16 @@ from pathlib import Path
 from unittest.mock import patch
 import agent
 from datetime import datetime, timezone
-from agent import parse_feed, select_stories, build_post, trusted_url
+from agent import parse_feed, select_stories, build_post, trusted_url, fresh_posts
 
 class NewsTests(unittest.TestCase):
     now = datetime(2026, 10, 23, 12, tzinfo=timezone.utc)
     def feed(self, title='Mars rover update', date='Fri, 23 Oct 2026 09:00:00 GMT', url='https://www.nasa.gov/mars/update/'):
         return f'<rss><channel><item><title>{title}</title><link>{url}</link><pubDate>{date}</pubDate></item></channel></rss>'.encode()
+    def test_two_day_retention(self):
+        posts = [{'date': '2026-11-03'}, {'date': '2026-11-02'}, {'date': '2026-11-01'}, {'date': 'bad'}]
+        self.assertEqual([post['date'] for post in fresh_posts(posts, '2026-11-03')], ['2026-11-03', '2026-11-02'])
+
     def test_dates_and_topic(self):
         self.assertEqual(parse_feed(self.feed(), 'NASA', self.now)[0]['topic'], 'Mars')
         self.assertEqual(parse_feed(self.feed(date='Fri, 30 Oct 2026 09:00:00 GMT'), 'NASA', self.now), [])

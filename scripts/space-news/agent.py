@@ -74,6 +74,18 @@ def parse_feed(xml, source, now, hours=48):
         stories.append({'title': title, 'url': link, 'source': source, 'published': published.astimezone(timezone.utc).isoformat(), 'topic': topic})
     return stories
 
+def fresh_posts(previous, day):
+    current = datetime.fromisoformat(day).date()
+    kept = []
+    for post in previous:
+        try:
+            posted = datetime.fromisoformat(str(post.get('date', ''))).date()
+        except ValueError:
+            continue
+        if 0 <= (current - posted).days < 2:
+            kept.append(post)
+    return kept
+
 def select_stories(stories, previous):
     seen = {story['url'] for post in previous for story in post.get('sources', [])}
     titles = {story['title'].casefold() for post in previous for story in post.get('sources', [])}
@@ -119,10 +131,14 @@ def main():
     parser.add_argument('--write', action='store_true', help='Write website data; default previews only')
     args = parser.parse_args()
     now = datetime.now(timezone.utc)
-    previous = json.loads(OUTPUT.read_text(encoding='utf-8'))
+    previous = fresh_posts(json.loads(OUTPUT.read_text(encoding='utf-8')), now.astimezone(ZoneInfo('America/New_York')).date().isoformat())
     day = now.astimezone(ZoneInfo('America/New_York')).date().isoformat()
     if any(p['slug'] == f'space-news-{day}' for p in previous):
-        print('Already prepared today; no duplicate created.'); return
+        if args.write:
+            temporary = OUTPUT.with_suffix('.tmp')
+            temporary.write_text(json.dumps(previous, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+            os.replace(temporary, OUTPUT)
+        print('Already prepared today; news older than two days removed.'); return
     def collect(hours):
         found, problems, ok = [], [], 0
         for source, url in FEEDS.items():
