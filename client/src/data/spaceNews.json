@@ -1,5 +1,48 @@
 [
   {
+    "slug": "space-news-2026-11-04",
+    "title": "Daily Space News - 2026-11-04",
+    "excerpt": "4 recent, attributed space headlines, grouped by planet and mission topic.",
+    "content": "Daily space news desk for 2026-11-04 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Before the Dawn in America’s Heartland](https://science.nasa.gov/earth/earth-observatory/before-the-dawn-in-americas-heartland/) - NASA, published 2026-11-04.\n\n- [Astronaut and Earth](https://www.nasa.gov/image-article/astronaut-and-earth/) - NASA, published 2026-11-03.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [NASA Announces Ka-Band Satellite Relay Awards for Space Communications](https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/) - NASA, published 2026-11-04.\n\n- [NASA Navigation Experiment Shows Promise for Planetary Landings](https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings/) - NASA, published 2026-11-04.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
+    "category": "nasa-news",
+    "date": "2026-11-04",
+    "tags": [
+      "Space news",
+      "Earth",
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "Before the Dawn in America’s Heartland",
+        "url": "https://science.nasa.gov/earth/earth-observatory/before-the-dawn-in-americas-heartland/",
+        "source": "NASA",
+        "published": "2026-11-04T05:01:00+00:00",
+        "topic": "Earth"
+      },
+      {
+        "title": "Astronaut and Earth",
+        "url": "https://www.nasa.gov/image-article/astronaut-and-earth/",
+        "source": "NASA",
+        "published": "2026-11-03T16:37:42+00:00",
+        "topic": "Earth"
+      },
+      {
+        "title": "NASA Announces Ka-Band Satellite Relay Awards for Space Communications",
+        "url": "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/",
+        "source": "NASA",
+        "published": "2026-11-04T18:00:02+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA Navigation Experiment Shows Promise for Planetary Landings",
+        "url": "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings/",
+        "source": "NASA",
+        "published": "2026-11-04T16:52:43+00:00",
+        "topic": "Space"
+      }
+    ]
+  },
+  {
     "slug": "space-news-2026-11-03",
     "title": "Daily Space News - 2026-11-03",
     "excerpt": "2 recent, attributed space headlines, grouped by planet and mission topic.",
