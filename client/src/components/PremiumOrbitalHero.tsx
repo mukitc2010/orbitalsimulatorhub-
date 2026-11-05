@@ -88,11 +88,7 @@ export function PremiumOrbitalHero() {
                 Meet AstroBot
               </a>
             </Link>
-            <Link href="/platform-blueprint">
-              <a className="rounded-full border border-fuchsia-400/40 px-5 py-2.5 text-sm font-semibold text-fuchsia-200 transition hover:border-fuchsia-300">
-                View platform blueprint
-              </a>
-            </Link>
+
           </div>
 
           <div className="mt-6 flex flex-wrap gap-2" role="tablist" aria-label="Start here">
