@@ -20,13 +20,26 @@ const roadmap = [
 const modules = [
   { name: "Astronomy academy", href: "/learn/astrophysics" },
   { name: "Orbital simulator", href: "/simulator" },
+  { name: "Spacecraft operations", href: "/simulator/spacecraft" },
   { name: "Swarm simulator", href: "/simulator/swarm" },
+  { name: "AstroBot", href: "/astrobot" },
+  { name: "Orbit Score Lab", href: "/games/space-math" },
+  { name: "Space news", href: "/space-news" },
   { name: "Mission explorer", href: "/missions" },
   { name: "Planet hub", href: "/planets" },
   { name: "Research library", href: "/research" },
-  { name: "Rocket builder", href: null },
+  { name: "Rocket lesson", href: "/learn/how-nasa-launches-satellite" },
   { name: "Community and gamification", href: null },
   { name: "Premium subscriptions", href: null },
+];
+
+const diagram = [
+  { title: "Visitor", boxes: ["Browser", "orbitalsimulatorhub.com"] },
+  { title: "Delivery", boxes: ["Namecheap DNS", "Netlify", "Vite build in dist/"] },
+  { title: "Web app", boxes: ["React 19", "Wouter routes", "Tailwind", "Three.js scenes"] },
+  { title: "Pages", boxes: ["Home", "Simulators", "AstroBot", "Lessons", "News", "Orbit Score"] },
+  { title: "Shared logic", boxes: ["Orbit engine", "Spacecraft review loop", "Fresh-news filter"] },
+  { title: "Services", boxes: ["Express + tRPC", "Netlify functions", "Morning news desk", "MySQL + Drizzle", "FastAPI swarm"] },
 ];
 
 export function PlatformBlueprint() {
@@ -47,6 +60,28 @@ export function PlatformBlueprint() {
           <Link href="/simulator">
             <a className="rounded-full border border-cyan-400/40 px-5 py-2.5 text-sm font-semibold text-cyan-200">Open simulator</a>
           </Link>
+        </div>
+      </section>
+
+      <section aria-label="Website architecture diagram">
+        <h2 className="text-xl font-semibold text-white">Website architecture</h2>
+        <p className="mt-2 max-w-3xl text-sm leading-7 text-slate-400">Request flow from the public address down to the services. The public domain is served as a static Vite build on Netlify.</p>
+        <div className="mt-4 rounded-[28px] border border-cyan-400/20 bg-slate-950 p-4 sm:p-6">
+          <ol className="space-y-3">
+            {diagram.map((layer, index) => (
+              <li key={layer.title}>
+                <div className="grid gap-3 md:grid-cols-[140px_1fr] md:items-center">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">{layer.title}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {layer.boxes.map((box) => (
+                      <span key={box} className="rounded-xl border border-cyan-400/30 bg-cyan-400/10 px-3 py-2 text-sm text-slate-100">{box}</span>
+                    ))}
+                  </div>
+                </div>
+                {index < diagram.length - 1 && <div className="ml-[4.5rem] mt-3 hidden h-4 border-l border-dashed border-cyan-400/50 md:block" aria-hidden="true" />}
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 

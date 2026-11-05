@@ -6,6 +6,13 @@ export function signalDelaySeconds(minutes: number): number {
   return clamped * 1.5;
 }
 
+export const FAULTS = [
+  { id: "array", name: "Stuck solar array", system: 0, cascade: [4], role: "A limited onboard computer can shed electrical loads. A robot frees the array joint. Ground control waits for the light-time round trip before that robot moves." },
+  { id: "valve", name: "Propellant valve leak", system: 1, cascade: [5], role: "Flight software can inhibit the leaky thruster. A robot replaces the valve. Until the fix, navigation burns are less precise." },
+  { id: "filter", name: "CO₂ filter clog", system: 2, cascade: [3], role: "Cabin software can slow the crew timeline. A robot swaps the filter. Waste heat rises while the loop is blocked." },
+  { id: "dish", name: "Antenna mispoint", system: 4, cascade: [], role: "The ship can hold attitude with its last command. A robot realigns the dish. No Earth link is required for the onboard modes." },
+] as const;
+
 export function faultEvents(mode: CraftMode, delaySeconds: number): { at: number; label: string }[] {
   if (mode === 0) {
     return [

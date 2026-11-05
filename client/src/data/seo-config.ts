@@ -70,6 +70,13 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     keywords: "satellite orbit simulator, 3D orbit simulator free, orbit simulator online no download, add ISS Starlink GPS satellite, LEO MEO GEO simulator, how to simulate satellite orbit, swarm simulator AI collision avoidance, Starlink constellation simulator 6000, ISS orbit speed 7.66 km/s, satellite collision probability calculator, space traffic management AI, orbital debris avoidance, free space simulator browser, orbit visualization tool, satellite tracking simulator real-time, how fast does ISS orbit, orbital period calculator, perigee apogee explained, J2 perturbation simulation, geostationary orbit simulator",
     lastUpdated: "2026-04-06T00:00:00Z",
   },
+  "/simulator/spacecraft": {
+    path: "/simulator/spacecraft",
+    title: "Spacecraft Operations Simulator – Ground Control vs Onboard AGI",
+    description: "Compare ground control, hypothetical onboard AGI, and a conceptual ASI repair timeline on a 3D spacecraft. Mars light-time delay, system faults, and a humanoid repair robot. Educational simulation.",
+    keywords: "spacecraft operations simulator, ground control vs onboard AGI, Mars signal delay, spacecraft fault repair, educational space simulator",
+    lastUpdated: "2026-11-04T00:00:00Z",
+  },
   "/simulator/swarm": {
     path: "/simulator/swarm",
     title: "Swarm Simulator — AI Satellite Collision Avoidance | 500+ Satellites, J2, Pc, OSQP",

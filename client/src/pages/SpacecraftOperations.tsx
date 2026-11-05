@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { loopCraftPlan } from "../lib/spacecraftLoop";
-import { faultEvents, signalDelaySeconds, type CraftMode } from "../lib/spacecraftPlan";
+import { FAULTS, faultEvents, signalDelaySeconds, type CraftMode } from "../lib/spacecraftPlan";
 
 const SYS = [
   { n: "Power", m: [-3, 0.3, 3.8], d: "Solar arrays turn sunlight into electricity and charge batteries for eclipses. Every other system depends on it.", a: "AI can reroute loads and re-aim arrays. A robot can free a stuck joint or replace a connector." },
@@ -42,10 +42,13 @@ export function SpacecraftOperations() {
     let sel = 0;
     let inc: { sys: number; t0: number; low: number; fixed: boolean } | null = null;
     let follow = false;
+    let paused = false;
+    let playSpeed = 1;
+    let faultIx = 0;
     let dDes = 52;
     let auto = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const H = SYS.map(() => 100);
-    const res = MODES.map(() => null as null | { t: number; low: number });
+    const res = MODES.map(() => null as null | { t: number; low: number; restored: boolean; fault: string });
     const logs: string[] = [];
     const pulses: { m: THREE.Mesh; a: THREE.Vector3; b: THREE.Vector3; t: number; d: number }[] = [];
     const steps: { t: number; f: () => void }[] = [];
@@ -167,11 +170,17 @@ export function SpacecraftOperations() {
     const showSys = () => {
       q("sn").textContent = SYS[sel].n;
       q("sd").textContent = SYS[sel].d;
-      q("sa").textContent = `Role of AI and robots: ${SYS[sel].a}`;
+      const fault = FAULTS[faultIx];
+      q("sa").textContent = fault.system === sel ? fault.role : `Role of AI and robots: ${SYS[sel].a}`;
       [...q<HTMLElement>("slist").children].forEach((b, i) => b.setAttribute("aria-pressed", String(i === sel)));
     };
     const renderRes = () => {
-      q("res").innerHTML = MODES.map((m, i) => `<tr><td>${m.n}</td><td>${res[i] ? `${res[i]!.t.toFixed(0)} s` : "–"}</td><td>${res[i] ? `${res[i]!.low}%` : "–"}</td></tr>`).join("");
+      const peak = Math.max(1, ...res.map((row) => row?.t ?? 0));
+      q("res").innerHTML = MODES.map((m, i) => `<tr><td>${m.n}</td><td>${res[i] ? `${res[i]!.t.toFixed(0)} s` : "–"}</td><td>${res[i] ? `${res[i]!.low}%` : "–"}</td><td>${res[i] ? (res[i]!.restored ? "Yes" : "No") : "–"}</td></tr>`).join("");
+      q("bars").innerHTML = MODES.map((m, i) => {
+        const width = res[i] ? Math.max(8, (res[i]!.t / peak) * 100) : 0;
+        return `<div class="cmp"><span>${m.n}</span><i style="width:${width}%"></i><b>${res[i] ? `${res[i]!.t.toFixed(0)} s` : "not run"}</b></div>`;
+      }).join("");
     };
     const modeUI = () => {
       [...q<HTMLElement>("modes").children].forEach((b, i) => b.classList.toggle("on", i === mode));
@@ -189,11 +198,11 @@ export function SpacecraftOperations() {
       beam.visible = sparks.visible = false;
       if (inc) {
         inc.fixed = true;
-        res[mode] = { t: simT - inc.t0, low: Math.round(inc.low) };
+        res[mode] = { t: simT - inc.t0, low: Math.round(inc.low), restored: true, fault: FAULTS[faultIx].name };
         renderRes();
         inc = null;
       }
-      log(`Repair complete. ${SYS[i].n} restored.`);
+      log(`Repair complete. ${SYS[i].n} is restoring. ${MODES[mode].n} finished in ${res[mode]!.t.toFixed(0)} s. Run the same fault in another mode to compare.`);
       R.s = "back";
       R.t = 0;
       R.from.copy(robot.position);
@@ -207,7 +216,8 @@ export function SpacecraftOperations() {
     };
     const inject = () => {
       if (inc || R.s !== "idle") return;
-      const i = Math.floor(Math.random() * SYS.length);
+      const fault = FAULTS[faultIx];
+      const i = fault.system;
       const mm = MODES[mode];
       const minutes = Number(q<HTMLInputElement>("dly").value);
       const d = signalDelaySeconds(minutes);
@@ -222,7 +232,7 @@ export function SpacecraftOperations() {
       const at = (t: number, f: () => void) => steps.push({ t: simT + t, f });
       for (const event of faultEvents(mode, d)) {
         if (event.label === "Robot deploys") at(event.at, () => { log(mode === 0 ? "Command received. Robot deploying." : mode === 1 ? "AGI dispatches the humanoid robot. Earth informed." : "ASI dispatches the robot with a custom repair plan."); dispatch(i, mm.speed, mm.rd); });
-        else if (event.at === 0) log(mode === 2 ? `ASI forecast: precursor of ${SYS[i].n.toLowerCase()} failure. Damage contained.` : `Fault detected: ${SYS[i].n.toLowerCase()}.${mode === 0 ? " Sending telemetry to Earth." : ""}`);
+        else if (event.at === 0) log(mode === 2 ? `ASI concept: precursor of ${fault.name.toLowerCase()} contained. This mode is hypothetical.` : `Fault: ${fault.name}.${fault.cascade.length ? ` ${SYS[fault.cascade[0]].n} begins to follow.` : ""} ${mode === 0 ? "Sending telemetry to Earth." : "Onboard mode does not wait for Earth."}`);
         else at(event.at, () => log(event.label + "."));
       }
       if (mode === 0) pulse(DP, EP, d, 0xf2b84b);
@@ -239,7 +249,7 @@ export function SpacecraftOperations() {
         if (Math.abs(delta.x) + Math.abs(delta.z) > 0.1) robot.rotation.y = Math.atan2(delta.x, delta.z);
         sw = Math.sin(ts / 120) * 0.7;
         if (f >= 1) {
-          if (R.s === "out") { R.s = "repair"; R.t = 0; log(`Robot at ${SYS[R.sys].n.toLowerCase()}. Repairing.`); }
+          if (R.s === "out") { R.s = "repair"; R.t = 0; log(`Robot is working on ${SYS[R.sys].n}. ${follow ? "Camera is following the robot." : "Turn on Follow robot to watch the repair."}`); }
           else { R.s = "idle"; q<HTMLButtonElement>("inj").disabled = false; log("Robot stowed in airlock."); }
         }
       } else if (R.s === "repair") {
@@ -277,7 +287,31 @@ export function SpacecraftOperations() {
     });
     q<HTMLInputElement>("dly").oninput = () => { q("dv").textContent = `${q<HTMLInputElement>("dly").value} min`; };
     q<HTMLInputElement>("dly").oninput?.(new Event("input"));
+    FAULTS.forEach((fault, i) => {
+      const option = document.createElement("option");
+      option.value = String(i);
+      option.textContent = fault.name;
+      q("fault").appendChild(option);
+    });
+    q<HTMLSelectElement>("fault").onchange = () => { faultIx = Number(q<HTMLSelectElement>("fault").value); showSys(); };
     q("inj").onclick = inject;
+    q("pause").onclick = () => {
+      paused = !paused;
+      q("pause").textContent = paused ? "Resume" : "Pause";
+      q("pause").setAttribute("aria-pressed", String(paused));
+      log(paused ? "Simulation paused." : "Simulation resumed.");
+    };
+    q<HTMLSelectElement>("spd").onchange = () => { playSpeed = Number(q<HTMLSelectElement>("spd").value); log(`Speed set to ${playSpeed}×.`); };
+    q("rst").onclick = () => {
+      for (let i = 0; i < H.length; i++) H[i] = 100;
+      inc = null;
+      steps.length = 0;
+      R.s = "idle";
+      robot.position.copy(AIR);
+      beam.visible = sparks.visible = false;
+      q<HTMLButtonElement>("inj").disabled = false;
+      log("Ship reset to full health. Comparison results were kept.");
+    };
     q("fol").onclick = () => {
       follow = !follow;
       q("fol").setAttribute("aria-pressed", String(follow));
@@ -318,8 +352,9 @@ export function SpacecraftOperations() {
     const loop = (ts: number) => {
       if (!alive) return;
       frame = requestAnimationFrame(loop);
-      const dt = Math.min(0.05, (ts - last) / 1000 || 0);
+      const raw = Math.min(0.05, (ts - last) / 1000 || 0);
       last = ts;
+      const dt = paused ? 0 : raw * playSpeed;
       simT += dt;
       const w = canvas.clientWidth;
       const h = canvas.clientHeight;
@@ -330,15 +365,17 @@ export function SpacecraftOperations() {
       }
       for (let i = steps.length - 1; i >= 0; i--) if (simT >= steps[i].t) steps.splice(i, 1)[0].f();
       const bad = inc && !inc.fixed ? inc.sys : -1;
+      const cascade = inc && !inc.fixed ? FAULTS[faultIx].cascade : [];
       H.forEach((v, i) => {
         if (i === bad && inc) { H[i] = Math.max(5, v - MODES[mode].rate * dt); inc.low = Math.min(inc.low, H[i]); }
+        else if (cascade.includes(i)) H[i] = Math.max(20, v - MODES[mode].rate * 0.45 * dt);
         else if (v < 100) H[i] = Math.min(100, v + 40 * dt);
         const row = q<HTMLElement>("slist").children[i];
         row.querySelector(".pc")!.textContent = `${Math.round(H[i])}%`;
         const bar = row.querySelector("i") as HTMLElement;
         bar.style.width = `${H[i]}%`;
         bar.style.background = color(H[i]);
-        const flash = i === bad ? 0.5 + 0.5 * Math.sin(simT * 10) : 0;
+        const flash = i === bad || (R.s === "repair" && i === R.sys) ? 0.5 + 0.5 * Math.sin(simT * 10) : 0;
         (beacons[i].material as THREE.MeshBasicMaterial).color.set(i === bad ? (flash > 0.5 ? "#fc3d21" : "#7a1c10") : color(H[i]));
         beacons[i].scale.setScalar(i === bad ? 1 + flash : i === sel ? 1.7 : 1);
       });
@@ -387,10 +424,19 @@ export function SpacecraftOperations() {
           <h2>Operations mode</h2>
           <div className="modes" id="modes" />
           <p id="mdesc" />
+          <details>
+            <summary>What the modes mean</summary>
+            <p className="fine">Ground control waits for the radio round trip. Onboard AGI and ASI are hypothetical teaching modes. Real spacecraft use limited fault protection, not a general intelligence.</p>
+          </details>
+          <label htmlFor="fault">Fault</label>
+          <select id="fault" aria-label="Fault type" />
           <label htmlFor="dly">One-way signal delay: <b id="dv">12 min</b></label>
           <input id="dly" type="range" min={1} max={24} defaultValue={12} />
-          <p className="fine">Mars: about 3 to 22 minutes. Delays are compressed: 1 minute = 1.5 s here.</p>
-          <p><button className="pri" id="inj" type="button">Inject fault</button> <button id="fol" type="button" aria-pressed="false">Follow robot</button></p>
+          <p className="fine">Mars one-way light time is about 3 to 22 minutes. Here, 1 minute equals 1.5 seconds so you can watch the wait.</p>
+          <p className="actions"><button className="pri" id="inj" type="button">Inject fault</button> <button id="fol" type="button" aria-pressed="false">Follow robot</button></p>
+          <p className="actions"><button id="pause" type="button" aria-pressed="false">Pause</button> <button id="rst" type="button">Reset</button>
+            <label htmlFor="spd">Speed <select id="spd" defaultValue="1" aria-label="Simulation speed"><option value="0.5">0.5×</option><option value="1">1×</option><option value="2">2×</option></select></label>
+          </p>
           <p className="fine">AGI and ASI are hypothetical. Real spacecraft use limited automation, and humanoids like Valkyrie and Robonaut 2 are research systems.</p>
         </section>
         <section className="panel" id="sys" aria-label="Spacecraft systems">
@@ -400,8 +446,14 @@ export function SpacecraftOperations() {
           <p id="sa" className="fine" />
           <h3>Reviewed plan</h3>
           <pre id="plan">Inject a fault to run the operations loop.</pre>
+          <details>
+            <summary>System notes</summary>
+            <p className="fine">Power feeds every other box. Propulsion changes velocity. Life support holds the cabin. Thermal dumps heat. Comms is limited by light speed. Navigation tells the ship where it is.</p>
+          </details>
           <h3>Results by mode</h3>
-          <table><tbody><tr><th>Mode</th><th>Fixed in</th><th>Lowest health</th></tr></tbody><tbody id="res" /></table>
+          <p className="fine">Run the same fault in each mode. The bar is time to repair. A longer bar means a slower response.</p>
+          <div id="bars" />
+          <table><thead><tr><th>Mode</th><th>Fixed in</th><th>Lowest health</th><th>Restored</th></tr></thead><tbody id="res" /></table>
         </section>
         <section id="log" aria-live="polite" />
       </div>
@@ -416,7 +468,12 @@ export function SpacecraftOperations() {
         .craft-ops #ctl{left:10px;width:265px}.craft-ops #sys{right:10px;width:300px}
         .craft-ops h2{margin:0 0 8px;font-size:1rem}.craft-ops h3{margin:12px 0 4px}
         .craft-ops p{margin:6px 0}.craft-ops .fine{color:var(--mute);font-size:.78rem}
-        .craft-ops button{background:#10203c;color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:8px 12px;cursor:pointer}
+        .craft-ops button,.craft-ops select{background:#10203c;color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:10px 12px;min-height:44px;cursor:pointer;font-size:1rem}
+        .craft-ops .actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+        .craft-ops summary{cursor:pointer;font-weight:700}
+        .craft-ops .cmp{display:grid;grid-template-columns:92px 1fr 64px;gap:6px;align-items:center;margin:4px 0;font-size:.78rem}
+        .craft-ops .cmp i{display:block;height:10px;background:#3d7be0;border-radius:3px}
+        .craft-ops select{width:100%}
         .craft-ops button.on,.craft-ops button.pri{background:var(--blue);border-color:var(--blue)}
         .craft-ops button:disabled{opacity:.45}
         .craft-ops .modes{display:grid;gap:6px}.craft-ops .modes button{text-align:left}
@@ -430,7 +487,7 @@ export function SpacecraftOperations() {
         .craft-ops td,.craft-ops th{padding:4px 2px;text-align:left;border-bottom:1px solid var(--line);color:var(--mute);font-weight:400}
         .craft-ops #log{position:absolute;left:285px;right:320px;bottom:10px;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:8px 12px;font-size:.85rem;min-height:48px}
         .craft-ops #log div:last-child{font-weight:700;color:#fff}
-        @media(max-width:900px){.craft-ops .main{display:block;min-height:0}.craft-ops #stage{position:relative;height:55vh}.craft-ops .panel,.craft-ops #log{position:static;width:auto!important;margin:10px;max-height:none}}
+        @media(max-width:900px){.craft-ops .main{display:flex;flex-direction:column;min-height:0}.craft-ops #stage{position:relative;height:62vh;order:0}.craft-ops #ctl{order:1}.craft-ops #log{order:2}.craft-ops #sys{order:3}.craft-ops .panel,.craft-ops #log{position:static;width:auto!important;left:auto;right:auto;margin:10px;max-height:none}.craft-ops .top{align-items:flex-start;gap:8px}}
       `}</style>
     </div>
   );
