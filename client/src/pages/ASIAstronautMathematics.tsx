@@ -10,6 +10,7 @@ type MathLevel = {
   title: string;
   why: string;
   formulas: string[];
+  uses?: { name: string; formula: string; note: string }[];
 };
 
 const FOUNDATION_LEVELS: MathLevel[] = [
@@ -52,8 +53,31 @@ const FOUNDATION_LEVELS: MathLevel[] = [
   {
     level: "Level 7",
     title: "Reinforcement Learning",
-    why: "Agents improve policy quality by interacting with uncertain environments.",
-    formulas: [String.raw`V(s)=\max_a\left[R+\gamma V(s')\right]`, String.raw`\nabla_\theta J(\theta)`],
+    why: "Agents improve a policy by trying actions in an uncertain environment. On a Mars mission the real vehicle cannot learn by crashing, so these equations are trained in simulation and checked against guidance laws.",
+    formulas: [
+      String.raw`V^{*}(s)=\max_a\mathbb{E}\left[R(s,a)+\gamma V^{*}(s')\right]`,
+      String.raw`Q^{*}(s,a)=\mathbb{E}\left[R+\gamma\max_{a'}Q^{*}(s',a')\right]`,
+      String.raw`\nabla_\theta J(\theta)=\mathbb{E}_{\pi_\theta}\left[\nabla_\theta\log\pi_\theta(a|s)\,Q^{\pi}(s,a)\right]`,
+      String.raw`A(s,a)=Q(s,a)-V(s)`,
+      String.raw`L^{\mathrm{CLIP}}(\theta)=\mathbb{E}\left[\min\left(r_t(\theta)A_t,\mathrm{clip}(r_t,1-\epsilon,1+\epsilon)A_t\right)\right]`,
+    ],
+    uses: [
+      {
+        name: "Powered landing",
+        formula: String.raw`J=\mathbb{E}\left[-\alpha m_{\mathrm{used}}-\beta\|r_f-r_\star\|-\delta\,\mathbf{1}_{\mathrm{crash}}\right]`,
+        note: "The policy maps altitude, velocity, and attitude to thrust. The first term saves propellant, the second hits the target, and the last term forbids a crash. Flight vehicles still use explicit guidance. A learned policy is a research controller until it is proven against those laws.",
+      },
+      {
+        name: "Light-time delay",
+        formula: String.raw`Q(b,a)=R(b,a)+\gamma\sum_o P(o|b,a)\,V(b')`,
+        note: "Mars is minutes away, so Earth is not inside the control loop. The state is a belief b, not a perfect measurement. The value backup runs onboard.",
+      },
+      {
+        name: "Rover slip",
+        formula: String.raw`s_{t+1}=f(s_t,a_t)+w_t,\quad w_t\sim\mathcal{N}(0,\Sigma)`,
+        note: "Dust and slip make the next pose random. The expectation in the Bellman equation is that process noise. A short-horizon critic is easier to train than a mission-long return.",
+      },
+    ],
   },
   {
     level: "Level 8",
@@ -173,6 +197,17 @@ export function ASIAstronautMathematics() {
                 />
               ))}
             </div>
+            {level.uses && (
+              <div className="mt-3 space-y-3">
+                {level.uses.map((use) => (
+                  <div key={use.name}>
+                    <p className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{use.name}</p>
+                    <div className="overflow-x-auto rounded-xl p-2" style={{ background: "rgba(7,12,24,0.5)" }} dangerouslySetInnerHTML={{ __html: renderMath(use.formula) }} />
+                    <p className="text-sm mt-1 leading-6" style={{ color: "var(--text-secondary)" }}>{use.note}</p>
+                  </div>
+                ))}
+              </div>
+            )}
           </article>
         ))}
       </section>
