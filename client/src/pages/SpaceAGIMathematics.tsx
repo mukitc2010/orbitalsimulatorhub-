@@ -1,6 +1,8 @@
+import { useMemo, useState } from "react";
 import { Link } from "wouter";
 import katex from "katex";
 import "katex/dist/katex.min.css";
+import { scalarAlgebraicRiccati, scalarClosedLoop } from "../lib/mathHistory/riccati";
 
 const sections = [
   {
@@ -71,8 +73,19 @@ const sections = [
   {
     title: "6. Riccati Equation",
     subtitle: "One of the most important equations in optimal control.",
-    formulaTitle: "Equation",
-    formulas: [String.raw`A^TP+PA-PBR^{-1}B^TP+Q=0`],
+    formulaTitle: "Matrix equation, scalar reduction, and the quadratic formula",
+    formulas: [
+      String.raw`A^{T}P+PA-PBR^{-1}B^{T}P+Q=0`,
+      String.raw`u=-R^{-1}B^{T}Px=-Kx`,
+      String.raw`2aP-\frac{b^{2}}{r}P^{2}+q=0`,
+      String.raw`P=\frac{a+\sqrt{a^{2}+(b^{2}/r)q}}{b^{2}/r}`,
+    ],
+    notes: [
+      "P is the cost-to-go matrix. Q charges state error. R charges control effort. K is the gain.",
+      "For one state, ẋ = a x + b u, the matrix equation collapses to a quadratic in the number P. The positive root is the same algebra as the quadratic formula.",
+      "Babylonian scribes solved particular quadratic problems by completing the square. That is the ancient piece. The matrix Riccati equation and LQR are 20th-century control. No ancient text contains A, B, Q, or a spacecraft gain.",
+      "Station-keeping reading: x is a position error in meters, u is a corrective acceleration. The numbers in the demonstration below are computed from this scalar equation. They are not a flight load.",
+    ],
   },
   {
     title: "7. Model Predictive Control (MPC)",
@@ -156,6 +169,44 @@ const sections = [
     formulas: [String.raw`A\mathbf{v}=\lambda\mathbf{v}`, String.raw`\lambda_1=3,\quad \lambda_2=1`],
   },
 ];
+
+function RiccatiDemo() {
+  const [q, setQ] = useState(2);
+  const [r, setR] = useState(8);
+  const a = 0.02;
+  const b = 1;
+  const x0 = 1000;
+  const solved = useMemo(() => scalarAlgebraicRiccati(a, b, q, r), [q, r]);
+  const path = useMemo(() => scalarClosedLoop(x0, a, b, solved.k, 0.5, 24), [solved.k]);
+  return (
+    <section id="riccati-demo" className="rounded-xl border-2 p-6" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>
+      <h2 className="text-xl font-bold mb-2" style={{ color: "var(--text-primary)" }}>Scalar Riccati demonstration</h2>
+      <p className="text-sm mb-3" style={{ color: "var(--text-secondary)" }}>
+        One position error drifts with ẋ = 0.02 x + u. The algebraic Riccati equation is a quadratic in P. The gain is K = P / r, and the correction is u = −K x. Raising r makes the correction gentler. Raising q pulls the error down harder.
+      </p>
+      <label className="block text-sm mb-2" style={{ color: "var(--text-secondary)" }}>State weight q = {q.toFixed(1)}
+        <input className="mt-1 w-full" type="range" min={0.2} max={8} step={0.1} value={q} onChange={(e) => setQ(Number(e.target.value))} />
+      </label>
+      <label className="block text-sm mb-3" style={{ color: "var(--text-secondary)" }}>Control weight r = {r.toFixed(1)}
+        <input className="mt-1 w-full" type="range" min={1} max={20} step={0.1} value={r} onChange={(e) => setR(Number(e.target.value))} />
+      </label>
+      <dl className="grid grid-cols-2 gap-2 text-sm md:grid-cols-4">
+        <div><dt style={{ color: "var(--text-secondary)" }}>P</dt><dd className="font-semibold">{solved.p.toFixed(4)}</dd></div>
+        <div><dt style={{ color: "var(--text-secondary)" }}>K</dt><dd className="font-semibold">{solved.k.toFixed(4)}</dd></div>
+        <div><dt style={{ color: "var(--text-secondary)" }}>First correction</dt><dd className="font-semibold">{(-solved.k * x0).toFixed(2)} m/s²</dd></div>
+        <div><dt style={{ color: "var(--text-secondary)" }}>Error after 12 s</dt><dd className="font-semibold">{path.at(-1)?.toFixed(1)} m</dd></div>
+      </dl>
+      <p className="text-xs mt-3" style={{ color: "var(--text-secondary)" }}>
+        Start error {x0} m. Equation residual {solved.residual.toExponential(2)}. The ancient link is the quadratic formula. This loop is a classroom model of station-keeping, not a validated flight controller.
+      </p>
+      <div className="mt-3 flex h-16 items-end gap-0.5" aria-hidden="true">
+        {path.filter((_, i) => i % 2 === 0).map((value, i) => (
+          <div key={i} className="flex-1 rounded-sm bg-cyan-300" style={{ height: `${Math.min(100, Math.abs(value) / 10)}%` }} />
+        ))}
+      </div>
+    </section>
+  );
+}
 
 function renderKatex(formula: string) {
   return katex.renderToString(formula, {
@@ -333,6 +384,8 @@ export function SpaceAGIMathematics() {
           </section>
         ))}
       </div>
+
+      <RiccatiDemo />
 
       <div className="flex flex-wrap gap-3">
         <Link href="/research/space-agi-lab">

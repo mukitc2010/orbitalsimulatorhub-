@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import katex from "katex";
 import "katex/dist/katex.min.css";
 import { dampPointingError, explainConic, orbitalRadius, conicKind } from "../lib/mathHistory/conics";
+import { scalarAlgebraicRiccati, scalarClosedLoop } from "../lib/mathHistory/riccati";
 
 const MU = 3.986004418e14;
 
@@ -278,6 +279,14 @@ export function MathHistory() {
         </label>
         <p className="mt-2 text-sm">An educational damper, error ← error − k·error·Δt for 30 steps, leaves {((pointing * 180) / Math.PI).toFixed(2)}°. This is a checked classroom recurrence. It is not flight software and it is not an AI controller.</p>
         <p className="mt-2 text-sm"><Link href="/research/space-agi-math"><a className="text-cyan-300 underline">Formulas for LQR, MPC, and the Kalman filter</a></Link> stay on the mathematics page, separate from this damper.</p>
+      </section>
+
+      <section id="riccati" className="rounded-2xl border border-white/10 p-4 text-sm leading-6">
+        <h2 className="text-2xl font-semibold text-white">From a quadratic to the Riccati gain</h2>
+        <div dangerouslySetInnerHTML={{ __html: tex(String.raw`A^{T}P+PA-PBR^{-1}B^{T}P+Q=0`) }} />
+        <p className="mt-2">Old Babylonian tablets include problems that reduce to a quadratic. The scalar station-keeping Riccati equation is also a quadratic, solved here with the quadratic formula. The matrix form above is modern. It is how an LQR gain is computed. Babylonian astronomers did not have this control law.</p>
+        <p className="mt-2">With ẋ = 0.02 x + u, q = 2, and r = 8, P = {scalarAlgebraicRiccati(0.02, 1, 2, 8).p.toFixed(3)} and the first correction on a 1,000 m error is {( -scalarAlgebraicRiccati(0.02, 1, 2, 8).k * 1000).toFixed(2)} m/s². After 12 s the classroom loop is at {scalarClosedLoop(1000, 0.02, 1, scalarAlgebraicRiccati(0.02, 1, 2, 8).k, 0.5, 24).at(-1)?.toFixed(1)} m.</p>
+        <p className="mt-2"><Link href="/research/space-agi-math"><a className="text-cyan-300 underline">Change q and r on the mathematics page</a></Link></p>
       </section>
 
       <section id="lagrange" className="rounded-2xl border border-white/10 p-4 text-sm leading-6">
