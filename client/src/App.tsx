@@ -73,6 +73,7 @@ import { ASIAstronautMathematics } from "./pages/ASIAstronautMathematics";
 import { SpaceAGISwarmSimulator } from "./pages/SpaceAGISwarmSimulator";
 import { AIAstronautRobotSimulator } from "./pages/AIAstronautRobotSimulator";
 import { SpacecraftOperations } from "./pages/SpacecraftOperations";
+import { EulerOrbitalLab } from "./pages/EulerOrbitalLab";
 import { QuantumSpaceAGISimulator } from "./pages/QuantumSpaceAGISimulator";
 import { QuantumSpaceAGILab } from "./pages/QuantumSpaceAGILab";
 import { QuantumSpaceAGIScenario } from "./pages/QuantumSpaceAGIScenario";
@@ -103,6 +104,7 @@ function App() {
           <Route path="/simulator/swarm" component={SpaceAGISwarmSimulator} />
           <Route path="/simulator/ai-astronaut-robot" component={AIAstronautRobotSimulator} />
           <Route path="/simulator/spacecraft" component={SpacecraftOperations} />
+          <Route path="/simulator/euler-lab" component={EulerOrbitalLab} />
           <Route path="/quantum-space-agi" component={QuantumSpaceAGILab} />
           <Route path="/quantum-space-agi/scenario" component={QuantumSpaceAGIScenario} />
           <Route path="/quantum-space-agi/sim" component={QuantumSpaceAGISimulator} />

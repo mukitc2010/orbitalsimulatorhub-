@@ -4,6 +4,32 @@ import "katex/dist/katex.min.css";
 
 const sections = [
   {
+    title: "Euler Method in Space: Mathematics",
+    subtitle: "From Newton’s gravity law to one explicit Euler step for a 400 km satellite.",
+    formulaTitle: "Gravitation, acceleration, and the four Euler updates",
+    formulas: [
+      String.raw`F=\frac{GMm}{r^2}`,
+      String.raw`F=ma`,
+      String.raw`\boxed{\vec a=-\frac{\mu}{r^3}\vec r}`,
+      String.raw`a_x=-\frac{\mu x}{(x^2+y^2)^{3/2}}`,
+      String.raw`a_y=-\frac{\mu y}{(x^2+y^2)^{3/2}}`,
+      String.raw`x_{n+1}=x_n+v_{x,n}\Delta t`,
+      String.raw`y_{n+1}=y_n+v_{y,n}\Delta t`,
+      String.raw`v_{x,n+1}=v_{x,n}+a_{x,n}\Delta t`,
+      String.raw`v_{y,n+1}=v_{y,n}+a_{y,n}\Delta t`,
+      String.raw`a_x=-\frac{3.986\times 10^{14}}{(6.771\times 10^6)^2}\approx -8.70\ \mathrm{m/s^2}`,
+      String.raw`v_{x,1}=0+(-8.70)(1)=-8.70\ \mathrm{m/s}`,
+      String.raw`y_1=0+7672.6(1)=7672.6\ \mathrm{m}`,
+    ],
+    notes: [
+      "μ = GM is Earth’s gravitational parameter. r is the distance from Earth’s center. The vector r is the spacecraft position.",
+      "Worked start: μ = 3.986×10^14 m³/s², Earth radius 6,371 km, altitude 400 km, orbital radius 6,771 km.",
+      "Initial state: x0 = 6,771,000 m, y0 = 0, vx0 = 0, vy0 = 7,672.6 m/s. Time step = 1 s.",
+      "After one second the spacecraft has moved about 7,673 m in y and has an inward x velocity of −8.70 m/s.",
+      "These four updates are explicit Euler. Open the Euler Lab to compare them with semi-implicit Euler and RK4.",
+    ],
+  },
+  {
     title: "1. Pontryagin Maximum Principle (PMP)",
     subtitle:
       "The foundation of optimal spacecraft trajectory optimization, fuel-optimal landing, Mars missions, Apollo guidance, and autonomous spacecraft.",

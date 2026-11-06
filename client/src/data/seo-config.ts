@@ -77,6 +77,13 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     keywords: "spacecraft operations simulator, ground control vs onboard AGI, Mars signal delay, spacecraft fault repair, educational space simulator",
     lastUpdated: "2026-11-04T00:00:00Z",
   },
+  "/simulator/euler-lab": {
+    path: "/simulator/euler-lab",
+    title: "Euler Orbital Mechanics Laboratory | Orbital Simulator Hub",
+    description: "Compare explicit Euler, semi-implicit Euler, and RK4 on Earth orbit. Live altitude, energy, angular momentum, and the analytical circular period.",
+    keywords: "Euler method orbit, semi-implicit Euler, Runge-Kutta 4 orbit, orbital mechanics laboratory, circular orbit period",
+    lastUpdated: "2026-11-06T00:00:00Z",
+  },
   "/simulator/swarm": {
     path: "/simulator/swarm",
     title: "Swarm Simulator — AI Satellite Collision Avoidance | 500+ Satellites, J2, Pc, OSQP",
