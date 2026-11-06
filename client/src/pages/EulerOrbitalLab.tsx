@@ -1,6 +1,7 @@
 import { useMemo, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Line, OrbitControls } from "@react-three/drei";
+import { Line, OrbitControls, Stars } from "@react-three/drei";
+import type { Mesh } from "three";
 import {
   EARTH_RADIUS_M,
   MU_M3_S2,
@@ -37,54 +38,97 @@ function fmt(n: number, digits = 2) {
   return n.toLocaleString(undefined, { maximumFractionDigits: digits });
 }
 
-function Scene({ state, trail, method, paused, speed, dt, onSample }: {
+/** Draw low orbits clearly above the globe. Telemetry stays in real meters. */
+function toView(r: [number, number, number]): [number, number, number] {
+  const mag = Math.hypot(r[0], r[1], r[2]);
+  if (mag < 1) return [0, 0, 0];
+  const altitude = Math.max(0, mag - EARTH_RADIUS_M);
+  const shown = 1.45 + Math.min(altitude / EARTH_RADIUS_M, 3) * 1.8;
+  const scale = shown / mag;
+  return [r[0] * scale, r[1] * scale, r[2] * scale];
+}
+
+function Scene({ state, method, paused, speed, dt, onSample }: {
   state: State;
-  trail: [number, number, number][];
   method: Method;
   paused: boolean;
   speed: number;
   dt: number;
-  onSample: (state: State, steps: number, time: number) => void;
+  onSample: (state: State, steps: number, time: number, trail: [number, number, number][]) => void;
 }) {
   const live = useRef({ ...state, steps: 0, time: 0 });
-  const scale = 1 / EARTH_RADIUS_M;
+  const trail = useRef<[number, number, number][]>([state.r]);
+  const earth = useRef<Mesh>(null);
+  const craft = useRef<Mesh>(null);
+  const glow = useRef<Mesh>(null);
+  const frame = useRef(0);
+  const pausedRef = useRef(paused);
+  const speedRef = useRef(speed);
+  const dtRef = useRef(dt);
+  const methodRef = useRef(method);
+  pausedRef.current = paused;
+  speedRef.current = speed;
+  dtRef.current = dt;
+  methodRef.current = method;
+
   useFrame((_, frameDt) => {
-    if (paused) return;
-    const hops = Math.max(1, Math.round(speed));
-    for (let i = 0; i < hops; i++) {
-      try {
-        const next = step(live.current, dt, method);
-        live.current = { ...next, steps: live.current.steps + 1, time: live.current.time + dt };
-      } catch {
-        return;
+    if (earth.current) earth.current.rotation.y += frameDt * 0.15;
+    if (!pausedRef.current) {
+      const hops = Math.max(1, Math.round(speedRef.current)) * 4;
+      for (let i = 0; i < hops; i++) {
+        try {
+          const next = step(live.current, dtRef.current, methodRef.current);
+          live.current = { ...next, steps: live.current.steps + 1, time: live.current.time + dtRef.current };
+        } catch {
+          break;
+        }
+      }
+      if (live.current.steps % 8 === 0) {
+        trail.current = [...trail.current, live.current.r].slice(-900);
       }
     }
-    if (live.current.steps % 4 === 0) onSample(live.current, live.current.steps, live.current.time);
-    void frameDt;
+    const p = toView(live.current.r);
+    if (craft.current) craft.current.position.set(p[0], p[1], p[2]);
+    if (glow.current) glow.current.position.set(p[0], p[1], p[2]);
+    frame.current += 1;
+    if (frame.current % 10 === 0) onSample(live.current, live.current.steps, live.current.time, trail.current);
   });
-  const p = state.r.map((n) => n * scale) as [number, number, number];
-  const a = acceleration(state.r);
-  const vHat = state.v.map((n) => n / Math.max(1, Math.hypot(...state.v))) as [number, number, number];
-  const aHat = a.map((n) => n / Math.max(1e-9, Math.hypot(...a))) as [number, number, number];
+
+  const ring = useMemo(() => {
+    const points: [number, number, number][] = [];
+    const shown = toView(state.r);
+    const radius = Math.hypot(shown[0], shown[2]);
+    for (let i = 0; i <= 96; i++) {
+      const a = (i / 96) * Math.PI * 2;
+      points.push([Math.cos(a) * radius, 0, Math.sin(a) * radius]);
+    }
+    return points;
+  }, [state]);
+
   return (
     <>
-      <color attach="background" args={["#05080f"]} />
-      <ambientLight intensity={0.45} />
-      <directionalLight position={[4, 3, 2]} intensity={1.4} />
+      <color attach="background" args={["#03060d"]} />
+      <Stars radius={40} depth={20} count={1200} factor={3} fade speed={0.4} />
+      <ambientLight intensity={0.35} />
+      <directionalLight position={[5, 3, 2]} intensity={1.6} />
+      <mesh ref={earth}>
+        <sphereGeometry args={[1, 64, 48]} />
+        <meshStandardMaterial color="#1d4e89" roughness={0.65} metalness={0.08} />
+      </mesh>
       <mesh>
-        <sphereGeometry args={[1, 48, 32]} />
-        <meshStandardMaterial color="#1d4e89" roughness={0.75} />
+        <sphereGeometry args={[1.04, 48, 32]} />
+        <meshStandardMaterial color="#67e8f9" transparent opacity={0.12} roughness={1} />
       </mesh>
-      <Line points={[[0, 0, 0], [1.8, 0, 0]]} color="#fc3d21" lineWidth={1} />
-      <Line points={[[0, 0, 0], [0, 1.8, 0]]} color="#3ddc84" lineWidth={1} />
-      <Line points={[[0, 0, 0], [0, 0, 1.8]]} color="#67e8f9" lineWidth={1} />
-      {trail.length > 1 && <Line points={trail.map((q) => q.map((n) => n * scale) as [number, number, number])} color={COLORS[method]} lineWidth={2} />}
-      <mesh position={p}>
-        <boxGeometry args={[0.06, 0.04, 0.08]} />
-        <meshStandardMaterial color="#f4f7fb" metalness={0.4} />
+      <Line points={ring} color="#35506a" lineWidth={1} />
+      <Line points={trail.current.map((q) => toView(q))} color={COLORS[method]} lineWidth={2} />
+      <mesh ref={glow}>
+        <sphereGeometry args={[0.09, 16, 16]} />
+        <meshBasicMaterial color={COLORS[method]} transparent opacity={0.35} />
       </mesh>
-      <Line points={[p, [p[0] + vHat[0] * 0.35, p[1] + vHat[1] * 0.35, p[2] + vHat[2] * 0.35]]} color="#f2b84b" lineWidth={2} />
-      <Line points={[p, [p[0] + aHat[0] * 0.35, p[1] + aHat[1] * 0.35, p[2] + aHat[2] * 0.35]]} color="#fc3d21" lineWidth={2} />
+      <mesh ref={craft}>
+        <boxGeometry args={[0.09, 0.045, 0.14]} />
+        <meshStandardMaterial color="#f4f7fb" metalness={0.55} roughness={0.3} />
+      </mesh>
       <OrbitControls enablePan={false} />
     </>
   );
@@ -97,7 +141,7 @@ export function EulerOrbitalLab() {
   const [minutes, setMinutes] = useState(90);
   const [method, setMethod] = useState<Method>("rk4");
   const [speed, setSpeed] = useState(2);
-  const [paused, setPaused] = useState(true);
+  const [paused, setPaused] = useState(false);
   const [advanced, setAdvanced] = useState(false);
   const [error, setError] = useState("");
   const [live, setLive] = useState<State>(() => initialCircularState(400_000));
@@ -205,21 +249,20 @@ export function EulerOrbitalLab() {
           <Canvas key={resetKey.current} camera={{ position: [2.2, 1.4, 2.2], fov: 45 }}>
             <Scene
               state={live}
-              trail={trail}
               method={method}
               paused={paused}
               speed={speed}
               dt={dt}
-              onSample={(next, count, t) => {
+              onSample={(next, count, t, path) => {
                 setLive(next);
                 setSteps(count);
                 setTime(t);
-                setTrail((prev) => [...prev, next.r].slice(-700));
+                setTrail(path);
               }}
             />
           </Canvas>
         </div>
-        <p className="text-xs text-slate-400">Gold line: velocity direction. Red line from the satellite: gravity direction. Axis colors: x red, y green, z cyan. Drag to rotate. Scroll or pinch to zoom.</p>
+        <p className="text-xs text-slate-400">The orbit is drawn larger than true scale so the motion is visible. Earth rotates, and the spacecraft follows the selected integrator. Drag to rotate the view. Scroll or pinch to zoom.</p>
         <dl className="grid grid-cols-2 gap-2 text-sm text-slate-200 md:grid-cols-3">
           {[
             ["X position", `${fmt(live.r[0] / 1000, 1)} km`],
