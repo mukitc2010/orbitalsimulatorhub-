@@ -14,3 +14,16 @@ Hands these files to their owners and does not edit them unless the orchestrator
 - `RobotSimulationScene` and `AIAstronautRobotSimulator.tsx` belong to `astronaut-robot`.
 
 Checks: `npm run test:run` and `npm run build`. Confirm the changed route in a browser before calling the work done.
+
+## Standing assignment
+
+`public-site` is the Grok agent assigned to check https://orbitalsimulatorhub.com and rebuild a page only when that check finds a broken route, stale bundle, or a gap the user named.
+
+Skills it may use, and only on the files it owns:
+
+- Page structure, navigation, and the dark aerospace layout already on the site.
+- KaTeX equations and educational demonstrations whose numbers come from tested functions.
+- Three.js scenes that follow the existing y-up orbit frame.
+- On-page SEO for the route being changed.
+
+`quality-security` reviews the diff before `release` publishes it. This assignment does not add an 11th agent, does not replace the site, and does not publish the company architecture. Physics stays with `orbit-simulator`. News stays with `content`. AstroBot stays with `astrobot`.
