@@ -199,6 +199,13 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     ogTitle: "Space-AGI Engineering Lab — Intelligence for the Space Age",
     lastUpdated: "2026-02-23T00:00:00Z",
   },
+  "/research/math-history": {
+    path: "/research/math-history",
+    title: "Ancient Mathematics to Spacecraft Engineering | Orbital Simulator Hub",
+    description: "Timeline from Babylonian astronomy, Euclid, Apollonius, Aryabhata, Kepler, Newton, Euler, and Lagrange to modern orbit and control math, with a conic simulator.",
+    keywords: "history of orbital mechanics, conic sections orbit, Apollonius ellipse, Kepler laws, Euler method satellite, Lagrange spacecraft",
+    lastUpdated: "2026-11-06T00:00:00Z",
+  },
   "/research/space-agi-math": {
     path: "/research/space-agi-math",
     title: "Space-AGI Mathematics — Optimal Control, MPC, LQR, Pontryagin | Orbital Simulator Hub",

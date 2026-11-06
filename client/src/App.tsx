@@ -66,6 +66,7 @@ import { SpaceAGIDoctrine } from "./pages/SpaceAGIDoctrine";
 import { SpaceAGIEngineeringLab } from "./pages/SpaceAGIEngineeringLab";
 import { SpaceAGIRoadmap } from "./pages/SpaceAGIRoadmap";
 import { SpaceAGIMathematics } from "./pages/SpaceAGIMathematics";
+import { MathHistory } from "./pages/MathHistory";
 import { SpaceAGIExplanation } from "./pages/SpaceAGIExplanation";
 import { AGIASIFramework } from "./pages/AGIASIFramework";
 import { PMPNMPCControlFramework } from "./pages/PMPNMPCControlFramework";
@@ -123,6 +124,7 @@ function App() {
           <Route path="/research/space-agi-lab" component={SpaceAGIEngineeringLab} />
           <Route path="/research/space-agi-roadmap" component={SpaceAGIRoadmap} />
           <Route path="/research/space-agi-math" component={SpaceAGIMathematics} />
+          <Route path="/research/math-history" component={MathHistory} />
           <Route path="/research/space-agi-explanation" component={SpaceAGIExplanation} />
           <Route path="/research/agi-asi-framework" component={AGIASIFramework} />
           <Route path="/research/pmp-nmpc-autonomous-control" component={PMPNMPCControlFramework} />
