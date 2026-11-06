@@ -1,8 +1,8 @@
 import { lazy, Suspense, useState } from "react";
 import { Link } from "wouter";
 import { DailyTopicIcon } from "../components/DailyTopicIcon";
-import { PremiumOrbitalHero } from "../components/PremiumOrbitalHero";
 import { ShareBar } from "../components/ShareBar";
+import { EARTH_RADIUS_KM, MU_EARTH_KM3_S2 } from "../../../shared/const";
 import { BLOG_POSTS } from "../data/blogPosts";
 import { getBlogImage } from "../data/blogImages";
 
@@ -78,6 +78,11 @@ const EXPLORE_BY_TOPIC = [
   { href: "/space-news", icon: "📰", title: "Daily Space News" },
 ];
 
+const LEO_ALTITUDE_KM = 400;
+const LEO_RADIUS_KM = EARTH_RADIUS_KM + LEO_ALTITUDE_KM;
+const LEO_SPEED_KM_S = Math.sqrt(MU_EARTH_KM3_S2 / LEO_RADIUS_KM);
+const LEO_PERIOD_MIN = (2 * Math.PI * Math.sqrt(LEO_RADIUS_KM ** 3 / MU_EARTH_KM3_S2)) / 60;
+
 export function Home() {
   const [showExplore, setShowExplore] = useState(false);
   const updates = getTodaysUpdates();
@@ -87,8 +92,42 @@ export function Home() {
   return (
     <div className="home-page-wrapper -mx-4 px-4 py-2 rounded-2xl">
       <div className="max-w-5xl mx-auto">
-        <div className="mb-8">
-          <PremiumOrbitalHero />
+        <section className="relative mb-6 min-h-[560px] overflow-hidden rounded-3xl border border-cyan-400/25">
+          <Suspense fallback={<div className="absolute inset-0 bg-slate-950" aria-hidden="true" />}>
+            <HomeSpaceScene />
+          </Suspense>
+          <div className="relative z-10 flex min-h-[560px] flex-col justify-end px-6 py-8 sm:px-10">
+            <h1 className="max-w-xl text-4xl font-bold leading-tight text-white sm:text-5xl">Watch a satellite fall around Earth.</h1>
+            <p className="mt-3 max-w-xl text-base leading-7 text-slate-100">
+              A {LEO_ALTITUDE_KM} km circular orbit moves at {LEO_SPEED_KM_S.toFixed(2)} km/s and returns in {LEO_PERIOD_MIN.toFixed(0)} minutes.
+            </p>
+            <Link href="/simulator">
+              <a className="mt-5 inline-flex w-fit rounded-full bg-cyan-300 px-5 py-2.5 text-sm font-semibold text-slate-950">Launch the simulator</a>
+            </Link>
+            <p className="mt-4 text-lg font-semibold text-cyan-100">
+              {LEO_ALTITUDE_KM} km · {LEO_SPEED_KM_S.toFixed(2)} km/s · {LEO_PERIOD_MIN.toFixed(0)} min
+            </p>
+          </div>
+        </section>
+        <div className="mb-8 grid gap-3 md:grid-cols-3">
+          <Link href="/simulator">
+            <a className="block rounded-2xl border border-cyan-400/30 bg-slate-950/80 p-4">
+              <h2 className="text-lg font-semibold text-white">Simulator</h2>
+              <p className="mt-1 text-sm text-slate-300">Add a satellite and watch the same Earth orbit up close.</p>
+            </a>
+          </Link>
+          <Link href="/research/space-agi-math">
+            <a className="block rounded-2xl border border-cyan-400/30 bg-slate-950/80 p-4">
+              <h2 className="text-lg font-semibold text-white">Mathematics</h2>
+              <p className="mt-1 text-sm text-slate-300">Newton, Euler, and the Riccati gain, with the numbers computed on the page.</p>
+            </a>
+          </Link>
+          <Link href="/space-news">
+            <a className="block rounded-2xl border border-cyan-400/30 bg-slate-950/80 p-4">
+              <h2 className="text-lg font-semibold text-white">Today&apos;s space news</h2>
+              <p className="mt-1 text-sm text-slate-300">{latestPost ? latestPost.title : "The latest attributed roundup."}</p>
+            </a>
+          </Link>
         </div>
         {/* ═══ NEWEST BLOG POST — Prominent at top ═══ */}
         <section className="mb-8 overflow-hidden rounded-2xl border border-emerald-300/35 bg-gradient-to-br from-slate-950 via-teal-950 to-slate-950 p-6 sm:p-8" aria-labelledby="space-game-feature">
@@ -245,45 +284,9 @@ export function Home() {
           </div>
         </section>
 
-        {/* Hero — Intelligence for the Space Age */}
-        <section className="home-space-hero rounded-3xl px-6 py-12 sm:py-16 text-center mb-8 overflow-hidden relative" style={{ boxShadow: "0 18px 56px rgba(0,0,0,0.32)" }}>
-          <Suspense fallback={<div className="absolute inset-0 hero-gradient" aria-hidden="true" />}>
-            <HomeSpaceScene />
-          </Suspense>
-          <div className="relative z-10 max-w-2xl mx-auto">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-cyan-100 mb-3">Space Engineering • AI • Quantum • Daily News • Futuristic</p>
-            <h1 className="text-3xl sm:text-5xl font-bold text-white mb-3 leading-tight">
-              OrbitalSimulatorHub — Intelligence for the Space Age
-            </h1>
-            <p className="text-base sm:text-lg text-slate-100 max-w-xl mx-auto mb-6">
-              Space AGI, orbital mechanics, quantum computing in space, aerospace formulas, and interactive mission learning.
-            </p>
-            <div className="flex flex-wrap justify-center gap-2 mb-5">
-              <Link href="/simulator">
-                <a className="px-5 py-2.5 rounded-xl font-semibold text-sm transition home-hero-primary">
-                  🛰 Open Orbital Simulator
-                </a>
-              </Link>
-              <Link href="/astrobot">
-                <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border transition home-hero-secondary">
-                  🤖 Ask AstroBot
-                </a>
-              </Link>
-              <Link href="/research/space-agi-lab">
-                <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border transition home-hero-secondary">
-                  🔬 Space-AGI Lab
-                </a>
-              </Link>
-              <Link href="/ai-in-aerospace">
-                <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border transition home-hero-secondary">
-                  🚀 AI in Space
-                </a>
-              </Link>
-            </div>
-            <p className="text-xs text-slate-300">Trusted by students, engineers, and researchers worldwide</p>
-            <ShareBar path="/" showRedditSubs />
-          </div>
-        </section>
+        <div className="mb-8">
+          <ShareBar path="/" showRedditSubs />
+        </div>
 
         <section className="glass-panel rounded-2xl p-5 md:p-6 mb-8">
           <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
