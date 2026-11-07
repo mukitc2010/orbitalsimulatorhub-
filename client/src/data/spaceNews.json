@@ -1,5 +1,41 @@
 [
   {
+    "slug": "space-news-2026-11-07",
+    "title": "Daily Space News - 2026-11-07",
+    "excerpt": "3 recent, attributed space headlines, grouped by planet and mission topic.",
+    "content": "Daily space news desk for 2026-11-07 (America/New_York).\n\nAttributed headlines published within the last 7 days, because fewer than four headlines fell inside 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Cyprus: Island of Snakes, Cats, and Ophiolites](https://science.nasa.gov/earth/earth-observatory/cyprus-island-of-snakes-cats-and-ophiolites/) - NASA, published 2026-11-05.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [APOD: 2026 November 7 – De Gerlache-Kocher Massif](https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/) - NASA, published 2026-11-07.\n\n- [Midwestern City Lights](https://www.nasa.gov/image-article/midwestern-city-lights/) - NASA, published 2026-11-05.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
+    "category": "nasa-news",
+    "date": "2026-11-07",
+    "tags": [
+      "Space news",
+      "Earth",
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "Cyprus: Island of Snakes, Cats, and Ophiolites",
+        "url": "https://science.nasa.gov/earth/earth-observatory/cyprus-island-of-snakes-cats-and-ophiolites/",
+        "source": "NASA",
+        "published": "2026-11-05T05:01:00+00:00",
+        "topic": "Earth"
+      },
+      {
+        "title": "APOD: 2026 November 7 – De Gerlache-Kocher Massif",
+        "url": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
+        "source": "NASA",
+        "published": "2026-11-07T05:05:00+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "Midwestern City Lights",
+        "url": "https://www.nasa.gov/image-article/midwestern-city-lights/",
+        "source": "NASA",
+        "published": "2026-11-05T15:17:19+00:00",
+        "topic": "Space"
+      }
+    ]
+  },
+  {
     "slug": "space-news-2026-11-06",
     "title": "Daily Space News - 2026-11-06",
     "excerpt": "4 recent, attributed space headlines, grouped by planet and mission topic.",
@@ -38,50 +74,6 @@
         "url": "https://science.nasa.gov/image-article/apod-2026-november-6-a-farewell-to-swift/",
         "source": "NASA",
         "published": "2026-11-06T05:05:00+00:00",
-        "topic": "Space"
-      }
-    ]
-  },
-  {
-    "slug": "space-news-2026-11-05",
-    "title": "Daily Space News - 2026-11-05",
-    "excerpt": "4 recent, attributed space headlines, grouped by planet and mission topic.",
-    "content": "Daily space news desk for 2026-11-05 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Cyprus: Island of Snakes, Cats, and Ophiolites](https://science.nasa.gov/earth/earth-observatory/cyprus-island-of-snakes-cats-and-ophiolites/) - NASA, published 2026-11-05.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\n- [NASA Shares Plans to Accelerate Artemis, Return to Moon](https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/) - NASA, published 2026-11-04.\n\n## Space\n\n- [Midwestern City Lights](https://www.nasa.gov/image-article/midwestern-city-lights/) - NASA, published 2026-11-05.\n\n- [NASA Astronauts to Answer Questions from Florida Students](https://www.nasa.gov/learning-resources/nasa-astronauts-to-answer-questions-from-florida-students-2/) - NASA, published 2026-11-05.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
-    "category": "nasa-news",
-    "date": "2026-11-05",
-    "tags": [
-      "Space news",
-      "Earth",
-      "Moon",
-      "Space"
-    ],
-    "sources": [
-      {
-        "title": "Cyprus: Island of Snakes, Cats, and Ophiolites",
-        "url": "https://science.nasa.gov/earth/earth-observatory/cyprus-island-of-snakes-cats-and-ophiolites/",
-        "source": "NASA",
-        "published": "2026-11-05T05:01:00+00:00",
-        "topic": "Earth"
-      },
-      {
-        "title": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
-        "url": "https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/",
-        "source": "NASA",
-        "published": "2026-11-04T21:04:10+00:00",
-        "topic": "Moon"
-      },
-      {
-        "title": "Midwestern City Lights",
-        "url": "https://www.nasa.gov/image-article/midwestern-city-lights/",
-        "source": "NASA",
-        "published": "2026-11-05T15:17:19+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "NASA Astronauts to Answer Questions from Florida Students",
-        "url": "https://www.nasa.gov/learning-resources/nasa-astronauts-to-answer-questions-from-florida-students-2/",
-        "source": "NASA",
-        "published": "2026-11-05T15:11:25+00:00",
         "topic": "Space"
       }
     ]
