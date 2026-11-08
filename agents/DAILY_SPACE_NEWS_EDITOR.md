@@ -22,7 +22,7 @@ Preview is read-only. Generate writes `client/src/data/spaceNews.json`, which is
 
 `.github/workflows/daily-space-news.yml` runs at 13:15 UTC daily (9:15 AM New York during daylight time; 8:15 AM during standard time). GitHub schedules can be delayed. News dates use America/New_York.
 
-The run tests and builds, then opens or updates `automation/space-news`. It uses the repository's existing merge/deployment flow rather than writing directly to production. After merge, `publish-linkedin.yml` resolves the exact new roundup and promotes it to the configured LinkedIn organization page. Website availability still depends on the site's deployment; merge alone does not prove a deploy completed.
+The scheduled workflow writes the roundup, commits it on `main`, builds the client, and deploys the Netlify site when `NETLIFY_AUTH_TOKEN` is set. After that commit, `publish-linkedin.yml` can promote the roundup. A commit by itself is not the live page until the deploy step finishes.
 
 To activate, merge these files into the default branch, enable Actions and allow Actions to create PRs. For workflows on bot-created PRs to trigger, configure a narrowly scoped GitHub App/PAT as `NEWS_AUTOMATION_TOKEN`; the default GITHUB_TOKEN cannot trigger most downstream workflows. Existing branch protection and required checks still apply.
 

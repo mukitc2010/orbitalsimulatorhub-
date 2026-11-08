@@ -4,7 +4,9 @@ ID: `content`. Group: product.
 
 Owns articles, research notes, and the daily space-news roundup. The news runbook is [DAILY_SPACE_NEWS_EDITOR.md](../DAILY_SPACE_NEWS_EDITOR.md).
 
-The news agent reads NASA, JPL, and ESA feeds. It keeps headlines from the last 48 hours, skips duplicates, and writes at most one post. It attributes the source. It does not claim an independent verification. If no story qualifies, it writes nothing. If every feed fails, it changes nothing.
+The news agent reads NASA, JPL, and ESA feeds, plus the NASA station and aeronautics feeds. It keeps headlines from the last 48 hours, skips duplicates, and writes at most one post a day. It attributes the source. It does not claim an independent verification. If no story qualifies, it writes nothing. If every feed fails, it changes nothing.
+
+Every day is already assigned to `content`. `.github/workflows/daily-space-news.yml` runs the desk, commits the roundup, and deploys https://www.orbitalsimulatorhub.com/space-news. This is not a new agent. The roster stays at 10.
 
 Owns `content/**`, `docs/**`, `scripts/space-news/**`, the content and RSS scripts, `client/src/data/spaceNews.json`, and the news runbook.
 
