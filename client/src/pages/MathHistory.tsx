@@ -262,6 +262,23 @@ export function MathHistory() {
         <p className="mt-2 text-sm text-cyan-200">Studied on this visit: {studied.length} of {MODULES.length}</p>
       </header>
 
+      <section id="euler-to-space" className="rounded-2xl border border-cyan-400/30 p-5 text-sm leading-7">
+        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">1768 to orbit simulation</p>
+        <h2 className="mt-2 text-2xl font-semibold text-white">From Euler&apos;s mathematics in 1768 to spacecraft engineering</h2>
+        <p className="mt-3">Leonhard Euler wrote a step for differential equations in <em>Institutionum calculi integralis</em> (1768). The same step is still used to teach how a computer advances a satellite state. Euler did not write a spacecraft propagator. That use is modern.</p>
+        <div className="my-3 overflow-x-auto" dangerouslySetInnerHTML={{ __html: tex(String.raw`y_{n+1}=y_n+\Delta t\,f(t_n,y_n)`) }} />
+        <ol className="list-decimal space-y-1 pl-5">
+          <li>Calculate the derivative at the current state.</li>
+          <li>Multiply it by the time step.</li>
+          <li>Add that change to the current state.</li>
+          <li>Repeat.</li>
+        </ol>
+        <p className="mt-3">For a satellite, the derivative comes from gravity. At 400 km altitude the acceleration is</p>
+        <div className="my-3 overflow-x-auto" dangerouslySetInnerHTML={{ __html: tex(String.raw`\mathbf{a}=-\frac{\mu}{r^3}\mathbf{r},\quad \mu=3.986004418\times 10^{14}\ \mathrm{m}^3/\mathrm{s}^2`) }} />
+        <p>Explicit Euler is simple and can drift in orbital energy. Semi-implicit Euler updates velocity before position and usually holds a mechanical orbit better. Runge–Kutta 4 evaluates the derivative four times per step. The Euler Lab runs all three on a 400 km Earth orbit and reports the drift it computes. It does not invent an accuracy percentage.</p>
+        <p className="mt-3"><Link href="/simulator/euler-lab"><a className="text-cyan-300 underline">Compare the three methods in the Euler Lab</a></Link></p>
+      </section>
+
       <ol className="space-y-3">
         {MODULES.map((item) => (
           <li key={item.id} id={item.id} className="rounded-2xl border border-white/10 bg-slate-950/70 p-4">
