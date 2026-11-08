@@ -136,14 +136,54 @@ const MODULES = [
 ];
 
 const GRAPH = [
-  "Ancient mathematics",
-  "Geometry and trigonometry",
-  "Classical mechanics",
-  "Differential equations",
-  "Numerical simulation",
-  "Optimal control",
-  "State estimation",
-  "Autonomous space systems",
+  {
+    title: "Ancient mathematics",
+    detail: "Babylonian scribes predicted repeating sky events with arithmetic tables. Aryabhata later tabulated sines. These are records and tables. They are not force laws and they do not contain a spacecraft equation.",
+    href: "#babylon",
+    link: "Open the Babylonian module",
+  },
+  {
+    title: "Geometry and trigonometry",
+    detail: "A right triangle gives vector length. A sine and a cosine turn an angle into coordinates. Apollonius classified the ellipse, parabola, and hyperbola. The orbit formula r = p / (1 + e cos θ) is a later use of those curves.",
+    href: "#conics",
+    link: "Draw a conic",
+  },
+  {
+    title: "Classical mechanics",
+    detail: "Newton’s Principia ties an inverse-square force to the conics Kepler had found. Lagrange writes the same gravity problem as L = T − V. With no thrust, angular momentum and mechanical energy stay constant.",
+    href: "#newton",
+    link: "Read Newton’s step",
+  },
+  {
+    title: "Differential equations",
+    detail: "The acceleration −μ r / r³ is a differential equation for position. Euler’s 1768 step adds the current rate times a time step. That step is general mathematics. Using it on a satellite is a modern teaching use.",
+    href: "#euler",
+    link: "See Euler’s step",
+  },
+  {
+    title: "Numerical simulation",
+    detail: "A computer repeats the step. Explicit Euler, semi-implicit Euler, and Runge–Kutta 4 follow the same gravity. The Euler Lab reports energy drift and radius error for a 400 km orbit. It does not invent an accuracy percentage.",
+    href: "/simulator/euler-lab",
+    link: "Open the Euler Lab",
+  },
+  {
+    title: "Optimal control",
+    detail: "A burn is no longer the unforced equation. Optimal control chooses the command that reduces a stated cost. The Riccati equation supplies the LQR gain. The scalar demo on this page is a classroom position loop, not flight software.",
+    href: "#riccati",
+    link: "Open the Riccati example",
+  },
+  {
+    title: "State estimation",
+    detail: "Sensors do not give the full state. A Kalman filter folds a noisy measurement into an estimate and a covariance. The filter formula is on the mathematics page. This site does not claim a certified navigation filter.",
+    href: "/research/space-agi-math",
+    link: "Read the Kalman formulas",
+  },
+  {
+    title: "Autonomous space systems",
+    detail: "Planning, estimation, and control can be chained in a lesson. The spacecraft page shows hypothetical repair modes and signal delay. Those modes are labeled hypothetical. They are not a flown autonomous controller.",
+    href: "/simulator/spacecraft",
+    link: "Open the spacecraft lesson",
+  },
 ];
 
 function ConicCanvas({ eccentricity, semiLatusKm, anomalyDeg }: { eccentricity: number; semiLatusKm: number; anomalyDeg: number }) {
@@ -199,6 +239,7 @@ export function MathHistory() {
   const [anomalyDeg, setAnomalyDeg] = useState(40);
   const [angleDeg, setAngleDeg] = useState(35);
   const [studied, setStudied] = useState<string[]>([]);
+  const [pathStep, setPathStep] = useState(0);
   const anomaly = (anomalyDeg * Math.PI) / 180;
   const notes = useMemo(
     () => explainConic({ semiLatusRectumM: semiLatusKm * 1000, eccentricity, trueAnomalyRad: anomaly, muM3S2: MU }),
@@ -298,12 +339,31 @@ export function MathHistory() {
 
       <section className="rounded-2xl border border-white/10 p-4">
         <h2 className="text-2xl font-semibold text-white">Knowledge path</h2>
-        <ol className="mt-3 space-y-2 text-sm">
+        <p className="mt-1 text-sm text-slate-300">Select a step. Each one explains what that layer adds, and what it does not claim.</p>
+        <div className="mt-3 flex flex-wrap gap-2" role="tablist" aria-label="Knowledge path">
           {GRAPH.map((node, index) => (
-            <li key={node} className="rounded-lg border border-white/10 px-3 py-2">{index + 1}. {node}{index < GRAPH.length - 1 ? " →" : ""}</li>
+            <button
+              key={node.title}
+              type="button"
+              role="tab"
+              aria-selected={pathStep === index}
+              className="rounded-full border px-3 py-1.5 text-left text-sm"
+              style={{
+                borderColor: pathStep === index ? "rgb(103, 232, 249)" : "rgba(255,255,255,0.15)",
+                background: pathStep === index ? "rgba(34,211,238,0.16)" : "transparent",
+                color: "white",
+              }}
+              onClick={() => setPathStep(index)}
+            >
+              {index + 1}. {node.title}
+            </button>
           ))}
-        </ol>
-        <p className="mt-3 text-sm"><Link href="/research/space-agi-math"><a className="text-cyan-300 underline">Continue in Space-AGI Mathematics</a></Link></p>
+        </div>
+        <div role="tabpanel" className="mt-4 rounded-xl border border-cyan-400/20 p-4 text-sm leading-6">
+          <h3 className="text-lg font-semibold text-white">{GRAPH[pathStep].title}</h3>
+          <p className="mt-2">{GRAPH[pathStep].detail}</p>
+          <a className="mt-3 inline-flex text-cyan-300 underline" href={GRAPH[pathStep].href}>{GRAPH[pathStep].link}</a>
+        </div>
       </section>
     </div>
   );
