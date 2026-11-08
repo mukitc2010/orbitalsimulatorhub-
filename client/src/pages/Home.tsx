@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { DailyTopicIcon } from "../components/DailyTopicIcon";
 import { ShareBar } from "../components/ShareBar";
 import { EARTH_RADIUS_KM, MU_EARTH_KM3_S2 } from "../../../shared/const";
-import { BLOG_POSTS } from "../data/blogPosts";
+import { HOME_FEED } from "../data/homeFeed";
 import { getBlogImage } from "../data/blogImages";
 
 const HomeSpaceScene = lazy(() => import("../components/HomeSpaceScene").then((module) => ({ default: module.HomeSpaceScene })));
@@ -37,7 +37,7 @@ const QUICK_LINKS = [
 ];
 
 // Sort by date descending so newest is first (content-agent appends to end of array)
-const LATEST_POSTS = [...BLOG_POSTS].sort((a, b) => b.date.localeCompare(a.date));
+const LATEST_POSTS = HOME_FEED;
 
 // Build dynamic updates: latest 3 blog posts first, then featured research, then static links
 function getTodaysUpdates() {

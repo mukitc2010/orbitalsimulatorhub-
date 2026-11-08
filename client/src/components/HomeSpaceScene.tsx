@@ -16,7 +16,7 @@ function useReducedMotion() {
   return reducedMotion;
 }
 
-function Starfield({ count = 520 }: { count?: number }) {
+function Starfield({ count = 160 }: { count?: number }) {
   const positions = useMemo(() => {
     const values = new Float32Array(count * 3);
     for (let index = 0; index < count; index += 1) {
@@ -139,11 +139,11 @@ function EarthSystem({ reducedMotion }: { reducedMotion: boolean }) {
     <>
       <group ref={earth}>
         <mesh>
-          <sphereGeometry args={[1.6, 48, 48]} />
+          <sphereGeometry args={[1.6, 24, 24]} />
           <meshStandardMaterial color="#0b5fa5" emissive="#062142" emissiveIntensity={0.8} roughness={0.7} metalness={0.1} />
         </mesh>
         <mesh scale={1.035}>
-          <sphereGeometry args={[1.6, 48, 48]} />
+          <sphereGeometry args={[1.6, 24, 24]} />
           <meshBasicMaterial color="#40d9ff" transparent opacity={0.12} side={THREE.BackSide} />
         </mesh>
         <mesh ref={cloudLayer} scale={1.012}>
@@ -192,8 +192,8 @@ export function HomeSpaceScene() {
     <div className="absolute inset-0 overflow-hidden rounded-3xl" aria-hidden="true">
       <Canvas
         camera={{ position: [0, 0.45, 8], fov: 42 }}
-        dpr={[1, 1.5]}
-        gl={{ antialias: true, powerPreference: "high-performance" }}
+        dpr={[1, 1]}
+        gl={{ antialias: false, powerPreference: "low-power" }}
         frameloop={reducedMotion ? "demand" : "always"}
       >
         <Scene reducedMotion={reducedMotion} />

@@ -46,70 +46,81 @@ export function SEOHead() {
   const prevTitle = useRef(document.title);
 
   useEffect(() => {
-    const config = getSEOConfig(cleanPath);
-    const title = config?.title ?? DEFAULT_TITLE;
-    const description = config?.description ?? DEFAULT_DESCRIPTION;
-    const keywords = config?.keywords ?? "";
-    const ogTitle = config?.ogTitle ?? config?.title ?? title;
-    const ogDescription = config?.ogDescription ?? config?.description ?? description;
-    const fullUrl = `${SITE_URL}${cleanPath || "/"}`;
+    let cancel = false;
 
-    document.title = title;
-    prevTitle.current = title;
+    void (async () => {
+      let config = getSEOConfig(cleanPath);
+      if (cleanPath.startsWith("/blog/") && !cleanPath.startsWith("/blog/category/")) {
+        const { blogPostSEO } = await import("../data/blogSeo");
+        config = blogPostSEO(cleanPath) ?? config;
+      }
+      if (cancel) return;
 
-    setMeta("description", description);
-    setMeta("keywords", keywords);
-    setMeta("robots", "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1");
+      const title = config?.title ?? DEFAULT_TITLE;
+      const description = config?.description ?? DEFAULT_DESCRIPTION;
+      const keywords = config?.keywords ?? "";
+      const ogTitle = config?.ogTitle ?? config?.title ?? title;
+      const ogDescription = config?.ogDescription ?? config?.description ?? description;
+      const fullUrl = `${SITE_URL}${cleanPath || "/"}`;
 
-    setMeta("og:title", ogTitle, true);
-    setMeta("og:description", ogDescription, true);
-    setMeta("og:url", fullUrl, true);
-    setMeta("og:type", "website", true);
-    setMeta("og:image", OG_IMAGE, true);
-    setMeta("og:site_name", "Orbital Simulator Hub", true);
-    setMeta("og:locale", "en_US", true);
+      document.title = title;
+      prevTitle.current = title;
 
-    setMeta("twitter:card", "summary_large_image");
-    setMeta("twitter:title", ogTitle);
-    setMeta("twitter:description", ogDescription);
-    setMeta("twitter:image", OG_IMAGE);
+      setMeta("description", description);
+      setMeta("keywords", keywords);
+      setMeta("robots", "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1");
 
-    setLink("canonical", fullUrl);
+      setMeta("og:title", ogTitle, true);
+      setMeta("og:description", ogDescription, true);
+      setMeta("og:url", fullUrl, true);
+      setMeta("og:type", "website", true);
+      setMeta("og:image", OG_IMAGE, true);
+      setMeta("og:site_name", "Orbital Simulator Hub", true);
+      setMeta("og:locale", "en_US", true);
 
-    setJsonLd("seo-website", {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      name: SITE_NAME,
-      url: SITE_URL,
-      description: "Free orbital mechanics simulator, space blog, astronaut database, planet explorer. NASA, ISS, Starlink, Mars missions.",
-      publisher: { "@type": "Organization", name: SITE_NAME, logo: { "@type": "ImageObject", url: OG_IMAGE } },
-      inLanguage: "en-US",
-    });
+      setMeta("twitter:card", "summary_large_image");
+      setMeta("twitter:title", ogTitle);
+      setMeta("twitter:description", ogDescription);
+      setMeta("twitter:image", OG_IMAGE);
 
-    const breadcrumbItems: { name: string; item: string }[] = [
-      { name: "Home", item: SITE_URL + "/" },
-    ];
-    const segments = cleanPath.split("/").filter(Boolean);
-    let accumulated = "";
-    for (const seg of segments) {
-      accumulated += "/" + seg;
-      const label = seg.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-      breadcrumbItems.push({ name: label, item: SITE_URL + accumulated });
-    }
-    if (breadcrumbItems.length > 1) {
-      setJsonLd("seo-breadcrumb", {
+      setLink("canonical", fullUrl);
+
+      setJsonLd("seo-website", {
         "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        itemListElement: breadcrumbItems.map((b, i) => ({
-          "@type": "ListItem",
-          position: i + 1,
-          name: b.name,
-          item: b.item,
-        })),
+        "@type": "WebSite",
+        name: SITE_NAME,
+        url: SITE_URL,
+        description: "Free orbital mechanics simulator, space blog, astronaut database, planet explorer. NASA, ISS, Starlink, Mars missions.",
+        publisher: { "@type": "Organization", name: SITE_NAME, logo: { "@type": "ImageObject", url: OG_IMAGE } },
+        inLanguage: "en-US",
       });
-    }
+
+      const breadcrumbItems: { name: string; item: string }[] = [
+        { name: "Home", item: SITE_URL + "/" },
+      ];
+      const segments = cleanPath.split("/").filter(Boolean);
+      let accumulated = "";
+      for (const seg of segments) {
+        accumulated += "/" + seg;
+        const label = seg.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+        breadcrumbItems.push({ name: label, item: SITE_URL + accumulated });
+      }
+      if (breadcrumbItems.length > 1) {
+        setJsonLd("seo-breadcrumb", {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: breadcrumbItems.map((b, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: b.name,
+            item: b.item,
+          })),
+        });
+      }
+    })();
 
     return () => {
+      cancel = true;
       document.title = prevTitle.current;
     };
   }, [cleanPath]);

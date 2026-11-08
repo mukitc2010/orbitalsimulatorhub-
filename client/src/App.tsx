@@ -1,90 +1,93 @@
-import { SpaceMathGame } from "./pages/SpaceMathGame";
-import { OrbitMissionControl } from "./pages/OrbitMissionControl";
-import { ASIMissionControl } from "./pages/ASIMissionControl";
-import { SpaceRobotResearch } from "./pages/SpaceRobotResearch";
+import { lazy, Suspense } from "react";
+import { Home } from "./pages/Home";
+import { NotFound } from "./pages/NotFound";
 import { Route, Switch } from "wouter";
 import { NavigationHeader } from "./components/NavigationHeader";
 import { Footer } from "./components/Footer";
 import { SEOHead } from "./components/SEOHead";
-import { Home } from "./pages/Home";
-import { PlayLearn } from "./pages/PlayLearn";
-import { Simulator } from "./pages/Simulator";
-import { LearnNewton } from "./pages/LearnNewton";
-import { NewtonFormulas } from "./pages/NewtonFormulas";
-import { KidsGuide } from "./pages/KidsGuide";
-import { AstroBot } from "./pages/AstroBot";
-import { ResearchHub } from "./pages/ResearchHub";
-import { AerospaceReference } from "./pages/AerospaceReference";
-import { FormulaLibrary } from "./pages/FormulaLibrary";
-import { RealSatelliteData } from "./pages/RealSatelliteData";
-import { LearnOrbitalMechanics } from "./pages/LearnOrbitalMechanics";
-import { SpaceQuestions } from "./pages/SpaceQuestions";
-import { Calculators } from "./pages/Calculators";
-import { Blog } from "./pages/Blog";
-import { BlogPost } from "./pages/BlogPost";
-import { BlogCategory } from "./pages/BlogCategory";
-import { RecommendedBooks } from "./pages/RecommendedBooks";
-import { SpaceShop } from "./pages/SpaceShop";
-import { SpaceExperiments } from "./pages/SpaceExperiments";
-import { HowGPSWorks } from "./pages/HowGPSWorks";
-import { CompareOrbits } from "./pages/CompareOrbits";
-import { HowNASALaunches } from "./pages/HowNASALaunches";
-import { HowSpaceXLands } from "./pages/HowSpaceXLands";
-import { HowMarsRovers } from "./pages/HowMarsRovers";
-import { HowStarlinkWorks } from "./pages/HowStarlinkWorks";
-import { HowISSWorks } from "./pages/HowISSWorks";
-import { MissionTimeline } from "./pages/MissionTimeline";
-import { MissionList } from "./pages/MissionList";
-import { MissionDetail } from "./pages/MissionDetail";
-import { BroughtFromSpace } from "./pages/BroughtFromSpace";
-import { OrbitalMechanicsQuiz } from "./pages/OrbitalMechanicsQuiz";
-import { HowSolarSystemWorks } from "./pages/HowSolarSystemWorks";
-import { WhatIsMoon } from "./pages/WhatIsMoon";
-import { Astrophysics } from "./pages/Astrophysics";
-import { QuantumPhysics } from "./pages/QuantumPhysics";
-import { QuantumPhysicsNASA } from "./pages/QuantumPhysicsNASA";
-import { Aerodynamics } from "./pages/Aerodynamics";
-import { QuantumSpace } from "./pages/QuantumSpace";
-import { AIInAerospace } from "./pages/AIInAerospace";
-import { SpaceCareers } from "./pages/SpaceCareers";
-import { NASAStudyGuide } from "./pages/NASAStudyGuide";
-import { HowSatellitesWork } from "./pages/HowSatellitesWork";
-import { AstronomyForKids } from "./pages/AstronomyForKids";
-import { NASAForStudents } from "./pages/NASAForStudents";
-import { SpaceNews } from "./pages/SpaceNews";
-import { NASAForKids } from "./pages/NASAForKids";
-import { SatelliteTutorial } from "./pages/SatelliteTutorial";
-import { SpaceQuiz } from "./pages/SpaceQuiz";
-import { PlatformBlueprint } from "./pages/PlatformBlueprint";
-import { AstronautExplorer } from "./pages/AstronautExplorer";
-import { AstronautProfile } from "./pages/AstronautProfile";
-import { PlanetHub } from "./pages/PlanetHub";
-import { PlanetDetail } from "./pages/PlanetDetail";
-import { LunarGeology } from "./pages/LunarGeology";
-import { NeuroSpaceResearch } from "./pages/NeuroSpaceResearch";
-import { SpaceAGIDoctrine } from "./pages/SpaceAGIDoctrine";
-import { SpaceAGIEngineeringLab } from "./pages/SpaceAGIEngineeringLab";
-import { SpaceAGIRoadmap } from "./pages/SpaceAGIRoadmap";
-import { SpaceAGIMathematics } from "./pages/SpaceAGIMathematics";
-import { MathHistory } from "./pages/MathHistory";
-import { SpaceAGIExplanation } from "./pages/SpaceAGIExplanation";
-import { AGIASIFramework } from "./pages/AGIASIFramework";
-import { PMPNMPCControlFramework } from "./pages/PMPNMPCControlFramework";
-import { ASIAstronautMathematics } from "./pages/ASIAstronautMathematics";
-import { SpaceAGISwarmSimulator } from "./pages/SpaceAGISwarmSimulator";
-import { AIAstronautRobotSimulator } from "./pages/AIAstronautRobotSimulator";
-import { SpacecraftOperations } from "./pages/SpacecraftOperations";
-import { EulerOrbitalLab } from "./pages/EulerOrbitalLab";
-import { QuantumSpaceAGISimulator } from "./pages/QuantumSpaceAGISimulator";
-import { QuantumSpaceAGILab } from "./pages/QuantumSpaceAGILab";
-import { QuantumSpaceAGIScenario } from "./pages/QuantumSpaceAGIScenario";
-import { QuantumSpaceAGICompare } from "./pages/QuantumSpaceAGICompare";
-import { FutureSpaceCivilization } from "./pages/FutureSpaceCivilization";
-import { Next100Years } from "./pages/Next100Years";
-import { MarketingAIAgent } from "./pages/MarketingAIAgent";
-import { Welcome } from "./pages/Welcome";
-import { PrivacyPolicy } from "./pages/PrivacyPolicy";
-import { NotFound } from "./pages/NotFound";
+
+
+const SpaceMathGame = lazy(() => import("./pages/SpaceMathGame").then((m) => ({ default: m.SpaceMathGame })));
+const OrbitMissionControl = lazy(() => import("./pages/OrbitMissionControl").then((m) => ({ default: m.OrbitMissionControl })));
+const ASIMissionControl = lazy(() => import("./pages/ASIMissionControl").then((m) => ({ default: m.ASIMissionControl })));
+const SpaceRobotResearch = lazy(() => import("./pages/SpaceRobotResearch").then((m) => ({ default: m.SpaceRobotResearch })));
+const PlayLearn = lazy(() => import("./pages/PlayLearn").then((m) => ({ default: m.PlayLearn })));
+const Simulator = lazy(() => import("./pages/Simulator").then((m) => ({ default: m.Simulator })));
+const LearnNewton = lazy(() => import("./pages/LearnNewton").then((m) => ({ default: m.LearnNewton })));
+const NewtonFormulas = lazy(() => import("./pages/NewtonFormulas").then((m) => ({ default: m.NewtonFormulas })));
+const KidsGuide = lazy(() => import("./pages/KidsGuide").then((m) => ({ default: m.KidsGuide })));
+const AstroBot = lazy(() => import("./pages/AstroBot").then((m) => ({ default: m.AstroBot })));
+const ResearchHub = lazy(() => import("./pages/ResearchHub").then((m) => ({ default: m.ResearchHub })));
+const AerospaceReference = lazy(() => import("./pages/AerospaceReference").then((m) => ({ default: m.AerospaceReference })));
+const FormulaLibrary = lazy(() => import("./pages/FormulaLibrary").then((m) => ({ default: m.FormulaLibrary })));
+const RealSatelliteData = lazy(() => import("./pages/RealSatelliteData").then((m) => ({ default: m.RealSatelliteData })));
+const LearnOrbitalMechanics = lazy(() => import("./pages/LearnOrbitalMechanics").then((m) => ({ default: m.LearnOrbitalMechanics })));
+const SpaceQuestions = lazy(() => import("./pages/SpaceQuestions").then((m) => ({ default: m.SpaceQuestions })));
+const Calculators = lazy(() => import("./pages/Calculators").then((m) => ({ default: m.Calculators })));
+const Blog = lazy(() => import("./pages/Blog").then((m) => ({ default: m.Blog })));
+const BlogPost = lazy(() => import("./pages/BlogPost").then((m) => ({ default: m.BlogPost })));
+const BlogCategory = lazy(() => import("./pages/BlogCategory").then((m) => ({ default: m.BlogCategory })));
+const RecommendedBooks = lazy(() => import("./pages/RecommendedBooks").then((m) => ({ default: m.RecommendedBooks })));
+const SpaceShop = lazy(() => import("./pages/SpaceShop").then((m) => ({ default: m.SpaceShop })));
+const SpaceExperiments = lazy(() => import("./pages/SpaceExperiments").then((m) => ({ default: m.SpaceExperiments })));
+const HowGPSWorks = lazy(() => import("./pages/HowGPSWorks").then((m) => ({ default: m.HowGPSWorks })));
+const CompareOrbits = lazy(() => import("./pages/CompareOrbits").then((m) => ({ default: m.CompareOrbits })));
+const HowNASALaunches = lazy(() => import("./pages/HowNASALaunches").then((m) => ({ default: m.HowNASALaunches })));
+const HowSpaceXLands = lazy(() => import("./pages/HowSpaceXLands").then((m) => ({ default: m.HowSpaceXLands })));
+const HowMarsRovers = lazy(() => import("./pages/HowMarsRovers").then((m) => ({ default: m.HowMarsRovers })));
+const HowStarlinkWorks = lazy(() => import("./pages/HowStarlinkWorks").then((m) => ({ default: m.HowStarlinkWorks })));
+const HowISSWorks = lazy(() => import("./pages/HowISSWorks").then((m) => ({ default: m.HowISSWorks })));
+const MissionTimeline = lazy(() => import("./pages/MissionTimeline").then((m) => ({ default: m.MissionTimeline })));
+const MissionList = lazy(() => import("./pages/MissionList").then((m) => ({ default: m.MissionList })));
+const MissionDetail = lazy(() => import("./pages/MissionDetail").then((m) => ({ default: m.MissionDetail })));
+const BroughtFromSpace = lazy(() => import("./pages/BroughtFromSpace").then((m) => ({ default: m.BroughtFromSpace })));
+const OrbitalMechanicsQuiz = lazy(() => import("./pages/OrbitalMechanicsQuiz").then((m) => ({ default: m.OrbitalMechanicsQuiz })));
+const HowSolarSystemWorks = lazy(() => import("./pages/HowSolarSystemWorks").then((m) => ({ default: m.HowSolarSystemWorks })));
+const WhatIsMoon = lazy(() => import("./pages/WhatIsMoon").then((m) => ({ default: m.WhatIsMoon })));
+const Astrophysics = lazy(() => import("./pages/Astrophysics").then((m) => ({ default: m.Astrophysics })));
+const QuantumPhysics = lazy(() => import("./pages/QuantumPhysics").then((m) => ({ default: m.QuantumPhysics })));
+const QuantumPhysicsNASA = lazy(() => import("./pages/QuantumPhysicsNASA").then((m) => ({ default: m.QuantumPhysicsNASA })));
+const Aerodynamics = lazy(() => import("./pages/Aerodynamics").then((m) => ({ default: m.Aerodynamics })));
+const QuantumSpace = lazy(() => import("./pages/QuantumSpace").then((m) => ({ default: m.QuantumSpace })));
+const AIInAerospace = lazy(() => import("./pages/AIInAerospace").then((m) => ({ default: m.AIInAerospace })));
+const SpaceCareers = lazy(() => import("./pages/SpaceCareers").then((m) => ({ default: m.SpaceCareers })));
+const NASAStudyGuide = lazy(() => import("./pages/NASAStudyGuide").then((m) => ({ default: m.NASAStudyGuide })));
+const HowSatellitesWork = lazy(() => import("./pages/HowSatellitesWork").then((m) => ({ default: m.HowSatellitesWork })));
+const AstronomyForKids = lazy(() => import("./pages/AstronomyForKids").then((m) => ({ default: m.AstronomyForKids })));
+const NASAForStudents = lazy(() => import("./pages/NASAForStudents").then((m) => ({ default: m.NASAForStudents })));
+const SpaceNews = lazy(() => import("./pages/SpaceNews").then((m) => ({ default: m.SpaceNews })));
+const NASAForKids = lazy(() => import("./pages/NASAForKids").then((m) => ({ default: m.NASAForKids })));
+const SatelliteTutorial = lazy(() => import("./pages/SatelliteTutorial").then((m) => ({ default: m.SatelliteTutorial })));
+const SpaceQuiz = lazy(() => import("./pages/SpaceQuiz").then((m) => ({ default: m.SpaceQuiz })));
+const PlatformBlueprint = lazy(() => import("./pages/PlatformBlueprint").then((m) => ({ default: m.PlatformBlueprint })));
+const AstronautExplorer = lazy(() => import("./pages/AstronautExplorer").then((m) => ({ default: m.AstronautExplorer })));
+const AstronautProfile = lazy(() => import("./pages/AstronautProfile").then((m) => ({ default: m.AstronautProfile })));
+const PlanetHub = lazy(() => import("./pages/PlanetHub").then((m) => ({ default: m.PlanetHub })));
+const PlanetDetail = lazy(() => import("./pages/PlanetDetail").then((m) => ({ default: m.PlanetDetail })));
+const LunarGeology = lazy(() => import("./pages/LunarGeology").then((m) => ({ default: m.LunarGeology })));
+const NeuroSpaceResearch = lazy(() => import("./pages/NeuroSpaceResearch").then((m) => ({ default: m.NeuroSpaceResearch })));
+const SpaceAGIDoctrine = lazy(() => import("./pages/SpaceAGIDoctrine").then((m) => ({ default: m.SpaceAGIDoctrine })));
+const SpaceAGIEngineeringLab = lazy(() => import("./pages/SpaceAGIEngineeringLab").then((m) => ({ default: m.SpaceAGIEngineeringLab })));
+const SpaceAGIRoadmap = lazy(() => import("./pages/SpaceAGIRoadmap").then((m) => ({ default: m.SpaceAGIRoadmap })));
+const SpaceAGIMathematics = lazy(() => import("./pages/SpaceAGIMathematics").then((m) => ({ default: m.SpaceAGIMathematics })));
+const MathHistory = lazy(() => import("./pages/MathHistory").then((m) => ({ default: m.MathHistory })));
+const SpaceAGIExplanation = lazy(() => import("./pages/SpaceAGIExplanation").then((m) => ({ default: m.SpaceAGIExplanation })));
+const AGIASIFramework = lazy(() => import("./pages/AGIASIFramework").then((m) => ({ default: m.AGIASIFramework })));
+const PMPNMPCControlFramework = lazy(() => import("./pages/PMPNMPCControlFramework").then((m) => ({ default: m.PMPNMPCControlFramework })));
+const ASIAstronautMathematics = lazy(() => import("./pages/ASIAstronautMathematics").then((m) => ({ default: m.ASIAstronautMathematics })));
+const SpaceAGISwarmSimulator = lazy(() => import("./pages/SpaceAGISwarmSimulator").then((m) => ({ default: m.SpaceAGISwarmSimulator })));
+const AIAstronautRobotSimulator = lazy(() => import("./pages/AIAstronautRobotSimulator").then((m) => ({ default: m.AIAstronautRobotSimulator })));
+const SpacecraftOperations = lazy(() => import("./pages/SpacecraftOperations").then((m) => ({ default: m.SpacecraftOperations })));
+const EulerOrbitalLab = lazy(() => import("./pages/EulerOrbitalLab").then((m) => ({ default: m.EulerOrbitalLab })));
+const QuantumSpaceAGISimulator = lazy(() => import("./pages/QuantumSpaceAGISimulator").then((m) => ({ default: m.QuantumSpaceAGISimulator })));
+const QuantumSpaceAGILab = lazy(() => import("./pages/QuantumSpaceAGILab").then((m) => ({ default: m.QuantumSpaceAGILab })));
+const QuantumSpaceAGIScenario = lazy(() => import("./pages/QuantumSpaceAGIScenario").then((m) => ({ default: m.QuantumSpaceAGIScenario })));
+const QuantumSpaceAGICompare = lazy(() => import("./pages/QuantumSpaceAGICompare").then((m) => ({ default: m.QuantumSpaceAGICompare })));
+const FutureSpaceCivilization = lazy(() => import("./pages/FutureSpaceCivilization").then((m) => ({ default: m.FutureSpaceCivilization })));
+const Next100Years = lazy(() => import("./pages/Next100Years").then((m) => ({ default: m.Next100Years })));
+const MarketingAIAgent = lazy(() => import("./pages/MarketingAIAgent").then((m) => ({ default: m.MarketingAIAgent })));
+const Welcome = lazy(() => import("./pages/Welcome").then((m) => ({ default: m.Welcome })));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy").then((m) => ({ default: m.PrivacyPolicy })));
 
 function App() {
   return (
@@ -95,6 +98,7 @@ function App() {
       <SEOHead />
       <NavigationHeader />
       <main className="container mx-auto px-4 py-6 max-w-7xl flex-1 relative">
+        <Suspense fallback={<div className="min-h-[40vh]" />}>
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/games/space-math" component={SpaceMathGame} />
@@ -182,6 +186,7 @@ function App() {
           <Route path="/planets/:slug" component={PlanetDetail} />
           <Route component={NotFound} />
         </Switch>
+        </Suspense>
       </main>
       <Footer />
     </div>

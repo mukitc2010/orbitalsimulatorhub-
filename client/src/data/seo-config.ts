@@ -4,7 +4,7 @@
  * Can be updated via API for n8n automation
  */
 
-import { getPostBySlug } from "./blogPosts";
+
 
 export interface SEOConfig {
   path: string;
@@ -596,17 +596,6 @@ export function getSEOConfig(path: string): SEOConfig | null {
   const blogMatch = cleanPath.match(/^\/blog\/(.+)$/);
   if (blogMatch) {
     const slug = blogMatch[1];
-    const post = getPostBySlug(slug);
-    if (post) {
-      return {
-        path: cleanPath,
-        title: `${post.title} | Space Blog – Orbital Simulator Hub`,
-        description: post.excerpt,
-        keywords: post.seoKeywords || post.tags.join(", ") || `space blog, space news, ${slug.replace(/-/g, ", ")}`,
-        ogTitle: post.title,
-        lastUpdated: `${post.date}T00:00:00Z`,
-      };
-    }
     const name = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
     return {
       path: cleanPath,
