@@ -19,6 +19,8 @@ ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / 'client/src/data/spaceNews.json'
 FEEDS = {
     'NASA': 'https://www.nasa.gov/feed/',
+    'NASA station': 'https://www.nasa.gov/blogs/spacestation/feed/',
+    'NASA aeronautics': 'https://www.nasa.gov/aeronautics/feed/',
     'NASA JPL': 'https://www.jpl.nasa.gov/feeds/news/',
     'ESA': 'https://www.esa.int/rssfeed/Our_Activities/Space_Science',
     'ESA exploration': 'https://www.esa.int/rssfeed/Our_Activities/Human_and_Robotic_Exploration',
@@ -94,7 +96,7 @@ def select_stories(stories, previous):
         if story['url'] in seen or story['title'].casefold() in titles:
             continue
         seen.add(story['url']); titles.add(story['title'].casefold())
-        if len(groups[story['topic']]) < 2:
+        if len(groups[story['topic']]) < 4:
             groups[story['topic']].append(story)
     return [story for topic in TOPICS for story in groups[topic]][:12]
 

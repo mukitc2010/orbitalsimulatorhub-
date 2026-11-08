@@ -1,5 +1,70 @@
 [
   {
+    "slug": "space-news-2026-11-08",
+    "title": "Daily Space News - 2026-11-08",
+    "excerpt": "7 recent, attributed space headlines, grouped by planet and mission topic.",
+    "content": "Daily space news desk for 2026-11-08 (America/New_York).\n\nAttributed headlines published within the last 7 days, because fewer than four headlines fell inside 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Supercomputing Tech Demo Schedule](https://science.nasa.gov/earth/supercomputing-tech-demo-schedule/) - NASA, published 2026-11-06.\n\n- [Taking a Gander at Utah’s Goosenecks](https://science.nasa.gov/earth/earth-observatory/taking-a-gander-at-utahs-goosenecks/) - NASA, published 2026-11-06.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\n- [NASA Awards Moon Base Transportation, Technology, Science Projects](https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/) - NASA, published 2026-11-07.\n\n## Space\n\n- [APOD: 2026 November 8 – Major Fireball Meteor](https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/) - NASA, published 2026-11-08.\n\n- [NASA Seeks Next Generation of Explorers to Join Astronaut Corps](https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/) - NASA, published 2026-11-07.\n\n- [Spacewalk Cleanup, Biomedical Science, and Maintenance Wrap Up Week](https://www.nasa.gov/blogs/spacestation/2026/11/06/spacewalk-cleanup-biomedical-science-and-maintenance-wrap-up-week/) - NASA station, published 2026-11-06.\n\n- [M30’s Sparkling Stars](https://www.nasa.gov/image-article/m30s-sparkling-stars/) - NASA, published 2026-11-06.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
+    "category": "nasa-news",
+    "date": "2026-11-08",
+    "tags": [
+      "Space news",
+      "Earth",
+      "Moon",
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "Supercomputing Tech Demo Schedule",
+        "url": "https://science.nasa.gov/earth/supercomputing-tech-demo-schedule/",
+        "source": "NASA",
+        "published": "2026-11-06T16:03:52+00:00",
+        "topic": "Earth"
+      },
+      {
+        "title": "Taking a Gander at Utah’s Goosenecks",
+        "url": "https://science.nasa.gov/earth/earth-observatory/taking-a-gander-at-utahs-goosenecks/",
+        "source": "NASA",
+        "published": "2026-11-06T05:01:00+00:00",
+        "topic": "Earth"
+      },
+      {
+        "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+        "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
+        "source": "NASA",
+        "published": "2026-11-07T22:47:03+00:00",
+        "topic": "Moon"
+      },
+      {
+        "title": "APOD: 2026 November 8 – Major Fireball Meteor",
+        "url": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
+        "source": "NASA",
+        "published": "2026-11-08T05:05:00+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+        "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+        "source": "NASA",
+        "published": "2026-11-07T18:11:57+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "Spacewalk Cleanup, Biomedical Science, and Maintenance Wrap Up Week",
+        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/06/spacewalk-cleanup-biomedical-science-and-maintenance-wrap-up-week/",
+        "source": "NASA station",
+        "published": "2026-11-06T17:48:13+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "M30’s Sparkling Stars",
+        "url": "https://www.nasa.gov/image-article/m30s-sparkling-stars/",
+        "source": "NASA",
+        "published": "2026-11-06T16:23:41+00:00",
+        "topic": "Space"
+      }
+    ]
+  },
+  {
     "slug": "space-news-2026-11-07",
     "title": "Daily Space News - 2026-11-07",
     "excerpt": "3 recent, attributed space headlines, grouped by planet and mission topic.",
@@ -31,49 +96,6 @@
         "url": "https://www.nasa.gov/image-article/midwestern-city-lights/",
         "source": "NASA",
         "published": "2026-11-05T15:17:19+00:00",
-        "topic": "Space"
-      }
-    ]
-  },
-  {
-    "slug": "space-news-2026-11-06",
-    "title": "Daily Space News - 2026-11-06",
-    "excerpt": "4 recent, attributed space headlines, grouped by planet and mission topic.",
-    "content": "Daily space news desk for 2026-11-06 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Supercomputing Tech Demo Schedule](https://science.nasa.gov/earth/supercomputing-tech-demo-schedule/) - NASA, published 2026-11-06.\n\n- [Taking a Gander at Utah’s Goosenecks](https://science.nasa.gov/earth/earth-observatory/taking-a-gander-at-utahs-goosenecks/) - NASA, published 2026-11-06.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [M30’s Sparkling Stars](https://www.nasa.gov/image-article/m30s-sparkling-stars/) - NASA, published 2026-11-06.\n\n- [APOD: 2026 November 6 – A Farewell to Swift](https://science.nasa.gov/image-article/apod-2026-november-6-a-farewell-to-swift/) - NASA, published 2026-11-06.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
-    "category": "nasa-news",
-    "date": "2026-11-06",
-    "tags": [
-      "Space news",
-      "Earth",
-      "Space"
-    ],
-    "sources": [
-      {
-        "title": "Supercomputing Tech Demo Schedule",
-        "url": "https://science.nasa.gov/earth/supercomputing-tech-demo-schedule/",
-        "source": "NASA",
-        "published": "2026-11-06T16:03:52+00:00",
-        "topic": "Earth"
-      },
-      {
-        "title": "Taking a Gander at Utah’s Goosenecks",
-        "url": "https://science.nasa.gov/earth/earth-observatory/taking-a-gander-at-utahs-goosenecks/",
-        "source": "NASA",
-        "published": "2026-11-06T05:01:00+00:00",
-        "topic": "Earth"
-      },
-      {
-        "title": "M30’s Sparkling Stars",
-        "url": "https://www.nasa.gov/image-article/m30s-sparkling-stars/",
-        "source": "NASA",
-        "published": "2026-11-06T16:23:41+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "APOD: 2026 November 6 – A Farewell to Swift",
-        "url": "https://science.nasa.gov/image-article/apod-2026-november-6-a-farewell-to-swift/",
-        "source": "NASA",
-        "published": "2026-11-06T05:05:00+00:00",
         "topic": "Space"
       }
     ]
