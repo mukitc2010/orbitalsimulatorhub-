@@ -82,6 +82,7 @@ const LEO_ALTITUDE_KM = 400;
 const LEO_RADIUS_KM = EARTH_RADIUS_KM + LEO_ALTITUDE_KM;
 const LEO_SPEED_KM_S = Math.sqrt(MU_EARTH_KM3_S2 / LEO_RADIUS_KM);
 const LEO_PERIOD_MIN = (2 * Math.PI * Math.sqrt(LEO_RADIUS_KM ** 3 / MU_EARTH_KM3_S2)) / 60;
+const shareTitle = `A ${LEO_ALTITUDE_KM} km orbit moves at ${LEO_SPEED_KM_S.toFixed(2)} km/s and returns in ${LEO_PERIOD_MIN.toFixed(0)} minutes. Free orbit sandbox.`;
 
 export function Home() {
   const [showExplore, setShowExplore] = useState(false);
@@ -104,6 +105,9 @@ export function Home() {
             <Link href="/simulator">
               <a className="mt-5 inline-flex w-fit rounded-full bg-cyan-300 px-5 py-2.5 text-sm font-semibold text-slate-950">Launch the simulator</a>
             </Link>
+            <div className="mt-4">
+              <ShareBar compact path="/simulator" title={shareTitle} />
+            </div>
             <p className="mt-4 text-lg font-semibold text-cyan-100">
               {LEO_ALTITUDE_KM} km · {LEO_SPEED_KM_S.toFixed(2)} km/s · {LEO_PERIOD_MIN.toFixed(0)} min
             </p>
@@ -299,7 +303,7 @@ export function Home() {
         </section>
 
         <div className="mb-8">
-          <ShareBar path="/" showRedditSubs />
+          <ShareBar path="/simulator" title={shareTitle} showRedditSubs />
         </div>
 
         <section className="glass-panel rounded-2xl p-5 md:p-6 mb-8">
