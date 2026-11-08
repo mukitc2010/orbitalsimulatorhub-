@@ -42,7 +42,7 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
   "/": {
     path: "/",
     title: "Orbital Mechanics Simulator — Free 3D Orbit & Swarm Simulator | NASA & Space Study",
-    description: "Free orbital mechanics simulator with 3D satellite orbits (LEO, MEO, GEO), AI swarm collision avoidance for 500+ satellites, 110+ blog posts, 500+ astronaut profiles, planet explorer, nuclear propulsion, Space AGI research. Used by 50,000+ students, engineers, and researchers worldwide. No signup required.",
+    description: "Free orbital simulator and orbit sandbox. Watch a 400 km satellite at 7.67 km/s, then open lessons on Lambert transfers and space guidance.",
     keywords: "orbital mechanics simulator, free satellite orbit simulator, 3D orbit simulator online, free orbit simulator no download, how to learn orbital mechanics, space simulator free, ISS orbit speed 7.66 km/s, ISS orbital period 92 minutes, how fast does the ISS orbit Earth, swarm simulator AI collision avoidance, Starlink satellite internet simulator, LEO MEO GEO explained, orbital velocity calculator, astronaut database 500 profiles, planet explorer weight calculator, space for kids, space for students, NASA space study free, James Webb Space Telescope discoveries, Artemis II moon mission 2026, SpaceX Falcon 9 landing, SpaceX Starship, Mars mission how long, nuclear rocket DRACO engine, satellite orbit visualization, space education free Africa, orbit simulator game, how many satellites in space 2026, escape velocity calculator, Kepler laws orbital mechanics, vis-viva equation, Hohmann transfer calculator, black hole simulator, Space AGI research, AGI artificial general intelligence, humanoid robot space NASA Valkyrie, Tsiolkovsky rocket equation",
     ogTitle: "Orbital Mechanics Simulator — Free 3D Orbit & Swarm Simulator | 110+ Articles",
     lastUpdated: "2026-04-06T00:00:00Z",
@@ -65,8 +65,8 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
   },
   "/simulator": {
     path: "/simulator",
-    title: "3D Orbit Simulator — Add LEO, MEO, GEO Satellites | ISS 7.66 km/s, Starlink, GPS | Free",
-    description: "Free 3D satellite orbit simulator. Add ISS, Starlink, GPS satellites. See altitude, velocity, orbital period in real-time. LEO (200-2000 km), MEO (2000-35786 km), GEO (35786 km). AI swarm collision avoidance for 500+ satellites. No download, no signup.",
+    title: "Orbital Simulator — Free 3D Orbit Sandbox | LEO, MEO, GEO",
+    description: "Free orbital simulator and orbit sandbox. Add a LEO, MEO, or GEO satellite and read altitude, speed, and period in the browser. No download.",
     keywords: "satellite orbit simulator, 3D orbit simulator free, orbit simulator online no download, add ISS Starlink GPS satellite, LEO MEO GEO simulator, how to simulate satellite orbit, swarm simulator AI collision avoidance, Starlink constellation simulator 6000, ISS orbit speed 7.66 km/s, satellite collision probability calculator, space traffic management AI, orbital debris avoidance, free space simulator browser, orbit visualization tool, satellite tracking simulator real-time, how fast does ISS orbit, orbital period calculator, perigee apogee explained, J2 perturbation simulation, geostationary orbit simulator",
     lastUpdated: "2026-04-06T00:00:00Z",
   },

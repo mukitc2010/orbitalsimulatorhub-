@@ -99,7 +99,7 @@ export function Home() {
           <div className="relative z-10 flex min-h-[560px] flex-col justify-end px-6 py-8 sm:px-10">
             <h1 className="max-w-xl text-4xl font-bold leading-tight text-white sm:text-5xl">Watch a satellite fall around Earth.</h1>
             <p className="mt-3 max-w-xl text-base leading-7 text-slate-100">
-              A {LEO_ALTITUDE_KM} km circular orbit moves at {LEO_SPEED_KM_S.toFixed(2)} km/s and returns in {LEO_PERIOD_MIN.toFixed(0)} minutes.
+              A free orbital simulator and orbit sandbox. A {LEO_ALTITUDE_KM} km circular orbit moves at {LEO_SPEED_KM_S.toFixed(2)} km/s and returns in {LEO_PERIOD_MIN.toFixed(0)} minutes.
             </p>
             <Link href="/simulator">
               <a className="mt-5 inline-flex w-fit rounded-full bg-cyan-300 px-5 py-2.5 text-sm font-semibold text-slate-950">Launch the simulator</a>
@@ -113,7 +113,7 @@ export function Home() {
           <Link href="/simulator">
             <a className="block rounded-2xl border border-cyan-400/30 bg-slate-950/80 p-4">
               <h2 className="text-lg font-semibold text-white">Simulator</h2>
-              <p className="mt-1 text-sm text-slate-300">Add a satellite and watch the same Earth orbit up close.</p>
+              <p className="mt-1 text-sm text-slate-300">Open the orbit sandbox and add a LEO, MEO, or GEO satellite.</p>
             </a>
           </Link>
           <Link href="/research/space-agi-math">
@@ -126,6 +126,20 @@ export function Home() {
             <a className="block rounded-2xl border border-cyan-400/30 bg-slate-950/80 p-4">
               <h2 className="text-lg font-semibold text-white">Today&apos;s space news</h2>
               <p className="mt-1 text-sm text-slate-300">{latestPost ? latestPost.title : "The latest attributed roundup."}</p>
+            </a>
+          </Link>
+        </div>
+        <div className="mb-8 grid gap-3 md:grid-cols-2">
+          <Link href="/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260608">
+            <a className="block rounded-2xl border border-white/10 bg-slate-950/80 p-4">
+              <h2 className="text-lg font-semibold text-white">Lambert&apos;s problem</h2>
+              <p className="mt-1 text-sm text-slate-300">How to plan an intercept between two orbits.</p>
+            </a>
+          </Link>
+          <Link href="/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260804">
+            <a className="block rounded-2xl border border-white/10 bg-slate-950/80 p-4">
+              <h2 className="text-lg font-semibold text-white">What is Space AGI</h2>
+              <p className="mt-1 text-sm text-slate-300">Why guidance and autonomy matter for later exploration.</p>
             </a>
           </Link>
         </div>
