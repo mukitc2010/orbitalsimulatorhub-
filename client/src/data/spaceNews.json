@@ -1,5 +1,70 @@
 [
   {
+    "slug": "space-news-2026-11-09",
+    "title": "Daily Space News - 2026-11-09",
+    "excerpt": "7 recent, attributed space headlines, grouped by planet and mission topic.",
+    "content": "Daily space news desk for 2026-11-09 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [NASA’s ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars](https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/) - NASA, published 2026-11-09.\n\n- [Ozone Hole Reaches Its 2026 Maximum](https://science.nasa.gov/earth/earth-observatory/ozone-hole-reaches-its-2026-maximum/) - NASA, published 2026-11-09.\n\n## Mars\n\n- [CHAPEA Mission 2 Crew Reflects After 378 Days on Simulated Mars](https://www.nasa.gov/centers-and-facilities/johnson/chapea-mission-2-crew-reflects-after-378-days-on-simulated-mars/) - NASA, published 2026-11-09.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [La NASA busca a la próxima generación de astronautas](https://www.nasa.gov/news-release/la-nasa-busca-a-la-proxima-generacion-de-astronautas/) - NASA, published 2026-11-09.\n\n- [NASA’s Chandra Finds Source of Star’s Mysterious Outbursts](https://science.nasa.gov/missions/chandra/nasas-chandra-finds-source-of-stars-mysterious-outbursts/) - NASA, published 2026-11-09.\n\n- [NASA Advanced Mid-Power Electric Rocket Challenge](https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-advanced-mid-power-electric-rocket-challenge/) - NASA, published 2026-11-09.\n\n- [La NASA destina un millón de dólares al reto estudiantil Base Lunar](https://www.nasa.gov/news-release/la-nasa-destina-un-millon-de-dolares-al-reto-estudiantil-base-lunar/) - NASA, published 2026-11-09.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
+    "category": "nasa-news",
+    "date": "2026-11-09",
+    "tags": [
+      "Space news",
+      "Earth",
+      "Mars",
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "NASA’s ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars",
+        "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/",
+        "source": "NASA",
+        "published": "2026-11-09T16:01:47+00:00",
+        "topic": "Earth"
+      },
+      {
+        "title": "Ozone Hole Reaches Its 2026 Maximum",
+        "url": "https://science.nasa.gov/earth/earth-observatory/ozone-hole-reaches-its-2026-maximum/",
+        "source": "NASA",
+        "published": "2026-11-09T05:00:00+00:00",
+        "topic": "Earth"
+      },
+      {
+        "title": "CHAPEA Mission 2 Crew Reflects After 378 Days on Simulated Mars",
+        "url": "https://www.nasa.gov/centers-and-facilities/johnson/chapea-mission-2-crew-reflects-after-378-days-on-simulated-mars/",
+        "source": "NASA",
+        "published": "2026-11-09T11:00:00+00:00",
+        "topic": "Mars"
+      },
+      {
+        "title": "La NASA busca a la próxima generación de astronautas",
+        "url": "https://www.nasa.gov/news-release/la-nasa-busca-a-la-proxima-generacion-de-astronautas/",
+        "source": "NASA",
+        "published": "2026-11-09T19:27:20+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA’s Chandra Finds Source of Star’s Mysterious Outbursts",
+        "url": "https://science.nasa.gov/missions/chandra/nasas-chandra-finds-source-of-stars-mysterious-outbursts/",
+        "source": "NASA",
+        "published": "2026-11-09T18:55:50+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA Advanced Mid-Power Electric Rocket Challenge",
+        "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-advanced-mid-power-electric-rocket-challenge/",
+        "source": "NASA",
+        "published": "2026-11-09T17:42:42+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "La NASA destina un millón de dólares al reto estudiantil Base Lunar",
+        "url": "https://www.nasa.gov/news-release/la-nasa-destina-un-millon-de-dolares-al-reto-estudiantil-base-lunar/",
+        "source": "NASA",
+        "published": "2026-11-09T17:36:33+00:00",
+        "topic": "Space"
+      }
+    ]
+  },
+  {
     "slug": "space-news-2026-11-08",
     "title": "Daily Space News - 2026-11-08",
     "excerpt": "7 recent, attributed space headlines, grouped by planet and mission topic.",
@@ -60,42 +125,6 @@
         "url": "https://www.nasa.gov/image-article/m30s-sparkling-stars/",
         "source": "NASA",
         "published": "2026-11-06T16:23:41+00:00",
-        "topic": "Space"
-      }
-    ]
-  },
-  {
-    "slug": "space-news-2026-11-07",
-    "title": "Daily Space News - 2026-11-07",
-    "excerpt": "3 recent, attributed space headlines, grouped by planet and mission topic.",
-    "content": "Daily space news desk for 2026-11-07 (America/New_York).\n\nAttributed headlines published within the last 7 days, because fewer than four headlines fell inside 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Cyprus: Island of Snakes, Cats, and Ophiolites](https://science.nasa.gov/earth/earth-observatory/cyprus-island-of-snakes-cats-and-ophiolites/) - NASA, published 2026-11-05.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [APOD: 2026 November 7 – De Gerlache-Kocher Massif](https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/) - NASA, published 2026-11-07.\n\n- [Midwestern City Lights](https://www.nasa.gov/image-article/midwestern-city-lights/) - NASA, published 2026-11-05.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
-    "category": "nasa-news",
-    "date": "2026-11-07",
-    "tags": [
-      "Space news",
-      "Earth",
-      "Space"
-    ],
-    "sources": [
-      {
-        "title": "Cyprus: Island of Snakes, Cats, and Ophiolites",
-        "url": "https://science.nasa.gov/earth/earth-observatory/cyprus-island-of-snakes-cats-and-ophiolites/",
-        "source": "NASA",
-        "published": "2026-11-05T05:01:00+00:00",
-        "topic": "Earth"
-      },
-      {
-        "title": "APOD: 2026 November 7 – De Gerlache-Kocher Massif",
-        "url": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
-        "source": "NASA",
-        "published": "2026-11-07T05:05:00+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "Midwestern City Lights",
-        "url": "https://www.nasa.gov/image-article/midwestern-city-lights/",
-        "source": "NASA",
-        "published": "2026-11-05T15:17:19+00:00",
         "topic": "Space"
       }
     ]
