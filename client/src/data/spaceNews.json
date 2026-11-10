@@ -1,5 +1,71 @@
 [
   {
+    "slug": "space-news-2026-11-10",
+    "title": "Daily Space News - 2026-11-10",
+    "excerpt": "7 recent, attributed space headlines, grouped by planet and mission topic.",
+    "content": "Daily space news desk for 2026-11-10 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Autumn Mornings Bring Valley Fog](https://science.nasa.gov/earth/earth-observatory/autumn-mornings-bring-valley-fog/) - NASA, published 2026-11-10.\n\n## Mars\n\n- [Rubies on Mars?](https://science.nasa.gov/blog/rubies-on-mars/) - NASA, published 2026-11-09.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\n- [APOD: 2026 November 10 – Saturn Behind the Moon](https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/) - NASA, published 2026-11-10.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [Microbiology, Spacesuits, and Cargo Mission Preps Keep Crew Busy](https://www.nasa.gov/blogs/spacestation/2026/11/10/microbiology-spacesuits-and-cargo-mission-preps-keep-crew-busy/) - NASA station, published 2026-11-10.\n\n- [NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities](https://www.nasa.gov/news-release/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities/) - NASA, published 2026-11-10.\n\n- [NASA to Welcome Expedition 74 Astronauts Home at Space Center Houston](https://www.nasa.gov/news-release/nasa-to-welcome-expedition-74-astronauts-home-at-space-center-houston/) - NASA, published 2026-11-10.\n\n- [NASA Scientists Show How Gravitational Waves Can Reveal New Worlds](https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds/) - NASA, published 2026-11-10.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
+    "category": "nasa-news",
+    "date": "2026-11-10",
+    "tags": [
+      "Space news",
+      "Earth",
+      "Mars",
+      "Saturn",
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "Autumn Mornings Bring Valley Fog",
+        "url": "https://science.nasa.gov/earth/earth-observatory/autumn-mornings-bring-valley-fog/",
+        "source": "NASA",
+        "published": "2026-11-10T05:00:00+00:00",
+        "topic": "Earth"
+      },
+      {
+        "title": "Rubies on Mars?",
+        "url": "https://science.nasa.gov/blog/rubies-on-mars/",
+        "source": "NASA",
+        "published": "2026-11-09T22:27:12+00:00",
+        "topic": "Mars"
+      },
+      {
+        "title": "APOD: 2026 November 10 – Saturn Behind the Moon",
+        "url": "https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/",
+        "source": "NASA",
+        "published": "2026-11-10T05:05:00+00:00",
+        "topic": "Saturn"
+      },
+      {
+        "title": "Microbiology, Spacesuits, and Cargo Mission Preps Keep Crew Busy",
+        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/10/microbiology-spacesuits-and-cargo-mission-preps-keep-crew-busy/",
+        "source": "NASA station",
+        "published": "2026-11-10T19:31:40+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities",
+        "url": "https://www.nasa.gov/news-release/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities/",
+        "source": "NASA",
+        "published": "2026-11-10T19:22:45+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA to Welcome Expedition 74 Astronauts Home at Space Center Houston",
+        "url": "https://www.nasa.gov/news-release/nasa-to-welcome-expedition-74-astronauts-home-at-space-center-houston/",
+        "source": "NASA",
+        "published": "2026-11-10T18:06:33+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA Scientists Show How Gravitational Waves Can Reveal New Worlds",
+        "url": "https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds/",
+        "source": "NASA",
+        "published": "2026-11-10T16:00:26+00:00",
+        "topic": "Space"
+      }
+    ]
+  },
+  {
     "slug": "space-news-2026-11-09",
     "title": "Daily Space News - 2026-11-09",
     "excerpt": "7 recent, attributed space headlines, grouped by planet and mission topic.",
@@ -60,71 +126,6 @@
         "url": "https://www.nasa.gov/news-release/la-nasa-destina-un-millon-de-dolares-al-reto-estudiantil-base-lunar/",
         "source": "NASA",
         "published": "2026-11-09T17:36:33+00:00",
-        "topic": "Space"
-      }
-    ]
-  },
-  {
-    "slug": "space-news-2026-11-08",
-    "title": "Daily Space News - 2026-11-08",
-    "excerpt": "7 recent, attributed space headlines, grouped by planet and mission topic.",
-    "content": "Daily space news desk for 2026-11-08 (America/New_York).\n\nAttributed headlines published within the last 7 days, because fewer than four headlines fell inside 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Supercomputing Tech Demo Schedule](https://science.nasa.gov/earth/supercomputing-tech-demo-schedule/) - NASA, published 2026-11-06.\n\n- [Taking a Gander at Utah’s Goosenecks](https://science.nasa.gov/earth/earth-observatory/taking-a-gander-at-utahs-goosenecks/) - NASA, published 2026-11-06.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\n- [NASA Awards Moon Base Transportation, Technology, Science Projects](https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/) - NASA, published 2026-11-07.\n\n## Space\n\n- [APOD: 2026 November 8 – Major Fireball Meteor](https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/) - NASA, published 2026-11-08.\n\n- [NASA Seeks Next Generation of Explorers to Join Astronaut Corps](https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/) - NASA, published 2026-11-07.\n\n- [Spacewalk Cleanup, Biomedical Science, and Maintenance Wrap Up Week](https://www.nasa.gov/blogs/spacestation/2026/11/06/spacewalk-cleanup-biomedical-science-and-maintenance-wrap-up-week/) - NASA station, published 2026-11-06.\n\n- [M30’s Sparkling Stars](https://www.nasa.gov/image-article/m30s-sparkling-stars/) - NASA, published 2026-11-06.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
-    "category": "nasa-news",
-    "date": "2026-11-08",
-    "tags": [
-      "Space news",
-      "Earth",
-      "Moon",
-      "Space"
-    ],
-    "sources": [
-      {
-        "title": "Supercomputing Tech Demo Schedule",
-        "url": "https://science.nasa.gov/earth/supercomputing-tech-demo-schedule/",
-        "source": "NASA",
-        "published": "2026-11-06T16:03:52+00:00",
-        "topic": "Earth"
-      },
-      {
-        "title": "Taking a Gander at Utah’s Goosenecks",
-        "url": "https://science.nasa.gov/earth/earth-observatory/taking-a-gander-at-utahs-goosenecks/",
-        "source": "NASA",
-        "published": "2026-11-06T05:01:00+00:00",
-        "topic": "Earth"
-      },
-      {
-        "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
-        "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
-        "source": "NASA",
-        "published": "2026-11-07T22:47:03+00:00",
-        "topic": "Moon"
-      },
-      {
-        "title": "APOD: 2026 November 8 – Major Fireball Meteor",
-        "url": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
-        "source": "NASA",
-        "published": "2026-11-08T05:05:00+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
-        "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
-        "source": "NASA",
-        "published": "2026-11-07T18:11:57+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "Spacewalk Cleanup, Biomedical Science, and Maintenance Wrap Up Week",
-        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/06/spacewalk-cleanup-biomedical-science-and-maintenance-wrap-up-week/",
-        "source": "NASA station",
-        "published": "2026-11-06T17:48:13+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "M30’s Sparkling Stars",
-        "url": "https://www.nasa.gov/image-article/m30s-sparkling-stars/",
-        "source": "NASA",
-        "published": "2026-11-06T16:23:41+00:00",
         "topic": "Space"
       }
     ]
