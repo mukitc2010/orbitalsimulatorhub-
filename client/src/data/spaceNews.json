@@ -1,5 +1,63 @@
 [
   {
+    "slug": "space-news-2026-11-12",
+    "title": "Daily Space News - 2026-11-12",
+    "excerpt": "6 recent, attributed space headlines, grouped by planet and mission topic.",
+    "content": "Daily space news desk for 2026-11-12 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Scotland’s Flow Country](https://science.nasa.gov/earth/earth-observatory/scotlands-flow-country/) - NASA, published 2026-11-12.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\n- [APOD: 2026 November 12 – Moon, Venus and Spica Meet](https://science.nasa.gov/image-article/apod-2026-november-12-moon-venus-and-spica-meet/) - NASA, published 2026-11-12.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [Heart in the Sky at NASA Kennedy](https://www.nasa.gov/image-article/heart-in-the-sky-at-nasa-kennedy/) - NASA, published 2026-11-12.\n\n- [NASA Ames Stars of the Month: November 2026](https://www.nasa.gov/general/nasa-ames-stars-of-the-month-november-2026/) - NASA, published 2026-11-12.\n\n- [NASA’s Hubble Offers Cosmic Sampler of Targets for Roman](https://science.nasa.gov/missions/hubble/nasas-hubble-offers-cosmic-sampler-of-targets-for-roman/) - NASA, published 2026-11-12.\n\n- [Through NASA’s Lens: Capturing Space Shuttle Endeavour’s Move to LA](https://www.nasa.gov/centers-and-facilities/armstrong/through-nasas-lens-capturing-space-shuttle-endeavours-move-to-la/) - NASA, published 2026-11-12.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
+    "category": "nasa-news",
+    "date": "2026-11-12",
+    "tags": [
+      "Space news",
+      "Earth",
+      "Space",
+      "Venus"
+    ],
+    "sources": [
+      {
+        "title": "Scotland’s Flow Country",
+        "url": "https://science.nasa.gov/earth/earth-observatory/scotlands-flow-country/",
+        "source": "NASA",
+        "published": "2026-11-12T05:01:00+00:00",
+        "topic": "Earth"
+      },
+      {
+        "title": "APOD: 2026 November 12 – Moon, Venus and Spica Meet",
+        "url": "https://science.nasa.gov/image-article/apod-2026-november-12-moon-venus-and-spica-meet/",
+        "source": "NASA",
+        "published": "2026-11-12T05:05:00+00:00",
+        "topic": "Venus"
+      },
+      {
+        "title": "Heart in the Sky at NASA Kennedy",
+        "url": "https://www.nasa.gov/image-article/heart-in-the-sky-at-nasa-kennedy/",
+        "source": "NASA",
+        "published": "2026-11-12T19:12:49+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA Ames Stars of the Month: November 2026",
+        "url": "https://www.nasa.gov/general/nasa-ames-stars-of-the-month-november-2026/",
+        "source": "NASA",
+        "published": "2026-11-12T17:54:32+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA’s Hubble Offers Cosmic Sampler of Targets for Roman",
+        "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-offers-cosmic-sampler-of-targets-for-roman/",
+        "source": "NASA",
+        "published": "2026-11-12T13:18:40+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "Through NASA’s Lens: Capturing Space Shuttle Endeavour’s Move to LA",
+        "url": "https://www.nasa.gov/centers-and-facilities/armstrong/through-nasas-lens-capturing-space-shuttle-endeavours-move-to-la/",
+        "source": "NASA",
+        "published": "2026-11-12T13:00:00+00:00",
+        "topic": "Space"
+      }
+    ]
+  },
+  {
     "slug": "space-news-2026-11-11",
     "title": "Daily Space News - 2026-11-11",
     "excerpt": "5 recent, attributed space headlines, grouped by planet and mission topic.",
@@ -45,72 +103,6 @@
         "url": "https://science.nasa.gov/blog/curiosity-blog-sols-5050-5055-its-nazca-our-49th-drill-hole/",
         "source": "NASA",
         "published": "2026-11-10T01:05:48+00:00",
-        "topic": "Space"
-      }
-    ]
-  },
-  {
-    "slug": "space-news-2026-11-10",
-    "title": "Daily Space News - 2026-11-10",
-    "excerpt": "7 recent, attributed space headlines, grouped by planet and mission topic.",
-    "content": "Daily space news desk for 2026-11-10 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Autumn Mornings Bring Valley Fog](https://science.nasa.gov/earth/earth-observatory/autumn-mornings-bring-valley-fog/) - NASA, published 2026-11-10.\n\n## Mars\n\n- [Rubies on Mars?](https://science.nasa.gov/blog/rubies-on-mars/) - NASA, published 2026-11-09.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\n- [APOD: 2026 November 10 – Saturn Behind the Moon](https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/) - NASA, published 2026-11-10.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [Microbiology, Spacesuits, and Cargo Mission Preps Keep Crew Busy](https://www.nasa.gov/blogs/spacestation/2026/11/10/microbiology-spacesuits-and-cargo-mission-preps-keep-crew-busy/) - NASA station, published 2026-11-10.\n\n- [NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities](https://www.nasa.gov/news-release/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities/) - NASA, published 2026-11-10.\n\n- [NASA to Welcome Expedition 74 Astronauts Home at Space Center Houston](https://www.nasa.gov/news-release/nasa-to-welcome-expedition-74-astronauts-home-at-space-center-houston/) - NASA, published 2026-11-10.\n\n- [NASA Scientists Show How Gravitational Waves Can Reveal New Worlds](https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds/) - NASA, published 2026-11-10.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
-    "category": "nasa-news",
-    "date": "2026-11-10",
-    "tags": [
-      "Space news",
-      "Earth",
-      "Mars",
-      "Saturn",
-      "Space"
-    ],
-    "sources": [
-      {
-        "title": "Autumn Mornings Bring Valley Fog",
-        "url": "https://science.nasa.gov/earth/earth-observatory/autumn-mornings-bring-valley-fog/",
-        "source": "NASA",
-        "published": "2026-11-10T05:00:00+00:00",
-        "topic": "Earth"
-      },
-      {
-        "title": "Rubies on Mars?",
-        "url": "https://science.nasa.gov/blog/rubies-on-mars/",
-        "source": "NASA",
-        "published": "2026-11-09T22:27:12+00:00",
-        "topic": "Mars"
-      },
-      {
-        "title": "APOD: 2026 November 10 – Saturn Behind the Moon",
-        "url": "https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/",
-        "source": "NASA",
-        "published": "2026-11-10T05:05:00+00:00",
-        "topic": "Saturn"
-      },
-      {
-        "title": "Microbiology, Spacesuits, and Cargo Mission Preps Keep Crew Busy",
-        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/10/microbiology-spacesuits-and-cargo-mission-preps-keep-crew-busy/",
-        "source": "NASA station",
-        "published": "2026-11-10T19:31:40+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities",
-        "url": "https://www.nasa.gov/news-release/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities/",
-        "source": "NASA",
-        "published": "2026-11-10T19:22:45+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "NASA to Welcome Expedition 74 Astronauts Home at Space Center Houston",
-        "url": "https://www.nasa.gov/news-release/nasa-to-welcome-expedition-74-astronauts-home-at-space-center-houston/",
-        "source": "NASA",
-        "published": "2026-11-10T18:06:33+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "NASA Scientists Show How Gravitational Waves Can Reveal New Worlds",
-        "url": "https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds/",
-        "source": "NASA",
-        "published": "2026-11-10T16:00:26+00:00",
         "topic": "Space"
       }
     ]
