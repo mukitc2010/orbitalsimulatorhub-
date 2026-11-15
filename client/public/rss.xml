@@ -5,7 +5,7 @@
     <link>https://www.orbitalsimulatorhub.com/blog</link>
     <description>Space technology, orbital mechanics, spacecraft simulation, robotics, artificial intelligence, and Space-AGI research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 13:36:48 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 18:52:50 GMT</lastBuildDate>
     <generator>OrbitalSimulatorHub RSS Generator</generator>
     <atom:link href="https://www.orbitalsimulatorhub.com/rss.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -14,20 +14,20 @@
       <link>https://www.orbitalsimulatorhub.com</link>
     </image>
     <item>
+      <title>Daily Space News - 2026-11-15</title>
+      <link>https://www.orbitalsimulatorhub.com/blog/space-news-2026-11-15</link>
+      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/space-news-2026-11-15</guid>
+      <description>6 recent, attributed space headlines, grouped by planet and mission topic.</description>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <category>nasa-news</category>
+      <author>OrbitalSimulatorHub</author>
+    </item>
+    <item>
       <title>Daily Space News - 2026-11-14</title>
       <link>https://www.orbitalsimulatorhub.com/blog/space-news-2026-11-14</link>
       <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/space-news-2026-11-14</guid>
       <description>5 recent, attributed space headlines, grouped by planet and mission topic.</description>
       <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
-      <category>nasa-news</category>
-      <author>OrbitalSimulatorHub</author>
-    </item>
-    <item>
-      <title>Daily Space News - 2026-11-13</title>
-      <link>https://www.orbitalsimulatorhub.com/blog/space-news-2026-11-13</link>
-      <guid isPermaLink="true">https://www.orbitalsimulatorhub.com/blog/space-news-2026-11-13</guid>
-      <description>6 recent, attributed space headlines, grouped by planet and mission topic.</description>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
       <category>nasa-news</category>
       <author>OrbitalSimulatorHub</author>
     </item>
