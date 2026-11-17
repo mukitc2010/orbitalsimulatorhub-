@@ -1,5 +1,55 @@
 [
   {
+    "slug": "space-news-2026-11-17",
+    "title": "Daily Space News - 2026-11-17",
+    "excerpt": "5 recent, attributed space headlines, grouped by planet and mission topic.",
+    "content": "Daily space news desk for 2026-11-17 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Tossing Fireworks from Cloud to Cloud](https://science.nasa.gov/earth/earth-observatory/tossing-fireworks-from-cloud-to-cloud/) - NASA, published 2026-11-17.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [BPS Digital AVATAR Challenge](https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/bps-digital-avatar-challenge/) - NASA, published 2026-11-17.\n\n- [New Album of Baby Star Sounds Shared by NASA’s Chandra](https://science.nasa.gov/missions/chandra/new-album-of-baby-star-sounds-shared-by-nasas-chandra/) - NASA, published 2026-11-17.\n\n- [Cardiac Research, Exercise Studies on Station Keeping Crews Healthy](https://www.nasa.gov/blogs/spacestation/2026/11/17/cardiac-research-exercise-studies-on-station-keeping-crews-healthy/) - NASA station, published 2026-11-17.\n\n- [NASA to Cover 35th SpaceX Resupply Mission Space Station Departure](https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/) - NASA, published 2026-11-17.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
+    "category": "nasa-news",
+    "date": "2026-11-17",
+    "tags": [
+      "Space news",
+      "Earth",
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "Tossing Fireworks from Cloud to Cloud",
+        "url": "https://science.nasa.gov/earth/earth-observatory/tossing-fireworks-from-cloud-to-cloud/",
+        "source": "NASA",
+        "published": "2026-11-17T05:01:00+00:00",
+        "topic": "Earth"
+      },
+      {
+        "title": "BPS Digital AVATAR Challenge",
+        "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/bps-digital-avatar-challenge/",
+        "source": "NASA",
+        "published": "2026-11-17T20:39:38+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "New Album of Baby Star Sounds Shared by NASA’s Chandra",
+        "url": "https://science.nasa.gov/missions/chandra/new-album-of-baby-star-sounds-shared-by-nasas-chandra/",
+        "source": "NASA",
+        "published": "2026-11-17T20:26:17+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "Cardiac Research, Exercise Studies on Station Keeping Crews Healthy",
+        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/17/cardiac-research-exercise-studies-on-station-keeping-crews-healthy/",
+        "source": "NASA station",
+        "published": "2026-11-17T19:28:52+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA to Cover 35th SpaceX Resupply Mission Space Station Departure",
+        "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/",
+        "source": "NASA",
+        "published": "2026-11-17T19:16:22+00:00",
+        "topic": "Space"
+      }
+    ]
+  },
+  {
     "slug": "space-news-2026-11-16",
     "title": "Daily Space News - 2026-11-16",
     "excerpt": "6 recent, attributed space headlines, grouped by planet and mission topic.",
@@ -52,63 +102,6 @@
         "url": "https://science.nasa.gov/image-article/apod-2026-november-16-ngc-7129-star-formation-with-jets-from-webb/",
         "source": "NASA",
         "published": "2026-11-16T05:05:00+00:00",
-        "topic": "Space"
-      }
-    ]
-  },
-  {
-    "slug": "space-news-2026-11-15",
-    "title": "Daily Space News - 2026-11-15",
-    "excerpt": "6 recent, attributed space headlines, grouped by planet and mission topic.",
-    "content": "Daily space news desk for 2026-11-15 (America/New_York).\n\nAttributed headlines published within the last 7 days, because fewer than four headlines fell inside 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Gemini Astronaut Photos Inspired Early Earth Observation Program](https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/) - NASA, published 2026-11-13.\n\n- [A Global Rebound for Mangroves](https://science.nasa.gov/earth/earth-observatory/a-global-rebound-for-mangroves/) - NASA, published 2026-11-13.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [Botany, Biomedicine, and Cargo Ops Wrap Up Week Aboard Station](https://www.nasa.gov/blogs/spacestation/2026/11/13/botany-biomedicine-and-cargo-ops-wrap-up-week-aboard-station/) - NASA station, published 2026-11-13.\n\n- [Outbursts from a Massive Star](https://www.nasa.gov/image-article/outbursts-from-a-massive-star/) - NASA, published 2026-11-13.\n\n- [APOD: 2026 November 13 – NGC 206 and the Star Clouds of Andromeda](https://science.nasa.gov/image-article/apod-2026-november-13-ngc-206-and-the-star-clouds-of-andromeda/) - NASA, published 2026-11-13.\n\n- [Crew Packs Dragon with Science and Cleans Spacesuits](https://www.nasa.gov/blogs/spacestation/2026/11/12/dragon-science-spacesuits/) - NASA station, published 2026-11-12.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
-    "category": "nasa-news",
-    "date": "2026-11-15",
-    "tags": [
-      "Space news",
-      "Earth",
-      "Space"
-    ],
-    "sources": [
-      {
-        "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
-        "url": "https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/",
-        "source": "NASA",
-        "published": "2026-11-13T16:05:54+00:00",
-        "topic": "Earth"
-      },
-      {
-        "title": "A Global Rebound for Mangroves",
-        "url": "https://science.nasa.gov/earth/earth-observatory/a-global-rebound-for-mangroves/",
-        "source": "NASA",
-        "published": "2026-11-13T05:01:00+00:00",
-        "topic": "Earth"
-      },
-      {
-        "title": "Botany, Biomedicine, and Cargo Ops Wrap Up Week Aboard Station",
-        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/13/botany-biomedicine-and-cargo-ops-wrap-up-week-aboard-station/",
-        "source": "NASA station",
-        "published": "2026-11-13T18:00:58+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "Outbursts from a Massive Star",
-        "url": "https://www.nasa.gov/image-article/outbursts-from-a-massive-star/",
-        "source": "NASA",
-        "published": "2026-11-13T16:39:33+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "APOD: 2026 November 13 – NGC 206 and the Star Clouds of Andromeda",
-        "url": "https://science.nasa.gov/image-article/apod-2026-november-13-ngc-206-and-the-star-clouds-of-andromeda/",
-        "source": "NASA",
-        "published": "2026-11-13T05:05:00+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "Crew Packs Dragon with Science and Cleans Spacesuits",
-        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/12/dragon-science-spacesuits/",
-        "source": "NASA station",
-        "published": "2026-11-12T22:07:49+00:00",
         "topic": "Space"
       }
     ]
