@@ -1,5 +1,47 @@
 [
   {
+    "slug": "space-news-2026-11-18",
+    "title": "Daily Space News - 2026-11-18",
+    "excerpt": "4 recent, attributed space headlines, grouped by planet and mission topic.",
+    "content": "Daily space news desk for 2026-11-18 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [NASA, SpaceX Prepare for Dragon Undocking as Science Packing Continues](https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-prepare-for-dragon-undocking-as-science-packing-continues/) - NASA station, published 2026-11-18.\n\n- [NASA, SpaceX Stand Down from Dragon’s Undocking on Wednesday](https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/) - NASA station, published 2026-11-18.\n\n- [NASA to Conduct Low-Altitude Flights Over Texas Farmland](https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-over-texas-farmland/) - NASA aeronautics, published 2026-11-17.\n\n- [Biotechnology, Spacesuit Work, and Dragon Packing Start Week Aboard Station](https://www.nasa.gov/blogs/spacestation/2026/11/16/biotechnology-spacesuit-work-and-dragon-packing-start-week-aboard-station/) - NASA station, published 2026-11-16.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
+    "category": "nasa-news",
+    "date": "2026-11-18",
+    "tags": [
+      "Space news",
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "NASA, SpaceX Prepare for Dragon Undocking as Science Packing Continues",
+        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-prepare-for-dragon-undocking-as-science-packing-continues/",
+        "source": "NASA station",
+        "published": "2026-11-18T19:09:48+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA, SpaceX Stand Down from Dragon’s Undocking on Wednesday",
+        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/",
+        "source": "NASA station",
+        "published": "2026-11-18T06:44:57+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "NASA to Conduct Low-Altitude Flights Over Texas Farmland",
+        "url": "https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-over-texas-farmland/",
+        "source": "NASA aeronautics",
+        "published": "2026-11-17T17:12:20+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "Biotechnology, Spacesuit Work, and Dragon Packing Start Week Aboard Station",
+        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/16/biotechnology-spacesuit-work-and-dragon-packing-start-week-aboard-station/",
+        "source": "NASA station",
+        "published": "2026-11-16T22:24:06+00:00",
+        "topic": "Space"
+      }
+    ]
+  },
+  {
     "slug": "space-news-2026-11-17",
     "title": "Daily Space News - 2026-11-17",
     "excerpt": "5 recent, attributed space headlines, grouped by planet and mission topic.",
@@ -45,63 +87,6 @@
         "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/",
         "source": "NASA",
         "published": "2026-11-17T19:16:22+00:00",
-        "topic": "Space"
-      }
-    ]
-  },
-  {
-    "slug": "space-news-2026-11-16",
-    "title": "Daily Space News - 2026-11-16",
-    "excerpt": "6 recent, attributed space headlines, grouped by planet and mission topic.",
-    "content": "Daily space news desk for 2026-11-16 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [Sentinel-6B in Orbit Around Earth](https://science.nasa.gov/photojournal/sentinel-6b-in-orbit-around-earth/) - NASA, published 2026-11-16.\n\n- [The Last Ice on Puncak Jaya](https://science.nasa.gov/earth/earth-observatory/the-last-ice-on-puncak-jaya/) - NASA, published 2026-11-16.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [NASA Receives 16th Consecutive ‘Clean’ Financial Audit Opinion](https://www.nasa.gov/news-release/nasa-receives-16th-consecutive-clean-financial-audit-opinion/) - NASA, published 2026-11-16.\n\n- [Thunderbirds in Formation](https://www.nasa.gov/image-article/thunderbirds-in-formation/) - NASA, published 2026-11-16.\n\n- [Contractor to Civil Servant: NASA Welcomes Jim Mirandy](https://www.nasa.gov/centers-and-facilities/stennis/contractor-to-civil-servant-jim-mirandy/) - NASA, published 2026-11-16.\n\n- [APOD: 2026 November 16 – NGC 7129: Star Formation with Jets from Webb](https://science.nasa.gov/image-article/apod-2026-november-16-ngc-7129-star-formation-with-jets-from-webb/) - NASA, published 2026-11-16.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
-    "category": "nasa-news",
-    "date": "2026-11-16",
-    "tags": [
-      "Space news",
-      "Earth",
-      "Space"
-    ],
-    "sources": [
-      {
-        "title": "Sentinel-6B in Orbit Around Earth",
-        "url": "https://science.nasa.gov/photojournal/sentinel-6b-in-orbit-around-earth/",
-        "source": "NASA",
-        "published": "2026-11-16T18:52:32+00:00",
-        "topic": "Earth"
-      },
-      {
-        "title": "The Last Ice on Puncak Jaya",
-        "url": "https://science.nasa.gov/earth/earth-observatory/the-last-ice-on-puncak-jaya/",
-        "source": "NASA",
-        "published": "2026-11-16T05:00:00+00:00",
-        "topic": "Earth"
-      },
-      {
-        "title": "NASA Receives 16th Consecutive ‘Clean’ Financial Audit Opinion",
-        "url": "https://www.nasa.gov/news-release/nasa-receives-16th-consecutive-clean-financial-audit-opinion/",
-        "source": "NASA",
-        "published": "2026-11-16T20:30:40+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "Thunderbirds in Formation",
-        "url": "https://www.nasa.gov/image-article/thunderbirds-in-formation/",
-        "source": "NASA",
-        "published": "2026-11-16T18:34:47+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "Contractor to Civil Servant: NASA Welcomes Jim Mirandy",
-        "url": "https://www.nasa.gov/centers-and-facilities/stennis/contractor-to-civil-servant-jim-mirandy/",
-        "source": "NASA",
-        "published": "2026-11-16T15:22:09+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "APOD: 2026 November 16 – NGC 7129: Star Formation with Jets from Webb",
-        "url": "https://science.nasa.gov/image-article/apod-2026-november-16-ngc-7129-star-formation-with-jets-from-webb/",
-        "source": "NASA",
-        "published": "2026-11-16T05:05:00+00:00",
         "topic": "Space"
       }
     ]
