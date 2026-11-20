@@ -1,5 +1,56 @@
 [
   {
+    "slug": "space-news-2026-11-20",
+    "title": "Daily Space News - 2026-11-20",
+    "excerpt": "5 recent, attributed space headlines, grouped by planet and mission topic.",
+    "content": "Daily space news desk for 2026-11-20 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\n- [The Stormy Southwest Pacific](https://science.nasa.gov/earth/earth-observatory/the-stormy-southwest-pacific/) - NASA, published 2026-11-20.\n\n## Mars\n\n- [NASA’s Curiosity Mars Rover Collects Samples](https://www.nasa.gov/image-article/nasas-curiosity-mars-rover-collects-samples/) - NASA, published 2026-11-20.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [NASA Honor Awards Ceremony Recognizes Employees at Stennis Space Center](https://www.nasa.gov/centers-and-facilities/stennis/honor-awards-ceremony-at-stennis/) - NASA, published 2026-11-20.\n\n- [APOD: 2026 November 20 – V-G-R](https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/) - NASA, published 2026-11-20.\n\n- [APOD: 2026 November 19 – The Horsehead and Flame Nebulas](https://science.nasa.gov/image-article/apod-2026-november-19-the-horsehead-and-flame-nebulas/) - NASA, published 2026-11-19.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
+    "category": "nasa-news",
+    "date": "2026-11-20",
+    "tags": [
+      "Space news",
+      "Earth",
+      "Mars",
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "The Stormy Southwest Pacific",
+        "url": "https://science.nasa.gov/earth/earth-observatory/the-stormy-southwest-pacific/",
+        "source": "NASA",
+        "published": "2026-11-20T05:01:00+00:00",
+        "topic": "Earth"
+      },
+      {
+        "title": "NASA’s Curiosity Mars Rover Collects Samples",
+        "url": "https://www.nasa.gov/image-article/nasas-curiosity-mars-rover-collects-samples/",
+        "source": "NASA",
+        "published": "2026-11-20T15:53:24+00:00",
+        "topic": "Mars"
+      },
+      {
+        "title": "NASA Honor Awards Ceremony Recognizes Employees at Stennis Space Center",
+        "url": "https://www.nasa.gov/centers-and-facilities/stennis/honor-awards-ceremony-at-stennis/",
+        "source": "NASA",
+        "published": "2026-11-20T16:27:46+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "APOD: 2026 November 20 – V-G-R",
+        "url": "https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/",
+        "source": "NASA",
+        "published": "2026-11-20T05:05:00+00:00",
+        "topic": "Space"
+      },
+      {
+        "title": "APOD: 2026 November 19 – The Horsehead and Flame Nebulas",
+        "url": "https://science.nasa.gov/image-article/apod-2026-november-19-the-horsehead-and-flame-nebulas/",
+        "source": "NASA",
+        "published": "2026-11-19T05:05:00+00:00",
+        "topic": "Space"
+      }
+    ]
+  },
+  {
     "slug": "space-news-2026-11-19",
     "title": "Daily Space News - 2026-11-19",
     "excerpt": "6 recent, attributed space headlines, grouped by planet and mission topic.",
@@ -52,48 +103,6 @@
         "url": "https://www.nasa.gov/image-article/latest-rs-25-engine-test-in-support-of-future-artemis-missions/",
         "source": "NASA",
         "published": "2026-11-19T14:44:39+00:00",
-        "topic": "Space"
-      }
-    ]
-  },
-  {
-    "slug": "space-news-2026-11-18",
-    "title": "Daily Space News - 2026-11-18",
-    "excerpt": "4 recent, attributed space headlines, grouped by planet and mission topic.",
-    "content": "Daily space news desk for 2026-11-18 (America/New_York).\n\nAttributed headlines published within the last 48 hours. Follow each source for the full reporting; publication dates are not necessarily event dates.\n\n## Earth\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mars\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Neptune\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Mercury\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Venus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Jupiter\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Saturn\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Uranus\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Moon\n\nNo new eligible headline found in the checked feeds for this topic today.\n\n## Space\n\n- [NASA, SpaceX Prepare for Dragon Undocking as Science Packing Continues](https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-prepare-for-dragon-undocking-as-science-packing-continues/) - NASA station, published 2026-11-18.\n\n- [NASA, SpaceX Stand Down from Dragon’s Undocking on Wednesday](https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/) - NASA station, published 2026-11-18.\n\n- [NASA to Conduct Low-Altitude Flights Over Texas Farmland](https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-over-texas-farmland/) - NASA aeronautics, published 2026-11-17.\n\n- [Biotechnology, Spacesuit Work, and Dragon Packing Start Week Aboard Station](https://www.nasa.gov/blogs/spacestation/2026/11/16/biotechnology-spacesuit-work-and-dragon-packing-start-week-aboard-station/) - NASA station, published 2026-11-16.\n\n## Coverage note\nOne or more feeds were unavailable; this roundup has partial source coverage.",
-    "category": "nasa-news",
-    "date": "2026-11-18",
-    "tags": [
-      "Space news",
-      "Space"
-    ],
-    "sources": [
-      {
-        "title": "NASA, SpaceX Prepare for Dragon Undocking as Science Packing Continues",
-        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-prepare-for-dragon-undocking-as-science-packing-continues/",
-        "source": "NASA station",
-        "published": "2026-11-18T19:09:48+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "NASA, SpaceX Stand Down from Dragon’s Undocking on Wednesday",
-        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/",
-        "source": "NASA station",
-        "published": "2026-11-18T06:44:57+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "NASA to Conduct Low-Altitude Flights Over Texas Farmland",
-        "url": "https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-over-texas-farmland/",
-        "source": "NASA aeronautics",
-        "published": "2026-11-17T17:12:20+00:00",
-        "topic": "Space"
-      },
-      {
-        "title": "Biotechnology, Spacesuit Work, and Dragon Packing Start Week Aboard Station",
-        "url": "https://www.nasa.gov/blogs/spacestation/2026/11/16/biotechnology-spacesuit-work-and-dragon-packing-start-week-aboard-station/",
-        "source": "NASA station",
-        "published": "2026-11-16T22:24:06+00:00",
         "topic": "Space"
       }
     ]
