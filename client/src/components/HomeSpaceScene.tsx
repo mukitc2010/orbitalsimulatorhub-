@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
+import { R3FLine, R3FLineMaterial } from "./r3fHost";
 
 function useReducedMotion() {
   const [reducedMotion, setReducedMotion] = useState(false);
@@ -111,9 +112,9 @@ function Orbit({ radius, tilt, speed, color, reducedMotion }: {
 
   return (
     <group ref={group} rotation={[tilt, 0, 0]}>
-      <line geometry={orbit}>
-        <lineBasicMaterial color={color} transparent opacity={0.38} />
-      </line>
+      <R3FLine geometry={orbit}>
+        <R3FLineMaterial color={color} transparent opacity={0.38} />
+      </R3FLine>
       <mesh ref={satellite} position={[radius, 0, 0]}>
         <boxGeometry args={[0.14, 0.07, 0.22]} />
         <meshStandardMaterial color="#d8f3ff" emissive={color} emissiveIntensity={1.2} />

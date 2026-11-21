@@ -4,6 +4,7 @@ import { getPostBySlug, getRecentPosts } from "../data/blogPosts";
 import { BlogContent } from "../components/BlogContent";
 import { getBlogImage, handleImageError } from "../data/blogImages";
 import { ShareBar } from "../components/ShareBar";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 const SITE_NAME = "Orbital Simulator Hub";
 const SITE_URL = "https://www.orbitalsimulatorhub.com";
@@ -76,7 +77,7 @@ export function BlogPost() {
           <div className="mb-4">
             <span className="text-xs text-slate-500 uppercase tracking-wide">{post.category.replace("-", " ")}</span>
             <span className="text-slate-400 mx-2">·</span>
-            <time className="text-xs text-slate-500">{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</time>
+            <time className="text-xs text-slate-500" dateTime={post.date}>{formatDisplayDate(post.date, "long")}</time>
           </div>
           <h1 className="headline mb-4">{post.title}</h1>
           <BlogContent content={post.content} />

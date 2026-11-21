@@ -1,6 +1,7 @@
 import { Link, useRoute } from "wouter";
 import { getPostsByCategory, type BlogPost } from "../data/blogPosts";
 import { getBlogImage, handleImageError } from "../data/blogImages";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 const CATEGORY_LABELS: Record<string, { label: string; emoji: string }> = {
   "space-agi": { label: "Space AGI", emoji: "🧠" },
@@ -52,7 +53,7 @@ export function BlogCategory() {
               <div className="p-5">
                 <h3 className="font-bold text-lg mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
                 <p className="text-sm mb-3 line-clamp-2" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
-                <p className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+                <p className="text-xs" style={{ color: "var(--text-muted)" }}>{formatDisplayDate(post.date, "long")}</p>
               </div>
             </a>
           </Link>

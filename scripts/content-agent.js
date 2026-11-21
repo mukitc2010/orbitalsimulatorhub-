@@ -184,6 +184,10 @@ async function generateBlogPost(cat) {
 
 function appendBlogPost(post) {
   let src = fs.readFileSync(BLOG_FILE, 'utf8');
+  if (src.includes(`slug: "${post.slug}"`)) {
+    console.log(`   Skipping duplicate slug: ${post.slug}`);
+    return false;
+  }
   const entry = `  {
     slug: "${post.slug}",
     title: "${post.title.replace(/"/g, '\\"')}",
@@ -199,6 +203,7 @@ function appendBlogPost(post) {
   if (idx === -1) throw new Error('Cannot find end of BLOG_POSTS array');
   src = src.slice(0, idx) + entry + '\n' + src.slice(idx);
   fs.writeFileSync(BLOG_FILE, src, 'utf8');
+  return true;
 }
 
 // ─── Generate daily content JSON ───────────────────────
@@ -279,8 +284,8 @@ async function main() {
   console.log(`   Slug: ${blogPost.slug}`);
 
   if (!DRY_RUN) {
-    appendBlogPost(blogPost);
-    console.log('   ✅ Blog post appended to blogPosts.ts');
+    const appended = appendBlogPost(blogPost);
+    console.log(appended ? '   ✅ Blog post appended to blogPosts.ts' : '   ⚠️  Blog post already existed');
   } else {
     console.log('   (dry run — not written)');
   }

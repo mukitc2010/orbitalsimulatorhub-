@@ -37,21 +37,34 @@ interface QuizQuestion {
   answer: number;
 }
 
-function getQuiz(p: Planet): QuizQuestion[] {
+function quizChoices(correct: string, alternates: string[]): string[] {
+  const options = [correct];
+  for (const alternate of alternates) {
+    if (alternate && !options.includes(alternate)) options.push(alternate);
+    if (options.length === 4) break;
+  }
+  return options;
+}
+
+export function buildPlanetQuiz(p: Planet): QuizQuestion[] {
+  const distanceCorrect = fmtDist(p.distanceFromSunKm);
+  const gravityCorrect = `${p.surfaceGravityG.toFixed(2)}g`;
+  const moonCorrect = String(p.moons);
+  const typeCorrect = p.type.replace(/_/g, " ");
   return [
     {
       q: `How far is ${p.name} from the Sun?`,
-      options: [fmtDist(p.distanceFromSunKm), fmtDist(p.distanceFromSunKm * 2), fmtDist(p.distanceFromSunKm / 3), fmtDist(p.distanceFromSunKm * 0.6)],
+      options: quizChoices(distanceCorrect, [2, 0.33, 0.6, 1.5, 3, 0.25, 10].map((factor) => fmtDist(Math.max(1, p.distanceFromSunKm * factor)))),
       answer: 0,
     },
     {
       q: `How many moons does ${p.name} have?`,
-      options: [String(p.moons), String(p.moons + 5), String(Math.max(0, p.moons - 3)), String(p.moons + 12)],
+      options: quizChoices(moonCorrect, [1, 2, 3, 5, 8, 12, 16, 24].flatMap((step) => [String(p.moons + step), String(Math.max(0, p.moons - step))])),
       answer: 0,
     },
     {
       q: `What is ${p.name}'s surface gravity compared to Earth?`,
-      options: [`${p.surfaceGravityG.toFixed(2)}g`, `${(p.surfaceGravityG * 1.5).toFixed(2)}g`, `${(p.surfaceGravityG * 0.5).toFixed(2)}g`, "1.00g"],
+      options: quizChoices(gravityCorrect, [1.5, 0.5, 2, 0.25, 3].map((factor) => `${(p.surfaceGravityG * factor).toFixed(2)}g`).concat(["1.00g", "0.16g", "2.53g"])),
       answer: 0,
     },
     {
@@ -61,7 +74,7 @@ function getQuiz(p: Planet): QuizQuestion[] {
     },
     {
       q: `What type of planet is ${p.name}?`,
-      options: [p.type.replace(/_/g, " "), "gas giant", "ice giant", "terrestrial"].filter((v, i, a) => a.indexOf(v) === i).slice(0, 4),
+      options: quizChoices(typeCorrect, ["terrestrial", "gas giant", "ice giant", "dwarf planet", "moon"]),
       answer: 0,
     },
   ];
@@ -76,7 +89,7 @@ export function PlanetDetail() {
   const [showQuiz, setShowQuiz] = useState(false);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
 
-  const quiz = useMemo(() => (planet ? getQuiz(planet) : []), [planet]);
+  const quiz = useMemo(() => (planet ? buildPlanetQuiz(planet) : []), [planet]);
 
   if (!planet) {
     return (

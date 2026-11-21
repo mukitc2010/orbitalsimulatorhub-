@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { BLOG_POSTS } from "../data/blogPosts";
 import { isCurrentNews, newsDateInNewYork } from "../data/freshNews";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 /**
  * Space news landing page — targets "space news" keyword.
@@ -35,7 +36,7 @@ export function SpaceNews() {
                 <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
                 <h3 className="font-bold mt-1 mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
                 <p className="text-sm line-clamp-2" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
-                <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+                <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>{formatDisplayDate(post.date, "long")}</p>
               </a>
             </Link>
           ))}

@@ -1,12 +1,9 @@
 import { Link } from "wouter";
 import { ALL_MISSIONS } from "../data/missions";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 function formatDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
+  return formatDisplayDate(iso, "short");
 }
 
 export function MissionList() {

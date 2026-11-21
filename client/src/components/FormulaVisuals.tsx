@@ -75,14 +75,14 @@ export function FormulaVisuals() {
 
   const result = (() => {
     const nums = f.vars.map((v) => values[v.key] ?? v.default);
-    return f.compute(...(nums as [number, number, ...number[]]));
+    const compute = f.compute as (...args: number[]) => number;
+    return compute(...nums);
   })();
 
   return (
     <div className="card-blueprint rounded-lg p-6">
-      <h2 className="font-bold text-lg font-mono-tech mb-4">Force Calculator: F = m × a</h2>
-  <p className="text-xs text-slate-500 mb-4">Try changing the mass and acceleration to see how force changes!</p>
-  <h3 className="sr-only">Calculators</h3>
+      <h2 className="font-bold text-lg font-mono-tech mb-4">{f.name}</h2>
+      <h3 className="sr-only">Calculators</h3>
       <div className="flex gap-2 flex-wrap mb-4">
         {FORMULAS.map((form, i) => (
           <button

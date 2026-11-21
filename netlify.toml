@@ -22,6 +22,12 @@
   force = true
 
 [[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api-not-found"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
@@ -36,3 +42,13 @@
     Cross-Origin-Opener-Policy = "same-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Content-Security-Policy = "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://images.unsplash.com https://www.orbitalsimulatorhub.com; connect-src 'self' https://api.x.ai; worker-src 'self' blob:; frame-src 'self'"
+
+[[headers]]
+  for = "/rss.xml"
+  [headers.values]
+    Content-Type = "application/rss+xml; charset=utf-8"
+
+[[headers]]
+  for = "/blog/rss.xml"
+  [headers.values]
+    Content-Type = "application/rss+xml; charset=utf-8"

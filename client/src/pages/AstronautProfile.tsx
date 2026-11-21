@@ -6,15 +6,12 @@ import {
   formatSpaceTime,
   type Astronaut,
 } from "../data/astronauts";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 type ReadingMode = "general" | "kids" | "research";
 
 function formatDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+  return formatDisplayDate(iso, "long");
 }
 
 function formatMissionId(missionId: string): string {

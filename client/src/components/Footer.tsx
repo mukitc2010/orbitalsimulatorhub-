@@ -23,7 +23,18 @@ const footerLinks = [
   { href: "/privacy-policy", label: "Privacy" },
 ];
 
+export function communityUrlForHost(hostname: string, configured?: string): string {
+  if (configured) return configured;
+  if (hostname === "localhost" || hostname === "127.0.0.1") return "http://localhost:3001";
+  return "";
+}
+
 export function Footer() {
+  const communityUrl = communityUrlForHost(
+    typeof window !== "undefined" ? window.location.hostname : "",
+    import.meta.env.VITE_COMMUNITY_URL,
+  );
+
   return (
     <footer
       className="border-t-2 mt-auto py-8"
@@ -49,15 +60,17 @@ export function Footer() {
               {label}
             </Link>
           ))}
-          <a
-            href={import.meta.env.VITE_COMMUNITY_URL || "http://localhost:3001"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium transition"
-            style={{ color: "var(--text-secondary)" }}
-          >
-            Community
-          </a>
+          {communityUrl ? (
+            <a
+              href={communityUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium transition"
+              style={{ color: "var(--text-secondary)" }}
+            >
+              Community
+            </a>
+          ) : null}
         </div>
         <p className="mt-2 text-center text-sm font-medium" style={{ color: "var(--text-secondary)" }}>
           PhD researchers:{" "}

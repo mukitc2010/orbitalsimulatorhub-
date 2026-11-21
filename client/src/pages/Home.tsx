@@ -5,6 +5,7 @@ import { ShareBar } from "../components/ShareBar";
 import { EARTH_RADIUS_KM, MU_EARTH_KM3_S2 } from "../../../shared/const";
 import { HOME_FEED } from "../data/homeFeed";
 import { getBlogImage } from "../data/blogImages";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 const HomeSpaceScene = lazy(() => import("../components/HomeSpaceScene").then((module) => ({ default: module.HomeSpaceScene })));
 
@@ -184,7 +185,7 @@ export function Home() {
                     <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{latestPost.category.replace(/-/g, " ")}</span>
                     <h2 className="text-lg sm:text-xl font-bold mt-1 mb-2 line-clamp-2" style={{ color: "var(--text-primary)" }}>{latestPost.title}</h2>
                     <p className="text-sm line-clamp-2 mb-2" style={{ color: "var(--text-secondary)" }}>{latestPost.excerpt}</p>
-                    <span className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(latestPost.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} · Read more →</span>
+                    <span className="text-xs" style={{ color: "var(--text-muted)" }}>{formatDisplayDate(latestPost.date, "short")} · Read more →</span>
                   </div>
                 </div>
               </a>
@@ -291,7 +292,7 @@ export function Home() {
               <Link key={post.slug} href={`/blog/${post.slug}`}>
                 <a className="block rounded-xl p-4 transition hover:opacity-95" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
                   <div className="text-[11px] font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>
-                    {new Date(post.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                    {formatDisplayDate(post.date, "short")}
                   </div>
                   <h3 className="font-bold mb-2 line-clamp-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
                   <p className="text-sm line-clamp-3 mb-3" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
@@ -526,7 +527,7 @@ export function Home() {
                   <div className="p-4">
                     <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
                     <h3 className="font-semibold text-sm mt-1 line-clamp-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
-                    <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</p>
+                    <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>{formatDisplayDate(post.date, "short")}</p>
                   </div>
                 </a>
               </Link>

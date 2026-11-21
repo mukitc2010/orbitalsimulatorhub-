@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, type ReactElement } from "react";
 import { Link, useLocation } from "wouter";
 import { getAstroBotReplyLocal, ASTROBOT_FALLBACK } from "../astrobotKnowledge";
 import { generateAstroBotResponse } from "../lib/astrobotEngine";
@@ -789,26 +789,26 @@ Here's where everything lives:
 
 // ─── Markdown renderer ────────────────────────────────────────────────────────
 
-function renderMarkdown(text: string): JSX.Element {
+function renderMarkdown(text: string): ReactElement {
   const lines = text.split("\n");
-  const elements: JSX.Element[] = [];
+  const elements: ReactElement[] = [];
   let tableRows: string[][] = [];
   let inTable = false;
   let key = 0;
 
   const renderInline = (line: string) => {
-    const parts: (string | JSX.Element)[] = [];
+    const parts: (string | ReactElement)[] = [];
     let rest = line;
     let i = 0;
-    const patterns: { re: RegExp; render: (m: string) => JSX.Element }[] = [
+    const patterns: { re: RegExp; render: (m: string) => ReactElement }[] = [
       { re: /\*\*(.+?)\*\*/g, render: (m) => <strong key={i++} style={{ color: "var(--text-primary)", fontWeight: 700 }}>{m}</strong> },
       { re: /`(.+?)`/g, render: (m) => <code key={i++} style={{ background: "var(--bg-surface)", padding: "1px 5px", borderRadius: 4, fontFamily: "monospace", fontSize: "0.85em" }}>{m}</code> },
       { re: /\[(.+?)\]\((.+?)\)/g, render: (m) => <a key={i++} href={m} style={{ color: "var(--accent-primary)", textDecoration: "underline" }}>{m}</a> },
     ];
 
-    let segments: (string | JSX.Element)[] = [rest];
+    let segments: (string | ReactElement)[] = [rest];
     for (const { re, render } of patterns) {
-      const newSegs: (string | JSX.Element)[] = [];
+      const newSegs: (string | ReactElement)[] = [];
       for (const seg of segments) {
         if (typeof seg !== "string") { newSegs.push(seg); continue; }
         let last = 0;

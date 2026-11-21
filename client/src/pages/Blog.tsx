@@ -3,6 +3,7 @@ import { BLOG_POSTS, type BlogPost } from "../data/blogPosts";
 import { isCurrentNews, newsDateInNewYork } from "../data/freshNews";
 import { getBlogImage, handleImageError } from "../data/blogImages";
 import { ShareBar } from "../components/ShareBar";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 const CATEGORIES: { id: BlogPost["category"]; label: string; emoji: string }[] = [
   { id: "space-agi", label: "Space AGI", emoji: "🧠" },
@@ -66,7 +67,7 @@ export function Blog() {
                   <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
                   <h3 className="font-bold text-lg mt-1 mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
                   <p className="text-sm mb-3 line-clamp-2" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
-                  <p className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+                  <p className="text-xs" style={{ color: "var(--text-muted)" }}>{formatDisplayDate(post.date, "long")}</p>
                 </div>
               </a>
             </Link>

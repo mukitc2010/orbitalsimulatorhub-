@@ -6,13 +6,10 @@ import {
 } from "../data/missions";
 import { ALL_ASTRONAUTS } from "../data/astronauts";
 import { formatSpaceTime } from "../data/astronauts";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 function formatDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+  return formatDisplayDate(iso, "long");
 }
 
 function formatSurfaceTime(seconds: number): string {
