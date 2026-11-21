@@ -17,9 +17,7 @@ export function BlogContent({ content }: { content: string }) {
     const isInternal = href.startsWith("/");
     if (isInternal) {
       return (
-        <Link key={key} href={href}>
-          <a className={LINK_CLASS}>{label}</a>
-        </Link>
+        <Link key={key} href={href} className={LINK_CLASS}>{label}</Link>
       );
     }
     return (

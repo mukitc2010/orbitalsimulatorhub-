@@ -293,9 +293,7 @@ export function SpaceMathGame() {
   return (
     <div className="math-game">
       <header className="math-game-header">
-        <Link href="/">
-          <a className="math-game-back">OSH / FLIGHT SCHOOL</a>
-        </Link>
+        <Link href="/" className="math-game-back">OSH / FLIGHT SCHOOL</Link>
         <span className="math-game-live">
           <i /> MISSION CHANNEL OPEN
         </span>

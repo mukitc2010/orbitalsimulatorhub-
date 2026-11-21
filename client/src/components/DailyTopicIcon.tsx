@@ -37,8 +37,6 @@ export function DailyTopicIcon() {
       {content}
     </a>
   ) : (
-    <Link href={topic.learnMoreUrl}>
-      <a className="block">{content}</a>
-    </Link>
+    <Link href={topic.learnMoreUrl} className="block">{content}</Link>
   );
 }

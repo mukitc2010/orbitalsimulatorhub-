@@ -6,15 +6,12 @@ import {
   formatSpaceTime,
   type Astronaut,
 } from "../data/astronauts";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 type ReadingMode = "general" | "kids" | "research";
 
 function formatDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+  return formatDisplayDate(iso, "long");
 }
 
 function formatMissionId(missionId: string): string {
@@ -56,14 +53,10 @@ export function AstronautProfile() {
         <p className="mb-6" style={{ color: "var(--text-secondary)" }}>
           The astronaut you&apos;re looking for doesn&apos;t exist in our database.
         </p>
-        <Link href="/astronauts">
-          <a
-            className="font-medium"
-            style={{ color: "var(--accent-primary)" }}
-          >
+        <Link href="/astronauts" className="font-medium"
+            style={{ color: "var(--accent-primary)" }}>
             ← Back to Astronaut Explorer
-          </a>
-        </Link>
+          </Link>
       </div>
     );
   }
@@ -284,14 +277,10 @@ export function AstronautProfile() {
           <h2 className="text-xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
             What They Brought Back
           </h2>
-          <Link href="/artifacts">
-            <a
-              className="inline-flex items-center gap-2 font-medium"
-              style={{ color: "var(--accent-primary)" }}
-            >
+          <Link href="/artifacts" className="inline-flex items-center gap-2 font-medium"
+              style={{ color: "var(--accent-primary)" }}>
               View lunar samples and artifacts →
-            </a>
-          </Link>
+            </Link>
         </section>
       )}
 
@@ -348,34 +337,22 @@ export function AstronautProfile() {
         className="flex flex-wrap items-center justify-between gap-4 pt-6 border-t"
         style={{ borderColor: "var(--border-color)" }}
       >
-        <Link href="/astronauts">
-          <a
-            className="font-medium"
-            style={{ color: "var(--accent-primary)" }}
-          >
+        <Link href="/astronauts" className="font-medium"
+            style={{ color: "var(--accent-primary)" }}>
             ← Back to Astronaut Explorer
-          </a>
-        </Link>
+          </Link>
         <div className="flex gap-4">
           {prev && (
-            <Link href={`/astronauts/${prev.slug}`}>
-              <a
-                className="font-medium"
-                style={{ color: "var(--accent-primary)" }}
-              >
+            <Link href={`/astronauts/${prev.slug}`} className="font-medium"
+                style={{ color: "var(--accent-primary)" }}>
                 ← {prev.name}
-              </a>
-            </Link>
+              </Link>
           )}
           {next && (
-            <Link href={`/astronauts/${next.slug}`}>
-              <a
-                className="font-medium"
-                style={{ color: "var(--accent-primary)" }}
-              >
+            <Link href={`/astronauts/${next.slug}`} className="font-medium"
+                style={{ color: "var(--accent-primary)" }}>
                 {next.name} →
-              </a>
-            </Link>
+              </Link>
           )}
         </div>
       </nav>

@@ -192,42 +192,28 @@ export function AstrophysicsBasics() {
             Astrophysics uses the same physics as orbital mechanics! Learn about orbits and gravity:
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/learn/how-solar-system-works">
-              <a className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+            <Link href="/learn/how-solar-system-works" className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
                 Solar System →
-              </a>
-            </Link>
-            <Link href="/learn/orbital-mechanics">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/learn/orbital-mechanics" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Orbital Mechanics →
-              </a>
-            </Link>
-            <Link href="/formulas-library">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/formulas-library" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Formulas →
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
 
         <div className="text-sm text-slate-600 space-y-2">
           <p><strong>Related Topics:</strong></p>
           <div className="flex flex-wrap gap-2">
-            <Link href="/learn/how-solar-system-works">
-              <a className="text-[var(--accent-cyan)] hover:underline">Solar System</a>
-            </Link>
+            <Link href="/learn/how-solar-system-works" className="text-[var(--accent-cyan)] hover:underline">Solar System</Link>
             <span>·</span>
-            <Link href="/learn/quantum-physics-basics">
-              <a className="text-[var(--accent-cyan)] hover:underline">Quantum Physics</a>
-            </Link>
+            <Link href="/learn/quantum-physics-basics" className="text-[var(--accent-cyan)] hover:underline">Quantum Physics</Link>
             <span>·</span>
-            <Link href="/learn/newton">
-              <a className="text-[var(--accent-cyan)] hover:underline">Newton's Laws</a>
-            </Link>
+            <Link href="/learn/newton" className="text-[var(--accent-cyan)] hover:underline">Newton's Laws</Link>
             <span>·</span>
-            <Link href="/research">
-              <a className="text-[var(--accent-cyan)] hover:underline">Research Hub</a>
-            </Link>
+            <Link href="/research" className="text-[var(--accent-cyan)] hover:underline">Research Hub</Link>
           </div>
         </div>
       </section>

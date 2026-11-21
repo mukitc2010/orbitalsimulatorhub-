@@ -294,42 +294,28 @@ export function Astrophysics() {
             Astrophysics uses the same orbital mechanics principles! Learn how planets and satellites orbit.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/learn/how-solar-system-works">
-              <a className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+            <Link href="/learn/how-solar-system-works" className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
                 How Solar System Works →
-              </a>
-            </Link>
-            <Link href="/learn/quantum-physics">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/learn/quantum-physics" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Quantum Physics →
-              </a>
-            </Link>
-            <Link href="/formulas-library">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/formulas-library" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Formulas →
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
 
         <div className="text-sm text-slate-600 space-y-2">
           <p><strong>Related Topics:</strong></p>
           <div className="flex flex-wrap gap-2">
-            <Link href="/learn/how-solar-system-works">
-              <a className="text-[var(--accent-cyan)] hover:underline">How Solar System Works</a>
-            </Link>
+            <Link href="/learn/how-solar-system-works" className="text-[var(--accent-cyan)] hover:underline">How Solar System Works</Link>
             <span>·</span>
-            <Link href="/learn/quantum-physics">
-              <a className="text-[var(--accent-cyan)] hover:underline">Quantum Physics</a>
-            </Link>
+            <Link href="/learn/quantum-physics" className="text-[var(--accent-cyan)] hover:underline">Quantum Physics</Link>
             <span>·</span>
-            <Link href="/learn/what-is-moon">
-              <a className="text-[var(--accent-cyan)] hover:underline">What is the Moon?</a>
-            </Link>
+            <Link href="/learn/what-is-moon" className="text-[var(--accent-cyan)] hover:underline">What is the Moon?</Link>
             <span>·</span>
-            <Link href="/formulas-library">
-              <a className="text-[var(--accent-cyan)] hover:underline">Formulas</a>
-            </Link>
+            <Link href="/formulas-library" className="text-[var(--accent-cyan)] hover:underline">Formulas</Link>
           </div>
         </div>
       </section>

@@ -125,12 +125,8 @@ export function AIAstronautRobotSimulator() {
             Build a humanoid, rover, or free-flying robot. Explore scripted 3D tasks in ISS, Moon, Mars, and deep-space settings. Sensor overlays illustrate concepts; no AI model is trained.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mt-4">
-            <Link href="/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions">
-              <a className="text-sm font-medium" style={{ color: "var(--accent-cyan)" }}>Read: How Space Builds AI Robots →</a>
-            </Link>
-            <Link href="/research/space-agi-lab">
-              <a className="text-sm font-medium" style={{ color: "#a78bfa" }}>Space-AGI Lab →</a>
-            </Link>
+            <Link href="/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions" className="text-sm font-medium" style={{ color: "var(--accent-cyan)" }}>Read: How Space Builds AI Robots →</Link>
+            <Link href="/research/space-agi-lab" className="text-sm font-medium" style={{ color: "#a78bfa" }}>Space-AGI Lab →</Link>
           </div>
         </div>
 
@@ -425,21 +421,15 @@ export function AIAstronautRobotSimulator() {
             Trusted by engineers, researchers, future space pioneers.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href="/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions">
-              <a className="px-6 py-3 rounded-xl font-semibold" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
+            <Link href="/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions" className="px-6 py-3 rounded-xl font-semibold" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
                 Read Full Article
-              </a>
-            </Link>
-            <Link href="/research/space-agi-lab">
-              <a className="px-6 py-3 rounded-xl font-semibold border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--accent-cyan)" }}>
+              </Link>
+            <Link href="/research/space-agi-lab" className="px-6 py-3 rounded-xl font-semibold border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--accent-cyan)" }}>
                 Space-AGI Lab
-              </a>
-            </Link>
-            <Link href="/simulator">
-              <a className="px-6 py-3 rounded-xl font-semibold border-2" style={{ borderColor: "#a78bfa", color: "#a78bfa" }}>
+              </Link>
+            <Link href="/simulator" className="px-6 py-3 rounded-xl font-semibold border-2" style={{ borderColor: "#a78bfa", color: "#a78bfa" }}>
                 Orbit Simulator
-              </a>
-            </Link>
+              </Link>
           </div>
         </section>
       </div>

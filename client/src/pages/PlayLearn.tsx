@@ -148,11 +148,9 @@ export function PlayLearn() {
       {/* Footer CTA */}
       <section className="py-10 text-center">
         <p className="text-gray-600 mb-4">Want the full simulator with play/pause and speed control?</p>
-        <Link href="/simulator">
-          <a className="inline-block px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-black shadow-lg hover:opacity-90">
+        <Link href="/simulator" className="inline-block px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-black shadow-lg hover:opacity-90">
             Open Full Simulator →
-          </a>
-        </Link>
+          </Link>
       </section>
     </div>
   );

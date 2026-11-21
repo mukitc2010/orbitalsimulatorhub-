@@ -37,21 +37,34 @@ interface QuizQuestion {
   answer: number;
 }
 
-function getQuiz(p: Planet): QuizQuestion[] {
+function quizChoices(correct: string, alternates: string[]): string[] {
+  const options = [correct];
+  for (const alternate of alternates) {
+    if (alternate && !options.includes(alternate)) options.push(alternate);
+    if (options.length === 4) break;
+  }
+  return options;
+}
+
+export function buildPlanetQuiz(p: Planet): QuizQuestion[] {
+  const distanceCorrect = fmtDist(p.distanceFromSunKm);
+  const gravityCorrect = `${p.surfaceGravityG.toFixed(2)}g`;
+  const moonCorrect = String(p.moons);
+  const typeCorrect = p.type.replace(/_/g, " ");
   return [
     {
       q: `How far is ${p.name} from the Sun?`,
-      options: [fmtDist(p.distanceFromSunKm), fmtDist(p.distanceFromSunKm * 2), fmtDist(p.distanceFromSunKm / 3), fmtDist(p.distanceFromSunKm * 0.6)],
+      options: quizChoices(distanceCorrect, [2, 0.33, 0.6, 1.5, 3, 0.25, 10].map((factor) => fmtDist(Math.max(1, p.distanceFromSunKm * factor)))),
       answer: 0,
     },
     {
       q: `How many moons does ${p.name} have?`,
-      options: [String(p.moons), String(p.moons + 5), String(Math.max(0, p.moons - 3)), String(p.moons + 12)],
+      options: quizChoices(moonCorrect, [1, 2, 3, 5, 8, 12, 16, 24].flatMap((step) => [String(p.moons + step), String(Math.max(0, p.moons - step))])),
       answer: 0,
     },
     {
       q: `What is ${p.name}'s surface gravity compared to Earth?`,
-      options: [`${p.surfaceGravityG.toFixed(2)}g`, `${(p.surfaceGravityG * 1.5).toFixed(2)}g`, `${(p.surfaceGravityG * 0.5).toFixed(2)}g`, "1.00g"],
+      options: quizChoices(gravityCorrect, [1.5, 0.5, 2, 0.25, 3].map((factor) => `${(p.surfaceGravityG * factor).toFixed(2)}g`).concat(["1.00g", "0.16g", "2.53g"])),
       answer: 0,
     },
     {
@@ -61,7 +74,7 @@ function getQuiz(p: Planet): QuizQuestion[] {
     },
     {
       q: `What type of planet is ${p.name}?`,
-      options: [p.type.replace(/_/g, " "), "gas giant", "ice giant", "terrestrial"].filter((v, i, a) => a.indexOf(v) === i).slice(0, 4),
+      options: quizChoices(typeCorrect, ["terrestrial", "gas giant", "ice giant", "dwarf planet", "moon"]),
       answer: 0,
     },
   ];
@@ -76,14 +89,14 @@ export function PlanetDetail() {
   const [showQuiz, setShowQuiz] = useState(false);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
 
-  const quiz = useMemo(() => (planet ? getQuiz(planet) : []), [planet]);
+  const quiz = useMemo(() => (planet ? buildPlanetQuiz(planet) : []), [planet]);
 
   if (!planet) {
     return (
       <div className="max-w-4xl mx-auto text-center py-16">
         <h1 className="text-2xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>Planet not found</h1>
         <p className="mb-6" style={{ color: "var(--text-secondary)" }}>The planet you&apos;re looking for doesn&apos;t exist in our database.</p>
-        <Link href="/planets"><a className="font-medium" style={{ color: "var(--accent-primary)" }}>← Back to Planet Hub</a></Link>
+        <Link href="/planets" className="font-medium" style={{ color: "var(--accent-primary)" }}>← Back to Planet Hub</Link>
       </div>
     );
   }
@@ -110,9 +123,9 @@ export function PlanetDetail() {
     <div className="max-w-5xl mx-auto space-y-8">
       {/* Breadcrumb */}
       <nav className="flex flex-wrap items-center gap-2 text-sm" style={{ color: "var(--text-muted)" }}>
-        <Link href="/"><a style={{ color: "var(--accent-primary)" }}>Home</a></Link>
+        <Link href="/" style={{ color: "var(--accent-primary)" }}>Home</Link>
         <span>/</span>
-        <Link href="/planets"><a style={{ color: "var(--accent-primary)" }}>Planets</a></Link>
+        <Link href="/planets" style={{ color: "var(--accent-primary)" }}>Planets</Link>
         <span>/</span>
         <span style={{ color: "var(--text-primary)" }}>{planet.name}</span>
       </nav>
@@ -517,21 +530,21 @@ export function PlanetDetail() {
       <section className="rounded-xl p-6" style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}>
         <h2 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>🔗 Explore More</h2>
         <div className="flex flex-wrap gap-3">
-          <Link href={planet.simulatorLink}><a className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>🛰 Try Orbit Simulator</a></Link>
-          <Link href="/astrobot"><a className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--accent-primary)", border: "1px solid var(--border-color)" }}>🤖 Ask AstroBot about {planet.name}</a></Link>
-          <Link href="/astronauts"><a className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>👨‍🚀 Astronaut Explorer</a></Link>
-          <Link href="/artifacts"><a className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>🪨 Brought From Space</a></Link>
-          <Link href="/missions"><a className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>🚀 All Missions</a></Link>
-          <Link href="/research"><a className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>📚 Research Hub</a></Link>
+          <Link href={planet.simulatorLink} className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>🛰 Try Orbit Simulator</Link>
+          <Link href="/astrobot" className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--accent-primary)", border: "1px solid var(--border-color)" }}>🤖 Ask AstroBot about {planet.name}</Link>
+          <Link href="/astronauts" className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>👨‍🚀 Astronaut Explorer</Link>
+          <Link href="/artifacts" className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>🪨 Brought From Space</Link>
+          <Link href="/missions" className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>🚀 All Missions</Link>
+          <Link href="/research" className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>📚 Research Hub</Link>
         </div>
       </section>
 
       {/* ─── NAVIGATION ─── */}
       <nav className="flex flex-wrap items-center justify-between gap-4 pt-6 border-t" style={{ borderColor: "var(--border-color)" }}>
-        <Link href="/planets"><a className="font-medium" style={{ color: "var(--accent-primary)" }}>← Back to Planet Hub</a></Link>
+        <Link href="/planets" className="font-medium" style={{ color: "var(--accent-primary)" }}>← Back to Planet Hub</Link>
         <div className="flex gap-4">
-          {prev && <Link href={`/planets/${prev.slug}`}><a className="font-medium flex items-center gap-1" style={{ color: "var(--accent-primary)" }}><span>{prev.emoji}</span> {prev.name}</a></Link>}
-          {next && <Link href={`/planets/${next.slug}`}><a className="font-medium flex items-center gap-1" style={{ color: "var(--accent-primary)" }}>{next.name} <span>{next.emoji}</span></a></Link>}
+          {prev && <Link href={`/planets/${prev.slug}`} className="font-medium flex items-center gap-1" style={{ color: "var(--accent-primary)" }}><span>{prev.emoji}</span> {prev.name}</Link>}
+          {next && <Link href={`/planets/${next.slug}`} className="font-medium flex items-center gap-1" style={{ color: "var(--accent-primary)" }}>{next.name} <span>{next.emoji}</span></Link>}
         </div>
       </nav>
     </div>

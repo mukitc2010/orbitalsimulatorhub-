@@ -18,7 +18,7 @@ interface SatelliteCreationFormProps {
 
 export function SatelliteCreationForm({ onSubmit, onLoadPreset }: SatelliteCreationFormProps) {
   const [name, setName] = useState("My Satellite");
-  const [color, setColor] = useState(SATELLITE_COLORS[0]);
+  const [color, setColor] = useState<string>(SATELLITE_COLORS[0]);
   const [elements, setElements] = useState<OrbitalElements>(defaultElements);
 
   const update = (k: keyof OrbitalElements, v: number) => {

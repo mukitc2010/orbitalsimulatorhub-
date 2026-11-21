@@ -66,13 +66,11 @@ export function SpaceAGIEngineeringLab() {
         <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>Choose your path — learn the math, run simulations, or use calculators.</p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {LAB_QUICK_START.map((q) => (
-            <Link key={q.href} href={q.href}>
-              <a className="block p-4 rounded-xl transition hover:scale-[1.02]" style={{ background: "var(--bg-surface)", border: "2px solid var(--border-color)" }}>
+            <Link key={q.href} href={q.href} className="block p-4 rounded-xl transition hover:scale-[1.02]" style={{ background: "var(--bg-surface)", border: "2px solid var(--border-color)" }}>
                 <span className="text-2xl block mb-2">{q.icon}</span>
                 <span className="font-bold text-sm" style={{ color: "var(--text-primary)" }}>{q.title}</span>
                 <span className="block text-xs mt-1" style={{ color: "var(--text-secondary)" }}>{q.desc}</span>
-              </a>
-            </Link>
+              </Link>
           ))}
         </div>
       </section>
@@ -100,7 +98,7 @@ export function SpaceAGIEngineeringLab() {
         </div>
         <div className="mt-4 p-3 rounded-lg" style={{ background: "var(--bg-surface)", borderLeft: "4px solid var(--accent-cyan)" }}>
           <p className="text-xs font-bold uppercase mb-1" style={{ color: "var(--accent-cyan)" }}>Real-world</p>
-          <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Curiosity & Perseverance use autonomous navigation for terrain analysis. Starlink uses AI for collision avoidance. See <Link href="/research/space-agi-roadmap"><a className="text-[var(--accent-cyan)] hover:underline">Roadmap Phase 1</a></Link>.</p>
+          <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Curiosity & Perseverance use autonomous navigation for terrain analysis. Starlink uses AI for collision avoidance. See <Link href="/research/space-agi-roadmap" className="text-[var(--accent-cyan)] hover:underline">Roadmap Phase 1</Link>.</p>
         </div>
       </section>
 
@@ -120,13 +118,11 @@ export function SpaceAGIEngineeringLab() {
           <p>π*(s) = argmax<sub>a</sub> E[R + γV]</p>
         </div>
         <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>
-          Predictive AI beats naive control when delay τ increases. See <Link href="/research/space-agi-doctrine"><a className="text-[var(--accent-cyan)] hover:underline">Space-AGI Doctrine</a></Link> for delay vs performance graphs.
+          Predictive AI beats naive control when delay τ increases. See <Link href="/research/space-agi-doctrine" className="text-[var(--accent-cyan)] hover:underline">Space-AGI Doctrine</Link> for delay vs performance graphs.
         </p>
-        <Link href="/calculators">
-          <a className="inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium" style={{ background: "var(--accent-pink)", color: "#0f172a" }}>
+        <Link href="/calculators" className="inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium" style={{ background: "var(--accent-pink)", color: "#0f172a" }}>
             <span>🤖</span> Try Mars Delay Calculator →
-          </a>
-        </Link>
+          </Link>
       </section>
 
       {/* Pillar 3 — Orbital + AI Mathematics */}
@@ -152,10 +148,10 @@ export function SpaceAGIEngineeringLab() {
           </div>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
-          <Link href="/research/space-agi-math"><a className="px-3 py-1.5 rounded-lg text-sm font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Space-AGI Mathematics →</a></Link>
-          <Link href="/formulas-library"><a className="px-3 py-1.5 rounded-lg text-sm font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Formulas Library →</a></Link>
-          <Link href="/calculators"><a className="px-3 py-1.5 rounded-lg text-sm font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Calculators →</a></Link>
-          <Link href="/simulator"><a className="px-3 py-1.5 rounded-lg text-sm font-medium border-2" style={{ borderColor: "var(--accent-gold)", color: "var(--text-primary)" }}>3D Simulator →</a></Link>
+          <Link href="/research/space-agi-math" className="px-3 py-1.5 rounded-lg text-sm font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Space-AGI Mathematics →</Link>
+          <Link href="/formulas-library" className="px-3 py-1.5 rounded-lg text-sm font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Formulas Library →</Link>
+          <Link href="/calculators" className="px-3 py-1.5 rounded-lg text-sm font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Calculators →</Link>
+          <Link href="/simulator" className="px-3 py-1.5 rounded-lg text-sm font-medium border-2" style={{ borderColor: "var(--accent-gold)", color: "var(--text-primary)" }}>3D Simulator →</Link>
         </div>
       </section>
 
@@ -182,9 +178,7 @@ export function SpaceAGIEngineeringLab() {
             </div>
           ))}
         </div>
-        <Link href="/research/space-agi-roadmap">
-          <a className="text-sm font-medium" style={{ color: "var(--accent-cyan)" }}>View Space-AGI Roadmap →</a>
-        </Link>
+        <Link href="/research/space-agi-roadmap" className="text-sm font-medium" style={{ color: "var(--accent-cyan)" }}>View Space-AGI Roadmap →</Link>
       </section>
 
       {/* Pillar 5 — Live Simulation Lab */}
@@ -198,30 +192,22 @@ export function SpaceAGIEngineeringLab() {
         <h3 className="text-sm font-bold uppercase tracking-wider mb-3" style={{ color: "var(--accent-cyan)" }}>Run experiments</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
           {LAB_EXPERIMENTS.map((e) => (
-            <Link key={e.label} href={e.href}>
-              <a className="block p-3 rounded-lg transition hover:opacity-90" style={{ background: "var(--bg-surface)", border: "1px solid var(--border-color)" }}>
+            <Link key={e.label} href={e.href} className="block p-3 rounded-lg transition hover:opacity-90" style={{ background: "var(--bg-surface)", border: "1px solid var(--border-color)" }}>
                 <span className="font-bold text-sm" style={{ color: "var(--text-primary)" }}>{e.label}</span>
                 <span className="block text-xs mt-0.5" style={{ color: "var(--text-secondary)" }}>{e.desc}</span>
-              </a>
-            </Link>
+              </Link>
           ))}
         </div>
         <div className="flex flex-wrap gap-2">
-          <Link href="/simulator">
-            <a className="px-5 py-2.5 rounded-xl font-bold" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
+          <Link href="/simulator" className="px-5 py-2.5 rounded-xl font-bold" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
               Open 3D Simulator →
-            </a>
-          </Link>
-          <Link href="/calculators">
-            <a className="px-5 py-2.5 rounded-xl font-bold" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
+            </Link>
+          <Link href="/calculators" className="px-5 py-2.5 rounded-xl font-bold" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
               All Calculators →
-            </a>
-          </Link>
-          <Link href="/research/space-agi-doctrine">
-            <a className="px-5 py-2.5 rounded-xl font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>
+            </Link>
+          <Link href="/research/space-agi-doctrine" className="px-5 py-2.5 rounded-xl font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>
               Space-AGI Doctrine →
-            </a>
-          </Link>
+            </Link>
         </div>
       </section>
 
@@ -233,26 +219,20 @@ export function SpaceAGIEngineeringLab() {
             Equations, models, simulations, advanced topics, whitepapers. Deep-dive resources for students, engineers, and researchers.
           </p>
           <ul className="space-y-2 text-sm" style={{ color: "var(--text-secondary)" }}>
-            <li><Link href="/learn/aerospace"><a className="text-[var(--accent-cyan)] hover:underline">Aerospace reference</a></Link> — equations, models</li>
-            <li><Link href="/research/space-agi-doctrine"><a className="text-[var(--accent-cyan)] hover:underline">Space-AGI Doctrine</a></Link> — delayed MDP, belief, energy, discovery</li>
-            <li><Link href="/formulas-library"><a className="text-[var(--accent-cyan)] hover:underline">Formulas library</a></Link> — orbital mechanics</li>
-            <li><Link href="/research/neuro-space"><a className="text-[var(--accent-cyan)] hover:underline">Neuro-Space</a></Link> — relativistic aerospace</li>
-            <li><Link href="/research/space-agi-roadmap"><a className="text-[var(--accent-cyan)] hover:underline">Space-AGI Roadmap</a></Link> — 2025–2060+ vision</li>
-            <li><Link href="/research/space-agi-math"><a className="text-[var(--accent-cyan)] hover:underline">Space-AGI Mathematics</a></Link> — optimal control, MPC, LQR, Space-AGI framework</li>
+            <li><Link href="/learn/aerospace" className="text-[var(--accent-cyan)] hover:underline">Aerospace reference</Link> — equations, models</li>
+            <li><Link href="/research/space-agi-doctrine" className="text-[var(--accent-cyan)] hover:underline">Space-AGI Doctrine</Link> — delayed MDP, belief, energy, discovery</li>
+            <li><Link href="/formulas-library" className="text-[var(--accent-cyan)] hover:underline">Formulas library</Link> — orbital mechanics</li>
+            <li><Link href="/research/neuro-space" className="text-[var(--accent-cyan)] hover:underline">Neuro-Space</Link> — relativistic aerospace</li>
+            <li><Link href="/research/space-agi-roadmap" className="text-[var(--accent-cyan)] hover:underline">Space-AGI Roadmap</Link> — 2025–2060+ vision</li>
+            <li><Link href="/research/space-agi-math" className="text-[var(--accent-cyan)] hover:underline">Space-AGI Mathematics</Link> — optimal control, MPC, LQR, Space-AGI framework</li>
           </ul>
         </section>
       )}
 
       <div className="flex flex-wrap gap-3 items-center">
-        <Link href="/research/space-agi-roadmap">
-          <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>Space-AGI Roadmap →</a>
-        </Link>
-        <Link href="/research/space-agi-doctrine">
-          <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Space-AGI Doctrine</a>
-        </Link>
-        <Link href="/astrobot">
-          <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-gold)", color: "var(--text-primary)" }}>🤖 Ask AstroBot</a>
-        </Link>
+        <Link href="/research/space-agi-roadmap" className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>Space-AGI Roadmap →</Link>
+        <Link href="/research/space-agi-doctrine" className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Space-AGI Doctrine</Link>
+        <Link href="/astrobot" className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-gold)", color: "var(--text-primary)" }}>🤖 Ask AstroBot</Link>
       </div>
     </div>
   );

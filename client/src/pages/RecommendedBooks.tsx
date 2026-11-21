@@ -63,14 +63,10 @@ export function RecommendedBooks() {
       </p>
 
       <div className="mt-6 flex gap-4">
-        <Link href="/space-shop">
-          <a className="text-[var(--accent-cyan)] hover:underline font-medium">NASA T-Shirts & Toys →</a>
-        </Link>
-        <Link href="/blog">
-          <a className="text-[var(--accent-cyan)] hover:underline font-medium">
+        <Link href="/space-shop" className="text-[var(--accent-cyan)] hover:underline font-medium">NASA T-Shirts & Toys →</Link>
+        <Link href="/blog" className="text-[var(--accent-cyan)] hover:underline font-medium">
             ← Back to Blog
-          </a>
-        </Link>
+          </Link>
       </div>
     </div>
   );

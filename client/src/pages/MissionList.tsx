@@ -1,12 +1,9 @@
 import { Link } from "wouter";
 import { ALL_MISSIONS } from "../data/missions";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 function formatDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
+  return formatDisplayDate(iso, "short");
 }
 
 export function MissionList() {
@@ -24,9 +21,7 @@ export function MissionList() {
 
       <div className="space-y-4">
         {ALL_MISSIONS.map((mission) => (
-          <Link key={mission.id} href={`/missions/${mission.slug}`}>
-            <a
-              className="block rounded-xl p-5 transition"
+          <Link key={mission.id} href={`/missions/${mission.slug}`} className="block rounded-xl p-5 transition"
               style={{
                 backgroundColor: "var(--bg-card)",
                 border: "1px solid var(--border-color)",
@@ -36,8 +31,7 @@ export function MissionList() {
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = "var(--border-color)";
-              }}
-            >
+              }}>
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div>
                   <h2 className="text-xl font-bold" style={{ color: "var(--text-primary)" }}>
@@ -51,17 +45,14 @@ export function MissionList() {
                   {formatDate(mission.launch.date)}
                 </div>
               </div>
-            </a>
-          </Link>
+            </Link>
         ))}
       </div>
 
       <div className="mt-8 pt-6 border-t" style={{ borderColor: "var(--border-color)" }}>
-        <Link href="/artifacts">
-          <a className="font-medium" style={{ color: "var(--accent-primary)" }}>
+        <Link href="/artifacts" className="font-medium" style={{ color: "var(--accent-primary)" }}>
             What Humans Brought Back From Space →
-          </a>
-        </Link>
+          </Link>
       </div>
     </div>
   );

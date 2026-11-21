@@ -90,6 +90,9 @@ ${title.toLowerCase()} demonstrates the incredible complexity and beauty of spac
 function addBlogPost(post) {
   try {
     let content = fs.readFileSync(BLOG_POSTS_FILE, 'utf-8');
+    if (content.includes(`slug: "${post.slug}"`)) {
+      return { success: false, message: `Blog post already exists: ${post.slug}` };
+    }
 
     const postObject = `  {
     slug: "${post.slug}",

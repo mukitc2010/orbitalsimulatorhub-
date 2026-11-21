@@ -181,31 +181,21 @@ export function SpaceExperiments() {
         <p className="text-slate-700 mb-4">
           After doing these experiments, see the same physics in action with real satellites! Add LEO, MEO, and GEO satellites and watch them orbit Earth in 3D.
         </p>
-        <Link href="/simulator">
-          <a className="inline-block px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90 transition">
+        <Link href="/simulator" className="inline-block px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90 transition">
             Open 3D Simulator →
-          </a>
-        </Link>
+          </Link>
       </div>
 
       <div className="text-sm text-slate-600 space-y-2">
         <p><strong>Related Topics:</strong></p>
         <div className="flex flex-wrap gap-2">
-          <Link href="/learn/orbital-mechanics">
-            <a className="text-[var(--accent-cyan)] hover:underline">What is Orbital Mechanics?</a>
-          </Link>
+          <Link href="/learn/orbital-mechanics" className="text-[var(--accent-cyan)] hover:underline">What is Orbital Mechanics?</Link>
           <span>·</span>
-          <Link href="/learn/newton">
-            <a className="text-[var(--accent-cyan)] hover:underline">Newton's Laws</a>
-          </Link>
+          <Link href="/learn/newton" className="text-[var(--accent-cyan)] hover:underline">Newton's Laws</Link>
           <span>·</span>
-          <Link href="/learn/space-questions">
-            <a className="text-[var(--accent-cyan)] hover:underline">Why Don't Satellites Fall?</a>
-          </Link>
+          <Link href="/learn/space-questions" className="text-[var(--accent-cyan)] hover:underline">Why Don't Satellites Fall?</Link>
           <span>·</span>
-          <Link href="/formulas-library">
-            <a className="text-[var(--accent-cyan)] hover:underline">Space Formulas</a>
-          </Link>
+          <Link href="/formulas-library" className="text-[var(--accent-cyan)] hover:underline">Space Formulas</Link>
         </div>
       </div>
     </div>

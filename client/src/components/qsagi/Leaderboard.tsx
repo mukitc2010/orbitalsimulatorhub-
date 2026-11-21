@@ -5,13 +5,22 @@ export function Leaderboard({ scenario }: { scenario: string }) {
   const [err, setErr] = useState<string | null>(null);
 
   useEffect(() => {
+    let cancelled = false;
     (async () => {
       setErr(null);
-      const res = await fetch(`/api/qsagi/leaderboard?scenario=${encodeURIComponent(scenario)}`);
-      const data = await res.json();
-      if (!res.ok) setErr(data.error || "Failed");
-      else setRows(data.leaderboard || []);
+      try {
+        const res = await fetch(`/api/qsagi/leaderboard?scenario=${encodeURIComponent(scenario)}`);
+        const data = await res.json();
+        if (cancelled) return;
+        if (!res.ok) setErr(data.error || "Failed");
+        else setRows(Array.isArray(data.leaderboard) ? data.leaderboard : []);
+      } catch {
+        if (!cancelled) setErr("Leaderboard unavailable");
+      }
     })();
+    return () => {
+      cancelled = true;
+    };
   }, [scenario]);
 
   return (

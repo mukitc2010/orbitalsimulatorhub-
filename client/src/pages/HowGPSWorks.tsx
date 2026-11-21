@@ -151,42 +151,28 @@ export function HowGPSWorks() {
             Explore GPS satellites and orbits in our interactive tools:
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/simulator">
-              <a className="px-4 py-2 rounded-lg font-medium bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+            <Link href="/simulator" className="px-4 py-2 rounded-lg font-medium bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
                 Add MEO Satellite →
-              </a>
-            </Link>
-            <Link href="/satellites">
-              <a className="px-4 py-2 rounded-lg font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/satellites" className="px-4 py-2 rounded-lg font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 GPS Satellite Data →
-              </a>
-            </Link>
-            <Link href="/calculators">
-              <a className="px-4 py-2 rounded-lg font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/calculators" className="px-4 py-2 rounded-lg font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Orbit Calculator →
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
 
         <div className="text-sm text-slate-600 space-y-2">
           <p><strong>Related Topics:</strong></p>
           <div className="flex flex-wrap gap-2">
-            <Link href="/satellites">
-              <a className="text-[var(--accent-cyan)] hover:underline">Real Satellite Orbits</a>
-            </Link>
+            <Link href="/satellites" className="text-[var(--accent-cyan)] hover:underline">Real Satellite Orbits</Link>
             <span>·</span>
-            <Link href="/learn/orbital-mechanics">
-              <a className="text-[var(--accent-cyan)] hover:underline">Orbital Mechanics</a>
-            </Link>
+            <Link href="/learn/orbital-mechanics" className="text-[var(--accent-cyan)] hover:underline">Orbital Mechanics</Link>
             <span>·</span>
-            <Link href="/simulator">
-              <a className="text-[var(--accent-cyan)] hover:underline">3D Simulator</a>
-            </Link>
+            <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">3D Simulator</Link>
             <span>·</span>
-            <Link href="/learn/how-starlink-works">
-              <a className="text-[var(--accent-cyan)] hover:underline">How Starlink Works</a>
-            </Link>
+            <Link href="/learn/how-starlink-works" className="text-[var(--accent-cyan)] hover:underline">How Starlink Works</Link>
           </div>
         </div>
       </section>

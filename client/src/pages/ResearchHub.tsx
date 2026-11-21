@@ -164,25 +164,23 @@ export function ResearchHub() {
         <p className="text-sm text-slate-700 mb-3">
           <strong>Light-Speed Constraints, Neuro-Space Cognition, and Aerospace Dynamics</strong> — A unified framework for future space navigation and intelligence systems. Covers relativistic aerospace, autonomous AI, warp metrics, quantum navigation, and the proposed Neuro-Space Research Institute.
         </p>
-        <Link href="/research/neuro-space">
-          <a className="inline-block px-5 py-2.5 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+        <Link href="/research/neuro-space" className="inline-block px-5 py-2.5 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
             Read Neuro-Space Research →
-          </a>
-        </Link>
+          </Link>
       </section>
 
       <section className="rounded-xl bg-white border-2 border-slate-200 p-4 mb-6">
         <h2 className="font-bold text-slate-800 mb-2">🛰 Learning hub &amp; tools</h2>
         <p className="text-sm text-slate-600 mb-3">Orbital mechanics lessons, real satellite data, space formulas, and calculators.</p>
         <div className="flex flex-wrap gap-2">
-          <Link href="/learn/orbital-mechanics"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">What is orbital mechanics?</a></Link>
-          <Link href="/learn/space-questions"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Why don&apos;t satellites fall?</a></Link>
-          <Link href="/learn/experiments"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Space Experiments</a></Link>
-          <Link href="/formulas-library"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Formula library</a></Link>
-          <Link href="/satellites"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Real satellite orbits</a></Link>
-          <Link href="/calculators"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Calculators</a></Link>
-          <Link href="/compare/orbits"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Compare Orbits</a></Link>
-          <Link href="/quiz/orbital-mechanics"><a className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Quiz</a></Link>
+          <Link href="/learn/orbital-mechanics" className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">What is orbital mechanics?</Link>
+          <Link href="/learn/space-questions" className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Why don&apos;t satellites fall?</Link>
+          <Link href="/learn/experiments" className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Space Experiments</Link>
+          <Link href="/formulas-library" className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Formula library</Link>
+          <Link href="/satellites" className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Real satellite orbits</Link>
+          <Link href="/calculators" className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Calculators</Link>
+          <Link href="/compare/orbits" className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Compare Orbits</Link>
+          <Link href="/quiz/orbital-mechanics" className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 font-medium text-sm hover:bg-[var(--accent-cyan)]/20">Quiz</Link>
         </div>
       </section>
 
@@ -192,42 +190,30 @@ export function ResearchHub() {
           Detailed explanations of how space technology works. Perfect for understanding real-world applications of orbital mechanics!
         </p>
         <div className="grid md:grid-cols-2 gap-3">
-          <Link href="/learn/how-gps-works">
-            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+          <Link href="/learn/how-gps-works" className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
               <span className="font-medium text-slate-800">📍 How GPS Works</span>
               <p className="text-xs text-slate-600 mt-1">Trilateration, atomic clocks, GPS constellation</p>
-            </a>
-          </Link>
-          <Link href="/learn/how-nasa-launches-satellite">
-            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+            </Link>
+          <Link href="/learn/how-nasa-launches-satellite" className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
               <span className="font-medium text-slate-800">🚀 How Satellites Launch</span>
               <p className="text-xs text-slate-600 mt-1">Rocket stages, launch sequence, orbital insertion</p>
-            </a>
-          </Link>
-          <Link href="/learn/how-spacex-lands-rockets">
-            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+            </Link>
+          <Link href="/learn/how-spacex-lands-rockets" className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
               <span className="font-medium text-slate-800">🛬 How SpaceX Lands</span>
               <p className="text-xs text-slate-600 mt-1">Reusable rockets, grid fins, landing sequence</p>
-            </a>
-          </Link>
-          <Link href="/learn/how-mars-rovers-work">
-            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+            </Link>
+          <Link href="/learn/how-mars-rovers-work" className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
               <span className="font-medium text-slate-800">🤖 How Mars Rovers Work</span>
               <p className="text-xs text-slate-600 mt-1">Landing, navigation, science instruments</p>
-            </a>
-          </Link>
-          <Link href="/learn/how-starlink-works">
-            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+            </Link>
+          <Link href="/learn/how-starlink-works" className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
               <span className="font-medium text-slate-800">🌐 How Starlink Works</span>
               <p className="text-xs text-slate-600 mt-1">Satellite constellation, LEO internet, global coverage</p>
-            </a>
-          </Link>
-          <Link href="/learn/how-iss-works">
-            <a className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
+            </Link>
+          <Link href="/learn/how-iss-works" className="block p-3 rounded-lg bg-white border border-purple-200 hover:border-purple-400 hover:shadow transition">
               <span className="font-medium text-slate-800">🏠 How ISS Works</span>
               <p className="text-xs text-slate-600 mt-1">Orbit, life support, power, science on ISS</p>
-            </a>
-          </Link>
+            </Link>
         </div>
       </section>
 
@@ -236,11 +222,9 @@ export function ResearchHub() {
         <p className="text-sm text-slate-700 mb-4">
           Explore the history of space exploration from Sputnik to James Webb. See key missions, achievements, and milestones.
         </p>
-        <Link href="/missions/timeline">
-          <a className="inline-block px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+        <Link href="/missions/timeline" className="inline-block px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
             View Mission Timeline →
-          </a>
-        </Link>
+          </Link>
       </section>
 
       <section className="rounded-xl bg-[var(--accent-cyan)]/10 border-2 border-[var(--accent-cyan)]/40 p-4 mb-6">
@@ -248,11 +232,9 @@ export function ResearchHub() {
         <p className="text-sm text-slate-700 mb-3">
           The same page also covers Newton&apos;s laws, orbital mechanics (LEO/MEO/GEO, Kepler), and further reading with Vallado and standard references.
         </p>
-        <Link href="/learn/aerospace">
-          <a className="inline-block px-5 py-2.5 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+        <Link href="/learn/aerospace" className="inline-block px-5 py-2.5 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
             Open Aerospace reference →
-          </a>
-        </Link>
+          </Link>
       </section>
 
       <div className="space-y-8">
@@ -263,12 +245,10 @@ export function ResearchHub() {
             <ul className="space-y-3">
               {cat.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href}>
-                    <a className="block p-3 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/5 transition">
+                  <Link href={link.href} className="block p-3 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/5 transition">
                       <span className="font-medium text-slate-900">{link.label}</span>
                       <p className="text-xs text-slate-500 mt-0.5">{link.summary}</p>
-                    </a>
-                  </Link>
+                    </Link>
                 </li>
               ))}
             </ul>

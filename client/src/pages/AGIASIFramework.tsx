@@ -139,18 +139,14 @@ export function AGIASIFramework() {
         <h2 className="text-xl font-bold mb-5" style={{ color: "var(--text-primary)" }}>From autonomous operations to scientific mission intelligence</h2>
         <div className="grid gap-4 md:grid-cols-2">
           {intelligenceStack.map((layer, index) => (
-            <Link key={layer.title} href={layer.href}>
-              <a
-                className="block rounded-lg border p-4 transition focus:outline-none focus:ring-2 focus:ring-[var(--accent-cyan)]"
-                style={{ borderColor: "var(--border-color)", background: "rgba(255,255,255,0.025)" }}
-              >
+            <Link key={layer.title} href={layer.href} className="block rounded-lg border p-4 transition focus:outline-none focus:ring-2 focus:ring-[var(--accent-cyan)]"
+                style={{ borderColor: "var(--border-color)", background: "rgba(255,255,255,0.025)" }}>
                 <p className="text-xs font-bold" style={{ color: "var(--accent-gold)" }}>LAYER {index + 1}</p>
                 <h3 className="font-bold mt-1" style={{ color: "var(--text-primary)" }}>{layer.title}</h3>
                 <p className="text-sm leading-6 mt-2" style={{ color: "var(--text-secondary)" }}>{layer.description}</p>
                 <p className="text-xs leading-5 mt-3" style={{ color: "var(--accent-cyan)" }}>{layer.methods}</p>
                 <span className="inline-block text-xs font-semibold mt-4" style={{ color: "var(--text-primary)" }}>Explore this layer →</span>
-              </a>
-            </Link>
+              </Link>
           ))}
         </div>
       </section>
@@ -183,15 +179,9 @@ export function AGIASIFramework() {
       </section>
 
       <div className="flex flex-wrap gap-3">
-        <Link href="/research/space-agi-lab">
-          <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>← Space-AGI Lab</a>
-        </Link>
-        <Link href="/research/pmp-nmpc-autonomous-control">
-          <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>PMP–NMPC Control</a>
-        </Link>
-        <Link href="/research/asi-astronaut-mathematics">
-          <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-gold)", color: "var(--text-primary)" }}>ASI Mathematics</a>
-        </Link>
+        <Link href="/research/space-agi-lab" className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>← Space-AGI Lab</Link>
+        <Link href="/research/pmp-nmpc-autonomous-control" className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>PMP–NMPC Control</Link>
+        <Link href="/research/asi-astronaut-mathematics" className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-gold)", color: "var(--text-primary)" }}>ASI Mathematics</Link>
       </div>
     </div>
   );

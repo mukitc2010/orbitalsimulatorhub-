@@ -20,18 +20,18 @@ export function NASAForStudents() {
       <div className="space-y-4">
         <h2 className="text-xl font-bold text-slate-800">Study topics</h2>
         <ul className="space-y-2 text-slate-700">
-          <li><Link href="/learn/orbital-mechanics"><a className="text-[var(--accent-cyan)] hover:underline font-medium">Orbital mechanics</a></Link> — How satellites and spacecraft move; essential for mission design.</li>
-          <li><Link href="/learn/nasa-study-guide"><a className="text-[var(--accent-cyan)] hover:underline font-medium">NASA study guide</a></Link> — Missions, timeline, key concepts.</li>
-          <li><Link href="/learn/how-satellites-work"><a className="text-[var(--accent-cyan)] hover:underline font-medium">How satellites work</a></Link> — LEO, MEO, GEO; GPS, ISS, Starlink.</li>
-          <li><Link href="/ai-in-aerospace"><a className="text-[var(--accent-cyan)] hover:underline font-medium">AI in aerospace</a></Link> — How NASA uses AI for rovers, navigation, and science.</li>
-          <li><Link href="/learn/quantum-space"><a className="text-[var(--accent-cyan)] hover:underline font-medium">Quantum physics &amp; space</a></Link> — Atomic clocks, sensors, future tech.</li>
-          <li><Link href="/research"><a className="text-[var(--accent-cyan)] hover:underline font-medium">Research hub</a></Link> — References, algorithms, real data for advanced students.</li>
+          <li><Link href="/learn/orbital-mechanics" className="text-[var(--accent-cyan)] hover:underline font-medium">Orbital mechanics</Link> — How satellites and spacecraft move; essential for mission design.</li>
+          <li><Link href="/learn/nasa-study-guide" className="text-[var(--accent-cyan)] hover:underline font-medium">NASA study guide</Link> — Missions, timeline, key concepts.</li>
+          <li><Link href="/learn/how-satellites-work" className="text-[var(--accent-cyan)] hover:underline font-medium">How satellites work</Link> — LEO, MEO, GEO; GPS, ISS, Starlink.</li>
+          <li><Link href="/ai-in-aerospace" className="text-[var(--accent-cyan)] hover:underline font-medium">AI in aerospace</Link> — How NASA uses AI for rovers, navigation, and science.</li>
+          <li><Link href="/learn/quantum-space" className="text-[var(--accent-cyan)] hover:underline font-medium">Quantum physics &amp; space</Link> — Atomic clocks, sensors, future tech.</li>
+          <li><Link href="/research" className="text-[var(--accent-cyan)] hover:underline font-medium">Research hub</Link> — References, algorithms, real data for advanced students.</li>
         </ul>
       </div>
 
       <div className="rounded-xl border-2 border-[var(--accent-gold)] bg-[var(--accent-gold)]/10 p-6">
         <h2 className="text-lg font-bold text-slate-800 mb-2">Careers &amp; internships</h2>
-        <p className="text-slate-700 mb-4">NASA offers internships and pathways for students. Learn what it takes: <Link href="/careers"><a className="text-[var(--accent-cyan)] hover:underline font-medium">Space careers →</a></Link>. Use our <Link href="/simulator"><a className="text-[var(--accent-cyan)] hover:underline">simulator</a></Link>, <Link href="/formulas-library"><a className="text-[var(--accent-cyan)] hover:underline">formulas</a></Link>, and <Link href="/astrobot"><a className="text-[var(--accent-cyan)] hover:underline">AstroBot</a></Link> to build your skills.
+        <p className="text-slate-700 mb-4">NASA offers internships and pathways for students. Learn what it takes: <Link href="/careers" className="text-[var(--accent-cyan)] hover:underline font-medium">Space careers →</Link>. Use our <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">simulator</Link>, <Link href="/formulas-library" className="text-[var(--accent-cyan)] hover:underline">formulas</Link>, and <Link href="/astrobot" className="text-[var(--accent-cyan)] hover:underline">AstroBot</Link> to build your skills.
         </p>
       </div>
     </div>

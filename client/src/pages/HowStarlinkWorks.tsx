@@ -219,42 +219,28 @@ export function HowStarlinkWorks() {
             Starlink satellites orbit in Low Earth Orbit - the same type you can simulate! Add a LEO satellite and see how it moves.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/simulator">
-              <a className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+            <Link href="/simulator" className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
                 Open 3D Simulator →
-              </a>
-            </Link>
-            <Link href="/satellites">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/satellites" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Starlink Data →
-              </a>
-            </Link>
-            <Link href="/compare/orbits">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/compare/orbits" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Compare Orbits →
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
 
         <div className="text-sm text-slate-600 space-y-2">
           <p><strong>Related Topics:</strong></p>
           <div className="flex flex-wrap gap-2">
-            <Link href="/learn/how-gps-works">
-              <a className="text-[var(--accent-cyan)] hover:underline">How GPS Works</a>
-            </Link>
+            <Link href="/learn/how-gps-works" className="text-[var(--accent-cyan)] hover:underline">How GPS Works</Link>
             <span>·</span>
-            <Link href="/compare/orbits">
-              <a className="text-[var(--accent-cyan)] hover:underline">Compare Orbits</a>
-            </Link>
+            <Link href="/compare/orbits" className="text-[var(--accent-cyan)] hover:underline">Compare Orbits</Link>
             <span>·</span>
-            <Link href="/satellites">
-              <a className="text-[var(--accent-cyan)] hover:underline">Real Satellite Data</a>
-            </Link>
+            <Link href="/satellites" className="text-[var(--accent-cyan)] hover:underline">Real Satellite Data</Link>
             <span>·</span>
-            <Link href="/simulator">
-              <a className="text-[var(--accent-cyan)] hover:underline">3D Simulator</a>
-            </Link>
+            <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">3D Simulator</Link>
           </div>
         </div>
       </section>

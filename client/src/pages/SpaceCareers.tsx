@@ -90,13 +90,13 @@ export function SpaceCareers() {
       <div className="rounded-xl bg-slate-50 border border-slate-200 p-5 text-sm text-slate-700">
         <p className="mb-2">
           <strong>Learn more:</strong>{" "}
-          <Link href="/learn/aerospace"><a className="text-[var(--accent-cyan)] hover:underline">Aerospace reference</a></Link>
+          <Link href="/learn/aerospace" className="text-[var(--accent-cyan)] hover:underline">Aerospace reference</Link>
           {" · "}
-          <Link href="/ai-in-aerospace"><a className="text-[var(--accent-cyan)] hover:underline">AI in Aerospace</a></Link>
+          <Link href="/ai-in-aerospace" className="text-[var(--accent-cyan)] hover:underline">AI in Aerospace</Link>
           {" · "}
-          <Link href="/research"><a className="text-[var(--accent-cyan)] hover:underline">Research hub</a></Link>
+          <Link href="/research" className="text-[var(--accent-cyan)] hover:underline">Research hub</Link>
           {" · "}
-          <Link href="/astrobot"><a className="text-[var(--accent-cyan)] hover:underline">Ask AstroBot</a></Link>
+          <Link href="/astrobot" className="text-[var(--accent-cyan)] hover:underline">Ask AstroBot</Link>
         </p>
         <p className="text-xs text-slate-500">
           Official hiring: <a href="https://www.usajobs.gov" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-cyan)] hover:underline">USAJobs (NASA)</a>, <a href="https://www.nasa.gov/careers" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-cyan)] hover:underline">nasa.gov/careers</a>, <a href="https://www.spacex.com/careers" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-cyan)] hover:underline">SpaceX careers</a>.

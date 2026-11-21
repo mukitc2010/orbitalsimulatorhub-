@@ -16,48 +16,36 @@ export function Welcome() {
       <section className="rounded-xl border-2 border-[var(--accent-cyan)]/40 bg-white p-6 mb-6">
         <h2 className="text-lg font-bold text-slate-800 mb-4">🚀 Explore the platform</h2>
         <div className="grid sm:grid-cols-2 gap-3">
-          <Link href="/simulator">
-            <a className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
+          <Link href="/simulator" className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
               <span className="text-xl">🛸</span>
               <h3 className="font-semibold text-slate-800 mt-1">3D Simulator</h3>
               <p className="text-sm text-slate-600">Add LEO, MEO, GEO satellites and watch orbits in real time.</p>
-            </a>
-          </Link>
-          <Link href="/astrobot">
-            <a className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
+            </Link>
+          <Link href="/astrobot" className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
               <span className="text-xl">🤖</span>
               <h3 className="font-semibold text-slate-800 mt-1">Ask AstroBot</h3>
               <p className="text-sm text-slate-600">Get answers about space, orbits, satellites, and rockets.</p>
-            </a>
-          </Link>
-          <Link href="/blog">
-            <a className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
+            </Link>
+          <Link href="/blog" className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
               <span className="text-xl">📰</span>
               <h3 className="font-semibold text-slate-800 mt-1">Space Blog</h3>
               <p className="text-sm text-slate-600">Daily space news, facts, tutorials, and astronomy lessons.</p>
-            </a>
-          </Link>
-          <Link href="/research">
-            <a className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
+            </Link>
+          <Link href="/research" className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
               <span className="text-xl">📚</span>
               <h3 className="font-semibold text-slate-800 mt-1">Research Hub</h3>
               <p className="text-sm text-slate-600">Future civilization, next 100 years, AI in aerospace.</p>
-            </a>
-          </Link>
-          <Link href="/astronauts">
-            <a className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
+            </Link>
+          <Link href="/astronauts" className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
               <span className="text-xl">👨‍🚀</span>
               <h3 className="font-semibold text-slate-800 mt-1">Astronaut Database</h3>
               <p className="text-sm text-slate-600">500+ astronaut profiles with missions and achievements.</p>
-            </a>
-          </Link>
-          <Link href="/planets">
-            <a className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
+            </Link>
+          <Link href="/planets" className="block p-4 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:shadow-sm transition">
               <span className="text-xl">🪐</span>
               <h3 className="font-semibold text-slate-800 mt-1">Planet Explorer</h3>
               <p className="text-sm text-slate-600">All 8 planets with real mission data and exploration.</p>
-            </a>
-          </Link>
+            </Link>
         </div>
       </section>
 
@@ -67,26 +55,18 @@ export function Welcome() {
           Connect with fellow space enthusiasts. Share ideas, ask questions, and explore together.
         </p>
         <div className="flex flex-wrap justify-center gap-3">
-          <Link href="/blog">
-            <a className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-[var(--accent-pink)] hover:bg-pink-50/50 transition">
+          <Link href="/blog" className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-[var(--accent-pink)] hover:bg-pink-50/50 transition">
               📰 Space Blog
-            </a>
-          </Link>
-          <Link href="/space-news">
-            <a className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-[var(--accent-pink)] hover:bg-pink-50/50 transition">
+            </Link>
+          <Link href="/space-news" className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-[var(--accent-pink)] hover:bg-pink-50/50 transition">
               Space News
-            </a>
-          </Link>
-          <Link href="/research">
-            <a className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-[var(--accent-pink)] hover:bg-pink-50/50 transition">
+            </Link>
+          <Link href="/research" className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-[var(--accent-pink)] hover:bg-pink-50/50 transition">
               Research
-            </a>
-          </Link>
-          <Link href="/">
-            <a className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-[var(--accent-pink)] hover:bg-pink-50/50 transition">
+            </Link>
+          <Link href="/" className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-[var(--accent-pink)] hover:bg-pink-50/50 transition">
               ← Back to Home
-            </a>
-          </Link>
+            </Link>
         </div>
       </section>
     </div>

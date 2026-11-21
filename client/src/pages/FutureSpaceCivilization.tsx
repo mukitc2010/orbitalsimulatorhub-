@@ -52,21 +52,21 @@ export function FutureSpaceCivilization() {
       <section className="rounded-xl border-2 border-slate-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-bold text-slate-800 mb-4">Key Enablers</h2>
         <ul className="list-disc pl-6 space-y-2 text-slate-700">
-          <li><strong>Autonomous AI</strong> — Spacecraft that think and act without Earth control. See <Link href="/research/neuro-space"><a className="text-[var(--accent-cyan)] hover:underline">Neuro-Space Research</a></Link>.</li>
-          <li><strong>Quantum technology</strong> — Atomic clocks, sensors, communication. <Link href="/learn/quantum-space"><a className="text-[var(--accent-cyan)] hover:underline">Quantum &amp; Space</a></Link>.</li>
+          <li><strong>Autonomous AI</strong> — Spacecraft that think and act without Earth control. See <Link href="/research/neuro-space" className="text-[var(--accent-cyan)] hover:underline">Neuro-Space Research</Link>.</li>
+          <li><strong>Quantum technology</strong> — Atomic clocks, sensors, communication. <Link href="/learn/quantum-space" className="text-[var(--accent-cyan)] hover:underline">Quantum &amp; Space</Link>.</li>
           <li><strong>Propulsion</strong> — Chemical, electric, nuclear, and future concepts.</li>
           <li><strong>In-situ resources</strong> — Water ice, regolith, manufacturing.</li>
-          <li><strong>Orbital mechanics</strong> — The physics that makes it all possible. <Link href="/simulator"><a className="text-[var(--accent-cyan)] hover:underline">Try the simulator</a></Link>.</li>
+          <li><strong>Orbital mechanics</strong> — The physics that makes it all possible. <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">Try the simulator</Link>.</li>
         </ul>
       </section>
 
       <section className="rounded-xl border-2 border-[var(--accent-gold)]/50 bg-amber-50/30 p-6">
         <h2 className="text-xl font-bold text-slate-800 mb-4">Explore Further</h2>
         <div className="flex flex-wrap gap-3">
-          <Link href="/research"><a className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Research Hub</a></Link>
-          <Link href="/research/neuro-space"><a className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Neuro-Space Doctrine</a></Link>
-          <Link href="/missions/timeline"><a className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Mission Timeline</a></Link>
-          <Link href="/astrobot"><a className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Ask AstroBot</a></Link>
+          <Link href="/research" className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Research Hub</Link>
+          <Link href="/research/neuro-space" className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Neuro-Space Doctrine</Link>
+          <Link href="/missions/timeline" className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Mission Timeline</Link>
+          <Link href="/astrobot" className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Ask AstroBot</Link>
         </div>
       </section>
 

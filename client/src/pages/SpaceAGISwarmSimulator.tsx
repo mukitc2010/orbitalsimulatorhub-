@@ -52,7 +52,7 @@ export function SpaceAGISwarmSimulator() {
   },[mode,retry]);
   const packet=mode==="demo"?demoPacket(time,count,avoidance):live||{t:0,satellites:[],num_candidates:0};
   const satellite=packet.satellites.find(s=>s.id===selected)||packet.satellites[0];
-  const pairGap=mode==="demo"?Math.hypot(...packet.satellites[0].r.map((v,i)=>v-packet.satellites[1].r[i]))/1000:null;
+  const pairGap=mode==="demo" && packet.satellites.length>=2?Math.hypot(...packet.satellites[0].r.map((v,i)=>v-packet.satellites[1].r[i]))/1000:null;
   return <div className="swarm-lab">
     <header><p className="swarm-kicker">SPACE-AGI / INTERACTIVE SWARM LAB</p><h1>Intelligence in orbit.</h1><p>Explore an animated constellation, inspect its satellites, and replay a close-approach scenario in 3D.</p></header>
     <div className="swarm-toolbar"><div role="group" aria-label="Simulation source"><button aria-pressed={mode==="demo"} onClick={()=>setMode("demo")}>Browser demo</button><button aria-pressed={mode==="live"} onClick={()=>setMode("live")}>Live backend</button></div><span role="status">{mode==="demo"?"DEMO / RUNS IN YOUR BROWSER":status}</span></div>

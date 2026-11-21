@@ -26,30 +26,24 @@ export function SatelliteTutorial() {
       </div>
 
       <div className="rounded-xl bg-slate-50 border border-slate-200 p-4 text-slate-700">
-        <p><strong>Why satellite tutorials?</strong> Satellites power GPS, weather forecasts, TV, and the internet. Understanding how they orbit and communicate helps you learn real aerospace and physics. Each tutorial links to our <Link href="/simulator"><a className="text-[var(--accent-cyan)] hover:underline">3D simulator</a></Link> and <Link href="/formulas-library"><a className="text-[var(--accent-cyan)] hover:underline">formulas</a></Link>.</p>
+        <p><strong>Why satellite tutorials?</strong> Satellites power GPS, weather forecasts, TV, and the internet. Understanding how they orbit and communicate helps you learn real aerospace and physics. Each tutorial links to our <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">3D simulator</Link> and <Link href="/formulas-library" className="text-[var(--accent-cyan)] hover:underline">formulas</Link>.</p>
       </div>
 
       <section>
         <h2 className="text-xl font-bold text-slate-800 mb-4">All satellite tutorials</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {tutorials.map((t) => (
-            <Link key={t.href} href={t.href}>
-              <a className="block p-5 rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-white hover:border-[var(--accent-cyan)] hover:shadow-md transition">
+            <Link key={t.href} href={t.href} className="block p-5 rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-white hover:border-[var(--accent-cyan)] hover:shadow-md transition">
                 <h3 className="font-bold text-slate-800 mb-1">{t.title}</h3>
                 <p className="text-sm text-slate-600">{t.desc}</p>
-              </a>
-            </Link>
+              </Link>
           ))}
         </div>
       </section>
 
       <div className="flex flex-wrap gap-3">
-        <Link href="/blog/category/satellite-tutorials">
-          <a className="px-5 py-2.5 rounded-xl bg-[var(--accent-cyan)] text-[#0f172a] font-semibold hover:opacity-90">Satellite tutorial articles →</a>
-        </Link>
-        <Link href="/satellites">
-          <a className="px-5 py-2.5 rounded-xl border-2 border-slate-300 text-slate-700 font-medium hover:bg-slate-100">Real satellite data</a>
-        </Link>
+        <Link href="/blog/category/satellite-tutorials" className="px-5 py-2.5 rounded-xl bg-[var(--accent-cyan)] text-[#0f172a] font-semibold hover:opacity-90">Satellite tutorial articles →</Link>
+        <Link href="/satellites" className="px-5 py-2.5 rounded-xl border-2 border-slate-300 text-slate-700 font-medium hover:bg-slate-100">Real satellite data</Link>
       </div>
     </div>
   );

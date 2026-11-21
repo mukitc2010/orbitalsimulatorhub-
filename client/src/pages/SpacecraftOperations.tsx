@@ -365,7 +365,7 @@ export function SpacecraftOperations() {
       }
       for (let i = steps.length - 1; i >= 0; i--) if (simT >= steps[i].t) steps.splice(i, 1)[0].f();
       const bad = inc && !inc.fixed ? inc.sys : -1;
-      const cascade = inc && !inc.fixed ? FAULTS[faultIx].cascade : [];
+      const cascade: readonly number[] = inc && !inc.fixed ? FAULTS[faultIx].cascade : [];
       H.forEach((v, i) => {
         if (i === bad && inc) { H[i] = Math.max(5, v - MODES[mode].rate * dt); inc.low = Math.min(inc.low, H[i]); }
         else if (cascade.includes(i)) H[i] = Math.max(20, v - MODES[mode].rate * 0.45 * dt);

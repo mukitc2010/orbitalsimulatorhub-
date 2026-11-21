@@ -358,42 +358,28 @@ export function QuantumPhysicsNASA() {
             Quantum physics enables NASA's most advanced technologies. Explore how it all connects!
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/learn/quantum-physics">
-              <a className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+            <Link href="/learn/quantum-physics" className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
                 Quantum Physics Basics →
-              </a>
-            </Link>
-            <Link href="/learn/how-gps-works">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/learn/how-gps-works" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 GPS & Atomic Clocks →
-              </a>
-            </Link>
-            <Link href="/learn/astrophysics">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/learn/astrophysics" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Astrophysics →
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
 
         <div className="text-sm text-slate-600 space-y-2">
           <p><strong>Related Topics:</strong></p>
           <div className="flex flex-wrap gap-2">
-            <Link href="/learn/quantum-physics">
-              <a className="text-[var(--accent-cyan)] hover:underline">Quantum Physics</a>
-            </Link>
+            <Link href="/learn/quantum-physics" className="text-[var(--accent-cyan)] hover:underline">Quantum Physics</Link>
             <span>·</span>
-            <Link href="/learn/how-gps-works">
-              <a className="text-[var(--accent-cyan)] hover:underline">How GPS Works</a>
-            </Link>
+            <Link href="/learn/how-gps-works" className="text-[var(--accent-cyan)] hover:underline">How GPS Works</Link>
             <span>·</span>
-            <Link href="/learn/astrophysics">
-              <a className="text-[var(--accent-cyan)] hover:underline">Astrophysics</a>
-            </Link>
+            <Link href="/learn/astrophysics" className="text-[var(--accent-cyan)] hover:underline">Astrophysics</Link>
             <span>·</span>
-            <Link href="/formulas-library">
-              <a className="text-[var(--accent-cyan)] hover:underline">Formulas</a>
-            </Link>
+            <Link href="/formulas-library" className="text-[var(--accent-cyan)] hover:underline">Formulas</Link>
           </div>
         </div>
       </section>

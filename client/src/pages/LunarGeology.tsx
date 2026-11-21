@@ -107,9 +107,9 @@ export function LunarGeology() {
     <div className="max-w-5xl mx-auto space-y-10">
       {/* Breadcrumb */}
       <nav className="flex flex-wrap items-center gap-2 text-sm" style={{ color: "var(--text-muted)" }}>
-        <Link href="/"><a style={{ color: "var(--accent-primary)" }}>Home</a></Link>
+        <Link href="/" style={{ color: "var(--accent-primary)" }}>Home</Link>
         <span>/</span>
-        <Link href="/planets/moon"><a style={{ color: "var(--accent-primary)" }}>Moon</a></Link>
+        <Link href="/planets/moon" style={{ color: "var(--accent-primary)" }}>Moon</Link>
         <span>/</span>
         <span style={{ color: "var(--text-primary)" }}>Lunar Geology</span>
       </nav>
@@ -267,10 +267,10 @@ export function LunarGeology() {
         )}
 
         <div className="flex flex-wrap gap-3 mt-6">
-          <Link href="/missions/apollo-14"><a className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>🚀 Apollo 14 Mission Details</a></Link>
-          <Link href="/astronauts/alan-shepard"><a className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>👨‍🚀 Alan Shepard</a></Link>
-          <Link href="/astronauts/edgar-mitchell"><a className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>👨‍🚀 Edgar Mitchell</a></Link>
-          <Link href="/artifacts"><a className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>🪨 Apollo 14 Samples</a></Link>
+          <Link href="/missions/apollo-14" className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>🚀 Apollo 14 Mission Details</Link>
+          <Link href="/astronauts/alan-shepard" className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>👨‍🚀 Alan Shepard</Link>
+          <Link href="/astronauts/edgar-mitchell" className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>👨‍🚀 Edgar Mitchell</Link>
+          <Link href="/artifacts" className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>🪨 Apollo 14 Samples</Link>
         </div>
       </section>
 
@@ -323,11 +323,9 @@ export function LunarGeology() {
                       </p>
                     </div>
                   )}
-                  <Link href={`/missions/${site.missionSlug}`}>
-                    <a className="inline-flex items-center gap-1 text-sm font-semibold" style={{ color: "var(--accent-primary)" }}>
+                  <Link href={`/missions/${site.missionSlug}`} className="inline-flex items-center gap-1 text-sm font-semibold" style={{ color: "var(--accent-primary)" }}>
                       View full {site.mission} mission details →
-                    </a>
-                  </Link>
+                    </Link>
                 </div>
               )}
             </div>
@@ -414,9 +412,7 @@ export function LunarGeology() {
           { href: "/astrobot", label: "🤖 Ask AstroBot" },
           { href: "/research", label: "📚 Research Hub" },
         ].map((l) => (
-          <Link key={l.href} href={l.href}>
-            <a className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>{l.label}</a>
-          </Link>
+          <Link key={l.href} href={l.href} className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>{l.label}</Link>
         ))}
       </section>
     </div>

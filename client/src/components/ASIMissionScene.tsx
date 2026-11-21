@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
+import { R3FLine, R3FLineMaterial } from "./r3fHost";
 
 function useReducedMotion() {
   const [reducedMotion, setReducedMotion] = useState(false);
@@ -60,9 +61,9 @@ function OrbitingProbe({ reducedMotion }: { reducedMotion: boolean }) {
 
   return (
     <>
-      <line geometry={trail}>
-        <lineBasicMaterial color="#58e5ff" transparent opacity={0.42} />
-      </line>
+      <R3FLine geometry={trail}>
+        <R3FLineMaterial color="#58e5ff" transparent opacity={0.42} />
+      </R3FLine>
       <group ref={probe} position={[2.15, 0, 0]}>
         <mesh>
           <boxGeometry args={[0.18, 0.1, 0.28]} />

@@ -1,6 +1,7 @@
 import { Link, useRoute } from "wouter";
 import { getPostsByCategory, type BlogPost } from "../data/blogPosts";
 import { getBlogImage, handleImageError } from "../data/blogImages";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 const CATEGORY_LABELS: Record<string, { label: string; emoji: string }> = {
   "space-agi": { label: "Space AGI", emoji: "🧠" },
@@ -25,9 +26,7 @@ export function BlogCategory() {
     return (
       <div className="max-w-4xl mx-auto text-center py-12">
         <h1 className="headline mb-4">Category not found</h1>
-        <Link href="/blog">
-          <a className="text-[var(--accent-cyan)] hover:underline font-medium">← Back to Blog</a>
-        </Link>
+        <Link href="/blog" className="text-[var(--accent-cyan)] hover:underline font-medium">← Back to Blog</Link>
       </div>
     );
   }
@@ -44,25 +43,21 @@ export function BlogCategory() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post) => (
-          <Link key={post.slug} href={`/blog/${post.slug}`}>
-            <a className="block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+          <Link key={post.slug} href={`/blog/${post.slug}`} className="block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
               <div className="aspect-video w-full" style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0ea5e9 100%)" }}>
                 <img src={getBlogImage(post)} alt={post.title} className="w-full h-full object-cover" loading="lazy" onError={handleImageError} />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-lg mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
                 <p className="text-sm mb-3 line-clamp-2" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
-                <p className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+                <p className="text-xs" style={{ color: "var(--text-muted)" }}>{formatDisplayDate(post.date, "long")}</p>
               </div>
-            </a>
-          </Link>
+            </Link>
         ))}
       </div>
 
       <div className="text-center">
-        <Link href="/blog">
-          <a className="text-[var(--accent-cyan)] hover:underline font-medium">← Back to Blog</a>
-        </Link>
+        <Link href="/blog" className="text-[var(--accent-cyan)] hover:underline font-medium">← Back to Blog</Link>
       </div>
     </div>
   );

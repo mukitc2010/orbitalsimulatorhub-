@@ -174,9 +174,9 @@ export function ASIAstronautMathematics() {
             This is a conceptual research synthesis, not an official single-equation standard from NASA or any agency.
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
-            <Link href="/research/space-agi-math"><a className="orbit-chip">Space-AGI Mathematics</a></Link>
-            <Link href="/research/agi-asi-framework"><a className="orbit-chip">AGI/ASI Framework</a></Link>
-            <Link href="/research/pmp-nmpc-autonomous-control"><a className="orbit-chip">PMP + NMPC Control</a></Link>
+            <Link href="/research/space-agi-math" className="orbit-chip">Space-AGI Mathematics</Link>
+            <Link href="/research/agi-asi-framework" className="orbit-chip">AGI/ASI Framework</Link>
+            <Link href="/research/pmp-nmpc-autonomous-control" className="orbit-chip">PMP + NMPC Control</Link>
           </div>
         </div>
       </section>

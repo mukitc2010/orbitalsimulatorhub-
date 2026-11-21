@@ -3,6 +3,7 @@ import { BLOG_POSTS, type BlogPost } from "../data/blogPosts";
 import { isCurrentNews, newsDateInNewYork } from "../data/freshNews";
 import { getBlogImage, handleImageError } from "../data/blogImages";
 import { ShareBar } from "../components/ShareBar";
+import { formatDisplayDate } from "../lib/formatDisplayDate";
 
 const CATEGORIES: { id: BlogPost["category"]; label: string; emoji: string }[] = [
   { id: "space-agi", label: "Space AGI", emoji: "🧠" },
@@ -37,13 +38,11 @@ export function Blog() {
 
       <section className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {byCategory.map((cat) => (
-          <Link key={cat.id} href={`/blog/category/${cat.id}`}>
-            <a className="blog-card block p-4 rounded-xl border-2 transition hover:shadow-lg" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>
+          <Link key={cat.id} href={`/blog/category/${cat.id}`} className="blog-card block p-4 rounded-xl border-2 transition hover:shadow-lg" style={{ background: "var(--bg-card)", borderColor: "var(--accent-cyan)" }}>
               <span className="text-2xl block mb-2">{cat.emoji}</span>
               <h2 className="font-bold mb-1" style={{ color: "var(--text-primary)" }}>{cat.label}</h2>
               <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{cat.posts.length} articles</p>
-            </a>
-          </Link>
+            </Link>
         ))}
       </section>
 
@@ -51,8 +50,7 @@ export function Blog() {
         <h2 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>Latest articles</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {recent.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`}>
-              <a className="post-card block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="post-card block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.01]" style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}>
                 <div className="aspect-video w-full" style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0ea5e9 100%)" }}>
                   <img
                     src={getBlogImage(post)}
@@ -66,10 +64,9 @@ export function Blog() {
                   <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--accent-cyan)" }}>{post.category.replace("-", " ")}</span>
                   <h3 className="font-bold text-lg mt-1 mb-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
                   <p className="text-sm mb-3 line-clamp-2" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
-                  <p className="text-xs" style={{ color: "var(--text-muted)" }}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+                  <p className="text-xs" style={{ color: "var(--text-muted)" }}>{formatDisplayDate(post.date, "long")}</p>
                 </div>
-              </a>
-            </Link>
+              </Link>
           ))}
         </div>
       </section>
@@ -80,7 +77,7 @@ export function Blog() {
           New articles added regularly covering NASA missions, space facts, satellite tutorials, and astronomy lessons. Bookmark this page and check back daily!
         </p>
         <p className="text-xs" style={{ color: "var(--text-muted)" }}>
-          <Link href="/rss.xml"><a className="text-[var(--accent-cyan)] hover:underline">RSS Feed</a></Link> available for automatic updates.
+          <Link href="/rss.xml" className="text-[var(--accent-cyan)] hover:underline">RSS Feed</Link> available for automatic updates.
         </p>
       </section>
 

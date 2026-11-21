@@ -36062,6 +36062,14 @@ Explore more in our [Space Shop](/space-shop) — NASA t-shirts, LEGO sets, and 
   },
 ];
 
+// Identical posts were appended twice. Keep one copy of each slug.
+const publishedBlogSlugs = new Set<string>();
+for (let blogIndex = BLOG_POSTS.length - 1; blogIndex >= 0; blogIndex -= 1) {
+  const blogSlug = BLOG_POSTS[blogIndex]?.slug;
+  if (!blogSlug || publishedBlogSlugs.has(blogSlug)) BLOG_POSTS.splice(blogIndex, 1);
+  else publishedBlogSlugs.add(blogSlug);
+}
+
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }

@@ -13,13 +13,13 @@ it("plays, pauses, changes speed, steps and resets the orbit", () => {
   const view = render(<SolarSystemLesson />);
   const earth = () => view.container.querySelector('.solar-orbit circle[fill="#38bdf8"]')!;
   const start = earth().getAttribute("cx");
-  fireEvent.click(screen.getByRole("button", { name: "Play", exact: true }));
-  expect(screen.getByRole("button", { name: "Pause", exact: true })).toBeEnabled();
-  fireEvent.click(screen.getByRole("button", { name: "Pause", exact: true }));
+  fireEvent.click(screen.getByRole("button", { name: /^Play$/ }));
+  expect(screen.getByRole("button", { name: /^Pause$/ })).toBeEnabled();
+  fireEvent.click(screen.getByRole("button", { name: /^Pause$/ }));
   fireEvent.change(screen.getByRole("combobox", { name: "Speed" }), { target: { value: "4" } });
   fireEvent.click(screen.getByRole("button", { name: /Step forward/ }));
   expect(earth().getAttribute("cx")).not.toBe(start);
-  fireEvent.click(screen.getByRole("button", { name: "Reset", exact: true }));
+  fireEvent.click(screen.getByRole("button", { name: /^Reset$/ }));
   expect(earth().getAttribute("cx")).toBe(start);
   expect(screen.getByRole("combobox")).toHaveValue("1");
 });
@@ -49,7 +49,7 @@ it("lets a learner compare a clicked planet with Earth's year", () => {
 it("keeps animation disabled for reduced motion while allowing manual exploration", () => {
   vi.stubGlobal("matchMedia", vi.fn(() => ({ matches: true, addEventListener: vi.fn(), removeEventListener: vi.fn() })));
   render(<SolarSystemLesson />);
-  expect(screen.getByRole("button", { name: "Play", exact: true })).toBeDisabled();
+  expect(screen.getByRole("button", { name: /^Play$/ })).toBeDisabled();
   expect(screen.getByText(/Reduced motion is on/)).toBeInTheDocument();
   expect(screen.getByRole("button", { name: /Step forward/ })).toBeEnabled();
 });
