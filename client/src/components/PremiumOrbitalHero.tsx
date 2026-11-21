@@ -78,16 +78,12 @@ export function PremiumOrbitalHero() {
             From live satellite telemetry to AI-guided missions, this platform blends NASA-grade storytelling, realistic orbital mechanics, and premium interactive design into one unforgettable experience.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link href="/simulator">
-              <a className="rounded-full bg-cyan-400 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:scale-[1.01]">
+            <Link href="/simulator" className="rounded-full bg-cyan-400 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:scale-[1.01]">
                 Launch the simulator
-              </a>
-            </Link>
-            <Link href="/astrobot">
-              <a className="rounded-full border border-cyan-400/50 px-5 py-2.5 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300">
+              </Link>
+            <Link href="/astrobot" className="rounded-full border border-cyan-400/50 px-5 py-2.5 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300">
                 Meet AstroBot
-              </a>
-            </Link>
+              </Link>
 
           </div>
 

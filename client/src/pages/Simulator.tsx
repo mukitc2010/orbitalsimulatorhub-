@@ -205,9 +205,7 @@ export function Simulator() {
             <span className="text-xs font-medium text-slate-600">Mission mode:</span>
             <span className="px-2 py-1 rounded bg-[var(--accent-cyan)]/20 text-slate-800 text-xs font-medium">Earth</span>
             <span className="text-xs text-slate-500">Moon / Mars orbits coming soon</span>
-            <Link href="/compare/orbits">
-              <a className="text-xs text-[var(--accent-cyan)] font-medium hover:underline">Compare Earth vs Mars orbit →</a>
-            </Link>
+            <Link href="/compare/orbits" className="text-xs text-[var(--accent-cyan)] font-medium hover:underline">Compare Earth vs Mars orbit →</Link>
           </div>
           <EarthVisualization satellites={satellites} scale={SCALE} />
           <p className="text-xs text-slate-500 mt-1 mb-2" aria-hidden="true">
@@ -242,7 +240,7 @@ export function Simulator() {
             </div>
           </div>
           <div className="mt-3 rounded-lg border border-[var(--accent-gold)]/40 bg-[var(--accent-gold)]/10 p-3 text-sm text-slate-700">
-            <strong>Rocket launch simulator</strong> — coming soon. For now, explore <Link href="/learn/how-nasa-launches-satellite"><a className="text-[var(--accent-cyan)] font-medium hover:underline">How NASA launches</a></Link> and <Link href="/compare/orbits"><a className="text-[var(--accent-cyan)] font-medium hover:underline">Compare orbits</a></Link>.
+            <strong>Rocket launch simulator</strong> — coming soon. For now, explore <Link href="/learn/how-nasa-launches-satellite" className="text-[var(--accent-cyan)] font-medium hover:underline">How NASA launches</Link> and <Link href="/compare/orbits" className="text-[var(--accent-cyan)] font-medium hover:underline">Compare orbits</Link>.
           </div>
         </div>
         <div>

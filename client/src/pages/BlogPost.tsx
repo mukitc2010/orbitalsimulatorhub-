@@ -58,9 +58,7 @@ export function BlogPost() {
       <div className="max-w-4xl mx-auto text-center py-12">
         <h1 className="headline mb-4">Post not found</h1>
         <p className="text-slate-600 mb-6">The blog post you're looking for doesn't exist.</p>
-        <Link href="/blog">
-          <a className="text-[var(--accent-cyan)] hover:underline font-medium">← Back to Blog</a>
-        </Link>
+        <Link href="/blog" className="text-[var(--accent-cyan)] hover:underline font-medium">← Back to Blog</Link>
       </div>
     );
   }
@@ -85,11 +83,9 @@ export function BlogPost() {
           <div className="mt-6 pt-6 border-t border-slate-200">
             <p className="text-sm text-slate-600 mb-2">Tags:</p>
             <div className="flex flex-wrap gap-2">
-              <Link href={`/blog/category/${post.category}`}>
-                <a className="px-2 py-1 rounded bg-slate-100 text-slate-700 text-xs hover:bg-[var(--accent-cyan)]/20 hover:text-[var(--accent-cyan)] transition">
+              <Link href={`/blog/category/${post.category}`} className="px-2 py-1 rounded bg-slate-100 text-slate-700 text-xs hover:bg-[var(--accent-cyan)]/20 hover:text-[var(--accent-cyan)] transition">
                   View more in {post.category.replace("-", " ")}
-                </a>
-              </Link>
+                </Link>
               {post.tags.map((tag) => (
                 <span key={tag} className="px-2 py-1 rounded bg-slate-100 text-slate-700 text-xs">
                   {tag}
@@ -110,21 +106,17 @@ export function BlogPost() {
           <h2 className="text-lg font-bold text-slate-800 mb-4">More articles</h2>
           <div className="space-y-3">
             {recent.slice(0, 3).map((p) => (
-              <Link key={p.slug} href={`/blog/${p.slug}`}>
-                <a className="block p-3 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/5 transition">
+              <Link key={p.slug} href={`/blog/${p.slug}`} className="block p-3 rounded-lg border border-slate-200 hover:border-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/5 transition">
                   <h3 className="font-medium text-slate-800">{p.title}</h3>
                   <p className="text-xs text-slate-500 mt-1">{p.excerpt.substring(0, 100)}...</p>
-                </a>
-              </Link>
+                </Link>
             ))}
           </div>
         </section>
       )}
 
       <div className="text-center">
-        <Link href="/blog">
-          <a className="text-[var(--accent-cyan)] hover:underline font-medium">← Back to Blog</a>
-        </Link>
+        <Link href="/blog" className="text-[var(--accent-cyan)] hover:underline font-medium">← Back to Blog</Link>
       </div>
     </div>
   );

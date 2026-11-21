@@ -29,21 +29,15 @@ export function PlanetHub() {
           atmosphere, missions, and more. Switch between Kids, General, and Research modes on each planet.
         </p>
         <div className="flex flex-wrap justify-center gap-3 mt-6">
-          <Link href="/astronauts">
-            <a className="px-5 py-2.5 rounded-xl font-medium transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>
+          <Link href="/astronauts" className="px-5 py-2.5 rounded-xl font-medium transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>
               👨‍🚀 Astronaut Explorer
-            </a>
-          </Link>
-          <Link href="/artifacts">
-            <a className="px-5 py-2.5 rounded-xl font-medium transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>
+            </Link>
+          <Link href="/artifacts" className="px-5 py-2.5 rounded-xl font-medium transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>
               🪨 Brought From Space
-            </a>
-          </Link>
-          <Link href="/simulator">
-            <a className="px-5 py-2.5 rounded-xl font-medium transition" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>
+            </Link>
+          <Link href="/simulator" className="px-5 py-2.5 rounded-xl font-medium transition" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>
               🛰 Open Simulator
-            </a>
-          </Link>
+            </Link>
         </div>
       </section>
 
@@ -58,13 +52,11 @@ export function PlanetHub() {
             <span className="text-[10px] font-bold" style={{ color: "var(--text-muted)" }}>Sun</span>
           </div>
           {solarPlanets.map((p, i) => (
-            <Link key={p.id} href={`/planets/${p.slug}`}>
-              <a className="flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition cursor-pointer group" style={{ background: "var(--bg-card)", border: `2px solid ${p.color}40` }}>
+            <Link key={p.id} href={`/planets/${p.slug}`} className="flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition cursor-pointer group" style={{ background: "var(--bg-card)", border: `2px solid ${p.color}40` }}>
                 <span className="text-3xl group-hover:scale-125 transition-transform">{p.emoji}</span>
                 <span className="text-xs font-semibold" style={{ color: "var(--text-primary)" }}>{p.name}</span>
                 <span className="text-[10px]" style={{ color: "var(--text-muted)" }}>{i + 1}{i === 0 ? "st" : i === 1 ? "nd" : i === 2 ? "rd" : "th"}</span>
-              </a>
-            </Link>
+              </Link>
           ))}
         </div>
       </section>
@@ -82,8 +74,7 @@ export function PlanetHub() {
       <section>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {displayed.map((planet) => (
-            <Link key={planet.id} href={`/planets/${planet.slug}`}>
-              <a className="block rounded-xl p-5 transition group cursor-pointer hover:-translate-y-1" style={{ background: "var(--bg-card)", border: `2px solid ${planet.color}50`, boxShadow: "0 2px 8px rgba(0,0,0,0.08)" }}>
+            <Link key={planet.id} href={`/planets/${planet.slug}`} className="block rounded-xl p-5 transition group cursor-pointer hover:-translate-y-1" style={{ background: "var(--bg-card)", border: `2px solid ${planet.color}50`, boxShadow: "0 2px 8px rgba(0,0,0,0.08)" }}>
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-4xl group-hover:scale-110 transition-transform">{planet.emoji}</span>
                   <div>
@@ -112,8 +103,7 @@ export function PlanetHub() {
                 <span className="text-sm font-semibold group-hover:underline" style={{ color: "var(--accent-primary)" }}>
                   Explore {planet.name} →
                 </span>
-              </a>
-            </Link>
+              </Link>
           ))}
         </div>
       </section>
@@ -134,11 +124,9 @@ export function PlanetHub() {
               {solarPlanets.map((p, i) => (
                 <tr key={p.id} className="transition" style={{ background: i % 2 === 0 ? "var(--bg-card)" : "var(--bg-surface)" }}>
                   <td className="p-3" style={{ borderBottom: "1px solid var(--border-color)" }}>
-                    <Link href={`/planets/${p.slug}`}>
-                      <a className="flex items-center gap-2 font-semibold hover:underline" style={{ color: "var(--accent-primary)" }}>
+                    <Link href={`/planets/${p.slug}`} className="flex items-center gap-2 font-semibold hover:underline" style={{ color: "var(--accent-primary)" }}>
                         <span>{p.emoji}</span>{p.name}
-                      </a>
-                    </Link>
+                      </Link>
                   </td>
                   <td className="p-3" style={{ color: "var(--text-secondary)", borderBottom: "1px solid var(--border-color)" }}>{fmtDist(p.distanceFromSunKm)}</td>
                   <td className="p-3" style={{ color: "var(--text-secondary)", borderBottom: "1px solid var(--border-color)" }}>{p.surfaceGravityG.toFixed(2)}g</td>
@@ -160,15 +148,13 @@ export function PlanetHub() {
         <h2 className="text-xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>🧠 Quick Planet Facts</h2>
         <div className="grid sm:grid-cols-2 gap-3">
           {solarPlanets.map((p) => (
-            <Link key={p.id} href={`/planets/${p.slug}`}>
-              <a className="flex gap-3 p-3 rounded-lg transition hover:-translate-y-0.5" style={{ background: "var(--bg-surface)", border: "1px solid var(--border-color)" }}>
+            <Link key={p.id} href={`/planets/${p.slug}`} className="flex gap-3 p-3 rounded-lg transition hover:-translate-y-0.5" style={{ background: "var(--bg-surface)", border: "1px solid var(--border-color)" }}>
                 <span className="text-2xl flex-shrink-0">{p.emoji}</span>
                 <div>
                   <div className="font-semibold text-sm" style={{ color: "var(--text-primary)" }}>{p.name}</div>
                   <p className="text-xs leading-relaxed" style={{ color: "var(--text-muted)" }}>{p.funFacts[0]}</p>
                 </div>
-              </a>
-            </Link>
+              </Link>
           ))}
         </div>
       </section>
@@ -184,9 +170,7 @@ export function PlanetHub() {
           { href: "/artifacts", label: "🪨 Moon Samples" },
           { href: "/learn/astrophysics", label: "⭐ Astrophysics" },
         ].map((l) => (
-          <Link key={l.href} href={l.href}>
-            <a className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>{l.label}</a>
-          </Link>
+          <Link key={l.href} href={l.href} className="px-4 py-2 rounded-lg font-medium text-sm transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)", border: "1px solid var(--border-color)" }}>{l.label}</Link>
         ))}
       </section>
     </div>

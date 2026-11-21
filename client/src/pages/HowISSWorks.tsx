@@ -220,42 +220,28 @@ export function HowISSWorks() {
             The ISS orbits in Low Earth Orbit - add a LEO satellite in our simulator to see how it moves!
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/simulator">
-              <a className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+            <Link href="/simulator" className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
                 Open 3D Simulator →
-              </a>
-            </Link>
-            <Link href="/satellites">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/satellites" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 ISS Data →
-              </a>
-            </Link>
-            <Link href="/learn/orbital-mechanics">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/learn/orbital-mechanics" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Orbital Mechanics →
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
 
         <div className="text-sm text-slate-600 space-y-2">
           <p><strong>Related Topics:</strong></p>
           <div className="flex flex-wrap gap-2">
-            <Link href="/satellites">
-              <a className="text-[var(--accent-cyan)] hover:underline">Real Satellite Data</a>
-            </Link>
+            <Link href="/satellites" className="text-[var(--accent-cyan)] hover:underline">Real Satellite Data</Link>
             <span>·</span>
-            <Link href="/learn/orbital-mechanics">
-              <a className="text-[var(--accent-cyan)] hover:underline">Orbital Mechanics</a>
-            </Link>
+            <Link href="/learn/orbital-mechanics" className="text-[var(--accent-cyan)] hover:underline">Orbital Mechanics</Link>
             <span>·</span>
-            <Link href="/simulator">
-              <a className="text-[var(--accent-cyan)] hover:underline">3D Simulator</a>
-            </Link>
+            <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">3D Simulator</Link>
             <span>·</span>
-            <Link href="/learn/space-questions">
-              <a className="text-[var(--accent-cyan)] hover:underline">Why Astronauts Float</a>
-            </Link>
+            <Link href="/learn/space-questions" className="text-[var(--accent-cyan)] hover:underline">Why Astronauts Float</Link>
           </div>
         </div>
       </section>

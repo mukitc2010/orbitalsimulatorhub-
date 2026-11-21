@@ -77,14 +77,10 @@ export function SupportSection() {
               {p.name} →
             </a>
           ))}
-          <Link href="/space-shop">
-            <a
-              className="block px-3 py-2 rounded-lg text-sm font-medium"
-              style={{ background: "var(--accent-cyan)", color: "var(--text-on-accent)" }}
-            >
+          <Link href="/space-shop" className="block px-3 py-2 rounded-lg text-sm font-medium"
+              style={{ background: "var(--accent-cyan)", color: "var(--text-on-accent)" }}>
               See all →
-            </a>
-          </Link>
+            </Link>
         </div>
       </div>
 

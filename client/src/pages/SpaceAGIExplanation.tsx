@@ -16,16 +16,12 @@ function MathExplainedTab() {
           The same math NASA uses for spacecraft — but in plain English, with real examples. Perfect for high schoolers, college freshmen, or anyone curious.
         </p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/research/space-agi-math">
-            <a className="text-sm px-3 py-1.5 rounded-lg border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>
+          <Link href="/research/space-agi-math" className="text-sm px-3 py-1.5 rounded-lg border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>
               📐 See the full math (graduate level)
-            </a>
-          </Link>
-          <Link href="/simulator">
-            <a className="text-sm px-3 py-1.5 rounded-lg" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>
+            </Link>
+          <Link href="/simulator" className="text-sm px-3 py-1.5 rounded-lg" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>
               🛰 Try the simulators
-            </a>
-          </Link>
+            </Link>
         </div>
       </div>
 
@@ -147,7 +143,7 @@ function MathExplainedTab() {
           <li><strong>Safety-constrained</strong> — J_safe with κ/Φ barrier. Never enter danger zones.</li>
         </ul>
         <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-          Ready for the full notation? <Link href="/research/space-agi-math"><a className="text-[var(--accent-cyan)] hover:underline">Space-AGI Mathematics</a></Link> (graduate level). Or try the <Link href="/simulator"><a className="text-[var(--accent-gold)] hover:underline">Orbit & Swarm Simulators</a></Link>.
+          Ready for the full notation? <Link href="/research/space-agi-math" className="text-[var(--accent-cyan)] hover:underline">Space-AGI Mathematics</Link> (graduate level). Or try the <Link href="/simulator" className="text-[var(--accent-gold)] hover:underline">Orbit & Swarm Simulators</Link>.
         </p>
       </section>
     </div>
@@ -170,15 +166,9 @@ function OverviewTab() {
         </p>
       </div>
       <div className="flex flex-wrap gap-3">
-        <Link href="/research/space-agi-lab">
-          <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>Engineering Lab</a>
-        </Link>
-        <Link href="/research/space-agi-roadmap">
-          <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Roadmap</a>
-        </Link>
-        <Link href="/research/space-agi-math">
-          <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Full Mathematics</a>
-        </Link>
+        <Link href="/research/space-agi-lab" className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>Engineering Lab</Link>
+        <Link href="/research/space-agi-roadmap" className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Roadmap</Link>
+        <Link href="/research/space-agi-math" className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Full Mathematics</Link>
       </div>
     </div>
   );
@@ -219,15 +209,9 @@ export function SpaceAGIExplanation() {
       {activeTab === "math" && <MathExplainedTab />}
 
       <div className="flex flex-wrap gap-3 pt-4">
-        <Link href="/research/space-agi-lab">
-          <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>← Space-AGI Engineering Lab</a>
-        </Link>
-        <Link href="/research/space-agi-math">
-          <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Full Mathematics →</a>
-        </Link>
-        <Link href="/calculators">
-          <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Interactive Calculators</a>
-        </Link>
+        <Link href="/research/space-agi-lab" className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>← Space-AGI Engineering Lab</Link>
+        <Link href="/research/space-agi-math" className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Full Mathematics →</Link>
+        <Link href="/calculators" className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Interactive Calculators</Link>
       </div>
     </div>
   );

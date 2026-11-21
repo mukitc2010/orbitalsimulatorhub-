@@ -103,9 +103,7 @@ export function Home() {
             <p className="mt-3 max-w-xl text-base leading-7 text-slate-100">
               A free orbital simulator and orbit sandbox. A {LEO_ALTITUDE_KM} km circular orbit moves at {LEO_SPEED_KM_S.toFixed(2)} km/s and returns in {LEO_PERIOD_MIN.toFixed(0)} minutes.
             </p>
-            <Link href="/simulator">
-              <a className="mt-5 inline-flex w-fit rounded-full bg-cyan-300 px-5 py-2.5 text-sm font-semibold text-slate-950">Launch the simulator</a>
-            </Link>
+            <Link href="/simulator" className="mt-5 inline-flex w-fit rounded-full bg-cyan-300 px-5 py-2.5 text-sm font-semibold text-slate-950">Launch the simulator</Link>
             <div className="mt-4">
               <ShareBar compact path="/simulator" title={shareTitle} />
             </div>
@@ -115,45 +113,35 @@ export function Home() {
           </div>
         </section>
         <div className="mb-8 grid gap-3 md:grid-cols-3">
-          <Link href="/simulator">
-            <a className="block rounded-2xl border border-cyan-400/30 bg-slate-950/80 p-4">
+          <Link href="/simulator" className="block rounded-2xl border border-cyan-400/30 bg-slate-950/80 p-4">
               <h2 className="text-lg font-semibold text-white">Simulator</h2>
               <p className="mt-1 text-sm text-slate-300">Open the orbit sandbox and add a LEO, MEO, or GEO satellite.</p>
-            </a>
-          </Link>
-          <Link href="/research/space-agi-math">
-            <a className="block rounded-2xl border border-cyan-400/30 bg-slate-950/80 p-4">
+            </Link>
+          <Link href="/research/space-agi-math" className="block rounded-2xl border border-cyan-400/30 bg-slate-950/80 p-4">
               <h2 className="text-lg font-semibold text-white">Mathematics</h2>
               <p className="mt-1 text-sm text-slate-300">Newton, Euler, and the Riccati gain, with the numbers computed on the page.</p>
-            </a>
-          </Link>
-          <Link href="/space-news">
-            <a className="block rounded-2xl border border-cyan-400/30 bg-slate-950/80 p-4">
+            </Link>
+          <Link href="/space-news" className="block rounded-2xl border border-cyan-400/30 bg-slate-950/80 p-4">
               <h2 className="text-lg font-semibold text-white">Today&apos;s space news</h2>
               <p className="mt-1 text-sm text-slate-300">{latestPost ? latestPost.title : "The latest attributed roundup."}</p>
-            </a>
-          </Link>
+            </Link>
         </div>
         <div className="mb-8 grid gap-3 md:grid-cols-2">
-          <Link href="/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260608">
-            <a className="block rounded-2xl border border-white/10 bg-slate-950/80 p-4">
+          <Link href="/blog/lamberts-problem-how-to-plan-an-intercept-between-two-orbits-20260608" className="block rounded-2xl border border-white/10 bg-slate-950/80 p-4">
               <h2 className="text-lg font-semibold text-white">Lambert&apos;s problem</h2>
               <p className="mt-1 text-sm text-slate-300">How to plan an intercept between two orbits.</p>
-            </a>
-          </Link>
-          <Link href="/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260804">
-            <a className="block rounded-2xl border border-white/10 bg-slate-950/80 p-4">
+            </Link>
+          <Link href="/blog/what-is-space-agi-and-why-it-matters-for-future-space-exploration-20260804" className="block rounded-2xl border border-white/10 bg-slate-950/80 p-4">
               <h2 className="text-lg font-semibold text-white">What is Space AGI</h2>
               <p className="mt-1 text-sm text-slate-300">Why guidance and autonomy matter for later exploration.</p>
-            </a>
-          </Link>
+            </Link>
         </div>
         {/* ═══ NEWEST BLOG POST — Prominent at top ═══ */}
         <section className="mb-8 overflow-hidden rounded-2xl border border-emerald-300/35 bg-gradient-to-br from-slate-950 via-teal-950 to-slate-950 p-6 sm:p-8" aria-labelledby="space-game-feature">
           <p className="font-mono text-xs uppercase tracking-[0.18em] text-emerald-200">New / Play with your crew</p>
           <h2 id="space-game-feature" className="mt-3 text-3xl font-bold text-white sm:text-4xl">Orbit Score Lab</h2>
           <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-300">Six space-math missions. Calculate orbital speeds, transfer burns and propellant loads before your window closes. Challenge friends to the same daily flight.</p>
-          <Link href="/games/space-math"><a className="mt-5 inline-flex rounded-lg bg-emerald-200 px-5 py-3 text-sm font-bold text-slate-950">Open Orbit Score Lab</a></Link>
+          <Link href="/games/space-math" className="mt-5 inline-flex rounded-lg bg-emerald-200 px-5 py-3 text-sm font-bold text-slate-950">Open Orbit Score Lab</Link>
           <p className="mt-3 text-xs text-slate-400">Daily challenges / Expert & practice modes / No sign-up</p>
         </section>
         <section aria-labelledby="conjecture-vault-feature" className="mb-8 rounded-2xl border border-amber-200/30 bg-slate-950 p-6 sm:p-8">
@@ -168,14 +156,13 @@ export function Home() {
           <h2 id="featured-robot-paper" className="mt-3 max-w-3xl text-2xl font-semibold text-white sm:text-3xl">Autonomous Humanoid Robotics for Space Exploration</h2>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-300">A mission architecture for scouts, dexterous robots and human supervision. Read the full paper, explore its lunar task-budget model, and examine the safety gates before crew arrival.</p>
           <div className="mt-5 flex flex-wrap items-center gap-4">
-            <Link href="/research/autonomous-space-robots"><a className="rounded-lg bg-cyan-300 px-5 py-3 text-sm font-semibold text-slate-950">Read the paper and explore the model</a></Link>
+            <Link href="/research/autonomous-space-robots" className="rounded-lg bg-cyan-300 px-5 py-3 text-sm font-semibold text-slate-950">Read the paper and explore the model</Link>
             <span className="text-xs text-slate-400">Research concept ? Full text ? Original download</span>
           </div>
         </section>
         {latestPost && (
           <section className="mb-6 animate-fade-in-up">
-            <Link href={`/blog/${latestPost.slug}`}>
-              <a className="block rounded-2xl border overflow-hidden transition hover:opacity-95" style={{ background: "rgba(0,217,255,0.08)", borderColor: "rgba(0,217,255,0.35)" }}>
+            <Link href={`/blog/${latestPost.slug}`} className="block rounded-2xl border overflow-hidden transition hover:opacity-95" style={{ background: "rgba(0,217,255,0.08)", borderColor: "rgba(0,217,255,0.35)" }}>
                 <div className="flex flex-col sm:flex-row">
                   <div className="sm:w-2/5 min-h-[160px] sm:min-h-[200px] relative">
                     <img src={getBlogImage(latestPost)} alt="" className="absolute inset-0 w-full h-full object-cover" loading="eager" />
@@ -188,8 +175,7 @@ export function Home() {
                     <span className="text-xs" style={{ color: "var(--text-muted)" }}>{formatDisplayDate(latestPost.date, "short")} · Read more →</span>
                   </div>
                 </div>
-              </a>
-            </Link>
+              </Link>
           </section>
         )}
 
@@ -212,13 +198,11 @@ export function Home() {
                 ? { background: "rgba(0,217,255,0.12)", borderColor: "rgba(0,217,255,0.4)" }
                 : { background: "rgba(255,255,255,0.05)", borderColor: "rgba(255,255,255,0.1)" };
               return (
-                <Link key={u.href} href={u.href}>
-                  <a className={linkClass} style={linkStyle}>
+                <Link key={u.href} href={u.href} className={linkClass} style={linkStyle}>
                     {u.isNew && <span className="absolute top-2 right-2 text-[10px] font-bold px-1.5 py-0.5 rounded" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>NEW</span>}
                     <span className="font-bold text-sm" style={{ color: "var(--accent-cyan)" }}>{u.label} →</span>
                     <span className="block text-xs mt-0.5" style={{ color: "var(--text-secondary)" }}>{u.desc}</span>
-                  </a>
-                </Link>
+                  </Link>
               );
             })}
           </div>
@@ -254,11 +238,9 @@ export function Home() {
             </div>
           </div>
           <div className="mt-3">
-            <Link href="/research/space-agi-math">
-              <a className="inline-flex px-4 py-2 rounded-xl font-semibold text-sm" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
+            <Link href="/research/space-agi-math" className="inline-flex px-4 py-2 rounded-xl font-semibold text-sm" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
                 Open full Mathematics →
-              </a>
-            </Link>
+              </Link>
           </div>
         </section>
 
@@ -271,11 +253,9 @@ export function Home() {
             Explore the full 15-level AI math foundation plus Mars-grade autonomous astronaut equations, from PMP and HJB to Bayesian estimation and multi-agent coordination.
           </p>
           <div className="mt-3">
-            <Link href="/research/asi-astronaut-mathematics">
-              <a className="inline-flex px-4 py-2 rounded-xl font-semibold text-sm" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>
+            <Link href="/research/asi-astronaut-mathematics" className="inline-flex px-4 py-2 rounded-xl font-semibold text-sm" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>
                 Open ASI Astronaut Mathematics →
-              </a>
-            </Link>
+              </Link>
           </div>
         </section>
 
@@ -289,16 +269,14 @@ export function Home() {
           </p>
           <div className="grid gap-3 md:grid-cols-3">
             {latestResearch.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`}>
-                <a className="block rounded-xl p-4 transition hover:opacity-95" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="block rounded-xl p-4 transition hover:opacity-95" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
                   <div className="text-[11px] font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>
                     {formatDisplayDate(post.date, "short")}
                   </div>
                   <h3 className="font-bold mb-2 line-clamp-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
                   <p className="text-sm line-clamp-3 mb-3" style={{ color: "var(--text-secondary)" }}>{post.excerpt}</p>
                   <span className="text-sm font-medium" style={{ color: "var(--accent-cyan)" }}>Read full article →</span>
-                </a>
-              </Link>
+                </Link>
             ))}
           </div>
         </section>
@@ -320,40 +298,32 @@ export function Home() {
             </div>
           </div>
           <div className="grid gap-3 md:grid-cols-3">
-            <Link href="/research/agi-asi-framework">
-              <a className="block rounded-xl p-4 border transition hover:-translate-y-0.5" style={{ background: "rgba(255,255,255,0.04)", borderColor: "rgba(0,217,255,0.2)" }}>
+            <Link href="/research/agi-asi-framework" className="block rounded-xl p-4 border transition hover:-translate-y-0.5" style={{ background: "rgba(255,255,255,0.04)", borderColor: "rgba(0,217,255,0.2)" }}>
                 <div className="text-xs font-semibold uppercase tracking-[0.24em] mb-2" style={{ color: "var(--accent-cyan)" }}>ASI / AGI</div>
                 <h3 className="font-bold mb-2" style={{ color: "var(--text-primary)" }}>A conceptual framework for advanced space intelligence</h3>
                 <p className="text-sm leading-6" style={{ color: "var(--text-secondary)" }}>Explore how AGI-like reasoning and ASI-style coordination could evolve for space missions, autonomy, and discovery.</p>
-              </a>
-            </Link>
-            <Link href="/research/pmp-nmpc-autonomous-control">
-              <a className="block rounded-xl p-4 border transition hover:-translate-y-0.5" style={{ background: "rgba(255,255,255,0.04)", borderColor: "rgba(0,217,255,0.2)" }}>
+              </Link>
+            <Link href="/research/pmp-nmpc-autonomous-control" className="block rounded-xl p-4 border transition hover:-translate-y-0.5" style={{ background: "rgba(255,255,255,0.04)", borderColor: "rgba(0,217,255,0.2)" }}>
                 <div className="text-xs font-semibold uppercase tracking-[0.24em] mb-2" style={{ color: "var(--accent-cyan)" }}>Autonomy</div>
                 <h3 className="font-bold mb-2" style={{ color: "var(--text-primary)" }}>PMP + NMPC for resilient autonomous spacecraft</h3>
                 <p className="text-sm leading-6" style={{ color: "var(--text-secondary)" }}>See how optimal control, estimation, and real-time correction can work together for deep-space missions.</p>
-              </a>
-            </Link>
-            <Link href="/research/space-agi-lab">
-              <a className="block rounded-xl p-4 border transition hover:-translate-y-0.5" style={{ background: "rgba(255,255,255,0.04)", borderColor: "rgba(0,217,255,0.2)" }}>
+              </Link>
+            <Link href="/research/space-agi-lab" className="block rounded-xl p-4 border transition hover:-translate-y-0.5" style={{ background: "rgba(255,255,255,0.04)", borderColor: "rgba(0,217,255,0.2)" }}>
                 <div className="text-xs font-semibold uppercase tracking-[0.24em] mb-2" style={{ color: "var(--accent-cyan)" }}>Research Hub</div>
                 <h3 className="font-bold mb-2" style={{ color: "var(--text-primary)" }}>A full research experience for the next era of space systems</h3>
                 <p className="text-sm leading-6" style={{ color: "var(--text-secondary)" }}>Jump into the broader platform for orbital mechanics, robotics, AI, and future space intelligence.</p>
-              </a>
-            </Link>
+              </Link>
           </div>
         </section>
  
         {/* 5 main features — Simulator, AstroBot, Orbital Mechanics, AI in Space, Space-AGI Lab */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
           {FEATURES.map((f) => (
-            <Link key={f.href} href={f.href}>
-              <a className="home-card block p-5 rounded-xl">
+            <Link key={f.href} href={f.href} className="home-card block p-5 rounded-xl">
               <span className="text-2xl block mb-2">{f.icon}</span>
               <h2 className="font-bold text-lg mb-1" style={{ color: "var(--text-primary)" }}>{f.title}</h2>
               <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{f.desc}</p>
-            </a>
-          </Link>
+            </Link>
         ))}
       </section>
 
@@ -366,11 +336,9 @@ export function Home() {
           <h3 className="text-sm font-bold uppercase tracking-wider mb-3" style={{ color: "var(--text-secondary)" }}>📡 Quick links</h3>
           <div className="flex flex-wrap gap-2">
             {QUICK_LINKS.map((l) => (
-              <Link key={l.href} href={l.href}>
-                <a className="px-3 py-1.5 rounded-lg text-sm font-medium transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>
+              <Link key={l.href} href={l.href} className="px-3 py-1.5 rounded-lg text-sm font-medium transition" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>
                   {l.label}
-                </a>
-              </Link>
+                </Link>
             ))}
             </div>
           </div>
@@ -396,21 +364,15 @@ export function Home() {
             Build and train your own AI space robot inside a simulator. Design humanoid space robots, train vision AI, simulate missions in zero gravity and Mars terrain.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/simulator/ai-astronaut-robot">
-              <a className="px-5 py-2.5 rounded-xl font-semibold text-sm transition hover:opacity-95" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
+            <Link href="/simulator/ai-astronaut-robot" className="px-5 py-2.5 rounded-xl font-semibold text-sm transition hover:opacity-95" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>
                 Launch Robot Simulator
-              </a>
-            </Link>
-            <Link href="/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions">
-              <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-cyan)", color: "var(--accent-cyan)" }}>
+              </Link>
+            <Link href="/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions" className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "var(--accent-cyan)", color: "var(--accent-cyan)" }}>
                 Learn Space Robotics
-              </a>
-            </Link>
-            <Link href="/simulator/ai-astronaut-robot#training">
-              <a className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "rgba(167,139,250,0.8)", color: "#a78bfa" }}>
+              </Link>
+            <Link href="/simulator/ai-astronaut-robot#training" className="px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition hover:opacity-95" style={{ borderColor: "rgba(167,139,250,0.8)", color: "#a78bfa" }}>
                 Train Vision AI
-              </a>
-            </Link>
+              </Link>
           </div>
           <p className="text-xs mt-4" style={{ color: "var(--text-muted)" }}>
             Trusted by engineers, researchers, future space pioneers.
@@ -419,29 +381,23 @@ export function Home() {
 
         {/* Orbital Mechanics Master Hub + AI in Space + Future Space Intelligence */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          <Link href="/learn/orbital-mechanics">
-            <a className="home-card block rounded-xl p-4">
+          <Link href="/learn/orbital-mechanics" className="home-card block rounded-xl p-4">
             <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>🧠 Master Orbital Mechanics</h3>
             <p className="text-sm mb-2" style={{ color: "var(--text-primary)" }}>Best on the Internet</p>
             <p className="text-xs mb-2" style={{ color: "var(--text-secondary)" }}>What is orbit • Why satellites don&apos;t fall • LEO MEO GEO • Escape velocity • Hohmann transfer</p>
             <span className="text-xs font-medium" style={{ color: "var(--accent-cyan)" }}>Learn more →</span>
-          </a>
-        </Link>
-          <Link href="/ai-in-aerospace">
-            <a className="home-card block rounded-xl p-4">
+          </Link>
+          <Link href="/ai-in-aerospace" className="home-card block rounded-xl p-4">
             <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-pink)" }}>🚀 #1 AI + Space Platform</h3>
             <p className="text-sm mb-2" style={{ color: "var(--text-primary)" }}>AI controls satellites • Autonomous spacecraft • Mars rover AI • Space AGI</p>
             <span className="text-xs font-medium" style={{ color: "var(--accent-pink)" }}>Explore AI in Space →</span>
-          </a>
-        </Link>
-          <Link href="/research/space-agi-lab">
-            <a className="home-card block rounded-xl p-4">
+          </Link>
+          <Link href="/research/space-agi-lab" className="home-card block rounded-xl p-4">
             <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-cyan)" }}>🧠 Space-AGI Engineering Lab</h3>
             <p className="text-sm mb-2 font-semibold" style={{ color: "var(--text-primary)" }}>World-First Platform</p>
             <p className="text-xs mb-2" style={{ color: "var(--text-secondary)" }}>5 pillars: autonomous spacecraft, decision intelligence, orbital math, future systems, live simulation lab.</p>
             <span className="text-xs font-medium" style={{ color: "var(--accent-cyan)" }}>Enter Lab →</span>
-          </a>
-        </Link>
+          </Link>
       </section>
 
         {/* Explore by topic — collapsible */}
@@ -464,12 +420,10 @@ export function Home() {
                   <span style={{ color: "var(--text-primary)" }}>{t.title}</span>
                 </a>
               ) : (
-                <Link key={t.href} href={t.href}>
-                  <a className="flex items-center gap-2 p-2 rounded-lg text-sm transition hover:opacity-80" style={{ background: "var(--bg-surface)" }}>
+                <Link key={t.href} href={t.href} className="flex items-center gap-2 p-2 rounded-lg text-sm transition hover:opacity-80" style={{ background: "var(--bg-surface)" }}>
                     <span>{t.icon}</span>
                     <span style={{ color: "var(--text-primary)" }}>{t.title}</span>
-                  </a>
-                </Link>
+                  </Link>
               )
             ))}
           </div>
@@ -479,23 +433,21 @@ export function Home() {
 
         {/* AstroBot highlight + Trending */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-          <Link href="/astrobot">
-            <a className="home-card block rounded-xl p-4" style={{ borderColor: "var(--accent-gold)" }}>
+          <Link href="/astrobot" className="home-card block rounded-xl p-4" style={{ borderColor: "var(--accent-gold)" }}>
             <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-gold)" }}>🤖 AstroBot — Your AI Space Professor</h3>
             <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Orbital mechanics • Satellites • Missions • AI in space • Future tech</p>
-          </a>
-        </Link>
+          </Link>
           <div className="home-card rounded-xl p-4">
           <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📡 Trending: Space Engineering • AI • Quantum • Futuristic</h3>
           <div className="flex flex-wrap gap-2">
-            <Link href="/simulator/ai-astronaut-robot"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI Astronaut Robots</a></Link>
-            <Link href="/blog/category/space-agi"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</a></Link>
-            <Link href="/blog/category/space-engineering"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Robotics</a></Link>
-            <Link href="/research/space-agi-lab"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AGI Robotics Lab</a></Link>
-            <Link href="/research/space-agi-math"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space-AGI Math</a></Link>
-            <Link href="/learn/quantum-space"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum Computing</a></Link>
-            <Link href="/space-news"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Daily News</a></Link>
-            <Link href="/research/future-civilization"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Future Tech</a></Link>
+            <Link href="/simulator/ai-astronaut-robot" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI Astronaut Robots</Link>
+            <Link href="/blog/category/space-agi" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</Link>
+            <Link href="/blog/category/space-engineering" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Robotics</Link>
+            <Link href="/research/space-agi-lab" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AGI Robotics Lab</Link>
+            <Link href="/research/space-agi-math" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space-AGI Math</Link>
+            <Link href="/learn/quantum-space" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum Computing</Link>
+            <Link href="/space-news" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Daily News</Link>
+            <Link href="/research/future-civilization" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Future Tech</Link>
           </div>
         </div>
       </section>
@@ -507,9 +459,7 @@ export function Home() {
             <p className="text-xs font-medium uppercase tracking-widest mb-1" style={{ color: "var(--accent-cyan)" }}>New Posts • Daily News • Space Engineering • AI • Quantum</p>
             <h2 className="font-bold text-lg" style={{ color: "var(--text-primary)" }}>📰 Latest Articles — Fresh Every Day</h2>
           </div>
-          <Link href="/blog">
-            <a className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>View all →</a>
-          </Link>
+          <Link href="/blog" className="px-4 py-2 rounded-lg font-medium text-sm" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>View all →</Link>
         </div>
         <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>
           Space AGI, space engineering formulas, NASA news, quantum physics, AI in space. Everything futuristic and helpful.
@@ -518,8 +468,7 @@ export function Home() {
           {LATEST_POSTS.slice(0, 6).map((post, i) => {
             const isNewest = i === 0;
             return (
-              <Link key={post.slug} href={`/blog/${post.slug}`}>
-                <a className="block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.02] relative" style={{ background: isNewest ? "rgba(0,217,255,0.06)" : "var(--bg-surface)", borderColor: isNewest ? "var(--accent-cyan)" : "var(--border-color)" }}>
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="block rounded-xl border-2 overflow-hidden transition hover:shadow-lg hover:scale-[1.02] relative" style={{ background: isNewest ? "rgba(0,217,255,0.06)" : "var(--bg-surface)", borderColor: isNewest ? "var(--accent-cyan)" : "var(--border-color)" }}>
                   {isNewest && <span className="absolute top-2 left-2 z-10 text-xs font-bold px-2 py-0.5 rounded" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>LATEST</span>}
                   <div className="aspect-video w-full bg-slate-200">
                     <img src={getBlogImage(post)} alt="" className="w-full h-full object-cover" loading="lazy" />
@@ -529,17 +478,16 @@ export function Home() {
                     <h3 className="font-semibold text-sm mt-1 line-clamp-2" style={{ color: "var(--text-primary)" }}>{post.title}</h3>
                     <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>{formatDisplayDate(post.date, "short")}</p>
                   </div>
-                </a>
-              </Link>
+                </Link>
             );
           })}
         </div>
         <div className="flex flex-wrap gap-2 mt-4">
-          <Link href="/blog/category/space-agi"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</a></Link>
-          <Link href="/blog/category/space-engineering"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Engineering</a></Link>
-          <Link href="/blog/category/nasa-news"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>NASA News</a></Link>
-          <Link href="/blog/category/quantum-physics"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum</a></Link>
-          <Link href="/space-news"><a className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Daily News</a></Link>
+          <Link href="/blog/category/space-agi" className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</Link>
+          <Link href="/blog/category/space-engineering" className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Engineering</Link>
+          <Link href="/blog/category/nasa-news" className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>NASA News</Link>
+          <Link href="/blog/category/quantum-physics" className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum</Link>
+          <Link href="/space-news" className="text-xs px-2 py-1 rounded" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Daily News</Link>
         </div>
       </section>
 
@@ -547,15 +495,15 @@ export function Home() {
         <section className="home-card rounded-xl p-4 mb-8">
         <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>🔍 Popular: Space Engineering • AI • Quantum • Futuristic</h3>
         <div className="flex flex-wrap gap-2">
-          <Link href="/simulator/ai-astronaut-robot"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI Astronaut Robot</a></Link>
-          <Link href="/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space robotics</a></Link>
-          <Link href="/blog/what-is-space-agi-why-it-matters"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>What is Space AGI?</a></Link>
-          <Link href="/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260227"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI collision avoidance</a></Link>
-          <Link href="/blog/vis-viva-equation-explained-master-formula-orbits"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Vis-viva equation</a></Link>
-          <Link href="/research/space-agi-math"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space-AGI Math</a></Link>
-          <Link href="/calculators"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>How fast does ISS orbit?</a></Link>
-          <Link href="/learn/quantum-space"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum in space</a></Link>
-          <Link href="/simulator"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Orbit simulator</a></Link>
+          <Link href="/simulator/ai-astronaut-robot" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI Astronaut Robot</Link>
+          <Link href="/blog/how-space-will-build-ai-based-astronaut-robots-for-future-missions" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space robotics</Link>
+          <Link href="/blog/what-is-space-agi-why-it-matters" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>What is Space AGI?</Link>
+          <Link href="/blog/ai-collision-avoidance-how-500-satellites-avoid-each-other-without-human-input-20260227" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI collision avoidance</Link>
+          <Link href="/blog/vis-viva-equation-explained-master-formula-orbits" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Vis-viva equation</Link>
+          <Link href="/research/space-agi-math" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space-AGI Math</Link>
+          <Link href="/calculators" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>How fast does ISS orbit?</Link>
+          <Link href="/learn/quantum-space" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum in space</Link>
+          <Link href="/simulator" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Orbit simulator</Link>
         </div>
       </section>
 
@@ -563,14 +511,14 @@ export function Home() {
         <section className="home-card rounded-xl p-4 mb-8">
         <h3 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--text-secondary)" }}>📚 Space Engineering • AI • Quantum • Futuristic</h3>
         <div className="flex flex-wrap gap-2 mb-4">
-          <Link href="/simulator/ai-astronaut-robot"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI Astronaut Robots</a></Link>
-          <Link href="/blog/category/space-engineering"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Engineering</a></Link>
-          <Link href="/blog/category/space-agi"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</a></Link>
-          <Link href="/research/space-agi-math"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space-AGI Math</a></Link>
-          <Link href="/formulas-library"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Orbital formulas</a></Link>
-          <Link href="/learn/quantum-space"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum computing</a></Link>
-          <Link href="/ai-in-aerospace"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI in space</a></Link>
-          <Link href="/research/future-civilization"><a className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Future tech</a></Link>
+          <Link href="/simulator/ai-astronaut-robot" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI Astronaut Robots</Link>
+          <Link href="/blog/category/space-engineering" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space Engineering</Link>
+          <Link href="/blog/category/space-agi" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space AGI</Link>
+          <Link href="/research/space-agi-math" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Space-AGI Math</Link>
+          <Link href="/formulas-library" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Orbital formulas</Link>
+          <Link href="/learn/quantum-space" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Quantum computing</Link>
+          <Link href="/ai-in-aerospace" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>AI in space</Link>
+          <Link href="/research/future-civilization" className="px-2 py-1 rounded text-sm" style={{ background: "var(--bg-surface)", color: "var(--text-primary)" }}>Future tech</Link>
         </div>
       </section>
 
@@ -584,12 +532,12 @@ export function Home() {
           </div>
           <div>
             <p className="font-semibold mb-0.5" style={{ color: "var(--text-primary)" }}>How fast does the ISS orbit?</p>
-            <p style={{ color: "var(--text-secondary)" }}>~7.66 km/s (27,600 km/h) at 408 km. Orbital period ~92 minutes. <Link href="/calculators"><a style={{ color: "var(--accent-primary)" }}>Calculator →</a></Link></p>
+            <p style={{ color: "var(--text-secondary)" }}>~7.66 km/s (27,600 km/h) at 408 km. Orbital period ~92 minutes. <Link href="/calculators" style={{ color: "var(--accent-primary)" }}>Calculator →</Link></p>
           </div>
         </div>
         <div className="mt-3 flex gap-3">
-          <Link href="/astrobot"><a className="text-sm font-medium" style={{ color: "var(--accent-primary)" }}>Ask AstroBot →</a></Link>
-          <Link href="/simulator"><a className="text-sm font-medium" style={{ color: "var(--accent-primary)" }}>Try Simulator →</a></Link>
+          <Link href="/astrobot" className="text-sm font-medium" style={{ color: "var(--accent-primary)" }}>Ask AstroBot →</Link>
+          <Link href="/simulator" className="text-sm font-medium" style={{ color: "var(--accent-primary)" }}>Try Simulator →</Link>
         </div>
       </section>
       </div>

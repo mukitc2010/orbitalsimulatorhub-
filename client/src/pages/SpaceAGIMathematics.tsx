@@ -224,7 +224,7 @@ export function SpaceAGIMathematics() {
         <p className="text-xs font-medium uppercase tracking-widest text-[var(--accent-cyan)] mb-2">Graduate-Level Credible</p>
         <h1 className="headline">Space-AGI Mathematics</h1>
         <p className="text-sm mb-2" style={{ color: "var(--text-secondary)" }}>
-          New to this? <Link href="/research/space-agi-explanation"><a className="text-[var(--accent-gold)] hover:underline">Read the easy version</a></Link> — same concepts, plain English, examples.
+          New to this? <Link href="/research/space-agi-explanation" className="text-[var(--accent-gold)] hover:underline">Read the easy version</Link> — same concepts, plain English, examples.
         </p>
         <p className="subhead max-w-3xl">
           A compact reference for control theory, orbital mechanics, estimation, and Space-AGI optimization.
@@ -388,18 +388,10 @@ export function SpaceAGIMathematics() {
       <RiccatiDemo />
 
       <div className="flex flex-wrap gap-3">
-        <Link href="/research/space-agi-lab">
-          <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>← Space-AGI Engineering Lab</a>
-        </Link>
-        <Link href="/research/space-agi-explanation">
-          <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Easy Version →</a>
-        </Link>
-        <Link href="/calculators">
-          <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Interactive Calculators</a>
-        </Link>
-        <Link href="/research/space-agi-doctrine">
-          <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Space-AGI Doctrine</a>
-        </Link>
+        <Link href="/research/space-agi-lab" className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>← Space-AGI Engineering Lab</Link>
+        <Link href="/research/space-agi-explanation" className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-gold)", color: "#0f172a" }}>Easy Version →</Link>
+        <Link href="/calculators" className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Interactive Calculators</Link>
+        <Link href="/research/space-agi-doctrine" className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Space-AGI Doctrine</Link>
       </div>
     </div>
   );

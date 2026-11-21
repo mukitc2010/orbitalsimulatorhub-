@@ -175,14 +175,10 @@ export function AstronautExplorer() {
                 {astronaut.missions.length} mission{astronaut.missions.length !== 1 ? "s" : ""} ·{" "}
                 {formatSpaceTime(astronaut.totalSpaceTimeSeconds)} in space
               </div>
-              <Link href={`/astronauts/${astronaut.slug}`}>
-                <a
-                  className="text-sm font-medium"
-                  style={{ color: "var(--accent-primary)" }}
-                >
+              <Link href={`/astronauts/${astronaut.slug}`} className="text-sm font-medium"
+                  style={{ color: "var(--accent-primary)" }}>
                   View Profile →
-                </a>
-              </Link>
+                </Link>
             </div>
           ))}
         </div>
@@ -235,14 +231,10 @@ export function AstronautExplorer() {
                       </span>
                     ))}
                 </div>
-                <Link href={`/astronauts/${astronaut.slug}`}>
-                  <a
-                    className="text-sm font-medium"
-                    style={{ color: "var(--accent-primary)" }}
-                  >
+                <Link href={`/astronauts/${astronaut.slug}`} className="text-sm font-medium"
+                    style={{ color: "var(--accent-primary)" }}>
                     View Profile →
-                  </a>
-                </Link>
+                  </Link>
               </div>
             ))}
           </div>

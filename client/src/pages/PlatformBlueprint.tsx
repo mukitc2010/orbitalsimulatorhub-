@@ -23,18 +23,14 @@ export function PlatformBlueprint() {
         <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
           Open a simulator, a lesson, or the daily space news.
         </p>
-        <Link href="/">
-          <a className="mt-6 inline-flex rounded-full bg-cyan-400 px-5 py-2.5 text-sm font-semibold text-slate-950">Back to home</a>
-        </Link>
+        <Link href="/" className="mt-6 inline-flex rounded-full bg-cyan-400 px-5 py-2.5 text-sm font-semibold text-slate-950">Back to home</Link>
       </section>
       <section>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {modules.map((module) => (
-            <Link key={module.name} href={module.href}>
-              <a className="block rounded-2xl border border-white/10 bg-white/5 p-3 text-sm text-slate-200 transition hover:border-cyan-400/40 hover:text-white">
+            <Link key={module.name} href={module.href} className="block rounded-2xl border border-white/10 bg-white/5 p-3 text-sm text-slate-200 transition hover:border-cyan-400/40 hover:text-white">
                 {module.name}
-              </a>
-            </Link>
+              </Link>
           ))}
         </div>
       </section>

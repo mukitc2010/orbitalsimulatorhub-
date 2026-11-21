@@ -205,15 +205,15 @@ export function QuantumSpace() {
         <p className="font-semibold text-slate-800 mb-2">🧭 Related topics</p>
         <p className="text-slate-600 mb-2">Dig deeper: foundations of quantum physics, how NASA uses it in missions, how GPS relies on atomic clocks, and space electronics. Ask AstroBot for quick answers.</p>
         <p className="mb-2">
-          <Link href="/learn/quantum-physics"><a className="text-[var(--accent-cyan)] hover:underline">Quantum physics basics</a></Link>
+          <Link href="/learn/quantum-physics" className="text-[var(--accent-cyan)] hover:underline">Quantum physics basics</Link>
           {" · "}
-          <Link href="/learn/quantum-physics-nasa"><a className="text-[var(--accent-cyan)] hover:underline">Quantum physics in NASA missions</a></Link>
+          <Link href="/learn/quantum-physics-nasa" className="text-[var(--accent-cyan)] hover:underline">Quantum physics in NASA missions</Link>
           {" · "}
-          <Link href="/learn/how-gps-works"><a className="text-[var(--accent-cyan)] hover:underline">How GPS works</a></Link>
+          <Link href="/learn/how-gps-works" className="text-[var(--accent-cyan)] hover:underline">How GPS works</Link>
           {" · "}
-          <Link href="/learn/aerospace"><a className="text-[var(--accent-cyan)] hover:underline">Space electronics</a></Link>
+          <Link href="/learn/aerospace" className="text-[var(--accent-cyan)] hover:underline">Space electronics</Link>
           {" · "}
-          <Link href="/astrobot"><a className="text-[var(--accent-cyan)] hover:underline">Ask AstroBot (AI tutor)</a></Link>
+          <Link href="/astrobot" className="text-[var(--accent-cyan)] hover:underline">Ask AstroBot (AI tutor)</Link>
         </p>
       </div>
     </div>

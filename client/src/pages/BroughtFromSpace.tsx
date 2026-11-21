@@ -138,14 +138,10 @@ export function BroughtFromSpace() {
                   </span>
                 </div>
                 {mission && (
-                  <Link href={`/missions/${mission.slug}`}>
-                    <a
-                      className="text-sm font-medium mb-3 block"
-                      style={{ color: "var(--accent-primary)" }}
-                    >
+                  <Link href={`/missions/${mission.slug}`} className="text-sm font-medium mb-3 block"
+                      style={{ color: "var(--accent-primary)" }}>
                       {mission.name} →
-                    </a>
-                  </Link>
+                    </Link>
                 )}
                 <div className="text-sm mb-2" style={{ color: "var(--text-muted)" }}>
                   {artifact.types.join(", ")}
@@ -362,11 +358,9 @@ export function BroughtFromSpace() {
 
       {/* Back link */}
       <div className="pt-6 border-t" style={{ borderColor: "var(--border-color)" }}>
-        <Link href="/missions">
-          <a className="font-medium" style={{ color: "var(--accent-primary)" }}>
+        <Link href="/missions" className="font-medium" style={{ color: "var(--accent-primary)" }}>
             ← Explore Missions
-          </a>
-        </Link>
+          </Link>
       </div>
     </div>
   );

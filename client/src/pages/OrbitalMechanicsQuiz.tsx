@@ -238,16 +238,12 @@ export function OrbitalMechanicsQuiz() {
             >
               Try Again
             </button>
-            <Link href="/simulator">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+            <Link href="/simulator" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Try Simulator →
-              </a>
-            </Link>
-            <Link href="/learn/orbital-mechanics">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/learn/orbital-mechanics" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Learn More →
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
       </div>
@@ -351,17 +347,11 @@ export function OrbitalMechanicsQuiz() {
       <div className="text-sm text-slate-600 space-y-2">
         <p><strong>Need help?</strong> Check out:</p>
         <div className="flex flex-wrap gap-2">
-          <Link href="/learn/orbital-mechanics">
-            <a className="text-[var(--accent-cyan)] hover:underline">What is Orbital Mechanics?</a>
-          </Link>
+          <Link href="/learn/orbital-mechanics" className="text-[var(--accent-cyan)] hover:underline">What is Orbital Mechanics?</Link>
           <span>·</span>
-          <Link href="/simulator">
-            <a className="text-[var(--accent-cyan)] hover:underline">3D Simulator</a>
-          </Link>
+          <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">3D Simulator</Link>
           <span>·</span>
-          <Link href="/formulas-library">
-            <a className="text-[var(--accent-cyan)] hover:underline">Formulas Library</a>
-          </Link>
+          <Link href="/formulas-library" className="text-[var(--accent-cyan)] hover:underline">Formulas Library</Link>
         </div>
       </div>
     </div>

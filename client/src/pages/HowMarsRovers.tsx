@@ -238,42 +238,28 @@ export function HowMarsRovers() {
             Rovers use the same orbital mechanics to get to Mars! Learn about orbits and space travel:
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/simulator">
-              <a className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+            <Link href="/simulator" className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
                 Open 3D Simulator →
-              </a>
-            </Link>
-            <Link href="/learn/orbital-mechanics">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/learn/orbital-mechanics" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Orbital Mechanics →
-              </a>
-            </Link>
-            <Link href="/learn/aerospace#rovers">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/learn/aerospace#rovers" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Rover Data →
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
 
         <div className="text-sm text-slate-600 space-y-2">
           <p><strong>Related Topics:</strong></p>
           <div className="flex flex-wrap gap-2">
-            <Link href="/learn/aerospace#rovers">
-              <a className="text-[var(--accent-cyan)] hover:underline">Rover Mission Data</a>
-            </Link>
+            <Link href="/learn/aerospace#rovers" className="text-[var(--accent-cyan)] hover:underline">Rover Mission Data</Link>
             <span>·</span>
-            <Link href="/learn/how-nasa-launches-satellite">
-              <a className="text-[var(--accent-cyan)] hover:underline">How NASA Launches</a>
-            </Link>
+            <Link href="/learn/how-nasa-launches-satellite" className="text-[var(--accent-cyan)] hover:underline">How NASA Launches</Link>
             <span>·</span>
-            <Link href="/simulator">
-              <a className="text-[var(--accent-cyan)] hover:underline">3D Simulator</a>
-            </Link>
+            <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">3D Simulator</Link>
             <span>·</span>
-            <Link href="/learn/orbital-mechanics">
-              <a className="text-[var(--accent-cyan)] hover:underline">Orbital Mechanics</a>
-            </Link>
+            <Link href="/learn/orbital-mechanics" className="text-[var(--accent-cyan)] hover:underline">Orbital Mechanics</Link>
           </div>
         </div>
       </section>

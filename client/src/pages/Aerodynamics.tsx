@@ -57,13 +57,13 @@ export function Aerodynamics() {
       <div className="rounded-xl bg-slate-50 border border-slate-200 p-5 text-sm text-slate-700">
         <p className="mb-2">
           <strong>Go deeper:</strong>{" "}
-          <Link href="/learn/aerospace"><a className="text-[var(--accent-cyan)] hover:underline">Aerospace & NASA reference</a></Link>
+          <Link href="/learn/aerospace" className="text-[var(--accent-cyan)] hover:underline">Aerospace & NASA reference</Link>
           {" · "}
-          <Link href="/learn/how-nasa-launches-satellite"><a className="text-[var(--accent-cyan)] hover:underline">How NASA launches</a></Link>
+          <Link href="/learn/how-nasa-launches-satellite" className="text-[var(--accent-cyan)] hover:underline">How NASA launches</Link>
           {" · "}
-          <Link href="/learn/how-spacex-lands-rockets"><a className="text-[var(--accent-cyan)] hover:underline">How SpaceX lands rockets</a></Link>
+          <Link href="/learn/how-spacex-lands-rockets" className="text-[var(--accent-cyan)] hover:underline">How SpaceX lands rockets</Link>
           {" · "}
-          <Link href="/astrobot"><a className="text-[var(--accent-cyan)] hover:underline">Ask AstroBot</a></Link>
+          <Link href="/astrobot" className="text-[var(--accent-cyan)] hover:underline">Ask AstroBot</Link>
         </p>
       </div>
     </div>

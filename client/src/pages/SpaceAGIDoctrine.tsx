@@ -63,15 +63,9 @@ export function SpaceAGIDoctrine() {
       </section>
 
       <div className="flex flex-wrap gap-3">
-        <Link href="/research">
-          <a className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Research Hub</a>
-        </Link>
-        <Link href="/ai-in-aerospace">
-          <a className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">AI in Aerospace</a>
-        </Link>
-        <Link href="/simulator">
-          <a className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">3D Simulator</a>
-        </Link>
+        <Link href="/research" className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Research Hub</Link>
+        <Link href="/ai-in-aerospace" className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">AI in Aerospace</Link>
+        <Link href="/simulator" className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">3D Simulator</Link>
       </div>
     </div>
   );

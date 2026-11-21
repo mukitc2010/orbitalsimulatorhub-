@@ -57,9 +57,7 @@ export function PrivacyPolicy() {
       </div>
 
       <p className="text-center mt-6">
-        <Link href="/">
-          <a className="text-[var(--accent-cyan)] hover:underline">← Back to Home</a>
-        </Link>
+        <Link href="/" className="text-[var(--accent-cyan)] hover:underline">← Back to Home</Link>
       </p>
     </div>
   );

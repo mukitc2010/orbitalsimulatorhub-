@@ -1165,12 +1165,10 @@ export function AstroBot() {
           { href: "/planets", label: "🪐 Planet Hub", desc: "Solar system data" },
           { href: "/formulas-library", label: "🧮 Formulas", desc: "Physics equations" },
         ].map((l) => (
-          <Link key={l.href} href={l.href}>
-            <a className="block rounded-xl p-4 transition hover:-translate-y-0.5" style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}>
+          <Link key={l.href} href={l.href} className="block rounded-xl p-4 transition hover:-translate-y-0.5" style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}>
               <div className="font-semibold text-sm" style={{ color: "var(--text-primary)" }}>{l.label}</div>
               <div className="text-xs mt-0.5" style={{ color: "var(--text-muted)" }}>{l.desc}</div>
-            </a>
-          </Link>
+            </Link>
         ))}
       </div>
 

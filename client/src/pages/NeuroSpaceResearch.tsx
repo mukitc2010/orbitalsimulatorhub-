@@ -70,7 +70,7 @@ export function NeuroSpaceResearch() {
         <p className="text-slate-700 mb-2">Kalman filter: <strong>x̂ = x̂ + K(z − Hx̂)</strong></p>
         <p className="text-slate-700 mb-3">AI decision optimization: <strong>A* = argmax U(A|S)</strong></p>
         <p className="text-slate-700">
-          Intelligent spacecraft capable of: autonomous docking, collision avoidance, self-repair, autonomous landing, mission optimization. See our <Link href="/simulator"><a className="text-[var(--accent-cyan)] hover:underline">3D orbit simulator</a></Link> and <Link href="/learn/orbital-mechanics"><a className="text-[var(--accent-cyan)] hover:underline">orbital mechanics guide</a></Link>.
+          Intelligent spacecraft capable of: autonomous docking, collision avoidance, self-repair, autonomous landing, mission optimization. See our <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">3D orbit simulator</Link> and <Link href="/learn/orbital-mechanics" className="text-[var(--accent-cyan)] hover:underline">orbital mechanics guide</Link>.
         </p>
       </section>
 
@@ -208,12 +208,12 @@ export function NeuroSpaceResearch() {
       <section className="rounded-xl bg-slate-100 border border-slate-200 p-6">
         <h2 className="font-bold text-slate-800 mb-3">Related Resources</h2>
         <div className="flex flex-wrap gap-2">
-          <Link href="/simulator"><a className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">3D Orbit Simulator</a></Link>
-          <Link href="/learn/orbital-mechanics"><a className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">Orbital Mechanics</a></Link>
-          <Link href="/learn/quantum-space"><a className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">Quantum & Space</a></Link>
-          <Link href="/ai-in-aerospace"><a className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">AI in Aerospace</a></Link>
-          <Link href="/formulas-library"><a className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">Formulas Library</a></Link>
-          <Link href="/research"><a className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">Research Hub</a></Link>
+          <Link href="/simulator" className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">3D Orbit Simulator</Link>
+          <Link href="/learn/orbital-mechanics" className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">Orbital Mechanics</Link>
+          <Link href="/learn/quantum-space" className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">Quantum & Space</Link>
+          <Link href="/ai-in-aerospace" className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">AI in Aerospace</Link>
+          <Link href="/formulas-library" className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">Formulas Library</Link>
+          <Link href="/research" className="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-800 font-medium text-sm hover:border-[var(--accent-cyan)]">Research Hub</Link>
         </div>
       </section>
 

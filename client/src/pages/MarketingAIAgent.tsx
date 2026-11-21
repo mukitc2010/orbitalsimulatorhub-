@@ -136,16 +136,12 @@ export function MarketingAIAgent() {
                 Turn research, launches, and futuristic storytelling into sharp messaging. This agent helps you shape campaigns, craft social posts, build email sequences, and build content strategy for OrbitalSimulatorHub-style growth.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
-                <Link href="/research/agi-asi-framework">
-                  <a className="px-4 py-2 rounded-xl font-semibold text-sm" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>
+                <Link href="/research/agi-asi-framework" className="px-4 py-2 rounded-xl font-semibold text-sm" style={{ background: "var(--accent-primary)", color: "var(--text-on-accent)" }}>
                     Explore ASI / AGI concepts
-                  </a>
-                </Link>
-                <Link href="/research/pmp-nmpc-autonomous-control">
-                  <a className="px-4 py-2 rounded-xl font-semibold text-sm border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>
+                  </Link>
+                <Link href="/research/pmp-nmpc-autonomous-control" className="px-4 py-2 rounded-xl font-semibold text-sm border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>
                     See the autonomy research layer
-                  </a>
-                </Link>
+                  </Link>
               </div>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">

@@ -154,7 +154,7 @@ export function AIInAerospace() {
             <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
               <h3 className="font-bold mb-2">Model Predictive Control (MPC)</h3>
               <p className="text-sm text-[var(--nasa-muted)] mb-2">MPC solves a finite-horizon optimization at each step: predict future states, minimize cost (fuel, risk), enforce constraints (collision avoidance, pointing limits). The first control action is applied; the rest are discarded. Repeating at each timestep gives feedback that handles disturbances (J2, drag, solar radiation pressure).</p>
-              <p className="text-xs text-[var(--nasa-muted)]"><strong>Space use:</strong> Starlink-style collision avoidance, station-keeping, formation flying. Our <Link href="/simulator/swarm"><a className="text-[var(--nasa-brand)] hover:underline">Swarm Simulator</a></Link> uses OSQP (quadratic programming) for similar logic.</p>
+              <p className="text-xs text-[var(--nasa-muted)]"><strong>Space use:</strong> Starlink-style collision avoidance, station-keeping, formation flying. Our <Link href="/simulator/swarm" className="text-[var(--nasa-brand)] hover:underline">Swarm Simulator</Link> uses OSQP (quadratic programming) for similar logic.</p>
             </div>
             <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
               <h3 className="font-bold mb-2">Linear Quadratic Regulator (LQR)</h3>
@@ -169,7 +169,7 @@ export function AIInAerospace() {
             <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
               <h3 className="font-bold mb-2">Space AGI Five Pillars</h3>
               <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong>1. Perception</strong> — Star trackers, IMU, GNSS, cameras fuse into state estimate. <strong>2. Planning</strong> — Trajectory optimization, Lambert solvers, MPC. <strong>3. Control</strong> — LQR, thruster logic, reaction wheels. <strong>4. Learning</strong> — RL from sim and flight data. <strong>5. Communication</strong> — Report when link exists; act autonomously when it doesn&apos;t.</p>
-              <p className="text-xs text-[var(--nasa-muted)]"><strong>Explore:</strong> <Link href="/research/space-agi-lab"><a className="text-[var(--nasa-brand)] hover:underline">Space-AGI Lab</a></Link> · <Link href="/blog/what-is-space-agi-why-it-matters"><a className="text-[var(--nasa-brand)] hover:underline">What Is Space AGI?</a></Link></p>
+              <p className="text-xs text-[var(--nasa-muted)]"><strong>Explore:</strong> <Link href="/research/space-agi-lab" className="text-[var(--nasa-brand)] hover:underline">Space-AGI Lab</Link> · <Link href="/blog/what-is-space-agi-why-it-matters" className="text-[var(--nasa-brand)] hover:underline">What Is Space AGI?</Link></p>
             </div>
           </div>
         </div>
@@ -414,7 +414,7 @@ export function AIInAerospace() {
                 <li><strong className="text-[var(--nasa-text)]">James Webb:</strong> JWST keeps revealing early galaxies and exoplanet atmospheres in infrared. <span className="block text-xs mt-0.5 opacity-90">Why it matters: understanding cosmic origins and habitability.</span></li>
                 <li><strong className="text-[var(--nasa-text)]">Commercial space:</strong> SpaceX, Starlink, and others are scaling launches and satellite constellations; AI supports ops and collision avoidance. <span className="block text-xs mt-0.5 opacity-90">Why it matters: more traffic in orbit demands smarter automation.</span></li>
               </ul>
-              <Link href="/blog"><a className="text-[var(--nasa-brand)] text-xs font-semibold mt-2 inline-block hover:underline">Read more on the blog →</a></Link>
+              <Link href="/blog" className="text-[var(--nasa-brand)] text-xs font-semibold mt-2 inline-block hover:underline">Read more on the blog →</Link>
             </div>
             {/* Featured Space Mission */}
             <div className="rounded-xl border border-[var(--nasa-line)] bg-[rgba(255,255,255,.03)] p-4">
@@ -422,8 +422,8 @@ export function AIInAerospace() {
               <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong className="text-[var(--nasa-text)]">Goal:</strong> Return humans to the Moon (including the first woman and first person of color) and build a sustainable lunar presence as a stepping stone to Mars.</p>
               <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong className="text-[var(--nasa-text)]">Tech:</strong> Space Launch System (SLS), Orion crew capsule, Human Landing System (HLS), and the lunar Gateway station in orbit around the Moon.</p>
               <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong className="text-[var(--nasa-text)]">Fun facts:</strong> Orion has flown uncrewed around the Moon (Artemis I). Gateway will support landings and deep-space science. SLS is the most powerful rocket ever built.</p>
-              <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong className="text-[var(--nasa-text)]">Learning:</strong> Artemis uses the same orbital mechanics and mission design principles you can explore in our <Link href="/simulator"><a className="text-[var(--nasa-brand)] hover:underline">simulator</a></Link> and <Link href="/missions/timeline"><a className="text-[var(--nasa-brand)] hover:underline">mission timeline</a></Link>.</p>
-              <Link href="/missions/timeline"><a className="text-[var(--nasa-brand)] text-xs font-semibold mt-2 inline-block hover:underline">Mission timeline →</a></Link>
+              <p className="text-sm text-[var(--nasa-muted)] mb-2"><strong className="text-[var(--nasa-text)]">Learning:</strong> Artemis uses the same orbital mechanics and mission design principles you can explore in our <Link href="/simulator" className="text-[var(--nasa-brand)] hover:underline">simulator</Link> and <Link href="/missions/timeline" className="text-[var(--nasa-brand)] hover:underline">mission timeline</Link>.</p>
+              <Link href="/missions/timeline" className="text-[var(--nasa-brand)] text-xs font-semibold mt-2 inline-block hover:underline">Mission timeline →</Link>
             </div>
           </div>
         </div>
@@ -432,11 +432,11 @@ export function AIInAerospace() {
       <footer className="pt-6 mt-4 border-t border-[var(--nasa-line)] text-[var(--nasa-muted)] text-sm">
         <div>
           <strong>Explore more:</strong>{" "}
-          <Link href="/learn/how-mars-rovers-work"><a>How Mars rovers work</a></Link>
+          <Link href="/learn/how-mars-rovers-work">How Mars rovers work</Link>
           {" · "}
-          <Link href="/learn/how-spacex-lands-rockets"><a>How SpaceX lands rockets</a></Link>
+          <Link href="/learn/how-spacex-lands-rockets">How SpaceX lands rockets</Link>
           {" · "}
-          <Link href="/research"><a>Research hub</a></Link>
+          <Link href="/research">Research hub</Link>
         </div>
         <div className="mt-2">© Orbital Simulator Hub · Learning layout · Built for speed + SEO</div>
       </footer>

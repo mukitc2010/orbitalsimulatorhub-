@@ -223,42 +223,28 @@ export function HowSpaceXLands() {
             Rocket landing uses the same physics principles as orbital mechanics. Explore how satellites orbit in our simulator!
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/simulator">
-              <a className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+            <Link href="/simulator" className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
                 Open 3D Simulator →
-              </a>
-            </Link>
-            <Link href="/learn/newton">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/learn/newton" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 Newton's Laws →
-              </a>
-            </Link>
-            <Link href="/learn/how-nasa-launches-satellite">
-              <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+              </Link>
+            <Link href="/learn/how-nasa-launches-satellite" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
                 How NASA Launches →
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
 
         <div className="text-sm text-slate-600 space-y-2">
           <p><strong>Related Topics:</strong></p>
           <div className="flex flex-wrap gap-2">
-            <Link href="/learn/how-nasa-launches-satellite">
-              <a className="text-[var(--accent-cyan)] hover:underline">How NASA Launches Satellites</a>
-            </Link>
+            <Link href="/learn/how-nasa-launches-satellite" className="text-[var(--accent-cyan)] hover:underline">How NASA Launches Satellites</Link>
             <span>·</span>
-            <Link href="/learn/newton">
-              <a className="text-[var(--accent-cyan)] hover:underline">Newton's Laws</a>
-            </Link>
+            <Link href="/learn/newton" className="text-[var(--accent-cyan)] hover:underline">Newton's Laws</Link>
             <span>·</span>
-            <Link href="/formulas-library">
-              <a className="text-[var(--accent-cyan)] hover:underline">Rocket Formulas</a>
-            </Link>
+            <Link href="/formulas-library" className="text-[var(--accent-cyan)] hover:underline">Rocket Formulas</Link>
             <span>·</span>
-            <Link href="/simulator">
-              <a className="text-[var(--accent-cyan)] hover:underline">3D Simulator</a>
-            </Link>
+            <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">3D Simulator</Link>
           </div>
         </div>
       </section>

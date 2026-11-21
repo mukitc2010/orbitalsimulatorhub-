@@ -45,11 +45,9 @@ export function MissionDetail() {
         <p className="mb-6" style={{ color: "var(--text-secondary)" }}>
           The mission you&apos;re looking for doesn&apos;t exist in our database.
         </p>
-        <Link href="/missions">
-          <a className="font-medium" style={{ color: "var(--accent-primary)" }}>
+        <Link href="/missions" className="font-medium" style={{ color: "var(--accent-primary)" }}>
             ← Back to Missions
-          </a>
-        </Link>
+          </Link>
       </div>
     );
   }
@@ -123,9 +121,7 @@ export function MissionDetail() {
           {mission.crew.map((member) => {
             const astronaut = ALL_ASTRONAUTS.find((a) => a.id === member.astronautId);
             return (
-              <Link key={member.astronautId} href={astronaut ? `/astronauts/${astronaut.slug}` : "#"}>
-                <a
-                  className="block rounded-lg px-4 py-3 transition"
+              <Link key={member.astronautId} href={astronaut ? `/astronauts/${astronaut.slug}` : "#"} className="block rounded-lg px-4 py-3 transition"
                   style={{
                     backgroundColor: "var(--bg-card)",
                     border: "1px solid var(--border-color)",
@@ -138,14 +134,12 @@ export function MissionDetail() {
                   onMouseLeave={(e) => {
                     e.currentTarget.style.borderColor = "var(--border-color)";
                     e.currentTarget.style.color = "var(--text-primary)";
-                  }}
-                >
+                  }}>
                   <span className="font-medium">{astronaut?.name ?? member.astronautId}</span>
                   <span className="block text-sm" style={{ color: "var(--text-muted)" }}>
                     {member.role}
                   </span>
-                </a>
-              </Link>
+                </Link>
             );
           })}
         </div>
@@ -189,18 +183,14 @@ export function MissionDetail() {
               {mission.surfaceOps.moonwalkers.map((id) => {
                 const astronaut = ALL_ASTRONAUTS.find((a) => a.id === id);
                 return astronaut ? (
-                  <Link key={id} href={`/astronauts/${astronaut.slug}`}>
-                    <a
-                      className="px-3 py-1 rounded font-medium"
+                  <Link key={id} href={`/astronauts/${astronaut.slug}`} className="px-3 py-1 rounded font-medium"
                       style={{
                         backgroundColor: "var(--bg-surface)",
                         color: "var(--accent-primary)",
                         border: "1px solid var(--border-color)",
-                      }}
-                    >
+                      }}>
                       {astronaut.name}
-                    </a>
-                  </Link>
+                    </Link>
                 ) : (
                   <span key={id} style={{ color: "var(--text-secondary)" }}>{id}</span>
                 );
@@ -225,11 +215,9 @@ export function MissionDetail() {
           <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
             {mission.surfaceOps.geology}
           </p>
-          <Link href="/learn/lunar-geology">
-            <a className="inline-block mt-3 text-sm font-semibold" style={{ color: "var(--accent-primary)" }}>
+          <Link href="/learn/lunar-geology" className="inline-block mt-3 text-sm font-semibold" style={{ color: "var(--accent-primary)" }}>
               Read full Lunar Geology guide →
-            </a>
-          </Link>
+            </Link>
         </section>
       )}
 
@@ -252,14 +240,10 @@ export function MissionDetail() {
             <span className="ml-2" style={{ color: "var(--text-secondary)" }}>
               of lunar samples
             </span>
-            <Link href="/artifacts">
-              <a
-                className="block mt-2 font-medium"
-                style={{ color: "var(--accent-primary)" }}
-              >
+            <Link href="/artifacts" className="block mt-2 font-medium"
+                style={{ color: "var(--accent-primary)" }}>
                 View all samples brought from space →
-              </a>
-            </Link>
+              </Link>
           </div>
         </section>
       )}
@@ -281,25 +265,19 @@ export function MissionDetail() {
         className="flex flex-wrap items-center justify-between gap-4 pt-6 border-t"
         style={{ borderColor: "var(--border-color)" }}
       >
-        <Link href="/missions">
-          <a className="font-medium" style={{ color: "var(--accent-primary)" }}>
+        <Link href="/missions" className="font-medium" style={{ color: "var(--accent-primary)" }}>
             ← Back to Missions
-          </a>
-        </Link>
+          </Link>
         <div className="flex gap-4">
           {prev && (
-            <Link href={`/missions/${prev.slug}`}>
-              <a className="font-medium" style={{ color: "var(--accent-primary)" }}>
+            <Link href={`/missions/${prev.slug}`} className="font-medium" style={{ color: "var(--accent-primary)" }}>
                 ← {prev.name}
-              </a>
-            </Link>
+              </Link>
           )}
           {next && (
-            <Link href={`/missions/${next.slug}`}>
-              <a className="font-medium" style={{ color: "var(--accent-primary)" }}>
+            <Link href={`/missions/${next.slug}`} className="font-medium" style={{ color: "var(--accent-primary)" }}>
                 {next.name} →
-              </a>
-            </Link>
+              </Link>
           )}
         </div>
       </nav>

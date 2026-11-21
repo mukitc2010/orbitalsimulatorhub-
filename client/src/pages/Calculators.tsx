@@ -28,7 +28,7 @@ export function Calculators() {
         <p className="text-slate-700 mb-2">
           The International Space Station orbits at approximately <strong>7.66 km/s (27,600 km/h)</strong> at 408 km altitude. Its orbital period is about <strong>92 minutes</strong> — astronauts see 16 sunrises per day. Enter 408 km in the orbit calculator below to verify.
         </p>
-        <Link href="/satellites"><a className="text-sm text-[var(--accent-cyan)] font-medium hover:underline">Real satellite data: ISS, Starlink, GPS →</a></Link>
+        <Link href="/satellites" className="text-sm text-[var(--accent-cyan)] font-medium hover:underline">Real satellite data: ISS, Starlink, GPS →</Link>
       </section>
 
       <section className="rounded-xl border-2 border-[var(--accent-cyan)]/50 bg-white p-6 shadow-sm">

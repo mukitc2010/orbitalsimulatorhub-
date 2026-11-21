@@ -273,9 +273,7 @@ function NavMenu({
 function NavLink({ path, label, title, location }: { path: string; label: string; title: string; location: string }) {
   const active = location === path || (path !== "/" && location.startsWith(path)) || (path === "/research/space-agi-lab" && location === "/research/space-agi-roadmap");
   return (
-    <Link href={path} title={title}>
-      <a
-        className="px-3 py-2 rounded-lg font-medium transition text-sm"
+    <Link href={path} title={title} className="px-3 py-2 rounded-lg font-medium transition text-sm"
         style={
           active
             ? { background: "var(--nav-active-bg)", color: "var(--nav-active-text)" }
@@ -292,10 +290,8 @@ function NavLink({ path, label, title, location }: { path: string; label: string
             (e.currentTarget as HTMLElement).style.background = "transparent";
             (e.currentTarget as HTMLElement).style.color = "var(--text-secondary)";
           }
-        }}
-      >
+        }}>
         {label}
-      </a>
-    </Link>
+      </Link>
   );
 }

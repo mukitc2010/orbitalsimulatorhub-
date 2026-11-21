@@ -22,53 +22,41 @@ export function NASAForKids() {
       </div>
 
       <div className="grid sm:grid-cols-2 gap-4">
-        <Link href="/play">
-          <a className="block p-5 rounded-xl border-2 border-[var(--accent-pink)] bg-[var(--accent-pink)]/10 hover:shadow-md transition">
+        <Link href="/play" className="block p-5 rounded-xl border-2 border-[var(--accent-pink)] bg-[var(--accent-pink)]/10 hover:shadow-md transition">
             <span className="text-2xl mb-2 block">🪐</span>
             <h3 className="font-bold text-slate-800 mb-1">Play &amp; Learn NASA</h3>
             <p className="text-sm text-slate-600">Solar system, astronauts, rovers, Moon — fun cards for kids.</p>
-          </a>
-        </Link>
-        <Link href="/learn/astronomy-for-kids">
-          <a className="block p-5 rounded-xl border-2 border-[var(--accent-cyan)] bg-[var(--accent-cyan)]/10 hover:shadow-md transition">
+          </Link>
+        <Link href="/learn/astronomy-for-kids" className="block p-5 rounded-xl border-2 border-[var(--accent-cyan)] bg-[var(--accent-cyan)]/10 hover:shadow-md transition">
             <span className="text-2xl mb-2 block">🌟</span>
             <h3 className="font-bold text-slate-800 mb-1">Astronomy for Kids</h3>
             <p className="text-sm text-slate-600">Stars, planets, Moon, and space — explained for kids.</p>
-          </a>
-        </Link>
-        <Link href="/learn/what-is-moon">
-          <a className="block p-5 rounded-xl border-2 border-[var(--accent-gold)] bg-[var(--accent-gold)]/10 hover:shadow-md transition">
+          </Link>
+        <Link href="/learn/what-is-moon" className="block p-5 rounded-xl border-2 border-[var(--accent-gold)] bg-[var(--accent-gold)]/10 hover:shadow-md transition">
             <span className="text-2xl mb-2 block">🌙</span>
             <h3 className="font-bold text-slate-800 mb-1">What is the Moon?</h3>
             <p className="text-sm text-slate-600">Moon phases, tides, and NASA Moon missions.</p>
-          </a>
-        </Link>
-        <Link href="/simulator">
-          <a className="block p-5 rounded-xl border-2 border-[var(--accent-cyan)] bg-[var(--accent-cyan)]/10 hover:shadow-md transition">
+          </Link>
+        <Link href="/simulator" className="block p-5 rounded-xl border-2 border-[var(--accent-cyan)] bg-[var(--accent-cyan)]/10 hover:shadow-md transition">
             <span className="text-2xl mb-2 block">🛸</span>
             <h3 className="font-bold text-slate-800 mb-1">3D Orbit Simulator</h3>
             <p className="text-sm text-slate-600">Add satellites and watch them orbit Earth. No sign-up.</p>
-          </a>
-        </Link>
-        <Link href="/learn/how-solar-system-works">
-          <a className="block p-5 rounded-xl border-2 border-slate-200 bg-white hover:border-[var(--accent-cyan)] hover:shadow-md transition">
+          </Link>
+        <Link href="/learn/how-solar-system-works" className="block p-5 rounded-xl border-2 border-slate-200 bg-white hover:border-[var(--accent-cyan)] hover:shadow-md transition">
             <span className="text-2xl mb-2 block">🌍</span>
             <h3 className="font-bold text-slate-800 mb-1">How the Solar System Works</h3>
             <p className="text-sm text-slate-600">Planets, orbits, and gravity for kids.</p>
-          </a>
-        </Link>
-        <Link href="/astrobot">
-          <a className="block p-5 rounded-xl border-2 border-slate-200 bg-white hover:border-[var(--accent-cyan)] hover:shadow-md transition">
+          </Link>
+        <Link href="/astrobot" className="block p-5 rounded-xl border-2 border-slate-200 bg-white hover:border-[var(--accent-cyan)] hover:shadow-md transition">
             <span className="text-2xl mb-2 block">🤖</span>
             <h3 className="font-bold text-slate-800 mb-1">Ask AstroBot</h3>
             <p className="text-sm text-slate-600">Ask anything about space — great for curious kids!</p>
-          </a>
-        </Link>
+          </Link>
       </div>
 
       <div className="rounded-xl bg-slate-50 border border-slate-200 p-5">
         <h2 className="text-lg font-bold text-slate-800 mb-2">Space quiz for kids</h2>
-        <p className="text-slate-700 mb-3">Test what you learned: <Link href="/space-quiz"><a className="text-[var(--accent-cyan)] hover:underline font-medium">Space quiz →</a></Link></p>
+        <p className="text-slate-700 mb-3">Test what you learned: <Link href="/space-quiz" className="text-[var(--accent-cyan)] hover:underline font-medium">Space quiz →</Link></p>
       </div>
     </div>
   );

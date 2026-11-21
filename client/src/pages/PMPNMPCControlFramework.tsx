@@ -93,15 +93,9 @@ export function PMPNMPCControlFramework() {
       </section>
 
       <div className="flex flex-wrap gap-3">
-        <Link href="/research/space-agi-lab">
-          <a className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>← Space-AGI Lab</a>
-        </Link>
-        <Link href="/research/space-agi-math">
-          <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Space-AGI Mathematics</a>
-        </Link>
-        <Link href="/research">
-          <a className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Research Hub</a>
-        </Link>
+        <Link href="/research/space-agi-lab" className="px-4 py-2 rounded-lg font-medium" style={{ background: "var(--accent-cyan)", color: "#0f172a" }}>← Space-AGI Lab</Link>
+        <Link href="/research/space-agi-math" className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Space-AGI Mathematics</Link>
+        <Link href="/research" className="px-4 py-2 rounded-lg font-medium border-2" style={{ borderColor: "var(--accent-cyan)", color: "var(--text-primary)" }}>Research Hub</Link>
       </div>
     </div>
   );

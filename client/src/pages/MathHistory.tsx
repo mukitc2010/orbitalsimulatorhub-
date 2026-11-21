@@ -276,7 +276,7 @@ export function MathHistory() {
         <p className="mt-3">For a satellite, the derivative comes from gravity. At 400 km altitude the acceleration is</p>
         <div className="my-3 overflow-x-auto" dangerouslySetInnerHTML={{ __html: tex(String.raw`\mathbf{a}=-\frac{\mu}{r^3}\mathbf{r},\quad \mu=3.986004418\times 10^{14}\ \mathrm{m}^3/\mathrm{s}^2`) }} />
         <p>Explicit Euler is simple and can drift in orbital energy. Semi-implicit Euler updates velocity before position and usually holds a mechanical orbit better. Runge–Kutta 4 evaluates the derivative four times per step. The Euler Lab runs all three on a 400 km Earth orbit and reports the drift it computes. It does not invent an accuracy percentage.</p>
-        <p className="mt-3"><Link href="/simulator/euler-lab"><a className="text-cyan-300 underline">Compare the three methods in the Euler Lab</a></Link></p>
+        <p className="mt-3"><Link href="/simulator/euler-lab" className="text-cyan-300 underline">Compare the three methods in the Euler Lab</Link></p>
       </section>
 
       <ol className="space-y-3">
@@ -336,7 +336,7 @@ export function MathHistory() {
           <input className="mt-1 w-full" type="range" min={-180} max={180} value={angleDeg} onChange={(e) => setAngleDeg(Number(e.target.value))} />
         </label>
         <p className="mt-2 text-sm">An educational damper, error ← error − k·error·Δt for 30 steps, leaves {((pointing * 180) / Math.PI).toFixed(2)}°. This is a checked classroom recurrence. It is not flight software and it is not an AI controller.</p>
-        <p className="mt-2 text-sm"><Link href="/research/space-agi-math"><a className="text-cyan-300 underline">Formulas for LQR, MPC, and the Kalman filter</a></Link> stay on the mathematics page, separate from this damper.</p>
+        <p className="mt-2 text-sm"><Link href="/research/space-agi-math" className="text-cyan-300 underline">Formulas for LQR, MPC, and the Kalman filter</Link> stay on the mathematics page, separate from this damper.</p>
       </section>
 
       <section id="riccati" className="rounded-2xl border border-white/10 p-4 text-sm leading-6">
@@ -344,14 +344,14 @@ export function MathHistory() {
         <div dangerouslySetInnerHTML={{ __html: tex(String.raw`A^{T}P+PA-PBR^{-1}B^{T}P+Q=0`) }} />
         <p className="mt-2">Old Babylonian tablets include problems that reduce to a quadratic. The scalar station-keeping Riccati equation is also a quadratic, solved here with the quadratic formula. The matrix form above is modern. It is how an LQR gain is computed. Babylonian astronomers did not have this control law.</p>
         <p className="mt-2">With ẋ = 0.02 x + u, q = 2, and r = 8, P = {scalarAlgebraicRiccati(0.02, 1, 2, 8).p.toFixed(3)} and the first correction on a 1,000 m error is {( -scalarAlgebraicRiccati(0.02, 1, 2, 8).k * 1000).toFixed(2)} m/s². After 12 s the classroom loop is at {scalarClosedLoop(1000, 0.02, 1, scalarAlgebraicRiccati(0.02, 1, 2, 8).k, 0.5, 24).at(-1)?.toFixed(1)} m.</p>
-        <p className="mt-2"><Link href="/research/space-agi-math"><a className="text-cyan-300 underline">Change q and r on the mathematics page</a></Link></p>
+        <p className="mt-2"><Link href="/research/space-agi-math" className="text-cyan-300 underline">Change q and r on the mathematics page</Link></p>
       </section>
 
       <section id="lagrange" className="rounded-2xl border border-white/10 p-4 text-sm leading-6">
         <h2 className="text-2xl font-semibold text-white">Unforced two-body motion</h2>
         <div dangerouslySetInnerHTML={{ __html: tex(String.raw`L=T-V,\quad T=\frac12 m(\dot r^2+r^2\dot\theta^2),\quad V=-\frac{\mu m}{r}`) }} />
         <p className="mt-2">With no torque, m r² θ̇ stays constant. That is angular momentum. Mechanical energy T + V stays constant for this gravity-only model. A thrust arc is a different problem: the pure Euler–Lagrange equation above does not include an engine.</p>
-        <p className="mt-2"><Link href="/simulator/euler-lab"><a className="text-cyan-300 underline">Watch the unforced integration in the Euler Lab</a></Link>. The default experiment there is a 400 km circular Earth orbit, and the time step is adjustable.</p>
+        <p className="mt-2"><Link href="/simulator/euler-lab" className="text-cyan-300 underline">Watch the unforced integration in the Euler Lab</Link>. The default experiment there is a 400 km circular Earth orbit, and the time step is adjustable.</p>
       </section>
 
       <section className="rounded-2xl border border-white/10 p-4">

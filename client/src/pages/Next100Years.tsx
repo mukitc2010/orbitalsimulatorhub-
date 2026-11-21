@@ -49,11 +49,11 @@ export function Next100Years() {
       <section className="rounded-xl border-2 border-slate-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-bold text-slate-800 mb-4">Key Technologies</h2>
         <ul className="list-disc pl-6 space-y-1 text-slate-700">
-          <li>Autonomous spacecraft &amp; AI (see <Link href="/ai-in-aerospace"><a className="text-[var(--accent-cyan)] hover:underline">AI in Aerospace</a></Link>)</li>
-          <li>Quantum navigation &amp; communication (<Link href="/learn/quantum-space"><a className="text-[var(--accent-cyan)] hover:underline">Quantum Space</a></Link>)</li>
+          <li>Autonomous spacecraft &amp; AI (see <Link href="/ai-in-aerospace" className="text-[var(--accent-cyan)] hover:underline">AI in Aerospace</Link>)</li>
+          <li>Quantum navigation &amp; communication (<Link href="/learn/quantum-space" className="text-[var(--accent-cyan)] hover:underline">Quantum Space</Link>)</li>
           <li>Nuclear propulsion</li>
           <li>In-situ resource utilization</li>
-          <li>Relativistic-capable systems (<Link href="/research/neuro-space"><a className="text-[var(--accent-cyan)] hover:underline">Neuro-Space</a></Link>)</li>
+          <li>Relativistic-capable systems (<Link href="/research/neuro-space" className="text-[var(--accent-cyan)] hover:underline">Neuro-Space</Link>)</li>
         </ul>
       </section>
 
@@ -61,10 +61,10 @@ export function Next100Years() {
         <h2 className="text-xl font-bold text-slate-800 mb-4">Learn the Physics</h2>
         <p className="text-slate-700 mb-4">Orbital mechanics, gravity, and propulsion are the foundation. Master them with our free resources:</p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/simulator"><a className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">3D Simulator</a></Link>
-          <Link href="/learn/orbital-mechanics"><a className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Orbital Mechanics</a></Link>
-          <Link href="/formulas-library"><a className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Formulas</a></Link>
-          <Link href="/astrobot"><a className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Ask AstroBot</a></Link>
+          <Link href="/simulator" className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">3D Simulator</Link>
+          <Link href="/learn/orbital-mechanics" className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Orbital Mechanics</Link>
+          <Link href="/formulas-library" className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Formulas</Link>
+          <Link href="/astrobot" className="px-4 py-2 rounded-lg bg-[var(--accent-cyan)]/20 text-slate-800 font-medium hover:bg-[var(--accent-cyan)]/30">Ask AstroBot</Link>
         </div>
       </section>
 

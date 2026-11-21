@@ -24,7 +24,7 @@ export function SpaceRobotResearch() {
       .space-robot-paper tr { break-inside: avoid; }
       .space-robot-paper a { text-decoration: underline; }
     }`}</style>
-    <Link href="/research"><a className="text-sm text-cyan-300">Back to research</a></Link>
+    <Link href="/research" className="text-sm text-cyan-300">Back to research</Link>
     <header className="my-6 overflow-hidden rounded-3xl border border-cyan-400/30 bg-gradient-to-br from-cyan-950/70 via-slate-950 to-indigo-950/70 p-6 sm:p-10">
       <p className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-300">Research concept / 23 October 2026</p>
       <h1 className="mt-4 max-w-4xl text-3xl font-semibold leading-tight text-white sm:text-5xl">{paper.title}</h1>

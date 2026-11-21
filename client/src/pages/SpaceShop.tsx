@@ -66,12 +66,8 @@ export function SpaceShop() {
       </p>
 
       <div className="mt-6 flex gap-4">
-        <Link href="/blog">
-          <a className="text-[var(--accent-cyan)] hover:underline font-medium">← Blog</a>
-        </Link>
-        <Link href="/">
-          <a className="text-[var(--accent-cyan)] hover:underline font-medium">← Home</a>
-        </Link>
+        <Link href="/blog" className="text-[var(--accent-cyan)] hover:underline font-medium">← Blog</Link>
+        <Link href="/" className="text-[var(--accent-cyan)] hover:underline font-medium">← Home</Link>
       </div>
     </div>
   );

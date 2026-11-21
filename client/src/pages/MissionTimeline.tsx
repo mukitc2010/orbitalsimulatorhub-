@@ -144,13 +144,13 @@ export function MissionTimeline() {
           <strong>Why it matters for students and researchers:</strong> Each mission relied on the same physics—orbital mechanics, gravity, and propulsion—that you can learn and experiment with on this site. Understanding the timeline helps you connect history to the math and science behind every launch and landing.
         </p>
         <p className="text-slate-700 text-sm">
-          Use the categories below to filter by type (launch, exploration, station, telescope, rover). For Artemis and NASA’s return to the Moon, see the <strong>Artemis Program</strong> entry and our <Link href="/blog/artemis-moon-mission-update-2026-humans-returning-to-moon"><a className="text-[var(--accent-cyan)] hover:underline font-medium">Artemis 2026 blog post</a></Link> for the latest updates.
+          Use the categories below to filter by type (launch, exploration, station, telescope, rover). For Artemis and NASA’s return to the Moon, see the <strong>Artemis Program</strong> entry and our <Link href="/blog/artemis-moon-mission-update-2026-humans-returning-to-moon" className="text-[var(--accent-cyan)] hover:underline font-medium">Artemis 2026 blog post</Link> for the latest updates.
         </p>
       </div>
 
       <div className="rounded-xl bg-blue-50 border-2 border-blue-200 p-4 mb-6">
         <p className="text-sm text-slate-700">
-          <strong>💡 Tip:</strong> Click on mission categories below to filter. Each mission used orbital mechanics—the same physics in our <Link href="/simulator"><a className="text-[var(--accent-cyan)] hover:underline font-medium">3D Simulator</a></Link>!
+          <strong>💡 Tip:</strong> Click on mission categories below to filter. Each mission used orbital mechanics—the same physics in our <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline font-medium">3D Simulator</Link>!
         </p>
       </div>
 
@@ -246,42 +246,28 @@ export function MissionTimeline() {
           All these missions used orbital mechanics to reach their destinations. Try simulating orbits in our 3D simulator!
         </p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/simulator">
-            <a className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
+          <Link href="/simulator" className="px-6 py-3 rounded-xl font-bold bg-[var(--accent-cyan)] text-[#0f172a] hover:opacity-90">
               Open 3D Simulator →
-            </a>
-          </Link>
-          <Link href="/learn/orbital-mechanics">
-            <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+            </Link>
+          <Link href="/learn/orbital-mechanics" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
               Learn Orbital Mechanics →
-            </a>
-          </Link>
-          <Link href="/learn/aerospace#nasa">
-            <a className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
+            </Link>
+          <Link href="/learn/aerospace#nasa" className="px-6 py-3 rounded-xl font-medium border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/10">
               NASA Missions →
-            </a>
-          </Link>
+            </Link>
         </div>
       </div>
 
       <div className="text-sm text-slate-600 space-y-2">
         <p><strong>Related Topics:</strong></p>
         <div className="flex flex-wrap gap-2">
-          <Link href="/learn/aerospace#nasa">
-            <a className="text-[var(--accent-cyan)] hover:underline">NASA Missions</a>
-          </Link>
+          <Link href="/learn/aerospace#nasa" className="text-[var(--accent-cyan)] hover:underline">NASA Missions</Link>
           <span>·</span>
-          <Link href="/learn/how-mars-rovers-work">
-            <a className="text-[var(--accent-cyan)] hover:underline">Mars Rovers</a>
-          </Link>
+          <Link href="/learn/how-mars-rovers-work" className="text-[var(--accent-cyan)] hover:underline">Mars Rovers</Link>
           <span>·</span>
-          <Link href="/learn/how-iss-works">
-            <a className="text-[var(--accent-cyan)] hover:underline">International Space Station</a>
-          </Link>
+          <Link href="/learn/how-iss-works" className="text-[var(--accent-cyan)] hover:underline">International Space Station</Link>
           <span>·</span>
-          <Link href="/simulator">
-            <a className="text-[var(--accent-cyan)] hover:underline">3D Simulator</a>
-          </Link>
+          <Link href="/simulator" className="text-[var(--accent-cyan)] hover:underline">3D Simulator</Link>
         </div>
       </div>
     </div>
